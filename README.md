@@ -1,7 +1,11 @@
 # CRUMBLE ROASTERS · ORIGIN MAP (v0.3 · 농장 단위 좌표)
 
-손님용 커피 산지·농장 지도. 배포본은 <https://krumbleroasters.github.io/>,
+손님용 커피 산지·농장 지도. 배포본은 <https://coffeeinsight.kr/>,
 이 저장소(`krumbleroasters/krumbleroasters.github.io`)가 곧 배포본입니다.
+
+- 커스텀 도메인: `coffeeinsight.kr` (루트 `CNAME` 파일로 고정, GitHub Pages 설정의 Custom domain과 같아야 합니다)
+- DNS(호스팅케이알): `A @` → 185.199.108.153 · 185.199.109.153 · 185.199.110.153 · 185.199.111.153, `CNAME www` → `krumbleroasters.github.io`
+- 기본 GitHub Pages 주소(`https://krumbleroasters.github.io/`)는 커스텀 도메인이 켜지면 `https://coffeeinsight.kr/`로 301 리다이렉트됩니다.
 
 - `index.html` — 페이지 (CSS·JS 포함 단일 파일, 데이터는 `beans.json`에서 불러옴)
 - `beans.json` = `catalog-beans.json` — 국내 유통 생두 카탈로그

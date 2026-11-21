@@ -4,7 +4,8 @@
 set -u
 OWNER=krumbleroasters
 REPO=krumbleroasters.github.io
-SITE_URL="https://${OWNER}.github.io/"
+DOMAIN=coffeeinsight.kr
+SITE_URL="https://${DOMAIN}/"
 cd "$(dirname "$0")" || exit 1
 
 echo "== remote"
@@ -20,6 +21,10 @@ gh api "repos/${OWNER}/${REPO}/pages" 2>&1 | head -c 400; echo
 echo "== pages: enable (legacy, main / root)"
 gh api -X POST "repos/${OWNER}/${REPO}/pages" \
   -f "source[branch]=main" -f "source[path]=/" 2>&1 | head -c 400; echo
+
+echo "== pages: custom domain ${DOMAIN}"
+gh api -X PUT "repos/${OWNER}/${REPO}/pages" \
+  -f "cname=${DOMAIN}" -F "https_enforced=true" 2>&1 | head -c 400; echo
 
 echo "== pages: build"
 gh api -X POST "repos/${OWNER}/${REPO}/pages/builds" 2>&1 | head -c 200; echo
