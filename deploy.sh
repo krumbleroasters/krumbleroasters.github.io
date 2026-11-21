@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 # Push the staged site to GitHub and enable GitHub Pages.
-# Usage: ./deploy.sh            (repo must already exist as jejukims/krumble-origin-map)
+# Usage: ./deploy.sh            (repo must already exist as krumbleroasters/krumbleroasters.github.io)
 set -u
-OWNER=jejukims
-REPO=krumble-origin-map
+OWNER=krumbleroasters
+REPO=krumbleroasters.github.io
+SITE_URL="https://${OWNER}.github.io/"
 cd "$(dirname "$0")" || exit 1
 
 echo "== remote"
@@ -24,7 +25,7 @@ echo "== pages: build"
 gh api -X POST "repos/${OWNER}/${REPO}/pages/builds" 2>&1 | head -c 200; echo
 
 for i in $(seq 1 30); do
-  code=$(curl -s -o /dev/null -w '%{http_code}' "https://${OWNER}.github.io/${REPO}/")
+  code=$(curl -s -o /dev/null -w '%{http_code}' "${SITE_URL}")
   echo "poll ${i}: HTTP ${code}"
   [ "$code" = "200" ] && break
   sleep 10

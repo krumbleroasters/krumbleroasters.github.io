@@ -1,7 +1,8 @@
 # CRUMBLE ROASTERS · ORIGIN MAP (v0.3 · 농장 단위 좌표)
 
-손님용 커피 산지·농장 지도. 배포본은 <https://jejukims.github.io/krumble-origin-map/>,
-이 폴더(`work/crumble-origin-map/`)는 작업 사본입니다.
+손님용 커피 산지·농장 지도. 배포본은 <https://krumbleroasters.github.io/>,
+이 저장소(`krumbleroasters/krumbleroasters.github.io`)가 곧 배포본이고,
+작업 사본은 `work/crumble-origin-map/`(빌드·수집 원본 포함)입니다.
 
 - `index.html` — 페이지 (CSS·JS 포함 단일 파일, 데이터는 `beans.json`에서 불러옴)
 - `beans.json` = `catalog-beans.json` — 국내 유통 생두 카탈로그
