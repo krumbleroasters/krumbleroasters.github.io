@@ -358,7 +358,6 @@
    KRUMBLE ROASTERS · ORIGIN MAP  v0.2
    - LINEUP : 크럼블로스터스가 실제로 쓰는 생두 (직접 정리)
    - CATALOG: 국내 유통 생두 카탈로그 (beans.json)
-              생두모아 · FIND MY GREEN COFFEE 공개 목록을 모아 정리
    ========================================================= */
 
 const LINEUP = [
@@ -655,8 +654,6 @@ function cardForBean(b) {
     </dl>
     ${b.cupNotes && b.cupNotes.length ? `<div class="notes">${b.cupNotes.map((n) => `<span class="note">${esc(n)}</span>`).join("")}</div>` : ""}
     <div class="src">
-      <div class="row"><span class="k">출처</span><span>${esc((b.sources || []).join(" · ") || "—")}</span></div>
-      ${b.firstSeen ? `<div class="row"><span class="k">관측</span><span>${esc(b.firstSeen)} 이후 목록에 있음</span></div>` : ""}
       <div class="row"><span class="k">안내</span><span>가격·매입 정보는 넣지 않습니다.</span></div>
     </div>
     ${p && p.precision === "country" ? refineBlock(b) : ""}
@@ -928,15 +925,13 @@ function homeSheet() {
   <div class="card">
     <div class="eyebrow">CATALOG</div>
     <h2 class="c-name">국내에 들어온 생두 ${(c.beans || 0).toLocaleString()}종이 자란 곳</h2>
-    <p class="story">생두모아와 FIND MY GREEN COFFEE에 올라온 생두 목록을 모아, 같은 생두는 한 번으로 합쳤습니다. ${c.countries || 0}개국 ${c.places || 0}곳의 산지·농장이 지도에 표시됩니다. 마시는 원두 이름을 검색하면 그 커피가 시작된 곳으로 지도가 이동합니다.</p>
+    <p class="story">국내에 유통되는 생두를 한자리에 모아, 같은 생두는 한 번으로 합쳤습니다. ${c.countries || 0}개국 ${c.places || 0}곳의 산지·농장이 지도에 표시됩니다. 마시는 원두 이름을 검색하면 그 커피가 시작된 곳으로 지도가 이동합니다.</p>
     <dl class="stats">
       <div class="stat"><dt>생두</dt><dd>${(c.beans || 0).toLocaleString()}종</dd></div>
       <div class="stat"><dt>산지·농장</dt><dd>${(c.places || 0).toLocaleString()}곳</dd></div>
       <div class="stat"><dt>국가</dt><dd>${c.countries || 0}개국</dd></div>
-      <div class="stat"><dt>모은 목록</dt><dd>${(c.listings || 0).toLocaleString()}건</dd></div>
     </dl>
     <div class="src">
-      <div class="row"><span class="k">출처</span><span>생두모아 · FIND MY GREEN COFFEE (공개 목록)</span></div>
       <div class="row"><span class="k">좌표</span><span>OpenStreetMap · Photon 지오코딩, 주요 산지는 관리 중심지로 보정</span></div>
       <div class="row"><span class="k">안내</span><span>가격과 매입 정보는 싣지 않습니다. 컵노트·품종 표기는 판매처에 따라 다를 수 있습니다.</span></div>
     </div>
