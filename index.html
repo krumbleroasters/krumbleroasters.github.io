@@ -6,6 +6,14 @@
 <meta name="theme-color" content="#FBF7F0" />
 <title>KRUMBLE ROASTERS · ORIGIN MAP</title>
 <meta name="description" content="크럼블로스터스 커피 산지·농장 지도 — 국내에 들어온 생두 2,800여 종이 어디서 자랐는지 지도에서 보여줍니다." />
+<link rel="canonical" href="https://krumbleroasters.github.io/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="KRUMBLE ROASTERS · ORIGIN MAP" />
+<meta property="og:title" content="KRUMBLE ROASTERS · ORIGIN MAP" />
+<meta property="og:description" content="국내에 유통되는 생두 2,846종이 어디서 자랐는지 지도에서 보여줍니다." />
+<meta property="og:url" content="https://krumbleroasters.github.io/" />
+<meta name="twitter:card" content="summary" />
+<link rel="alternate" type="application/xml" title="사이트맵" href="sitemap.xml" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
@@ -291,6 +299,18 @@
 
   .foot{margin-top:22px;font-size:10.5px;line-height:1.7;color:#A79C8D;text-align:center}
   .foot b{color:#8A8074;font-weight:700}
+  .foot a{color:#8A8074;text-decoration:none;font-weight:700;border-bottom:1px solid #E2D8C9}
+  .foot a:hover{color:var(--terra);border-bottom-color:var(--terra-soft)}
+
+  /* ---------- site links (guide · farms · about · privacy) ---------- */
+  .sitelinks{display:flex;flex-wrap:wrap;align-items:center;gap:0 8px;margin:7px 0 0}
+  .sitelinks a{
+    font-size:11.5px;font-weight:700;color:var(--ink-soft);text-decoration:none;
+    letter-spacing:-.01em;padding:2px 0;transition:color .16s ease;
+  }
+  .sitelinks a:hover,.sitelinks a:focus-visible{color:var(--terra)}
+  .sitelinks a + a::before{content:"·";color:#CBBFAE;margin-right:8px;font-weight:600}
+  .sitelinks a[aria-current="page"]{color:var(--terra)}
 
   /* ---------- desktop ---------- */
   @media(min-width:900px){
@@ -314,6 +334,24 @@
     .stat dd{font-size:12.5px}
   }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "KRUMBLE ROASTERS · ORIGIN MAP",
+  "alternateName": "크럼블로스터스 오리진 맵",
+  "url": "https://krumbleroasters.github.io/",
+  "inLanguage": "ko",
+  "description": "국내에 유통되는 생두 2,846종이 어디서 자랐는지 산지·농장 지도로 보여주는 손님용 화면입니다.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "크럼블로스터스",
+    "alternateName": "KRUMBLE ROASTERS",
+    "url": "https://krumbleroasters.github.io/about.html",
+    "sameAs": ["https://github.com/krumbleroasters"]
+  }
+}
+</script>
 </head>
 <body>
 <div class="app" id="app">
@@ -325,6 +363,12 @@
       </svg>
       <div class="brand-txt">KRUMBLE ROASTERS <span>·</span> ORIGIN MAP</div>
     </div>
+    <nav class="sitelinks" aria-label="사이트 안내">
+      <a href="guide.html">가이드</a>
+      <a href="farms.html">농장 아카이브</a>
+      <a href="about.html">소개</a>
+      <a href="privacy.html">개인정보처리방침</a>
+    </nav>
     <p class="lede">한 잔이 시작된 곳<em>.</em>
       <small id="ledeSub">마시거나 사 간 원두의 산지·농장을 지도에서 만나보세요.</small>
     </p>
@@ -954,7 +998,9 @@ function homeSheet() {
       <span class="rm">${(p.beanCount || 0).toLocaleString()}종 · ${p.precision === "country" ? "국가 단위" : p.precision === "farm" ? "농장 좌표" : "산지 단위"}</span></span>
     </button>`).join("")}
   </div>` : ""}
-  <p class="foot"><b>KRUMBLE ROASTERS</b> · ORIGIN MAP · 손님용 산지 지도</p>`;
+  <p class="foot"><b>KRUMBLE ROASTERS</b> · ORIGIN MAP · 손님용 산지 지도<br>
+    <a href="guide.html">산지 가이드</a> · <a href="farms.html">농장 아카이브</a> · <a href="about.html">소개</a> · <a href="privacy.html">개인정보처리방침</a>
+  </p>`;
 }
 
 function bindSheet() {
