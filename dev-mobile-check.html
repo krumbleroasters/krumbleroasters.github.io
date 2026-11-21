@@ -19,6 +19,14 @@
   const f = document.createElement("iframe");
   f.src = p;
   f.title = p;
+  f.addEventListener("load", () => {
+    try {
+      f.contentDocument.querySelectorAll('link[rel="stylesheet"]').forEach((l) => {
+        if (l.href.includes("cdn.jsdelivr")) return;
+        l.href = l.getAttribute("href").split("?")[0] + "?t=" + Date.now();
+      });
+    } catch (e) {}
+  });
   document.getElementById("host").appendChild(f);
 </script>
 </body>
