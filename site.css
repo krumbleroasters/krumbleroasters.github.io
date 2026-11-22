@@ -223,12 +223,12 @@ td a{color:var(--terra);font-weight:700;text-decoration:none}
 .pagefoot a{color:#6B6259;text-decoration:none;font-weight:700}
 .pagefoot a:hover{color:var(--terra)}
 
-@media (max-width:640px){
+@media (max-width:760px){
   .wrap{padding:28px 16px 60px}
   .topbar{padding:10px 14px;gap:8px 10px;flex-wrap:wrap}
   .brand b{font-size:10px;letter-spacing:.16em}
-  .nav{margin-left:0;width:100%;gap:0}
-  .nav a{font-size:12.5px;padding:6px 9px}
+  .nav{margin-left:0;width:100%;gap:0;flex-wrap:wrap;overflow:visible}
+  .nav a{font-size:12.5px;padding:6px 8px}
   section{margin-top:38px}
   .origin{padding:16px 16px 14px}
   .farm{padding:16px}

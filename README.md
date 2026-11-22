@@ -54,6 +54,17 @@
 - 그 원두들(페루 엘 디아만테 게이샤, 과테말라 산타펠리사 등)은 `beans.json` 카탈로그에 들어 있어
   전체 카탈로그에서 검색·지도로 그대로 찾을 수 있습니다. 푸터의 운영 주체 표기(`KRUMBLE ROASTERS`)는 유지합니다.
 
+## 2026-11-22: 내 커피 기록을 정식 메뉴에 연결
+
+- `index.html` · `guide.html` · `farms.html` · `about.html` · `privacy.html` 상단 메뉴와 바닥글 메뉴에
+  `내 커피 기록`(`log.html`)을 넣어 지도와 기록을 오갈 수 있게 했습니다. 메뉴 순서는
+  `지도 · 가이드 · 농장 아카이브 · 내 커피 기록 · 소개 · 개인정보처리방침`입니다.
+- `log.html` 머리글은 우측 상단 `TEST` 배지 대신 `산지 지도` · `가이드` 링크를 둡니다. `noindex`를 `index`로 바꾸고
+  canonical을 넣어, `sitemap.xml` 등재와 어긋나지 않게 했습니다.
+- 모바일(≤760px)에서는 상단 메뉴가 두 줄로 접히도록 `site.css`를 고쳤습니다(390px에서 가로 스크롤 없음).
+- 같은 메뉴를 `build_farms.py`의 템플릿에도 넣어 매일 21시 자동 빌드가 메뉴를 되돌리지 않습니다.
+- `sw.js` 캐시를 `oncoffeelog-v9`로 올려 기존 방문자도 새 메뉴를 바로 받습니다.
+
 ## 화면
 
 - **`index.html`** — 지도 (검색·핀·카드)
@@ -61,9 +72,10 @@
 - **`farms.html`** — 농장 아카이브 (생산자·연혁·고도·수상 기록)
 - **`about.html`** — 사이트 소개와 데이터 원칙
 - **`privacy.html`** — 개인정보처리방침
-- **`log.html`** — 내 커피 기록(개인 테스트). 사진 OCR로 이름을 찾아 내 지도에 핀으로 남기는 페이지로,
-  상단 메뉴·사이트맵에는 넣지 않습니다(`noindex`). 직접 URL `https://oncoffeelog.com/log.html` 로만 엽니다.
-  기록·사진은 방문자 브라우저(localStorage · IndexedDB)에만 저장되고 서버로 보내지 않습니다.
+- **`log.html`** — 내 커피 기록. 사진 OCR로 이름을 찾아 내 지도에 핀으로 남기는 페이지로,
+  이제 상단 메뉴와 `sitemap.xml`에 들어간 정식 페이지입니다(`index`, canonical `https://oncoffeelog.com/log.html`).
+  기록·사진은 방문자 브라우저(localStorage · IndexedDB)에만 저장되고, '내 기록 코드'를 쓸 때만
+  사진을 뺀 글자 기록이 구글 시트로 동기화됩니다(개인정보처리방침 4항).
 - `site.css` — 위 읽기 페이지 공용 스타일 (지도 화면과 같은 색·서체)
 - `site-tools.css` · `site-tools.js` — 홈 화면 추가·농장 추가 요청 버튼(모든 화면 공용)
 - `manifest.webmanifest` · `sw.js` — `oncoffeelog.com` 홈 화면 추가(설치)용 매니페스트와 최소 서비스 워커
