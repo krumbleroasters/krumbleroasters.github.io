@@ -675,7 +675,7 @@ function placeRow(p) {
   return `<button type="button" class="res places" data-place="${esc(p.id)}">
     <span class="dot" style="background:${color}"></span>
     <span><span class="rn">${esc(p.country)} · ${esc(p.name)}<span class="tag">${tier}</span></span>
-    <span class="rm">${esc(p.nameEn || "")}${p.nameEn ? " · " : ""}${n.toLocaleString()}종</span></span>
+    <span class="rm">${esc(p.nameEn || "")}${p.nameEn ? " · " : ""}${n ? n.toLocaleString() + "종" : "카탈로그 미수록"}</span></span>
   </button>`;
 }
 
@@ -1102,7 +1102,7 @@ function suggest(q) {
   if (!r.length && !places.length) { sugEl.innerHTML = `<div class="live">${esc(q)} — 카탈로그에서 찾지 못했습니다. 산지 이름이나 국가로 검색해 보세요.</div>`; return; }
   sugEl.innerHTML = places.map((p) => `<button type="button" data-sp="${esc(p.id)}" class="p">
     <span class="dot" style="background:${p.kind === "farm" ? "#9A5B2E" : "#2F4636"}"></span>
-    <span><span class="nm">${esc(p.country)} · ${esc(p.name)}</span><span class="mt">${p.precision === "farm" ? "농장" : p.precision === "country" ? "국가" : "산지"} · ${(p.beanCount || 0).toLocaleString()}종</span></span>
+    <span><span class="nm">${esc(p.country)} · ${esc(p.name)}</span><span class="mt">${p.kind === "farm" ? "농장" : p.kind === "country" ? "국가" : "산지"} · ${(p.beanCount || 0) ? (p.beanCount).toLocaleString() + "종" : "카탈로그 미수록"}</span></span>
   </button>`).join("") + r.map((b) => `<button type="button" data-sb="${esc(b.id)}">
     <span class="dot" style="background:#2F4636"></span>
     <span><span class="nm">${esc(b.name)}</span><span class="mt">${esc([b.country, b.region, b.process].filter(Boolean).join(" · "))}</span></span>
