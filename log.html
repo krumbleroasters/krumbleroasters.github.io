@@ -733,7 +733,7 @@
 
   /* ================= catalog (beans.json) ================= */
   var BEANS = [], PLACES = [], PLACE_BY_ID = new Map(), BEAN_BY_ID = new Map(), COUNTRIES = [], dataReady = false;
-  var dataPromise = null;
+  var dataPromise = null, catalogFails = 0;
 
   function normKo(s) { return String(s == null ? "" : s).toLowerCase().replace(/[^0-9a-z\uac00-\ud7a3]/g, ""); }
   function normEn(s) { return String(s == null ? "" : s).toLowerCase().replace(/[^0-9a-z]/g, ""); }
@@ -783,6 +783,7 @@
       })
       .catch(function (err) {
         console.warn("catalog load failed", err);
+        catalogFails++;
         dataPromise = null;
         return null;
       });
@@ -1283,6 +1284,11 @@
   function matchAndRender(text) {
     var items = findMatches(text, 5);
     if (!dataReady) {
+      if (catalogFails >= 2) {
+        renderCands([], "산지 카탈로그를 불러오지 못했어요(네트워크 확인). 아래 “목록에 없는 커피예요 · 직접 입력”으로 이름과 국가를 적어 기록할 수 있어요.");
+        $("#catState").textContent = "직접 입력으로 기록";
+        return;
+      }
       $("#candState").textContent = "카탈로그 불러오는 중…";
       loadCatalog().then(function () { matchAndRender(text); });
       return;
@@ -1546,7 +1552,12 @@
       if (v.length < 1) { $("#results").hidden = true; $("#results").innerHTML = ""; return; }
       qTimer = setTimeout(function () {
         if (!dataReady) {
-          loadCatalog().then(function () { $("#q").dispatchEvent(new Event("input")); });
+          if (catalogFails >= 2) {
+            $("#results").innerHTML = '<p class="candnote" style="padding:6px 2px">산지 카탈로그를 불러오지 못했어요. 아래 “직접 입력”으로 기록해 주세요.</p>';
+            $("#results").hidden = false;
+            return;
+          }
+          loadCatalog().then(function () { if (dataReady) $("#q").dispatchEvent(new Event("input")); });
           return;
         }
         var items = findMatches(v, 8);
