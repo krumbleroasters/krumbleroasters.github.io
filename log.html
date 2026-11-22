@@ -89,7 +89,8 @@
 
   /* ---------- map ---------- */
   .mapbox{
-    position:relative;border:1px solid var(--line);border-radius:16px;overflow:hidden;
+    position:relative;z-index:0;isolation:isolate;
+    border:1px solid var(--line);border-radius:16px;overflow:hidden;
     box-shadow:var(--shadow);background:#EFE7DA;
   }
   #map{height:clamp(280px,42vh,420px);width:100%}
@@ -298,7 +299,7 @@
 
   /* ---------- tabbar ---------- */
   .tabbar{
-    position:fixed;left:0;right:0;bottom:0;z-index:40;
+    position:fixed;left:0;right:0;bottom:0;z-index:800;
     display:flex;gap:6px;padding:8px 12px calc(8px + env(safe-area-inset-bottom));
     background:rgba(251,247,240,.96);backdrop-filter:saturate(140%) blur(12px);
     border-top:1px solid var(--line);
@@ -312,7 +313,7 @@
   .tabbar svg{display:block}
 
   /* ---------- sheet ---------- */
-  .sheetwrap{position:fixed;inset:0;z-index:60;display:flex;align-items:flex-end;justify-content:center}
+  .sheetwrap{position:fixed;inset:0;z-index:900;display:flex;align-items:flex-end;justify-content:center}
   .backdrop{position:absolute;inset:0;background:rgba(28,24,20,.42);backdrop-filter:blur(2px);animation:fade .18s ease}
   @keyframes fade{from{opacity:0}to{opacity:1}}
   .sheet{
@@ -351,7 +352,7 @@
   .reccard .acts .del.armed{color:#B4452C;font-weight:800}
 
   /* toast */
-  .toastwrap{position:fixed;left:0;right:0;bottom:calc(78px + env(safe-area-inset-bottom));z-index:80;display:flex;justify-content:center;pointer-events:none;padding:0 14px}
+  .toastwrap{position:fixed;left:0;right:0;bottom:calc(78px + env(safe-area-inset-bottom));z-index:950;display:flex;justify-content:center;pointer-events:none;padding:0 14px}
   .toast{
     background:rgba(34,30,26,.94);color:#FFF8EF;border-radius:12px;padding:10px 14px;
     font-size:12.5px;font-weight:700;line-height:1.5;box-shadow:0 10px 30px -12px rgba(0,0,0,.5);
