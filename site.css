@@ -14,6 +14,8 @@
   --green:#2F4636;
   --green-soft:#7E9478;
   --muted:#8A8074;
+  --navlog:#2F5D4A;          /* 내 커피 기록 버튼 — 차분한 세이지·포레스트 그린 */
+  --navlog-deep:#254B3B;
   --shadow:0 10px 30px -18px rgba(34,30,26,.45);
   --r:18px;
 }
@@ -55,6 +57,19 @@ button{font-family:inherit}
 }
 .nav a:hover{background:var(--cream-2);color:var(--ink)}
 .nav a[aria-current="page"]{background:var(--ink);color:#FFF8EF}
+
+/* 내 커피 기록 — 크림 배경에 어울리는 그린 알약 버튼 (다른 메뉴와 구분) */
+.nav a.nav-log,.nav a.nav-log:visited{
+  background:var(--navlog);color:#FBF7F0;font-weight:800;letter-spacing:-.01em;
+  padding:7px 13px;margin-left:4px;border-radius:999px;
+  box-shadow:0 6px 14px -9px rgba(37,75,59,.9);
+}
+.nav a.nav-log:hover,.nav a.nav-log:focus-visible{
+  background:var(--navlog-deep);color:#FFFDF8;
+  box-shadow:0 9px 20px -10px rgba(37,75,59,.95);
+}
+.nav a.nav-log:focus-visible{outline:2px solid var(--navlog);outline-offset:2px}
+.nav a.nav-log[aria-current="page"]{background:var(--navlog-deep);color:#FFFDF8}
 
 /* ---------- layout ---------- */
 .wrap{max-width:860px;margin:0 auto;padding:38px 20px 72px}
@@ -227,8 +242,9 @@ td a{color:var(--terra);font-weight:700;text-decoration:none}
   .wrap{padding:28px 16px 60px}
   .topbar{padding:10px 14px;gap:8px 10px;flex-wrap:wrap}
   .brand b{font-size:10px;letter-spacing:.16em}
-  .nav{margin-left:0;width:100%;gap:0;flex-wrap:wrap;overflow:visible}
+  .nav{margin-left:0;width:100%;gap:0 2px;flex-wrap:wrap;overflow:visible}
   .nav a{font-size:12.5px;padding:6px 8px}
+  .nav a.nav-log{padding:6px 11px;margin-left:2px}
   section{margin-top:38px}
   .origin{padding:16px 16px 14px}
   .farm{padding:16px}
