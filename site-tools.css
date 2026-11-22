@@ -93,6 +93,7 @@ html.ci-lock { overflow: hidden; }
 }
 .ci-btn:hover { background: #F3ECE1; }
 .ci-btn.primary { background: var(--ci-terra); border-color: var(--ci-terra); color: #FFF8EF; }
+a.ci-btn { text-decoration: none; display: inline-block; line-height: 1.2; }
 .ci-btn.primary:hover { background: #A94F2E; border-color: #A94F2E; }
 .ci-btn.ghost { background: transparent; border-color: transparent; color: var(--ci-soft); }
 .ci-btn:disabled { opacity: .6; cursor: default; }

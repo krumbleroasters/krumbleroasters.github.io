@@ -147,6 +147,10 @@
     };
   }
 
+  function issueUrl(req) {
+    return ISSUE_NEW_URL + "?title=" + encodeURIComponent(req.title) + "&body=" + encodeURIComponent(req.body);
+  }
+
   function openFarmRequest() {
     var rows = FIELDS.map(function (f) {
       var req = f.required ? ' <span class="ci-req">필수</span>' : "";
@@ -157,14 +161,17 @@
       return '<label class="ci-field" for="' + f.id + '"><span>' + esc(f.label) + req + "</span>" + input + "</label>";
     }).join("");
 
+    var sendControl = FARM_REQUEST_ENDPOINT
+      ? '<button type="submit" class="ci-btn primary" id="frq-send">보내기</button>'
+      : '<a class="ci-btn primary" id="frq-send" href="' + esc(issueUrl(farmRequestText())) + '" target="_blank" rel="noopener">GitHub 이슈로 보내기</a>';
+
     popup("농장 추가 요청",
       '<p class="ci-lead">지도와 아카이브에 없는 농장·워싱스테이션을 알려 주세요. 확인되는 자료만 골라 반영합니다.</p>' +
       '<form class="ci-form" id="frq-form" novalidate>' + rows +
         '<p class="ci-note">개인 이메일 주소는 받지 않습니다. 적어 주신 내용은 공개 저장소의 이슈로 남을 수 있습니다.</p>' +
         '<p class="ci-msg" id="frq-msg" role="status"></p>' +
         '<div class="ci-pop-foot">' +
-          '<button type="submit" class="ci-btn primary" id="frq-send">' +
-            (FARM_REQUEST_ENDPOINT ? "보내기" : "GitHub 이슈로 보내기") + "</button>" +
+          sendControl +
           '<button type="button" class="ci-btn" id="frq-copy">요청 내용 복사</button>' +
           '<button type="button" class="ci-btn ghost" data-ci-close>닫기</button>' +
         "</div>" +
@@ -172,28 +179,41 @@
 
     var form = document.getElementById("frq-form");
     var msg = document.getElementById("frq-msg");
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
+    var send = document.getElementById("frq-send");
+
+    function validate() {
       var missing = FIELDS.filter(function (f) {
         var el = document.getElementById(f.id);
         return f.required && el && !el.value.trim();
       });
-      if (missing.length) {
-        msg.textContent = "필수 항목을 채워 주세요: " + missing.map(function (f) { return f.label; }).join(", ");
-        var firstEl = document.getElementById(missing[0].id);
-        if (firstEl) firstEl.focus();
-        return;
-      }
-      var req = farmRequestText();
-      if (!FARM_REQUEST_ENDPOINT) {
-        var url = ISSUE_NEW_URL + "?title=" + encodeURIComponent(req.title) + "&body=" + encodeURIComponent(req.body);
-        window.open(url, "_blank", "noopener");
+      if (!missing.length) return true;
+      msg.className = "ci-msg err";
+      msg.textContent = "필수 항목을 채워 주세요: " + missing.map(function (f) { return f.label; }).join(", ");
+      var firstEl = document.getElementById(missing[0].id);
+      if (firstEl) firstEl.focus();
+      return false;
+    }
+
+    // GitHub 링크는 실제 링크로 열어 팝업 차단에 걸리지 않게 합니다.
+    if (!FARM_REQUEST_ENDPOINT) {
+      send.addEventListener("click", function (e) {
+        if (!validate()) { e.preventDefault(); return; }
+        send.href = issueUrl(farmRequestText());
         msg.className = "ci-msg ok";
         msg.textContent = "새 창의 GitHub 이슈 화면에서 'Submit new issue'를 눌러 주세요.";
+      });
+    }
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (!validate()) return;
+      var req = farmRequestText();
+      if (!FARM_REQUEST_ENDPOINT) {
+        send.href = issueUrl(req);
+        send.click();
         return;
       }
-      var btn = document.getElementById("frq-send");
-      btn.disabled = true;
+      send.disabled = true;
       msg.className = "ci-msg";
       msg.textContent = "보내는 중…";
       var payload = new FormData();
@@ -211,7 +231,7 @@
           msg.className = "ci-msg err";
           msg.textContent = "보내지 못했습니다. '요청 내용 복사'로 내용을 복사해 보내 주세요.";
         })
-        .then(function () { btn.disabled = false; });
+        .then(function () { send.disabled = false; });
     });
 
     document.getElementById("frq-copy").addEventListener("click", function () {
