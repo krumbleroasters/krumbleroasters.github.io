@@ -847,37 +847,128 @@ function refsBlock(p) {
   </div>`;
 }
 
-/* ---------- 로스터 한줄 후기 (지금은 브라우저 저장, 나중에 공용 DB로 교체) ----------
-   이 두 함수만 서버 API로 바꿔 끼우면 됩니다.
+/* ---------- 로스터 한줄 후기 (공용 DB: 구글 폼 접수 → 공개 구글 시트 읽기) ----------
+   · 제출: 구글 폼 formResponse POST — 로그인·계정 필요 없음, 이메일 수집 없음
+   · 읽기: 폼 응답을 옮겨 담는 공개 구글 시트(reviews 탭)를 gviz JSON으로 읽는다
+   · 방금 쓴 후기는 시트에 올라오기 전까지 이 기기에 남겨 두고 함께 보여 준다
      loadReviews(placeId) -> Promise<[{name, roast, text, at}]>
-     saveReview(placeId, review) -> Promise<review[]>                                      */
-const REVIEW_KEY = "krumble.roastReviews.v1";
+     saveReview(placeId, review) -> Promise<review[]>                            */
+const REVIEW_KEY = "krumble.roastReviews.v2";
 const ROASTS = ["라이트", "미디엄라이트", "미디엄", "다크"];
+const REVIEW_DB = {
+  sheetId: "1qIGVwlhB5O22dMrFrfffW2Xm8vsNHObUDsI8euzKi4U",
+  tab: "reviews",
+  formResponse: "https://docs.google.com/forms/d/e/1FAIpQLScQDYQf7xIg0uvkUG67gYuzE0SVlt64a-CZ0NczYSk3RdfnFw/formResponse",
+  formView: "https://docs.google.com/forms/d/e/1FAIpQLScQDYQf7xIg0uvkUG67gYuzE0SVlt64a-CZ0NczYSk3RdfnFw/viewform",
+  entry: {
+    place: "entry.102505071",
+    name: "entry.1990802694",
+    roast: "entry.877419205",
+    text: "entry.1310252727"
+  }
+};
+const REVIEW_TTL = 30 * 24 * 60 * 60 * 1000;   // 임시 보관 기간
+let lastSubmitFailed = false;
 
-function readReviewStore() {
+function readPendingReviews() {
   try {
-    if (typeof localStorage === "undefined") return {};
-    return JSON.parse(localStorage.getItem(REVIEW_KEY) || "{}") || {};
-  } catch (e) { return {}; }
+    if (typeof localStorage === "undefined") return [];
+    const list = JSON.parse(localStorage.getItem(REVIEW_KEY) || "[]");
+    if (!Array.isArray(list)) return [];
+    return list.filter((x) => x && x.place && x.text && Date.now() - (x.at || 0) < REVIEW_TTL);
+  } catch (e) { return []; }
 }
-function writeReviewStore(obj) {
+function writePendingReviews(list) {
   try {
-    if (typeof localStorage !== "undefined") localStorage.setItem(REVIEW_KEY, JSON.stringify(obj));
+    if (typeof localStorage !== "undefined") localStorage.setItem(REVIEW_KEY, JSON.stringify(list.slice(-50)));
   } catch (e) { /* 저장 공간이 없는 브라우저는 조용히 넘어감 */ }
 }
 
+const reviewSheet = { rows: null, at: 0, pending: null };
+
+function fetchSheetReviews(force) {
+  if (!force && reviewSheet.rows && Date.now() - reviewSheet.at < 30000) return Promise.resolve(reviewSheet.rows);
+  if (reviewSheet.pending) return reviewSheet.pending;
+  const url = "https://docs.google.com/spreadsheets/d/" + REVIEW_DB.sheetId + "/gviz/tq?tqx=out:json&sheet=" + encodeURIComponent(REVIEW_DB.tab);
+  reviewSheet.pending = (async () => {
+    try {
+      const ctrl = typeof AbortController !== "undefined" ? new AbortController() : null;
+      const timer = ctrl ? setTimeout(() => ctrl.abort(), 8000) : null;
+      const res = await fetch(url, ctrl ? { signal: ctrl.signal, cache: "no-store" } : { cache: "no-store" });
+      if (timer) clearTimeout(timer);
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      const text = await res.text();
+      const table = (JSON.parse(text.slice(text.indexOf("{"), text.lastIndexOf("}") + 1)) || {}).table || {};
+      const rows = (table.rows || []).map((r) => {
+        const c = (r.c || []).map((x) => (x && x.v != null ? String(x.v) : ""));
+        return { at: c[0] || "", place: (c[1] || "").trim(), name: (c[2] || "").trim(), roast: (c[3] || "").trim(), text: (c[4] || "").trim() };
+      }).filter((r) => r.place && r.text);
+      reviewSheet.rows = rows;
+      reviewSheet.at = Date.now();
+      return rows;
+    } catch (e) {
+      return reviewSheet.rows || [];   // 못 불러오면 지난 목록 또는 빈 목록
+    } finally {
+      reviewSheet.pending = null;
+    }
+  })();
+  return reviewSheet.pending;
+}
+
+function reviewTime(s) {
+  if (!s) return 0;
+  const t = Date.parse(String(s).replace(" ", "T"));
+  return isNaN(t) ? 0 : t;
+}
+function reviewKey(r) {
+  return String(r.name || "") + "|" + String(r.text || "").replace(/\s+/g, " ").trim();
+}
+
 async function loadReviews(placeId) {
-  const all = readReviewStore();
-  return Array.isArray(all[placeId]) ? all[placeId].slice() : [];
+  const rows = await fetchSheetReviews(false);
+  const seen = new Set();
+  const list = [];
+  rows.forEach((r) => {
+    if (r.place !== placeId) return;
+    seen.add(reviewKey(r));
+    list.push({ name: r.name || "익명 로스터", roast: r.roast, text: r.text, at: reviewTime(r.at) });
+  });
+  const keep = [];
+  readPendingReviews().forEach((p) => {
+    if (p.place !== placeId) { keep.push(p); return; }
+    if (seen.has(reviewKey(p))) return;   // 시트에 올라왔으니 임시 사본은 지운다
+    keep.push(p);
+    list.push({ name: p.name || "익명 로스터", roast: p.roast, text: p.text, at: p.at || 0, pending: true });
+  });
+  writePendingReviews(keep);
+  return list.sort((a, b) => a.at - b.at);
 }
 
 async function saveReview(placeId, review) {
-  const all = readReviewStore();
-  const list = Array.isArray(all[placeId]) ? all[placeId] : [];
-  list.push(review);
-  all[placeId] = list;
-  writeReviewStore(all);
-  return list.slice();
+  const item = {
+    pid: "p" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
+    place: placeId,
+    name: review.name || "익명 로스터",
+    roast: review.roast || "미디엄",
+    text: review.text,
+    at: review.at || Date.now()
+  };
+  const all = readPendingReviews();
+  all.push(item);
+  writePendingReviews(all);
+  const body = new FormData();
+  body.append(REVIEW_DB.entry.place, item.place);
+  body.append(REVIEW_DB.entry.name, item.name);
+  body.append(REVIEW_DB.entry.roast, item.roast);
+  body.append(REVIEW_DB.entry.text, item.text);
+  body.append("fvv", "1");
+  body.append("pageHistory", "0");
+  lastSubmitFailed = false;
+  try {
+    /* 구글 폼은 no-cors라 응답 본문을 읽을 수 없다. 요청이 나가면 접수로 본다. */
+    await fetch(REVIEW_DB.formResponse, { method: "POST", mode: "no-cors", body });
+  } catch (e) { lastSubmitFailed = true; }
+  return loadReviews(placeId);
 }
 
 function reviewsBlock(placeId) {
@@ -890,13 +981,14 @@ function reviewsBlock(placeId) {
       <input class="wide" name="text" type="text" maxlength="120" placeholder="로스팅·추출 한줄 후기" aria-label="한줄 후기" required />
       <button type="submit">후기 등록</button>
     </form>
-    <p class="revnote">지금은 이 기기에만 임시 저장됩니다 · 추후 공용 DB를 연결하면 모든 로스터와 공유됩니다.</p>
+    <p class="revnote" data-revmsg="1" role="status"></p>
+    <p class="revnote">등록한 후기는 모든 방문자에게 공개됩니다 · 로스터리명·배전도·후기 내용이 공개 지도에 표시될 수 있으며, 로그인·이메일 수집은 없습니다.</p>
   </div>`;
 }
 
 function reviewItemHTML(r) {
   const when = r.at ? new Date(r.at) : null;
-  const stamp = when && !isNaN(when) ? `${when.getFullYear()}.${String(when.getMonth() + 1).padStart(2, "0")}.${String(when.getDate()).padStart(2, "0")}` : "";
+  const stamp = r.pending ? "방금 등록" : when && !isNaN(when) ? `${when.getFullYear()}.${String(when.getMonth() + 1).padStart(2, "0")}.${String(when.getDate()).padStart(2, "0")}` : "";
   return `<div class="revitem">
     <div class="rh"><span class="who">${esc(r.name || "로스터")}</span><span class="roast">${esc(r.roast || "-")}</span><span class="when">${stamp}</span></div>
     <p class="rt2">${esc(r.text || "")}</p>
@@ -928,10 +1020,15 @@ function bindReviews(root) {
       const text = (form.elements.text.value || "").trim();
       if (text.length < 2) { form.elements.text.focus(); return; }
       const btn = form.querySelector("button");
+      const msg = box.querySelector("[data-revmsg]");
       if (btn) btn.disabled = true;
+      if (msg) msg.textContent = "등록 중…";
       await saveReview(id, { name: name || "익명 로스터", roast, text, at: Date.now() });
       form.reset();
       if (btn) btn.disabled = false;
+      if (msg) msg.textContent = lastSubmitFailed
+        ? "전송에 실패했습니다. 잠시 뒤 다시 눌러 주세요. (적은 내용은 이 기기에 남아 있습니다)"
+        : "등록했습니다. 다른 로스터에게도 곧 보입니다.";
       await hydrateReviews(box.parentElement || sheetEl);
     });
   });
