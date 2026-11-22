@@ -79,6 +79,8 @@ html.ci-lock { overflow: hidden; }
 }
 .ci-req { color: var(--ci-terra); font-weight: 700; font-size: 11px; margin-left: 3px; }
 
+.ci-link { color: var(--ci-terra); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+.ci-link:hover { color: #A94F2E; }
 .ci-note { margin: 6px 0 0; font-size: 12px; color: var(--ci-soft); }
 .ci-msg { min-height: 0; margin: 8px 0 0; font-size: 12.5px; }
 .ci-msg:empty { display: none; }

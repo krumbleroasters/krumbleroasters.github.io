@@ -201,7 +201,7 @@
           '<button type="button" class="ci-btn" id="frq-copy">요청 내용 복사</button>' +
           '<button type="button" class="ci-btn ghost" data-ci-close>닫기</button>' +
         "</div>" +
-        '<p class="ci-note"><a class="link" id="frq-formlink" href="' + esc(FARM_FORM.viewUrl) + '" target="_blank" rel="noopener">구글 폼 화면에서 직접 보내기</a></p>' +
+        '<p class="ci-note"><a class="ci-link" id="frq-formlink" href="' + esc(FARM_FORM.viewUrl) + '" target="_blank" rel="noopener">구글 폼 화면에서 직접 보내기</a></p>' +
       "</form>");
 
     var form = document.getElementById("frq-form");
