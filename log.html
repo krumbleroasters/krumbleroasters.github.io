@@ -144,6 +144,28 @@
   .rrow .st{flex:none;font-size:10.5px;color:#D08A3E;letter-spacing:-.5px}
   .rrow .st i{font-style:normal;color:#E3D8C8}
 
+  /* ---------- sync ---------- */
+  .syncbox{margin:20px 0 0;padding:12px 13px 11px;background:var(--paper);border:1px solid var(--line);border-radius:14px}
+  .synchead{display:flex;align-items:flex-start;gap:8px}
+  .synchead .lbl{min-width:0;flex:1}
+  .synchead .kicker{margin:0 0 1px;font-size:9px;letter-spacing:.2em}
+  .synchead b{display:block;font-size:16px;font-weight:800;letter-spacing:.07em;line-height:1.35;font-variant-numeric:tabular-nums;word-break:break-all}
+  .synchead .copy{
+    flex:none;align-self:center;border:1px solid var(--line);background:#fff;border-radius:9px;
+    padding:7px 11px;font-size:11px;font-weight:800;color:var(--terra);min-height:34px;
+  }
+  .synchead .copy:active{background:var(--cream-2)}
+  .syncnote{margin:7px 0 9px;font-size:11px;line-height:1.65;color:#7A6A57}
+  .syncrow{display:flex;gap:7px;flex-wrap:wrap}
+  .codeload{display:flex;gap:6px;margin-top:7px}
+  .codeload input{
+    flex:1;min-width:0;min-height:40px;border:1px solid var(--line);border-radius:10px;background:#fff;
+    padding:8px 10px;font-size:14px;letter-spacing:.06em;text-transform:uppercase;
+  }
+  .syncmsg{margin:7px 0 0;font-size:10.5px;line-height:1.6;color:var(--muted)}
+  .syncmsg.ok{color:#37563C}
+  .syncmsg.warn{color:#8A4A2B}
+
   /* ---------- data actions ---------- */
   .datacard{margin:22px 0 6px;padding:13px 14px;background:var(--cream-2);border-radius:14px}
   .datacard p{margin:0 0 10px;font-size:11px;line-height:1.65;color:#7A6A57}
@@ -409,7 +431,7 @@
       <div class="phead">
         <p class="kicker">My coffee map</p>
         <h2>내가 마신 <em>커피 지도</em></h2>
-        <p>핀을 누르면 그날의 사진과 메모가 열립니다. 기록은 이 브라우저에만 저장돼요.</p>
+        <p>핀을 누르면 그날의 사진과 메모가 열립니다. 사진은 이 기기에, 글자 기록은 내 기록 코드로 함께 보관돼요.</p>
       </div>
 
       <div class="mapbox"><div id="map"></div></div>
@@ -422,8 +444,28 @@
       <div class="sec-title"><h3>최근 기록</h3><span id="recentCount">0</span></div>
       <div class="recent" id="recentList"></div>
 
+      <div class="syncbox" id="syncBox">
+        <div class="synchead">
+          <div class="lbl">
+            <p class="kicker">My record code</p>
+            <b id="syncCode">CUP-····-····</b>
+          </div>
+          <button class="copy" id="btnCopyCode" type="button">코드 복사</button>
+        </div>
+        <p class="syncnote" id="syncNote">이 코드가 내 기록 표시예요. 폰을 바꾸거나 다른 기기에서 이 코드를 넣으면 기록을 그대로 이어 볼 수 있습니다.</p>
+        <div class="syncrow">
+          <button class="btn ghost sm" id="btnSyncNow" type="button">지금 동기화</button>
+          <button class="btn ghost sm" id="btnCodeLoad" type="button">다른 기기 코드 불러오기</button>
+        </div>
+        <div class="codeload" id="codeLoadBox" hidden>
+          <input type="text" id="inpCode" placeholder="CUP-XXXX-XXXX" autocomplete="off" spellcheck="false" maxlength="14" aria-label="불러올 내 기록 코드" />
+          <button class="btn sm" id="btnCodeOk" type="button">불러오기</button>
+        </div>
+        <p class="syncmsg" id="syncMsg" role="status"></p>
+      </div>
+
       <div class="datacard">
-        <p>이 기기의 브라우저(localStorage · IndexedDB)에만 저장됩니다. 백업은 JSON으로 내려받아 두세요.</p>
+        <p>사진은 이 기기의 브라우저(IndexedDB)에만, 글자 기록은 이 기기(localStorage)와 내 기록 코드의 구글 시트에 저장됩니다. 백업은 JSON으로 내려받아 두세요.</p>
         <div class="row">
           <button class="btn ghost sm" id="btnExport">JSON 내보내기</button>
           <button class="btn ghost sm" id="btnImport">JSON 불러오기</button>
@@ -550,7 +592,7 @@
         <div class="savebar">
           <button class="btn terra" id="btnSave" type="button">이 커피 기록하기</button>
         </div>
-        <p class="savehint">사진과 기록은 이 브라우저에만 저장됩니다.</p>
+        <p class="savehint">사진은 이 기기에만, 글자 기록은 내 기록 코드로 함께 보관됩니다.</p>
       </div>
     </section>
   </div>
@@ -729,6 +771,344 @@
   function persist() {
     try { localStorage.setItem(LS_KEY, JSON.stringify(records)); }
     catch (e) { toast("저장 공간이 부족해 사진 기록을 저장하지 못했어요"); }
+  }
+  function sortRecords() {
+    records.sort(function (a, b) { return (b.date || "").localeCompare(a.date || "") || (b.createdAt || 0) - (a.createdAt || 0); });
+  }
+
+  /* ================= 내 기록 코드 동기화 (구글 폼 접수 → 공개 구글 시트 읽기) =================
+     · 제출: 구글 폼 formResponse POST — 로그인·계정 필요 없음, 이메일 수집 없음
+     · 읽기: 폼 응답을 옮겨 담는 공개 구글 시트(logs 탭)를 gviz JSON으로 읽고 내 코드 행만 골라 합칩니다
+     · 사진은 올리지 않습니다(이 기기 IndexedDB에만). 글자 기록만 오갑니다                       */
+  var SYNC_KEY = "krumble.coffeeLog.sync.v1";
+  var QUEUE_KEY = "krumble.coffeeLog.pending.v1";
+  var DEL_KEY = "krumble.coffeeLog.deleted.v1";
+  var LOG_DB = {
+    sheetId: "1Jp8xsE0GOEJJcEwcgi3ZJ5yGyLq2hftl_ND7v5T_c3g",
+    tab: "logs",
+    formResponse: "https://docs.google.com/forms/d/e/1FAIpQLSe9Qxmgmgc4TBrptTpM1hmSrmLadiBJAW4sVFq1RPM2ul6gAw/formResponse",
+    entry: {
+      code: "entry.382398011", rid: "entry.1520587734", date: "entry.1462992263",
+      name: "entry.1677651302", placeId: "entry.588393125", region: "entry.932325753",
+      country: "entry.291511047", farm: "entry.762427338", lat: "entry.916742112",
+      lon: "entry.1146854281", rating: "entry.1507825568", tags: "entry.1837600348",
+      cafe: "entry.172872349", note: "entry.1610992161", device: "entry.444212229",
+      beanId: "entry.1187342600", precision: "entry.1482260893", action: "entry.1946444473"
+    }
+  };
+  var CODE_AB = "0123456789ABCDEFGHJKMNPQRSTVWXYZ";   // 헷갈리는 I·L·O·U 제외
+
+  function randCode(n) {
+    var s = "";
+    var buf = null;
+    if (window.crypto && crypto.getRandomValues) { buf = new Uint8Array(n); crypto.getRandomValues(buf); }
+    for (var i = 0; i < n; i++) {
+      var v = buf ? buf[i] : Math.floor(Math.random() * 256);
+      s += CODE_AB.charAt(v % 32);
+    }
+    return s;
+  }
+  function newSyncCode() { return "CUP-" + randCode(4) + "-" + randCode(4); }
+  function deviceLabel() {
+    var ua = navigator.userAgent || "";
+    var os = /iPhone/.test(ua) ? "iPhone" : /iPad/.test(ua) ? "iPad" : /Android/.test(ua) ? "Android"
+      : /Macintosh/.test(ua) ? "Mac" : /Windows/.test(ua) ? "PC" : "기기";
+    return os + " " + randCode(2);
+  }
+  function readSync() {
+    var s = null;
+    try { s = JSON.parse(localStorage.getItem(SYNC_KEY) || "null"); } catch (e) { s = null; }
+    if (!s || typeof s !== "object" || !s.code) {
+      s = { code: newSyncCode(), device: deviceLabel(), at: Date.now() };
+    }
+    if (!s.device) s.device = deviceLabel();
+    try { localStorage.setItem(SYNC_KEY, JSON.stringify(s)); } catch (e) {}
+    return s;
+  }
+  function writeSync(s) { try { localStorage.setItem(SYNC_KEY, JSON.stringify(s)); } catch (e) {} }
+
+  function normalizeCode(raw) {
+    var s = String(raw || "").toUpperCase().replace(/[^0-9A-Z]/g, "");
+    if (s.indexOf("CUP") === 0) s = s.slice(3);
+    if (s.length !== 8) return "";
+    return "CUP-" + s.slice(0, 4) + "-" + s.slice(4);
+  }
+
+  function readDeleted() {
+    try {
+      var list = JSON.parse(localStorage.getItem(DEL_KEY) || "[]");
+      return Array.isArray(list) ? list : [];
+    } catch (e) { return []; }
+  }
+  function addDeleted(id) {
+    var list = readDeleted();
+    if (list.indexOf(id) === -1) list.push(id);
+    try { localStorage.setItem(DEL_KEY, JSON.stringify(list.slice(-500))); } catch (e) {}
+  }
+
+  function readQueue() {
+    try {
+      var list = JSON.parse(localStorage.getItem(QUEUE_KEY) || "[]");
+      return Array.isArray(list) ? list : [];
+    } catch (e) { return []; }
+  }
+  function writeQueue(list) {
+    try { localStorage.setItem(QUEUE_KEY, JSON.stringify(list.slice(-200))); } catch (e) {}
+  }
+  function enqueue(action, rec) {
+    var list = readQueue();
+    list = list.filter(function (x) { return !(x && x.rec && x.rec.id === rec.id && x.action === action); });
+    list.push({ action: action, rec: rec, at: Date.now() });
+    writeQueue(list);
+  }
+
+  var logCache = { rows: null, at: 0, pending: null, failed: false };
+  function rowTime(s) {
+    if (!s) return 0;
+    var t = Date.parse(String(s).replace(" ", "T"));
+    return isNaN(t) ? 0 : t;
+  }
+  function fetchLogRows(force) {
+    if (!force && logCache.rows && Date.now() - logCache.at < 60000) return Promise.resolve(logCache.rows);
+    if (logCache.pending) return logCache.pending;
+    var url = "https://docs.google.com/spreadsheets/d/" + LOG_DB.sheetId +
+      "/gviz/tq?tqx=out:json&sheet=" + encodeURIComponent(LOG_DB.tab);
+    logCache.pending = new Promise(function (resolve, reject) {
+      var ctrl = typeof AbortController !== "undefined" ? new AbortController() : null;
+      var timer = ctrl ? setTimeout(function () { ctrl.abort(); }, 9000) : null;
+      fetch(url, ctrl ? { signal: ctrl.signal, cache: "no-store" } : { cache: "no-store" })
+        .then(function (res) {
+          if (!res.ok) throw new Error("HTTP " + res.status);
+          return res.text();
+        })
+        .then(function (text) {
+          if (timer) clearTimeout(timer);
+          var parsed = JSON.parse(text.slice(text.indexOf("{"), text.lastIndexOf("}") + 1)) || {};
+          var rows = (((parsed.table || {}).rows) || []).map(function (r) {
+            var c = (r.c || []).map(function (x) { return x && x.v != null ? String(x.v) : ""; });
+            return {
+              at: (c[0] || "").trim(), code: (c[1] || "").trim().toUpperCase(), rid: (c[2] || "").trim(),
+              date: (c[3] || "").trim(), name: (c[4] || "").trim(), placeId: (c[5] || "").trim(),
+              region: (c[6] || "").trim(), country: (c[7] || "").trim(), farm: (c[8] || "").trim(),
+              lat: (c[9] || "").trim(), lon: (c[10] || "").trim(), rating: (c[11] || "").trim(),
+              tags: (c[12] || "").trim(), cafe: (c[13] || "").trim(), note: (c[14] || "").trim(),
+              device: (c[15] || "").trim(), beanId: (c[16] || "").trim(), precision: (c[17] || "").trim(),
+              action: ((c[18] || "").trim() || "저장")
+            };
+          }).filter(function (r) { return r.rid && r.rid !== "기록ID" && r.at !== "접수시각"; });
+          logCache.rows = rows;
+          logCache.at = Date.now();
+          logCache.failed = false;
+          resolve(rows);
+        })
+        .catch(function (err) {
+          if (timer) clearTimeout(timer);
+          logCache.failed = true;
+          reject(err);
+        });
+    });
+    var settle = function () { logCache.pending = null; };
+    logCache.pending.then(settle, settle);
+    return logCache.pending;
+  }
+
+  function recordFromRow(r) {
+    var lat = r.lat === "" ? null : Number(r.lat);
+    var lon = r.lon === "" ? null : Number(r.lon);
+    return {
+      id: r.rid,
+      createdAt: rowTime(r.at) || Date.now(),
+      date: r.date || "",
+      name: r.name || "",
+      country: r.country || "",
+      region: r.region || "",
+      farm: r.farm || "",
+      placeId: r.placeId || null,
+      beanId: r.beanId || null,
+      lat: isFinite(lat) && lat !== null && r.lat !== "" ? lat : null,
+      lon: isFinite(lon) && lon !== null && r.lon !== "" ? lon : null,
+      precision: r.precision || "",
+      rating: parseInt(r.rating, 10) || 0,
+      tags: r.tags ? r.tags.split(/[,·]/).map(function (t) { return t.trim(); }).filter(Boolean).slice(0, 8) : [],
+      cafe: r.cafe || "",
+      note: r.note || "",
+      device: r.device || "",
+      photoId: "",
+      thumb: "",
+      synced: true
+    };
+  }
+
+  function mergeRows(code, rows) {
+    var have = new Set(records.map(function (r) { return r.id; }));
+    var gone = new Set(readDeleted());
+    var added = 0;
+    rows.forEach(function (r) {
+      if (r.code !== code || r.action === "삭제" || !r.rid) return;
+      if (have.has(r.rid) || gone.has(r.rid)) return;
+      var rec = recordFromRow(r);
+      if (!rec.name) return;
+      records.push(rec);
+      have.add(r.rid);
+      added++;
+    });
+    if (added) { sortRecords(); persist(); renderAll(); }
+    return added;
+  }
+
+  function setSyncMsg(msg, kind) {
+    var el = $("#syncMsg");
+    if (!el) return;
+    el.textContent = msg || "";
+    el.className = "syncmsg" + (kind ? " " + kind : "");
+  }
+  function showCode() {
+    var s = readSync();
+    var el = $("#syncCode");
+    if (el) el.textContent = s.code;
+    var note = $("#syncNote");
+    if (note) note.textContent = "이 코드가 내 기록 표시예요. 글자 기록이 이 코드로 구글 시트에 보관되고, 폰을 바꾸거나 다른 기기에서 같은 코드를 넣으면 기록을 그대로 이어 볼 수 있습니다.";
+  }
+
+  function formBody(rec, action) {
+    var e = LOG_DB.entry;
+    var s = readSync();
+    var body = new FormData();
+    body.append(e.code, s.code);
+    body.append(e.rid, rec.id || "");
+    body.append(e.date, rec.date || "");
+    body.append(e.name, rec.name || "");
+    body.append(e.placeId, rec.placeId || "");
+    body.append(e.region, rec.region || "");
+    body.append(e.country, rec.country || "");
+    body.append(e.farm, rec.farm || "");
+    body.append(e.lat, typeof rec.lat === "number" ? String(rec.lat) : "");
+    body.append(e.lon, typeof rec.lon === "number" ? String(rec.lon) : "");
+    body.append(e.rating, rec.rating ? String(rec.rating) : "");
+    body.append(e.tags, (rec.tags || []).join(","));
+    body.append(e.cafe, rec.cafe || "");
+    body.append(e.note, rec.note || "");
+    body.append(e.device, s.device || deviceLabel());
+    body.append(e.beanId, rec.beanId || "");
+    body.append(e.precision, rec.precision || "");
+    body.append(e.action, action);
+    body.append("fvv", "1");
+    body.append("pageHistory", "0");
+    return body;
+  }
+
+  function postRecord(rec, action) {
+    /* 구글 폼은 no-cors라 응답 본문을 읽을 수 없다. 요청이 나가면 접수로 본다. */
+    return fetch(LOG_DB.formResponse, { method: "POST", mode: "no-cors", body: formBody(rec, action) })
+      .then(function () { return true; })
+      .catch(function () { return false; });
+  }
+  function sendRecord(rec, action) {
+    return postRecord(rec, action).then(function (ok) {
+      if (!ok) enqueue(action, rec);   // 못 보낸 것은 다음 동기화 때 다시 보낸다(시트가 기록ID로 중복을 막음)
+      return ok;
+    });
+  }
+  function flushQueue() {
+    var list = readQueue();
+    if (!list.length) return Promise.resolve(0);
+    var sent = 0;
+    var chain = Promise.resolve();
+    list.forEach(function (item) {
+      chain = chain.then(function () {
+        if (!item || !item.rec || !item.rec.id) return;
+        return postRecord(item.rec, item.action || "저장").then(function (ok) {
+          if (!ok) return;
+          sent++;
+          var left = readQueue().filter(function (x) {
+            return !(x && x.rec && x.rec.id === item.rec.id && x.action === item.action);
+          });
+          writeQueue(left);
+        });
+      });
+    });
+    return chain.then(function () { return sent; });
+  }
+
+  function syncPull(manual) {
+    var s = readSync();
+    showCode();
+    if (manual) setSyncMsg("시트에서 내 기록을 확인하는 중…", "");
+    return fetchLogRows(!!manual)
+      .then(function (rows) {
+        var added = mergeRows(s.code, rows);
+        var mine = rows.filter(function (r) { return r.code === s.code && r.action !== "삭제"; }).length;
+        if (added) setSyncMsg(added + "잔을 시트에서 불러왔어요 · 코드 기록 " + mine + "잔", "ok");
+        else if (manual) setSyncMsg(mine ? "시트와 같아요 · 코드 기록 " + mine + "잔" : "이 코드로 저장된 기록이 시트에 아직 없어요", mine ? "ok" : "");
+        else setSyncMsg(mine ? "코드 기록 " + mine + "잔 · 시트와 맞춰 두었어요" : "", mine ? "ok" : "");
+        return added;
+      })
+      .catch(function () {
+        if (manual) setSyncMsg("시트를 지금 불러오지 못했어요. 잠시 뒤 '지금 동기화'를 다시 눌러 주세요.", "warn");
+        return -1;
+      });
+  }
+
+  function adoptCode(code) {
+    var s = readSync();
+    var prev = s.code;
+    var same = prev === code;
+    if (!same) {
+      s.code = code;
+      writeSync(s);
+      showCode();
+    }
+    setSyncMsg("이 코드의 기록을 불러오는 중…", "");
+    fetchLogRows(true).then(function (rows) {
+      var added = mergeRows(code, rows);
+      var mine = rows.filter(function (r) { return r.code === code && r.action !== "삭제"; }).length;
+      if (mine) {
+        setSyncMsg("이 코드로 " + mine + "잔을 찾았어요" + (added ? " · 새로 " + added + "잔을 불러왔어요" : "") + (same ? "" : " · 이제 이 코드로 저장됩니다"), "ok");
+        toast(added ? added + "잔을 불러왔어요" : "이 코드의 기록을 확인했어요");
+      } else {
+        setSyncMsg("이 코드로 저장된 기록을 시트에서 찾지 못했어요. 코드를 확인해 주세요." + (same ? "" : " (이전 코드: " + prev + ")"), "warn");
+        toast("그 코드의 기록을 찾지 못했어요");
+      }
+    }).catch(function () {
+      setSyncMsg("시트를 불러오지 못했어요. 잠시 뒤 다시 시도해 주세요.", "warn");
+    });
+  }
+
+  function copyCode() {
+    var code = readSync().code;
+    var done = function () { toast("내 기록 코드를 복사했어요 · " + code); };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(code).then(done, function () { toast("코드: " + code); });
+    } else {
+      toast("코드: " + code);
+    }
+  }
+
+  function initSync() {
+    var box = $("#syncBox");
+    if (!box) return;
+    showCode();
+    $("#btnCopyCode").addEventListener("click", copyCode);
+    $("#btnSyncNow").addEventListener("click", function () {
+      this.disabled = true;
+      var self = this;
+      flushQueue().then(function () { return syncPull(true); }).then(function () { self.disabled = false; });
+    });
+    $("#btnCodeLoad").addEventListener("click", function () {
+      var box2 = $("#codeLoadBox");
+      box2.hidden = !box2.hidden;
+      if (!box2.hidden) $("#inpCode").focus();
+    });
+    $("#btnCodeOk").addEventListener("click", function () {
+      var code = normalizeCode($("#inpCode").value);
+      if (!code) { toast("코드를 확인해 주세요 (예: CUP-4K7Q-2M9X)"); $("#inpCode").focus(); return; }
+      $("#inpCode").value = code;
+      adoptCode(code);
+    });
+    $("#inpCode").addEventListener("keydown", function (e) {
+      if (e.key === "Enter") { e.preventDefault(); $("#btnCodeOk").click(); }
+    });
+    flushQueue().then(function () { return syncPull(false); });
   }
 
   /* ================= catalog (beans.json) ================= */
@@ -1422,8 +1802,9 @@
       .catch(function () {})
       .then(function () {
         records.unshift(rec);
-        records.sort(function (a, b) { return (b.date || "").localeCompare(a.date || "") || (b.createdAt || 0) - (a.createdAt || 0); });
+        sortRecords();
         persist();
+        sendRecord(rec, "저장");   // 글자 기록만 시트로 보낸다(화면에는 이미 보임)
         resetForm();
         setView("map");
         renderAll();
@@ -1645,6 +2026,8 @@
       }
       var rec = records.find(function (r) { return r.id === id; });
       records = records.filter(function (r) { return r.id !== id; });
+      addDeleted(id);
+      sendRecord({ id: id }, "삭제");   // 시트에서도 지우도록 삭제 표시를 보낸다
       persist();
       if (rec && rec.photoId) PhotoDB.del(rec.photoId);
       renderAll();
@@ -1672,6 +2055,7 @@
     bind();
     renderAll();
     loadCatalog();
+    initSync();
     window.addEventListener("storage", function (e) {
       if (e.key === LS_KEY) { loadRecords(); renderAll(); }
     });
