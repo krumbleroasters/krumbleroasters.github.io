@@ -1198,6 +1198,13 @@ function syncUrl() {
 }
 
 /* ---------- 시작 ---------- */
+/* 인쇄물에 남은 예전 딥링크 값을 카탈로그 검색어로 옮깁니다 */
+const LEGACY_QR = {
+  "el-diamante": "엘 디아만테",
+  "santa-felisa-2722": "산타펠리사",
+  "peru-cusco-flores": "쿠스코"
+};
+
 async function boot() {
   renderChips();
   renderSheet();
@@ -1215,10 +1222,12 @@ async function boot() {
   }
   renderChips();
   drawPins();
-  const beanId = params.get("bean"), placeId = params.get("place"), q = params.get("q");
+  const beanId = params.get("bean"), placeId = params.get("place"), q = params.get("q"), coffee = params.get("coffee");
   if (beanId) { const b = CAT.beans.find((x) => x.id === beanId); if (b) return selectBean(b); }
   if (placeId) { const p = placeById.get(placeId); if (p) return selectPlace(p); }
-  if (q) { qEl.value = q; state.query = q; state.results = searchBeans(q); renderSheet(); }
+  /* 예전에 인쇄해 둔 ?coffee= QR이 남아 있어도 카탈로그 검색으로 이어지게 */
+  const query = q || LEGACY_QR[coffee] || "";
+  if (query) { qEl.value = query; state.query = query; state.results = searchBeans(query); renderSheet(); syncUrl(); }
   else renderSheet();
 }
 
