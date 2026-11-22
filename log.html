@@ -316,7 +316,7 @@
   .backdrop{position:absolute;inset:0;background:rgba(28,24,20,.42);backdrop-filter:blur(2px);animation:fade .18s ease}
   @keyframes fade{from{opacity:0}to{opacity:1}}
   .sheet{
-    position:relative;width:100%;max-width:540px;max-height:88vh;display:flex;flex-direction:column;
+    position:relative;width:100%;max-width:540px;min-width:0;max-height:88vh;display:flex;flex-direction:column;
     background:var(--cream);border-radius:22px 22px 0 0;box-shadow:0 -10px 40px -20px rgba(34,30,26,.6);
     animation:up .22s cubic-bezier(.22,.8,.3,1);
   }
@@ -324,16 +324,16 @@
   .sheetgrip{width:38px;height:4px;border-radius:3px;background:#DCD1BF;margin:8px auto 0;flex:none}
   .sheethead{display:flex;align-items:flex-start;gap:10px;padding:10px 16px 10px;flex:none}
   .sheethead .kicker{margin:0 0 2px}
-  .sheethead h2{margin:0;font-size:18px;line-height:1.3;letter-spacing:-.02em}
+  .sheethead h2{margin:0;font-size:18px;line-height:1.3;letter-spacing:-.02em;overflow-wrap:anywhere}
   .sheethead .x{
     margin-left:auto;flex:none;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);
     background:#fff;font-size:15px;line-height:1;color:var(--ink-soft);
   }
-  .sheetbody{overflow:auto;padding:0 12px calc(18px + env(safe-area-inset-bottom));-webkit-overflow-scrolling:touch}
+  .sheetbody{overflow:auto;padding:0 12px calc(18px + env(safe-area-inset-bottom));-webkit-overflow-scrolling:touch;min-width:0;width:100%}
 
-  .reccard{background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:10px}
-  .reccard .ph{position:relative;background:#2A2521;aspect-ratio:4/3;overflow:hidden}
-  .reccard .ph img{width:100%;height:100%;object-fit:cover}
+  .reccard{background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:10px;min-width:0}
+  .reccard .ph{position:relative;background:#2A2521;aspect-ratio:4/3;overflow:hidden;width:100%}
+  .reccard .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
   .reccard .ph .none{width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:#8A8074}
   .reccard .body{padding:12px 13px 13px}
   .reccard h3{margin:0;font-size:15px;line-height:1.4;letter-spacing:-.015em;font-weight:800}
