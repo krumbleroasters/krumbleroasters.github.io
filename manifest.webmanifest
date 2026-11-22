@@ -1,0 +1,16 @@
+{
+  "name": "커피 인사이트 · KRUMBLE ROASTERS",
+  "short_name": "커피인사이트",
+  "description": "국내에 유통되는 생두가 어디서 자랐는지 산지·농장 지도로 보여주는 손님용 화면입니다.",
+  "lang": "ko",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FBF7F0",
+  "theme_color": "#FBF7F0",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

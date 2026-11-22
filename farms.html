@@ -2,18 +2,25 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8" />
+<script>/* 진단용: 페이지 오류를 메모리에 모아 둡니다 (서버로 보내지 않음) */
+window.__ciErrors = [];
+addEventListener("error", function (e) { window.__ciErrors.push((e.message || "error") + " @ " + (e.filename || "")); });
+addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("rejection: " + e.reason); });</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="theme-color" content="#FBF7F0" />
 <title>명문 커피 농장 아카이브 — 역사와 수상 기록 · KRUMBLE ROASTERS</title>
-<meta name="description" content="파나마 에스메랄다·엘리다·하트만, 콜롬비아 엘 파라이소·엘 디비소, 과테말라 엘 인헤르또·엘 소코로, 코스타리카 돈 마요 등 지도에 올라온 농장 28곳의 생산자·연혁·고도·수상 기록을 확인된 자료만으로 정리했습니다." />
+<meta name="description" content="파나마 에스메랄다·엘리다·하트만, 콜롬비아 엘 파라이소·엘 디비소, 과테말라 엘 인헤르또·엘 소코로, 코스타리카 돈 마요 등 지도에 올라온 농장 29곳의 생산자·연혁·고도·수상 기록을 확인된 자료만으로 정리했습니다." />
 <link rel="canonical" href="https://coffeeinsight.kr/farms.html" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="명문 커피 농장 아카이브 — 역사와 수상 기록" />
-<meta property="og:description" content="지도에 올라온 농장 28곳의 생산자·연혁·고도·수상 내역을 확인된 자료만으로 정리한 아카이브." />
+<meta property="og:description" content="지도에 올라온 농장 29곳의 생산자·연혁·고도·수상 내역을 확인된 자료만으로 정리한 아카이브." />
 <meta property="og:url" content="https://coffeeinsight.kr/farms.html" />
 <meta name="twitter:card" content="summary" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
 <link rel="stylesheet" href="site.css" />
+<link rel="manifest" href="manifest.webmanifest" />
+<link rel="apple-touch-icon" href="icon-192.png" />
+<link rel="stylesheet" href="site-tools.css" />
 </head>
 <body>
 
@@ -32,6 +39,10 @@
     <a href="about.html">소개</a>
     <a href="privacy.html">개인정보처리방침</a>
   </nav>
+  <div class="topact">
+    <button type="button" class="tbtn" data-farmreq>＋ 농장 추가 요청</button>
+    <button type="button" class="tbtn ghost" data-install>홈 화면 추가</button>
+  </div>
 </header>
 
 <main class="wrap">
@@ -39,10 +50,10 @@
   <div class="hero">
     <p class="kicker">Farm Archive</p>
     <h1>한 잔 뒤에 있는 <em>농장의 역사</em></h1>
-    <p class="lede">지도에 올라온 농장 28곳 가운데, 생산자와 연혁·수상 기록을 자료로 확인할 수 있는 농장을 모았습니다. 확인되지 않은 내용은 채우지 않았고, 어디까지 확인된 위치인지도 카드마다 밝혀 두었습니다. 생두 184종이 이 농장들에서 왔습니다.</p>
-    <p class="updated">2026년 11월 21일 기준 · 농장 28곳 · 수록 25곳 · 위치만 확인 3곳</p>
+    <p class="lede">지도에 올라온 농장 29곳 가운데, 생산자와 연혁·수상 기록을 자료로 확인할 수 있는 농장을 모았습니다. 확인되지 않은 내용은 채우지 않았고, 어디까지 확인된 위치인지도 카드마다 밝혀 두었습니다. 생두 184종이 이 농장들에서 왔습니다.</p>
+    <p class="updated">2026년 11월 22일 기준 · 농장 29곳 · 수록 26곳 · 위치만 확인 3곳</p>
     <nav class="toc" aria-label="농장 목록">
-      <a href="#c-%ED%8C%8C%EB%82%98%EB%A7%88">파나마 5</a><a href="#c-%EC%BD%9C%EB%A1%AC%EB%B9%84%EC%95%84">콜롬비아 5</a><a href="#c-%EC%BD%94%EC%8A%A4%ED%83%80%EB%A6%AC%EC%B9%B4">코스타리카 4</a><a href="#c-%EA%B3%BC%ED%85%8C%EB%A7%90%EB%9D%BC">과테말라 5</a><a href="#c-%EC%97%98%EC%82%B4%EB%B0%94%EB%8F%84%EB%A5%B4">엘살바도르 1</a><a href="#c-%EB%8B%88%EC%B9%B4%EB%9D%BC%EA%B3%BC">니카라과 2</a><a href="#c-%EB%B8%8C%EB%9D%BC%EC%A7%88">브라질 1</a><a href="#c-%ED%8E%98%EB%A3%A8">페루 1</a><a href="#c-%EC%9D%B8%EB%8F%84">인도 1</a>
+      <a href="#c-%EC%97%90%ED%8B%B0%EC%98%A4%ED%94%BC%EC%95%84">에티오피아 1</a><a href="#c-%ED%8C%8C%EB%82%98%EB%A7%88">파나마 5</a><a href="#c-%EC%BD%9C%EB%A1%AC%EB%B9%84%EC%95%84">콜롬비아 5</a><a href="#c-%EC%BD%94%EC%8A%A4%ED%83%80%EB%A6%AC%EC%B9%B4">코스타리카 4</a><a href="#c-%EA%B3%BC%ED%85%8C%EB%A7%90%EB%9D%BC">과테말라 5</a><a href="#c-%EC%97%98%EC%82%B4%EB%B0%94%EB%8F%84%EB%A5%B4">엘살바도르 1</a><a href="#c-%EB%8B%88%EC%B9%B4%EB%9D%BC%EA%B3%BC">니카라과 2</a><a href="#c-%EB%B8%8C%EB%9D%BC%EC%A7%88">브라질 1</a><a href="#c-%ED%8E%98%EB%A3%A8">페루 1</a><a href="#c-%EC%9D%B8%EB%8F%84">인도 1</a>
       <a href="#location-only">위치만 확인</a>
     </nav>
   </div>
@@ -57,6 +68,30 @@
     </ul>
   </section>
 
+  <div class="countryhead" id="c-%EC%97%90%ED%8B%B0%EC%98%A4%ED%94%BC%EC%95%84">
+    <h2>에티오피아</h2><span>확인된 농장 1곳</span>
+  </div>
+  <p>에티오피아는 아라비카가 처음 자란 나라입니다. 남서부 짐마·게라·리무의 원생 숲과 남부 시다마·게데오의 고지에서 소농들이 마을 단위로 체리를 모아 가공하며, 지역마다 다른 토착 품종이 남아 있습니다.</p>
+  
+    <article class="farm" id="F-에티오피아-나노 찰라">
+      <header>
+        <div>
+          <h3>나노 찰라</h3>
+          <span class="en">Nano Challa Washing Station</span>
+        </div>
+        <div class="tags">
+          <span class="badge region">마을 단위</span>
+          <span class="badge">생두 0종</span>
+        </div>
+      </header>
+      <p class="story">오로미아 짐마 존 게라 워레다, 아가로 서쪽의 겐지 찰라 일대에 있습니다. 2004년 소농 25명이 모여 만든 조합으로, 2010년 테크노서브(TechnoServe) 커피 이니셔티브의 지원과 대출로 페나고스 디펄퍼를 갖춘 첫 워싱스테이션을 세우고 생두를 개별로 팔던 방식에서 벗어나 워시드 커피를 만들기 시작했습니다. 첫해에 빚을 갚고 이윤을 냈고, 이후 회원이 600명을 넘어서며 2018년 두 번째 스테이션 겐지 찰라를 세웠습니다. 지금은 카타 무두가 다목적 농협 연합에 속해 두로미나·비프투 구디나 등과 함께 수출합니다. 게라 숲의 원생종(Metu Bishari 계열 74110·74112 등)을 재배해 36~48시간 발효 후 수로에서 밀도 선별하고 아프리칸 베드에서 건조합니다.</p>
+      <dl class="facts"><dt>생산자</dt><dd>나노 찰라 협동조합 (Nano Challa Cooperative) — 카타 무두가 연합 소속</dd><dt>설립 · 연혁</dt><dd>2004년 25명으로 창립, 2010년 첫 워싱스테이션</dd><dt>고도</dt><dd>1,850–2,100 m (수입사에 따라 1,750~2,200 m 표기)</dd><dt>위치 근거</dt><dd>게라(Gera) 마을 중심, Jimma Zone Gera woreda · OSM Gera</dd><dt>좌표 단위</dt><dd>농장이 있는 마을·베레다 중심 좌표입니다.</dd></dl>
+      
+      <div class="foot">
+        <a href="./?place=F%7C%EC%97%90%ED%8B%B0%EC%98%A4%ED%94%BC%EC%95%84%7C%EB%82%98%EB%85%B8%20%EC%B0%B0%EB%9D%BC">지도에서 보기 →</a>
+        <span>자료 <a href="https://www.trabocca.com/our-coffees/ethiopia/limu/nano-challa-cooperative/" target="_blank" rel="noopener">수입사 소개·연혁</a> · <a href="https://www.stumptowncoffee.com/pages/producers-nanochalla-cooperative" target="_blank" rel="noopener">로스터 프로필</a> · <a href="https://roasttocup.coffee/dictionary/nano-challa-cooperative-profile/" target="_blank" rel="noopener">지역·연혁 정리</a></span>
+      </div>
+    </article>
   <div class="countryhead" id="c-%ED%8C%8C%EB%82%98%EB%A7%88">
     <h2>파나마</h2><span>확인된 농장 5곳</span>
   </div>
@@ -619,5 +654,6 @@
   손님용 산지 지도 · 가격과 매입 정보는 싣지 않습니다.
 </footer>
 
+<script src="site-tools.js"></script>
 </body>
 </html>
