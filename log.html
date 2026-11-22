@@ -37,7 +37,7 @@
   *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
   html{-webkit-text-size-adjust:100%}
   body{
-    margin:0;background:var(--cream);color:var(--ink);
+    margin:0;background:var(--cream);color:var(--ink);overflow-x:hidden;
     font-family:'Pretendard Variable',Pretendard,'Noto Sans KR',-apple-system,BlinkMacSystemFont,system-ui,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
     font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased;
     word-break:keep-all;
@@ -130,9 +130,9 @@
   .sec-title h3{margin:0;font-size:14.5px;font-weight:800;letter-spacing:-.015em}
   .sec-title span{font-size:11px;color:var(--muted);font-weight:700}
   .sec-title a{margin-left:auto;font-size:11.5px;font-weight:800;color:var(--terra);text-decoration:none}
-  .recent{display:grid;gap:7px}
+  .recent{display:grid;gap:7px;min-width:0}
   .rrow{
-    display:flex;align-items:center;gap:10px;width:100%;text-align:left;
+    display:flex;align-items:center;gap:10px;width:100%;min-width:0;max-width:100%;text-align:left;
     background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:8px 10px 8px 8px;
   }
   .rrow:active{background:var(--cream-2)}
@@ -217,9 +217,9 @@
   /* candidates */
   .candhead{display:flex;align-items:baseline;gap:6px;margin:2px 4px 7px}
   .candhead span{font-size:10.5px;color:var(--muted);font-weight:700}
-  .cands{display:grid;gap:7px}
+  .cands{display:grid;gap:7px;min-width:0}
   .cand{
-    display:flex;align-items:center;gap:10px;width:100%;text-align:left;
+    display:flex;align-items:center;gap:10px;width:100%;min-width:0;max-width:100%;text-align:left;
     background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:10px 11px;
   }
   .cand:active{background:var(--cream-2)}
