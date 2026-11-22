@@ -152,6 +152,10 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     box-shadow:var(--shadow);pointer-events:none;max-width:calc(100% - 28px);
   }
   .map-hint b{color:var(--terra);font-weight:800}
+  /* 좁은 지도(1단·폴드 2단)에서는 지도 저작자 표기 위로 올려 겹치지 않게 */
+  @media(max-width:899px){
+    .map-hint{bottom:23px;font-size:10px;padding:5px 9px;max-width:calc(100% - 20px);line-height:1.55}
+  }
   .lt-tip{
     background:#FFFDF8!important;border:1px solid var(--line)!important;border-radius:10px!important;
     color:var(--ink)!important;font-size:11.5px!important;font-weight:700!important;
@@ -162,7 +166,6 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 
   /* ---------- sheet ---------- */
   .sheet{flex:1;overflow-y:auto;overscroll-behavior:contain;padding:14px 16px 40px;background:var(--cream)}
-  @media(max-width:899px){ .app.has-sel .mapwrap{height:clamp(165px,21dvh,195px);transition:height .3s ease} }
   .sheet::-webkit-scrollbar{width:0}
 
   .card{
@@ -363,6 +366,54 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     .sitelinks .sep{display:none}
   }
 
+  /* ---------- 1단 세로 스택 (≤599px): 페이지 전체가 스크롤 ---------- */
+  @media(max-width:599px){
+    html,body{height:auto;min-height:100%}
+    body{overflow-x:hidden;overflow-y:auto}
+    .app{display:block;height:auto;min-height:100dvh}
+    .head{padding:12px 16px 8px}
+    .brand{gap:8px}
+    .brand-txt{font-size:10.8px;letter-spacing:.18em}
+    .sitelinks{margin-top:5px}
+    .sitelinks a{font-size:11px}
+    .sitelinks a.nav-log{font-size:12.5px;padding:5px 12px;margin:2px 4px}
+    .topact{margin-top:7px}
+    .lede{margin:7px 0 0;font-size:20px}
+    .lede small{margin-top:4px;font-size:12px}
+    .search{margin:10px 0 0}
+    .search-box{height:44px}
+    .chips{padding:9px 16px}
+    .chip{height:30px;padding:0 11px;font-size:12px}
+    .mapwrap{height:clamp(165px,22dvh,200px)}
+    .app.has-sel .mapwrap{height:clamp(140px,18dvh,170px);transition:height .3s ease}
+    .sheet{flex:none;height:auto;overflow:visible;overscroll-behavior:auto;padding:12px 16px 36px}
+  }
+
+  /* ---------- 폴드 4:3 등 600~899px: 좌측 정보 58% / 우측 지도 42% 고정 ---------- */
+  @media(min-width:600px) and (max-width:899px){
+    html,body{height:auto;min-height:100%}
+    body{overflow-x:hidden;overflow-y:auto}
+    .app{display:block;width:58%;height:auto;min-height:100dvh}
+    .mapwrap{
+      position:fixed;top:0;right:0;width:42%;height:100dvh;
+      border-left:1px solid var(--line);
+    }
+    .head{padding:16px 16px 10px}
+    .brand-txt{font-size:11px;letter-spacing:.18em}
+    .sitelinks{margin-top:6px}
+    .sitelinks a{font-size:11px}
+    .lede{margin:8px 0 0;font-size:20px}
+    .lede small{margin-top:4px;font-size:12px}
+    .topact{margin-top:8px}
+    .search{margin:11px 0 0}
+    .search-box{height:44px}
+    .chips{padding:10px 16px}
+    .chip{height:31px;padding:0 12px;font-size:12px}
+    .sheet{flex:none;height:auto;overflow:visible;overscroll-behavior:auto;padding:12px 16px 44px}
+    .card{padding:16px}
+    .c-name{font-size:19px}
+  }
+
   /* ---------- desktop ---------- */
   @media(min-width:900px){
     .app{
@@ -542,6 +593,17 @@ const clusterLayer = L.markerClusterGroup({
     });
   }
 }).addTo(map);
+// 폴드 4:3처럼 지도가 화면에 고정(fixed)·동적 높이(dvh)인 환경에서 주소창이 접혀 높이가 바뀌면 지도 크기를 다시 잡습니다.
+if (window.ResizeObserver) {
+  const mapBox = document.querySelector(".mapwrap");
+  if (mapBox) {
+    let lastMapH = Math.round(mapBox.getBoundingClientRect().height);
+    new ResizeObserver(() => {
+      const h = Math.round(mapBox.getBoundingClientRect().height);
+      if (h > 0 && Math.abs(h - lastMapH) > 2) { lastMapH = h; map.invalidateSize({ animate: false }); }
+    }).observe(mapBox);
+  }
+}
 const markers = new Map();
 
 function pinIcon(item) {
@@ -598,7 +660,10 @@ function updateHint() {
   if (!state.ready) { el.innerHTML = `<span class="spin"></span>카탈로그를 불러오는 중…`; return; }
   const n = markers.size;
   const c = CAT.meta?.counts || {};
-  el.innerHTML = `<b>${n}</b>곳 표시 · 카탈로그 ${(c.beans || 0).toLocaleString()}종 / ${c.countries || 0}개국`;
+  const narrowMap = ($("#map")?.clientWidth || window.innerWidth) < 340;
+  el.innerHTML = narrowMap
+    ? `<b>${n}</b>곳 표시 · ${(c.beans || 0).toLocaleString()}종`
+    : `<b>${n}</b>곳 표시 · 카탈로그 ${(c.beans || 0).toLocaleString()}종 / ${c.countries || 0}개국`;
 }
 
 /* ---------- 칩 ---------- */
@@ -1064,6 +1129,16 @@ function renderSheet() {
   }
   sheetEl.innerHTML = html;
   sheetEl.scrollTop = 0;
+  // 좁은 화면(1단·폴드 2단)은 문서 전체가 스크롤되므로, 시트 위쪽이 화면 밖으로 올라가 있으면 시트 머리로 되돌립니다.
+  if (getComputedStyle(sheetEl).overflowY === "visible") {
+    const alignSheetTop = () => {
+      const r = sheetEl.getBoundingClientRect();
+      if (r.top < -4) window.scrollTo({ top: Math.max(0, window.scrollY + r.top - 6), behavior: "auto" });
+    };
+    alignSheetTop();
+    // 선택 시 지도 높이 전환(.3s)으로 시트가 위로 밀리므로 한 번 더 맞춰 줍니다.
+    setTimeout(alignSheetTop, 380);
+  }
   bindSheet();
   appEl.classList.toggle("has-sel", !!(state.bean || state.place));
 }
