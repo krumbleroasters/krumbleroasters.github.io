@@ -1625,7 +1625,7 @@
         del.textContent = "한 번 더 누르면 삭제";
         setTimeout(function () {
           if (del.isConnected) { del.classList.remove("armed"); del.textContent = "삭제"; }
-        }, 3200);
+        }, 6000);
         return;
       }
       var rec = records.find(function (r) { return r.id === id; });
@@ -1657,6 +1657,9 @@
     bind();
     renderAll();
     loadCatalog();
+    window.addEventListener("storage", function (e) {
+      if (e.key === LS_KEY) { loadRecords(); renderAll(); }
+    });
     setTimeout(function () { if (mapReady && map) map.invalidateSize(); }, 250);
   }
 
