@@ -1,4 +1,4 @@
-/* site-tools.js — coffeeinsight.kr 공용 도구
+/* site-tools.js — oncoffeelog.com 공용 도구
  *
  * 1) 홈 화면 추가: 안드로이드 크롬은 beforeinstallprompt로 네이티브 설치 창을 띄우고,
  *    iOS Safari 등 미지원 환경은 '공유 → 홈 화면에 추가' 안내를 띄웁니다.
@@ -12,7 +12,7 @@
   "use strict";
 
   /* ── 설정 ─────────────────────────────────────────────────────────────
-   * 농장 추가 요청 접수처: 구글 폼 '커피 인사이트 · 농장 추가 요청'
+   * 농장 추가 요청 접수처: 구글 폼 '농장 추가 요청' (2026-11-22 등록, 폼 ID 1nBJVvmkRjOiVOEYuMLp98E4pFWTUin6_nS15Sc23dB8)
    * (계정: flatpeople4146@gmail.com, 편집: https://docs.google.com/forms/d/1nBJVvmkRjOiVOEYuMLp98E4pFWTUin6_nS15Sc23dB8/edit)
    * entry.* 번호는 공개 설문지 HTML의 FB_PUBLIC_LOAD_DATA_에서 확인한 실제 값입니다.
    * 질문을 고치면 이 번호도 다시 확인해야 합니다.
@@ -149,7 +149,7 @@
     ];
     if (val.detail) lines.push("", "품종·가공·고도·수상 내역 / 참고 링크:", val.detail);
     if (val.who) lines.push("", "요청자/로스터리: " + val.who);
-    lines.push("", "(요청 경로: coffeeinsight.kr)");
+    lines.push("", "(요청 경로: oncoffeelog.com)");
     return {
       title: "[농장 추가 요청] " + val.name + " (" + val.country + ")",
       body: lines.join("\n"),

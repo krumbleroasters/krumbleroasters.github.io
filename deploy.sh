@@ -4,7 +4,7 @@
 set -u
 OWNER=krumbleroasters
 REPO=krumbleroasters.github.io
-DOMAIN=coffeeinsight.kr
+DOMAIN=oncoffeelog.com
 SITE_URL="https://${DOMAIN}/"
 cd "$(dirname "$0")" || exit 1
 

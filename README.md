@@ -1,11 +1,13 @@
-# CRUMBLE ROASTERS · ORIGIN MAP (v0.3 · 농장 단위 좌표)
+# ONCOFFEELOG · 온커피로그 — 커피 산지·농장 지도 (v0.3 · 농장 단위 좌표)
 
-손님용 커피 산지·농장 지도. 배포본은 <https://coffeeinsight.kr/>,
+운영: 크럼블로스터스(KRUMBLE ROASTERS). 사이트 이름 `온커피로그(ONCOFFEELOG)`.
+
+손님용 커피 산지·농장 지도. 배포본은 <https://oncoffeelog.com/>,
 이 저장소(`krumbleroasters/krumbleroasters.github.io`)가 곧 배포본입니다.
 
-- 커스텀 도메인: `coffeeinsight.kr` (루트 `CNAME` 파일로 고정, GitHub Pages 설정의 Custom domain과 같아야 합니다)
+- 커스텀 도메인: `oncoffeelog.com` (루트 `CNAME` 파일로 고정, GitHub Pages 설정의 Custom domain과 같아야 합니다)
 - DNS(호스팅케이알): `A @` → 185.199.108.153 · 185.199.109.153 · 185.199.110.153 · 185.199.111.153, `CNAME www` → `krumbleroasters.github.io`
-- 기본 GitHub Pages 주소(`https://krumbleroasters.github.io/`)는 커스텀 도메인이 켜지면 `https://coffeeinsight.kr/`로 301 리다이렉트됩니다.
+- 기본 GitHub Pages 주소(`https://krumbleroasters.github.io/`)는 커스텀 도메인이 켜지면 `https://oncoffeelog.com/`로 301 리다이렉트됩니다.
 
 - `index.html` — 페이지 (CSS·JS 포함 단일 파일, 데이터는 `beans.json`에서 불러옴)
 - `beans.json` = `catalog-beans.json` — 국내 유통 생두 카탈로그
@@ -53,11 +55,11 @@
 - **`about.html`** — 사이트 소개와 데이터 원칙
 - **`privacy.html`** — 개인정보처리방침
 - **`log.html`** — 내 커피 기록(개인 테스트). 사진 OCR로 이름을 찾아 내 지도에 핀으로 남기는 페이지로,
-  상단 메뉴·사이트맵에는 넣지 않습니다(`noindex`). 직접 URL `https://coffeeinsight.kr/log.html` 로만 엽니다.
+  상단 메뉴·사이트맵에는 넣지 않습니다(`noindex`). 직접 URL `https://oncoffeelog.com/log.html` 로만 엽니다.
   기록·사진은 방문자 브라우저(localStorage · IndexedDB)에만 저장되고 서버로 보내지 않습니다.
 - `site.css` — 위 읽기 페이지 공용 스타일 (지도 화면과 같은 색·서체)
 - `site-tools.css` · `site-tools.js` — 홈 화면 추가·농장 추가 요청 버튼(모든 화면 공용)
-- `manifest.webmanifest` · `sw.js` — `coffeeinsight.kr` 홈 화면 추가(설치)용 매니페스트와 최소 서비스 워커
+- `manifest.webmanifest` · `sw.js` — `oncoffeelog.com` 홈 화면 추가(설치)용 매니페스트와 최소 서비스 워커
   (`icon-192.png` · `icon-512.png` · `icon-512-maskable.png`)
 - `sitemap.xml` · `robots.txt`
 

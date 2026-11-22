@@ -1,9 +1,9 @@
-/* sw.js — coffeeinsight.kr 최소 서비스 워커
+/* sw.js — oncoffeelog.com 최소 서비스 워커
  * 홈 화면 추가(설치) 조건을 채우고, 오프라인에서도 마지막으로 본 화면을 열 수 있게 합니다.
  * 네트워크를 먼저 보고, 실패할 때만 캐시를 씁니다. (beans.json은 항상 최신을 우선)
  */
-const CACHE = "coffeeinsight-v5";
-const SHELL = ["/", "/index.html", "/farms.html", "/site-tools.css?v=20261122c", "/site-tools.js?v=20261122c", "/icon-192.png"];
+const CACHE = "oncoffeelog-v1";
+const SHELL = ["/", "/index.html", "/farms.html", "/site-tools.css?v=20261122d", "/site-tools.js?v=20261122d", "/icon-192.png"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(

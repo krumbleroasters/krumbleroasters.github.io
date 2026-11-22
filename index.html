@@ -8,14 +8,14 @@ addEventListener("error", function (e) { window.__ciErrors.push((e.message || "e
 addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("rejection: " + e.reason); });</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="theme-color" content="#FBF7F0" />
-<title>KRUMBLE ROASTERS · ORIGIN MAP</title>
-<meta name="description" content="크럼블로스터스 커피 산지·농장 지도 — 국내에 들어온 생두 2,800여 종이 어디서 자랐는지 지도에서 보여줍니다." />
-<link rel="canonical" href="https://coffeeinsight.kr/" />
+<title>온커피로그 ONCOFFEELOG · 커피 산지·농장 지도</title>
+<meta name="description" content="온커피로그(ONCOFFEELOG) 커피 산지·농장 지도 — 국내에 들어온 생두 2,800여 종이 어디서 자랐는지 지도에서 보여줍니다. 크럼블로스터스(KRUMBLE ROASTERS)가 운영합니다." />
+<link rel="canonical" href="https://oncoffeelog.com/" />
 <meta property="og:type" content="website" />
-<meta property="og:site_name" content="KRUMBLE ROASTERS · ORIGIN MAP" />
-<meta property="og:title" content="KRUMBLE ROASTERS · ORIGIN MAP" />
+<meta property="og:site_name" content="온커피로그 ONCOFFEELOG" />
+<meta property="og:title" content="온커피로그 ONCOFFEELOG · 커피 산지·농장 지도" />
 <meta property="og:description" content="국내에 유통되는 생두 2,846종이 어디서 자랐는지 지도에서 보여줍니다." />
-<meta property="og:url" content="https://coffeeinsight.kr/" />
+<meta property="og:url" content="https://oncoffeelog.com/" />
 <meta name="twitter:card" content="summary" />
 <link rel="alternate" type="application/xml" title="사이트맵" href="sitemap.xml" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -342,23 +342,23 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "KRUMBLE ROASTERS · ORIGIN MAP",
-  "alternateName": "크럼블로스터스 오리진 맵",
-  "url": "https://coffeeinsight.kr/",
+  "name": "온커피로그 ONCOFFEELOG",
+  "alternateName": "ONCOFFEELOG",
+  "url": "https://oncoffeelog.com/",
   "inLanguage": "ko",
   "description": "국내에 유통되는 생두 2,846종이 어디서 자랐는지 산지·농장 지도로 보여주는 손님용 화면입니다.",
   "publisher": {
     "@type": "Organization",
     "name": "크럼블로스터스",
     "alternateName": "KRUMBLE ROASTERS",
-    "url": "https://coffeeinsight.kr/about.html",
+    "url": "https://oncoffeelog.com/about.html",
     "sameAs": ["https://github.com/krumbleroasters"]
   }
 }
 </script>
 <link rel="manifest" href="manifest.webmanifest" />
 <link rel="apple-touch-icon" href="icon-192.png" />
-<link rel="stylesheet" href="site-tools.css?v=20261122c" />
+<link rel="stylesheet" href="site-tools.css?v=20261122d" />
 </head>
 <body>
 <div class="app" id="app">
@@ -368,7 +368,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
         <ellipse cx="12" cy="12" rx="7.4" ry="10" transform="rotate(35 12 12)" fill="#C2603C"/>
         <path d="M7.4 16.6C10.6 14.4 11 9.6 16.6 7.4" stroke="#FBF7F0" stroke-width="1.5" stroke-linecap="round"/>
       </svg>
-      <div class="brand-txt">KRUMBLE ROASTERS <span>·</span> ORIGIN MAP</div>
+      <div class="brand-txt">ONCOFFEELOG <span>·</span> 온커피로그</div>
     </div>
     <nav class="sitelinks" aria-label="사이트 안내">
       <a href="guide.html">가이드</a><span class="sep" aria-hidden="true">·</span>
@@ -410,7 +410,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script>
 /* =========================================================
-   KRUMBLE ROASTERS · ORIGIN MAP  v0.2
+   ONCOFFEELOG · 온커피로그 (KRUMBLE ROASTERS)  v0.2
    - LINEUP : 크럼블로스터스가 실제로 쓰는 생두 (직접 정리)
    - CATALOG: 국내 유통 생두 카탈로그 (beans.json)
    ========================================================= */
@@ -724,7 +724,7 @@ function cardForBean(b) {
 function cardForLineup(l) {
   return `
   <div class="card">
-    <div class="eyebrow">CRUMBLE LINEUP <span class="badge ok">${l.precision === "farm" ? "농장 확인" : "산지 단위"}</span></div>
+    <div class="eyebrow">KRUMBLE LINEUP <span class="badge ok">${l.precision === "farm" ? "농장 확인" : "산지 단위"}</span></div>
     <h2 class="c-name">${esc(l.ko)}</h2>
     <div class="c-region"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="2"/></svg>
       ${esc(l.country)} · ${esc(l.region)}</div>
@@ -992,7 +992,7 @@ function homeSheet() {
     </div>
   </div>
   <div class="quick">
-    <h3>CRUMBLE LINEUP</h3>
+    <h3>KRUMBLE LINEUP</h3>
     <div class="qrow">
       ${LINEUP.map((l) => `<button type="button" class="qcard ${state.selectedLineup && state.selectedLineup.id === l.id ? "on" : ""}" data-lineup="${esc(l.id)}">
         <span class="qtop">★ ${esc(l.country)}</span>
@@ -1009,7 +1009,7 @@ function homeSheet() {
       <span class="rm">${(p.beanCount || 0).toLocaleString()}종 · ${p.precision === "country" ? "국가 단위" : p.precision === "farm" ? "농장 좌표" : "산지 단위"}</span></span>
     </button>`).join("")}
   </div>` : ""}
-  <p class="foot"><b>KRUMBLE ROASTERS</b> · ORIGIN MAP · 손님용 산지 지도<br>
+  <p class="foot"><b>ONCOFFEELOG</b> · 온커피로그 · 손님용 산지 지도 · KRUMBLE ROASTERS<br>
     <a href="guide.html">산지 가이드</a> · <a href="farms.html">농장 아카이브</a> · <a href="about.html">소개</a> · <a href="privacy.html">개인정보처리방침</a>
   </p>`;
 }
@@ -1180,6 +1180,6 @@ document.addEventListener("click", (e) => {
 
 boot();
 </script>
-<script src="site-tools.js?v=20261122c"></script>
+<script src="site-tools.js?v=20261122d"></script>
 </body>
 </html>
