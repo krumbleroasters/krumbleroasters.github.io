@@ -3,20 +3,30 @@
  * 1) 홈 화면 추가: 안드로이드 크롬은 beforeinstallprompt로 네이티브 설치 창을 띄우고,
  *    iOS Safari 등 미지원 환경은 '공유 → 홈 화면에 추가' 안내를 띄웁니다.
  * 2) 농장 추가 요청: 방문자가 농장·워싱스테이션 정보를 보내는 모달.
- *    GitHub 계정이 있으면 입력값이 채워진 이슈 작성 화면으로, 없으면 요청문을 복사해
- *    메일·메신저로 보낼 수 있습니다. 개인 이메일 주소는 받지도, 공개하지도 않습니다.
+ *    입력 후 '요청 보내기'를 누르면 구글 폼(농장 추가 요청)으로 바로 접수됩니다.
+ *    (로그인·계정 필요 없음, 개인 이메일 주소는 받지 않습니다)
+ *    보내지 못하는 환경을 위해 '요청 내용 복사'와 '구글 폼에서 직접 보내기'를 함께 둡니다.
  * 3) 서비스 워커 등록(sw.js) — 홈 화면 추가 조건 충족용.
  */
 (function () {
   "use strict";
 
   /* ── 설정 ─────────────────────────────────────────────────────────────
-   * 농장 추가 요청을 GitHub 없이 접수하려면 아래 주소를 채우세요.
-   * (예: Formspree "https://formspree.io/f/abcdwxyz", Google Forms 응답 URL)
-   * 비워 두면 GitHub 이슈 작성 화면으로 연결합니다.
+   * 농장 추가 요청 접수처: 구글 폼 '커피 인사이트 · 농장 추가 요청'
+   * (계정: flatpeople4146@gmail.com, 편집: https://docs.google.com/forms/d/1nBJVvmkRjOiVOEYuMLp98E4pFWTUin6_nS15Sc23dB8/edit)
+   * entry.* 번호는 공개 설문지 HTML의 FB_PUBLIC_LOAD_DATA_에서 확인한 실제 값입니다.
+   * 질문을 고치면 이 번호도 다시 확인해야 합니다.
    */
-  var FARM_REQUEST_ENDPOINT = "";
-  var ISSUE_NEW_URL = "https://github.com/krumbleroasters/krumbleroasters.github.io/issues/new";
+  var FARM_FORM = {
+    responseUrl: "https://docs.google.com/forms/d/e/1FAIpQLScfpXr_qoib3Ph8bu3EpC34NmSD2DRsuUU-o2nmNL9pGWtxIg/formResponse",
+    viewUrl: "https://docs.google.com/forms/d/e/1FAIpQLScfpXr_qoib3Ph8bu3EpC34NmSD2DRsuUU-o2nmNL9pGWtxIg/viewform",
+    entry: {
+      name: "entry.1636205783",   // 농장 / 워싱스테이션 이름 (필수)
+      where: "entry.119310813",   // 국가 · 세부 지역 (필수)
+      detail: "entry.2044690201", // 품종·가공·고도·수상 내역 또는 참고 링크
+      who: "entry.835769537"      // 요청자 이름 / 로스터리명 (선택)
+    }
+  };
 
   var INSTALL_EVENT = null;
   window.addEventListener("beforeinstallprompt", function (e) {
@@ -121,7 +131,7 @@
     { id: "frq-name", key: "name", label: "농장 · 워싱스테이션 이름", required: true, ph: "예: 나노 찰라 (Nano Challa)" },
     { id: "frq-country", key: "country", label: "국가", required: true, ph: "예: 에티오피아" },
     { id: "frq-region", key: "region", label: "지역", required: true, ph: "예: 오로미아 짐마 존 게라 워레다" },
-    { id: "frq-detail", key: "detail", label: "품종 · 가공 · 고도 · 수상 내역 또는 참고 링크", required: false, area: true,
+    { id: "frq-detail", key: "detail", label: "품종 · 가공 · 고도 · 수상 내역 또는 참고 링크 (선택)", required: false, area: true,
       ph: "예: 원생종, 워시드, 1,900m, 2015 Taste of Harvest 2위 — https://..." },
     { id: "frq-who", key: "who", label: "요청자 · 로스터리명 (선택)", required: false, ph: "예: 크럼블로스터스" }
   ];
@@ -132,10 +142,10 @@
       var el = document.getElementById(f.id);
       val[f.key] = el ? el.value.trim() : "";
     });
+    var where = [val.country, val.region].filter(Boolean).join(" · ");
     var lines = [
       "농장/워싱스테이션: " + val.name,
-      "국가: " + val.country,
-      "지역: " + val.region
+      "국가·세부 지역: " + where
     ];
     if (val.detail) lines.push("", "품종·가공·고도·수상 내역 / 참고 링크:", val.detail);
     if (val.who) lines.push("", "요청자/로스터리: " + val.who);
@@ -143,12 +153,32 @@
     return {
       title: "[농장 추가 요청] " + val.name + " (" + val.country + ")",
       body: lines.join("\n"),
+      where: where,
       values: val
     };
   }
 
-  function issueUrl(req) {
-    return ISSUE_NEW_URL + "?title=" + encodeURIComponent(req.title) + "&body=" + encodeURIComponent(req.body);
+  /* 구글 폼 접수용 데이터 (entry.* 번호로 전송) */
+  function farmFormBody(req) {
+    var fd = new FormData();
+    fd.append(FARM_FORM.entry.name, req.values.name);
+    fd.append(FARM_FORM.entry.where, req.where);
+    fd.append(FARM_FORM.entry.detail, req.values.detail);
+    fd.append(FARM_FORM.entry.who, req.values.who);
+    fd.append("fvv", "1");
+    fd.append("pageHistory", "0");
+    return fd;
+  }
+
+  /* 입력한 내용이 채워진 구글 폼 주소 (직접 열어 보낼 때) */
+  function farmFormUrl(req) {
+    var params = ["usp=pp_url"];
+    function add(entry, v) { if (v) params.push(entry + "=" + encodeURIComponent(v)); }
+    add(FARM_FORM.entry.name, req.values.name);
+    add(FARM_FORM.entry.where, req.where);
+    add(FARM_FORM.entry.detail, req.values.detail);
+    add(FARM_FORM.entry.who, req.values.who);
+    return FARM_FORM.viewUrl + "?" + params.join("&");
   }
 
   function openFarmRequest() {
@@ -161,20 +191,17 @@
       return '<label class="ci-field" for="' + f.id + '"><span>' + esc(f.label) + req + "</span>" + input + "</label>";
     }).join("");
 
-    var sendControl = FARM_REQUEST_ENDPOINT
-      ? '<button type="submit" class="ci-btn primary" id="frq-send">보내기</button>'
-      : '<a class="ci-btn primary" id="frq-send" href="' + esc(issueUrl(farmRequestText())) + '" target="_blank" rel="noopener">GitHub 이슈로 보내기</a>';
-
     popup("농장 추가 요청",
       '<p class="ci-lead">지도와 아카이브에 없는 농장·워싱스테이션을 알려 주세요. 확인되는 자료만 골라 반영합니다.</p>' +
       '<form class="ci-form" id="frq-form" novalidate>' + rows +
-        '<p class="ci-note">개인 이메일 주소는 받지 않습니다. 적어 주신 내용은 공개 저장소의 이슈로 남을 수 있습니다. GitHub 이슈 작성에는 GitHub 로그인이 필요하며, 계정이 없으면 \'요청 내용 복사\'로 내용을 복사해 전해 주세요.</p>' +
+        '<p class="ci-note">로그인 없이 바로 보낼 수 있습니다. 개인 이메일 주소는 받지 않습니다. 보내 주신 내용은 지도 반영 검토에만 쓰고, 확인되지 않으면 반영하지 않습니다.</p>' +
         '<p class="ci-msg" id="frq-msg" role="status"></p>' +
         '<div class="ci-pop-foot">' +
-          sendControl +
+          '<button type="submit" class="ci-btn primary" id="frq-send">요청 보내기</button>' +
           '<button type="button" class="ci-btn" id="frq-copy">요청 내용 복사</button>' +
           '<button type="button" class="ci-btn ghost" data-ci-close>닫기</button>' +
         "</div>" +
+        '<p class="ci-note"><a class="link" id="frq-formlink" href="' + esc(FARM_FORM.viewUrl) + '" target="_blank" rel="noopener">구글 폼 화면에서 직접 보내기</a></p>' +
       "</form>");
 
     var form = document.getElementById("frq-form");
@@ -194,42 +221,34 @@
       return false;
     }
 
-    // GitHub 링크는 실제 링크로 열어 팝업 차단에 걸리지 않게 합니다.
-    if (!FARM_REQUEST_ENDPOINT) {
-      send.addEventListener("click", function (e) {
-        if (!validate()) { e.preventDefault(); return; }
-        send.href = issueUrl(farmRequestText());
-        msg.className = "ci-msg ok";
-        msg.textContent = "새 창의 GitHub 이슈 화면에서 'Submit new issue'를 눌러 주세요.";
-      });
+    /* '구글 폼에서 직접 보내기'는 입력한 내용을 채운 주소로 엽니다(팝업 차단 회피를 위해 실제 링크). */
+    var formLink = document.getElementById("frq-formlink");
+    function syncFormLink() {
+      if (!formLink) return;
+      formLink.href = farmFormUrl(farmRequestText());
     }
+    syncFormLink();
+    form.addEventListener("input", syncFormLink);
+    formLink.addEventListener("click", syncFormLink);
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       if (!validate()) return;
       var req = farmRequestText();
-      if (!FARM_REQUEST_ENDPOINT) {
-        send.href = issueUrl(req);
-        send.click();
-        return;
-      }
       send.disabled = true;
       msg.className = "ci-msg";
       msg.textContent = "보내는 중…";
-      var payload = new FormData();
-      payload.append("title", req.title);
-      payload.append("body", req.body);
-      FIELDS.forEach(function (f) { payload.append(f.key, req.values[f.key]); });
-      fetch(FARM_REQUEST_ENDPOINT, { method: "POST", body: payload, headers: { Accept: "application/json" } })
-        .then(function (r) { if (!r.ok) throw new Error(r.status); return r; })
+      /* 구글 폼은 응답 본문을 읽을 수 없는 no-cors 방식이라, 요청이 나가면 접수로 봅니다. */
+      fetch(FARM_FORM.responseUrl, { method: "POST", mode: "no-cors", body: farmFormBody(req) })
         .then(function () {
           msg.className = "ci-msg ok";
-          msg.textContent = "요청이 접수되었습니다. 고맙습니다!";
+          msg.textContent = "요청이 접수되었습니다. 매일 밤 확인해 지도와 농장 아카이브에 반영합니다. 고맙습니다!";
           form.querySelectorAll("input,textarea").forEach(function (el) { el.value = ""; });
+          syncFormLink();
         })
         .catch(function () {
           msg.className = "ci-msg err";
-          msg.textContent = "보내지 못했습니다. '요청 내용 복사'로 내용을 복사해 보내 주세요.";
+          msg.textContent = "보내지 못했습니다. '요청 내용 복사'로 내용을 복사해 전해 주시거나, 아래 '구글 폼 화면에서 직접 보내기'를 눌러 주세요.";
         })
         .then(function () { send.disabled = false; });
     });
