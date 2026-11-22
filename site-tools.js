@@ -168,7 +168,7 @@
     popup("농장 추가 요청",
       '<p class="ci-lead">지도와 아카이브에 없는 농장·워싱스테이션을 알려 주세요. 확인되는 자료만 골라 반영합니다.</p>' +
       '<form class="ci-form" id="frq-form" novalidate>' + rows +
-        '<p class="ci-note">개인 이메일 주소는 받지 않습니다. 적어 주신 내용은 공개 저장소의 이슈로 남을 수 있습니다.</p>' +
+        '<p class="ci-note">개인 이메일 주소는 받지 않습니다. 적어 주신 내용은 공개 저장소의 이슈로 남을 수 있습니다. GitHub 이슈 작성에는 GitHub 로그인이 필요하며, 계정이 없으면 \'요청 내용 복사\'로 내용을 복사해 전해 주세요.</p>' +
         '<p class="ci-msg" id="frq-msg" role="status"></p>' +
         '<div class="ci-pop-foot">' +
           sendControl +
