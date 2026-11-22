@@ -590,6 +590,22 @@
 (function () {
   "use strict";
 
+  /* 오류 점검용(화면에는 나오지 않음): 브라우저 콘솔 오류를 모아 둔다 */
+  window.__logErrors = [];
+  window.addEventListener("error", function (e) {
+    window.__logErrors.push("error: " + (e.message || "") + " @ " + (e.filename || "") + ":" + (e.lineno || ""));
+  });
+  window.addEventListener("unhandledrejection", function (e) {
+    window.__logErrors.push("rejection: " + String((e.reason && (e.reason.message || e.reason)) || e.reason));
+  });
+  (function () {
+    var ce = console.error.bind(console);
+    console.error = function () {
+      try { window.__logErrors.push("console.error: " + Array.prototype.map.call(arguments, String).join(" ")); } catch (_) {}
+      return ce.apply(null, arguments);
+    };
+  })();
+
   /* ================= utils ================= */
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var LS_KEY = "krumble.coffeeLog.records.v1";
