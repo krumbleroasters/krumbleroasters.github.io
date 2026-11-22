@@ -108,7 +108,6 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   .chip.on{background:var(--ink);border-color:var(--ink);color:#FFF8EF}
   .chip.on .cnt{color:var(--terra-soft)}
   .chip .cnt{font-size:10.5px;opacity:.7;font-weight:700}
-  .chip.star.on{background:var(--terra);border-color:var(--terra);color:#fff}
 
   /* ---------- map ---------- */
   .mapwrap{position:relative;flex:none;height:40dvh;min-height:240px;background:var(--cream-2);z-index:1}
@@ -127,7 +126,6 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     display:flex;align-items:center;justify-content:center;transition:all .18s ease;
   }
   .pin i{transform:rotate(45deg);font-style:normal;font-size:10px;font-weight:800;color:#FFFDF8;letter-spacing:-.03em}
-  .pin.lineup{background:var(--terra);width:30px;height:30px}
   .pin.farm{background:#9A5B2E}
   .pin.country{background:#8C8377}
   .cluster{
@@ -257,19 +255,6 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   .qrhint{margin:10px 0 0;font-size:10.5px;color:#A79C8D;line-height:1.6}
   @media (max-width:520px){ .qrbody{padding:10px 12px 14px} .qrhead{padding:14px 14px 10px} }
 
-  /* lineup quick picks */
-  .quick{margin-top:16px}
-  .quick h3{margin:0 0 9px;font-size:10.5px;font-weight:800;letter-spacing:.14em;color:#9A8F80;text-transform:uppercase}
-  .qrow{display:flex;gap:9px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none}
-  .qrow::-webkit-scrollbar{display:none}
-  .qcard{
-    flex:none;width:118px;text-align:left;background:#fff;border:1px solid var(--line);border-radius:14px;
-    padding:10px 11px;box-shadow:var(--shadow);
-  }
-  .qcard.on{border-color:var(--terra);box-shadow:0 0 0 2px rgba(194,96,60,.18)}
-  .qcard .qtop{display:flex;align-items:center;gap:5px;font-size:9.5px;font-weight:800;letter-spacing:.08em;color:var(--terra)}
-  .qcard .qn{margin-top:5px;font-size:12.5px;font-weight:800;line-height:1.35;letter-spacing:-.01em}
-  .qcard .qm{margin-top:4px;font-size:10.5px;color:var(--ink-soft)}
 
   /* results list */
   .results{margin:0}
@@ -454,51 +439,16 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script>
 /* =========================================================
-   ONCOFFEELOG · 온커피로그 (KRUMBLE ROASTERS)  v0.2
-   - LINEUP : 크럼블로스터스가 실제로 쓰는 생두 (직접 정리)
+   ONCOFFEELOG · 온커피로그 (KRUMBLE ROASTERS)  v0.3
    - CATALOG: 국내 유통 생두 카탈로그 (beans.json)
    ========================================================= */
 
-const LINEUP = [
-  {
-    id: "el-diamante",
-    ko: "페루 엘 디아만테 게이샤",
-    country: "페루", region: "카하마르카 · 산이그나시오",
-    farm: "엘 디아만테 마을 소농 (El Diamante)",
-    variety: "게이샤", process: "워시드",
-    notes: ["자스민","오렌지 블로섬","만다린","흑설탕","베르가못"],
-    story: "페루 북부 카하마르카의 산이그나시오, 에콰도르 국경 가까운 엘 디아만테 마을에서 자란 게이샤입니다. 안데스의 차고 습한 기후가 체리를 천천히 익혀 꽃향과 밝은 시트러스 산미를 남깁니다.",
-    lat: -4.9867, lon: -78.9253, precision: "farm"
-  },
-  {
-    id: "santa-felisa-2722",
-    ko: "과테말라 산타펠리사 게샤 2722 더블 소크",
-    country: "과테말라", region: "아카테낭고 밸리",
-    farm: "핀카 산타펠리사 (Finca Santa Felisa)",
-    variety: "게샤 2722", process: "풀리 워시드 더블 소크",
-    notes: ["베르가못","자스민","복숭아","텐저린","꿀"],
-    story: "푸에고 화산 아래 아카테낭고 밸리에서 1902년부터 이어온 농장입니다. 케냐식 이중 침지로 게샤의 섬세한 꽃향과 투명한 단맛을 끌어올린 마이크로랏입니다.",
-    lat: 14.5688, lon: -90.9472, precision: "farm"
-  },
-  {
-    id: "peru-cusco-flores",
-    ko: "페루 쿠스코 페르디도 포르 라스 플로레스",
-    country: "페루", region: "쿠스코 · 안데스 고산",
-    farm: "트레이더 스페셜 랏 (농장·생산자 비공개)",
-    variety: "잉카 게이샤 / SL9", process: "워시드",
-    notes: ["베르가못","망고스틴","자몽","꿀","얼그레이"],
-    story: "쿠스코 안데스의 1,900m 이상 고지대에서 온 게이샤입니다. 이름 그대로 ‘향기로운 꽃의 길’처럼 은은한 꽃향이 길게 이어지고, 맑고 투명한 질감이 특징이에요.",
-    lat: -12.8634, lon: -72.6930, precision: "region"
-  }
-];
-
 const state = {
-  filter: "all",        // all | lineup | country:<name>
+  filter: "all",        // all | country:<name>
   query: "",
   bean: null,           // 선택된 카탈로그 생두
   place: null,          // 선택된 장소
   results: null,
-  selectedLineup: null,
   ready: false
 };
 
@@ -573,32 +523,28 @@ const clusterLayer = L.markerClusterGroup({
     });
   }
 }).addTo(map);
-const lineupLayer = L.layerGroup().addTo(map);
 const markers = new Map();
 
 function pinIcon(item) {
   const t = item.tier;
   const cls = ["pin"];
-  if (t === "lineup") cls.push("lineup");
   if (t === "farm") cls.push("farm");
   if (t === "country") cls.push("country");
   if (state.place && state.place.id === item.id) cls.push("sel");
-  const label = t === "lineup" ? "★" : (item.count > 999 ? "999" : String(item.count || ""));
+  const label = item.count > 999 ? "999" : String(item.count || "");
   return L.divIcon({
     className: "pin-wrap",
     html: `<div class="${cls.join(" ")}"><i>${esc(label)}</i></div>`,
-    iconSize: t === "lineup" ? [30, 30] : [26, 26],
-    iconAnchor: t === "lineup" ? [15, 28] : [13, 25]
+    iconSize: [26, 26],
+    iconAnchor: [13, 25]
   });
 }
 
 function visibleItems() {
   const out = [];
-  for (const l of LINEUP) out.push({ id: "L:" + l.id, tier: "lineup", lat: l.lat, lon: l.lon, name: l.ko, sub: l.country, lineup: l, count: "" });
   if (!state.ready) return out;
   for (const p of CAT.places) {
     if (state.filter.startsWith("country:") && p.country !== state.filter.slice(8)) continue;
-    if (state.filter === "lineup") continue;
     const n = p.beanCount || (beansByPlace.get(p.id) || []).length;
     out.push({ id: p.id, tier: pinTier(p), lat: p.lat, lon: p.lon, name: p.name, sub: `${p.country} · ${n}종`, place: p, count: n });
   }
@@ -607,17 +553,13 @@ function visibleItems() {
 
 function drawPins() {
   clusterLayer.clearLayers();
-  lineupLayer.clearLayers();
   markers.clear();
   const items = visibleItems();
   for (const item of items) {
     const m = L.marker([item.lat, item.lon], { icon: pinIcon(item), title: item.name, keyboard: false, beanCount: item.count || 0 });
     m.bindTooltip(`<b>${esc(item.name)}</b><span>${esc(item.sub)}</span>`, { direction: "top", offset: [0, -18], className: "lt-tip" });
-    m.on("click", () => {
-      if (item.lineup) selectLineup(item.lineup);
-      else selectPlace(item.place);
-    });
-    m.addTo(item.lineup ? lineupLayer : clusterLayer);
+    m.on("click", () => selectPlace(item.place));
+    m.addTo(clusterLayer);
     markers.set(item.id, m);
   }
   drawPins.lastCount = items.length;
@@ -625,7 +567,7 @@ function drawPins() {
 }
 
 function fitVisible() {
-  const items = visibleItems().filter((i) => state.filter === "lineup" ? i.lineup : !i.lineup);
+  const items = visibleItems();
   const pts = items.map((i) => [i.lat, i.lon]);
   if (!pts.length) return;
   if (pts.length === 1) { map.flyTo(pts[0], 7, { duration: .8 }); return; }
@@ -637,9 +579,7 @@ function updateHint() {
   if (!state.ready) { el.innerHTML = `<span class="spin"></span>카탈로그를 불러오는 중…`; return; }
   const n = markers.size;
   const c = CAT.meta?.counts || {};
-  el.innerHTML = state.filter === "lineup"
-    ? `크럼블 라인업 <b>${n}</b>곳`
-    : `<b>${n}</b>곳 표시 · 카탈로그 ${(c.beans || 0).toLocaleString()}종 / ${c.countries || 0}개국`;
+  el.innerHTML = `<b>${n}</b>곳 표시 · 카탈로그 ${(c.beans || 0).toLocaleString()}종 / ${c.countries || 0}개국`;
 }
 
 /* ---------- 칩 ---------- */
@@ -649,7 +589,6 @@ function renderChips() {
   if (state.ready) for (const p of CAT.places) counts.set(p.country, (counts.get(p.country) || 0) + (p.beanCount || 0));
   const top = [...counts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 12);
   const chips = [];
-  chips.push(`<button class="chip star ${state.filter === "lineup" ? "on" : ""}" data-f="lineup">★ 크럼블 라인업</button>`);
   chips.push(`<button class="chip ${state.filter === "all" ? "on" : ""}" data-f="all">전체 카탈로그 <span class="cnt">${(CAT.meta?.counts?.beans || 0).toLocaleString()}</span></button>`);
   for (const [c, n] of top) {
     chips.push(`<button class="chip ${state.filter === "country:" + c ? "on" : ""}" data-f="country:${esc(c)}">${esc(c)} <span class="cnt">${n.toLocaleString()}</span></button>`);
@@ -774,30 +713,6 @@ function cardForBean(b) {
       <div class="qracts">
         <button class="copy" type="button" data-copy="${esc(location.origin + location.pathname + "?bean=" + encodeURIComponent(b.id))}">링크 복사</button>
         ${qrButton(deepUrl("bean", b.id), b.name, [b.country, b.region, b.farm].filter(Boolean).join(" · "), b.name, "스캔하면 이 원두의 산지 페이지가 열립니다")}
-      </div>
-    </div>
-  </div>`;
-}
-
-function cardForLineup(l) {
-  return `
-  <div class="card">
-    <div class="eyebrow">KRUMBLE LINEUP <span class="badge ok">${l.precision === "farm" ? "농장 확인" : "산지 단위"}</span></div>
-    <h2 class="c-name">${esc(l.ko)}</h2>
-    <div class="c-region"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="2"/></svg>
-      ${esc(l.country)} · ${esc(l.region)}</div>
-    <dl class="stats">
-      <div class="stat"><dt>농장</dt><dd>${esc(l.farm)}</dd></div>
-      <div class="stat"><dt>품종</dt><dd>${esc(l.variety)}</dd></div>
-      <div class="stat wide"><dt>가공</dt><dd>${esc(l.process)}</dd></div>
-    </dl>
-    <div class="notes">${l.notes.map((n) => `<span class="note">${esc(n)}</span>`).join("")}</div>
-    <p class="story">${esc(l.story)}</p>
-    <div class="qr">
-      <code>${esc(location.origin + location.pathname + "?coffee=" + encodeURIComponent(l.id))}</code>
-      <div class="qracts">
-        <button class="copy" type="button" data-copy="${esc(location.origin + location.pathname + "?coffee=" + encodeURIComponent(l.id))}">링크 복사</button>
-        ${qrButton(deepUrl("coffee", l.id), l.ko, l.farm, l.ko.replace(l.country + " ", ""), "스캔하면 이 원두의 산지 페이지가 열립니다")}
       </div>
     </div>
   </div>`;
@@ -1114,7 +1029,6 @@ function renderSheet() {
   let html = "";
   if (state.bean) html = cardForBean(state.bean);
   else if (state.place) html = cardForPlace(state.place);
-  else if (state.selectedLineup) html = cardForLineup(state.selectedLineup);
   else if (state.results) {
     const r = state.results;
     const ps = searchPlaces(state.query).slice(0, 6);
@@ -1132,7 +1046,7 @@ function renderSheet() {
   sheetEl.innerHTML = html;
   sheetEl.scrollTop = 0;
   bindSheet();
-  appEl.classList.toggle("has-sel", !!(state.bean || state.place || state.selectedLineup));
+  appEl.classList.toggle("has-sel", !!(state.bean || state.place));
 }
 
 function homeSheet() {
@@ -1151,16 +1065,6 @@ function homeSheet() {
     <div class="src">
       <div class="row"><span class="k">좌표</span><span>OpenStreetMap · Photon 지오코딩, 주요 산지는 관리 중심지로 보정</span></div>
       <div class="row"><span class="k">안내</span><span>가격과 매입 정보는 싣지 않습니다. 컵노트·품종 표기는 판매처에 따라 다를 수 있습니다.</span></div>
-    </div>
-  </div>
-  <div class="quick">
-    <h3>KRUMBLE LINEUP</h3>
-    <div class="qrow">
-      ${LINEUP.map((l) => `<button type="button" class="qcard ${state.selectedLineup && state.selectedLineup.id === l.id ? "on" : ""}" data-lineup="${esc(l.id)}">
-        <span class="qtop">★ ${esc(l.country)}</span>
-        <span class="qn">${esc(l.ko.replace(l.country + " ", ""))}</span>
-        <span class="qm">${esc(l.farm.replace(/\(.*?\)/g, "").trim().slice(0, 26))}</span>
-      </button>`).join("")}
     </div>
   </div>
   ${topPlaces.length ? `<div class="results" style="margin-top:16px">
@@ -1184,10 +1088,6 @@ function bindSheet() {
   sheetEl.querySelectorAll("[data-place]").forEach((b) => b.addEventListener("click", () => {
     const p = placeById.get(b.dataset.place);
     if (p) selectPlace(p);
-  }));
-  sheetEl.querySelectorAll("[data-lineup]").forEach((b) => b.addEventListener("click", () => {
-    const l = LINEUP.find((x) => x.id === b.dataset.lineup);
-    if (l) selectLineup(l);
   }));
   sheetEl.querySelectorAll("[data-copy]").forEach((b) => b.addEventListener("click", async () => {
     try { await navigator.clipboard.writeText(b.dataset.copy); b.textContent = "복사됨"; b.classList.add("done"); }
@@ -1217,20 +1117,15 @@ function zoomFor(p) {
 }
 
 function selectPlace(p) {
-  state.place = p; state.bean = null; state.selectedLineup = null; state.results = null;
+  state.place = p; state.bean = null; state.results = null;
   map.flyTo([p.lat, p.lon], zoomFor(p), { duration: 1.1 });
   drawPins(); renderSheet(); syncUrl();
 }
 function selectBean(b) {
-  state.bean = b; state.selectedLineup = null; state.results = null;
+  state.bean = b; state.results = null;
   const p = placeById.get(b.placeId);
   state.place = p || null;
   if (p) map.flyTo([p.lat, p.lon], zoomFor(p), { duration: 1.1 });
-  drawPins(); renderSheet(); syncUrl();
-}
-function selectLineup(l) {
-  state.selectedLineup = l; state.bean = null; state.place = null; state.results = null;
-  map.flyTo([l.lat, l.lon], l.precision === "farm" ? 11 : 9, { duration: 1.1 });
   drawPins(); renderSheet(); syncUrl();
 }
 
@@ -1297,7 +1192,6 @@ function syncUrl() {
   const p = new URLSearchParams();
   if (state.bean) p.set("bean", state.bean.id);
   else if (state.place) p.set("place", state.place.id);
-  else if (state.selectedLineup) p.set("coffee", state.selectedLineup.id);
   else if (state.query) p.set("q", state.query);
   const s = p.toString();
   history.replaceState(null, "", location.pathname + (s ? "?" + s : ""));
@@ -1321,10 +1215,9 @@ async function boot() {
   }
   renderChips();
   drawPins();
-  const beanId = params.get("bean"), placeId = params.get("place"), coffee = params.get("coffee"), q = params.get("q");
+  const beanId = params.get("bean"), placeId = params.get("place"), q = params.get("q");
   if (beanId) { const b = CAT.beans.find((x) => x.id === beanId); if (b) return selectBean(b); }
   if (placeId) { const p = placeById.get(placeId); if (p) return selectPlace(p); }
-  if (coffee) { const l = LINEUP.find((x) => x.id === coffee); if (l) return selectLineup(l); }
   if (q) { qEl.value = q; state.query = q; state.results = searchBeans(q); renderSheet(); }
   else renderSheet();
 }
@@ -1333,7 +1226,7 @@ $("#searchForm").addEventListener("submit", (e) => {
   e.preventDefault();
   const q = qEl.value.trim();
   if (!q) return;
-  state.query = q; state.bean = null; state.place = null; state.selectedLineup = null;
+  state.query = q; state.bean = null; state.place = null;
   state.results = searchBeans(q);
   sugEl.classList.remove("on");
   renderSheet(); syncUrl();
