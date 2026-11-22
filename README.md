@@ -51,6 +51,9 @@
 - **`farms.html`** — 농장 아카이브 (생산자·연혁·고도·수상 기록)
 - **`about.html`** — 사이트 소개와 데이터 원칙
 - **`privacy.html`** — 개인정보처리방침
+- **`log.html`** — 내 커피 기록(개인 테스트). 사진 OCR로 이름을 찾아 내 지도에 핀으로 남기는 페이지로,
+  상단 메뉴·사이트맵에는 넣지 않습니다(`noindex`). 직접 URL `https://coffeeinsight.kr/log.html` 로만 엽니다.
+  기록·사진은 방문자 브라우저(localStorage · IndexedDB)에만 저장되고 서버로 보내지 않습니다.
 - `site.css` — 위 읽기 페이지 공용 스타일 (지도 화면과 같은 색·서체)
 - `sitemap.xml` · `robots.txt`
 
