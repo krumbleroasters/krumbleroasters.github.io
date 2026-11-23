@@ -1518,7 +1518,8 @@ const TESS = {
   js: "https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js",
   worker: "https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/worker.min.js",
   core: "https://cdn.jsdelivr.net/npm/tesseract.js-core@5.1.1",
-  lang: "https://tessdata.projectnaptha.com/4.0.0"
+  lang: "https://cdn.jsdelivr.net/gh/naptha/tessdata@gh-pages/4.0.0",
+  langAlt: "https://tessdata.projectnaptha.com/4.0.0"
 };
 
 function psLoadScript(src) {
@@ -1613,29 +1614,40 @@ function psLoadImage(file) {
 }
 
 /* ---------- OCR ---------- */
+function psLogger(job) {
+  return (m) => {
+    if (job !== PV.job || !PV.active) return;
+    const p = typeof m.progress === "number" ? m.progress : 0;
+    let label = "사진 속 글자를 읽는 중";
+    if (m.status === "loading tesseract core") label = "인식 엔진을 불러오는 중";
+    else if (m.status === "initializing tesseract") label = "인식 엔진을 준비하는 중";
+    else if (m.status === "loading language traineddata") label = "한국어·영어 글자 데이터 준비 중";
+    else if (m.status === "initializing api") label = "인식 준비 중";
+    const isRec = m.status === "recognizing text";
+    const base = isRec ? PV.recBase : 0.06;
+    const spanW = isRec ? PV.recSpan : 0.36;
+    psSetStatus("run", label, base + p * spanW, m.status === "loading language traineddata" ? PS_DATA_NOTE : "");
+  };
+}
+function psSpawnWorker(job, langPath) {
+  return window.Tesseract.createWorker("kor+eng", 1, {
+    workerPath: TESS.worker,
+    corePath: TESS.core,
+    langPath,
+    logger: psLogger(job)
+  });
+}
 function psEnsureWorker(job) {
   if (PV.worker) return Promise.resolve(PV.worker);
   psSetStatus("run", "인식 엔진을 내려받는 중", 0.06, PS_DATA_NOTE);
   return psLoadScript(TESS.js)
     .then(() => {
       if (!window.Tesseract) throw new Error("no tesseract");
-      return window.Tesseract.createWorker("kor+eng", 1, {
-        workerPath: TESS.worker,
-        corePath: TESS.core,
-        langPath: TESS.lang,
-        logger: (m) => {
-          if (job !== PV.job || !PV.active) return;
-          const p = typeof m.progress === "number" ? m.progress : 0;
-          let label = "사진 속 글자를 읽는 중";
-          if (m.status === "loading tesseract core") label = "인식 엔진을 불러오는 중";
-          else if (m.status === "initializing tesseract") label = "인식 엔진을 준비하는 중";
-          else if (m.status === "loading language traineddata") label = "한국어·영어 글자 데이터 준비 중";
-          else if (m.status === "initializing api") label = "인식 준비 중";
-          const isRec = m.status === "recognizing text";
-          const base = isRec ? PV.recBase : 0.06;
-          const spanW = isRec ? PV.recSpan : 0.36;
-          psSetStatus("run", label, base + p * spanW, m.status === "loading language traineddata" ? PS_DATA_NOTE : "");
-        }
+      return psSpawnWorker(job, TESS.lang).catch((err) => {
+        console.warn("ocr worker: first lang host failed", err);
+        if (job !== PV.job || !PV.active) throw err;
+        psSetStatus("run", "글자 데이터를 다른 곳에서 받는 중", 0.12, PS_DATA_NOTE);
+        return psSpawnWorker(job, TESS.langAlt);
       });
     })
     .then((w) => { PV.worker = w; return w; });
