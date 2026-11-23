@@ -87,6 +87,10 @@ window.CI_I18N = (function () {
     /* ───────── index.html ───────── */
     "온커피로그 ONCOFFEELOG": "ONCOFFEELOG||ONCOFFEELOG（オンコーヒーログ）",
     "온커피로그 ONCOFFEELOG · 커피 산지·농장 지도": "ONCOFFEELOG · Coffee Origin & Farm Map||ONCOFFEELOG · コーヒー産地・農園マップ",
+    "온커피로그(ONCOFFEELOG) 커피 산지·농장 지도 — 국내에 들어온 생두 2,800여 종이 어디서 자랐는지 지도에서 보여줍니다. 크럼블로스터스(KRUMBLE ROASTERS)가 운영합니다.":
+      "ONCOFFEELOG — a coffee origin and farm map showing where the roughly 2,800 green beans sold in Korea were grown. Operated by KRUMBLE ROASTERS.||ONCOFFEELOG コーヒー産地・農園マップ — 韓国に入ってきた生豆約2,800種がどこで育ったかを地図で示します。運営は KRUMBLE ROASTERS。",
+    "국내에 유통되는 생두 2,846종이 어디서 자랐는지 지도에서 보여줍니다.":
+      "A map of where the 2,846 green beans sold in Korea were grown.||韓国に流通する生豆2,846種がどこで育ったかを地図で示します。",
     "온커피로그": "ONCOFFEELOG||オンコーヒーログ",
     "종": " beans|| 種",
     "지도 ©": "Map ©||地図 ©",
@@ -1202,8 +1206,8 @@ window.CI_I18N = (function () {
       "확인된 농장 {#}곳||{} verified farms||確認できた農園{}か所",
       "지도에 올라온 농장 {#}곳 가운데, 생산자와 연혁·수상 기록을 자료로 확인할 수 있는 농장을 모았습니다. 확인되지 않은 내용은 채우지 않았고, 어디까지 확인된 위치인지도 카드마다 밝혀 두었습니다. 생두 {#}종이 이 농장들에서 왔습니다.||Of the {} farms on the map, this collects those whose producer, history and awards can be confirmed from sources. Nothing unconfirmed is filled in, and each card says how far its position has been confirmed. {} green beans come from these farms.||地図に載った農園{}か所のうち、生産者と沿革・受賞記録を資料で確認できる農園を集めました。確認できない内容は埋めず、どこまで確認できた位置なのかもカードごとに明記しています。生豆{}種がこれらの農園から来ています。",
       "{#}년 {#}월 {#}일 기준 · 농장 {#}곳 · 수록 {#}곳 · 위치만 확인 {#}곳||As of {}/{}/{} · {} farms · {} written up · {} location only||{}年{}月{}日時点 · 農園{}か所 · 掲載{}か所 · 位置のみ確認{}か所",
-      "곳 표시 · 카탈로그 {#}종 / {#}개국||places · {} beans in the catalog / {} countries||を表示 · カタログ{}種 / {}か国",
-      "곳 표시 · {#}종||places · {} beans||を表示 · {}種",
+      "곳 표시 · 카탈로그 {#}종 / {#}개국||places · {} beans in the catalog / {} countries||か所を表示 · カタログ{}種 / {}か国",
+      "곳 표시 · {#}종||places · {} beans||か所を表示 · {}種",
       "지도 © Esri, HERE, Garmin, OpenStreetMap contributors||Map © Esri, HERE, Garmin, OpenStreetMap contributors||地図 © Esri, HERE, Garmin, OpenStreetMap contributors",
       "지도 © {}||Map © {}||地図 © {}",
       "· 온커피로그 · 손님용 산지 지도 · KRUMBLE ROASTERS||· Coffee origin map · KRUMBLE ROASTERS||· コーヒー産地マップ · KRUMBLE ROASTERS",
