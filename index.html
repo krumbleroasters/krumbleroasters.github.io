@@ -109,11 +109,13 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 
   /* ---------- 사진(카메라) 검색 ---------- */
   .search-box .cam{
-    flex:none;width:36px;height:36px;border-radius:999px;
+    flex:none;position:relative;width:36px;height:36px;border-radius:999px;
     display:inline-flex;align-items:center;justify-content:center;
     background:#F7EFE4;border:1px solid #EFDFC9;color:#8A5A2B;
     transition:background .16s ease,border-color .16s ease,transform .12s ease;
   }
+  /* 보이는 원은 36px, 손가락이 닿는 영역은 44px로 */
+  .search-box .cam::after{content:"";position:absolute;inset:-4px;border-radius:999px}
   .search-box .cam svg{color:currentColor}
   .search-box .cam:hover{background:#F1E3CE;border-color:#E3CDAE}
   .search-box .cam:active{transform:scale(.93)}
@@ -213,7 +215,6 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   .pscand .arw{flex:none;color:var(--terra);font-size:15px;font-weight:800;padding-top:1px;line-height:1.2}
   @media(max-width:400px){
     .search-box{gap:6px}
-    .search-box .cam{width:34px;height:34px}
     .pspanel{padding:12px}
     .psrow img{width:64px;height:64px}
   }
