@@ -97,8 +97,7 @@
   function basic(t) {
     var pair = TEXT[t];
     if (pair) return pick(pair);
-    var mk = mask(t);
-    if (MASK[mk]) return pick(TEXT[MASK[mk]]);
+    // 문장 틀을 먼저 본다 — 숫자가 든 문장은 틀이 숫자를 그대로 옮겨 적는다.
     for (var i = 0; i < TPL.length; i++) {
       var m = t.match(TPL[i].re);
       if (!m) continue;
@@ -110,6 +109,20 @@
         var inner = (v && KO_RE.test(v) && v.length <= 30) ? translate(v) : null;
         return inner == null ? v : inner;
       });
+    }
+    // 같은 숫자 틀의 다른 문장밖에 없을 때는, 그 번역의 숫자를 지금 문장의 숫자로 바꿔 쓴다.
+    var mk = mask(t);
+    if (MASK[mk]) {
+      var tr = pick(TEXT[MASK[mk]]);
+      if (tr != null) {
+        var a = String(t).match(/\d[\d,\.]*/g) || [];
+        var b = String(tr).match(/\d[\d,\.]*/g) || [];
+        if (a.length && a.length === b.length) {
+          var k = 0;
+          tr = tr.replace(/\d[\d,\.]*/g, function () { return a[k++]; });
+        }
+        return tr;
+      }
     }
     // 사전에 없는 짧은 낱말만 낱말 사전으로 (문장을 토막 내지 않도록)
     if (t.length <= 48 && !/[.!?]$/.test(t) && !/(습니다|해요|예요|이에요|합니다|됩니다|주세요)$/.test(t)) {
