@@ -263,3 +263,4 @@ td a{color:var(--terra);font-weight:700;text-decoration:none}
 .terra-dl dt{font-size:9.5px;font-weight:800;letter-spacing:.08em;color:#9A8F80;text-transform:uppercase;margin:0}
 .terra-dl dd{margin:3px 0 0;font-size:12.5px;font-weight:700;line-height:1.55;color:#3D372F;word-break:keep-all;overflow-wrap:anywhere}
 @media (max-width:470px){.terra-dl{grid-template-columns:1fr}}
+.terra-dl>div:last-child:nth-child(odd){grid-column:1/-1}
