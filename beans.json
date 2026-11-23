@@ -7,8 +7,8 @@
 "beans": 2833,
 "listings": 3853,
 "countries": 33,
-"places": 218,
-"regions": 158,
+"places": 214,
+"regions": 154,
 "farms": 29,
 "auctions": 97,
 "auctionPlaces": 44
@@ -21,16 +21,16 @@
 },
 "coordSource": "Photon/OpenStreetMap (ODbL), 일부 주요 산지는 관리 중심지 좌표로 보정",
 "profileFill": {
-"elevation": 218,
-"harvest": 218,
-"terroir": 218,
-"varieties": 218,
-"processes": 218,
-"flavorProfile": 218,
-"trend": 218,
-"story": 218
+"elevation": 214,
+"harvest": 214,
+"terroir": 214,
+"varieties": 214,
+"processes": 214,
+"flavorProfile": 214,
+"trend": 214,
+"story": 214
 },
-"profileFallback": 25
+"profileFallback": 21
 },
 "places": [
 {
@@ -5900,28 +5900,6 @@
 "profileLevel": "country"
 },
 {
-"id": "R|과테말라|치말테낭고",
-"kind": "region",
-"country": "과테말라",
-"name": "치말테낭고",
-"nameEn": "Chimaltenango",
-"lat": 14.6613,
-"lon": -90.81935,
-"precision": "region",
-"evidence": "Chimaltenango · OSM/Photon",
-"source": "https://www.openstreetmap.org/search?query=Chimaltenango",
-"beanCount": 0,
-"elevation": "1,300~2,000m (우에우에테낭고 2,000m 이상)",
-"harvest": "11월~3월 (주 수확기)",
-"terroir": "화산 산맥과 고원 · 산지마다 갈리는 토양과 바람",
-"varieties": "부르봉 · 카투아이 · 카투라 (스페셜티 롯에 파카마라·게이샤)",
-"processes": "워시드 중심 · 허니·내추럴 확대",
-"flavorProfile": "밀크초콜릿 · 오렌지 · 스파이스의 묵직한 단맛",
-"trend": "안아카페 등 지역 대회와 함께 무산소·파카마라 롯이 늘고, 농장별 품종 실험이 활발합니다.",
-"story": "과테말라의 치말테낭고 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 과테말라 산지의 공통 특성으로 소개합니다.",
-"profileLevel": "country"
-},
-{
 "id": "R|과테말라|쿠일코",
 "kind": "region",
 "country": "과테말라",
@@ -6077,28 +6055,6 @@
 "profileLevel": "country"
 },
 {
-"id": "R|니카라과|디필토",
-"kind": "region",
-"country": "니카라과",
-"name": "디필토",
-"nameEn": "Dipilto",
-"lat": 13.73897,
-"lon": -86.51939,
-"precision": "region",
-"evidence": "Dipilto, Nueva Segovia · OSM/Photon",
-"source": "https://www.openstreetmap.org/search?query=Dipilto",
-"beanCount": 0,
-"elevation": "1,100~1,700m",
-"harvest": "11월~3월 (주 수확기)",
-"terroir": "북부 산맥 · 화산성 토양 · 온두라스 국경 고지",
-"varieties": "카투라 · 부르봉 · 마라카투라 · 파카마라 · 게이샤",
-"processes": "워시드 중심 · 허니·내추럴·무산소",
-"flavorProfile": "초콜릿 · 시트러스 · 붉은 과일",
-"trend": "대회에서 이름을 올리는 소농 농장이 늘며 무산소·게이샤 롯이 주목받고 있습니다.",
-"story": "니카라과의 디필토 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 니카라과 산지의 공통 특성으로 소개합니다.",
-"profileLevel": "country"
-},
-{
 "id": "R|니카라과|마드리스",
 "kind": "region",
 "country": "니카라과",
@@ -6141,28 +6097,6 @@
 "flavorProfile": "초콜릿 · 시트러스 · 붉은 과일",
 "trend": "대회에서 이름을 올리는 소농 농장이 늘며 무산소·게이샤 롯이 주목받고 있습니다.",
 "story": "니카라과의 마드리스 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 니카라과 산지의 공통 특성으로 소개합니다.",
-"profileLevel": "country"
-},
-{
-"id": "R|니카라과|모손테",
-"kind": "region",
-"country": "니카라과",
-"name": "모손테",
-"nameEn": "Mozonte",
-"lat": 13.66017,
-"lon": -86.43871,
-"precision": "region",
-"evidence": "Mozonte, Nueva Segovia · OSM/Photon",
-"source": "https://www.openstreetmap.org/search?query=Mozonte",
-"beanCount": 0,
-"elevation": "1,100~1,700m",
-"harvest": "11월~3월 (주 수확기)",
-"terroir": "북부 산맥 · 화산성 토양 · 온두라스 국경 고지",
-"varieties": "카투라 · 부르봉 · 마라카투라 · 파카마라 · 게이샤",
-"processes": "워시드 중심 · 허니·내추럴·무산소",
-"flavorProfile": "초콜릿 · 시트러스 · 붉은 과일",
-"trend": "대회에서 이름을 올리는 소농 농장이 늘며 무산소·게이샤 롯이 주목받고 있습니다.",
-"story": "니카라과의 모손테 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 니카라과 산지의 공통 특성으로 소개합니다.",
 "profileLevel": "country"
 },
 {
@@ -6913,28 +6847,6 @@
 "flavorProfile": "시트러스 · 카라멜 · 꿀의 깨끗한 단맛",
 "trend": "소농이 직접 가공하는 마이크로밀 방식이 중미로 퍼진 진원지로, 허니·내추럴 롯이 계속 늘고 있습니다.",
 "story": "코스타리카의 페레스 셀레돈 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 코스타리카 산지의 공통 특성으로 소개합니다.",
-"profileLevel": "country"
-},
-{
-"id": "R|태국|난",
-"kind": "region",
-"country": "태국",
-"name": "난",
-"nameEn": "Nan",
-"lat": 18.75446,
-"lon": 100.6248,
-"precision": "region",
-"evidence": "Nan 주(州) 중심 · OSM/Photon",
-"source": "https://www.openstreetmap.org/search?query=Nan%20Province%2C%20Thailand",
-"beanCount": 0,
-"elevation": "1,000~1,600m",
-"harvest": "11월~2월 (주 수확기)",
-"terroir": "북부 산지 · 화산성 토양 · 건조한 겨울",
-"varieties": "카티모르 · 카투라 · 타이 재래종",
-"processes": "워시드 · 허니 · 내추럴",
-"flavorProfile": "견과 · 카라멜 · 부드러운 과일",
-"trend": "치앙마이·치앙라이 고지에서 스페셜티 롯과 무산소 가공이 늘고 있습니다.",
-"story": "태국의 난 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 태국 산지의 공통 특성으로 소개합니다.",
 "profileLevel": "country"
 },
 {
