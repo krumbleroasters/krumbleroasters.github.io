@@ -248,6 +248,11 @@ window.CI_I18N = (function () {
     /* ───────── index.html: JS가 그리는 문장 ───────── */
     "생두": "Green beans||生豆",
     "곳 표시": "places shown||地点を表示",
+    "🏆 옥션·CoE": "🏆 Auctions · CoE||🏆 オークション・CoE",
+    "🏆 옥션 낙찰": "🏆 Auction lot||🏆 オークション落札",
+    "낙찰 로스터리": "Winning roastery||落札ロースター",
+    "공동": "Joint||共同",
+    "경매 결과표": "Auction results||オークション結果表",
     "검색 결과": "search results||の検索結果"
   };
 
@@ -1201,6 +1206,11 @@ window.CI_I18N = (function () {
       "{} ({#}금)||{} (Fri)||{}（金）",
       "{} ({#}토)||{} (Sat)||{}（土）",
       "{#}위||#{}||{}位",
+      "🏆 옥션 낙찰 {#}||🏆 {} auction lots||🏆 オークション落札{}",
+      "옥션 낙찰 산지·농장 {#}곳 · 낙찰 랏 {#}건||{} places with auction lots · {} lots||オークション落札の産地{}か所 · 落札ロット{}件",
+      "{#}곳 · 낙찰 {#}건||{} places · {} lots||{}か所 · 落札{}件",
+      "랏 {}||Lot {}||ロット{}",
+      "옥션 낙찰 산지·농장 {#}곳||{} places with auction lots||オークション落札の産地{}か所",
       "컵||Cup||カップ",
       "약 {} m||about {} m||約 {} m",
       "약 {} m (농장에 따라 그 이상)||about {} m (more at some farms)||約 {} m（農園によってはそれ以上）",

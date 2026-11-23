@@ -7,9 +7,11 @@
 "beans": 2833,
 "listings": 3853,
 "countries": 33,
-"places": 193,
-"regions": 133,
-"farms": 29
+"places": 218,
+"regions": 158,
+"farms": 29,
+"auctions": 97,
+"auctionPlaces": 44
 },
 "precision": {
 "farm": 73,
@@ -19,16 +21,16 @@
 },
 "coordSource": "Photon/OpenStreetMap (ODbL), 일부 주요 산지는 관리 중심지 좌표로 보정",
 "profileFill": {
-"elevation": 193,
-"harvest": 193,
-"terroir": 193,
-"varieties": 193,
-"processes": 193,
-"flavorProfile": 193,
-"trend": 193,
-"story": 193
+"elevation": 218,
+"harvest": 218,
+"terroir": 218,
+"varieties": 218,
+"processes": 218,
+"flavorProfile": 218,
+"trend": 218,
+"story": 218
 },
-"profileFallback": 0
+"profileFallback": 25
 },
 "places": [
 {
@@ -63,6 +65,29 @@
 "precision": "country",
 "evidence": "Brazil, Brazil",
 "beanCount": 157,
+"auctions": [
+{
+"id": "coe-brazil-2024-sitio-pedro-varinha-3",
+"competition": "Cup of Excellence 브라질 2024 · Washed + Honey",
+"year": 2024,
+"rank": "3",
+"score": 90.21,
+"farm": "Sitio Pedro Varinha",
+"variety": "Arara",
+"process": "Pulped",
+"buyers": [
+"테라로사"
+],
+"buyersEn": [
+"Terarosa"
+],
+"joint": true,
+"level": "country",
+"src": "https://allianceforcoffeeexcellence.org/brazil-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2024/"
+}
+],
+"auctionCount": 1,
 "elevation": "800~1,300m (고급 롯은 1,100m 이상)",
 "harvest": "5월~9월 (주 수확기)",
 "terroir": "넓은 고원 · 라테라이트 토양 · 뚜렷한 건기와 우기",
@@ -126,6 +151,91 @@
 "precision": "country",
 "evidence": "Costa Rica, Costa Rica",
 "beanCount": 143,
+"auctions": [
+{
+"id": "coe-costa-rica-2026-leoncio-8",
+"competition": "Cup of Excellence 코스타리카 2026 · Washed",
+"year": 2026,
+"rank": "8",
+"score": 88.56,
+"farm": "Leoncio",
+"variety": "San Roque Linea Tipica",
+"process": "Washed",
+"buyers": [
+"지에스씨인터내셔날"
+],
+"buyersEn": [
+"GSC International"
+],
+"joint": true,
+"level": "country",
+"src": "https://allianceforcoffeeexcellence.org/costa-rica-2026/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/costa-rica-2026/"
+},
+{
+"id": "coe-costa-rica-2025-la-isla-6",
+"competition": "Cup of Excellence 코스타리카 2025 · Traditional Honey & Natural Processes",
+"year": 2025,
+"rank": "6",
+"score": 88.66,
+"farm": "La Isla",
+"variety": "Sl-28",
+"process": "Natural",
+"buyers": [
+"테라로사"
+],
+"buyersEn": [
+"Terarosa"
+],
+"joint": true,
+"level": "country",
+"src": "https://allianceforcoffeeexcellence.org/costa-rica-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/costa-rica-2025/"
+},
+{
+"id": "coe-costa-rica-2024-monte-llano-bonito-el-kinkajou-3",
+"competition": "Cup of Excellence 코스타리카 2024 · Experimental",
+"year": 2024,
+"rank": "3",
+"score": 90.42,
+"farm": "Monte Llano Bonito El Kinkajou",
+"variety": "San Roque",
+"process": "Fermentation",
+"buyers": [
+"커피미업",
+"커피몽타주"
+],
+"buyersEn": [
+"Coffee Me Up",
+"Coffee Montage"
+],
+"joint": true,
+"level": "country",
+"src": "https://allianceforcoffeeexcellence.org/costa-rica-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/costa-rica-2024/"
+},
+{
+"id": "coe-costa-rica-2024-el-bosque-geisha-5",
+"competition": "Cup of Excellence 코스타리카 2024 · Experimental",
+"year": 2024,
+"rank": "5",
+"score": 88.62,
+"farm": "El Bosque Geisha",
+"variety": "Geisha",
+"process": "Fermentation",
+"buyers": [
+"지에스씨인터내셔날"
+],
+"buyersEn": [
+"GSC International"
+],
+"joint": true,
+"level": "country",
+"src": "https://allianceforcoffeeexcellence.org/costa-rica-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/costa-rica-2024/"
+}
+],
+"auctionCount": 4,
 "elevation": "1,200~1,900m",
 "harvest": "11월~3월 (주 수확기)",
 "terroir": "화산 산맥 · 태평양·카리브 두 바람 · 안개 잦은 고지",
@@ -189,6 +299,73 @@
 "precision": "region",
 "evidence": "산지 중심(관리자 보정)",
 "beanCount": 102,
+"auctions": [
+{
+"id": "coe-ethiopia-2024-tamru-16",
+"competition": "Cup of Excellence 에티오피아 2024",
+"year": 2024,
+"rank": "16",
+"score": 87.52,
+"farm": "Tamru",
+"variety": "74158",
+"process": "Natural",
+"buyers": [
+"라이언스커피"
+],
+"buyersEn": [
+"Ryans Coffee Roasters"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/ethiopia-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/etiopia-2024/"
+},
+{
+"id": "coe-ethiopia-2024-leikun-20",
+"competition": "Cup of Excellence 에티오피아 2024",
+"year": 2024,
+"rank": "20",
+"score": 87.46,
+"farm": "Leikun",
+"variety": "74158",
+"process": "Natural",
+"buyers": [
+"커피미업"
+],
+"buyersEn": [
+"Coffee Me Up"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/ethiopia-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/etiopia-2024/"
+},
+{
+"id": "coe-ethiopia-2024-bekele-5",
+"competition": "Cup of Excellence 에티오피아 2024",
+"year": 2024,
+"rank": "5",
+"score": 89.41,
+"farm": "Bekele",
+"variety": "74158",
+"process": "Natural",
+"buyers": [
+"뮤제오",
+"커피화",
+"아얀투"
+],
+"buyersEn": [
+"MUSEO",
+"COFFEE HWA",
+"AYANTU"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/ethiopia-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/etiopia-2024/"
+}
+],
+"auctionCount": 3,
 "elevation": "1,550~2,200m",
 "harvest": "10월~2월 (주 수확기)",
 "terroir": "시다마 고지 · 화산성 토양 · 원생림 그늘",
@@ -231,6 +408,213 @@
 "precision": "country",
 "evidence": "Panama, Panama",
 "beanCount": 91,
+"auctions": [
+{
+"id": "bop-2026-gn-06",
+"competition": "Best of Panama 2026",
+"year": 2026,
+"rank": "GN-06",
+"score": 94.38,
+"farm": "Nuguo Natural",
+"variety": "Geisha",
+"process": "Natural",
+"buyers": [
+"루베르로스터리"
+],
+"buyersEn": [
+"Ruber.Roastery"
+],
+"joint": true,
+"level": "country",
+"src": "https://bestofpanama.auction/auction-2026",
+"src2": "https://roasttocup.coffee/markets/auctions/best-of-panama-2026/"
+},
+{
+"id": "bop-2026-gn-07",
+"competition": "Best of Panama 2026",
+"year": 2026,
+"rank": "GN-07",
+"score": 94.38,
+"farm": "Totumas Friendship",
+"variety": "Geisha",
+"process": "Natural",
+"buyers": [
+"루베르로스터리"
+],
+"buyersEn": [
+"Ruber.Roastery"
+],
+"joint": true,
+"level": "country",
+"src": "https://bestofpanama.auction/auction-2026",
+"src2": "https://roasttocup.coffee/markets/auctions/best-of-panama-2026/"
+},
+{
+"id": "bop-2026-gn-19",
+"competition": "Best of Panama 2026",
+"year": 2026,
+"rank": "GN-19",
+"score": 92.25,
+"farm": "Finca El Destino — Rosebud",
+"variety": "Geisha",
+"process": "Natural",
+"buyers": [
+"커피미업"
+],
+"buyersEn": [
+"Coffee Me Up"
+],
+"joint": true,
+"level": "country",
+"src": "https://bestofpanama.auction/auction-2026",
+"src2": "https://roasttocup.coffee/markets/auctions/best-of-panama-2026/"
+},
+{
+"id": "bop-2026-gw-04",
+"competition": "Best of Panama 2026",
+"year": 2026,
+"rank": "GW-04",
+"score": 95.13,
+"farm": "Stellar Amber Geisha",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"루리커피",
+"커피미업"
+],
+"buyersEn": [
+"RULI Coffee",
+"Coffee Me Up"
+],
+"joint": true,
+"level": "country",
+"src": "https://bestofpanama.auction/auction-2026",
+"src2": "https://roasttocup.coffee/markets/auctions/best-of-panama-2026/"
+},
+{
+"id": "bop-2025-gn-05",
+"competition": "Best of Panama 2025",
+"year": 2025,
+"rank": "GN-05",
+"score": 94.75,
+"farm": "Finca Maya Kairós",
+"variety": "Geisha",
+"process": "Natural",
+"buyers": [
+"커피미업"
+],
+"buyersEn": [
+"Coffee Me Up"
+],
+"joint": true,
+"level": "country",
+"src": "https://bestofpanama.auction/auction-2025",
+"src2": "https://roasttocup.coffee/markets/auctions/best-of-panama-2025/"
+},
+{
+"id": "bop-2025-gw-06",
+"competition": "Best of Panama 2025",
+"year": 2025,
+"rank": "GW-06",
+"score": 94.38,
+"farm": "Stellar Amber Geisha",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"루베르로스터리"
+],
+"buyersEn": [
+"Ruber.Roastery"
+],
+"joint": true,
+"level": "country",
+"src": "https://bestofpanama.auction/auction-2025",
+"src2": "https://roasttocup.coffee/markets/auctions/best-of-panama-2025/"
+},
+{
+"id": "bop-2025-gw-14",
+"competition": "Best of Panama 2025",
+"year": 2025,
+"rank": "GW-14",
+"score": 92.38,
+"farm": "El Destino Duende Geisha",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"루베르로스터리"
+],
+"buyersEn": [
+"Ruber.Roastery"
+],
+"joint": true,
+"level": "country",
+"src": "https://bestofpanama.auction/auction-2025",
+"src2": "https://roasttocup.coffee/markets/auctions/best-of-panama-2025/"
+},
+{
+"id": "bop-2024-gn-02",
+"competition": "Best of Panama 2024",
+"year": 2024,
+"rank": "GN-02",
+"score": 95.0,
+"farm": "Carmen Geisha Especial",
+"variety": "Geisha",
+"process": "Natural",
+"buyers": [
+"루리커피"
+],
+"buyersEn": [
+"RULI Coffee"
+],
+"joint": true,
+"level": "country",
+"src": "https://bestofpanama.auction/auction-2024",
+"src2": "https://roasttocup.coffee/markets/auctions/best-of-panama-2024/"
+},
+{
+"id": "bop-2024-gw-02",
+"competition": "Best of Panama 2024",
+"year": 2024,
+"rank": "GW-02",
+"score": 95.13,
+"farm": "Olympus (Cerro Punta)",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"센터커피",
+"커피화"
+],
+"buyersEn": [
+"Center Coffee Korea",
+"COFFEE HWA"
+],
+"joint": true,
+"level": "country",
+"src": "https://bestofpanama.auction/auction-2024",
+"src2": "https://roasttocup.coffee/markets/auctions/best-of-panama-2024/"
+},
+{
+"id": "bop-2024-gw-03",
+"competition": "Best of Panama 2024",
+"year": 2024,
+"rank": "GW-03",
+"score": 94.63,
+"farm": "Nuguo Washed",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"루리커피"
+],
+"buyersEn": [
+"RULI Coffee"
+],
+"joint": true,
+"level": "country",
+"src": "https://bestofpanama.auction/auction-2024",
+"src2": "https://roasttocup.coffee/markets/auctions/best-of-panama-2024/"
+}
+],
+"auctionCount": 10,
 "elevation": "1,300~1,900m",
 "harvest": "12월~3월 (주 수확기)",
 "terroir": "바루 화산 자락 · 구름숲 · 태평양·카리브 두 바람",
@@ -378,6 +762,49 @@
 "precision": "country",
 "evidence": "El Salvador, El Salvador",
 "beanCount": 34,
+"auctions": [
+{
+"id": "coe-el-salvador-2026-miramar-8",
+"competition": "Cup of Excellence 엘살바도르 2026 · Washed + Honey",
+"year": 2026,
+"rank": "8",
+"score": 87.95,
+"farm": "Miramar",
+"variety": "Bourbon 70% /Typica 30%",
+"process": "Semi-Washed",
+"buyers": [
+"미커피"
+],
+"buyersEn": [
+"MI Coffee Corporation"
+],
+"joint": true,
+"level": "country",
+"src": "https://allianceforcoffeeexcellence.org/el-salvador-2026/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/el-salvador-2026/"
+},
+{
+"id": "coe-el-salvador-2024-san-antonio-de-alejandria-5",
+"competition": "Cup of Excellence 엘살바도르 2024 · Washed + Honey",
+"year": 2024,
+"rank": "5",
+"score": 89.18,
+"farm": "San Antonio De Alejandria",
+"variety": "Pacamara",
+"process": "Honey",
+"buyers": [
+"미커피"
+],
+"buyersEn": [
+"MI Coffee Corporation"
+],
+"joint": true,
+"level": "country",
+"src": "https://allianceforcoffeeexcellence.org/el-salvador-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/el-salvador-2024/"
+}
+],
+"auctionCount": 2,
 "elevation": "1,000~1,700m",
 "harvest": "11월~3월 (주 수확기)",
 "terroir": "화산 많은 작은 나라 · 화산재 토양 · 태평양 경사",
@@ -420,6 +847,49 @@
 "precision": "region",
 "evidence": "산지 중심(관리자 보정)",
 "beanCount": 31,
+"auctions": [
+{
+"id": "coe-brazil-2025-fazenda-olhos-d-gua-4",
+"competition": "Cup of Excellence 브라질 2025 · Natural",
+"year": 2025,
+"rank": "4",
+"score": 89.55,
+"farm": "Fazenda Olhos D’Água",
+"variety": "Arara",
+"process": "Natural",
+"buyers": [
+"동서식품"
+],
+"buyersEn": [
+"Dongsuh Foods"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/brazil-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2025/"
+},
+{
+"id": "coe-brazil-2025-fazenda-canastra-5",
+"competition": "Cup of Excellence 브라질 2025 · Washed + Honey",
+"year": 2025,
+"rank": "5",
+"score": 89.32,
+"farm": "Fazenda Canastra",
+"variety": "Arara",
+"process": "Honey",
+"buyers": [
+"미커피"
+],
+"buyersEn": [
+"MI Coffee Corporation"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/brazil-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2025/"
+}
+],
+"auctionCount": 2,
 "elevation": "1,000~1,300m",
 "harvest": "5월~9월 (주 수확기)",
 "terroir": "미나스 제라이스 서부 고원 · 넓은 평지 · 강한 건기",
@@ -588,6 +1058,29 @@
 "precision": "country",
 "evidence": "Thailand, Thailand",
 "beanCount": 22,
+"auctions": [
+{
+"id": "coe-thailand-2024-phalaakha-coffee-farm-15",
+"competition": "Cup of Excellence 태국 2024",
+"year": 2024,
+"rank": "15",
+"score": 87.58,
+"farm": "PhalaAkha coffee farm",
+"variety": "Cartimor",
+"process": "Dry/Natural",
+"buyers": [
+"미커피"
+],
+"buyersEn": [
+"MI Coffee Corporation"
+],
+"joint": true,
+"level": "country",
+"src": "https://allianceforcoffeeexcellence.org/thailand-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/tailandia-2024/"
+}
+],
+"auctionCount": 1,
 "elevation": "1,000~1,600m",
 "harvest": "11월~2월 (주 수확기)",
 "terroir": "북부 산지 · 화산성 토양 · 건조한 겨울",
@@ -629,6 +1122,49 @@
 }
 ],
 "beanCount": 21,
+"auctions": [
+{
+"id": "bop-2024-gw-08",
+"competition": "Best of Panama 2024",
+"year": 2024,
+"rank": "GW-08",
+"score": 92.88,
+"farm": "Esmeralda Cañas Verdes Geisha Washed Palmira",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"한국커피"
+],
+"buyersEn": [
+"Hankook Coffee"
+],
+"joint": true,
+"level": "farm",
+"src": "https://bestofpanama.auction/auction-2024",
+"src2": "https://roasttocup.coffee/markets/auctions/best-of-panama-2024/"
+},
+{
+"id": "bop-2024-v-05",
+"competition": "Best of Panama 2024",
+"year": 2024,
+"rank": "V-05",
+"score": 91.38,
+"farm": "Esmeralda El Velo Laurina Natural",
+"variety": "Laurina",
+"process": "Natural",
+"buyers": [
+"루베르로스터리"
+],
+"buyersEn": [
+"Ruber.Roastery"
+],
+"joint": true,
+"level": "farm",
+"src": "https://bestofpanama.auction/auction-2024",
+"src2": "https://roasttocup.coffee/markets/auctions/best-of-panama-2024/"
+}
+],
+"auctionCount": 2,
 "harvest": "12월~3월 (주 수확기)",
 "terroir": "보케테 팔미라·카냐스 베르데스 + 바루 화산 자락 자라미요",
 "varieties": "게이샤 · 카투아이 · 카투라",
@@ -669,6 +1205,49 @@
 "precision": "country",
 "evidence": "Ecuador, Ecuador",
 "beanCount": 18,
+"auctions": [
+{
+"id": "coe-ecuador-farmers-collection-2026-saraguro-f1-washed-24",
+"competition": "Ecuador Farmer’s Collection 2026",
+"year": 2026,
+"rank": "24",
+"score": 87.37,
+"farm": "Saraguro F1 Washed",
+"variety": "F1",
+"process": "Washed",
+"buyers": [
+"커피화"
+],
+"buyersEn": [
+"COFFEE HWA"
+],
+"joint": true,
+"level": "country",
+"src": "https://allianceforcoffeeexcellence.org/ecuador-farmers-collection-2026/",
+"src2": "https://roasttocup.coffee/markets/auctions/ecuador-farmers-collection-2026/"
+},
+{
+"id": "coe-ecuador-farmers-collection-2026-manuel-romero-geisha-29",
+"competition": "Ecuador Farmer’s Collection 2026",
+"year": 2026,
+"rank": "29",
+"score": 87.26,
+"farm": "Manuel Romero – Geisha",
+"variety": "Geisha",
+"process": "Natural",
+"buyers": [
+"라이언스커피"
+],
+"buyersEn": [
+"Ryans Coffee Roasters"
+],
+"joint": true,
+"level": "country",
+"src": "https://allianceforcoffeeexcellence.org/ecuador-farmers-collection-2026/",
+"src2": "https://roasttocup.coffee/markets/auctions/ecuador-farmers-collection-2026/"
+}
+],
+"auctionCount": 2,
 "elevation": "1,200~2,000m",
 "harvest": "5월~9월 (주 수확기)",
 "terroir": "안데스 고지 · 화산 토양 · 적도 미기후",
@@ -690,6 +1269,33 @@
 "precision": "region",
 "evidence": "Tarrazú, San Jose Province, Costa Rica",
 "beanCount": 18,
+"auctions": [
+{
+"id": "coe-costa-rica-2024-don-el-6",
+"competition": "Cup of Excellence 코스타리카 2024 · Traditional Honey & Natural Processes",
+"year": 2024,
+"rank": "6",
+"score": 89.04,
+"farm": "Don Elí",
+"variety": "Geisha",
+"process": "Natural",
+"buyers": [
+"해월커피",
+"뮤제오",
+"커피화"
+],
+"buyersEn": [
+"Haewol Coffee",
+"MUSEO",
+"COFFEE HWA"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/costa-rica-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/costa-rica-2024/"
+}
+],
+"auctionCount": 1,
 "elevation": "1,200~1,900m",
 "harvest": "11월~3월 (주 수확기)",
 "terroir": "타라수 산맥 · 비옥한 화산토 · 건조한 수확기",
@@ -753,6 +1359,153 @@
 "precision": "region",
 "evidence": "Huehuetenango, Guatemala",
 "beanCount": 16,
+"auctions": [
+{
+"id": "coe-guatemala-2026-las-macadamias-1a",
+"competition": "Cup of Excellence 과테말라 2026 · Exotic Washed",
+"year": 2026,
+"rank": "1A",
+"score": 90.77,
+"farm": "Las Macadamias",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"커피미업",
+"해월커피"
+],
+"buyersEn": [
+"Coffee Me Up",
+"Haewol Coffee"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/guatemala-2026/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/guatemala-2026/"
+},
+{
+"id": "coe-guatemala-2026-rinc-n-del-caf-3",
+"competition": "Cup of Excellence 과테말라 2026 · Exotic Natural and Honey",
+"year": 2026,
+"rank": "3",
+"score": 89.14,
+"farm": "Rincón Del Café",
+"variety": "Pacamara",
+"process": "Natural",
+"buyers": [
+"동서식품"
+],
+"buyersEn": [
+"Dongsuh Foods"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/guatemala-2026/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/guatemala-2026/"
+},
+{
+"id": "coe-guatemala-2026-la-fortuna-5",
+"competition": "Cup of Excellence 과테말라 2026 · Exotic Washed",
+"year": 2026,
+"rank": "5",
+"score": 87.91,
+"farm": "La Fortuna",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"커피미업"
+],
+"buyersEn": [
+"Coffee Me Up"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/guatemala-2026/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/guatemala-2026/"
+},
+{
+"id": "coe-guatemala-2026-holanda-6",
+"competition": "Cup of Excellence 과테말라 2026 · Exotic Natural and Honey",
+"year": 2026,
+"rank": "6",
+"score": 87.46,
+"farm": "Holanda",
+"variety": "Geisha",
+"process": "Natural",
+"buyers": [
+"모지포그라운드"
+],
+"buyersEn": [
+"MOGIPOGROUND (Saerin)"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/guatemala-2026/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/guatemala-2026/"
+},
+{
+"id": "coe-guatemala-2026-rosma-9",
+"competition": "Cup of Excellence 과테말라 2026 · Exotic Washed",
+"year": 2026,
+"rank": "9",
+"score": 87.71,
+"farm": "Rosma",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"커피미업",
+"모모스커피"
+],
+"buyersEn": [
+"Coffee Me Up",
+"MOMOS COFFEE"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/guatemala-2026/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/guatemala-2026/"
+},
+{
+"id": "coe-guatemala-2024-el-zapote-y-anexos-2",
+"competition": "Cup of Excellence 과테말라 2024 · Exotic Natural & Honey",
+"year": 2024,
+"rank": "2",
+"score": 90.19,
+"farm": "El Zapote Y Anexos",
+"variety": "Geisha",
+"process": "Natural",
+"buyers": [
+"지에스씨인터내셔날"
+],
+"buyersEn": [
+"GSC International"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/guatemala-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/guatemala-2024/"
+},
+{
+"id": "coe-guatemala-2024-las-macadamias-2",
+"competition": "Cup of Excellence 과테말라 2024 · Exotic Washed",
+"year": 2024,
+"rank": "2",
+"score": 90.56,
+"farm": "Las Macadamias",
+"variety": "Pacamara",
+"process": "Washed",
+"buyers": [
+"커피리브레"
+],
+"buyersEn": [
+"Coffee Libre"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/guatemala-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/guatemala-2024/"
+}
+],
+"auctionCount": 7,
 "elevation": "1,500~2,000m",
 "harvest": "12월~3월 (주 수확기)",
 "terroir": "쿠추마타네스 산맥 · 석회질 토양 · 과테말라에서 가장 건조한 고지",
@@ -1073,6 +1826,31 @@
 }
 ],
 "beanCount": 12,
+"auctions": [
+{
+"id": "bop-2026-gn-01",
+"competition": "Best of Panama 2026",
+"year": 2026,
+"rank": "GN-01",
+"score": 95.63,
+"farm": "Lérida Waterfall Geisha Natural",
+"variety": "Geisha",
+"process": "Natural",
+"buyers": [
+"루리커피",
+"커피미업"
+],
+"buyersEn": [
+"RULI Coffee",
+"Coffee Me Up"
+],
+"joint": true,
+"level": "farm",
+"src": "https://bestofpanama.auction/auction-2026",
+"src2": "https://roasttocup.coffee/markets/auctions/best-of-panama-2026/"
+}
+],
+"auctionCount": 1,
 "harvest": "12월~3월 (주 수확기)",
 "terroir": "보케테 · 바루 화산 자락",
 "varieties": "카투아이 · 카투라 · 게이샤",
@@ -1579,6 +2357,49 @@
 }
 ],
 "beanCount": 8,
+"auctions": [
+{
+"id": "bop-2024-gn-01",
+"competition": "Best of Panama 2024",
+"year": 2024,
+"rank": "GN-01",
+"score": 95.13,
+"farm": "Elida Geisha Natural Vuelta",
+"variety": "Geisha",
+"process": "Natural",
+"buyers": [
+"루베르로스터리"
+],
+"buyersEn": [
+"Ruber.Roastery"
+],
+"joint": true,
+"level": "farm",
+"src": "https://bestofpanama.auction/auction-2024",
+"src2": "https://roasttocup.coffee/markets/auctions/best-of-panama-2024/"
+},
+{
+"id": "bop-2024-gw-04",
+"competition": "Best of Panama 2024",
+"year": 2024,
+"rank": "GW-04",
+"score": 94.13,
+"farm": "Elida Geisha Washed Vuelta",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"루리커피"
+],
+"buyersEn": [
+"RULI Coffee"
+],
+"joint": true,
+"level": "farm",
+"src": "https://bestofpanama.auction/auction-2024",
+"src2": "https://roasttocup.coffee/markets/auctions/best-of-panama-2024/"
+}
+],
+"auctionCount": 2,
 "harvest": "12월~3월 (주 수확기)",
 "terroir": "보케테 알토 키엘 · 바루 화산 국립공원 인접",
 "varieties": "게이샤 · 카투아이 · 카투라",
@@ -1655,6 +2476,29 @@
 }
 ],
 "beanCount": 7,
+"auctions": [
+{
+"id": "coe-guatemala-2025-el-injerto-i-5",
+"competition": "Cup of Excellence 과테말라 2025 · Exotic Washed",
+"year": 2025,
+"rank": "5",
+"score": 89.24,
+"farm": "El Injerto I",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"모모스커피"
+],
+"buyersEn": [
+"MOMOS COFFEE"
+],
+"joint": true,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/guatemala-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/guatemala-2025/"
+}
+],
+"auctionCount": 1,
 "harvest": "12월~3월 (주 수확기)",
 "terroir": "우에우에테낭고 라 리베르타드 · 석회질 토양 · 그늘 재배",
 "varieties": "부르봉 · 카투아이 · 카투라 · 게이샤 · 파카마라",
@@ -1779,6 +2623,49 @@
 "precision": "region",
 "evidence": "Cajamarca, Province of Cajamarca, Department of Cajamarca, Peru",
 "beanCount": 7,
+"auctions": [
+{
+"id": "coe-peru-2025-el-romerillo-23",
+"competition": "Cup of Excellence 페루 2025",
+"year": 2025,
+"rank": "23",
+"score": 87.44,
+"farm": "El Romerillo",
+"variety": "Geisha, Bourbon",
+"process": "Washed",
+"buyers": [
+"미커피"
+],
+"buyersEn": [
+"MI Coffee Corporation"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/peru-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/peru-2025/"
+},
+{
+"id": "coe-peru-2024-la-lucuma-17",
+"competition": "Cup of Excellence 페루 2024",
+"year": 2024,
+"rank": "17",
+"score": 87.86,
+"farm": "La Lucuma",
+"variety": "Bourbon, Marcellesa",
+"process": "Natural",
+"buyers": [
+"커피리브레"
+],
+"buyersEn": [
+"Coffee Libre"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/peru-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/peru-2024/"
+}
+],
+"auctionCount": 2,
 "elevation": "1,500~2,000m",
 "harvest": "4월~8월 (주 수확기)",
 "terroir": "안데스 북부 고지 · 건조한 공기 · 화산성 토양",
@@ -1983,6 +2870,69 @@
 }
 ],
 "beanCount": 5,
+"auctions": [
+{
+"id": "coe-guatemala-2026-el-socorro-3",
+"competition": "Cup of Excellence 과테말라 2026 · Exotic Washed",
+"year": 2026,
+"rank": "3",
+"score": 90.57,
+"farm": "El Socorro",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"커피미업"
+],
+"buyersEn": [
+"Coffee Me Up"
+],
+"joint": true,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/guatemala-2026/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/guatemala-2026/"
+},
+{
+"id": "coe-guatemala-2025-el-socorro-3",
+"competition": "Cup of Excellence 과테말라 2025 · Exotic Washed",
+"year": 2025,
+"rank": "3",
+"score": 90.65,
+"farm": "El Socorro",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"모모스커피"
+],
+"buyersEn": [
+"MOMOS COFFEE"
+],
+"joint": true,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/guatemala-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/guatemala-2025/"
+},
+{
+"id": "coe-guatemala-2024-el-socorro-5",
+"competition": "Cup of Excellence 과테말라 2024 · Exotic Washed",
+"year": 2024,
+"rank": "5",
+"score": 88.83,
+"farm": "El Socorro",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"커피미업"
+],
+"buyersEn": [
+"Coffee Me Up"
+],
+"joint": true,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/guatemala-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/guatemala-2024/"
+}
+],
+"auctionCount": 3,
 "harvest": "12월~3월 (주 수확기)",
 "terroir": "팔렌시아 산지 · 사유 산림 보호구역 · 화산성 토양",
 "varieties": "12가지가 넘는 품종 (파카마라·게이샤·부르봉 등)",
@@ -2065,6 +3015,69 @@
 "precision": "region",
 "evidence": "Reserva Forestal Los Santos, Dota, San Jose Province, Costa Rica",
 "beanCount": 5,
+"auctions": [
+{
+"id": "coe-costa-rica-2025-la-pastora-don-eli-10",
+"competition": "Cup of Excellence 코스타리카 2025 · Traditional Washed Processes",
+"year": 2025,
+"rank": "10",
+"score": 87.22,
+"farm": "La Pastora – Don Eli",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"지에스씨인터내셔날"
+],
+"buyersEn": [
+"GSC International"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/costa-rica-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/costa-rica-2025/"
+},
+{
+"id": "coe-costa-rica-2025-finca-voo-1a",
+"competition": "Cup of Excellence 코스타리카 2025 · Experimental",
+"year": 2025,
+"rank": "1A",
+"score": 90.47,
+"farm": "Finca Voo",
+"variety": "Catuaí",
+"process": "Pending",
+"buyers": [
+"모지포그라운드"
+],
+"buyersEn": [
+"MOGIPOGROUND (Saerin)"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/costa-rica-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/costa-rica-2025/"
+},
+{
+"id": "coe-costa-rica-2025-don-cayito-3",
+"competition": "Cup of Excellence 코스타리카 2025 · Traditional Honey & Natural Processes",
+"year": 2025,
+"rank": "3",
+"score": 89.53,
+"farm": "Don Cayito",
+"variety": "Geisha",
+"process": "Honey",
+"buyers": [
+"이알코퍼레이션"
+],
+"buyersEn": [
+"E.R. Corporation"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/costa-rica-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/costa-rica-2025/"
+}
+],
+"auctionCount": 3,
 "elevation": "1,200~1,900m",
 "harvest": "11월~3월 (주 수확기)",
 "terroir": "타라수·도타·레온 코르테스 일대 산지 · 화산성 토양",
@@ -2128,6 +3141,29 @@
 }
 ],
 "beanCount": 4,
+"auctions": [
+{
+"id": "coe-nicaragua-2026-el-cambalache-1a",
+"competition": "Cup of Excellence 니카라과 2026 · Washed Processes",
+"year": 2026,
+"rank": "1A",
+"score": 91.44,
+"farm": "El Cambalache",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"커피미업"
+],
+"buyersEn": [
+"Coffee Me Up"
+],
+"joint": true,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/nicaragua-2026/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/nicaragua-2026/"
+}
+],
+"auctionCount": 1,
 "harvest": "11월~3월 (주 수확기)",
 "terroir": "누에바 세고비아 디필토 · 소농 밭",
 "varieties": "마라카투라 · 게이샤 · 시드라",
@@ -3151,6 +4187,29 @@
 "precision": "country",
 "evidence": "China, China",
 "beanCount": 2,
+"auctions": [
+{
+"id": "coe-gems-of-yunnan-2026-lancang-guihua-coffee-planting-co-ltd-10",
+"competition": "Gems of Yunnan 2026",
+"year": 2026,
+"rank": "10",
+"score": 88.63,
+"farm": "Lancang Guihua Coffee Planting Co., Ltd.",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"커피미업"
+],
+"buyersEn": [
+"Coffee Me Up"
+],
+"joint": true,
+"level": "country",
+"src": "https://allianceforcoffeeexcellence.org/gems-of-yunnan-2026/",
+"src2": "https://roasttocup.coffee/markets/auctions/gems-of-yunnan-2026/"
+}
+],
+"auctionCount": 1,
 "elevation": "1,000~1,700m (윈난)",
 "harvest": "11월~2월 (주 수확기)",
 "terroir": "윈난 고원 · 붉은 토양 · 건조한 겨울",
@@ -3577,6 +4636,153 @@
 "precision": "region",
 "evidence": "Nueva Segovia, Nicaragua",
 "beanCount": 1,
+"auctions": [
+{
+"id": "coe-nicaragua-2025-la-esperanza-1b",
+"competition": "Cup of Excellence 니카라과 2025 · Washed Processes",
+"year": 2025,
+"rank": "1B",
+"score": 90.73,
+"farm": "La Esperanza",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"커피미업"
+],
+"buyersEn": [
+"Coffee Me Up"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/nicaragua-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/nicaragua-2025/"
+},
+{
+"id": "coe-nicaragua-2025-san-judas-tadeo-5",
+"competition": "Cup of Excellence 니카라과 2025 · Washed Processes",
+"year": 2025,
+"rank": "5",
+"score": 89.36,
+"farm": "San Judas Tadeo",
+"variety": "Catuai",
+"process": "Washed",
+"buyers": [
+"모모스커피"
+],
+"buyersEn": [
+"MOMOS COFFEE"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/nicaragua-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/nicaragua-2025/"
+},
+{
+"id": "coe-nicaragua-2025-las-neblinas-6",
+"competition": "Cup of Excellence 니카라과 2025 · Natural & Honey",
+"year": 2025,
+"rank": "6",
+"score": 88.18,
+"farm": "Las Neblinas",
+"variety": "Parainema",
+"process": "Natural",
+"buyers": [
+"미커피"
+],
+"buyersEn": [
+"MI Coffee Corporation"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/nicaragua-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/nicaragua-2025/"
+},
+{
+"id": "coe-nicaragua-2024-el-guacalito-10",
+"competition": "Cup of Excellence 니카라과 2024",
+"year": 2024,
+"rank": "10",
+"score": 88.45,
+"farm": "El Guacalito",
+"variety": "Africano",
+"process": "Natural",
+"buyers": [
+"미커피"
+],
+"buyersEn": [
+"MI Coffee Corporation"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/nicaragua-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/nicaragua-2024/"
+},
+{
+"id": "coe-nicaragua-2024-santa-maria-de-lourdes-13",
+"competition": "Cup of Excellence 니카라과 2024",
+"year": 2024,
+"rank": "13",
+"score": 88.2,
+"farm": "Santa Maria De Lourdes",
+"variety": "Bourbon",
+"process": "Natural",
+"buyers": [
+"이알코퍼레이션"
+],
+"buyersEn": [
+"E.R. Corporation"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/nicaragua-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/nicaragua-2024/"
+},
+{
+"id": "coe-nicaragua-2024-jesus-mountain-coffe-company-8",
+"competition": "Cup of Excellence 니카라과 2024",
+"year": 2024,
+"rank": "8",
+"score": 89.2,
+"farm": "Jesus Mountain Coffe Company",
+"variety": "Pacamara",
+"process": "Lavado",
+"buyers": [
+"커피리브레",
+"커피템플"
+],
+"buyersEn": [
+"Coffee Libre",
+"Coffee Temple"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/nicaragua-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/nicaragua-2024/"
+},
+{
+"id": "coe-nicaragua-2024-la-furiosa-9",
+"competition": "Cup of Excellence 니카라과 2024",
+"year": 2024,
+"rank": "9",
+"score": 88.7,
+"farm": "La Furiosa",
+"variety": "Etiope",
+"process": "Lavado",
+"buyers": [
+"커피리브레",
+"커피몽타주"
+],
+"buyersEn": [
+"Coffee Libre",
+"Coffee Montage"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/nicaragua-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/nicaragua-2024/"
+}
+],
+"auctionCount": 7,
 "elevation": "1,200~1,700m",
 "harvest": "11월~3월 (주 수확기)",
 "terroir": "온두라스 국경 산맥 · 디필토 계곡 · 화산성 토양",
@@ -3598,6 +4804,31 @@
 "precision": "region",
 "evidence": "Matagalpa, Nicaragua",
 "beanCount": 1,
+"auctions": [
+{
+"id": "coe-nicaragua-2025-solidaridad-2",
+"competition": "Cup of Excellence 니카라과 2025 · Washed Processes",
+"year": 2025,
+"rank": "2",
+"score": 90.5,
+"farm": "Solidaridad",
+"variety": "Maracaturra",
+"process": "Washed",
+"buyers": [
+"라이언스커피",
+"모지포그라운드"
+],
+"buyersEn": [
+"Ryans Coffee Roasters",
+"MOGIPOGROUND (Saerin)"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/nicaragua-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/nicaragua-2025/"
+}
+],
+"auctionCount": 1,
 "elevation": "1,000~1,500m",
 "harvest": "11월~3월 (주 수확기)",
 "terroir": "중부 고지 · 화산성 토양 · 서늘한 밤",
@@ -4074,6 +5305,29 @@
 "precision": "region",
 "evidence": "Lempira, Honduras",
 "beanCount": 1,
+"auctions": [
+{
+"id": "coe-honduras-2024-el-gravileo-17",
+"competition": "Cup of Excellence 온두라스 2024",
+"year": 2024,
+"rank": "17",
+"score": 88.07,
+"farm": "El Gravileo",
+"variety": "Typica",
+"process": "Washed",
+"buyers": [
+"커피리브레"
+],
+"buyersEn": [
+"Coffee Libre"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/honduras-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2024/"
+}
+],
+"auctionCount": 1,
 "elevation": "1,200~1,700m",
 "harvest": "11월~3월 (주 수확기)",
 "terroir": "서부 국경 산지 · 엘살바도르 인접 · 화산성 토양",
@@ -4095,6 +5349,51 @@
 "precision": "region",
 "evidence": "Intibucá, Honduras",
 "beanCount": 1,
+"auctions": [
+{
+"id": "coe-honduras-2026-el-pimporro-1a",
+"competition": "Cup of Excellence 온두라스 2026 · Honduras Exotic",
+"year": 2026,
+"rank": "1A",
+"score": 90.5,
+"farm": "El Pimporro",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"커피미업",
+"해월커피"
+],
+"buyersEn": [
+"Coffee Me Up",
+"Haewol Coffee"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/honduras-2026/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2026/"
+},
+{
+"id": "coe-honduras-2024-el-durazno-18",
+"competition": "Cup of Excellence 온두라스 2024",
+"year": 2024,
+"rank": "18",
+"score": 88.07,
+"farm": "El Durazno",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"모모스커피"
+],
+"buyersEn": [
+"MOMOS COFFEE"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/honduras-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2024/"
+}
+],
+"auctionCount": 2,
 "elevation": "1,500~1,800m",
 "harvest": "11월~3월 (주 수확기)",
 "terroir": "서부 고지 · 렘피라 인접 · 서늘한 기후",
@@ -4444,6 +5743,821 @@
 "profileLevel": "place"
 },
 {
+"id": "R|과테말라|라 리베르타드",
+"kind": "region",
+"country": "과테말라",
+"name": "라 리베르타드",
+"nameEn": "La Libertad",
+"lat": 15.51386,
+"lon": -91.86945,
+"precision": "region",
+"evidence": "La Libertad, Huehuetenango · OSM/Photon",
+"source": "https://www.openstreetmap.org/search?query=La%20Libertad%2C%20Huehuetenango",
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-guatemala-2025-las-macadamias-1a",
+"competition": "Cup of Excellence 과테말라 2025 · Exotic Natural & Honey",
+"year": 2025,
+"rank": "1A",
+"score": 91.04,
+"farm": "Las Macadamias",
+"variety": "Geisha",
+"process": "Natural",
+"buyers": [
+"모모스커피"
+],
+"buyersEn": [
+"MOMOS COFFEE"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/guatemala-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/guatemala-2025/"
+},
+{
+"id": "coe-guatemala-2025-las-macadamias-1b",
+"competition": "Cup of Excellence 과테말라 2025 · Exotic Natural & Honey",
+"year": 2025,
+"rank": "1B",
+"score": 91.04,
+"farm": "Las Macadamias",
+"variety": "Geisha",
+"process": "Natural",
+"buyers": [
+"커피미업",
+"해월커피"
+],
+"buyersEn": [
+"Coffee Me Up",
+"Haewol Coffee"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/guatemala-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/guatemala-2025/"
+}
+],
+"auctionCount": 2,
+"elevation": "1,300~2,000m (우에우에테낭고 2,000m 이상)",
+"harvest": "11월~3월 (주 수확기)",
+"terroir": "화산 산맥과 고원 · 산지마다 갈리는 토양과 바람",
+"varieties": "부르봉 · 카투아이 · 카투라 (스페셜티 롯에 파카마라·게이샤)",
+"processes": "워시드 중심 · 허니·내추럴 확대",
+"flavorProfile": "밀크초콜릿 · 오렌지 · 스파이스의 묵직한 단맛",
+"trend": "안아카페 등 지역 대회와 함께 무산소·파카마라 롯이 늘고, 농장별 품종 실험이 활발합니다.",
+"story": "과테말라의 라 리베르타드 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 과테말라 산지의 공통 특성으로 소개합니다.",
+"profileLevel": "country"
+},
+{
+"id": "R|과테말라|산 페드로 네크타",
+"kind": "region",
+"country": "과테말라",
+"name": "산 페드로 네크타",
+"nameEn": "San Pedro Necta",
+"lat": 15.49166,
+"lon": -91.76577,
+"precision": "region",
+"evidence": "San Pedro Necta, Huehuetenango · OSM/Photon",
+"source": "https://www.openstreetmap.org/search?query=San%20Pedro%20Necta",
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-guatemala-2025-bella-elizabeth-2",
+"competition": "Cup of Excellence 과테말라 2025 · One Of A Kind",
+"year": 2025,
+"rank": "2",
+"score": 89.09,
+"farm": "Bella Elizabeth",
+"variety": "Borbon,Caturra",
+"process": "Washed",
+"buyers": [
+"라이언스커피"
+],
+"buyersEn": [
+"Ryans Coffee Roasters"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/guatemala-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/guatemala-2025/"
+}
+],
+"auctionCount": 1,
+"elevation": "1,300~2,000m (우에우에테낭고 2,000m 이상)",
+"harvest": "11월~3월 (주 수확기)",
+"terroir": "화산 산맥과 고원 · 산지마다 갈리는 토양과 바람",
+"varieties": "부르봉 · 카투아이 · 카투라 (스페셜티 롯에 파카마라·게이샤)",
+"processes": "워시드 중심 · 허니·내추럴 확대",
+"flavorProfile": "밀크초콜릿 · 오렌지 · 스파이스의 묵직한 단맛",
+"trend": "안아카페 등 지역 대회와 함께 무산소·파카마라 롯이 늘고, 농장별 품종 실험이 활발합니다.",
+"story": "과테말라의 산 페드로 네크타 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 과테말라 산지의 공통 특성으로 소개합니다.",
+"profileLevel": "country"
+},
+{
+"id": "R|과테말라|알타 베라파스",
+"kind": "region",
+"country": "과테말라",
+"name": "알타 베라파스",
+"nameEn": "Alta Verapaz",
+"lat": 15.59497,
+"lon": -90.0918,
+"precision": "region",
+"evidence": "Alta Verapaz 주(州) 중심 · OSM/Photon",
+"source": "https://www.openstreetmap.org/search?query=Alta%20Verapaz%2C%20Guatemala",
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-guatemala-2024-coop-agricola-integral-chicoj-r-l-4",
+"competition": "Cup of Excellence 과테말라 2024 · One Of A Kind",
+"year": 2024,
+"rank": "4",
+"score": 88.97,
+"farm": "Coop. Agricola Integral Chicoj. R.L.",
+"variety": "Caturra",
+"process": "Natural",
+"buyers": [
+"미커피"
+],
+"buyersEn": [
+"MI Coffee Corporation"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/guatemala-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/guatemala-2024/"
+}
+],
+"auctionCount": 1,
+"elevation": "1,300~2,000m (우에우에테낭고 2,000m 이상)",
+"harvest": "11월~3월 (주 수확기)",
+"terroir": "화산 산맥과 고원 · 산지마다 갈리는 토양과 바람",
+"varieties": "부르봉 · 카투아이 · 카투라 (스페셜티 롯에 파카마라·게이샤)",
+"processes": "워시드 중심 · 허니·내추럴 확대",
+"flavorProfile": "밀크초콜릿 · 오렌지 · 스파이스의 묵직한 단맛",
+"trend": "안아카페 등 지역 대회와 함께 무산소·파카마라 롯이 늘고, 농장별 품종 실험이 활발합니다.",
+"story": "과테말라의 알타 베라파스 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 과테말라 산지의 공통 특성으로 소개합니다.",
+"profileLevel": "country"
+},
+{
+"id": "R|과테말라|치말테낭고",
+"kind": "region",
+"country": "과테말라",
+"name": "치말테낭고",
+"nameEn": "Chimaltenango",
+"lat": 14.6613,
+"lon": -90.81935,
+"precision": "region",
+"evidence": "Chimaltenango · OSM/Photon",
+"source": "https://www.openstreetmap.org/search?query=Chimaltenango",
+"beanCount": 0,
+"elevation": "1,300~2,000m (우에우에테낭고 2,000m 이상)",
+"harvest": "11월~3월 (주 수확기)",
+"terroir": "화산 산맥과 고원 · 산지마다 갈리는 토양과 바람",
+"varieties": "부르봉 · 카투아이 · 카투라 (스페셜티 롯에 파카마라·게이샤)",
+"processes": "워시드 중심 · 허니·내추럴 확대",
+"flavorProfile": "밀크초콜릿 · 오렌지 · 스파이스의 묵직한 단맛",
+"trend": "안아카페 등 지역 대회와 함께 무산소·파카마라 롯이 늘고, 농장별 품종 실험이 활발합니다.",
+"story": "과테말라의 치말테낭고 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 과테말라 산지의 공통 특성으로 소개합니다.",
+"profileLevel": "country"
+},
+{
+"id": "R|과테말라|쿠일코",
+"kind": "region",
+"country": "과테말라",
+"name": "쿠일코",
+"nameEn": "Cuilco",
+"lat": 15.4075,
+"lon": -91.94683,
+"precision": "region",
+"evidence": "Cuilco, Huehuetenango · OSM/Photon",
+"source": "https://www.openstreetmap.org/search?query=Cuilco%2C%20Huehuetenango",
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-guatemala-2025-vista-hermosa-8",
+"competition": "Cup of Excellence 과테말라 2025 · Exotic Washed",
+"year": 2025,
+"rank": "8",
+"score": 87.79,
+"farm": "Vista Hermosa",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"모지포그라운드"
+],
+"buyersEn": [
+"MOGIPOGROUND (Saerin)"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/guatemala-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/guatemala-2025/"
+}
+],
+"auctionCount": 1,
+"elevation": "1,300~2,000m (우에우에테낭고 2,000m 이상)",
+"harvest": "11월~3월 (주 수확기)",
+"terroir": "화산 산맥과 고원 · 산지마다 갈리는 토양과 바람",
+"varieties": "부르봉 · 카투아이 · 카투라 (스페셜티 롯에 파카마라·게이샤)",
+"processes": "워시드 중심 · 허니·내추럴 확대",
+"flavorProfile": "밀크초콜릿 · 오렌지 · 스파이스의 묵직한 단맛",
+"trend": "안아카페 등 지역 대회와 함께 무산소·파카마라 롯이 늘고, 농장별 품종 실험이 활발합니다.",
+"story": "과테말라의 쿠일코 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 과테말라 산지의 공통 특성으로 소개합니다.",
+"profileLevel": "country"
+},
+{
+"id": "R|과테말라|팔렌시아",
+"kind": "region",
+"country": "과테말라",
+"name": "팔렌시아",
+"nameEn": "Palencia",
+"lat": 14.66656,
+"lon": -90.36144,
+"precision": "region",
+"evidence": "Palencia, Guatemala Department · OSM/Photon",
+"source": "https://www.openstreetmap.org/search?query=Palencia%2C%20Guatemala",
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-guatemala-2025-la-pe-a-10",
+"competition": "Cup of Excellence 과테말라 2025 · Exotic Washed",
+"year": 2025,
+"rank": "10",
+"score": 87.5,
+"farm": "La Peña",
+"variety": "Pacamara",
+"process": "Washed",
+"buyers": [
+"테라로사"
+],
+"buyersEn": [
+"Terarosa"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/guatemala-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/guatemala-2025/"
+}
+],
+"auctionCount": 1,
+"elevation": "1,300~2,000m (우에우에테낭고 2,000m 이상)",
+"harvest": "11월~3월 (주 수확기)",
+"terroir": "화산 산맥과 고원 · 산지마다 갈리는 토양과 바람",
+"varieties": "부르봉 · 카투아이 · 카투라 (스페셜티 롯에 파카마라·게이샤)",
+"processes": "워시드 중심 · 허니·내추럴 확대",
+"flavorProfile": "밀크초콜릿 · 오렌지 · 스파이스의 묵직한 단맛",
+"trend": "안아카페 등 지역 대회와 함께 무산소·파카마라 롯이 늘고, 농장별 품종 실험이 활발합니다.",
+"story": "과테말라의 팔렌시아 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 과테말라 산지의 공통 특성으로 소개합니다.",
+"profileLevel": "country"
+},
+{
+"id": "R|과테말라|할라파",
+"kind": "region",
+"country": "과테말라",
+"name": "할라파",
+"nameEn": "Jalapa",
+"lat": 14.63442,
+"lon": -89.9898,
+"precision": "region",
+"evidence": "Jalapa, Guatemala · OSM/Photon",
+"source": "https://www.openstreetmap.org/search?query=Jalapa%2C%20Guatemala",
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-guatemala-2026-el-morito-2",
+"competition": "Cup of Excellence 과테말라 2026 · Exotic Washed",
+"year": 2026,
+"rank": "2",
+"score": 90.75,
+"farm": "El Morito",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"모모스커피"
+],
+"buyersEn": [
+"MOMOS COFFEE"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/guatemala-2026/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/guatemala-2026/"
+},
+{
+"id": "coe-guatemala-2024-monta-a-helada-9",
+"competition": "Cup of Excellence 과테말라 2024 · Exotic Washed",
+"year": 2024,
+"rank": "9",
+"score": 88.13,
+"farm": "Montaña Helada",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"지에스씨인터내셔날"
+],
+"buyersEn": [
+"GSC International"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/guatemala-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/guatemala-2024/"
+}
+],
+"auctionCount": 2,
+"elevation": "1,300~2,000m (우에우에테낭고 2,000m 이상)",
+"harvest": "11월~3월 (주 수확기)",
+"terroir": "화산 산맥과 고원 · 산지마다 갈리는 토양과 바람",
+"varieties": "부르봉 · 카투아이 · 카투라 (스페셜티 롯에 파카마라·게이샤)",
+"processes": "워시드 중심 · 허니·내추럴 확대",
+"flavorProfile": "밀크초콜릿 · 오렌지 · 스파이스의 묵직한 단맛",
+"trend": "안아카페 등 지역 대회와 함께 무산소·파카마라 롯이 늘고, 농장별 품종 실험이 활발합니다.",
+"story": "과테말라의 할라파 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 과테말라 산지의 공통 특성으로 소개합니다.",
+"profileLevel": "country"
+},
+{
+"id": "R|니카라과|디필토",
+"kind": "region",
+"country": "니카라과",
+"name": "디필토",
+"nameEn": "Dipilto",
+"lat": 13.73897,
+"lon": -86.51939,
+"precision": "region",
+"evidence": "Dipilto, Nueva Segovia · OSM/Photon",
+"source": "https://www.openstreetmap.org/search?query=Dipilto",
+"beanCount": 0,
+"elevation": "1,100~1,700m",
+"harvest": "11월~3월 (주 수확기)",
+"terroir": "북부 산맥 · 화산성 토양 · 온두라스 국경 고지",
+"varieties": "카투라 · 부르봉 · 마라카투라 · 파카마라 · 게이샤",
+"processes": "워시드 중심 · 허니·내추럴·무산소",
+"flavorProfile": "초콜릿 · 시트러스 · 붉은 과일",
+"trend": "대회에서 이름을 올리는 소농 농장이 늘며 무산소·게이샤 롯이 주목받고 있습니다.",
+"story": "니카라과의 디필토 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 니카라과 산지의 공통 특성으로 소개합니다.",
+"profileLevel": "country"
+},
+{
+"id": "R|니카라과|마드리스",
+"kind": "region",
+"country": "니카라과",
+"name": "마드리스",
+"nameEn": "Madriz",
+"lat": 13.42729,
+"lon": -86.40162,
+"precision": "region",
+"evidence": "Madriz 주(州) 중심 · OSM/Photon",
+"source": "https://www.openstreetmap.org/search?query=Madriz%2C%20Nicaragua",
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-nicaragua-2025-delafincacoffee-farm-7",
+"competition": "Cup of Excellence 니카라과 2025 · Natural & Honey",
+"year": 2025,
+"rank": "7",
+"score": 88.18,
+"farm": "Delafincacoffee Farm",
+"variety": "Maragogipe",
+"process": "Natural",
+"buyers": [
+"모지포그라운드"
+],
+"buyersEn": [
+"MOGIPOGROUND (Saerin)"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/nicaragua-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/nicaragua-2025/"
+}
+],
+"auctionCount": 1,
+"elevation": "1,100~1,700m",
+"harvest": "11월~3월 (주 수확기)",
+"terroir": "북부 산맥 · 화산성 토양 · 온두라스 국경 고지",
+"varieties": "카투라 · 부르봉 · 마라카투라 · 파카마라 · 게이샤",
+"processes": "워시드 중심 · 허니·내추럴·무산소",
+"flavorProfile": "초콜릿 · 시트러스 · 붉은 과일",
+"trend": "대회에서 이름을 올리는 소농 농장이 늘며 무산소·게이샤 롯이 주목받고 있습니다.",
+"story": "니카라과의 마드리스 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 니카라과 산지의 공통 특성으로 소개합니다.",
+"profileLevel": "country"
+},
+{
+"id": "R|니카라과|모손테",
+"kind": "region",
+"country": "니카라과",
+"name": "모손테",
+"nameEn": "Mozonte",
+"lat": 13.66017,
+"lon": -86.43871,
+"precision": "region",
+"evidence": "Mozonte, Nueva Segovia · OSM/Photon",
+"source": "https://www.openstreetmap.org/search?query=Mozonte",
+"beanCount": 0,
+"elevation": "1,100~1,700m",
+"harvest": "11월~3월 (주 수확기)",
+"terroir": "북부 산맥 · 화산성 토양 · 온두라스 국경 고지",
+"varieties": "카투라 · 부르봉 · 마라카투라 · 파카마라 · 게이샤",
+"processes": "워시드 중심 · 허니·내추럴·무산소",
+"flavorProfile": "초콜릿 · 시트러스 · 붉은 과일",
+"trend": "대회에서 이름을 올리는 소농 농장이 늘며 무산소·게이샤 롯이 주목받고 있습니다.",
+"story": "니카라과의 모손테 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 니카라과 산지의 공통 특성으로 소개합니다.",
+"profileLevel": "country"
+},
+{
+"id": "R|니카라과|산 페르난도",
+"kind": "region",
+"country": "니카라과",
+"name": "산 페르난도",
+"nameEn": "San Fernando",
+"lat": 13.74431,
+"lon": -86.30835,
+"precision": "region",
+"evidence": "San Fernando, Nueva Segovia · OSM/Photon",
+"source": "https://www.openstreetmap.org/search?query=San%20Fernando%2C%20Nueva%20Segovia",
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-nicaragua-2026-brisas-del-mogoton-5",
+"competition": "Cup of Excellence 니카라과 2026 · Natural & Honey",
+"year": 2026,
+"rank": "5",
+"score": 88.69,
+"farm": "Brisas Del Mogoton",
+"variety": "Geisha",
+"process": "Natural",
+"buyers": [
+"모지포그라운드"
+],
+"buyersEn": [
+"MOGIPOGROUND (Saerin)"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/nicaragua-2026/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/nicaragua-2026/"
+}
+],
+"auctionCount": 1,
+"elevation": "1,100~1,700m",
+"harvest": "11월~3월 (주 수확기)",
+"terroir": "북부 산맥 · 화산성 토양 · 온두라스 국경 고지",
+"varieties": "카투라 · 부르봉 · 마라카투라 · 파카마라 · 게이샤",
+"processes": "워시드 중심 · 허니·내추럴·무산소",
+"flavorProfile": "초콜릿 · 시트러스 · 붉은 과일",
+"trend": "대회에서 이름을 올리는 소농 농장이 늘며 무산소·게이샤 롯이 주목받고 있습니다.",
+"story": "니카라과의 산 페르난도 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 니카라과 산지의 공통 특성으로 소개합니다.",
+"profileLevel": "country"
+},
+{
+"id": "R|멕시코|베라크루즈",
+"kind": "region",
+"country": "멕시코",
+"name": "베라크루즈",
+"nameEn": "Veracruz",
+"lat": 19.33333,
+"lon": -96.66667,
+"precision": "region",
+"evidence": "Veracruz 주(州) 중심 · OSM/Photon",
+"source": "https://www.openstreetmap.org/search?query=Veracruz%2C%20Mexico",
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-mexico-2026-finca-las-canelas-10",
+"competition": "Cup of Excellence 멕시코 2026 · Washed",
+"year": 2026,
+"rank": "10",
+"score": 87.67,
+"farm": "Finca Las Canelas",
+"variety": "Typica, Bourbon, Caturra",
+"process": "Washed",
+"buyers": [
+"테라로사"
+],
+"buyersEn": [
+"Terarosa"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/mexico-2026/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/mexico-2026/"
+},
+{
+"id": "coe-mexico-2026-finca-pocitos-2",
+"competition": "Cup of Excellence 멕시코 2026 · Washed",
+"year": 2026,
+"rank": "2",
+"score": 90.67,
+"farm": "Finca Pocitos",
+"variety": "Gesha",
+"process": "Washed",
+"buyers": [
+"커피미업"
+],
+"buyersEn": [
+"Coffee Me Up"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/mexico-2026/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/mexico-2026/"
+},
+{
+"id": "coe-mexico-2026-finca-la-luz-8",
+"competition": "Cup of Excellence 멕시코 2026 · Natural and Honey",
+"year": 2026,
+"rank": "8",
+"score": 87.92,
+"farm": "Finca La Luz",
+"variety": "Gesha",
+"process": "Natural",
+"buyers": [
+"미커피"
+],
+"buyersEn": [
+"MI Coffee Corporation"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/mexico-2026/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/mexico-2026/"
+},
+{
+"id": "coe-mexico-2024-palma-3",
+"competition": "Cup of Excellence 멕시코 2024 · Traditional Washed Processes",
+"year": 2024,
+"rank": "3",
+"score": 89.58,
+"farm": "Palma",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"지에스씨인터내셔날"
+],
+"buyersEn": [
+"GSC International"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/mexico-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/mexico-2024/"
+},
+{
+"id": "coe-mexico-2024-los-chuchos-7",
+"competition": "Cup of Excellence 멕시코 2024 · Traditional Honey & Natural Processes",
+"year": 2024,
+"rank": "7",
+"score": 88.32,
+"farm": "Los Chuchos",
+"variety": "Sarchimor",
+"process": "Honey",
+"buyers": [
+"미커피"
+],
+"buyersEn": [
+"MI Coffee Corporation"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/mexico-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/mexico-2024/"
+},
+{
+"id": "coe-mexico-2024-rancho-viejo-8",
+"competition": "Cup of Excellence 멕시코 2024 · Traditional Honey & Natural Processes",
+"year": 2024,
+"rank": "8",
+"score": 88.08,
+"farm": "Rancho Viejo",
+"variety": "Anacafe 14",
+"process": "Honey",
+"buyers": [
+"뉴스커피"
+],
+"buyersEn": [
+"NEWS Coffee"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/mexico-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/mexico-2024/"
+}
+],
+"auctionCount": 6,
+"elevation": "900~1,700m",
+"harvest": "11월~3월 (주 수확기)",
+"terroir": "남부 산맥 · 화산성 토양 · 그늘 재배",
+"varieties": "티피카 · 부르봉 · 카투라 · 마르셀레사",
+"processes": "워시드 중심 · 내추럴 일부",
+"flavorProfile": "초콜릿 · 견과 · 부드러운 산미",
+"trend": "오악사카·치아파스의 소농 협동조합이 스페셜티 롯과 유기농 인증을 늘리고 있습니다.",
+"story": "멕시코의 베라크루즈 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 멕시코 산지의 공통 특성으로 소개합니다.",
+"profileLevel": "country"
+},
+{
+"id": "R|멕시코|오악사카",
+"kind": "region",
+"country": "멕시코",
+"name": "오악사카",
+"nameEn": "Oaxaca",
+"lat": 17.0,
+"lon": -96.5,
+"precision": "region",
+"evidence": "Oaxaca 주(州) 중심 · OSM/Photon",
+"source": "https://www.openstreetmap.org/search?query=Oaxaca%2C%20Mexico",
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-mexico-2024-sinai-5",
+"competition": "Cup of Excellence 멕시코 2024 · Traditional Honey & Natural Processes",
+"year": 2024,
+"rank": "5",
+"score": 89.0,
+"farm": "Sinai",
+"variety": "Geisha",
+"process": "Honey",
+"buyers": [
+"커피미업"
+],
+"buyersEn": [
+"Coffee Me Up"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/mexico-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/mexico-2024/"
+}
+],
+"auctionCount": 1,
+"elevation": "900~1,700m",
+"harvest": "11월~3월 (주 수확기)",
+"terroir": "남부 산맥 · 화산성 토양 · 그늘 재배",
+"varieties": "티피카 · 부르봉 · 카투라 · 마르셀레사",
+"processes": "워시드 중심 · 내추럴 일부",
+"flavorProfile": "초콜릿 · 견과 · 부드러운 산미",
+"trend": "오악사카·치아파스의 소농 협동조합이 스페셜티 롯과 유기농 인증을 늘리고 있습니다.",
+"story": "멕시코의 오악사카 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 멕시코 산지의 공통 특성으로 소개합니다.",
+"profileLevel": "country"
+},
+{
+"id": "R|멕시코|치아파스",
+"kind": "region",
+"country": "멕시코",
+"name": "치아파스",
+"nameEn": "Chiapas",
+"lat": 16.5,
+"lon": -92.5,
+"precision": "region",
+"evidence": "Chiapas 주(州) 중심 · OSM/Photon",
+"source": "https://www.openstreetmap.org/search?query=Chiapas%2C%20Mexico",
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-mexico-2026-finca-santa-cruz-9",
+"competition": "Cup of Excellence 멕시코 2026 · Natural and Honey",
+"year": 2026,
+"rank": "9",
+"score": 87.69,
+"farm": "Finca Santa Cruz",
+"variety": "Gesha",
+"process": "Natural",
+"buyers": [
+"커피미업"
+],
+"buyersEn": [
+"Coffee Me Up"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/mexico-2026/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/mexico-2026/"
+},
+{
+"id": "coe-mexico-2025-finca-santa-cruz-1b",
+"competition": "Cup of Excellence 멕시코 2025 · Traditional Washed Processes",
+"year": 2025,
+"rank": "1B",
+"score": 91.36,
+"farm": "Finca Santa Cruz",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"커피미업",
+"해월커피"
+],
+"buyersEn": [
+"Coffee Me Up",
+"Haewol Coffee"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/mexico-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/mexico-2025/"
+}
+],
+"auctionCount": 2,
+"elevation": "900~1,700m",
+"harvest": "11월~3월 (주 수확기)",
+"terroir": "남부 산맥 · 화산성 토양 · 그늘 재배",
+"varieties": "티피카 · 부르봉 · 카투라 · 마르셀레사",
+"processes": "워시드 중심 · 내추럴 일부",
+"flavorProfile": "초콜릿 · 견과 · 부드러운 산미",
+"trend": "오악사카·치아파스의 소농 협동조합이 스페셜티 롯과 유기농 인증을 늘리고 있습니다.",
+"story": "멕시코의 치아파스 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 멕시코 산지의 공통 특성으로 소개합니다.",
+"profileLevel": "country"
+},
+{
+"id": "R|브라질|만티케이라 데 미나스",
+"kind": "region",
+"country": "브라질",
+"name": "만티케이라 데 미나스",
+"nameEn": "Mantiqueira de Minas",
+"lat": -22.40072,
+"lon": -45.17331,
+"precision": "region",
+"evidence": "Serra da Mantiqueira 보호구역 중심 · OSM/Photon",
+"source": "https://www.openstreetmap.org/search?query=Serra%20da%20Mantiqueira",
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-brazil-2024-fazenda-rio-verde-5",
+"competition": "Cup of Excellence 브라질 2024 · Experimental",
+"year": 2024,
+"rank": "5",
+"score": 90.14,
+"farm": "Fazenda Rio Verde",
+"variety": "Geisha",
+"process": "Anaerobic fermentation",
+"buyers": [
+"미커피"
+],
+"buyersEn": [
+"MI Coffee Corporation"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/brazil-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2024/"
+}
+],
+"auctionCount": 1,
+"elevation": "800~1,300m (고급 롯은 1,100m 이상)",
+"harvest": "5월~9월 (주 수확기)",
+"terroir": "넓은 고원 · 라테라이트 토양 · 뚜렷한 건기와 우기",
+"varieties": "카투아이 · 문도 노보 · 카투라 · 부르봉 (최근 게이샤·아루샤)",
+"processes": "내추럴·펄프드 내추럴 중심 · 워시드와 실험 가공 확대",
+"flavorProfile": "견과 · 밀크초콜릿 · 카라멜의 둥근 단맛, 낮은 산미",
+"trend": "코닐론(로부스타) 가격 강세 속에 고급 아라비카 롯과 실험적 발효가 늘고, 대농장은 기계 수확 비중이 높습니다.",
+"story": "브라질의 만티케이라 데 미나스 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 브라질 산지의 공통 특성으로 소개합니다.",
+"profileLevel": "country"
+},
+{
+"id": "R|브라질|샤파다 데 미나스",
+"kind": "region",
+"country": "브라질",
+"name": "샤파다 데 미나스",
+"nameEn": "Chapada de Minas",
+"lat": -18.58557,
+"lon": -47.68216,
+"precision": "region",
+"evidence": "Chapada de Minas, Minas Gerais · OSM/Photon",
+"source": "https://www.openstreetmap.org/search?query=Chapada%20de%20Minas",
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-brazil-2024-fazenda-primavera-matriz-9",
+"competition": "Cup of Excellence 브라질 2024 · Washed + Honey",
+"year": 2024,
+"rank": "9",
+"score": 88.29,
+"farm": "Fazenda Primavera Matriz",
+"variety": "Geisha",
+"process": "Honey",
+"buyers": [
+"라이언스커피"
+],
+"buyersEn": [
+"Ryans Coffee Roasters"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/brazil-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2024/"
+}
+],
+"auctionCount": 1,
+"elevation": "800~1,300m (고급 롯은 1,100m 이상)",
+"harvest": "5월~9월 (주 수확기)",
+"terroir": "넓은 고원 · 라테라이트 토양 · 뚜렷한 건기와 우기",
+"varieties": "카투아이 · 문도 노보 · 카투라 · 부르봉 (최근 게이샤·아루샤)",
+"processes": "내추럴·펄프드 내추럴 중심 · 워시드와 실험 가공 확대",
+"flavorProfile": "견과 · 밀크초콜릿 · 카라멜의 둥근 단맛, 낮은 산미",
+"trend": "코닐론(로부스타) 가격 강세 속에 고급 아라비카 롯과 실험적 발효가 늘고, 대농장은 기계 수확 비중이 높습니다.",
+"story": "브라질의 샤파다 데 미나스 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 브라질 산지의 공통 특성으로 소개합니다.",
+"profileLevel": "country"
+},
+{
 "id": "F|에티오피아|나노 찰라",
 "kind": "farm",
 "country": "에티오피아",
@@ -4480,6 +6594,550 @@
 "flavorProfile": "시트러스 · 홍차 · 깨끗한 단맛",
 "trend": "협동조합이 워싱스테이션을 늘리며 롯 단위 수출을 이어가고 있습니다.",
 "profileLevel": "place"
+},
+{
+"id": "R|엘살바도르|아파네카 이라마테펙",
+"kind": "region",
+"country": "엘살바도르",
+"name": "아파네카 이라마테펙",
+"nameEn": "Apaneca–Ilamatepec",
+"lat": 13.85885,
+"lon": -89.80398,
+"precision": "region",
+"evidence": "Apaneca, Ahuachapán · OSM/Photon",
+"source": "https://www.openstreetmap.org/search?query=Apaneca",
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-el-salvador-2025-los-naranjos-3",
+"competition": "Cup of Excellence 엘살바도르 2025 · Washed + Honey",
+"year": 2025,
+"rank": "3",
+"score": 90.02,
+"farm": "Los Naranjos",
+"variety": "Geisha",
+"process": "Honey",
+"buyers": [
+"모모스커피"
+],
+"buyersEn": [
+"MOMOS COFFEE"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/el-salvador-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/el-salvador-2025/"
+},
+{
+"id": "coe-el-salvador-2025-finca-altamira-7",
+"competition": "Cup of Excellence 엘살바도르 2025 · Natural",
+"year": 2025,
+"rank": "7",
+"score": 88.16,
+"farm": "Finca Altamira",
+"variety": "Pacamara",
+"process": "Natural",
+"buyers": [
+"모지포그라운드"
+],
+"buyersEn": [
+"MOGIPOGROUND (Saerin)"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/el-salvador-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/el-salvador-2025/"
+}
+],
+"auctionCount": 2,
+"elevation": "1,000~1,700m",
+"harvest": "11월~3월 (주 수확기)",
+"terroir": "화산 많은 작은 나라 · 화산재 토양 · 태평양 경사",
+"varieties": "부르봉 · 파카스 · 파카마라",
+"processes": "워시드 중심 · 허니·내추럴·무산소 확대",
+"flavorProfile": "카라멜 · 붉은 사과 · 밀크초콜릿",
+"trend": "파카마라와 무산소 내추럴 롯으로 대회에 다시 이름을 올리고 있습니다.",
+"story": "엘살바도르의 아파네카 이라마테펙 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 엘살바도르 산지의 공통 특성으로 소개합니다.",
+"profileLevel": "country"
+},
+{
+"id": "R|엘살바도르|알로테펙 메타판",
+"kind": "region",
+"country": "엘살바도르",
+"name": "알로테펙 메타판",
+"nameEn": "Alotepec–Metapán",
+"lat": 14.33218,
+"lon": -89.4481,
+"precision": "region",
+"evidence": "Metapán, Santa Ana · OSM/Photon",
+"source": "https://www.openstreetmap.org/search?query=Metap%C3%A1n",
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-el-salvador-2026-don-jaime-6",
+"competition": "Cup of Excellence 엘살바도르 2026 · Washed + Honey",
+"year": 2026,
+"rank": "6",
+"score": 88.45,
+"farm": "Don Jaime",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"지에스씨인터내셔날"
+],
+"buyersEn": [
+"GSC International"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/el-salvador-2026/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/el-salvador-2026/"
+},
+{
+"id": "coe-el-salvador-2026-mileydi-7",
+"competition": "Cup of Excellence 엘살바도르 2026 · Washed + Honey",
+"year": 2026,
+"rank": "7",
+"score": 88.35,
+"farm": "Mileydi",
+"variety": "Pacamara",
+"process": "Semi-Washed",
+"buyers": [
+"라이언스커피"
+],
+"buyersEn": [
+"Ryans Coffee Roasters"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/el-salvador-2026/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/el-salvador-2026/"
+},
+{
+"id": "coe-el-salvador-2025-las-camelias-estate-9",
+"competition": "Cup of Excellence 엘살바도르 2025 · Experimental",
+"year": 2025,
+"rank": "9",
+"score": 87.34,
+"farm": "Las Camelias Estate",
+"variety": "Geisha",
+"process": "Natural Anaerobico",
+"buyers": [
+"미커피"
+],
+"buyersEn": [
+"MI Coffee Corporation"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/el-salvador-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/el-salvador-2025/"
+},
+{
+"id": "coe-el-salvador-2024-la-bendicion-1a",
+"competition": "Cup of Excellence 엘살바도르 2024 · Washed + Honey",
+"year": 2024,
+"rank": "1A",
+"score": 92.0,
+"farm": "La Bendicion",
+"variety": "Pacamara",
+"process": "Honey",
+"buyers": [
+"라이언스커피"
+],
+"buyersEn": [
+"Ryans Coffee Roasters"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/el-salvador-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/el-salvador-2024/"
+},
+{
+"id": "coe-el-salvador-2024-finca-el-portezuelo-3",
+"competition": "Cup of Excellence 엘살바도르 2024 · Washed + Honey",
+"year": 2024,
+"rank": "3",
+"score": 90.09,
+"farm": "Finca El Portezuelo",
+"variety": "Pacamara",
+"process": "Honey",
+"buyers": [
+"커피미업"
+],
+"buyersEn": [
+"Coffee Me Up"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/el-salvador-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/el-salvador-2024/"
+}
+],
+"auctionCount": 5,
+"elevation": "1,000~1,700m",
+"harvest": "11월~3월 (주 수확기)",
+"terroir": "화산 많은 작은 나라 · 화산재 토양 · 태평양 경사",
+"varieties": "부르봉 · 파카스 · 파카마라",
+"processes": "워시드 중심 · 허니·내추럴·무산소 확대",
+"flavorProfile": "카라멜 · 붉은 사과 · 밀크초콜릿",
+"trend": "파카마라와 무산소 내추럴 롯으로 대회에 다시 이름을 올리고 있습니다.",
+"story": "엘살바도르의 알로테펙 메타판 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 엘살바도르 산지의 공통 특성으로 소개합니다.",
+"profileLevel": "country"
+},
+{
+"id": "R|온두라스|산타바르바라",
+"kind": "region",
+"country": "온두라스",
+"name": "산타바르바라",
+"nameEn": "Santa Bárbara",
+"lat": 15.09606,
+"lon": -88.36737,
+"precision": "region",
+"evidence": "Santa Bárbara 주(州) 중심 · OSM/Photon",
+"source": "https://www.openstreetmap.org/search?query=Santa%20B%C3%A1rbara%2C%20Honduras",
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-honduras-2026-la-salsa-2",
+"competition": "Cup of Excellence 온두라스 2026 · Honduras Exotic",
+"year": 2026,
+"rank": "2",
+"score": 90.46,
+"farm": "La Salsa",
+"variety": "Geisha",
+"process": "Natural",
+"buyers": [
+"커피미업"
+],
+"buyersEn": [
+"Coffee Me Up"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/honduras-2026/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2026/"
+},
+{
+"id": "coe-honduras-2024-el-pozo-23",
+"competition": "Cup of Excellence 온두라스 2024",
+"year": 2024,
+"rank": "23",
+"score": 87.46,
+"farm": "El Pozo",
+"variety": "Geisha",
+"process": "Natural",
+"buyers": [
+"미커피"
+],
+"buyersEn": [
+"MI Coffee Corporation"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/honduras-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2024/"
+},
+{
+"id": "coe-honduras-2024-las-virginias-5",
+"competition": "Cup of Excellence 온두라스 2024",
+"year": 2024,
+"rank": "5",
+"score": 90.04,
+"farm": "Las Virginias",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"커피미업"
+],
+"buyersEn": [
+"Coffee Me Up"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/honduras-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2024/"
+}
+],
+"auctionCount": 3,
+"elevation": "1,000~1,700m",
+"harvest": "11월~3월 (주 수확기)",
+"terroir": "중미 산맥 · 화산성 토양 · 산지별 큰 강수 차이",
+"varieties": "IHCAFE 90 · 파라이네마 · 카투아이 · 파카스 · 부르봉",
+"processes": "워시드 중심 · 내추럴·무산소 확대",
+"flavorProfile": "카라멜 · 붉은 과일 · 시트러스의 부드러운 단맛",
+"trend": "파라이네마·IHCAFE 90 같은 병해 강한 품종과 무산소 내추럴 롯이 빠르게 늘고 있습니다.",
+"story": "온두라스의 산타바르바라 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 온두라스 산지의 공통 특성으로 소개합니다.",
+"profileLevel": "country"
+},
+{
+"id": "R|코스타리카|페레스 셀레돈",
+"kind": "region",
+"country": "코스타리카",
+"name": "페레스 셀레돈",
+"nameEn": "Pérez Zeledón",
+"lat": 9.33647,
+"lon": -83.64841,
+"precision": "region",
+"evidence": "Pérez Zeledón, San José · OSM/Photon",
+"source": "https://www.openstreetmap.org/search?query=P%C3%A9rez%20Zeled%C3%B3n",
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-costa-rica-2025-vista-paraiso-1a",
+"competition": "Cup of Excellence 코스타리카 2025 · Traditional Washed Processes",
+"year": 2025,
+"rank": "1A",
+"score": 90.63,
+"farm": "Vista Paraiso",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"커피미업"
+],
+"buyersEn": [
+"Coffee Me Up"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/costa-rica-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/costa-rica-2025/"
+}
+],
+"auctionCount": 1,
+"elevation": "1,200~1,900m",
+"harvest": "11월~3월 (주 수확기)",
+"terroir": "화산 산맥 · 태평양·카리브 두 바람 · 안개 잦은 고지",
+"varieties": "카투라 · 카투아이 · 빌라 사르치 · 게이샤",
+"processes": "워시드·허니 중심 · 내추럴과 실험 가공 확대",
+"flavorProfile": "시트러스 · 카라멜 · 꿀의 깨끗한 단맛",
+"trend": "소농이 직접 가공하는 마이크로밀 방식이 중미로 퍼진 진원지로, 허니·내추럴 롯이 계속 늘고 있습니다.",
+"story": "코스타리카의 페레스 셀레돈 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 코스타리카 산지의 공통 특성으로 소개합니다.",
+"profileLevel": "country"
+},
+{
+"id": "R|태국|난",
+"kind": "region",
+"country": "태국",
+"name": "난",
+"nameEn": "Nan",
+"lat": 18.75446,
+"lon": 100.6248,
+"precision": "region",
+"evidence": "Nan 주(州) 중심 · OSM/Photon",
+"source": "https://www.openstreetmap.org/search?query=Nan%20Province%2C%20Thailand",
+"beanCount": 0,
+"elevation": "1,000~1,600m",
+"harvest": "11월~2월 (주 수확기)",
+"terroir": "북부 산지 · 화산성 토양 · 건조한 겨울",
+"varieties": "카티모르 · 카투라 · 타이 재래종",
+"processes": "워시드 · 허니 · 내추럴",
+"flavorProfile": "견과 · 카라멜 · 부드러운 과일",
+"trend": "치앙마이·치앙라이 고지에서 스페셜티 롯과 무산소 가공이 늘고 있습니다.",
+"story": "태국의 난 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 태국 산지의 공통 특성으로 소개합니다.",
+"profileLevel": "country"
+},
+{
+"id": "R|태국|치앙마이",
+"kind": "region",
+"country": "태국",
+"name": "치앙마이",
+"nameEn": "Chiang Mai",
+"lat": 18.69517,
+"lon": 98.44627,
+"precision": "region",
+"evidence": "Chiang Mai 주(州) 중심 · OSM/Photon",
+"source": "https://www.openstreetmap.org/search?query=Chiang%20Mai%20Province",
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-thailand-2026-soft-coffee-17",
+"competition": "Cup of Excellence 태국 2026",
+"year": 2026,
+"rank": "17",
+"score": 87.5,
+"farm": "Soft Coffee",
+"variety": "Catuai, Typica",
+"process": "Washed",
+"buyers": [
+"미커피"
+],
+"buyersEn": [
+"MI Coffee Corporation"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/thailand-2026/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/tailandia-2026/"
+}
+],
+"auctionCount": 1,
+"elevation": "1,000~1,600m",
+"harvest": "11월~2월 (주 수확기)",
+"terroir": "북부 산지 · 화산성 토양 · 건조한 겨울",
+"varieties": "카티모르 · 카투라 · 타이 재래종",
+"processes": "워시드 · 허니 · 내추럴",
+"flavorProfile": "견과 · 카라멜 · 부드러운 과일",
+"trend": "치앙마이·치앙라이 고지에서 스페셜티 롯과 무산소 가공이 늘고 있습니다.",
+"story": "태국의 치앙마이 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 태국 산지의 공통 특성으로 소개합니다.",
+"profileLevel": "country"
+},
+{
+"id": "R|페루|아마조나스",
+"kind": "region",
+"country": "페루",
+"name": "아마조나스",
+"nameEn": "Amazonas",
+"lat": -5.0,
+"lon": -78.0,
+"precision": "region",
+"evidence": "Amazonas 주(州) 중심 · OSM/Photon",
+"source": "https://www.openstreetmap.org/search?query=Amazonas%2C%20Peru",
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-peru-2025-el-gringo-19",
+"competition": "Cup of Excellence 페루 2025",
+"year": 2025,
+"rank": "19",
+"score": 87.78,
+"farm": "El Gringo",
+"variety": "Geisha",
+"process": "Natural",
+"buyers": [
+"테라로사"
+],
+"buyersEn": [
+"Terarosa"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/peru-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/peru-2025/"
+}
+],
+"auctionCount": 1,
+"elevation": "1,200~2,000m (안데스 고지 2,200m까지)",
+"harvest": "4월~8월 (주 수확기)",
+"terroir": "안데스 동사면 · 건조한 고지 · 소농 중심",
+"varieties": "티피카 · 카투라 · 카투아이 · 부르봉",
+"processes": "워시드 중심",
+"flavorProfile": "부드러운 과일 · 카라멜 · 둥근 산미",
+"trend": "유기농·공정무역 비중이 높고, 북부 카하마르카에서 스페셜티 롯이 늘고 있습니다.",
+"story": "페루의 아마조나스 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 페루 산지의 공통 특성으로 소개합니다.",
+"profileLevel": "country"
+},
+{
+"id": "R|페루|쿠스코",
+"kind": "region",
+"country": "페루",
+"name": "쿠스코",
+"nameEn": "Cusco",
+"lat": -12.5,
+"lon": -72.5,
+"precision": "region",
+"evidence": "Cusco 주(州) 중심 · OSM/Photon",
+"source": "https://www.openstreetmap.org/search?query=Cusco%2C%20Peru",
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-peru-2024-monta-a-4",
+"competition": "Cup of Excellence 페루 2024",
+"year": 2024,
+"rank": "4",
+"score": 89.64,
+"farm": "Montaña",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"라이언스커피",
+"이알코퍼레이션"
+],
+"buyersEn": [
+"Ryans Coffee Roasters",
+"E.R. Corporation"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/peru-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/peru-2024/"
+},
+{
+"id": "coe-peru-2024-el-nevado-6",
+"competition": "Cup of Excellence 페루 2024",
+"year": 2024,
+"rank": "6",
+"score": 89.29,
+"farm": "El Nevado",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"뮤제오"
+],
+"buyersEn": [
+"MUSEO"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/peru-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/peru-2024/"
+}
+],
+"auctionCount": 2,
+"elevation": "1,200~2,000m (안데스 고지 2,200m까지)",
+"harvest": "4월~8월 (주 수확기)",
+"terroir": "안데스 동사면 · 건조한 고지 · 소농 중심",
+"varieties": "티피카 · 카투라 · 카투아이 · 부르봉",
+"processes": "워시드 중심",
+"flavorProfile": "부드러운 과일 · 카라멜 · 둥근 산미",
+"trend": "유기농·공정무역 비중이 높고, 북부 카하마르카에서 스페셜티 롯이 늘고 있습니다.",
+"story": "페루의 쿠스코 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 페루 산지의 공통 특성으로 소개합니다.",
+"profileLevel": "country"
+},
+{
+"id": "R|페루|피우라",
+"kind": "region",
+"country": "페루",
+"name": "피우라",
+"nameEn": "Piura",
+"lat": -5.19711,
+"lon": -80.62666,
+"precision": "region",
+"evidence": "Piura · OSM/Photon",
+"source": "https://www.openstreetmap.org/search?query=Piura",
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-peru-2024-el-naranjo-10",
+"competition": "Cup of Excellence 페루 2024",
+"year": 2024,
+"rank": "10",
+"score": 88.64,
+"farm": "El Naranjo",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"미커피"
+],
+"buyersEn": [
+"MI Coffee Corporation"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/peru-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/peru-2024/"
+}
+],
+"auctionCount": 1,
+"elevation": "1,200~2,000m (안데스 고지 2,200m까지)",
+"harvest": "4월~8월 (주 수확기)",
+"terroir": "안데스 동사면 · 건조한 고지 · 소농 중심",
+"varieties": "티피카 · 카투라 · 카투아이 · 부르봉",
+"processes": "워시드 중심",
+"flavorProfile": "부드러운 과일 · 카라멜 · 둥근 산미",
+"trend": "유기농·공정무역 비중이 높고, 북부 카하마르카에서 스페셜티 롯이 늘고 있습니다.",
+"story": "페루의 피우라 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 페루 산지의 공통 특성으로 소개합니다.",
+"profileLevel": "country"
 }
 ],
 "beans": [
