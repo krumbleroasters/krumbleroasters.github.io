@@ -328,7 +328,8 @@
     try { localStorage.setItem(STORE, lang); } catch (e) {}
     document.documentElement.setAttribute("lang", lang);
     document.documentElement.setAttribute("data-lang", lang);
-    walk(document.body || document.documentElement);
+    // head의 <title>·meta 설명까지 함께 바꿉니다
+    walk(document.documentElement);
     paintBox();
     // 지도·앱이 새 언어로 다시 그려야 하는 화면(잔 표시 등)은 이 신호를 받아 처리합니다.
     try {
