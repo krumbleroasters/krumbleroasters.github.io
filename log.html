@@ -185,6 +185,60 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   .syncmsg.ok{color:#37563C}
   .syncmsg.warn{color:#8A4A2B}
 
+  /* ---------- ranking ---------- */
+  .rankbox{margin:0;padding:12px 12px 11px;background:var(--paper);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}
+  .rankhead{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:0 0 9px}
+  .rankhead .kicker{margin:0;flex:1;min-width:96px;font-size:9px;letter-spacing:.2em}
+  .periodtabs{display:inline-flex;gap:2px;padding:2px;background:var(--cream-2);border-radius:999px;flex:none}
+  .periodtabs .ptab{
+    border:0;background:none;border-radius:999px;padding:0 11px;min-height:30px;
+    font-size:11.5px;font-weight:800;letter-spacing:-.01em;color:var(--muted);
+  }
+  .periodtabs .ptab.on{background:var(--ink);color:#FFF8EF}
+  .periodtabs .ptab:active{transform:scale(.97)}
+  .myrank{display:flex;align-items:center;gap:9px;padding:8px 10px;margin:0 0 9px;background:#EEF2EA;border:1px solid #D3DECC;border-radius:12px}
+  .myrank .rkbig{flex:none;min-width:34px;text-align:center;font-size:19px;line-height:1.1;font-weight:800;color:var(--green);font-variant-numeric:tabular-nums}
+  .myrank .rkbig small{font-size:10px;font-weight:800;margin-left:1px}
+  .myrank .mytx{min-width:0;flex:1}
+  .myrank .mytx b{display:block;font-size:12.5px;line-height:1.4;font-weight:800;letter-spacing:-.012em}
+  .myrank .mytx span{display:block;margin-top:1px;font-size:10.5px;line-height:1.5;font-weight:700;color:#5D7057}
+  .myrank .myname{flex:none;max-width:38%;font-size:10px;font-weight:800;letter-spacing:.04em;color:#4E6447;background:#fff;border:1px solid #D3DECC;border-radius:999px;padding:3px 7px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .myrank.empty{background:#FBF3E7;border-color:#EBD8BE}
+  .myrank.empty .rkbig{min-width:0;font-size:15px;color:var(--terra)}
+  .myrank.empty .mytx span{color:#8A6A47}
+  .ranklist{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+  .rkrow{display:grid;grid-template-columns:24px minmax(0,1fr) auto;align-items:center;gap:8px;padding:6px 7px;border-radius:10px}
+  .rkrow .rk{font-size:12px;font-weight:800;color:var(--muted);text-align:center;font-variant-numeric:tabular-nums}
+  .rkrow.top1 .rk,.rkrow.top2 .rk,.rkrow.top3 .rk{width:20px;height:20px;line-height:20px;border-radius:999px;justify-self:center;font-size:11px}
+  .rkrow.top1 .rk{background:var(--terra);color:#FFF8EF}
+  .rkrow.top2 .rk,.rkrow.top3 .rk{background:var(--cream-2);color:var(--ink)}
+  .rkrow .who{min-width:0}
+  .rkrow .nm{display:flex;align-items:center;gap:5px;min-width:0}
+  .rkrow .nm i{font-style:normal;font-size:12.5px;font-weight:800;letter-spacing:.03em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .rkrow .bdgme{flex:none;font-size:8.5px;font-weight:800;letter-spacing:.04em;color:#FFF8EF;background:var(--green);border-radius:5px;padding:1px 4px}
+  .rkrow .sub{display:block;margin-top:1px;font-size:10px;font-weight:700;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .rkrow .cup{font-size:13px;font-weight:800;font-variant-numeric:tabular-nums;color:var(--ink)}
+  .rkrow .cup small{font-size:9.5px;font-weight:700;color:var(--muted);margin-left:1px}
+  .rkrow.me{background:#F4F8F1;box-shadow:inset 0 0 0 1px #D7E2D0}
+  .rkrow.me .nm i{color:var(--green)}
+  .rkempty,.rkgap{margin:0;padding:8px 4px;font-size:11px;line-height:1.6;color:var(--muted);text-align:center;list-style:none}
+  .rkgap{padding:0;line-height:1;letter-spacing:.2em;color:#C9BDA9}
+  .topwrap{display:grid;grid-template-columns:1fr;gap:10px;margin:11px 0 0;padding-top:10px;border-top:1px dashed var(--line)}
+  .topwrap h4{margin:0 0 5px;font-size:10px;font-weight:800;letter-spacing:.06em;color:var(--muted)}
+  .toplist{list-style:none;margin:0;padding:0;display:grid;gap:3px}
+  .toplist li{display:flex;align-items:baseline;gap:5px;min-width:0;font-size:11.5px;line-height:1.45}
+  .toplist .no{flex:none;width:11px;font-size:10px;font-weight:800;color:#B6AA98;font-variant-numeric:tabular-nums}
+  .toplist .nm2{min-width:0;flex:1;font-weight:700;color:var(--ink-mid);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .toplist .cn{flex:none;font-size:10.5px;font-weight:800;color:var(--terra);font-variant-numeric:tabular-nums}
+  .toplist li.none{font-weight:700;color:var(--muted)}
+  .ranknote{margin:8px 0 0;font-size:10px;line-height:1.6;color:var(--muted)}
+  .nickfield{margin-top:10px;padding-top:9px;border-top:1px dashed var(--line)}
+  .nickfield label{display:block;margin:0 0 5px;font-size:10.5px;font-weight:800;letter-spacing:.04em;color:var(--muted)}
+  .nickfield label span{font-weight:700;letter-spacing:0;color:#B6AA98}
+  .nickrow{display:flex;gap:6px}
+  .nickrow input{flex:1;min-width:0;min-height:38px;border:1px solid var(--line);border-radius:10px;background:#fff;padding:7px 10px;font-size:13px}
+  .nicknote{margin:5px 0 0;font-size:10px;line-height:1.6;color:var(--muted)}
+
   /* ---------- data actions ---------- */
   .datacard{margin:22px 0 6px;padding:13px 14px;background:var(--cream-2);border-radius:14px}
   .datacard p{margin:0 0 10px;font-size:11px;line-height:1.65;color:#7A6A57}
@@ -466,6 +520,31 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
       <div class="sec-title"><h3>최근 기록</h3><span id="recentCount">0</span></div>
       <div class="recent" id="recentList"></div>
 
+      <div class="sec-title"><h3>커피 탐험가 순위</h3><span id="rankPeriodLabel">오늘</span></div>
+      <section class="rankbox" id="rankBox" aria-label="커피 탐험가 순위판">
+        <div class="rankhead">
+          <p class="kicker">Explorer ranking</p>
+          <div class="periodtabs" role="tablist" aria-label="순위 기간 선택">
+            <button class="ptab on" type="button" role="tab" data-period="day" aria-selected="true">일간</button>
+            <button class="ptab" type="button" role="tab" data-period="month" aria-selected="false">월간</button>
+            <button class="ptab" type="button" role="tab" data-period="all" aria-selected="false">전체</button>
+          </div>
+        </div>
+        <div class="myrank empty" id="myRank"></div>
+        <ol class="ranklist" id="rankList" aria-live="polite"></ol>
+        <div class="topwrap">
+          <div>
+            <h4>인기 원두 TOP 5</h4>
+            <ol class="toplist" id="topBeans"></ol>
+          </div>
+          <div>
+            <h4>인기 산지 TOP 5</h4>
+            <ol class="toplist" id="topPlaces"></ol>
+          </div>
+        </div>
+        <p class="ranknote" id="rankNote"></p>
+      </section>
+
       <div class="syncbox" id="syncBox">
         <div class="synchead">
           <div class="lbl">
@@ -482,6 +561,14 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
         <div class="codeload" id="codeLoadBox" hidden>
           <input type="text" id="inpCode" placeholder="CUP-XXXX-XXXX" autocomplete="off" spellcheck="false" maxlength="14" aria-label="불러올 내 기록 코드" />
           <button class="btn sm" id="btnCodeOk" type="button">불러오기</button>
+        </div>
+        <div class="nickfield">
+          <label for="inpNick">순위판에 표시할 이름 <span>선택</span></label>
+          <div class="nickrow">
+            <input type="text" id="inpNick" maxlength="12" placeholder="예: 원두수집가" autocomplete="off" aria-label="순위판에 표시할 이름" />
+            <button class="btn ghost sm" id="btnNickSave" type="button">저장</button>
+          </div>
+          <p class="nicknote" id="nickNote">이 기기에서 보이는 이름이에요. 다른 사람 화면에는 내 코드 앞 두 글자만 보입니다.</p>
         </div>
         <p class="syncmsg" id="syncMsg" role="status"></p>
       </div>
@@ -1091,6 +1178,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
         setSyncMsg("이 코드로 저장된 기록을 시트에서 찾지 못했어요. 코드를 확인해 주세요." + (same ? "" : " (이전 코드: " + prev + ")"), "warn");
         toast("그 코드의 기록을 찾지 못했어요");
       }
+      loadRank(false);
     }).catch(function () {
       setSyncMsg("시트를 불러오지 못했어요. 잠시 뒤 다시 시도해 주세요.", "warn");
     });
@@ -1114,7 +1202,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     $("#btnSyncNow").addEventListener("click", function () {
       this.disabled = true;
       var self = this;
-      flushQueue().then(function () { return syncPull(true); }).then(function () { self.disabled = false; });
+      flushQueue().then(function () { return syncPull(true); }).then(function () { return loadRank(false); }).then(function () { self.disabled = false; });
     });
     $("#btnCodeLoad").addEventListener("click", function () {
       var box2 = $("#codeLoadBox");
@@ -1130,7 +1218,253 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     $("#inpCode").addEventListener("keydown", function (e) {
       if (e.key === "Enter") { e.preventDefault(); $("#btnCodeOk").click(); }
     });
-    flushQueue().then(function () { return syncPull(false); });
+    flushQueue().then(function () { return syncPull(false); }).then(function () { loadRank(false); });
+  }
+
+  /* ================= 순위판 (일간 · 월간 · 전체) =================
+     · 공개 시트(logs)의 기록을 기간별로 묶어 '커피 탐험가' 순위를 만듭니다
+     · 순위판에는 기록 코드를 앞 두 글자만 남겨 표시합니다(CUP-2F**).
+       코드 전체가 보이면 그 코드로 남의 기록을 불러올 수 있어 마스킹합니다
+     · 시트 반영(최대 5분) 전이라도 이 기기의 내 기록은 내 순위에 바로 더합니다   */
+  var RANK_PERIOD_KEY = "krumble.coffeeLog.rankPeriod.v1";
+  var NICK_KEY = "krumble.coffeeLog.nickname.v1";
+  var RANK_TOP = 10;
+  var PERIOD_LABEL = { day: "오늘", month: "이번 달", all: "전체" };
+  var rankState = { period: "day", rows: null, at: 0, failed: false };
+
+  function readRankPeriod() {
+    try {
+      var p = localStorage.getItem(RANK_PERIOD_KEY);
+      return p === "month" || p === "all" ? p : "day";
+    } catch (e) { return "day"; }
+  }
+  function writeRankPeriod(p) { try { localStorage.setItem(RANK_PERIOD_KEY, p); } catch (e) {} }
+  function readNicks() {
+    try {
+      var o = JSON.parse(localStorage.getItem(NICK_KEY) || "{}");
+      return o && typeof o === "object" && !Array.isArray(o) ? o : {};
+    } catch (e) { return {}; }
+  }
+  function writeNicks(map) { try { localStorage.setItem(NICK_KEY, JSON.stringify(map)); } catch (e) {} }
+  function cleanNick(v) {
+    return String(v == null ? "" : v)
+      .replace(/[<>&"'`]/g, "").replace(/[\u0000-\u001f]/g, "")
+      .replace(/\s+/g, " ").trim().slice(0, 12);
+  }
+  function nickFor(code) {
+    return cleanNick(readNicks()[String(code || "").toUpperCase()] || "");
+  }
+  /* 순위판에 보이는 코드: CUP-2FMQ-PPZS → CUP-2F** (앞 두 글자만) */
+  function maskCode(code) {
+    var s = String(code || "").toUpperCase().replace(/[^0-9A-Z]/g, "");
+    if (s.slice(0, 3) === "CUP") s = s.slice(3);
+    return s.length >= 2 ? "CUP-" + s.slice(0, 2) + "**" : "CUP-**";
+  }
+  function kstTodayISO() {
+    var d = new Date(Date.now() + 9 * 3600 * 1000);
+    return d.getUTCFullYear() + "-" + pad2(d.getUTCMonth() + 1) + "-" + pad2(d.getUTCDate());
+  }
+  function rankPeriodMatch(dateStr, period) {
+    if (period === "all") return true;
+    var d = String(dateStr || "").slice(0, 10);
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(d)) return false;
+    var today = kstTodayISO();
+    return period === "month" ? d.slice(0, 7) === today.slice(0, 7) : d === today;
+  }
+  function rankTop(map, n) {
+    var arr = Array.from(map.values());
+    arr.sort(function (a, b) { return b.count - a.count || (a.label < b.label ? -1 : a.label > b.label ? 1 : 0); });
+    return arr.slice(0, n);
+  }
+  function rankDataset(period) {
+    var seen = new Set(), rows = [];
+    (rankState.rows || []).forEach(function (r) {
+      if (!r || !r.rid || r.action === "삭제" || seen.has(r.rid)) return;
+      seen.add(r.rid);
+      rows.push({ code: r.code, date: r.date, name: r.name, region: r.region, country: r.country });
+    });
+    var me = String(readSync().code || "").toUpperCase();   // 시트에 오르기 전 내 기록도 지금 순위에 넣는다
+    records.forEach(function (r) {
+      if (!r || !r.id || seen.has(r.id)) return;
+      seen.add(r.id);
+      rows.push({ code: me, date: r.date, name: r.name, region: r.region, country: r.country });
+    });
+
+    var byCode = new Map(), beans = new Map(), places = new Map();
+    rows.forEach(function (r) {
+      if (!rankPeriodMatch(r.date, period)) return;
+      var code = String(r.code || "").toUpperCase();
+      if (/^CUP-[0-9A-Z]{4}-[0-9A-Z]{4}$/.test(code)) {
+        var e = byCode.get(code);
+        if (!e) { e = { code: code, cups: 0, countries: {}, regions: {} }; byCode.set(code, e); }
+        e.cups++;
+        if (r.country) e.countries[normKo(r.country)] = 1;
+        if (r.region) e.regions[normKo(r.region)] = 1;
+      }
+      if (r.name) {
+        var bk = normKo(r.name), b = beans.get(bk);
+        if (!b) { b = { label: r.name, count: 0 }; beans.set(bk, b); }
+        b.count++;
+      }
+      var pl = String(r.region || "").trim() || String(r.country || "").trim();
+      if (pl) {
+        var pk = normKo(pl), p = places.get(pk);
+        if (!p) { p = { label: pl, count: 0 }; places.set(pk, p); }
+        p.count++;
+      }
+    });
+
+    var ranked = Array.from(byCode.values()).map(function (e) {
+      return { code: e.code, cups: e.cups, nc: Object.keys(e.countries).length, nr: Object.keys(e.regions).length };
+    });
+    ranked.sort(function (a, b) {
+      return b.cups - a.cups || (b.nc + b.nr) - (a.nc + a.nr) || (a.code < b.code ? -1 : a.code > b.code ? 1 : 0);
+    });
+    var mine = null;
+    for (var i = 0; i < ranked.length; i++) {
+      ranked[i].rank = i + 1;
+      if (ranked[i].code === me) mine = ranked[i];
+    }
+    var gap = 0;
+    if (mine && mine.rank > 1) gap = Math.max(1, ranked[mine.rank - 2].cups - mine.cups + 1);
+    return { ranked: ranked, mine: mine, gap: gap, beans: rankTop(beans, 5), places: rankTop(places, 5) };
+  }
+
+  function rankRowHTML(e, isMe) {
+    var label = (isMe && nickFor(e.code)) || maskCode(e.code);
+    var sub = [];
+    if (e.nc) sub.push(e.nc + "개국");
+    if (e.nr) sub.push(e.nr + "산지");
+    if (!sub.length) sub.push("산지 미지정");
+    return '<li class="rkrow' + (e.rank <= 3 ? " top" + e.rank : "") + (isMe ? " me" : "") + '">' +
+      '<span class="rk">' + e.rank + "</span>" +
+      '<span class="who"><span class="nm"><i>' + esc(label) + "</i>" + (isMe ? '<b class="bdgme">나</b>' : "") + "</span>" +
+      '<span class="sub">' + esc(sub.join(" · ")) + "</span></span>" +
+      '<span class="cup">' + e.cups + "<small>잔</small></span></li>";
+  }
+
+  function renderRank() {
+    var box = $("#rankBox");
+    if (!box) return;
+    var period = rankState.period || "day";
+    var label = PERIOD_LABEL[period] || "전체";
+    var myCode = String(readSync().code || "").toUpperCase();
+    Array.prototype.forEach.call(box.querySelectorAll(".ptab"), function (b) {
+      var on = b.getAttribute("data-period") === period;
+      b.classList.toggle("on", on);
+      b.setAttribute("aria-selected", String(on));
+    });
+    var pl = $("#rankPeriodLabel");
+    if (pl) pl.textContent = label;
+
+    var data = rankDataset(period);
+    var mine = data.mine, my = $("#myRank");
+    if (my) {
+      if (mine) {
+        my.className = "myrank";
+        my.innerHTML = '<span class="rkbig">' + mine.rank + "<small>위</small></span>" +
+          '<span class="mytx"><b>' + esc(label) + " " + mine.cups + "잔 · " + mine.nc + "개국 " + mine.nr + "산지</b>" +
+          "<span>" + (mine.rank === 1 ? "지금 맨 앞이에요 · 이 자리를 지켜 보세요" : "다음 순위까지 " + data.gap + "잔") + "</span></span>" +
+          '<span class="myname">' + esc(nickFor(myCode) || maskCode(myCode)) + "</span>";
+      } else {
+        my.className = "myrank empty";
+        my.innerHTML = '<span class="rkbig">—</span>' +
+          '<span class="mytx"><b>' + esc(label) + " 기록이 아직 없어요</b>" +
+          "<span>한 잔 남기면 바로 순위에 올라요</span></span>" +
+          '<button class="btn ghost sm" type="button" id="btnRankRecord">기록하기</button>';
+      }
+    }
+
+    var list = $("#rankList");
+    if (list) {
+      var top = data.ranked.slice(0, RANK_TOP), html = "";
+      if (!top.length) {
+        html = '<li class="rkempty">이 기간에 아직 순위가 없어요. 첫 잔을 남기면 1위로 올라요.</li>';
+      } else {
+        html = top.map(function (e) { return rankRowHTML(e, e.code === myCode); }).join("");
+        if (mine && mine.rank > RANK_TOP) html += '<li class="rkgap" aria-hidden="true">⋯</li>' + rankRowHTML(mine, true);
+      }
+      list.innerHTML = html;
+    }
+
+    var tb = $("#topBeans"), tp = $("#topPlaces");
+    if (tb) tb.innerHTML = data.beans.length ? data.beans.map(function (b, i) {
+      return '<li><span class="no">' + (i + 1) + '</span><span class="nm2">' + esc(b.label) + '</span><span class="cn">' + b.count + "</span></li>";
+    }).join("") : '<li class="none">이 기간 기록이 없어요</li>';
+    if (tp) tp.innerHTML = data.places.length ? data.places.map(function (p, i) {
+      return '<li><span class="no">' + (i + 1) + '</span><span class="nm2">' + esc(p.label) + '</span><span class="cn">' + p.count + "</span></li>";
+    }).join("") : '<li class="none">이 기간 기록이 없어요</li>';
+
+    var note = $("#rankNote");
+    if (note) {
+      note.textContent = (rankState.failed ? "시트를 불러오지 못해 이 기기 기록만 반영했어요"
+        : rankState.rows ? data.ranked.length + "명 참여 · 시트 반영은 최대 5분(방금 남긴 내 기록은 바로 반영)"
+        : "순위를 불러오는 중이에요") + " · 코드는 앞 두 글자만 표시합니다";
+    }
+    renderNick();
+  }
+
+  function renderNick() {
+    var el = $("#inpNick");
+    if (!el || document.activeElement === el) return;
+    el.value = nickFor(readSync().code);
+  }
+  function saveNick() {
+    var el = $("#inpNick");
+    if (!el) return;
+    var v = cleanNick(el.value);
+    var me = String(readSync().code || "").toUpperCase();
+    var map = readNicks();
+    if (v) map[me] = v; else delete map[me];
+    writeNicks(map);
+    el.value = v;
+    renderRank();
+    toast(v ? "순위판에 '" + v + "' 이름으로 표시할게요" : "순위판 이름을 지웠어요");
+  }
+
+  function loadRank(force) {
+    return fetchLogRows(!!force)
+      .then(function (rows) {
+        rankState.rows = rows; rankState.at = Date.now(); rankState.failed = false;
+        renderRank();
+      })
+      .catch(function () {
+        rankState.failed = true;
+        renderRank();
+      });
+  }
+
+  function initRank() {
+    var box = $("#rankBox");
+    if (!box) return;
+    rankState.period = readRankPeriod();
+    box.addEventListener("click", function (e) {
+      var tab = e.target.closest && e.target.closest(".ptab");
+      if (tab) {
+        var p = tab.getAttribute("data-period");
+        if (p && p !== rankState.period) {
+          rankState.period = p;
+          writeRankPeriod(p);
+          renderRank();
+          if (Date.now() - rankState.at > 60000) loadRank(false);
+        }
+        return;
+      }
+      if (e.target.closest && e.target.closest("#btnRankRecord")) setView("add");
+    });
+    box.addEventListener("keydown", function (e) {
+      var tab = e.target.closest && e.target.closest(".ptab");
+      if (!tab || (e.key !== "ArrowRight" && e.key !== "ArrowLeft")) return;
+      e.preventDefault();
+      var tabs = Array.prototype.slice.call(box.querySelectorAll(".ptab"));
+      var i = tabs.indexOf(tab);
+      var next = tabs[(i + (e.key === "ArrowRight" ? 1 : tabs.length - 1)) % tabs.length];
+      if (next) { next.click(); next.focus(); }
+    });
+    var save = $("#btnNickSave"), inp = $("#inpNick");
+    if (save) save.addEventListener("click", saveNick);
+    if (inp) inp.addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); saveNick(); } });
+    renderRank();
   }
 
   /* ================= catalog (beans.json) ================= */
@@ -1443,6 +1777,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     renderStats();
     renderMap();
     renderRecent();
+    renderRank();
   }
 
   /* ================= sheet ================= */
@@ -2075,6 +2410,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     buildStars();
     buildTags();
     bind();
+    initRank();
     renderAll();
     loadCatalog();
     initSync();
