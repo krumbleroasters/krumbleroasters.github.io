@@ -247,6 +247,7 @@
     "html[lang=\"en\"] body, html[lang=\"en\"] h1, html[lang=\"en\"] p, html[lang=\"en\"] li, html[lang=\"en\"] dd{word-break:normal;overflow-wrap:break-word}" +
     /* 카드 안 작은 항목 이름('좌표'·'안내')은 영어·일본어에서 폭을 늘려 줄바꿈을 막습니다. */
     "html[lang=\"en\"] .src .k, html[lang=\"ja\"] .src .k{width:auto;min-width:52px;white-space:nowrap}" +
+    "html[lang=\"en\"] .facts dt, html[lang=\"ja\"] .facts dt{width:auto;min-width:52px;white-space:nowrap}" +
     "@media (max-width:400px){.cilang button{padding:6px 6px;font-size:10.5px}}";
 
   function styleOnce() {
