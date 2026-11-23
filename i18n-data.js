@@ -160,6 +160,13 @@ window.CI_I18N = (function () {
       "These are live OpenStreetMap results, for reference only — not catalog coordinates.||OpenStreetMap のリアルタイム検索結果です。カタログの座標ではなく参考用です。",
     "지도로": "Show on map||地図で見る",
     "농장 이야기": "Farm story||農園の物語",
+    "산지 이야기": "Origin story||産地の物語",
+    "산지 정보": "Origin profile||産地情報",
+    "수확기": "Harvest||収穫期",
+    "토양·기후": "Soil & climate||土壌・気候",
+    "대표 품종": "Main varieties||主要品種",
+    "대표 향미": "Cup profile||代表的な香味",
+    "최근 동향": "Recent trends||最近の動き",
     "수상 · 기록": "Awards & records||受賞・記録",
     "자료": "Sources||資料",
     "로스터 한줄 후기": "Roaster's one-line review||ロースターのひとことレビュー",
@@ -1169,6 +1176,7 @@ window.CI_I18N = (function () {
       "닫기": "Close||閉じる"
     },
     templ: [
+      "이 산지의 개별 자료로 확인된 항목과 {} 공통 항목을 함께 적었습니다.||Origin-specific facts are mixed with {} country-level information on this card.||この産地の個別資料で確認できた項目と、{}共通の項目をあわせて記載しています。",
       "{} {#}잔||{} {} cups||{} {}杯",
       "다음 순위까지 {#}잔||{} more cups to the next place||次の順位まであと{}杯",
       "{} 기록이 아직 없어요||No {} entries yet||{}の記録はまだありません",

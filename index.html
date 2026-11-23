@@ -421,6 +421,16 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   .story2{margin:16px 0 0;padding:14px;background:#FFFDF6;border:1px solid #EADFCB;border-radius:12px}
   .story2 h3,.awards h3,.revbox h3{margin:0 0 8px;font-size:10.5px;font-weight:800;letter-spacing:.13em;color:#9A8F80;text-transform:uppercase}
   .story2 p{margin:0;font-size:12.5px;line-height:1.75;color:#3D372F;word-break:keep-all}
+  /* 산지 정보(테루아) 패널 — 고도·수확기·토양·품종·가공·향미·동향 */
+  .terra{margin:16px 0 0;padding:13px 13px 11px;background:#F7F4EC;border:1px solid #E6DDCD;border-radius:12px}
+  .terra h3{margin:0 0 9px;font-size:10.5px;font-weight:800;letter-spacing:.13em;color:#9A8F80;text-transform:uppercase}
+  .terra dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;margin:0;background:#E6DDCD;border-radius:9px;overflow:hidden}
+  .terra dl>div{background:#FFFDF8;padding:8px 10px;min-width:0}
+  .terra dl>div.wide{grid-column:1/-1}
+  .terra dt{font-size:9.5px;font-weight:800;letter-spacing:.08em;color:#9A8F80;text-transform:uppercase;margin:0}
+  .terra dd{margin:3px 0 0;font-size:12px;font-weight:700;line-height:1.55;color:#3D372F;word-break:keep-all;overflow-wrap:anywhere}
+  .terra .tn{margin:8px 0 0;font-size:10.5px;line-height:1.55;color:#A79C8D}
+  @media (max-width:470px){.terra dl{grid-template-columns:1fr}}
   .facts{display:grid;grid-template-columns:1fr;gap:1px;margin:11px 0 0;background:#EFE6D6;border-radius:9px;overflow:hidden}
   .facts div{background:#FFFDF6;padding:7px 10px;display:flex;gap:8px;font-size:11.5px;line-height:1.55}
   .facts dt{flex:none;width:46px;font-weight:800;color:#9A8F80;font-size:10px;padding-top:2px;letter-spacing:.03em}
@@ -883,6 +893,7 @@ function cardForPlace(p) {
     </dl>
     ${notes.length ? `<div class="notes">${notes.slice(0, 10).map(([n, c]) => `<span class="note">${esc(n)}${c > 1 ? ` <small style="opacity:.6">${c}</small>` : ""}</span>`).join("")}</div>` : ""}
     ${vars.length ? `<p class="story">품종: ${vars.slice(0, 6).map(([k, v]) => `${esc(k)} <small style="color:#9A8F80">${v}</small>`).join(" · ")}</p>` : ""}
+    ${terroirBlock(p)}
     ${storyBlock(p)}
     ${awardsBlock(p)}
     <div class="src">
@@ -954,6 +965,7 @@ function cardForBean(b) {
     </div>
     ${p && p.precision === "country" ? refineBlock(b) : ""}
     ${p && p.kind === "farm" && p.story ? `${storyBlock(p)}${awardsBlock(p, 3)}` : ""}
+    ${p && p.kind !== "farm" ? terroirBlock(p) : ""}
     ${p ? reviewsBlock(p.id) : ""}
     <div class="qr">
       <code>${esc(location.origin + location.pathname + "?bean=" + encodeURIComponent(b.id))}</code>
@@ -1037,15 +1049,32 @@ function factsBlock(p) {
   const rows = [];
   if (p.producer) rows.push(["생산자", p.producer]);
   if (p.founded) rows.push(["설립", p.founded]);
-  if (p.elevation) rows.push(["고도", p.elevation]);
   if (!rows.length) return "";
   return `<dl class="facts">${rows.map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join("")}</dl>`;
+}
+
+function terroirBlock(p) {
+  const rows = [
+    ["고도", p.elevation],
+    ["수확기", p.harvest],
+    ["토양·기후", p.terroir, "wide"],
+    ["대표 품종", p.varieties],
+    ["가공", p.processes],
+    ["대표 향미", p.flavorProfile, "wide"],
+    ["최근 동향", p.trend, "wide"],
+  ].filter(([, v]) => v);
+  if (!rows.length) return "";
+  return `<div class="terra">
+    <h3>산지 정보</h3>
+    <dl>${rows.map(([k, v, wide]) => `<div${wide ? ' class="wide"' : ""}><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join("")}</dl>
+    ${p.profileLevel === "country" || p.profileLevel === "mixed" ? `<p class="tn">이 산지의 개별 자료로 확인된 항목과 ${esc(p.country)} 공통 항목을 함께 적었습니다.</p>` : ""}
+  </div>`;
 }
 
 function storyBlock(p) {
   if (!p.story) return "";
   return `<div class="story2">
-    <h3>농장 이야기</h3>
+    <h3>${p.kind === "farm" ? "농장 이야기" : "산지 이야기"}</h3>
     <p>${esc(p.story)}</p>
     ${factsBlock(p)}
   </div>`;
@@ -1999,8 +2028,8 @@ boot();
 <script src="qrcode.min.js?v=20261122e"></script>
 <script src="qr-tools.js?v=20261122e"></script>
 <script src="site-tools.js?v=20261122d"></script>
-<script src="i18n-data.js?v=20261123d"></script>
-<script src="i18n-pages.js?v=20261123d"></script>
-<script src="i18n.js?v=20261123d"></script>
+<script src="i18n-data.js?v=20261123e"></script>
+<script src="i18n-pages.js?v=20261123e"></script>
+<script src="i18n.js?v=20261123e"></script>
 </body>
 </html>
