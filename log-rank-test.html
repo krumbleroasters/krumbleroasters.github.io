@@ -249,6 +249,7 @@ window.__RANK_TEST_ROWS = [["2026-11-23 09:11", "CUP-AAAA-1111", "rec_rt0001", "
   .toplist .cn{flex:none;font-size:10.5px;font-weight:800;color:var(--terra);font-variant-numeric:tabular-nums}
   .toplist li.none{font-weight:700;color:var(--muted)}
   .ranknote{margin:8px 0 0;font-size:10px;line-height:1.6;color:var(--muted)}
+  @media (min-width:560px){.topwrap{grid-template-columns:1fr 1fr;gap:14px}}
   .nickfield{margin-top:10px;padding-top:9px;border-top:1px dashed var(--line)}
   .nickfield label{display:block;margin:0 0 5px;font-size:10.5px;font-weight:800;letter-spacing:.04em;color:var(--muted)}
   .nickfield label span{font-weight:700;letter-spacing:0;color:#B6AA98}
@@ -1378,9 +1379,12 @@ window.__RANK_TEST_ROWS = [["2026-11-23 09:11", "CUP-AAAA-1111", "rec_rt0001", "
     var mine = data.mine, my = $("#myRank");
     if (my) {
       if (mine) {
+        var statLine = [esc(label) + " " + mine.cups + "잔"];
+        if (mine.nc) statLine.push(mine.nc + "개국");
+        if (mine.nr) statLine.push(mine.nr + "산지");
         my.className = "myrank";
         my.innerHTML = '<span class="rkbig">' + mine.rank + "<small>위</small></span>" +
-          '<span class="mytx"><b>' + esc(label) + " " + mine.cups + "잔 · " + mine.nc + "개국 " + mine.nr + "산지</b>" +
+          '<span class="mytx"><b>' + statLine.join(" · ") + "</b>" +
           "<span>" + (mine.rank === 1 ? "지금 맨 앞이에요 · 이 자리를 지켜 보세요" : "다음 순위까지 " + data.gap + "잔") + "</span></span>" +
           '<span class="myname">' + esc(nickFor(myCode) || maskCode(myCode)) + "</span>";
       } else {
