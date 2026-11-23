@@ -68,7 +68,7 @@
 "auctions": [
 {
 "id": "coe-brazil-2024-sitio-pedro-varinha-3",
-"competition": "Cup of Excellence 브라질 2024 · Washed + Honey",
+"competition": "CoE Brazil 2024 · Washed + Honey",
 "year": 2024,
 "rank": "3",
 "score": 90.21,
@@ -154,7 +154,7 @@
 "auctions": [
 {
 "id": "coe-costa-rica-2026-leoncio-8",
-"competition": "Cup of Excellence 코스타리카 2026 · Washed",
+"competition": "CoE Costa Rica 2026 · Washed",
 "year": 2026,
 "rank": "8",
 "score": 88.56,
@@ -174,7 +174,7 @@
 },
 {
 "id": "coe-costa-rica-2025-la-isla-6",
-"competition": "Cup of Excellence 코스타리카 2025 · Traditional Honey & Natural Processes",
+"competition": "CoE Costa Rica 2025 · Traditional Honey & Natural Processes",
 "year": 2025,
 "rank": "6",
 "score": 88.66,
@@ -194,7 +194,7 @@
 },
 {
 "id": "coe-costa-rica-2024-monte-llano-bonito-el-kinkajou-3",
-"competition": "Cup of Excellence 코스타리카 2024 · Experimental",
+"competition": "CoE Costa Rica 2024 · Experimental",
 "year": 2024,
 "rank": "3",
 "score": 90.42,
@@ -216,7 +216,7 @@
 },
 {
 "id": "coe-costa-rica-2024-el-bosque-geisha-5",
-"competition": "Cup of Excellence 코스타리카 2024 · Experimental",
+"competition": "CoE Costa Rica 2024 · Experimental",
 "year": 2024,
 "rank": "5",
 "score": 88.62,
@@ -302,7 +302,7 @@
 "auctions": [
 {
 "id": "coe-ethiopia-2024-tamru-16",
-"competition": "Cup of Excellence 에티오피아 2024",
+"competition": "CoE Ethiopia 2024",
 "year": 2024,
 "rank": "16",
 "score": 87.52,
@@ -322,7 +322,7 @@
 },
 {
 "id": "coe-ethiopia-2024-leikun-20",
-"competition": "Cup of Excellence 에티오피아 2024",
+"competition": "CoE Ethiopia 2024",
 "year": 2024,
 "rank": "20",
 "score": 87.46,
@@ -342,7 +342,7 @@
 },
 {
 "id": "coe-ethiopia-2024-bekele-5",
-"competition": "Cup of Excellence 에티오피아 2024",
+"competition": "CoE Ethiopia 2024",
 "year": 2024,
 "rank": "5",
 "score": 89.41,
@@ -765,7 +765,7 @@
 "auctions": [
 {
 "id": "coe-el-salvador-2026-miramar-8",
-"competition": "Cup of Excellence 엘살바도르 2026 · Washed + Honey",
+"competition": "CoE El Salvador 2026 · Washed + Honey",
 "year": 2026,
 "rank": "8",
 "score": 87.95,
@@ -785,7 +785,7 @@
 },
 {
 "id": "coe-el-salvador-2024-san-antonio-de-alejandria-5",
-"competition": "Cup of Excellence 엘살바도르 2024 · Washed + Honey",
+"competition": "CoE El Salvador 2024 · Washed + Honey",
 "year": 2024,
 "rank": "5",
 "score": 89.18,
@@ -850,7 +850,7 @@
 "auctions": [
 {
 "id": "coe-brazil-2025-fazenda-olhos-d-gua-4",
-"competition": "Cup of Excellence 브라질 2025 · Natural",
+"competition": "CoE Brazil 2025 · Natural",
 "year": 2025,
 "rank": "4",
 "score": 89.55,
@@ -870,7 +870,7 @@
 },
 {
 "id": "coe-brazil-2025-fazenda-canastra-5",
-"competition": "Cup of Excellence 브라질 2025 · Washed + Honey",
+"competition": "CoE Brazil 2025 · Washed + Honey",
 "year": 2025,
 "rank": "5",
 "score": 89.32,
@@ -1061,7 +1061,7 @@
 "auctions": [
 {
 "id": "coe-thailand-2024-phalaakha-coffee-farm-15",
-"competition": "Cup of Excellence 태국 2024",
+"competition": "CoE Thailand 2024",
 "year": 2024,
 "rank": "15",
 "score": 87.58,
@@ -1272,7 +1272,7 @@
 "auctions": [
 {
 "id": "coe-costa-rica-2024-don-el-6",
-"competition": "Cup of Excellence 코스타리카 2024 · Traditional Honey & Natural Processes",
+"competition": "CoE Costa Rica 2024 · Traditional Honey & Natural Processes",
 "year": 2024,
 "rank": "6",
 "score": 89.04,
@@ -1362,7 +1362,7 @@
 "auctions": [
 {
 "id": "coe-guatemala-2026-las-macadamias-1a",
-"competition": "Cup of Excellence 과테말라 2026 · Exotic Washed",
+"competition": "CoE Guatemala 2026 · Exotic Washed",
 "year": 2026,
 "rank": "1A",
 "score": 90.77,
@@ -1384,7 +1384,7 @@
 },
 {
 "id": "coe-guatemala-2026-rinc-n-del-caf-3",
-"competition": "Cup of Excellence 과테말라 2026 · Exotic Natural and Honey",
+"competition": "CoE Guatemala 2026 · Exotic Natural and Honey",
 "year": 2026,
 "rank": "3",
 "score": 89.14,
@@ -1404,7 +1404,7 @@
 },
 {
 "id": "coe-guatemala-2026-la-fortuna-5",
-"competition": "Cup of Excellence 과테말라 2026 · Exotic Washed",
+"competition": "CoE Guatemala 2026 · Exotic Washed",
 "year": 2026,
 "rank": "5",
 "score": 87.91,
@@ -1424,7 +1424,7 @@
 },
 {
 "id": "coe-guatemala-2026-holanda-6",
-"competition": "Cup of Excellence 과테말라 2026 · Exotic Natural and Honey",
+"competition": "CoE Guatemala 2026 · Exotic Natural and Honey",
 "year": 2026,
 "rank": "6",
 "score": 87.46,
@@ -1444,7 +1444,7 @@
 },
 {
 "id": "coe-guatemala-2026-rosma-9",
-"competition": "Cup of Excellence 과테말라 2026 · Exotic Washed",
+"competition": "CoE Guatemala 2026 · Exotic Washed",
 "year": 2026,
 "rank": "9",
 "score": 87.71,
@@ -1466,7 +1466,7 @@
 },
 {
 "id": "coe-guatemala-2024-el-zapote-y-anexos-2",
-"competition": "Cup of Excellence 과테말라 2024 · Exotic Natural & Honey",
+"competition": "CoE Guatemala 2024 · Exotic Natural & Honey",
 "year": 2024,
 "rank": "2",
 "score": 90.19,
@@ -1486,7 +1486,7 @@
 },
 {
 "id": "coe-guatemala-2024-las-macadamias-2",
-"competition": "Cup of Excellence 과테말라 2024 · Exotic Washed",
+"competition": "CoE Guatemala 2024 · Exotic Washed",
 "year": 2024,
 "rank": "2",
 "score": 90.56,
@@ -2479,7 +2479,7 @@
 "auctions": [
 {
 "id": "coe-guatemala-2025-el-injerto-i-5",
-"competition": "Cup of Excellence 과테말라 2025 · Exotic Washed",
+"competition": "CoE Guatemala 2025 · Exotic Washed",
 "year": 2025,
 "rank": "5",
 "score": 89.24,
@@ -2626,7 +2626,7 @@
 "auctions": [
 {
 "id": "coe-peru-2025-el-romerillo-23",
-"competition": "Cup of Excellence 페루 2025",
+"competition": "CoE Peru 2025",
 "year": 2025,
 "rank": "23",
 "score": 87.44,
@@ -2646,7 +2646,7 @@
 },
 {
 "id": "coe-peru-2024-la-lucuma-17",
-"competition": "Cup of Excellence 페루 2024",
+"competition": "CoE Peru 2024",
 "year": 2024,
 "rank": "17",
 "score": 87.86,
@@ -2873,7 +2873,7 @@
 "auctions": [
 {
 "id": "coe-guatemala-2026-el-socorro-3",
-"competition": "Cup of Excellence 과테말라 2026 · Exotic Washed",
+"competition": "CoE Guatemala 2026 · Exotic Washed",
 "year": 2026,
 "rank": "3",
 "score": 90.57,
@@ -2893,7 +2893,7 @@
 },
 {
 "id": "coe-guatemala-2025-el-socorro-3",
-"competition": "Cup of Excellence 과테말라 2025 · Exotic Washed",
+"competition": "CoE Guatemala 2025 · Exotic Washed",
 "year": 2025,
 "rank": "3",
 "score": 90.65,
@@ -2913,7 +2913,7 @@
 },
 {
 "id": "coe-guatemala-2024-el-socorro-5",
-"competition": "Cup of Excellence 과테말라 2024 · Exotic Washed",
+"competition": "CoE Guatemala 2024 · Exotic Washed",
 "year": 2024,
 "rank": "5",
 "score": 88.83,
@@ -3018,7 +3018,7 @@
 "auctions": [
 {
 "id": "coe-costa-rica-2025-la-pastora-don-eli-10",
-"competition": "Cup of Excellence 코스타리카 2025 · Traditional Washed Processes",
+"competition": "CoE Costa Rica 2025 · Traditional Washed Processes",
 "year": 2025,
 "rank": "10",
 "score": 87.22,
@@ -3038,7 +3038,7 @@
 },
 {
 "id": "coe-costa-rica-2025-finca-voo-1a",
-"competition": "Cup of Excellence 코스타리카 2025 · Experimental",
+"competition": "CoE Costa Rica 2025 · Experimental",
 "year": 2025,
 "rank": "1A",
 "score": 90.47,
@@ -3058,7 +3058,7 @@
 },
 {
 "id": "coe-costa-rica-2025-don-cayito-3",
-"competition": "Cup of Excellence 코스타리카 2025 · Traditional Honey & Natural Processes",
+"competition": "CoE Costa Rica 2025 · Traditional Honey & Natural Processes",
 "year": 2025,
 "rank": "3",
 "score": 89.53,
@@ -3144,7 +3144,7 @@
 "auctions": [
 {
 "id": "coe-nicaragua-2026-el-cambalache-1a",
-"competition": "Cup of Excellence 니카라과 2026 · Washed Processes",
+"competition": "CoE Nicaragua 2026 · Washed Processes",
 "year": 2026,
 "rank": "1A",
 "score": 91.44,
@@ -4639,7 +4639,7 @@
 "auctions": [
 {
 "id": "coe-nicaragua-2025-la-esperanza-1b",
-"competition": "Cup of Excellence 니카라과 2025 · Washed Processes",
+"competition": "CoE Nicaragua 2025 · Washed Processes",
 "year": 2025,
 "rank": "1B",
 "score": 90.73,
@@ -4659,7 +4659,7 @@
 },
 {
 "id": "coe-nicaragua-2025-san-judas-tadeo-5",
-"competition": "Cup of Excellence 니카라과 2025 · Washed Processes",
+"competition": "CoE Nicaragua 2025 · Washed Processes",
 "year": 2025,
 "rank": "5",
 "score": 89.36,
@@ -4679,7 +4679,7 @@
 },
 {
 "id": "coe-nicaragua-2025-las-neblinas-6",
-"competition": "Cup of Excellence 니카라과 2025 · Natural & Honey",
+"competition": "CoE Nicaragua 2025 · Natural & Honey",
 "year": 2025,
 "rank": "6",
 "score": 88.18,
@@ -4699,7 +4699,7 @@
 },
 {
 "id": "coe-nicaragua-2024-el-guacalito-10",
-"competition": "Cup of Excellence 니카라과 2024",
+"competition": "CoE Nicaragua 2024",
 "year": 2024,
 "rank": "10",
 "score": 88.45,
@@ -4719,7 +4719,7 @@
 },
 {
 "id": "coe-nicaragua-2024-santa-maria-de-lourdes-13",
-"competition": "Cup of Excellence 니카라과 2024",
+"competition": "CoE Nicaragua 2024",
 "year": 2024,
 "rank": "13",
 "score": 88.2,
@@ -4739,7 +4739,7 @@
 },
 {
 "id": "coe-nicaragua-2024-jesus-mountain-coffe-company-8",
-"competition": "Cup of Excellence 니카라과 2024",
+"competition": "CoE Nicaragua 2024",
 "year": 2024,
 "rank": "8",
 "score": 89.2,
@@ -4761,7 +4761,7 @@
 },
 {
 "id": "coe-nicaragua-2024-la-furiosa-9",
-"competition": "Cup of Excellence 니카라과 2024",
+"competition": "CoE Nicaragua 2024",
 "year": 2024,
 "rank": "9",
 "score": 88.7,
@@ -4807,7 +4807,7 @@
 "auctions": [
 {
 "id": "coe-nicaragua-2025-solidaridad-2",
-"competition": "Cup of Excellence 니카라과 2025 · Washed Processes",
+"competition": "CoE Nicaragua 2025 · Washed Processes",
 "year": 2025,
 "rank": "2",
 "score": 90.5,
@@ -5308,7 +5308,7 @@
 "auctions": [
 {
 "id": "coe-honduras-2024-el-gravileo-17",
-"competition": "Cup of Excellence 온두라스 2024",
+"competition": "CoE Honduras 2024",
 "year": 2024,
 "rank": "17",
 "score": 88.07,
@@ -5352,7 +5352,7 @@
 "auctions": [
 {
 "id": "coe-honduras-2026-el-pimporro-1a",
-"competition": "Cup of Excellence 온두라스 2026 · Honduras Exotic",
+"competition": "CoE Honduras 2026 · Honduras Exotic",
 "year": 2026,
 "rank": "1A",
 "score": 90.5,
@@ -5374,7 +5374,7 @@
 },
 {
 "id": "coe-honduras-2024-el-durazno-18",
-"competition": "Cup of Excellence 온두라스 2024",
+"competition": "CoE Honduras 2024",
 "year": 2024,
 "rank": "18",
 "score": 88.07,
@@ -5757,7 +5757,7 @@
 "auctions": [
 {
 "id": "coe-guatemala-2025-las-macadamias-1a",
-"competition": "Cup of Excellence 과테말라 2025 · Exotic Natural & Honey",
+"competition": "CoE Guatemala 2025 · Exotic Natural & Honey",
 "year": 2025,
 "rank": "1A",
 "score": 91.04,
@@ -5777,7 +5777,7 @@
 },
 {
 "id": "coe-guatemala-2025-las-macadamias-1b",
-"competition": "Cup of Excellence 과테말라 2025 · Exotic Natural & Honey",
+"competition": "CoE Guatemala 2025 · Exotic Natural & Honey",
 "year": 2025,
 "rank": "1B",
 "score": 91.04,
@@ -5824,7 +5824,7 @@
 "auctions": [
 {
 "id": "coe-guatemala-2025-bella-elizabeth-2",
-"competition": "Cup of Excellence 과테말라 2025 · One Of A Kind",
+"competition": "CoE Guatemala 2025 · One Of A Kind",
 "year": 2025,
 "rank": "2",
 "score": 89.09,
@@ -5869,7 +5869,7 @@
 "auctions": [
 {
 "id": "coe-guatemala-2024-coop-agricola-integral-chicoj-r-l-4",
-"competition": "Cup of Excellence 과테말라 2024 · One Of A Kind",
+"competition": "CoE Guatemala 2024 · One Of A Kind",
 "year": 2024,
 "rank": "4",
 "score": 88.97,
@@ -5936,7 +5936,7 @@
 "auctions": [
 {
 "id": "coe-guatemala-2025-vista-hermosa-8",
-"competition": "Cup of Excellence 과테말라 2025 · Exotic Washed",
+"competition": "CoE Guatemala 2025 · Exotic Washed",
 "year": 2025,
 "rank": "8",
 "score": 87.79,
@@ -5981,7 +5981,7 @@
 "auctions": [
 {
 "id": "coe-guatemala-2025-la-pe-a-10",
-"competition": "Cup of Excellence 과테말라 2025 · Exotic Washed",
+"competition": "CoE Guatemala 2025 · Exotic Washed",
 "year": 2025,
 "rank": "10",
 "score": 87.5,
@@ -6026,7 +6026,7 @@
 "auctions": [
 {
 "id": "coe-guatemala-2026-el-morito-2",
-"competition": "Cup of Excellence 과테말라 2026 · Exotic Washed",
+"competition": "CoE Guatemala 2026 · Exotic Washed",
 "year": 2026,
 "rank": "2",
 "score": 90.75,
@@ -6046,7 +6046,7 @@
 },
 {
 "id": "coe-guatemala-2024-monta-a-helada-9",
-"competition": "Cup of Excellence 과테말라 2024 · Exotic Washed",
+"competition": "CoE Guatemala 2024 · Exotic Washed",
 "year": 2024,
 "rank": "9",
 "score": 88.13,
@@ -6113,7 +6113,7 @@
 "auctions": [
 {
 "id": "coe-nicaragua-2025-delafincacoffee-farm-7",
-"competition": "Cup of Excellence 니카라과 2025 · Natural & Honey",
+"competition": "CoE Nicaragua 2025 · Natural & Honey",
 "year": 2025,
 "rank": "7",
 "score": 88.18,
@@ -6180,7 +6180,7 @@
 "auctions": [
 {
 "id": "coe-nicaragua-2026-brisas-del-mogoton-5",
-"competition": "Cup of Excellence 니카라과 2026 · Natural & Honey",
+"competition": "CoE Nicaragua 2026 · Natural & Honey",
 "year": 2026,
 "rank": "5",
 "score": 88.69,
@@ -6225,7 +6225,7 @@
 "auctions": [
 {
 "id": "coe-mexico-2026-finca-las-canelas-10",
-"competition": "Cup of Excellence 멕시코 2026 · Washed",
+"competition": "CoE Mexico 2026 · Washed",
 "year": 2026,
 "rank": "10",
 "score": 87.67,
@@ -6245,7 +6245,7 @@
 },
 {
 "id": "coe-mexico-2026-finca-pocitos-2",
-"competition": "Cup of Excellence 멕시코 2026 · Washed",
+"competition": "CoE Mexico 2026 · Washed",
 "year": 2026,
 "rank": "2",
 "score": 90.67,
@@ -6265,7 +6265,7 @@
 },
 {
 "id": "coe-mexico-2026-finca-la-luz-8",
-"competition": "Cup of Excellence 멕시코 2026 · Natural and Honey",
+"competition": "CoE Mexico 2026 · Natural and Honey",
 "year": 2026,
 "rank": "8",
 "score": 87.92,
@@ -6285,7 +6285,7 @@
 },
 {
 "id": "coe-mexico-2024-palma-3",
-"competition": "Cup of Excellence 멕시코 2024 · Traditional Washed Processes",
+"competition": "CoE Mexico 2024 · Traditional Washed Processes",
 "year": 2024,
 "rank": "3",
 "score": 89.58,
@@ -6305,7 +6305,7 @@
 },
 {
 "id": "coe-mexico-2024-los-chuchos-7",
-"competition": "Cup of Excellence 멕시코 2024 · Traditional Honey & Natural Processes",
+"competition": "CoE Mexico 2024 · Traditional Honey & Natural Processes",
 "year": 2024,
 "rank": "7",
 "score": 88.32,
@@ -6325,7 +6325,7 @@
 },
 {
 "id": "coe-mexico-2024-rancho-viejo-8",
-"competition": "Cup of Excellence 멕시코 2024 · Traditional Honey & Natural Processes",
+"competition": "CoE Mexico 2024 · Traditional Honey & Natural Processes",
 "year": 2024,
 "rank": "8",
 "score": 88.08,
@@ -6370,7 +6370,7 @@
 "auctions": [
 {
 "id": "coe-mexico-2024-sinai-5",
-"competition": "Cup of Excellence 멕시코 2024 · Traditional Honey & Natural Processes",
+"competition": "CoE Mexico 2024 · Traditional Honey & Natural Processes",
 "year": 2024,
 "rank": "5",
 "score": 89.0,
@@ -6415,7 +6415,7 @@
 "auctions": [
 {
 "id": "coe-mexico-2026-finca-santa-cruz-9",
-"competition": "Cup of Excellence 멕시코 2026 · Natural and Honey",
+"competition": "CoE Mexico 2026 · Natural and Honey",
 "year": 2026,
 "rank": "9",
 "score": 87.69,
@@ -6435,7 +6435,7 @@
 },
 {
 "id": "coe-mexico-2025-finca-santa-cruz-1b",
-"competition": "Cup of Excellence 멕시코 2025 · Traditional Washed Processes",
+"competition": "CoE Mexico 2025 · Traditional Washed Processes",
 "year": 2025,
 "rank": "1B",
 "score": 91.36,
@@ -6482,7 +6482,7 @@
 "auctions": [
 {
 "id": "coe-brazil-2024-fazenda-rio-verde-5",
-"competition": "Cup of Excellence 브라질 2024 · Experimental",
+"competition": "CoE Brazil 2024 · Experimental",
 "year": 2024,
 "rank": "5",
 "score": 90.14,
@@ -6527,7 +6527,7 @@
 "auctions": [
 {
 "id": "coe-brazil-2024-fazenda-primavera-matriz-9",
-"competition": "Cup of Excellence 브라질 2024 · Washed + Honey",
+"competition": "CoE Brazil 2024 · Washed + Honey",
 "year": 2024,
 "rank": "9",
 "score": 88.29,
@@ -6610,7 +6610,7 @@
 "auctions": [
 {
 "id": "coe-el-salvador-2025-los-naranjos-3",
-"competition": "Cup of Excellence 엘살바도르 2025 · Washed + Honey",
+"competition": "CoE El Salvador 2025 · Washed + Honey",
 "year": 2025,
 "rank": "3",
 "score": 90.02,
@@ -6630,7 +6630,7 @@
 },
 {
 "id": "coe-el-salvador-2025-finca-altamira-7",
-"competition": "Cup of Excellence 엘살바도르 2025 · Natural",
+"competition": "CoE El Salvador 2025 · Natural",
 "year": 2025,
 "rank": "7",
 "score": 88.16,
@@ -6675,7 +6675,7 @@
 "auctions": [
 {
 "id": "coe-el-salvador-2026-don-jaime-6",
-"competition": "Cup of Excellence 엘살바도르 2026 · Washed + Honey",
+"competition": "CoE El Salvador 2026 · Washed + Honey",
 "year": 2026,
 "rank": "6",
 "score": 88.45,
@@ -6695,7 +6695,7 @@
 },
 {
 "id": "coe-el-salvador-2026-mileydi-7",
-"competition": "Cup of Excellence 엘살바도르 2026 · Washed + Honey",
+"competition": "CoE El Salvador 2026 · Washed + Honey",
 "year": 2026,
 "rank": "7",
 "score": 88.35,
@@ -6715,7 +6715,7 @@
 },
 {
 "id": "coe-el-salvador-2025-las-camelias-estate-9",
-"competition": "Cup of Excellence 엘살바도르 2025 · Experimental",
+"competition": "CoE El Salvador 2025 · Experimental",
 "year": 2025,
 "rank": "9",
 "score": 87.34,
@@ -6735,7 +6735,7 @@
 },
 {
 "id": "coe-el-salvador-2024-la-bendicion-1a",
-"competition": "Cup of Excellence 엘살바도르 2024 · Washed + Honey",
+"competition": "CoE El Salvador 2024 · Washed + Honey",
 "year": 2024,
 "rank": "1A",
 "score": 92.0,
@@ -6755,7 +6755,7 @@
 },
 {
 "id": "coe-el-salvador-2024-finca-el-portezuelo-3",
-"competition": "Cup of Excellence 엘살바도르 2024 · Washed + Honey",
+"competition": "CoE El Salvador 2024 · Washed + Honey",
 "year": 2024,
 "rank": "3",
 "score": 90.09,
@@ -6800,7 +6800,7 @@
 "auctions": [
 {
 "id": "coe-honduras-2026-la-salsa-2",
-"competition": "Cup of Excellence 온두라스 2026 · Honduras Exotic",
+"competition": "CoE Honduras 2026 · Honduras Exotic",
 "year": 2026,
 "rank": "2",
 "score": 90.46,
@@ -6820,7 +6820,7 @@
 },
 {
 "id": "coe-honduras-2024-el-pozo-23",
-"competition": "Cup of Excellence 온두라스 2024",
+"competition": "CoE Honduras 2024",
 "year": 2024,
 "rank": "23",
 "score": 87.46,
@@ -6840,7 +6840,7 @@
 },
 {
 "id": "coe-honduras-2024-las-virginias-5",
-"competition": "Cup of Excellence 온두라스 2024",
+"competition": "CoE Honduras 2024",
 "year": 2024,
 "rank": "5",
 "score": 90.04,
@@ -6885,7 +6885,7 @@
 "auctions": [
 {
 "id": "coe-costa-rica-2025-vista-paraiso-1a",
-"competition": "Cup of Excellence 코스타리카 2025 · Traditional Washed Processes",
+"competition": "CoE Costa Rica 2025 · Traditional Washed Processes",
 "year": 2025,
 "rank": "1A",
 "score": 90.63,
@@ -6952,7 +6952,7 @@
 "auctions": [
 {
 "id": "coe-thailand-2026-soft-coffee-17",
-"competition": "Cup of Excellence 태국 2026",
+"competition": "CoE Thailand 2026",
 "year": 2026,
 "rank": "17",
 "score": 87.5,
@@ -6997,7 +6997,7 @@
 "auctions": [
 {
 "id": "coe-peru-2025-el-gringo-19",
-"competition": "Cup of Excellence 페루 2025",
+"competition": "CoE Peru 2025",
 "year": 2025,
 "rank": "19",
 "score": 87.78,
@@ -7042,7 +7042,7 @@
 "auctions": [
 {
 "id": "coe-peru-2024-monta-a-4",
-"competition": "Cup of Excellence 페루 2024",
+"competition": "CoE Peru 2024",
 "year": 2024,
 "rank": "4",
 "score": 89.64,
@@ -7064,7 +7064,7 @@
 },
 {
 "id": "coe-peru-2024-el-nevado-6",
-"competition": "Cup of Excellence 페루 2024",
+"competition": "CoE Peru 2024",
 "year": 2024,
 "rank": "6",
 "score": 89.29,
@@ -7109,7 +7109,7 @@
 "auctions": [
 {
 "id": "coe-peru-2024-el-naranjo-10",
-"competition": "Cup of Excellence 페루 2024",
+"competition": "CoE Peru 2024",
 "year": 2024,
 "rank": "10",
 "score": 88.64,

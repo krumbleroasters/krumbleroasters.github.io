@@ -922,7 +922,7 @@ function auctionsBlock(p) {
     return `<li class="aucrow">
       <div class="auc1"><span>${esc(x.competition)}</span>${rank ? `<span class="auc-rank">${esc(rank)}${score ? " · " + esc(score) : ""}</span>` : (score ? `<span class="auc-rank">${esc(score)}</span>` : "")}</div>
       ${meta ? `<div class="auc2">${esc(meta)}</div>` : ""}
-      ${buyers ? `<div class="auc3"><span class="k">낙찰 로스터리</span>${esc(buyers)}${x.joint ? `<span class="joint">공동</span>` : ""}</div>` : ""}
+      ${buyers ? `<div class="auc3"><span class="k">낙찰 로스터리</span> ${esc(buyers)}${x.joint ? ` <span class="joint">공동</span>` : ""}</div>` : ""}
       ${x.src ? `<a class="auc-src" href="${esc(x.src)}" target="_blank" rel="noopener">경매 결과표</a>` : ""}
     </li>`;
   }).join("");
