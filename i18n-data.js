@@ -444,6 +444,8 @@ window.CI_I18N = (function () {
     "엘 파라이소||Finca El Paraíso||Finca El Paraíso",
     "엘 디비소||Finca El Diviso||Finca El Diviso",
     "엘 트리운포||Finca El Triunfo||Finca El Triunfo",
+    "벨라 알레한드리아||Finca Bella Alejandría||ベジャ・アレハンドリア",
+    "엘 실렌시오||Finca El Silencio||エル・シレンシオ",
     "니에리||Nyeri||Nyeri",
     "키리냐가||Kirinyaga||Kirinyaga",
     "키암부||Kiambu||Kiambu",
