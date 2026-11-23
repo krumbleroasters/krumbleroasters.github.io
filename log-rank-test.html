@@ -1377,6 +1377,7 @@ window.__RANK_TEST_ROWS = [["2026-11-23 09:11", "CUP-AAAA-1111", "rec_rt0001", "
 
     var data = rankDataset(period);
     var mine = data.mine, my = $("#myRank");
+    var loading = !rankState.rows && !rankState.failed;
     if (my) {
       if (mine) {
         var statLine = [esc(label) + " " + mine.cups + "잔"];
@@ -1400,7 +1401,7 @@ window.__RANK_TEST_ROWS = [["2026-11-23 09:11", "CUP-AAAA-1111", "rec_rt0001", "
     if (list) {
       var top = data.ranked.slice(0, RANK_TOP), html = "";
       if (!top.length) {
-        html = '<li class="rkempty">이 기간에 아직 순위가 없어요. 첫 잔을 남기면 1위로 올라요.</li>';
+        html = '<li class="rkempty">' + (loading ? "순위를 불러오는 중이에요…" : "이 기간에 아직 순위가 없어요. 첫 잔을 남기면 1위로 올라요.") + "</li>";
       } else {
         html = top.map(function (e) { return rankRowHTML(e, e.code === myCode); }).join("");
         if (mine && mine.rank > RANK_TOP) html += '<li class="rkgap" aria-hidden="true">⋯</li>' + rankRowHTML(mine, true);
@@ -1408,13 +1409,14 @@ window.__RANK_TEST_ROWS = [["2026-11-23 09:11", "CUP-AAAA-1111", "rec_rt0001", "
       list.innerHTML = html;
     }
 
+    var emptyTop = loading ? "불러오는 중…" : "이 기간 기록이 없어요";
     var tb = $("#topBeans"), tp = $("#topPlaces");
     if (tb) tb.innerHTML = data.beans.length ? data.beans.map(function (b, i) {
       return '<li><span class="no">' + (i + 1) + '</span><span class="nm2">' + esc(b.label) + '</span><span class="cn">' + b.count + "</span></li>";
-    }).join("") : '<li class="none">이 기간 기록이 없어요</li>';
+    }).join("") : '<li class="none">' + emptyTop + "</li>";
     if (tp) tp.innerHTML = data.places.length ? data.places.map(function (p, i) {
       return '<li><span class="no">' + (i + 1) + '</span><span class="nm2">' + esc(p.label) + '</span><span class="cn">' + p.count + "</span></li>";
-    }).join("") : '<li class="none">이 기간 기록이 없어요</li>';
+    }).join("") : '<li class="none">' + emptyTop + "</li>";
 
     var note = $("#rankNote");
     if (note) {
