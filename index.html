@@ -903,12 +903,17 @@ function auctionBadge(p) {
   return n ? `<span class="badge auc">🏆 옥션 낙찰 ${n}</span>` : "";
 }
 
+function uiLang() {
+  return (window.CI && window.CI.i18n && window.CI.i18n.lang) || "ko";
+}
+
 function rankLabel(r) {
   const s = String(r || "");
   if (!s) return "";
-  if (/^[A-Za-z]{1,3}-\d+$/.test(s)) return `랏 ${s}`;
+  const lang = uiLang();
+  if (/^[A-Za-z]{1,3}-\d+$/.test(s)) return lang === "ko" ? `랏 ${s}` : (lang === "ja" ? `ロット ${s}` : `Lot ${s}`);
   if (/^NW$/i.test(s)) return "NW";
-  return `${s}위`;
+  return lang === "ko" ? `${s}위` : (lang === "ja" ? `${s}位` : `#${s}`);
 }
 
 function auctionsBlock(p) {
@@ -918,7 +923,8 @@ function auctionsBlock(p) {
     const rank = rankLabel(x.rank);
     const score = typeof x.score === "number" ? x.score.toFixed(2) : (x.score || "");
     const meta = [x.farm, [x.variety, x.process].filter(Boolean).join(" · ")].filter(Boolean).join(" — ");
-    const buyers = (x.buyers || []).join(" · ");
+    const names = uiLang() === "ko" ? x.buyers : ((x.buyersEn && x.buyersEn.length) ? x.buyersEn : x.buyers);
+    const buyers = (names || []).join(" · ");
     return `<li class="aucrow">
       <div class="auc1"><span>${esc(x.competition)}</span>${rank ? `<span class="auc-rank">${esc(rank)}${score ? " · " + esc(score) : ""}</span>` : (score ? `<span class="auc-rank">${esc(score)}</span>` : "")}</div>
       ${meta ? `<div class="auc2">${esc(meta)}</div>` : ""}
