@@ -260,7 +260,11 @@ window.CI_I18N = (function () {
     "목차": "Contents||目次",
     "농장 목록": "Farm list||農園一覧",
     "온커피로그 ONCOFFEELOG": "ONCOFFEELOG||ONCOFFEELOG（オンコーヒーログ）",
-    "온커피로그 ONCOFFEELOG · 커피 산지·농장 지도": "ONCOFFEELOG · Coffee Origin & Farm Map||ONCOFFEELOG · コーヒー産地・農園マップ"
+    "온커피로그 ONCOFFEELOG · 커피 산지·농장 지도": "ONCOFFEELOG · Coffee Origin & Farm Map||ONCOFFEELOG · コーヒー産地・農園マップ",
+    "온커피로그(ONCOFFEELOG) 커피 산지·농장 지도 — 국내에 들어온 생두 2,800여 종이 어디서 자랐는지 지도에서 보여줍니다. 크럼블로스터스(KRUMBLE ROASTERS)가 운영합니다.":
+      "ONCOFFEELOG — a coffee origin and farm map showing where the roughly 2,800 green beans sold in Korea were grown. Operated by KRUMBLE ROASTERS.||ONCOFFEELOG コーヒー産地・農園マップ — 韓国に入ってきた生豆約2,800種がどこで育ったかを地図で示します。運営は KRUMBLE ROASTERS。",
+    "국내에 유통되는 생두 2,846종이 어디서 자랐는지 지도에서 보여줍니다.":
+      "A map of where the 2,846 green beans sold in Korea were grown.||韓国に流通する生豆2,846種がどこで育ったかを地図で示します。"
   };
 
   /* 태그가 섞인 문장: 열쇠는 태그를 뺀 글자 전체 */
