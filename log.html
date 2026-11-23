@@ -1279,12 +1279,14 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   }
   function rankDataset(period) {
     var seen = new Set(), rows = [];
+    var me = String(readSync().code || "").toUpperCase();   // 시트에 오르기 전 내 기록도 지금 순위에 넣는다
+    var localIds = new Set(records.filter(function (r) { return r && r.id; }).map(function (r) { return r.id; }));
     (rankState.rows || []).forEach(function (r) {
       if (!r || !r.rid || r.action === "삭제" || seen.has(r.rid)) return;
       seen.add(r.rid);
-      rows.push({ code: r.code, date: r.date, name: r.name, region: r.region, country: r.country });
+      // 이 기기에 있는 내 기록은 예전 코드로 남아 있어도 지금 내 코드로 센다
+      rows.push({ code: localIds.has(r.rid) ? me : r.code, date: r.date, name: r.name, region: r.region, country: r.country });
     });
-    var me = String(readSync().code || "").toUpperCase();   // 시트에 오르기 전 내 기록도 지금 순위에 넣는다
     records.forEach(function (r) {
       if (!r || !r.id || seen.has(r.id)) return;
       seen.add(r.id);
