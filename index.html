@@ -766,7 +766,8 @@ const clusterLayer = L.markerClusterGroup({
   disableClusteringAtZoom: 8,
   maxClusterRadius: 48,
   iconCreateFunction: (cluster) => {
-    const n = cluster.getAllChildMarkers().reduce((sum, m) => sum + (m.options.beanCount || 0), 0);
+    let n = cluster.getAllChildMarkers().reduce((sum, m) => sum + (m.options.beanCount || 0), 0);
+    if (!n) n = cluster.getChildCount();   // 낙찰 랏만 있는 산지는 생두 수 대신 산지 수를 보여 줍니다
     const size = Math.min(54, 34 + Math.round(Math.log10(Math.max(n, 1)) * 9));
     const cls = n >= 100 ? "cluster warm" : "cluster";
     return L.divIcon({
@@ -800,7 +801,7 @@ function pinIcon(item) {
   if (t === "farm") cls.push("farm");
   if (t === "country") cls.push("country");
   if (state.place && state.place.id === item.id) cls.push("sel");
-  const label = item.count > 999 ? "999" : String(item.count || "");
+  const label = item.count > 999 ? "999" : (item.count ? String(item.count) : (item.place && item.place.auctionCount ? "🏆" : ""));
   return L.divIcon({
     className: "pin-wrap",
     html: `<div class="${cls.join(" ")}"><i>${esc(label)}</i></div>`,
