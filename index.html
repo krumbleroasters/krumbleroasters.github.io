@@ -579,6 +579,10 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 <link rel="manifest" href="manifest.webmanifest" />
 <link rel="apple-touch-icon" href="icon-192.png" />
 <link rel="stylesheet" href="site-tools.css?v=20261122d" />
+<link rel="alternate" hreflang="ko" href="https://oncoffeelog.com/" />
+<link rel="alternate" hreflang="en" href="https://oncoffeelog.com/?lang=en" />
+<link rel="alternate" hreflang="ja" href="https://oncoffeelog.com/?lang=ja" />
+<link rel="alternate" hreflang="x-default" href="https://oncoffeelog.com/" />
 </head>
 <body>
 <div class="app" id="app">
@@ -702,6 +706,7 @@ async function loadCatalog() {
   const res = await fetch("beans.json", { cache: "no-cache" });
   if (!res.ok) throw new Error("beans.json " + res.status);
   CAT = await res.json();
+  if (window.CI && CI.i18n) CI.i18n.useCatalog(CAT);
   for (const p of CAT.places) placeById.set(p.id, p);
   for (const b of CAT.beans) {
     if (!beansByPlace.has(b.placeId)) beansByPlace.set(b.placeId, []);
@@ -1994,5 +1999,8 @@ boot();
 <script src="qrcode.min.js?v=20261122e"></script>
 <script src="qr-tools.js?v=20261122e"></script>
 <script src="site-tools.js?v=20261122d"></script>
+<script src="i18n-data.js?v=20261123a"></script>
+<script src="i18n-pages.js?v=20261123a"></script>
+<script src="i18n.js?v=20261123a"></script>
 </body>
 </html>

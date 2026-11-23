@@ -118,3 +118,10 @@
 - `sw.js` 캐시를 `oncoffeelog-v15`로 올렸습니다.
 - **매일 21시 자동 업데이트 작업에 대한 주의**: `index.html`에서 손대는 곳은 `FARM_PROFILES`(농장 프로필)뿐입니다.
   위 사진 검색 블록(`.search-box .cam` · `.psback` · `pspanel` 관련 CSS와 `var PV` 이후 스크립트)은 건드리지 마세요.
+
+## 다국어 (한국어 · English · 日本語)
+
+- `i18n.js` — 화면에 이미 있는 한국어 원문을 사전으로 바꿔 끼우는 스크립트. 언어 순서는 `?lang=` → `localStorage(oncoffeelog.lang)` → 브라우저 언어이고, `document.documentElement.lang`도 함께 바꿉니다. 상단에 `KO | EN | JA` 단추를 스스로 넣습니다.
+- `i18n-data.js` — 공통·index·log의 문장 사전(`text`), 태그가 섞인 문장(`html`), 속성 값(`attr`), 숫자가 끼는 문장 틀(`templ`), 국가·산지·가공·컵노트 낱말 사전(`gloss`).
+- `i18n-pages.js` — about · guide · privacy · farms의 번역. 원문 열쇠는 페이지에서 그대로 뽑은 문자열이라, **페이지 문장을 고치면 이 파일도 다시 만들어야 합니다**(`work/krumble-i18n/build_dict.py`, `work/krumble-i18n/tr-<page>.json`).
+- 문장을 고칠 때는 `i18n*.js?v=` 값을 올리고 `sw.js`의 `CACHE`도 함께 올립니다. `build_farms.py`로 `farms.html`을 다시 만들 때도 같은 값을 씁니다(`I18N_VER`).
