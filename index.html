@@ -168,7 +168,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   .pspanel .psphead .psx{margin-left:auto}
   .psrow{display:flex;gap:11px;align-items:flex-start}
   .psrow img{
-    flex:none;width:74px;height:74px;border-radius:11px;object-fit:cover;
+    flex:none;width:74px;height:74px;border-radius:11px;object-fit:contain;
     border:1px solid var(--line);background:var(--cream-2);display:block;
   }
   .psstate{flex:1;min-width:0}
@@ -200,7 +200,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   }
   .pscand:hover,.pscand:focus-visible{border-color:var(--terra);background:#FFF9F1}
   .pscand .bdg{
-    flex:none;margin-top:1px;font-size:9px;font-weight:800;letter-spacing:.04em;
+    flex:none;margin-top:1px;font-size:9px;font-weight:800;letter-spacing:.04em;white-space:nowrap;
     padding:3px 6px;border-radius:5px;background:var(--cream-2);color:#8A5A2B;text-transform:uppercase;
   }
   .pscand .bdg.bean{background:#E7EEE4;color:#37563C}
@@ -210,7 +210,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   .pscand .nm{display:block;font-size:12.5px;font-weight:800;letter-spacing:-.01em;word-break:keep-all;overflow-wrap:anywhere}
   .pscand .mt{display:block;font-size:10.5px;color:var(--ink-soft);margin-top:2px;line-height:1.5}
   .pscand .mt b{color:var(--terra);font-weight:800}
-  .pscand .go{flex:none;color:var(--terra);font-size:14px;font-weight:800;padding-top:1px}
+  .pscand .arw{flex:none;color:var(--terra);font-size:15px;font-weight:800;padding-top:1px;line-height:1.2}
   @media(max-width:400px){
     .search-box{gap:6px}
     .search-box .cam{width:34px;height:34px}
@@ -1810,7 +1810,7 @@ function psCandHTML(c, idx) {
     '<span class="bdg ' + esc(kind) + '">' + esc(bdgTxt) + "</span>" +
     '<span class="tx"><span class="nm">' + esc(c.name) + "</span>" +
     '<span class="mt">' + esc(c.sub) + (chips ? "<b>" + chips + "</b>" : "") + "</span></span>" +
-    '<span class="go" aria-hidden="true">›</span></button>';
+    '<span class="arw" aria-hidden="true">›</span></button>';
 }
 
 function psRender() {
