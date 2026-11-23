@@ -190,7 +190,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   .pstext{margin-top:12px}
   .pstext>.lbl{display:block;font-size:9.5px;font-weight:800;letter-spacing:.12em;color:#9A8F80;text-transform:uppercase}
   .pstext textarea{
-    display:block;width:100%;min-height:66px;margin-top:6px;resize:vertical;
+    display:block;width:100%;min-height:86px;margin-top:6px;resize:vertical;overflow:auto;
     font:inherit;font-size:12.5px;line-height:1.6;padding:9px 10px;
     border:1px solid var(--line);border-radius:10px;background:#FFFDF8;color:var(--ink);
   }
@@ -1840,6 +1840,14 @@ function psRender() {
   html += '<div class="psacts"><button class="psbtn ghost" type="button" id="psAgain">다른 사진으로 찾기</button>' +
     '<button class="psbtn ghost" type="button" id="psManual">검색창에서 직접 찾기</button></div>';
   host.innerHTML = html;
+
+  /* 읽은 글자가 한눈에 보이도록 글자 높이만큼 늘리고, 넘치면 190px까지만 */
+  const ta0 = host.querySelector("#psText");
+  if (ta0) {
+    const fit = () => { ta0.style.height = "auto"; ta0.style.height = Math.min(190, Math.max(86, ta0.scrollHeight + 4)) + "px"; };
+    fit();
+    ta0.addEventListener("input", fit);
+  }
 
   const x = host.querySelector("[data-psclose]");
   if (x) x.addEventListener("click", () => psClose());
