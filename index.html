@@ -107,6 +107,117 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   .sugg .dot{width:7px;height:7px;border-radius:50%;flex:none}
   .sugg .live{padding:10px;font-size:12.5px;color:var(--ink-soft)}
 
+  /* ---------- 사진(카메라) 검색 ---------- */
+  .search-box .cam{
+    flex:none;width:36px;height:36px;border-radius:999px;
+    display:inline-flex;align-items:center;justify-content:center;
+    background:#F7EFE4;border:1px solid #EFDFC9;color:#8A5A2B;
+    transition:background .16s ease,border-color .16s ease,transform .12s ease;
+  }
+  .search-box .cam svg{color:currentColor}
+  .search-box .cam:hover{background:#F1E3CE;border-color:#E3CDAE}
+  .search-box .cam:active{transform:scale(.93)}
+  .search-box .cam:focus-visible{outline:2px solid var(--terra);outline-offset:2px}
+  .search-box .cam[aria-expanded="true"]{background:var(--ink);border-color:var(--ink);color:#FFF8EF}
+
+  /* 사진 고르기 모달 */
+  html.ps-lock,html.ps-lock body{overflow:hidden}
+  .psback{
+    position:fixed;inset:0;z-index:10050;display:flex;align-items:flex-end;justify-content:center;
+    background:rgba(34,30,26,.52);-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);
+  }
+  .psback[hidden]{display:none}
+  .psmodal{
+    width:100%;max-width:460px;background:var(--cream);color:var(--ink);border:1px solid var(--line);border-bottom:0;
+    border-radius:20px 20px 0 0;box-shadow:0 -18px 50px -24px rgba(34,30,26,.55);
+    padding:16px 18px calc(14px + env(safe-area-inset-bottom));animation:psup .24s cubic-bezier(.2,.7,.3,1) both;
+  }
+  @keyframes psup{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  @media(min-width:600px){
+    .psback{align-items:center;padding:18px}
+    .psmodal{border-radius:20px;border-bottom:1px solid var(--line);padding-bottom:16px}
+  }
+  .pshead{display:flex;align-items:flex-start;gap:10px}
+  .pshead h2{margin:0;font-size:16px;font-weight:800;letter-spacing:-.02em}
+  .pshead p{margin:4px 0 0;font-size:11.5px;line-height:1.55;color:var(--ink-soft);word-break:keep-all}
+  .psx{flex:none;width:30px;height:30px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;color:var(--ink-soft);font-size:15px;line-height:1}
+  .psx:hover{background:var(--cream-2);color:var(--ink)}
+  .psopt{
+    display:flex;width:100%;text-align:left;align-items:center;gap:11px;
+    margin-top:8px;padding:12px 13px;border-radius:14px;
+    background:#fff;border:1px solid var(--line);box-shadow:0 8px 20px -18px rgba(34,30,26,.5);
+    transition:border-color .16s ease,background .16s ease;
+  }
+  .psopt:hover,.psopt:focus-visible{border-color:var(--terra);background:#FFFCF7}
+  .psopt .ic{
+    flex:none;width:38px;height:38px;border-radius:11px;background:#F7EFE4;color:#8A5A2B;
+    display:inline-flex;align-items:center;justify-content:center;
+  }
+  .psopt .tx{min-width:0}
+  .psopt .t{display:block;font-size:14px;font-weight:800;letter-spacing:-.01em}
+  .psopt .d{display:block;font-size:11px;color:var(--ink-soft);margin-top:2px;line-height:1.5}
+  .pshint{margin:11px 2px 0;font-size:10.5px;line-height:1.6;color:#A79C8D}
+
+  /* 인식 패널 — .sheet 맨 위 */
+  .pspanel{
+    background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:14px;
+    box-shadow:var(--shadow);margin:0 0 14px;animation:rise .28s cubic-bezier(.2,.7,.3,1) both;
+  }
+  .pspanel .psphead{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+  .pspanel .psphead h2{margin:0;font-size:14px;font-weight:800;letter-spacing:-.02em}
+  .pspanel .psphead .psx{margin-left:auto}
+  .psrow{display:flex;gap:11px;align-items:flex-start}
+  .psrow img{
+    flex:none;width:74px;height:74px;border-radius:11px;object-fit:cover;
+    border:1px solid var(--line);background:var(--cream-2);display:block;
+  }
+  .psstate{flex:1;min-width:0}
+  .psstate .lbl{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:var(--ink-soft);line-height:1.45}
+  .psstate .lbl .pct{margin-left:auto;font-size:11px;font-variant-numeric:tabular-nums;color:#9A8F80}
+  .psbar{height:5px;border-radius:3px;background:var(--cream-2);overflow:hidden;margin-top:7px}
+  .psbar i{display:block;height:100%;width:0;background:var(--terra);border-radius:3px;transition:width .3s ease}
+  .psstate.ok .lbl{color:#37563C}
+  .psstate.ok .psbar i{background:#7E9478}
+  .psstate.fail .lbl{color:#8A4A2B}
+  .psstate.fail .psbar{display:none}
+  .psnote{margin:8px 0 0;font-size:10.5px;line-height:1.6;color:#A79C8D;word-break:keep-all}
+  .psacts{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+  .psbtn{font-size:11.5px;font-weight:800;padding:8px 12px;border-radius:9px;background:var(--cream-2);color:var(--ink)}
+  .psbtn.ghost{background:#fff;border:1px solid var(--line);color:var(--ink-soft)}
+  .psbtn:active{transform:scale(.97)}
+  .pstext{margin-top:12px}
+  .pstext>.lbl{display:block;font-size:9.5px;font-weight:800;letter-spacing:.12em;color:#9A8F80;text-transform:uppercase}
+  .pstext textarea{
+    display:block;width:100%;min-height:66px;margin-top:6px;resize:vertical;
+    font:inherit;font-size:12.5px;line-height:1.6;padding:9px 10px;
+    border:1px solid var(--line);border-radius:10px;background:#FFFDF8;color:var(--ink);
+  }
+  .pstext textarea:focus{outline:0;border-color:var(--terra);box-shadow:0 0 0 3px rgba(194,96,60,.1)}
+  .pscands{display:flex;flex-direction:column;gap:6px;margin-top:11px}
+  .pscand{
+    display:flex;width:100%;text-align:left;gap:9px;align-items:flex-start;
+    background:#FFFDF6;border:1px solid var(--line);border-radius:11px;padding:10px 11px;
+  }
+  .pscand:hover,.pscand:focus-visible{border-color:var(--terra);background:#FFF9F1}
+  .pscand .bdg{
+    flex:none;margin-top:1px;font-size:9px;font-weight:800;letter-spacing:.04em;
+    padding:3px 6px;border-radius:5px;background:var(--cream-2);color:#8A5A2B;text-transform:uppercase;
+  }
+  .pscand .bdg.bean{background:#E7EEE4;color:#37563C}
+  .pscand .bdg.farm{background:#F6EBDD;color:#8A5A2B}
+  .pscand .bdg.country{background:#EFEAE1;color:#6B6259}
+  .pscand .tx{min-width:0;flex:1}
+  .pscand .nm{display:block;font-size:12.5px;font-weight:800;letter-spacing:-.01em;word-break:keep-all;overflow-wrap:anywhere}
+  .pscand .mt{display:block;font-size:10.5px;color:var(--ink-soft);margin-top:2px;line-height:1.5}
+  .pscand .mt b{color:var(--terra);font-weight:800}
+  .pscand .go{flex:none;color:var(--terra);font-size:14px;font-weight:800;padding-top:1px}
+  @media(max-width:400px){
+    .search-box{gap:6px}
+    .search-box .cam{width:34px;height:34px}
+    .pspanel{padding:12px}
+    .psrow img{width:64px;height:64px}
+  }
+
   /* ---------- chips ---------- */
   .chips{
     flex:none;display:flex;gap:7px;overflow-x:auto;padding:12px 18px 12px;
@@ -497,6 +608,9 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
       <div class="search-box">
         <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="m16.5 16.5 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         <input id="q" type="search" enterkeyhint="search" placeholder="원두·산지·농장·컵노트 검색" aria-label="커피 검색" />
+        <button class="cam" type="button" id="camBtn" aria-label="사진으로 검색" aria-haspopup="dialog" aria-expanded="false" title="사진으로 검색">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3.6 8.3h2.7l1.3-2h8.8l1.3 2h2.7v10.2H3.6z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="13.2" r="3.2" stroke="currentColor" stroke-width="1.7"/></svg>
+        </button>
         <button class="go" type="submit">검색</button>
       </div>
       <div class="sugg" id="sugg" role="listbox" aria-label="검색 제안"></div>
@@ -515,6 +629,34 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   <main class="sheet" id="sheet"></main>
 </div>
 
+<!-- 사진으로 찾기: 찍기 / 보관함 고르기 -->
+<div class="psback" id="psBack" hidden>
+  <div class="psmodal" role="dialog" aria-modal="true" aria-labelledby="psTitle">
+    <div class="pshead">
+      <div>
+        <h2 id="psTitle">사진으로 찾기</h2>
+        <p>커피 봉지 라벨이나 메뉴판을 찍으면, 사진 속 글자로 산지·농장을 찾아 드려요.</p>
+      </div>
+      <button class="psx" type="button" id="psCloseBtn" aria-label="닫기">✕</button>
+    </div>
+    <button class="psopt" type="button" id="psOptCam">
+      <span class="ic" aria-hidden="true">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M3.6 8.3h2.7l1.3-2h8.8l1.3 2h2.7v10.2H3.6z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="13.2" r="3.2" stroke="currentColor" stroke-width="1.7"/></svg>
+      </span>
+      <span class="tx"><span class="t">카메라로 찍기</span><span class="d">지금 마시는 커피 봉지·메뉴판을 바로 찍어요</span></span>
+    </button>
+    <button class="psopt" type="button" id="psOptLib">
+      <span class="ic" aria-hidden="true">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.7"/><circle cx="8.5" cy="10" r="1.4" stroke="currentColor" stroke-width="1.5"/><path d="M4 17l5-4.5 3.5 3L16 12l4 4" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="tx"><span class="t">사진 보관함에서 고르기</span><span class="d">이미 찍어 둔 사진을 고르세요</span></span>
+    </button>
+    <p class="pshint">사진은 이 기기 안에서만 읽고 서버로 보내지 않습니다. 처음 한 번은 글자 인식 데이터(약 18MB)를 내려받습니다.</p>
+  </div>
+</div>
+<input type="file" id="psInpCam" accept="image/*" capture="environment" hidden />
+<input type="file" id="psInpLib" accept="image/*" hidden />
+
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script>
@@ -531,6 +673,7 @@ const state = {
   results: null,
   ready: false
 };
+var PS_ON = false;      // 사진 검색 패널이 시트에 붙어 있는지
 
 const $ = (s, el = document) => el.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -1154,6 +1297,7 @@ function renderSheet() {
     setTimeout(alignSheetTop, 380);
   }
   bindSheet();
+  if (PS_ON) psMount();
   appEl.classList.toggle("has-sel", !!(state.bean || state.place));
 }
 
@@ -1359,6 +1503,470 @@ qEl.addEventListener("focus", () => { if (qEl.value.trim() && state.ready) { sug
 document.addEventListener("click", (e) => {
   if (!e.target.closest(".search")) sugEl.classList.remove("on");
 });
+
+/* =========================================================
+   사진으로 찾기 — 라벨·메뉴판 사진에서 글자를 읽어 카탈로그와 맞춰 봅니다
+   · Tesseract.js는 사진을 고른 뒤에만 내려받습니다 (첫 화면 로딩은 그대로)
+   · 사진은 브라우저 안에서만 읽고 어디로도 보내지 않습니다
+   ========================================================= */
+var PV = {
+  active: false, job: 0, thumb: "", mode: "run", label: "", pct: 0, note: "",
+  text: "", cands: [], candNote: "", worker: null, recBase: 0.42, recSpan: 0.5
+};
+const PS_DATA_NOTE = "처음 한 번만 글자 데이터(약 18MB)를 내려받습니다. 사진은 이 기기 안에서만 읽습니다.";
+const TESS = {
+  js: "https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js",
+  worker: "https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/worker.min.js",
+  core: "https://cdn.jsdelivr.net/npm/tesseract.js-core@5.1.1",
+  lang: "https://tessdata.projectnaptha.com/4.0.0"
+};
+
+function psLoadScript(src) {
+  return new Promise((res, rej) => {
+    const s = document.createElement("script");
+    s.src = src; s.async = true;
+    s.onload = () => res();
+    s.onerror = () => rej(new Error("script " + src));
+    document.head.appendChild(s);
+  });
+}
+
+/* ---------- 고르기 모달 ---------- */
+function psOpenModal() {
+  const back = $("#psBack");
+  if (!back) return;
+  back.hidden = false;
+  document.documentElement.classList.add("ps-lock");
+  $("#camBtn").setAttribute("aria-expanded", "true");
+  const first = $("#psOptCam");
+  if (first) setTimeout(() => first.focus(), 30);
+}
+function psCloseModal() {
+  const back = $("#psBack");
+  if (!back || back.hidden) return;
+  back.hidden = true;
+  document.documentElement.classList.remove("ps-lock");
+  $("#camBtn").setAttribute("aria-expanded", "false");
+}
+
+/* ---------- 상태 표시 ---------- */
+function psSetStatus(mode, label, pct, note) {
+  PV.mode = mode; PV.label = label; PV.pct = pct; PV.note = note || "";
+  const box = document.getElementById("psState");
+  if (!box) { psRender(); return; }
+  box.classList.toggle("ok", mode === "ok");
+  box.classList.toggle("fail", mode === "fail");
+  const spin = document.getElementById("psSpin");
+  if (spin) spin.style.display = mode === "run" ? "" : "none";
+  const lbl = document.getElementById("psLabel");
+  if (lbl) lbl.textContent = label;
+  const pctEl = document.getElementById("psPct");
+  if (pctEl) pctEl.textContent = typeof pct === "number" && pct > 0 ? Math.round(pct * 100) + "%" : "";
+  const fill = document.getElementById("psFill");
+  if (fill) fill.style.width = (typeof pct === "number" ? Math.round(pct * 100) : 0) + "%";
+  const noteEl = document.getElementById("psNote");
+  if (noteEl) { noteEl.hidden = !PV.note; noteEl.textContent = PV.note; }
+}
+
+/* ---------- 이미지 전처리 (log.html 검증본 + 대비 보정) ---------- */
+function psResize(img, maxSide, quality, enhance) {
+  const w0 = img.naturalWidth || img.width, h0 = img.naturalHeight || img.height;
+  const scale = Math.min(1, maxSide / Math.max(w0, h0));
+  const cw = Math.max(1, Math.round(w0 * scale)), ch = Math.max(1, Math.round(h0 * scale));
+  const c = document.createElement("canvas");
+  c.width = cw; c.height = ch;
+  const ctx = c.getContext("2d", enhance ? { willReadFrequently: true } : undefined);
+  ctx.imageSmoothingQuality = "high";
+  ctx.drawImage(img, 0, 0, cw, ch);
+  if (enhance) {
+    const d = ctx.getImageData(0, 0, cw, ch), a = d.data, total = cw * ch;
+    const hist = new Uint32Array(256);
+    for (let i = 0; i < a.length; i += 4) hist[(a[i] * 0.299 + a[i + 1] * 0.587 + a[i + 2] * 0.114) | 0]++;
+    let lo = 0, hi = 255, acc = 0;
+    for (let v = 0; v < 256; v++) { acc += hist[v]; if (acc >= total * 0.04) { lo = v; break; } }
+    acc = 0;
+    for (let v = 255; v >= 0; v--) { acc += hist[v]; if (acc >= total * 0.04) { hi = v; break; } }
+    const span = Math.max(1, hi - lo);
+    const lut = new Uint8Array(256);
+    for (let v = 0; v < 256; v++) {
+      let n = (v - lo) / span;
+      n = n < 0 ? 0 : n > 1 ? 1 : n;
+      lut[v] = Math.round(Math.pow(n, 0.92) * 255);
+    }
+    for (let i = 0; i < a.length; i += 4) {
+      const o = lut[(a[i] * 0.299 + a[i + 1] * 0.587 + a[i + 2] * 0.114) | 0];
+      a[i] = o; a[i + 1] = o; a[i + 2] = o;
+    }
+    ctx.putImageData(d, 0, 0);
+  }
+  return c.toDataURL("image/jpeg", quality);
+}
+
+function psLoadImage(file) {
+  return new Promise((res, rej) => {
+    const url = URL.createObjectURL(file);
+    const img = new Image();
+    img.onload = () => { URL.revokeObjectURL(url); res(img); };
+    img.onerror = () => { URL.revokeObjectURL(url); rej(new Error("image load")); };
+    img.src = url;
+  });
+}
+
+/* ---------- OCR ---------- */
+function psEnsureWorker(job) {
+  if (PV.worker) return Promise.resolve(PV.worker);
+  psSetStatus("run", "인식 엔진을 내려받는 중", 0.06, PS_DATA_NOTE);
+  return psLoadScript(TESS.js)
+    .then(() => {
+      if (!window.Tesseract) throw new Error("no tesseract");
+      return window.Tesseract.createWorker("kor+eng", 1, {
+        workerPath: TESS.worker,
+        corePath: TESS.core,
+        langPath: TESS.lang,
+        logger: (m) => {
+          if (job !== PV.job || !PV.active) return;
+          const p = typeof m.progress === "number" ? m.progress : 0;
+          let label = "사진 속 글자를 읽는 중";
+          if (m.status === "loading tesseract core") label = "인식 엔진을 불러오는 중";
+          else if (m.status === "initializing tesseract") label = "인식 엔진을 준비하는 중";
+          else if (m.status === "loading language traineddata") label = "한국어·영어 글자 데이터 준비 중";
+          else if (m.status === "initializing api") label = "인식 준비 중";
+          const isRec = m.status === "recognizing text";
+          const base = isRec ? PV.recBase : 0.06;
+          const spanW = isRec ? PV.recSpan : 0.36;
+          psSetStatus("run", label, base + p * spanW, m.status === "loading language traineddata" ? PS_DATA_NOTE : "");
+        }
+      });
+    })
+    .then((w) => { PV.worker = w; return w; });
+}
+
+async function psRecognize(dataUrl, job) {
+  const w = await psEnsureWorker(job);
+  if (job !== PV.job || !PV.active) return "";
+  const res = await w.recognize(dataUrl);
+  if (job !== PV.job || !PV.active) return "";
+  return psClean(res && res.data && res.data.text ? res.data.text : "");
+}
+
+function psClean(text) {
+  return String(text || "").replace(/[ \t]+/g, " ").replace(/\n{3,}/g, "\n\n").trim();
+}
+
+/* ---------- 카탈로그 매칭 (log.html 로직 그대로) ---------- */
+let PSIDX = null;
+function psNormKo(s) { return String(s == null ? "" : s).toLowerCase().replace(/[^0-9a-z\uac00-\ud7a3]/g, ""); }
+function psNormEn(s) { return String(s == null ? "" : s).toLowerCase().replace(/[^0-9a-z]/g, ""); }
+function psBigrams(s) { const out = []; for (let i = 0; i < s.length - 1; i++) out.push(s.slice(i, i + 2)); return out; }
+function psDedupe(arr) { return Array.from(new Set(arr)); }
+function psCover(grams, set) {
+  if (!grams.length) return 0;
+  let hit = 0;
+  for (const g of grams) if (set.has(g)) hit++;
+  return hit / grams.length;
+}
+function psBuildIndex() {
+  if (PSIDX) return PSIDX;
+  const places = (CAT.places || []).map((p) => {
+    const o = Object.assign({}, p);
+    o._n = psNormKo(p.name); o._nEn = psNormEn(p.nameEn); o._nCountry = psNormKo(p.country);
+    o._g = psDedupe(psBigrams(o._n)); o._gEn = psDedupe(psBigrams(o._nEn));
+    return o;
+  });
+  const beans = (CAT.beans || []).map((b) => {
+    const o = Object.assign({}, b);
+    o._n = psNormKo(b.name); o._nRegion = psNormKo(b.region); o._nEn = psNormEn(b.name);
+    o._g = psDedupe(psBigrams(o._n)); o._gEn = psDedupe(psBigrams(o._nEn));
+    return o;
+  });
+  PSIDX = { places, beans, placeMap: new Map(places.map((p) => [p.id, p])), beanMap: new Map(beans.map((b) => [b.id, b])) };
+  return PSIDX;
+}
+function psMakeText(raw) {
+  const nk = psNormKo(raw), ne = psNormEn(raw);
+  const tokens = String(raw || "").split(/[\s\n\r,.;:·|/()\[\]"'“”‘’!?\-—]+/).filter((t) => t.length >= 2);
+  return {
+    raw, nk, ne,
+    gramsKo: new Set(psBigrams(nk)),
+    gramsEn: new Set(psBigrams(ne)),
+    tokens: tokens.map((t) => ({ raw: t, nk: psNormKo(t), ne: psNormEn(t) }))
+  };
+}
+function psScorePlace(p, t) {
+  let s = 0, why = [];
+  if (p._n && p._n.length >= 2) {
+    if (t.nk.indexOf(p._n) !== -1) { s += 14 + Math.min(12, (p._n.length - 2) * 1.1); why.push(p.name); }
+    else if (p._n.length >= 3) {
+      const c = psCover(p._g, t.gramsKo);
+      if (c >= 0.6) { s += 14 * c; why.push(p.name); }
+    }
+  }
+  if (p._nEn && p._nEn.length >= 4) {
+    if (t.ne.indexOf(p._nEn) !== -1) { s += 13 + Math.min(10, (p._nEn.length - 4) * 0.7); why.push(p.nameEn); }
+    else if (p._nEn.length >= 6) {
+      const ce = psCover(p._gEn, t.gramsEn);
+      if (ce >= 0.72) { s += 11 * ce; why.push(p.nameEn); }
+    }
+  }
+  if (p.kind !== "country" && p._nCountry && t.nk.indexOf(p._nCountry) !== -1) s += 2.5;
+  if (p.kind === "farm") s *= 1.12;
+  else if (p.kind === "country") s *= 0.8;
+  p._why = why;
+  return s;
+}
+function psScoreBean(b, t, placeScore) {
+  let s = placeScore * 0.55;
+  if (b._n && t.nk.indexOf(b._n) !== -1) s += 24;
+  else {
+    const c = psCover(b._g, t.gramsKo);
+    if (c > 0.2) s += c * 46;
+  }
+  if (b._nEn && b._nEn.length >= 8) {
+    if (t.ne.indexOf(b._nEn) !== -1) s += 18;
+    else {
+      const ce = psCover(b._gEn, t.gramsEn);
+      if (ce > 0.22) s += ce * 34;
+    }
+  }
+  if (b._nRegion && t.nk.indexOf(b._nRegion) !== -1) s += 4;
+  return s;
+}
+function psChips(name, place, t) {
+  const pool = [name, place ? place.name : "", place ? place.nameEn : "", place ? place.country : ""];
+  const poolN = pool.map(psNormKo);
+  const seen = {}, out = [];
+  t.tokens.forEach((tok) => {
+    if (tok.nk.length < 2 || seen[tok.nk]) return;
+    for (let i = 0; i < poolN.length; i++) {
+      if (poolN[i] && poolN[i].indexOf(tok.nk) !== -1) { seen[tok.nk] = 1; out.push(tok.raw); return; }
+    }
+  });
+  return out.slice(0, 5);
+}
+function psFindMatches(raw, limit) {
+  limit = limit || 6;
+  if (!CAT.beans || !CAT.beans.length) return [];
+  const IDX = psBuildIndex();
+  const t = psMakeText(raw);
+  if (!t.nk && !t.ne) return [];
+  const placeScores = new Map();
+  IDX.places.forEach((p) => {
+    const sc = psScorePlace(p, t);
+    if (sc > 5) placeScores.set(p.id, sc);
+  });
+  const beanHits = [];
+  for (const b of IDX.beans) {
+    const sc = psScoreBean(b, t, placeScores.get(b.placeId) || 0);
+    if (sc > 9) beanHits.push({ b, s: sc });
+  }
+  beanHits.sort((x, y) => y.s - x.s);
+  const beanItems = beanHits.slice(0, limit).map((h) => {
+    const pl = IDX.placeMap.get(h.b.placeId);
+    return {
+      kind: "bean", bean: h.b, place: pl || null, score: h.s, name: h.b.name,
+      sub: [h.b.country, h.b.region, h.b.farm].filter(Boolean).join(" · "),
+      chips: psChips(h.b.name, pl, t)
+    };
+  });
+  const placeItems = IDX.places.filter((p) => placeScores.has(p.id))
+    .sort((a, b) => placeScores.get(b.id) - placeScores.get(a.id))
+    .slice(0, 4)
+    .map((p) => ({
+      kind: "place", place: p, score: placeScores.get(p.id), name: p.name,
+      sub: [p.country, p.kind === "farm" ? "농장" : p.kind === "region" ? "산지" : "국가"].join(" · "),
+      chips: psChips(p.name, p, t)
+    }));
+  const merged = [];
+  const beanQuota = Math.max(2, limit - 2);
+  beanItems.slice(0, beanQuota).forEach((x) => merged.push(x));
+  placeItems.forEach((x) => {
+    if (merged.length >= limit) return;
+    if (merged.some((m) => psNormKo(m.name) === psNormKo(x.name))) return;
+    merged.push(x);
+  });
+  merged.sort((a, b) => b.score - a.score);
+  return merged.slice(0, limit);
+}
+
+/* ---------- 패널 그리기 ---------- */
+function psCandHTML(c, idx) {
+  const isBean = c.kind === "bean";
+  const kind = isBean ? "bean" : (c.place.kind || "region");
+  const bdgTxt = isBean ? "생두" : (c.place.kind === "farm" ? "농장" : c.place.kind === "region" ? "산지" : "국가");
+  const chips = (c.chips && c.chips.length) ? " · " + c.chips.map(esc).join(", ") : "";
+  return '<button class="pscand" type="button" data-pscand="' + idx + '">' +
+    '<span class="bdg ' + esc(kind) + '">' + esc(bdgTxt) + "</span>" +
+    '<span class="tx"><span class="nm">' + esc(c.name) + "</span>" +
+    '<span class="mt">' + esc(c.sub) + (chips ? "<b>" + chips + "</b>" : "") + "</span></span>" +
+    '<span class="go" aria-hidden="true">›</span></button>';
+}
+
+function psRender() {
+  const host = document.getElementById("psPanel");
+  if (!host) return;
+  const cls = PV.mode === "ok" ? "ok" : PV.mode === "fail" ? "fail" : "";
+  const pctTxt = typeof PV.pct === "number" && PV.pct > 0 ? Math.round(PV.pct * 100) + "%" : "";
+  const pctW = typeof PV.pct === "number" ? Math.round(PV.pct * 100) : 0;
+  let html = '<div class="psphead"><h2>사진으로 찾기</h2>' +
+    '<button class="psx" type="button" data-psclose aria-label="사진 검색 닫기">✕</button></div>' +
+    '<div class="psrow">' +
+    (PV.thumb ? '<img src="' + PV.thumb + '" alt="고른 사진 미리보기" />' : "") +
+    '<div class="psstate ' + cls + '" id="psState" aria-live="polite">' +
+    '<div class="lbl"><span class="spin" id="psSpin"' + (PV.mode === "run" ? "" : ' style="display:none"') + "></span>" +
+    '<span id="psLabel">' + esc(PV.label) + '</span><span class="pct" id="psPct">' + pctTxt + "</span></div>" +
+    '<div class="psbar"><i id="psFill" style="width:' + pctW + '%"></i></div>' +
+    '<p class="psnote" id="psNote"' + (PV.note ? "" : " hidden") + ">" + esc(PV.note) + "</p>" +
+    "</div></div>";
+  if (PV.text) {
+    html += '<div class="pstext"><label class="lbl" for="psText">사진에서 읽은 글자</label>' +
+      '<textarea id="psText" aria-label="사진에서 읽은 글자">' + esc(PV.text) + "</textarea>" +
+      '<div class="psacts"><button class="psbtn" type="button" id="psRematch">이 글자로 다시 찾기</button></div></div>';
+  }
+  if (PV.cands.length) html += '<div class="pscands">' + PV.cands.map(psCandHTML).join("") + "</div>";
+  if (PV.candNote) html += '<p class="psnote">' + esc(PV.candNote) + "</p>";
+  html += '<div class="psacts"><button class="psbtn ghost" type="button" id="psAgain">다른 사진으로 찾기</button>' +
+    '<button class="psbtn ghost" type="button" id="psManual">검색창에서 직접 찾기</button></div>';
+  host.innerHTML = html;
+
+  const x = host.querySelector("[data-psclose]");
+  if (x) x.addEventListener("click", () => psClose());
+  const again = host.querySelector("#psAgain");
+  if (again) again.addEventListener("click", () => psOpenModal());
+  const manual = host.querySelector("#psManual");
+  if (manual) manual.addEventListener("click", () => { psClose(); qEl.focus(); });
+  host.querySelectorAll("[data-pscand]").forEach((el) => {
+    el.addEventListener("click", () => psChoose(Number(el.dataset.pscand)));
+  });
+  const rm = host.querySelector("#psRematch");
+  if (rm) rm.addEventListener("click", () => {
+    const ta = host.querySelector("#psText");
+    const v = (ta && ta.value ? ta.value : "").trim();
+    if (!v) { if (ta) ta.focus(); return; }
+    PV.text = v;
+    const items = psFindMatches(v, 6);
+    PV.cands = items;
+    if (items.length) { PV.candNote = ""; psSetStatus("ok", "후보 " + items.length + "개", 1, ""); }
+    else { PV.candNote = "이 글자로는 딱 맞는 후보를 찾지 못했어요. 단어를 줄이거나 이름을 고쳐 다시 찾아보세요."; psSetStatus("fail", "후보를 찾지 못했어요", 0, ""); }
+    psRender();
+  });
+}
+
+function psMount() {
+  let host = document.getElementById("psPanel");
+  if (!host) {
+    host = document.createElement("section");
+    host.id = "psPanel";
+    host.className = "pspanel";
+    host.setAttribute("role", "region");
+    host.setAttribute("aria-label", "사진으로 찾기");
+    sheetEl.prepend(host);
+    psRender();
+  } else if (sheetEl.firstElementChild !== host) {
+    sheetEl.prepend(host);
+  }
+  if (getComputedStyle(sheetEl).overflowY === "visible") {
+    const r = sheetEl.getBoundingClientRect();
+    if (r.top < -4) window.scrollTo({ top: Math.max(0, window.scrollY + r.top - 6), behavior: "auto" });
+  } else {
+    sheetEl.scrollTop = 0;
+  }
+}
+
+function psClose() {
+  PV.job++;
+  PV.active = false;
+  PS_ON = false;
+  const host = document.getElementById("psPanel");
+  if (host) host.remove();
+}
+
+function psChoose(i) {
+  const c = PV.cands[i];
+  if (!c) return;
+  if (c.kind === "bean") {
+    const b = CAT.beans.find((x) => x.id === c.bean.id);
+    if (!b) return;
+    psClose();
+    qEl.value = b.name;
+    selectBean(b);
+  } else {
+    const p = placeById.get(c.place.id);
+    if (!p) return;
+    psClose();
+    qEl.value = p.name;
+    selectPlace(p);
+  }
+}
+
+/* ---------- 사진을 골랐을 때 ---------- */
+async function psHandleFile(file) {
+  if (!file) return;
+  PS_ON = true;
+  PV.active = true;
+  PV.text = ""; PV.cands = []; PV.candNote = ""; PV.thumb = "";
+  const job = ++PV.job;
+  if (!/^image\//.test(file.type || "")) {
+    PV.mode = "fail"; PV.label = "이미지 파일만 고를 수 있어요"; PV.pct = 0;
+    PV.note = "사진(JPG·PNG 등)을 골라 주세요.";
+    psMount(); psRender();
+    return;
+  }
+  psSetStatus("run", "사진을 불러오는 중", 0.03, "");
+  psMount(); psRender();
+  try {
+    const img = await psLoadImage(file);
+    if (job !== PV.job) return;
+    PV.thumb = psResize(img, 220, 0.7, false);
+    PV.recBase = 0.42; PV.recSpan = 0.5;
+    psSetStatus("run", "인식 엔진을 준비하는 중", 0.06, PS_DATA_NOTE);
+    psRender();
+    let text = await psRecognize(psResize(img, 1000, 0.76, false), job);
+    if (job !== PV.job) return;
+    let items = text ? psFindMatches(text, 6) : [];
+    if (!items.length) {
+      PV.recBase = 0.72; PV.recSpan = 0.26;
+      psSetStatus("run", text ? "글자를 더 또렷하게 해 다시 읽는 중" : "글자를 한 번 더 읽는 중", 0.7, "");
+      const t2 = await psRecognize(psResize(img, 1100, 0.8, true), job);
+      if (job !== PV.job) return;
+      if (t2 && t2.length > (text || "").length) text = t2;
+      items = text ? psFindMatches(text, 6) : [];
+    }
+    PV.text = text || "";
+    PV.cands = items;
+    if (items.length) {
+      PV.candNote = "";
+      psSetStatus("ok", "글자를 읽었어요 · 후보 " + items.length + "개", 1, "");
+    } else if (text) {
+      PV.candNote = "사진 글자로는 딱 맞는 커피를 찾지 못했어요. 위 글자를 고쳐 다시 찾거나 검색창에서 직접 찾아보세요.";
+      psSetStatus("ok", "글자는 읽었지만 후보를 찾지 못했어요", 1, "");
+    } else {
+      PV.candNote = "사진에서 글자를 찾지 못했어요. 라벨이 크게 보이게 다시 찍거나 검색창에서 직접 찾아보세요.";
+      psSetStatus("fail", "글자를 찾지 못했어요", 0, "");
+    }
+    psRender();
+  } catch (err) {
+    if (job !== PV.job) return;
+    console.warn("photo ocr failed", err);
+    PV.worker = null;
+    PV.candNote = "인식 엔진을 불러오지 못했어요(네트워크 확인). 검색창에서 직접 찾을 수 있어요.";
+    psSetStatus("fail", "자동 인식이 안 됐어요", 0, "");
+    psRender();
+  }
+}
+
+(function psWire() {
+  const camBtn = $("#camBtn"), back = $("#psBack");
+  const inpCam = $("#psInpCam"), inpLib = $("#psInpLib");
+  if (!camBtn || !back || !inpCam || !inpLib) return;
+  camBtn.addEventListener("click", () => psOpenModal());
+  $("#psOptCam").addEventListener("click", () => { psCloseModal(); inpCam.click(); });
+  $("#psOptLib").addEventListener("click", () => { psCloseModal(); inpLib.click(); });
+  $("#psCloseBtn").addEventListener("click", () => psCloseModal());
+  back.addEventListener("click", (e) => { if (e.target === back) psCloseModal(); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !back.hidden) psCloseModal(); });
+  inpCam.addEventListener("change", (e) => { const f = e.target.files && e.target.files[0]; e.target.value = ""; if (f) psHandleFile(f); });
+  inpLib.addEventListener("change", (e) => { const f = e.target.files && e.target.files[0]; e.target.value = ""; if (f) psHandleFile(f); });
+})();
 
 boot();
 </script>
