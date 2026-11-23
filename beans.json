@@ -28,7 +28,7 @@
 "trend": 193,
 "story": 193
 },
-"profileFallback": 5
+"profileFallback": 0
 },
 "places": [
 {
@@ -2626,14 +2626,14 @@
 }
 ],
 "beanCount": 3,
+"elevation": "1,500~2,000m (카우카 피엔다모 일대)",
 "harvest": "3월~6월 · 10~12월",
 "terroir": "카우카 피엔다모 · 베레다 로스 아라도스",
 "varieties": "카스티요 · 게이샤 (롯별 상이)",
 "processes": "열충격·무산소 등 실험적 가공",
 "flavorProfile": "장미 · 열대과일 · 강한 단맛",
 "trend": "이름이 비슷한 엘 파라이소와 다른 농장으로, 롯별 가공 실험을 이어가고 있습니다.",
-"profileLevel": "mixed",
-"elevation": "1,200~2,000m (남부 고지 2,300m까지)"
+"profileLevel": "place"
 },
 {
 "id": "C|필리핀",
@@ -3269,6 +3269,7 @@
 "evidence": "OSM farm La Roca, Argelia, Cauca",
 "source": "https://www.openstreetmap.org/",
 "beanCount": 2,
+"elevation": "1,500~2,100m (카우카 남부 산지)",
 "harvest": "10월~12월 (주 수확기) · 3~6월",
 "terroir": "카우카 아르헬리아 산지",
 "varieties": "카투라 · 카스티요 (라벨 표기 기준)",
@@ -3276,8 +3277,7 @@
 "flavorProfile": "카라멜 · 시트러스 · 부드러운 단맛",
 "trend": "카우카 남부 소농 농장으로, 롯 단위 유통이 늘고 있습니다.",
 "story": "카우카 아르헬리아의 산지에 있는 농장으로, OpenStreetMap에 농장 이름으로 위치가 등록되어 있습니다. 생산자·연혁 자료는 아직 확인하지 못해 위치와 기본 정보만 싣습니다.",
-"profileLevel": "mixed",
-"elevation": "1,200~2,000m (남부 고지 2,300m까지)"
+"profileLevel": "place"
 },
 {
 "id": "R|콜롬비아|산탄데르",
@@ -3354,6 +3354,7 @@
 "evidence": "OSM peak Doi Inthanon, Chiang Mai",
 "source": "https://www.openstreetmap.org/",
 "beanCount": 2,
+"elevation": "1,000~1,400m (치앙마이 고지)",
 "harvest": "11월~2월 (주 수확기)",
 "terroir": "치앙마이 도이 인타논 산자락 · 고지 · 서늘한 기후",
 "varieties": "카티모르 · 카투라 (라벨 표기 기준)",
@@ -3361,8 +3362,7 @@
 "flavorProfile": "견과 · 카라멜 · 부드러운 단맛",
 "trend": "북부 고지의 소농 롯이 스페셜티 시장에 늘고 있습니다.",
 "story": "도이 인타논은 치앙마이의 산 이름이자 그 자락의 커피 재배지 이름입니다. 고지의 서늘한 기후에서 아라비카를 기르며, 산 주변 마을들이 커피로 소득을 내고 있습니다.",
-"profileLevel": "mixed",
-"elevation": "1,000~1,600m"
+"profileLevel": "place"
 },
 {
 "id": "F|파나마|하트만",
@@ -3787,6 +3787,7 @@
 "evidence": "OSM farm Fazenda Romero, Bahia",
 "source": "https://www.openstreetmap.org/",
 "beanCount": 1,
+"elevation": "700~1,300m (바이아 고원)",
 "harvest": "5월~9월 (주 수확기)",
 "terroir": "바이아 고원",
 "varieties": "카투아이 · 카투라 (라벨 표기 기준)",
@@ -3794,8 +3795,7 @@
 "flavorProfile": "견과 · 초콜릿 · 둥근 단맛",
 "trend": "바이아의 대농장으로, 롯 단위 선별 유통이 늘고 있습니다.",
 "story": "브라질 바이아의 파젠다 로메로로, OpenStreetMap에 농장 이름으로 위치가 등록되어 있습니다. 생산자·연혁 자료는 확인하지 못해 위치와 기본 정보만 싣습니다.",
-"profileLevel": "mixed",
-"elevation": "800~1,300m (고급 롯은 1,100m 이상)"
+"profileLevel": "place"
 },
 {
 "id": "F|브라질|파젠다 카르모",
@@ -3822,14 +3822,14 @@
 }
 ],
 "beanCount": 1,
+"elevation": "900~1,200m (술 데 미나스)",
 "harvest": "5월~9월 (주 수확기)",
 "terroir": "미나스 제라이스 · 카르모 데 미나스 일대",
 "varieties": "카투아이 · 카투라",
 "processes": "펄프드 내추럴 · 내추럴",
 "flavorProfile": "카라멜 · 견과 · 부드러운 산미",
 "trend": "카르모 데 미나스 지역의 농장으로, 마이크로롯 유통이 늘고 있습니다.",
-"profileLevel": "mixed",
-"elevation": "800~1,300m (고급 롯은 1,100m 이상)"
+"profileLevel": "place"
 },
 {
 "id": "R|에티오피아|게라",
