@@ -133,8 +133,19 @@
 
   // "살구 · 백합 · 꿀"처럼 · 로 묶인 목록은 각 낱말이 사전에 있으면 각각 바꿉니다.
   function translate(s) {
-    var t = norm(s);
+    var raw = norm(s);
+    if (!raw) return null;
+    // "· 워시드"처럼 목록 구분자(·)가 글자 앞뒤에 붙어 있는 경우가 있습니다.
+    // 구분자는 띄어 둔 채 가운데 문장만 번역합니다.
+    var pre = (raw.match(/^[·・]\s+/) || [""])[0];
+    var post = (raw.match(/\s+[·・]$/) || [""])[0];
+    var t = raw.slice(pre.length, raw.length - post.length);
     if (!t || !KO_RE.test(t)) return null;
+    var out = translateCore(t);
+    return out == null ? null : pre + out + post;
+  }
+
+  function translateCore(t) {
     var v = basic(t);
     if (v != null) return v;
     if (t.indexOf(" · ") > -1) {
