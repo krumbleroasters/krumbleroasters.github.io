@@ -443,8 +443,16 @@
       setTimeout(function () { b.textContent = "링크 복사"; }, 1600);
     });
 
-    /* 카페 이름을 이미 넣어 둔 사람은 바로 저장을 누를 수 있게, 아니면 이름 칸부터 */
-    var focusEl = card.cafe ? saveBtn : input;
+    /* 카페 이름을 이미 넣어 둔 사람은 바로 저장을 누를 수 있게.
+       휴대폰에서 이름 칸에 자동으로 커서를 두면 키보드가 올라와 미리보기를 가리므로,
+       입력 칸 자동 초점은 마우스·펜(pointer: fine) 화면에서만 합니다. */
+    var focusEl = null;
+    if (card.cafe) focusEl = saveBtn;
+    else {
+      var fine = true;
+      try { fine = !window.matchMedia || window.matchMedia("(pointer: fine)").matches; } catch (e) { fine = true; }
+      if (fine) focusEl = input;
+    }
     if (focusEl) setTimeout(function () { try { focusEl.focus(); } catch (e) {} }, 40);
   }
 
