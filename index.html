@@ -234,7 +234,10 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   .chip.on .cnt{color:var(--terra-soft)}
   .chip .cnt{font-size:10.5px;opacity:.7;font-weight:700}
 
-  /* ---------- map ---------- */
+  /* ---------- map ----------
+     touch-action:none — 폴드 펼친 화면·태블릿에서 두 손가락 핀치가 브라우저 페이지 확대로
+     빠지지 않고 Leaflet 지도 확대로 전달되게 합니다. */
+  .mapwrap, #map, .leaflet-container{touch-action:none}
   .mapwrap{position:relative;flex:none;height:40dvh;min-height:240px;background:var(--cream-2);z-index:1}
   #map{position:absolute;inset:0;background:var(--cream-2)}
   .leaflet-container{font-family:inherit;background:#EFE7DA}
@@ -746,6 +749,7 @@ const map = L.map("map", {
   zoomControl: true,
   attributionControl: true,
   worldCopyJump: true,
+  touchZoom: true,
   minZoom: 2,
   maxZoom: 15
 }).setView([12, 20], 2);
@@ -794,6 +798,20 @@ if (window.ResizeObserver) {
   }
 }
 const markers = new Map();
+
+// 창 크기가 바뀌면(폴드 접기·펼치기, 회전, 주소창 접힘) 지도 영역을 다시 계산합니다.
+// resize 이벤트가 연달아 오므로 짧게 모아(디바운스) 한 번만 invalidateSize를 부릅니다.
+(function () {
+  let t = 0;
+  const refresh = () => {
+    clearTimeout(t);
+    t = setTimeout(() => { try { map.invalidateSize({ animate: false }); } catch (e) {} }, 120);
+  };
+  window.addEventListener("resize", refresh, { passive: true });
+  window.addEventListener("orientationchange", refresh, { passive: true });
+  if (window.visualViewport) window.visualViewport.addEventListener("resize", refresh, { passive: true });
+  document.addEventListener("ci:lang", refresh);
+})();
 
 function pinIcon(item) {
   const t = item.tier;
@@ -2098,6 +2116,7 @@ boot();
 <script src="site-tools.js?v=20261122d"></script>
 <script src="i18n-data.js?v=20261124b"></script>
 <script src="i18n-pages.js?v=20261124b"></script>
+<script src="i18n-places.js?v=20261124a"></script>
 <script src="i18n.js?v=20261124b"></script>
 </body>
 </html>

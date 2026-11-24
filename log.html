@@ -113,6 +113,8 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     box-shadow:var(--shadow);background:#EFE7DA;
   }
   #map{height:clamp(340px,50vh,430px);width:100%}
+  /* 폴드 펼친 화면·태블릿에서 두 손가락 핀치가 지도 확대로 전달되게 (페이지 확대에 뺏기지 않게) */
+  .mapbox, #map, .leaflet-container{touch-action:none}
   .leaflet-container{font-family:inherit;background:#EFE7DA}
   .leaflet-tile-pane{filter:sepia(.12) saturate(.9) brightness(1.02)}
   .leaflet-control-attribution{font-size:8.5px!important;background:rgba(251,247,240,.86)!important;color:#6B6259!important;padding:1px 5px!important}
@@ -745,6 +747,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" defer></script>
 <script src="i18n-data.js?v=20261124b"></script>
 <script src="i18n-pages.js?v=20261124b"></script>
+<script src="i18n-places.js?v=20261124a"></script>
 <script src="i18n.js?v=20261124b"></script>
 <script>
 (function () {
@@ -1686,6 +1689,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
       minZoom: 2,
       maxZoom: 14,
       scrollWheelZoom: true,
+      touchZoom: true,
       attributionControl: true
     }).setView([16, 20], 2);
 
@@ -1698,6 +1702,16 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     }).addTo(map);
 
     markerLayer = L.layerGroup().addTo(map);
+
+    // 창 크기·화면 회전이 바뀌면 지도 영역을 다시 계산합니다 (디바운스).
+    var resizeT = 0;
+    var refreshMap = function () {
+      clearTimeout(resizeT);
+      resizeT = setTimeout(function () { try { map.invalidateSize({ animate: false }); } catch (e) {} }, 120);
+    };
+    window.addEventListener("resize", refreshMap, { passive: true });
+    window.addEventListener("orientationchange", refreshMap, { passive: true });
+    if (window.visualViewport) window.visualViewport.addEventListener("resize", refreshMap, { passive: true });
   }
 
   function pinIcon(count) {
