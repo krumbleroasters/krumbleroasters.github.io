@@ -74,6 +74,9 @@ window.CI_I18N = (function () {
     "스캔하면 이 산지의 페이지가 열립니다": "Scanning opens this origin's page||スキャンするとこの産地のページが開きます",
     "스캔하면 이 원두의 산지 페이지가 열립니다": "Scanning opens this bean's origin page||スキャンするとこの生豆の産地ページが開きます",
     "PNG 이미지 저장": "Save PNG||PNG で保存",
+    "사진으로 저장": "Save as photo||写真で保存",
+    "카페 / 로스터리 이름 (선택)": "Cafe / roastery name (optional)||カフェ・ロースタリー名（任意）",
+    "휴대폰에서는 이 사진을 길게 눌러 저장할 수도 있어요.": "On a phone you can also press and hold the photo to save it.||スマートフォンでは、この写真を長押しして保存することもできます。",
     "링크 복사": "Copy link||リンクをコピー",
     "복사됨": "Copied||コピーしました",
     "복사 실패": "Copy failed||コピーできません",
@@ -259,6 +262,7 @@ window.CI_I18N = (function () {
   /* 속성 값 (placeholder · aria-label · title · alt · meta content) */
   var A0 = {
     "사이트 안내": "Site menu||サイト案内",
+    "비우면 온커피로그 · 예: 크럼블로스터스": "Blank for ONCOFFEELOG · e.g. Krumble Roasters||空欄ならオンコーヒーログ · 例：Krumble Roasters",
     "사이트맵": "Sitemap||サイトマップ",
     "원두·산지·농장·컵노트 검색": "Bean, origin, farm or tasting note||豆・産地・農園・カップノートで検索",
     "커피 검색": "Search coffee||コーヒーを検索",

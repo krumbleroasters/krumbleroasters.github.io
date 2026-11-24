@@ -1,8 +1,9 @@
-/* qr-tools.js — 산지·농장 딥링크 QR 만들기 + 인쇄용 카드 PNG 저장
+/* qr-tools.js — 산지·농장 딥링크 QR 만들기 + 인쇄용 카드 사진(PNG) 저장
  *
  * QR은 qrcode.js(qrcode-generator 1.4.4, MIT)로 브라우저 안에서만 만들고,
  * 외부 QR 생성 API(api.qrserver.com 등)나 CDN에 요청을 보내지 않습니다.
  * 인쇄용 카드는 캔버스로 그려서 PNG(1240×1640px)로 저장합니다.
+ * 카드 상단은 저장하는 사람이 넣은 카페/로스터리 이름으로 바뀝니다(비우면 온커피로그 기본 카드).
  */
 (function () {
   "use strict";
@@ -18,6 +19,50 @@
   var BASE_H = 1640;
   var EXPORT_W = 1240;
   var FAM = '"Pretendard Variable", Pretendard, "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif';
+
+  var CAFE_KEY = "oncoffeelog.cafe";
+  var CAFE_MAX = 40;
+  /* 카페 이름을 넣었을 때 카드 상단에 들어가는 부제 (화면 언어를 따라갑니다) */
+  var CAFE_SUB = {
+    ko: "커피 산지 · 농장 안내",
+    en: "Coffee origins · Farm guide",
+    ja: "コーヒー産地 · 農園ガイド"
+  };
+
+  /* ── 언어 ─────────────────────────────────────────────────────── */
+  function uiLang() {
+    try {
+      var l = window.CI && window.CI.i18n && window.CI.i18n.lang;
+      return l === "en" || l === "ja" ? l : "ko";
+    } catch (e) { return "ko"; }
+  }
+
+  /* 캔버스에 그리는 글자는 i18n이 바꿔 주지 못하므로 여기서 직접 옮깁니다. */
+  function tr(s) {
+    var t = String(s == null ? "" : s);
+    if (!t || uiLang() === "ko") return t;
+    try {
+      var v = window.CI.i18n.translate(t);
+      return v == null ? t : v;
+    } catch (e) { return t; }
+  }
+
+  /* ── 카페 이름 저장 ────────────────────────────────────────────── */
+  function cleanCafe(v) {
+    return String(v == null ? "" : v).replace(/\s+/g, " ").trim().slice(0, CAFE_MAX);
+  }
+
+  function readCafe() {
+    try { return cleanCafe(localStorage.getItem(CAFE_KEY)); }
+    catch (e) { return ""; }
+  }
+
+  function writeCafe(v) {
+    try {
+      if (v) localStorage.setItem(CAFE_KEY, v);
+      else localStorage.removeItem(CAFE_KEY);
+    } catch (e) {}
+  }
 
   /* ── 캔버스 그리기 ─────────────────────────────────────────────── */
   function setFont(ctx, weight, size) {
@@ -90,15 +135,34 @@
     ctx.textAlign = "center";
     ctx.textBaseline = "alphabetic";
 
-    try { ctx.letterSpacing = (12 * s) + "px"; } catch (e) {}
-    ctx.fillStyle = INK;
-    setFont(ctx, 800, 56 * s);
-    ctx.fillText("ONCOFFEELOG", W / 2, 186 * s);
-    try { ctx.letterSpacing = "0px"; } catch (e) {}
+    var cafe = cleanCafe(d.cafe);
+    if (cafe) {
+      /* 카페·로스터리 이름 — 길면 글자를 줄여 한 줄에 다 담고,
+         한글에는 자간을 넣지 않습니다(받침이 붙어 보이지 않도록). */
+      var latin = !/[\uac00-\ud7a3\u3131-\u318e]/.test(cafe);
+      try { ctx.letterSpacing = latin ? (5 * s) + "px" : "0px"; } catch (e) {}
+      ctx.fillStyle = INK;
+      var cs = fitSize(ctx, cafe, W - 168 * s, 78 * s, 800, 0.4);
+      setFont(ctx, 800, cs);
+      ctx.fillText(cafe, W / 2, 190 * s);
+      try { ctx.letterSpacing = "0px"; } catch (e) {}
 
-    ctx.fillStyle = MUTE;
-    setFont(ctx, 600, 24 * s);
-    ctx.fillText("온커피로그 · 커피 산지 지도", W / 2, 232 * s);
+      ctx.fillStyle = MUTE;
+      var csub = CAFE_SUB[uiLang()] || CAFE_SUB.ko;
+      var csubSize = fitSize(ctx, csub, W - 240 * s, 26 * s, 600, 0.8);
+      setFont(ctx, 600, csubSize);
+      ctx.fillText(csub, W / 2, 238 * s);
+    } else {
+      try { ctx.letterSpacing = (12 * s) + "px"; } catch (e) {}
+      ctx.fillStyle = INK;
+      setFont(ctx, 800, 56 * s);
+      ctx.fillText("ONCOFFEELOG", W / 2, 186 * s);
+      try { ctx.letterSpacing = "0px"; } catch (e) {}
+
+      ctx.fillStyle = MUTE;
+      setFont(ctx, 600, 24 * s);
+      ctx.fillText("온커피로그 · 커피 산지 지도", W / 2, 232 * s);
+    }
 
     /* QR 판 — 순백 바탕으로 대비를 확실히 */
     var qrBox = 800 * s;
@@ -172,6 +236,12 @@
     return t || "oncoffeelog";
   }
 
+  /* 저장 파일 이름: 카페 이름이 있으면 {카페}-qr-{산지}.png */
+  function exportName(card, name) {
+    var cafe = cleanCafe(card.cafe);
+    return (cafe ? fileSafe(cafe) + "-qr-" : "oncoffeelog-qr-") + fileSafe(name) + ".png";
+  }
+
   function makeQR(text) {
     if (typeof qrcode !== "function") throw new Error("QR 라이브러리를 불러오지 못했습니다.");
     var qr = qrcode(0, "M");
@@ -182,6 +252,7 @@
 
   /* ── 모달 ─────────────────────────────────────────────────────── */
   var back = null;
+  var langHandler = null;
 
   function close() {
     if (!back) return;
@@ -189,6 +260,7 @@
     back = null;
     document.documentElement.classList.remove("qr-lock");
     document.removeEventListener("keydown", onKey);
+    if (langHandler) { document.removeEventListener("ci:lang", langHandler); langHandler = null; }
   }
 
   function onKey(e) {
@@ -198,10 +270,10 @@
   function open(o) {
     var url = String((o && o.url) || "");
     if (!/^https?:\/\//i.test(url)) return;
-    var title = String(o.title || "");
-    var sub = String(o.sub || "");
-    var hint = String(o.hint || "스캔하면 이 산지의 페이지가 열립니다");
-    var name = String(o.name || title);
+    var title = tr(String(o.title || ""));
+    var sub = tr(String(o.sub || ""));
+    var hint = tr(String(o.hint || "스캔하면 이 산지의 페이지가 열립니다"));
+    var name = String(o.name || o.title || "");
 
     var qr;
     try {
@@ -214,7 +286,7 @@
 
     close();
 
-    var card = { qr: qr, title: title, sub: sub, hint: hint, name: name };
+    var card = { qr: qr, title: title, sub: sub, hint: hint, name: name, cafe: readCafe() };
 
     back = document.createElement("div");
     back.className = "qrback";
@@ -225,10 +297,16 @@
           '<button type="button" class="qrx" data-qr-close aria-label="닫기">✕</button>' +
         "</div>" +
         '<div class="qrbody">' +
-          '<div class="qrprev"><canvas aria-label="QR 카드 미리보기"></canvas></div>' +
+          '<label class="qrfield">' +
+            '<span class="qrfield-k">카페 / 로스터리 이름 (선택)</span>' +
+            '<input class="qrfield-in" type="text" maxlength="' + CAFE_MAX + '" autocomplete="off" ' +
+              'spellcheck="false" enterkeyhint="done" placeholder="비우면 온커피로그 · 예: 크럼블로스터스">' +
+          "</label>" +
+          '<div class="qrprev"><img alt="QR 카드 미리보기" decoding="async"></div>' +
+          '<p class="qrlong">휴대폰에서는 이 사진을 길게 눌러 저장할 수도 있어요.</p>' +
           '<p class="qrurl"><code>' + esc(url) + "</code></p>" +
           '<div class="qrbtns">' +
-            '<button type="button" class="qrbtn-save" data-qr-save>PNG 이미지 저장</button>' +
+            '<button type="button" class="qrbtn-save" data-qr-save>사진으로 저장</button>' +
             '<button type="button" class="qrbtn-copy" data-qr-copy>링크 복사</button>' +
             '<button type="button" class="qrbtn-close" data-qr-close>닫기</button>' +
           "</div>" +
@@ -241,44 +319,88 @@
     document.addEventListener("keydown", onKey);
 
     var prev = back.querySelector(".qrprev");
-    var cvs = back.querySelector("canvas");
-    var dpr = Math.min(3, window.devicePixelRatio || 1);
+    var img = back.querySelector(".qrprev img");
+    var input = back.querySelector(".qrfield-in");
+    var saveBtn = back.querySelector("[data-qr-save]");
+    if (input) input.value = card.cafe;
 
+    /* 미리보기: 저장할 이미지와 같은 고해상도 PNG를 <img>로 보여 줍니다.
+       (휴대폰에서 이미지를 길게 눌러 사진첩에 저장할 수 있도록) */
+    var paintTimer = 0;
     function paintPreview() {
+      paintTimer = 0;
+      if (!back || !img) return;
       var avail = prev.clientWidth || 320;
-      var cssW = Math.max(200, Math.min(340, avail));
-      cvs.style.width = cssW + "px";
-      cvs.style.height = Math.round(cssW * BASE_H / BASE_W) + "px";
-      cvs.width = Math.round(cssW * dpr);
-      cvs.height = Math.round(cvs.width * BASE_H / BASE_W);
-      drawCard(cvs, card);
+      /* 좁은 화면에서도 카드와 저장 버튼이 한눈에 들어오도록 높이도 한정합니다 */
+      var byH = Math.round((window.innerHeight || 720) * 0.42 * BASE_W / BASE_H);
+      var cssW = Math.max(180, Math.min(340, avail, byH));
+      var c = renderExport(card);
+      var dataUrl;
+      try { dataUrl = c.toDataURL("image/png"); } catch (e) { return; }
+      img.style.width = cssW + "px";
+      img.style.height = Math.round(cssW * BASE_H / BASE_W) + "px";
+      img.src = dataUrl;
+    }
+    function queuePaint() {
+      if (paintTimer) clearTimeout(paintTimer);
+      paintTimer = setTimeout(paintPreview, 90);
     }
     paintPreview();
 
     /* 웹폰트가 준비되면 다시 그립니다 */
     if (document.fonts && document.fonts.ready) {
-      document.fonts.ready.then(function () { if (back) paintPreview(); }).catch(function () {});
+      document.fonts.ready.then(function () { if (back) queuePaint(); }).catch(function () {});
+    }
+
+    /* 언어를 바꾸면 카드 글자도 함께 바뀝니다 */
+    var base = {
+      title: String(o.title || ""),
+      sub: String(o.sub || ""),
+      hint: String(o.hint || "스캔하면 이 산지의 페이지가 열립니다")
+    };
+    langHandler = function () {
+      if (!back) return;
+      card.title = tr(base.title);
+      card.sub = tr(base.sub);
+      card.hint = tr(base.hint);
+      queuePaint();
+    };
+    document.addEventListener("ci:lang", langHandler);
+
+    if (input) {
+      input.addEventListener("input", function () {
+        var v = cleanCafe(input.value);
+        card.cafe = v;
+        writeCafe(v);
+        queuePaint();
+      });
+      input.addEventListener("change", function () {
+        var v = cleanCafe(input.value);
+        if (input.value !== v) input.value = v;
+        card.cafe = v;
+        writeCafe(v);
+        queuePaint();
+      });
     }
 
     back.addEventListener("click", function (e) {
       if (e.target === back || e.target.closest("[data-qr-close]")) close();
     });
 
-    var saveBtn = back.querySelector("[data-qr-save]");
     saveBtn.addEventListener("click", function () {
       var c = renderExport(card);
-      var fileName = "oncoffeelog-qr-" + fileSafe(name) + ".png";
+      var fileName = exportName(card, name);
       function done() {
         saveBtn.textContent = "저장했습니다";
         saveBtn.classList.add("done");
         setTimeout(function () {
-          saveBtn.textContent = "PNG 이미지 저장";
+          saveBtn.textContent = "사진으로 저장";
           saveBtn.classList.remove("done");
         }, 1800);
       }
       function fail() {
         saveBtn.textContent = "저장 실패 · 다시 눌러주세요";
-        setTimeout(function () { saveBtn.textContent = "PNG 이미지 저장"; }, 1800);
+        setTimeout(function () { saveBtn.textContent = "사진으로 저장"; }, 1800);
       }
       function download(blob) {
         if (!blob) { fail(); return; }
@@ -321,8 +443,9 @@
       setTimeout(function () { b.textContent = "링크 복사"; }, 1600);
     });
 
-    var first = back.querySelector("[data-qr-save]");
-    if (first) setTimeout(function () { try { first.focus(); } catch (e) {} }, 40);
+    /* 카페 이름을 이미 넣어 둔 사람은 바로 저장을 누를 수 있게, 아니면 이름 칸부터 */
+    var focusEl = card.cafe ? saveBtn : input;
+    if (focusEl) setTimeout(function () { try { focusEl.focus(); } catch (e) {} }, 40);
   }
 
   window.CIQR = { open: open, close: close };

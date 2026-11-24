@@ -380,6 +380,16 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   .qrbody{padding:14px 18px 18px;overflow-y:auto}
   .qrprev{display:flex;justify-content:center}
   .qrprev canvas{display:block;height:auto;border-radius:12px;box-shadow:0 10px 26px -16px rgba(34,30,26,.55)}
+  .qrprev img{display:block;height:auto;border-radius:12px;box-shadow:0 10px 26px -16px rgba(34,30,26,.55);-webkit-touch-callout:default}
+  .qrfield{display:block;margin:0 0 11px}
+  .qrfield-k{display:block;font-size:11.5px;font-weight:800;color:var(--ink-soft);margin-bottom:5px;letter-spacing:-.01em}
+  .qrfield-in{
+    width:100%;box-sizing:border-box;border:1px solid var(--line);border-radius:10px;background:#FFFDF9;color:var(--ink);
+    padding:9px 11px;font-size:13.5px;font-weight:600;font-family:inherit;line-height:1.4;
+  }
+  .qrfield-in::placeholder{color:#B3A897;font-weight:500}
+  .qrfield-in:focus{outline:none;border-color:var(--terra);box-shadow:0 0 0 3px rgba(194,96,60,.13)}
+  .qrlong{margin:8px 0 0;text-align:center;font-size:10.5px;color:#A79C8D;line-height:1.5}
   .qrurl{margin:12px 0 0}
   .qrurl code{
     display:block;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10.5px;
@@ -2112,9 +2122,9 @@ async function psHandleFile(file) {
 boot();
 </script>
 <script src="qrcode.min.js?v=20261122e"></script>
-<script src="qr-tools.js?v=20261122e"></script>
+<script src="qr-tools.js?v=20261125a"></script>
 <script src="site-tools.js?v=20261122d"></script>
-<script src="i18n-data.js?v=20261124d"></script>
+<script src="i18n-data.js?v=20261125a"></script>
 <script src="i18n-pages.js?v=20261124d"></script>
 <script src="i18n-places.js?v=20261124e"></script>
 <script src="i18n.js?v=20261124d"></script>
