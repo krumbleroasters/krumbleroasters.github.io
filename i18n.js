@@ -200,6 +200,8 @@
       if (!store) { store = {}; origAttr.set(el, store); }
       if (store[a] == null) store[a] = base;
       var next = lang === "ko" ? null : (ATTR[norm(base)] ? pick(ATTR[norm(base)]) : null);
+      // 속성 사전에 없는 값(지도 핀의 title 등)은 문장·낱말 사전으로도 시도합니다.
+      if (next == null && lang !== "ko") next = translate(norm(base));
       var want = next == null ? base : next;
       if (cur !== want) el.setAttribute(a, want);
     }
