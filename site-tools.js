@@ -130,7 +130,7 @@
   var FIELDS = [
     { id: "frq-name", key: "name", label: "농장 · 워싱스테이션 이름", required: true, ph: "예: 나노 찰라 (Nano Challa)" },
     { id: "frq-country", key: "country", label: "국가", required: true, ph: "예: 에티오피아" },
-    { id: "frq-region", key: "region", label: "지역", required: true, ph: "예: 오로미아 짐마 존 게라 워레다" },
+    { id: "frq-region", key: "region", label: "지역", required: true, ph: "예: 오로미아 짐마 존 게라" },
     { id: "frq-detail", key: "detail", label: "품종 · 가공 · 고도 · 수상 내역 또는 참고 링크 (선택)", required: false, area: true,
       ph: "예: 원생종, 워시드, 1,900m, 2015 Taste of Harvest 2위 — https://..." },
     { id: "frq-who", key: "who", label: "요청자 · 로스터리명 (선택)", required: false, ph: "예: 크럼블로스터스" }
