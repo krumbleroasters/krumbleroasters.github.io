@@ -1074,7 +1074,7 @@ window.CI_I18N = (function () {
       "내 커피 기록 — 온커피로그": "My Coffee Log — ONCOFFEELOG||コーヒー記録 — ONCOFFEELOG",
       "내가 마신 커피를": "The coffee I've drunk,||飲んだコーヒーを",
       "지도에": "on a map||地図に",
-      "잔": "cups||杯",
+      "잔": " cups||杯",
       "마신 커피": "Cups drunk||飲んだコーヒー",
       "개국": " countries||か国",
       "방문한 국가": "Countries visited||訪れた国",
