@@ -939,6 +939,17 @@ function uiLang() {
     || document.documentElement.getAttribute("data-lang") || "ko";
 }
 
+function setLede(c) {
+  const el = $("#ledeSub");
+  if (!el || !c) return;
+  const l = uiLang();
+  el.textContent = l === "ja"
+    ? `韓国・日本に流通する生豆 ${c.beans.toLocaleString()}種 · ${c.places}か所の産地と農園`
+    : l === "en"
+      ? `${c.beans.toLocaleString()} green coffees traded in Korea and Japan · ${c.places} origins and farms`
+      : `국내·일본에 유통되는 생두 ${c.beans.toLocaleString()}종 · ${c.places}곳의 산지와 농장`;
+}
+
 /* 카탈로그 이름·설명은 한국어를 기본으로 두고, 일본 유통 생두처럼 언어별 표기가 있는 항목은 그 언어를 씁니다. */
 function beanName(b) {
   if (!b) return "";
@@ -1625,7 +1636,7 @@ async function boot() {
     await loadCatalog();
     buildIndex();
     const c = CAT.meta.counts;
-    $("#ledeSub").textContent = `국내·일본에 유통되는 생두 ${c.beans.toLocaleString()}종 · ${c.places}곳의 산지와 농장`;
+    setLede(c);
   } catch (e) {
     sheetEl.innerHTML = `<div class="empty"><h3>카탈로그를 불러오지 못했습니다</h3>
       <p>beans.json을 같은 폴더에 두고 웹 서버로 열어 주세요.<br><small>${esc(e.message)}</small></p></div>`;
@@ -1669,14 +1680,7 @@ document.addEventListener("ci:lang", () => {
   renderChips();
   drawPins();
   renderSheet();
-  const c = CAT.meta && CAT.meta.counts;
-  if (c && $("#ledeSub")) {
-    $("#ledeSub").textContent = uiLang() === "ko"
-      ? `국내·일본에 유통되는 생두 ${c.beans.toLocaleString()}종 · ${c.places}곳의 산지와 농장`
-      : (uiLang() === "ja"
-        ? `韓国・日本に流通する生豆 ${c.beans.toLocaleString()}種 · ${c.places}か所の産地と農園`
-        : `${c.beans.toLocaleString()} green coffees traded in Korea and Japan · ${c.places} origins and farms`);
-  }
+  setLede(CAT.meta && CAT.meta.counts);
 });
 
 /* =========================================================
