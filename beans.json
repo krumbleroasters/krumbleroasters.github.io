@@ -7,29 +7,29 @@
 "beans": 3113,
 "listings": 4195,
 "countries": 38,
-"places": 409,
+"places": 421,
 "regions": 224,
-"farms": 152,
+"farms": 164,
 "jpBeans": 292,
 "auctions": 421,
-"auctionPlaces": 113
+"auctionPlaces": 127
 },
 "precision": {
 "farm": 88,
-"region": 930,
-"village": 483,
-"country": 1612
+"region": 931,
+"village": 484,
+"country": 1610
 },
 "coordSource": "Photon/OpenStreetMap (ODbL), 일부 주요 산지는 관리 중심지 좌표로 보정",
 "profileFill": {
-"elevation": 361,
-"harvest": 344,
-"terroir": 344,
-"varieties": 404,
-"processes": 404,
-"flavorProfile": 344,
-"trend": 345,
-"story": 358
+"elevation": 375,
+"harvest": 360,
+"terroir": 360,
+"varieties": 416,
+"processes": 416,
+"flavorProfile": 360,
+"trend": 361,
+"story": 374
 },
 "profileFallback": 55,
 "process": {
@@ -788,7 +788,7 @@
 "precision": "country",
 "evidence": "Honduras, Honduras",
 "id": "C|온두라스",
-"beanCount": 98,
+"beanCount": 96,
 "elevation": "1,000~1,700m",
 "harvest": "11월~3월 (주 수확기)",
 "terroir": "중미 산맥 · 화산성 토양 · 산지별 큰 강수 차이",
@@ -12387,19 +12387,19 @@
 "story": "마르칼라는 라파스 주의 고지 마을로, 온두라스 커피의 대표 산지입니다. 1,200~1,700m의 화산성 토양과 서늘한 밤에서 카투라·카투아이·파카스를 기르고, 소농이 협동조합을 통해 랏을 선별해 유통합니다. 원산지 명칭 보호를 받는 이름답게 카라멜과 붉은 사과, 시트러스가 고르게 잡힙니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/1-honduras-6219595785-6873cfb239-b.jpg",
-"g": "https://live.staticflickr.com/6222/6219595785_6873cfb239_b.jpg",
+"m": "exact_origin",
+"f": "photos/hn-marcala.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Central_Park%2C_Marcala_Nov07_-_panoramio.jpg/960px-Central_Park%2C_Marcala_Nov07_-_panoramio.jpg",
 "c": {
-"ko": "온두라스 커피 체리 (국가 대표 사진)",
-"en": "Honduras coffee cherries (country representative photo)",
-"ja": "ホンジュラスのコーヒーチェリー（代表写真）"
+"ko": "마르칼라 중심 공원",
+"en": "Central park in Marcala",
+"ja": "マルカラの中央公園"
 },
-"a": "CIDSE - together for global justice",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0/",
-"s": "openverse",
-"p": "https://www.flickr.com/photos/8278288@N02/6219595785"
+"a": "Daniel chavez castro",
+"l": "CC BY 3.0",
+"lu": "https://creativecommons.org/licenses/by/3.0",
+"s": "commons",
+"p": "https://commons.wikimedia.org/wiki/File:Central_Park,_Marcala_Nov07_-_panoramio.jpg"
 }
 },
 {
@@ -15066,6 +15066,93 @@
 }
 },
 {
+"id": "F|온두라스|라 페냐",
+"kind": "farm",
+"country": "온두라스",
+"name": "라 페냐",
+"nameEn": "Finca La Peña",
+"nameJa": "ラ・ペーニャ農園",
+"lat": 15.0960559,
+"lon": -88.3673692,
+"precision": "region",
+"evidence": "산타바르바라 주 (농장 소재 시·마을 미확인) · 4대째 가족 농장",
+"source": "https://farmdirectory.cupofexcellence.org/listing/4-la-pena-honduras-2026-honduras-traditional/",
+"alias": [
+"라페냐",
+"la pena",
+"la peña",
+"finca la pena",
+"ラ・ペーニャ",
+"denilson madrid",
+"데닐손 마드리드"
+],
+"producer": "데닐손 아도니스 마드리드 메히아 (Denilson Adonis Madrid Mejía) — 4대째",
+"story": "온두라스 산타바르바라 산지의 농장입니다. 데닐손 아도니스 마드리드 메히아는 커피를 4대째 이어온 집안에서 태어나 사모라노 대학에서 농업공학을 전공한 뒤 아버지, 할아버지와 함께 일하며 스페셜티 커피로 눈을 돌렸습니다. 아버지의 경험과 자신의 새 아이디어를 겹쳐 2025년 컵 오브 엑설런스 전통 부문 2위, 2026년 4위(88.25)에 올랐고, 지금은 IHCAFE 커핑 학교의 최고 등급인 파이브 스타 커퍼를 준비하고 있습니다. 밭과 가공장을 직접 챙기면서 해외 바이어와의 거래도 맡습니다.",
+"varieties": "파카스 중심 · 파라이네마",
+"processes": "워시드 중심",
+"flavorProfile": "자두 · 살구 · 다크초콜릿 · 흑설탕, 라임 같은 산미",
+"harvest": "12월~4월 (산타바르바라 주 수확기)",
+"awards": [
+"Cup of Excellence Honduras 2026 4위 — 88.25점, 파카스 워시드",
+"Cup of Excellence Honduras 2025 전통 부문 2위"
+],
+"refs": [
+{
+"t": "농장·생산자 소개",
+"u": "https://farmdirectory.cupofexcellence.org/listing/4-la-pena-honduras-2026-honduras-traditional/"
+},
+{
+"t": "Cup of Excellence Honduras 2026 결과",
+"u": "https://allianceforcoffeeexcellence.org/honduras-2026/"
+}
+],
+"beanCount": 1,
+"auctions": [
+{
+"id": "coe-honduras-2026-la-pen-a-4",
+"competition": "CoE Honduras 2026 · Honduras Traditional",
+"year": 2026,
+"rank": "4",
+"score": 88.25,
+"farm": "La Peña",
+"variety": "Pacas",
+"process": "Washed",
+"buyers": [
+"허니커피"
+],
+"buyersEn": [
+"HoneyCoffee (Izaki Coffee Co., Ltd.)"
+],
+"buyersJa": [
+"ハニーコーヒー"
+],
+"joint": false,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/honduras-2026/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2026/"
+}
+],
+"auctionCount": 1,
+"terroir": "산타바르바라 주 산지 · 4대째 이어온 가족 농장 · 직접 가공",
+"trend": "농업공학을 전공한 4대째가 가공과 거래를 함께 맡으며 대회 성적을 끌어올리고 있습니다.",
+"profileLevel": "place",
+"photo": {
+"m": "exact_origin",
+"f": "photos/hn-pulper.jpg",
+"g": "https://live.staticflickr.com/3956/32329699924_1514e27758_b.jpg",
+"c": {
+"ko": "체리를 투입하는 펄퍼",
+"en": "Cherries going into the pulper",
+"ja": "チェリーを投入するパルパー"
+},
+"a": "Maren Barbee",
+"l": "CC BY 2.0",
+"lu": "https://creativecommons.org/licenses/by/2.0/",
+"s": "openverse",
+"p": "https://www.flickr.com/photos/27781737@N05/32329699924"
+}
+},
+{
 "kind": "farm",
 "country": "온두라스",
 "name": "라 피후다",
@@ -15112,6 +15199,95 @@
 "lu": "https://creativecommons.org/licenses/by/2.0/",
 "s": "openverse",
 "p": "https://www.flickr.com/photos/8278288@N02/6219595785"
+}
+},
+{
+"id": "F|온두라스|라스 아카시아스",
+"kind": "farm",
+"country": "온두라스",
+"name": "라스 아카시아스",
+"nameEn": "Finca Las Acacias",
+"nameJa": "ラス・アカシアス農園",
+"lat": 14.8747081,
+"lon": -88.0735528,
+"precision": "village",
+"evidence": "라스 베가스, 산타바르바라 주 · OSM Las Vegas · 여덟 만사나 가족 농장",
+"source": "https://farmdirectory.cupofexcellence.org/listing/3-las-acacias-honduras-2026-honduras-traditional/",
+"alias": [
+"라스아카시아스",
+"las acacias",
+"finca las acacias",
+"ラス・アカシアス",
+"evin moreno",
+"에빈 모레노",
+"evin joel"
+],
+"producer": "에빈 호엘 모레노 레예스 (Evin Joel Moreno Reyes) — 아내 알마 아이디 피네다 알바라도와 함께",
+"founded": "2013년 첫 출전 · 여덟 만사나로 확장",
+"story": "온두라스 산타바르바라 라스 베가스의 농장입니다. 에빈 호엘 모레노 레예스는 작은 밭 하나로 커피를 시작했고, 아내 알마가 해외에서 일해 번 돈으로 농장을 넓혀 나갔습니다. 2013년 컵 오브 엑설런스 12위에 오른 뒤 아내도 돌아와 함께 일했고, 지금은 여덟 만사나 밭에서 파카스를 중심으로 게이샤와 SL28을 기릅니다. 2026년 파카스 워시드로 3위(89.61)에 올랐고, 같은 해 엘 망고와 엘 리모 랏도 본선에 올랐습니다. 대회에서 받은 돈으로 건조기와 습식 가공장을 마련해 수확철에 일하는 사람들의 형편도 나아졌습니다.",
+"varieties": "파카스 중심 · 게이샤 · SL28",
+"processes": "워시드 중심",
+"flavorProfile": "살구 · 카라멜 쿠키 · 베르가못 · 로즈티, 붉은 사과의 산미",
+"harvest": "12월~4월 (산타바르바라 주 수확기)",
+"awards": [
+"Cup of Excellence Honduras 2026 3위 — 89.61점, 파카스 워시드",
+"Cup of Excellence Honduras 2025 10위 — 87.12점, 파카스 워시드",
+"Cup of Excellence Honduras 2013 12위"
+],
+"refs": [
+{
+"t": "농장·가족 소개",
+"u": "https://farmdirectory.cupofexcellence.org/listing/3-las-acacias-honduras-2026-honduras-traditional/"
+},
+{
+"t": "생산자 대회 기록",
+"u": "https://catastro.coffee/productor/evin-joel-moreno-reyes/"
+}
+],
+"beanCount": 1,
+"auctions": [
+{
+"id": "coe-honduras-2026-las-acacias-3",
+"competition": "CoE Honduras 2026",
+"year": 2026,
+"rank": "3",
+"score": 89.61,
+"farm": "Las Acacias",
+"variety": "Pacas",
+"process": "Washed",
+"buyers": [
+"타임스클럽"
+],
+"buyersEn": [
+"Times Club"
+],
+"buyersJa": [
+"Times Club"
+],
+"joint": true,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/honduras-2026/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2026/"
+}
+],
+"auctionCount": 1,
+"terroir": "라스 베가스 · 산타바르바라 산맥 · 파카스와 게이샤, SL28을 함께 기르는 여덟 만사나",
+"trend": "부부가 대회 상금으로 건조기와 습식 가공장을 마련하면서 랏 품질이 한 단계 올라섰습니다.",
+"profileLevel": "place",
+"photo": {
+"m": "exact_origin",
+"f": "photos/hn-washing-channel.jpg",
+"g": "https://live.staticflickr.com/2867/33172839895_07014e57b3_b.jpg",
+"c": {
+"ko": "선별 수로에서 체리를 씻는 모습",
+"en": "Washing cherries in the sorting channel",
+"ja": "選別水路でチェリーを洗う様子"
+},
+"a": "Maren Barbee",
+"l": "CC BY 2.0",
+"lu": "https://creativecommons.org/licenses/by/2.0/",
+"s": "openverse",
+"p": "https://www.flickr.com/photos/27781737@N05/33172839895"
 }
 },
 {
@@ -15163,32 +15339,6 @@
 "id": "R|온두라스|렘피라",
 "beanCount": 1,
 "auctions": [
-{
-"id": "coe-honduras-2026-la-cascada-1",
-"competition": "CoE Honduras 2026 · Honduras Traditional",
-"year": 2026,
-"rank": "1",
-"score": 89.82,
-"farm": "La Cascada",
-"variety": "Typica",
-"process": "Washed",
-"buyers": [
-"글리치커피",
-"마루카이"
-],
-"buyersEn": [
-"GLITCH COFFEE & ROASTERS",
-"Marukai"
-],
-"buyersJa": [
-"グリッチコーヒー",
-"マルカイ"
-],
-"joint": true,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/honduras-2026/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2026/"
-},
 {
 "id": "coe-honduras-2026-la-casa-5",
 "competition": "CoE Honduras 2026 · Honduras Traditional",
@@ -15282,7 +15432,7 @@
 "src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2024/"
 }
 ],
-"auctionCount": 5,
+"auctionCount": 4,
 "elevation": "1,200~1,700m",
 "harvest": "11월~3월 (주 수확기)",
 "terroir": "서부 국경 산지 · 엘살바도르 인접 · 화산성 토양",
@@ -15293,19 +15443,19 @@
 "story": "렘피라는 엘살바도르 국경에 가까운 서부 산지입니다. 1,200~1,700m의 화산성 토양에서 소농이 카투아이·카투라·파카스를 기르고, 해발이 높은 밭에서 천천히 익은 체리를 워시드로 가공합니다. 초콜릿과 붉은 과일, 둥근 단맛이 나오고 국경 산지의 소농 랏이 서서히 스페셜티 시장에 들어왔습니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/1-honduras-6219595785-6873cfb239-b.jpg",
-"g": "https://live.staticflickr.com/6222/6219595785_6873cfb239_b.jpg",
+"m": "exact_origin",
+"f": "photos/hn-san-andres-lempira2.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/San_Andres%2CLempira_5.JPG/960px-San_Andres%2CLempira_5.JPG",
 "c": {
-"ko": "온두라스 커피 체리 (국가 대표 사진)",
-"en": "Honduras coffee cherries (country representative photo)",
-"ja": "ホンジュラスのコーヒーチェリー（代表写真）"
+"ko": "산 안드레스(렘피라)의 마을",
+"en": "Village of San Andrés, Lempira",
+"ja": "サン・アンドレス（レンピラ）の集落"
 },
-"a": "CIDSE - together for global justice",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0/",
-"s": "openverse",
-"p": "https://www.flickr.com/photos/8278288@N02/6219595785"
+"a": "ETXEVERZ",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0",
+"s": "commons",
+"p": "https://commons.wikimedia.org/wiki/File:San_Andres,Lempira_5.JPG"
 }
 },
 {
@@ -15416,55 +15566,6 @@
 "beanCount": 1,
 "auctions": [
 {
-"id": "coe-honduras-2026-el-pimporro-1a",
-"competition": "CoE Honduras 2026 · Honduras Exotic",
-"year": 2026,
-"rank": "1A",
-"score": 90.5,
-"farm": "El Pimporro",
-"variety": "Geisha",
-"process": "Washed",
-"buyers": [
-"커피미업",
-"해월커피"
-],
-"buyersEn": [
-"Coffee Me Up",
-"Haewol Coffee"
-],
-"buyersJa": [
-"Coffee Me Up",
-"Haewol Coffee"
-],
-"joint": true,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/honduras-2026/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2026/"
-},
-{
-"id": "coe-honduras-2024-el-zapote-12",
-"competition": "CoE Honduras 2024",
-"year": 2024,
-"rank": "12",
-"score": 88.54,
-"farm": "El Zapote",
-"variety": "Geisha",
-"process": "Washed",
-"buyers": [
-"아아아아아아콩볶는곳"
-],
-"buyersEn": [
-"アアアアアア豆焙所"
-],
-"buyersJa": [
-"アアアアアア豆焙所"
-],
-"joint": true,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/honduras-2024/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2024/"
-},
-{
 "id": "coe-honduras-2024-el-durazno-18",
 "competition": "CoE Honduras 2024",
 "year": 2024,
@@ -15486,58 +15587,9 @@
 "level": "region",
 "src": "https://allianceforcoffeeexcellence.org/honduras-2024/",
 "src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2024/"
-},
-{
-"id": "coe-honduras-2024-los-pinos-3a",
-"competition": "CoE Honduras 2024",
-"year": 2024,
-"rank": "3A",
-"score": 90.71,
-"farm": "Los Pinos",
-"variety": "Geisha",
-"process": "Washed",
-"buyers": [
-"페블커피",
-"송도커피"
-],
-"buyersEn": [
-"Pebble Coffee",
-"Songdo Coffee"
-],
-"buyersJa": [
-"Pebble Coffee",
-"Songdo Coffee"
-],
-"joint": false,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/honduras-2024/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2024/"
-},
-{
-"id": "coe-honduras-2024-las-moras-8",
-"competition": "CoE Honduras 2024",
-"year": 2024,
-"rank": "8",
-"score": 89.82,
-"farm": "Las Moras",
-"variety": "Geisha",
-"process": "Washed",
-"buyers": [
-"노지커피"
-],
-"buyersEn": [
-"NOZY COFFEE"
-],
-"buyersJa": [
-"ノジコーヒー"
-],
-"joint": false,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/honduras-2024/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2024/"
 }
 ],
-"auctionCount": 5,
+"auctionCount": 1,
 "elevation": "1,500~1,800m",
 "harvest": "11월~3월 (주 수확기)",
 "terroir": "서부 고지 · 렘피라 인접 · 서늘한 기후",
@@ -22833,58 +22885,46 @@
 }
 },
 {
-"id": "F|온두라스|로스 프리모스",
+"id": "F|온두라스|라 로마",
 "kind": "farm",
 "country": "온두라스",
-"name": "로스 프리모스",
-"nameEn": "Los Primos",
-"nameJa": "Los Primos",
-"lat": 15.09606,
-"lon": -88.36737,
-"precision": "region",
-"evidence": "Santa Barbara · Santa Bárbara · OSM/Photon",
-"source": "https://www.openstreetmap.org/search?query=Los+Primos",
+"name": "라 로마",
+"nameEn": "Finca La Loma",
+"nameJa": "ラ・ロマ農園",
+"lat": 14.9216741,
+"lon": -88.2364439,
+"precision": "village",
+"evidence": "산타바르바라 시 · OSM Santa Bárbara · 1,550m",
+"source": "https://www.einpresswire.com/article/927229610/spirit-origin-wins-top-lot-at-record-breaking-honduras-cup-of-excellence-for-second-straight-year",
 "alias": [
-"Los Primos"
+"라로마",
+"la loma",
+"finca la loma",
+"ラ・ロマ",
+"ottoniel sagastume",
+"오토니엘 사가스투메",
+"sagastume"
 ],
-"producer": "Manuel De Jesus Vallecillo Fernandez",
-"varieties": "파카스",
-"processes": "워시드",
+"producer": "오토니엘 사가스투메 피네다 (Ottoniel Sagastume Pineda)",
+"elevation": "1,550m",
+"story": "온두라스 산타바르바라의 해발 1,550m 농장입니다. 오토니엘 사가스투메 피네다는 17년째 커피를 기르며 파라이네마를 그늘 아래서 세심하게 관리해 왔습니다. 2026년 컵 오브 엑설런스 파라이네마 카트라차 부문에서 내추럴 랏으로 1위(89.14)에 올랐고, 이 랏은 온두라스 로아탄의 로스터가 낙찰받아 원산지에서 직접 볶습니다. 비가 많고 길이 험한 조건을 견디려 직접 장비를 들였고, 농장 일자리로 마을 사람들을 먹여 살립니다. IHCAFE가 병해를 견디도록 만든 파라이네마가 국제 품종들을 이긴 사례로 기록됐습니다.",
+"varieties": "파라이네마 중심",
+"processes": "내추럴",
+"flavorProfile": "망고 · 자두 · 패션프루트 · 베르가못, 흑설탕과 시나몬의 단맛",
+"harvest": "12월~4월 (산타바르바라 주 수확기)",
+"awards": [
+"Cup of Excellence Honduras 2026 파라이네마 카트라차 부문 1위 — 89.14점, 파라이네마 내추럴"
+],
 "refs": [
 {
-"t": "경매 기록",
-"u": "https://allianceforcoffeeexcellence.org/honduras-2024/"
-}
-],
-"beanCount": 0,
-"profileLevel": "place",
-"photo": {
-"m": "country_fallback",
-"f": "photos/1-honduras-6219595785-6873cfb239-b.jpg",
-"g": "https://live.staticflickr.com/6222/6219595785_6873cfb239_b.jpg",
-"c": {
-"ko": "온두라스 커피 체리 (국가 대표 사진)",
-"en": "Honduras coffee cherries (country representative photo)",
-"ja": "ホンジュラスのコーヒーチェリー（代表写真）"
-},
-"a": "CIDSE - together for global justice",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0/",
-"s": "openverse",
-"p": "https://www.flickr.com/photos/8278288@N02/6219595785"
-}
+"t": "농장·생산자 소개",
+"u": "https://farmdirectory.cupofexcellence.org/listing/1-la-loma-honduras-2026-parainema-catracha/"
 },
 {
-"kind": "region",
-"country": "온두라스",
-"name": "산타바르바라",
-"nameEn": "Santa Bárbara",
-"lat": 15.09606,
-"lon": -88.36737,
-"precision": "region",
-"evidence": "Santa Bárbara 주(州) 중심 · OSM/Photon",
-"source": "https://www.openstreetmap.org/search?query=Santa%20B%C3%A1rbara%2C%20Honduras",
-"id": "R|온두라스|산타바르바라",
+"t": "낙찰·농장 보도",
+"u": "https://www.einpresswire.com/article/927229610/spirit-origin-wins-top-lot-at-record-breaking-honduras-cup-of-excellence-for-second-straight-year"
+}
+],
 "beanCount": 0,
 "auctions": [
 {
@@ -22906,33 +22946,179 @@
 "シュラブコーヒー"
 ],
 "joint": true,
-"level": "region",
+"level": "farm",
 "src": "https://allianceforcoffeeexcellence.org/honduras-2026/",
 "src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2026/"
+}
+],
+"auctionCount": 1,
+"terroir": "산타바르바라 시 산지 · 그늘 재배 · 비가 많고 길이 험한 조건",
+"trend": "온두라스가 만든 품종 파라이네마가 국제 품종을 이긴 사례로, 파라이네마 랏의 수요가 늘었습니다.",
+"profileLevel": "place",
+"photo": {
+"m": "exact_origin",
+"f": "photos/hn-natural-drying.jpg",
+"g": "https://live.staticflickr.com/2932/33045121771_5b610e2846_b.jpg",
+"c": {
+"ko": "파티오에 널어 말리는 내추럴 체리",
+"en": "Natural-process cherries drying on a patio",
+"ja": "パティオで乾燥中のナチュラルチェリー"
+},
+"a": "Maren Barbee",
+"l": "CC BY 2.0",
+"lu": "https://creativecommons.org/licenses/by/2.0/",
+"s": "openverse",
+"p": "https://www.flickr.com/photos/27781737@N05/33045121771"
+}
 },
 {
-"id": "coe-honduras-2026-patepluma-10",
-"competition": "CoE Honduras 2026 · Honduras Traditional",
-"year": 2026,
-"rank": "10",
-"score": 87.46,
-"farm": "Patepluma",
+"id": "F|온두라스|라 몬타냐",
+"kind": "farm",
+"country": "온두라스",
+"name": "라 몬타냐",
+"nameEn": "Finca La Montaña",
+"nameJa": "ラ・モンターニャ農園",
+"lat": 14.8747081,
+"lon": -88.0735528,
+"precision": "village",
+"evidence": "라스 베가스, 산타바르바라 주 · OSM Las Vegas · 1,750m",
+"source": "https://farmdirectory.cupofexcellence.org/listing/9-la-montana-honduras-2024/",
+"alias": [
+"라몬타냐",
+"la montana",
+"la montaña",
+"finca la montana",
+"ラ・モンターニャ",
+"nery martinez",
+"네리 마르티네스"
+],
+"producer": "네리 로날도 마르티네스 알바라도 (Nery Ronaldo Martínez Alvarado) — 형 에드윈 마르티네스 알바라도와 공동 운영",
+"founded": "2015년 무렵 커피밭 조성 (2024년 기준 9년 된 밭)",
+"elevation": "1,750m",
+"story": "온두라스 산타바르바라 라스 베가스의 농장입니다. 네리 로날도 마르티네스 알바라도는 형 에드윈과 함께 0.85에이커 남짓한 밭에서 시작해 9년 만에 대회 상위권까지 올랐습니다. 마을에 컵 오브 엑설런스 수상 농가가 여럿 있어 자극을 받았고, IHCAFE 기술진이 권한 가지치기와 관리법을 그대로 따라 수확량과 품질을 함께 끌어올렸습니다. 2024년 파카스 워시드로 9위(89.29)에 올랐습니다.",
+"varieties": "파카스 중심",
+"processes": "워시드 중심",
+"flavorProfile": "블랙베리 · 자두 · 흑설탕 · 캐모마일, 부드러운 시트러스 산미",
+"harvest": "12월~4월 (산타바르바라 주 수확기)",
+"awards": [
+"Cup of Excellence Honduras 2024 9위 — 89.29점, 파카스 워시드"
+],
+"refs": [
+{
+"t": "농장·생산자 소개",
+"u": "https://farmdirectory.cupofexcellence.org/listing/9-la-montana-honduras-2024/"
+},
+{
+"t": "Cup of Excellence Honduras 2024 결과",
+"u": "https://allianceforcoffeeexcellence.org/honduras-2024/"
+}
+],
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-honduras-2024-la-montan-a-9",
+"competition": "CoE Honduras 2024",
+"year": 2024,
+"rank": "9",
+"score": 89.29,
+"farm": "La Montaña",
 "variety": "Pacas",
 "process": "Washed",
 "buyers": [
-"호누 카토커피"
+"카사이커피",
+"커피카운티"
 ],
 "buyersEn": [
-"honu Kato Coffee Co., Ltd."
+"Kasai Coffee Co., Ltd.",
+"Coffee County"
 ],
 "buyersJa": [
-"ホーヌ加藤珈琲店"
+"笠井珈琲",
+"コーヒーカウンティ"
 ],
-"joint": false,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/honduras-2026/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2026/"
+"joint": true,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/honduras-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2024/"
+}
+],
+"auctionCount": 1,
+"terroir": "라스 베가스 · 산타바르바라 산맥 · 대회 수상 농가가 모인 마을의 중간 고도 밭",
+"trend": "IHCAFE 관리법을 그대로 따라 어린 밭에서도 수확량과 품질을 함께 끌어올린 사례입니다.",
+"profileLevel": "place",
+"photo": {
+"m": "exact_origin",
+"f": "photos/hn-santa-barbara-town.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Santa_B%C3%A1rbara%2C_Honduras_2012_01.jpg/960px-Santa_B%C3%A1rbara%2C_Honduras_2012_01.jpg",
+"c": {
+"ko": "산타바르바라 주의 마을 풍경",
+"en": "Town in the Santa Bárbara highlands",
+"ja": "サンタ・バルバラ県の町並み"
 },
+"a": "Mario A. Torres",
+"l": "CC BY-SA 2.0",
+"lu": "https://creativecommons.org/licenses/by-sa/2.0",
+"s": "commons",
+"p": "https://commons.wikimedia.org/wiki/File:Santa_B%C3%A1rbara,_Honduras_2012_01.jpg"
+}
+},
+{
+"id": "F|온두라스|라 살사",
+"kind": "farm",
+"country": "온두라스",
+"name": "라 살사",
+"nameEn": "Finca La Salsa",
+"nameJa": "ラ・サルサ農園",
+"lat": 14.9121311,
+"lon": -88.0901691,
+"precision": "village",
+"evidence": "라스 베가스 엘 세드랄 마을 · OSM El Cedral · 1,680~1,730m",
+"source": "https://allianceforcoffeeexcellence.org/legends-2025/",
+"alias": [
+"라살사",
+"la salsa",
+"finca la salsa",
+"ラ・サルサ",
+"benjamin paz",
+"benjamín paz",
+"벤하민 파스",
+"베냐민 파스",
+"파스 무뇨스"
+],
+"producer": "베냐민 파스 무뇨스 (Benjamín Paz Muñoz)",
+"founded": "2014년 말 땅 매입 · 2018년 7월 게이샤 식재",
+"elevation": "1,680~1,730m",
+"story": "온두라스 산타바르바라 라스 베가스 엘 세드랄의 작은 농장입니다. 베냐민 파스는 2014년 말 땅을 사 두고 좋은 종자가 구해질 때까지 기다렸다가 2018년 7월에 게이샤를 심었습니다. 1.4헥타르 남짓한 두 만사나에 게이샤와 SL28을 중심으로 오렌지 버번, 옐로 티피카, K7, 에티오피아 품종을 함께 기릅니다. 2018년 첫 출전에 14위, 2021년 5위, 2022년 1위, 2023년 5위, 2024년 다시 1위에 오르며 온두라스 대회의 기준을 세웠고, 2026년에는 내추럴 게이샤로 2위(90.46)와 대통령상을 받았습니다. 가족이 운영하는 수출 회사를 통해 산타바르바라의 다른 농가도 해외 바이어와 잇고, 자기 종자와 발효법을 나눠 2026년에만 일곱 농가가 옥션에 오르도록 도왔습니다.",
+"varieties": "게이샤 · SL28 중심 · 오렌지 버번 · 옐로 티피카 · K7 · 에티오피아 품종",
+"processes": "워시드 중심 · 내추럴",
+"flavorProfile": "재스민 · 만다린 · 백도 · 열대과일, 깨끗하고 긴 여운",
+"harvest": "1월~6월 (주 수확기)",
+"awards": [
+"Cup of Excellence Honduras 2024 1위 — 91.21점, 게이샤 워시드 (대통령상)",
+"Cup of Excellence Honduras 2022 1위",
+"Cup of Excellence Honduras 2026 엑조틱 부문 2위 — 90.46점, 게이샤 내추럴 (대통령상)",
+"2018년 14위 · 2021년 5위 · 2023년 5위"
+],
+"refs": [
+{
+"t": "농장 인터뷰·수상 기록",
+"u": "https://allianceforcoffeeexcellence.org/legends-2025/"
+},
+{
+"t": "농장 소개(고도·품종)",
+"u": "https://projectorigin.coffee/wp-content/uploads/2024/10/HON%5FBenjaminPaz%5FLaSalsa%5F2024.pdf"
+},
+{
+"t": "Cup of Excellence Honduras 2024 결과",
+"u": "https://allianceforcoffeeexcellence.org/honduras-2024/"
+},
+{
+"t": "현지 보도(수상)",
+"u": "https://honduprensa.com/benjamin-paz-munoz-gana-la-taza-de-excelencia-2024/"
+}
+],
+"beanCount": 0,
+"auctions": [
 {
 "id": "coe-honduras-2026-la-salsa-2",
 "competition": "CoE Honduras 2026 · Honduras Exotic",
@@ -22952,6 +23138,529 @@
 "Coffee Me Up"
 ],
 "joint": true,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/honduras-2026/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2026/"
+}
+],
+"auctionCount": 1,
+"terroir": "라스 베가스 엘 세드랄 · 산타바르바라 산맥의 가파른 경사 · 소규모 밭을 촘촘히 관리",
+"trend": "산타바르바라 대회 출전 농가를 이끄는 농장으로, 종자와 발효법을 이웃에 나눠 지역 전체의 품질을 끌어올렸습니다.",
+"profileLevel": "place",
+"photo": {
+"m": "exact_origin",
+"f": "photos/hn-cherries-ripe.jpg",
+"g": "https://live.staticflickr.com/3859/33045115821_689b0fe3cd_b.jpg",
+"c": {
+"ko": "산타바르바라 지대에서 익은 커피 체리",
+"en": "Ripe coffee cherries in the Santa Bárbara highlands",
+"ja": "サンタ・バルバラ高地の熟したコーヒーチェリー"
+},
+"a": "Maren Barbee",
+"l": "CC BY 2.0",
+"lu": "https://creativecommons.org/licenses/by/2.0/",
+"s": "openverse",
+"p": "https://www.flickr.com/photos/27781737@N05/33045115821"
+}
+},
+{
+"id": "F|온두라스|라 카스카다",
+"kind": "farm",
+"country": "온두라스",
+"name": "라 카스카다",
+"nameEn": "Finca La Cascada",
+"nameJa": "ラ・カスカダ農園",
+"lat": 14.2217534,
+"lon": -88.5507877,
+"precision": "village",
+"evidence": "산 안드레스, 렘피라 · OSM San Andrés · 1,700m",
+"source": "https://farmdirectory.cupofexcellence.org/listing/1-la-cascada-honduras-2026-honduras-traditional/",
+"alias": [
+"라카스카다",
+"la cascada",
+"finca la cascada",
+"ラ・カスカダ",
+"edras guevara",
+"에드라스 게바라",
+"edras nehemias"
+],
+"producer": "에드라스 네에미아스 게바라 무뇨스 (Edras Nehemías Guevara Muñoz)",
+"founded": "2006년부터 독립 생산자로 재배",
+"elevation": "1,700m",
+"story": "온두라스 렘피라 산 안드레스의 해발 1,700m 농장입니다. 에드라스 네에미아스 게바라 무뇨스는 44살로 20년째 커피를 만들며 2006년부터 가족과 함께 독립 생산자로 일해 왔습니다. 옐로 카투아이, 카투라, 버번, 아나카페 14, 티피카를 함께 기르고 2026년 컵 오브 엑설런스 전통 부문에서 티피카 워시드로 1위(89.82)에 올랐습니다. 품종과 고도, 기후가 맞아떨어질 때 좋은 컵이 나온다고 말하고, 비가 많고 길이 험한 어려움은 가족과 이웃의 도움으로 견뎌 왔습니다.",
+"varieties": "티피카 중심 · 옐로 카투아이 · 카투라 · 버번 · 아나카페 14",
+"processes": "워시드",
+"flavorProfile": "블러드 오렌지 · 꿀 · 바나나 · 살구, 캐모마일과 갈색 향신료",
+"harvest": "11월~3월 (렘피라 주 수확기)",
+"awards": [
+"Cup of Excellence Honduras 2026 전통 부문 1위 — 89.82점, 티피카 워시드"
+],
+"refs": [
+{
+"t": "농장·생산자 소개",
+"u": "https://farmdirectory.cupofexcellence.org/listing/1-la-cascada-honduras-2026-honduras-traditional/"
+},
+{
+"t": "현지 보도(고도·부문)",
+"u": "https://www.latribuna.hn/2026/06/05/premiacion-de-la-xxii-edicion-de-taza-de-excelencia-honduras/"
+}
+],
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-honduras-2026-la-cascada-1",
+"competition": "CoE Honduras 2026 · Honduras Traditional",
+"year": 2026,
+"rank": "1",
+"score": 89.82,
+"farm": "La Cascada",
+"variety": "Typica",
+"process": "Washed",
+"buyers": [
+"글리치커피",
+"마루카이"
+],
+"buyersEn": [
+"GLITCH COFFEE & ROASTERS",
+"Marukai"
+],
+"buyersJa": [
+"グリッチコーヒー",
+"マルカイ"
+],
+"joint": true,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/honduras-2026/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2026/"
+}
+],
+"auctionCount": 1,
+"terroir": "산 안드레스 · 렘피라 산지 · 길이 끊긴 마을에서 가족이 함께 일구는 밭",
+"trend": "렘피라 산지에서 전통 품종 티피카로 대회 1위를 낸 드문 사례입니다.",
+"profileLevel": "place",
+"photo": {
+"m": "exact_origin",
+"f": "photos/hn-san-andres-lempira.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/San_Andres%2CLempira_3.JPG/960px-San_Andres%2CLempira_3.JPG",
+"c": {
+"ko": "산 안드레스(렘피라)의 산자락",
+"en": "Hills around San Andrés, Lempira",
+"ja": "サン・アンドレス（レンピラ）の山あい"
+},
+"a": "ETXEVERZ",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0",
+"s": "commons",
+"p": "https://commons.wikimedia.org/wiki/File:San_Andres,Lempira_3.JPG"
+}
+},
+{
+"id": "F|온두라스|라스 모라스",
+"kind": "farm",
+"country": "온두라스",
+"name": "라스 모라스",
+"nameEn": "Finca Las Moras",
+"nameJa": "ラス・モラス農園",
+"lat": 14.2556126,
+"lon": -88.2260673,
+"precision": "region",
+"evidence": "인티부카 주 (농장 소재 시·마을 미확인) · 1,733m",
+"source": "https://farmdirectory.cupofexcellence.org/listing/8-las-moras-honduras-2024/",
+"alias": [
+"라스모라스",
+"las moras",
+"finca las moras",
+"ラス・モラス",
+"antonio dominguez",
+"안토니오 도밍게스"
+],
+"producer": "안토니오 도밍게스 곤살레스 (Antonio Domínguez González)",
+"founded": "2006년 땅 매입 · 2010년 스페셜티 전환",
+"elevation": "1,733m",
+"story": "온두라스 인티부카의 해발 1,733m 농장입니다. 안토니오 도밍게스 곤살레스는 아버지의 커피밭을 돕다 미국에서 일해 모은 돈으로 2006년 자기 땅을 샀습니다. 2010년 스페셜티 커피로 바꾸고 2014년 컵 오브 엑설런스 4위에 오른 뒤로 꾸준히 출전했고, 2024년 게이샤 워시드로 8위(89.82)에 올랐습니다.",
+"varieties": "게이샤 중심",
+"processes": "워시드",
+"flavorProfile": "백도 · 만다린 · 자스민 · 홍차, 키위와 살구의 산미",
+"harvest": "11월~3월 (인티부카 주 수확기)",
+"awards": [
+"Cup of Excellence Honduras 2024 8위 — 89.82점, 게이샤 워시드",
+"Cup of Excellence Honduras 2014 4위"
+],
+"refs": [
+{
+"t": "농장·생산자 소개",
+"u": "https://farmdirectory.cupofexcellence.org/listing/8-las-moras-honduras-2024/"
+},
+{
+"t": "Cup of Excellence Honduras 2024 결과",
+"u": "https://allianceforcoffeeexcellence.org/honduras-2024/"
+}
+],
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-honduras-2024-las-moras-8",
+"competition": "CoE Honduras 2024",
+"year": 2024,
+"rank": "8",
+"score": 89.82,
+"farm": "Las Moras",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"노지커피"
+],
+"buyersEn": [
+"NOZY COFFEE"
+],
+"buyersJa": [
+"ノジコーヒー"
+],
+"joint": false,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/honduras-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2024/"
+}
+],
+"auctionCount": 1,
+"terroir": "인티부카 주 산지 · 미국에서 일해 모은 돈으로 산 밭 · 게이샤가 잘 맞는 고도",
+"trend": "게이샤를 들인 뒤 다시 대회 본선에 올라, 품종 선택이 컵을 바꾼 사례로 꼽힙니다.",
+"profileLevel": "place",
+"photo": {
+"m": "exact_origin",
+"f": "photos/hn-parchment-washing.jpg",
+"g": "https://live.staticflickr.com/2928/32357408153_747653760d_b.jpg",
+"c": {
+"ko": "수로에서 파치먼트를 씻는 모습",
+"en": "Washing parchment in the channel",
+"ja": "水路でパーチメントを洗う様子"
+},
+"a": "Maren Barbee",
+"l": "CC BY 2.0",
+"lu": "https://creativecommons.org/licenses/by/2.0/",
+"s": "openverse",
+"p": "https://www.flickr.com/photos/27781737@N05/32357408153"
+}
+},
+{
+"id": "F|온두라스|라스 비르히니아스",
+"kind": "farm",
+"country": "온두라스",
+"name": "라스 비르히니아스",
+"nameEn": "Finca Las Virginias",
+"nameJa": "ラス・ビルヒニアス農園",
+"lat": 14.8747081,
+"lon": -88.0735528,
+"precision": "village",
+"evidence": "라스 베가스, 산타바르바라 주 · OSM Las Vegas · 1,650m",
+"source": "https://farmdirectory.cupofexcellence.org/listing/5-las-virginias-honduras-2024/",
+"alias": [
+"라스비르히니아스",
+"las virginias",
+"finca las virginias",
+"ラス・ビルヒニアス",
+"dolmin moreno",
+"돌민 모레노"
+],
+"producer": "돌민 호수에 모레노 알바라도 (Dolmin Josué Moreno Alvarado) — 3대째",
+"elevation": "1,650m",
+"story": "온두라스 산타바르바라 라스 베가스의 농장입니다. 돌민 호수에 모레노 알바라도는 3대째 커피를 기르는 집안에서 스페셜티 커피를 시작한 2대째입니다. 산타바르바라의 토양과 기후, 해발 1,650m 고도를 자기 커피의 바탕으로 꼽고, 2024년 컵 오브 엑설런스에 게이샤 워시드로 5위(90.04)에 오르며 대통령상을 받았습니다. 앞으로 가공 방식을 더 실험해 컵을 다듬겠다는 계획을 밝혔습니다. 2026년 대회에도 같은 이름의 농장이 라 파스에서 나왔는데 생산자가 달라 다른 농장입니다.",
+"varieties": "게이샤 중심",
+"processes": "워시드 중심",
+"flavorProfile": "자스민 · 백도 · 살구 · 리치, 검은 건포도와 캔디 애플의 산미",
+"harvest": "12월~4월 (산타바르바라 주 수확기)",
+"awards": [
+"Cup of Excellence Honduras 2024 5위 — 90.04점, 게이샤 워시드 (대통령상)"
+],
+"refs": [
+{
+"t": "농장·생산자 소개",
+"u": "https://farmdirectory.cupofexcellence.org/listing/5-las-virginias-honduras-2024/"
+},
+{
+"t": "Cup of Excellence Honduras 2024 결과",
+"u": "https://allianceforcoffeeexcellence.org/honduras-2024/"
+}
+],
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-honduras-2024-las-virginias-5",
+"competition": "CoE Honduras 2024",
+"year": 2024,
+"rank": "5",
+"score": 90.04,
+"farm": "Las Virginias",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"커피미업"
+],
+"buyersEn": [
+"Coffee Me Up"
+],
+"buyersJa": [
+"Coffee Me Up"
+],
+"joint": true,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/honduras-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2024/"
+}
+],
+"auctionCount": 1,
+"terroir": "라스 베가스 · 산타바르바라 산맥의 비옥한 토양과 서늘한 밤",
+"trend": "2024년 이후 가공 실험을 늘려 컵을 더 다듬고 있습니다.",
+"profileLevel": "place",
+"photo": {
+"m": "exact_origin",
+"f": "photos/hn-drying-greenhouse.jpg",
+"g": "https://live.staticflickr.com/612/33016301702_cc97b8f23f_b.jpg",
+"c": {
+"ko": "비닐 온실 안의 건조대",
+"en": "Raised drying beds inside a plastic greenhouse",
+"ja": "ビニールハウス内の乾燥棚"
+},
+"a": "Maren Barbee",
+"l": "CC BY 2.0",
+"lu": "https://creativecommons.org/licenses/by/2.0/",
+"s": "openverse",
+"p": "https://www.flickr.com/photos/27781737@N05/33016301702"
+}
+},
+{
+"id": "F|온두라스|로스 프리모스",
+"kind": "farm",
+"country": "온두라스",
+"name": "로스 프리모스",
+"nameEn": "Finca Los Primos",
+"nameJa": "ロス・プリモス農園",
+"lat": 15.0960559,
+"lon": -88.3673692,
+"precision": "region",
+"evidence": "산타바르바라 주 (농장 소재 시·마을 미확인) · 1,800m",
+"source": "https://farmdirectory.cupofexcellence.org/listing/6-los-primos-honduras-2024/",
+"alias": [
+"로스프리모스",
+"los primos",
+"finca los primos",
+"ロス・プリモス",
+"manuel vallecillo",
+"마누엘 바예시요",
+"vallecillo"
+],
+"producer": "마누엘 데 헤수스 바예시요 페르난데스 (Manuel de Jesús Vallecillo Fernández) — 처남 하이메 무뇨스와 공동 운영",
+"founded": "1998년 커피 생산 시작 · 2010년 로스 프리모스 인수",
+"elevation": "1,800m",
+"story": "온두라스 산타바르바라의 농장입니다. 마누엘 데 헤수스 바예시요 페르난데스는 처가의 권유로 커피를 배워 1998년부터 커피를 만들기 시작했고, 2010년 처남 하이메 무뇨스와 함께 '로스 프리모스(사촌들)'라는 이름의 농장을 넘겨받아 스페셜티로 전환했습니다. 처음 3년은 길이 험해 노새로 체리를 실어 내려보내야 했고, 지금은 친환경 인증을 받아 관리하며 수확철에 마을 여성들을 고용합니다. 주 품종은 파카스와 카투아이이고 게이샤와 파라이네마도 시험 재배합니다. 2024년 파카스 워시드로 6위(90.00), 2026년에도 7위(87.93)에 올랐습니다.",
+"varieties": "파카스 · 카투아이 중심 · 게이샤 · 파라이네마 시험 재배",
+"processes": "워시드 중심",
+"flavorProfile": "블랙베리 · 백도 · 흑설탕 · 시트러스, 견과의 고소한 단맛",
+"harvest": "12월~4월 (산타바르바라 주 수확기)",
+"awards": [
+"Cup of Excellence Honduras 2024 6위 — 90.00점, 파카스 워시드 (대통령상)",
+"Cup of Excellence Honduras 2026 7위 — 87.93점, 파카스 워시드"
+],
+"refs": [
+{
+"t": "농장·가족 소개",
+"u": "https://farmdirectory.cupofexcellence.org/listing/6-los-primos-honduras-2024/"
+},
+{
+"t": "Cup of Excellence Honduras 2026 결과",
+"u": "https://allianceforcoffeeexcellence.org/honduras-2026/"
+}
+],
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-honduras-2026-los-primos-7",
+"competition": "CoE Honduras 2026 · Honduras Traditional",
+"year": 2026,
+"rank": "7",
+"score": 87.93,
+"farm": "Los Primos",
+"variety": "Pacas",
+"process": "Washed",
+"buyers": [
+"카사이커피"
+],
+"buyersEn": [
+"Kasai Coffee Co., Ltd."
+],
+"buyersJa": [
+"笠井珈琲"
+],
+"joint": true,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/honduras-2026/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2026/"
+},
+{
+"id": "coe-honduras-2024-los-primos-6",
+"competition": "CoE Honduras 2024",
+"year": 2024,
+"rank": "6",
+"score": 90.0,
+"farm": "Los Primos",
+"variety": "Pacas",
+"process": "Washed",
+"buyers": [
+"파디에사사구리"
+],
+"buyersEn": [
+"Fadie Sasaguri Roastery"
+],
+"buyersJa": [
+"ファディエ笹栗"
+],
+"joint": false,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/honduras-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2024/"
+}
+],
+"auctionCount": 2,
+"terroir": "산타바르바라 주 외곽 산지 · 길이 험해 체리를 노새로 옮기던 오지 · 친환경 인증 재배",
+"trend": "사촌들이 함께 운영하는 농장으로, 수확철에 마을 여성들을 고용하며 지역 일자리를 만들어 왔습니다.",
+"profileLevel": "place",
+"photo": {
+"m": "exact_origin",
+"f": "photos/hn-drying-patio.jpg",
+"g": "https://live.staticflickr.com/625/33133291666_56616ae51a_b.jpg",
+"c": {
+"ko": "파티오에서 파치먼트를 고르는 모습",
+"en": "Raking parchment on a drying patio",
+"ja": "パティオでパーチメントを攪拌する様子"
+},
+"a": "Maren Barbee",
+"l": "CC BY 2.0",
+"lu": "https://creativecommons.org/licenses/by/2.0/",
+"s": "openverse",
+"p": "https://www.flickr.com/photos/27781737@N05/33133291666"
+}
+},
+{
+"id": "F|온두라스|로스 피노스",
+"kind": "farm",
+"country": "온두라스",
+"name": "로스 피노스",
+"nameEn": "Finca Los Pinos",
+"nameJa": "ロス・ピノス農園",
+"lat": 14.3705898,
+"lon": -87.990137,
+"precision": "village",
+"evidence": "마사과라, 인티부카 · OSM Masaguara · 1,770m",
+"source": "https://farmdirectory.cupofexcellence.org/listing/3-los-pinos-honduras-2024/",
+"alias": [
+"로스피노스",
+"los pinos",
+"finca los pinos",
+"ロス・ピノス",
+"joaquina montoya",
+"호아키나 몬토야"
+],
+"producer": "호아키나 몬토야 알바라도 (Joaquina Montoya Alvarado)",
+"elevation": "1,770m",
+"story": "온두라스 인티부카 마사과라의 해발 1,770m 농장입니다. 호아키나 몬토야 알바라도는 35년째 커피를 길러 왔고, 남편과 함께 일군 돈으로 농장을 직접 사들였습니다. 2024년 처음 컵 오브 엑설런스에 출전해 게이샤 워시드로 3위(90.71)에 오르며 대통령상을 받았습니다. 큰 대회에 나갈 생각이 없던 것을 커피를 보러 온 바이어와 커퍼가 품질을 확인해 주고 권하면서 마음을 바꾼 경우입니다.",
+"varieties": "게이샤 중심",
+"processes": "워시드 중심",
+"flavorProfile": "자스민 · 백도 · 그린애플 · 파네라, 맑은 시트러스 산미",
+"harvest": "11월~3월 (인티부카 주 수확기)",
+"awards": [
+"Cup of Excellence Honduras 2024 3A·3B위 — 90.71점, 게이샤 워시드 (대통령상)"
+],
+"refs": [
+{
+"t": "농장·생산자 소개",
+"u": "https://farmdirectory.cupofexcellence.org/listing/3-los-pinos-honduras-2024/"
+},
+{
+"t": "현지 보도(수상)",
+"u": "https://honduprensa.com/benjamin-paz-munoz-gana-la-taza-de-excelencia-2024/"
+}
+],
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-honduras-2024-los-pinos-3a",
+"competition": "CoE Honduras 2024",
+"year": 2024,
+"rank": "3A",
+"score": 90.71,
+"farm": "Los Pinos",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"페블커피",
+"송도커피"
+],
+"buyersEn": [
+"Pebble Coffee",
+"Songdo Coffee"
+],
+"buyersJa": [
+"Pebble Coffee",
+"Songdo Coffee"
+],
+"joint": false,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/honduras-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2024/"
+}
+],
+"auctionCount": 1,
+"terroir": "마사과라 · 인티부카 고지 · 부부가 직접 사들인 밭",
+"trend": "처음 출전한 대회에서 3위에 오르며 인티부카 게이샤의 이름을 알렸습니다.",
+"profileLevel": "place",
+"photo": {
+"m": "exact_origin",
+"f": "photos/hn-fermentation-tank.jpg",
+"g": "https://live.staticflickr.com/775/32327620694_3f5373ce89_b.jpg",
+"c": {
+"ko": "시멘트 발효 탱크",
+"en": "Cement fermentation tank",
+"ja": "セメント製の発酵タンク"
+},
+"a": "Maren Barbee",
+"l": "CC BY 2.0",
+"lu": "https://creativecommons.org/licenses/by/2.0/",
+"s": "openverse",
+"p": "https://www.flickr.com/photos/27781737@N05/32327620694"
+}
+},
+{
+"kind": "region",
+"country": "온두라스",
+"name": "산타바르바라",
+"nameEn": "Santa Bárbara",
+"lat": 15.09606,
+"lon": -88.36737,
+"precision": "region",
+"evidence": "Santa Bárbara 주(州) 중심 · OSM/Photon",
+"source": "https://www.openstreetmap.org/search?query=Santa%20B%C3%A1rbara%2C%20Honduras",
+"id": "R|온두라스|산타바르바라",
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-honduras-2026-patepluma-10",
+"competition": "CoE Honduras 2026 · Honduras Traditional",
+"year": 2026,
+"rank": "10",
+"score": 87.46,
+"farm": "Patepluma",
+"variety": "Pacas",
+"process": "Washed",
+"buyers": [
+"호누 카토커피"
+],
+"buyersEn": [
+"honu Kato Coffee Co., Ltd."
+],
+"buyersJa": [
+"ホーヌ加藤珈琲店"
+],
+"joint": false,
 "level": "region",
 "src": "https://allianceforcoffeeexcellence.org/honduras-2026/",
 "src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2026/"
@@ -22983,75 +23692,6 @@
 "src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2026/"
 },
 {
-"id": "coe-honduras-2026-las-acacias-3",
-"competition": "CoE Honduras 2026",
-"year": 2026,
-"rank": "3",
-"score": 89.61,
-"farm": "Las Acacias",
-"variety": "Pacas",
-"process": "Washed",
-"buyers": [
-"타임스클럽"
-],
-"buyersEn": [
-"Times Club"
-],
-"buyersJa": [
-"Times Club"
-],
-"joint": true,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/honduras-2026/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2026/"
-},
-{
-"id": "coe-honduras-2026-la-pen-a-4",
-"competition": "CoE Honduras 2026 · Honduras Traditional",
-"year": 2026,
-"rank": "4",
-"score": 88.25,
-"farm": "La Peña",
-"variety": "Pacas",
-"process": "Washed",
-"buyers": [
-"허니커피"
-],
-"buyersEn": [
-"HoneyCoffee (Izaki Coffee Co., Ltd.)"
-],
-"buyersJa": [
-"ハニーコーヒー"
-],
-"joint": false,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/honduras-2026/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2026/"
-},
-{
-"id": "coe-honduras-2026-los-primos-7",
-"competition": "CoE Honduras 2026 · Honduras Traditional",
-"year": 2026,
-"rank": "7",
-"score": 87.93,
-"farm": "Los Primos",
-"variety": "Pacas",
-"process": "Washed",
-"buyers": [
-"카사이커피"
-],
-"buyersEn": [
-"Kasai Coffee Co., Ltd."
-],
-"buyersJa": [
-"笠井珈琲"
-],
-"joint": true,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/honduras-2026/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2026/"
-},
-{
 "id": "coe-honduras-2026-el-guayabo-8",
 "competition": "CoE Honduras 2026 · Honduras Traditional",
 "year": 2026,
@@ -23073,29 +23713,6 @@
 "level": "region",
 "src": "https://allianceforcoffeeexcellence.org/honduras-2026/",
 "src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2026/"
-},
-{
-"id": "coe-honduras-2024-el-mirador-11",
-"competition": "CoE Honduras 2024",
-"year": 2024,
-"rank": "11",
-"score": 88.57,
-"farm": "El Mirador",
-"variety": "Geisha",
-"process": "Honey",
-"buyers": [
-"커피카운티"
-],
-"buyersEn": [
-"Coffee County"
-],
-"buyersJa": [
-"コーヒーカウンティ"
-],
-"joint": false,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/honduras-2024/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2024/"
 },
 {
 "id": "coe-honduras-2024-las-tres-pen-as-21",
@@ -23142,7 +23759,139 @@
 "level": "region",
 "src": "https://allianceforcoffeeexcellence.org/honduras-2024/",
 "src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2024/"
+}
+],
+"auctionCount": 5,
+"elevation": "1,000~1,650m",
+"harvest": "11월~4월",
+"terroir": "산타바르바라 산 · 요호아 호수 미기후 · 화산성 토양",
+"varieties": "IHCAFE 90 · 레피라 · 파라이네마 · 카투아이 · 파카스",
+"processes": "워시드 중심 · 10~16시간 발효",
+"flavorProfile": "카카오 · 말린 사과 · 홍차",
+"trend": "산타바르바라 산 고지 농장들이 대회 상위를 휩쓸며 온두라스 스페셜티의 중심이 됐습니다.",
+"story": "산타바르바라는 온두라스 서부, 산타바르바라 산(2,774m)과 요호아 호수 사이의 산지입니다. 화산성 토양과 호수가 만드는 미기후, 해발 1,000~1,650m 고도가 카카오와 말린 사과, 홍차 같은 차분한 향을 만듭니다. 2011년 잎녹병 이후 IHCAFE 90·레피라·파라이네마 같은 내병성 품종으로 밭을 다시 채웠고, 소농들이 10~16시간 발효 후 워시드로 가공합니다.",
+"profileLevel": "place",
+"photo": {
+"m": "exact_origin",
+"f": "photos/hn-santa-barbara-town2.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Santa_B%C3%A1rbara%2C_Honduras_2012_02.jpg/960px-Santa_B%C3%A1rbara%2C_Honduras_2012_02.jpg",
+"c": {
+"ko": "산타바르바라 주의 마을 풍경",
+"en": "Town in the Santa Bárbara highlands",
+"ja": "サンタ・バルバラ県の町並み"
 },
+"a": "Mario A. Torres",
+"l": "CC BY-SA 2.0",
+"lu": "https://creativecommons.org/licenses/by-sa/2.0",
+"s": "commons",
+"p": "https://commons.wikimedia.org/wiki/File:Santa_B%C3%A1rbara,_Honduras_2012_02.jpg"
+}
+},
+{
+"id": "F|온두라스|세로 아술 (핀카스 미에리시)",
+"kind": "farm",
+"country": "온두라스",
+"name": "세로 아술 (핀카스 미에리시)",
+"nameEn": "Fincas Mierisch – Cerro Azul",
+"nameJa": "フィンカス・ミエリッシュ セロ・アスル",
+"lat": 14.75621,
+"lon": -87.89391,
+"precision": "village",
+"evidence": "시과테페케 리오 보니토 · OSM Río Bonito · 1,600~1,700m · 96헥타르",
+"source": "https://xliiicoffee.com/en/collaboration/fincas-mierisch/",
+"alias": [
+"세로 아술",
+"세로아술",
+"cerro azul",
+"fincas mierisch cerro azul",
+"セロ・アスル"
+],
+"producer": "핀카스 미에리시 (Fincas Mierisch) — 에르윈 미에리시 2세",
+"founded": "2011년 말 인수해 재건",
+"elevation": "1,600~1,700m",
+"story": "온두라스 코마야과 시과테페케 리오 보니토의 농장입니다. 핀카스 미에리시가 온두라스에 처음 손댄 농장으로, 2011년 말 버려진 농장을 인수해 다시 일궜습니다. 96헥타르에 커피나무 25만 그루를 기르고 옐로 파카마라와 오렌지 버번, 게이샤, 자바 같은 품종을 워시드로 가공합니다. 컵핑랩과 창고, 건조장이 이 농장에 있어 같은 가문의 산타 루시아와 라 알리타 랏도 이곳에서 마무리됩니다.",
+"varieties": "옐로 파카마라 · 오렌지 버번 · 게이샤 · 자바",
+"processes": "워시드 중심",
+"flavorProfile": "감귤 · 살구 · 꿀 · 다크초콜릿, 깨끗하고 균형 잡힌 단맛",
+"harvest": "2월~6월 (주 수확기)",
+"refs": [
+{
+"t": "농장 소개(품종·가공)",
+"u": "https://xliiicoffee.com/en/collaboration/fincas-mierisch/"
+},
+{
+"t": "농장 방문기(규모·관리)",
+"u": "https://society-cafe.com/blogs/learn/our-trip-to-honduras-may-2024"
+},
+{
+"t": "가문 기록",
+"u": "https://www.origincoffee.co.uk/blogs/journal/mierisch-family"
+}
+],
+"beanCount": 0,
+"terroir": "시과테페케 리오 보니토 · 코마야과 산맥 · 모래 섞인 점토질 토양 · 서늘한 기후",
+"trend": "컵핑랩과 건조장이 있는 가문의 중심 농장으로, 온두라스 랏의 품질 관리가 이곳에서 이뤄집니다.",
+"profileLevel": "place",
+"photo": {
+"m": "exact_origin",
+"f": "photos/hn-siguatepeque.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Siguatepeque.jpg/960px-Siguatepeque.jpg",
+"c": {
+"ko": "시과테페케의 중심 공원",
+"en": "Central park in Siguatepeque",
+"ja": "シグアテペケの中央公園"
+},
+"a": "JohnnyStar",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0",
+"s": "commons",
+"p": "https://commons.wikimedia.org/wiki/File:Siguatepeque.jpg"
+}
+},
+{
+"id": "F|온두라스|엘 망고",
+"kind": "farm",
+"country": "온두라스",
+"name": "엘 망고",
+"nameEn": "Finca El Mango",
+"nameJa": "エル・マンゴ農園",
+"lat": 14.9121311,
+"lon": -88.0901691,
+"precision": "village",
+"evidence": "라스 베가스 엘 세드랄 · OSM El Cedral · 1,650m",
+"source": "https://farmdirectory.cupofexcellence.org/listing/2-el-mango-honduras-2024/",
+"alias": [
+"엘망고",
+"el mango",
+"finca el mango",
+"エル・マンゴ",
+"alma pineda",
+"알마 피네다",
+"alma aydee"
+],
+"producer": "알마 아이디 피네다 알바라도 (Alma Aydee Pineda Alvarado) — 남편 에빈 호엘 모레노 레예스와 함께 운영",
+"elevation": "1,650m",
+"story": "온두라스 산타바르바라 라스 베가스 엘 세드랄의 농장입니다. 알마 아이디 피네다 알바라도는 커피 농가에서 자라 아버지와 남편이 커피를 다루는 모습을 보고 자랐고, 남편 에빈 호엘 모레노 레예스의 권유로 스페셜티 커피를 시작했습니다. 해발 1,650m 밭에서 SL28을 중심으로 파카스와 게이샤를 함께 기르고, 2024년 컵 오브 엑설런스에 SL28 워시드로 2위(90.86)에 오르며 대통령상을 받았습니다. 남편이 운영하는 라스 아카시아스와 밭을 나눠 쓰고, 2026년에는 남편 이름으로 같은 농장 랏이 엑조틱 부문 5위(88.25)에 올랐습니다.",
+"varieties": "SL28 중심 · 파카스 · 게이샤",
+"processes": "워시드 중심",
+"flavorProfile": "망고 · 백도 · 파인애플 · 살구, 붉은 과일 잼의 진한 단맛",
+"harvest": "1월~6월 (주 수확기)",
+"awards": [
+"Cup of Excellence Honduras 2024 2A·2B위 — 90.86점, SL28 워시드 (대통령상)",
+"Cup of Excellence Honduras 2026 엑조틱 부문 5위 — 88.25점, SL28 워시드"
+],
+"refs": [
+{
+"t": "농장·생산자 소개",
+"u": "https://farmdirectory.cupofexcellence.org/listing/2-el-mango-honduras-2024/"
+},
+{
+"t": "Cup of Excellence Honduras 2026 결과",
+"u": "https://allianceforcoffeeexcellence.org/honduras-2026/"
+}
+],
+"beanCount": 0,
+"auctions": [
 {
 "id": "coe-honduras-2024-el-mango-2a",
 "competition": "CoE Honduras 2024",
@@ -23165,7 +23914,7 @@
 "マルカイ"
 ],
 "joint": true,
-"level": "region",
+"level": "farm",
 "src": "https://allianceforcoffeeexcellence.org/honduras-2024/",
 "src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2024/"
 },
@@ -23188,185 +23937,293 @@
 "ファディエ笹栗"
 ],
 "joint": false,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/honduras-2024/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2024/"
-},
-{
-"id": "coe-honduras-2024-las-virginias-5",
-"competition": "CoE Honduras 2024",
-"year": 2024,
-"rank": "5",
-"score": 90.04,
-"farm": "Las Virginias",
-"variety": "Geisha",
-"process": "Washed",
-"buyers": [
-"커피미업"
-],
-"buyersEn": [
-"Coffee Me Up"
-],
-"buyersJa": [
-"Coffee Me Up"
-],
-"joint": true,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/honduras-2024/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2024/"
-},
-{
-"id": "coe-honduras-2024-los-primos-6",
-"competition": "CoE Honduras 2024",
-"year": 2024,
-"rank": "6",
-"score": 90.0,
-"farm": "Los Primos",
-"variety": "Pacas",
-"process": "Washed",
-"buyers": [
-"파디에사사구리"
-],
-"buyersEn": [
-"Fadie Sasaguri Roastery"
-],
-"buyersJa": [
-"ファディエ笹栗"
-],
-"joint": false,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/honduras-2024/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2024/"
-},
-{
-"id": "coe-honduras-2024-la-montan-a-9",
-"competition": "CoE Honduras 2024",
-"year": 2024,
-"rank": "9",
-"score": 89.29,
-"farm": "La Montaña",
-"variety": "Pacas",
-"process": "Washed",
-"buyers": [
-"카사이커피",
-"커피카운티"
-],
-"buyersEn": [
-"Kasai Coffee Co., Ltd.",
-"Coffee County"
-],
-"buyersJa": [
-"笠井珈琲",
-"コーヒーカウンティ"
-],
-"joint": true,
-"level": "region",
+"level": "farm",
 "src": "https://allianceforcoffeeexcellence.org/honduras-2024/",
 "src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2024/"
 }
 ],
-"auctionCount": 16,
-"elevation": "1,000~1,650m",
-"harvest": "11월~4월",
-"terroir": "산타바르바라 산 · 요호아 호수 미기후 · 화산성 토양",
-"varieties": "IHCAFE 90 · 레피라 · 파라이네마 · 카투아이 · 파카스",
-"processes": "워시드 중심 · 10~16시간 발효",
-"flavorProfile": "카카오 · 말린 사과 · 홍차",
-"trend": "산타바르바라 산 고지 농장들이 대회 상위를 휩쓸며 온두라스 스페셜티의 중심이 됐습니다.",
-"story": "산타바르바라는 온두라스 서부, 산타바르바라 산(2,774m)과 요호아 호수 사이의 산지입니다. 화산성 토양과 호수가 만드는 미기후, 해발 1,000~1,650m 고도가 카카오와 말린 사과, 홍차 같은 차분한 향을 만듭니다. 2011년 잎녹병 이후 IHCAFE 90·레피라·파라이네마 같은 내병성 품종으로 밭을 다시 채웠고, 소농들이 10~16시간 발효 후 워시드로 가공합니다.",
+"auctionCount": 2,
+"terroir": "라스 베가스 엘 세드랄 · 산타바르바라 산맥 · 라스 아카시아스와 밭을 나눠 쓰는 가족 농장",
+"trend": "부부가 각자 이름으로 대회에 출전하며 산타바르바라 마이크로 랏의 한 축을 이루고 있습니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/1-honduras-6219595785-6873cfb239-b.jpg",
-"g": "https://live.staticflickr.com/6222/6219595785_6873cfb239_b.jpg",
+"m": "exact_origin",
+"f": "photos/hn-harvest-picking.jpg",
+"g": "https://live.staticflickr.com/3680/32327612544_47490172ff_b.jpg",
 "c": {
-"ko": "온두라스 커피 체리 (국가 대표 사진)",
-"en": "Honduras coffee cherries (country representative photo)",
-"ja": "ホンジュラスのコーヒーチェリー（代表写真）"
+"ko": "수확철에 체리를 따는 농장 식구",
+"en": "Picking cherries at harvest time",
+"ja": "収穫期にチェリーを摘む農園の家族"
 },
-"a": "CIDSE - together for global justice",
+"a": "Maren Barbee",
 "l": "CC BY 2.0",
 "lu": "https://creativecommons.org/licenses/by/2.0/",
 "s": "openverse",
-"p": "https://www.flickr.com/photos/8278288@N02/6219595785"
+"p": "https://www.flickr.com/photos/27781737@N05/32327612544"
 }
 },
 {
-"id": "F|온두라스|세로 아술 (핀카스 미에리시)",
+"id": "F|온두라스|엘 미라도르",
 "kind": "farm",
 "country": "온두라스",
-"name": "세로 아술 (핀카스 미에리시)",
-"nameEn": "Fincas Mierisch – Cerro Azul",
-"nameJa": "Fincas Mierisch – Cerro Azul",
-"lat": 14.921674,
-"lon": -88.236444,
+"name": "엘 미라도르",
+"nameEn": "Finca El Mirador",
+"nameJa": "エル・ミラドール農園",
+"lat": 15.0960559,
+"lon": -88.3673692,
 "precision": "region",
-"evidence": "Santa Bárbara, 20101, Honduras",
-"source": "https://www.openstreetmap.org/search?query=Fincas+Mierisch+–+Cerro+Azul",
+"evidence": "산타바르바라 주 (농장 소재 시·마을 미확인) · 1,760m",
+"source": "https://farmdirectory.cupofexcellence.org/listing/11-el-mirador-honduras-2024/",
 "alias": [
-"Fincas Mierisch – Cerro Azul",
-"세로 아술"
+"엘미라도르",
+"el mirador",
+"finca el mirador",
+"エル・ミラドール",
+"elder chavez",
+"엘더 차베스"
 ],
-"varieties": "게이샤",
-"processes": "워시드",
-"beanCount": 0,
-"profileLevel": "place",
-"photo": {
-"m": "country_fallback",
-"f": "photos/1-honduras-6219595785-6873cfb239-b.jpg",
-"g": "https://live.staticflickr.com/6222/6219595785_6873cfb239_b.jpg",
-"c": {
-"ko": "온두라스 커피 체리 (국가 대표 사진)",
-"en": "Honduras coffee cherries (country representative photo)",
-"ja": "ホンジュラスのコーヒーチェリー（代表写真）"
-},
-"a": "CIDSE - together for global justice",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0/",
-"s": "openverse",
-"p": "https://www.flickr.com/photos/8278288@N02/6219595785"
-}
-},
-{
-"id": "F|온두라스|엘 망고",
-"kind": "farm",
-"country": "온두라스",
-"name": "엘 망고",
-"nameEn": "El Mango",
-"nameJa": "El Mango",
-"lat": 15.09606,
-"lon": -88.36737,
-"precision": "region",
-"evidence": "Santa Barbara · OSM/Photon",
-"source": "https://www.openstreetmap.org/search?query=El+Mango",
-"alias": [
-"El Mango"
+"producer": "엘더 이그나시오 차베스 마르티네스 (Elder Ignacio Chávez Martínez)",
+"founded": "2015년 카티모르 90으로 시작 · 2020년 파카스 재식재",
+"elevation": "1,760m",
+"story": "온두라스 산타바르바라의 해발 1,760m 농장입니다. 엘더 이그나시오 차베스 마르티네스는 2015년 카티모르 90으로 스페셜티 커피를 시작했고, 2020년 파카스로 밭을 다시 심었습니다. 같은 해 뇌종양으로 건강이 나빠져 온실과 커피 생산을 잃었지만, 이듬해 수출 회사에서 받은 게이샤 종자로 다시 시작해 2023년 첫 수확을 냈습니다. 2024년 컵 오브 엑설런스에 허니 게이샤로 11위(88.57)에 올랐고, 치료 때문에 시상식에는 가지 못하고 소식만 전해 들었습니다.",
+"varieties": "게이샤 중심 · 파카스 · 카티모르 90",
+"processes": "허니 중심 · 워시드",
+"flavorProfile": "재스민 · 리치 · 망고 · 메이플시럽, 부드러운 시트러스 산미",
+"harvest": "12월~4월 (산타바르바라 주 수확기)",
+"awards": [
+"Cup of Excellence Honduras 2024 11위 — 88.57점, 게이샤 허니"
 ],
-"producer": "Alma Aydee Pineda Alvarado",
-"varieties": "SL28",
-"processes": "워시드",
 "refs": [
 {
-"t": "경매 기록",
+"t": "농장·생산자 소개",
+"u": "https://farmdirectory.cupofexcellence.org/listing/11-el-mirador-honduras-2024/"
+},
+{
+"t": "Cup of Excellence Honduras 2024 결과",
 "u": "https://allianceforcoffeeexcellence.org/honduras-2024/"
 }
 ],
 "beanCount": 0,
+"auctions": [
+{
+"id": "coe-honduras-2024-el-mirador-11",
+"competition": "CoE Honduras 2024",
+"year": 2024,
+"rank": "11",
+"score": 88.57,
+"farm": "El Mirador",
+"variety": "Geisha",
+"process": "Honey",
+"buyers": [
+"커피카운티"
+],
+"buyersEn": [
+"Coffee County"
+],
+"buyersJa": [
+"コーヒーカウンティ"
+],
+"joint": false,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/honduras-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2024/"
+}
+],
+"auctionCount": 1,
+"terroir": "산타바르바라 주 고지 · 재식재 뒤 게이샤로 다시 세운 밭",
+"trend": "2018년 전후 산타바르바라에서 게이샤로 밭을 바꾸는 농가가 늘었고, 이 농장도 그 흐름에 올라 대회 성적을 냈습니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/1-honduras-6219595785-6873cfb239-b.jpg",
-"g": "https://live.staticflickr.com/6222/6219595785_6873cfb239_b.jpg",
+"m": "exact_origin",
+"f": "photos/hn-fermentation-barrel.jpg",
+"g": "https://live.staticflickr.com/2822/33045142571_22a8c4fbee_b.jpg",
 "c": {
-"ko": "온두라스 커피 체리 (국가 대표 사진)",
-"en": "Honduras coffee cherries (country representative photo)",
-"ja": "ホンジュラスのコーヒーチェリー（代表写真）"
+"ko": "발효 통에서 뮤실리지를 확인하는 모습",
+"en": "Checking mucilage in a fermentation drum",
+"ja": "発酵タンクでミューシレージを確認する様子"
 },
-"a": "CIDSE - together for global justice",
+"a": "Maren Barbee",
 "l": "CC BY 2.0",
 "lu": "https://creativecommons.org/licenses/by/2.0/",
 "s": "openverse",
-"p": "https://www.flickr.com/photos/8278288@N02/6219595785"
+"p": "https://www.flickr.com/photos/27781737@N05/33045142571"
+}
+},
+{
+"id": "F|온두라스|엘 사포테",
+"kind": "farm",
+"country": "온두라스",
+"name": "엘 사포테",
+"nameEn": "Finca El Zapote",
+"nameJa": "エル・サポテ農園",
+"lat": 14.3705898,
+"lon": -87.990137,
+"precision": "village",
+"evidence": "마사과라, 인티부카 · OSM Masaguara · 1,800m",
+"source": "https://farmdirectory.cupofexcellence.org/listing/7-el-zapote-honduras-2026-honduras-exotic/",
+"alias": [
+"엘사포테",
+"el zapote",
+"finca el zapote",
+"エル・サポテ",
+"wilmer grau",
+"윌메르 그라우"
+],
+"producer": "윌메르 알렉시 그라우 몬토야 (Wilmer Alexi Grau Montoya)",
+"elevation": "1,800m",
+"story": "온두라스 인티부카 마사과라의 해발 1,800m 농장입니다. 윌메르 알렉시 그라우 몬토야는 커피를 기르던 아버지에게서 일을 배워 30여 년째 커피를 만들고, 6년 전부터 게이샤로 바꿔 왔습니다. 2024년 워시드 게이샤로 12위(88.54)에 이어 2026년 엑조틱 부문 7위(88.04)에 올랐습니다. 28시간 발효에 22일 건조를 거치는 방식으로 컵을 다듬고, 화학 비료 대신 닭 분뇨와 석회로 토양을 관리합니다.",
+"varieties": "게이샤 중심 · 인디오 · 카티모르 · 버번",
+"processes": "워시드 · 28시간 발효 · 22일 건조",
+"flavorProfile": "파인애플 · 백포도 · 베르가못 · 망고, 맑은 시트러스 산미",
+"harvest": "11월~3월 (인티부카 주 수확기)",
+"awards": [
+"Cup of Excellence Honduras 2026 엑조틱 부문 7위 — 88.04점, 게이샤 워시드",
+"Cup of Excellence Honduras 2024 12위 — 88.54점, 게이샤 워시드"
+],
+"refs": [
+{
+"t": "농장·생산자 소개(2026)",
+"u": "https://farmdirectory.cupofexcellence.org/listing/7-el-zapote-honduras-2026-honduras-exotic/"
+},
+{
+"t": "농장·생산자 소개(2024)",
+"u": "https://farmdirectory.cupofexcellence.org/listing/12-el-zapote-honduras-2024/"
+}
+],
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-honduras-2024-el-zapote-12",
+"competition": "CoE Honduras 2024",
+"year": 2024,
+"rank": "12",
+"score": 88.54,
+"farm": "El Zapote",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"아아아아아아콩볶는곳"
+],
+"buyersEn": [
+"アアアアアア豆焙所"
+],
+"buyersJa": [
+"アアアアアア豆焙所"
+],
+"joint": true,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/honduras-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2024/"
+}
+],
+"auctionCount": 1,
+"terroir": "마사과라 · 인티부카 고지 · 닭 분뇨와 석회로 토양을 관리하는 밭",
+"trend": "전통 품종에서 게이샤로 바꾼 뒤 4년 연속 대회 본선에 올랐습니다.",
+"profileLevel": "place",
+"photo": {
+"m": "exact_origin",
+"f": "photos/hn-masaguara-town.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Palacio_Municipal%2C_Masaguara.jpg/960px-Palacio_Municipal%2C_Masaguara.jpg",
+"c": {
+"ko": "마사과라 시청",
+"en": "Municipal hall in Masaguara",
+"ja": "マサグアラの市庁舎"
+},
+"a": "Wilson Giron Orellana",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0",
+"s": "commons",
+"p": "https://commons.wikimedia.org/wiki/File:Palacio_Municipal,_Masaguara.jpg"
+}
+},
+{
+"id": "F|온두라스|엘 핌포로",
+"kind": "farm",
+"country": "온두라스",
+"name": "엘 핌포로",
+"nameEn": "Finca El Pimporro",
+"nameJa": "エル・ピンポロ農園",
+"lat": 14.3705898,
+"lon": -87.990137,
+"precision": "village",
+"evidence": "마사과라, 인티부카 · OSM Masaguara · 1,750m",
+"source": "https://farmdirectory.cupofexcellence.org/listing/1-el-pimporro-honduras-2026-honduras-exotic/",
+"alias": [
+"엘핌포로",
+"el pimporro",
+"finca el pimporro",
+"エル・ピンポロ",
+"francisco alvarado",
+"프란시스코 알바라도"
+],
+"producer": "프란시스코 알바라도 고메스 (Francisco Alvarado Gómez)",
+"elevation": "1,750m",
+"story": "온두라스 인티부카 마사과라의 해발 1,750m 농장입니다. 프란시스코 알바라도 고메스는 20년 넘게 커피를 만들다 10여 년 전부터 스페셜티로 방향을 잡았고, 4년 전부터 게이샤를 기르기 시작했습니다. 2024년 18위에 이어 2026년 컵 오브 엑설런스 엑조틱 부문에서 1위(90.50)와 대통령상을 받았습니다. 커퍼 로니 가메스의 도움으로 게이샤 종자를 구했고, 수확철이면 길이 험한 마을 길을 이웃 농가들과 함께 고쳐 왔습니다.",
+"varieties": "게이샤 중심",
+"processes": "워시드",
+"flavorProfile": "재스민 · 석류 · 카람볼라 · 캐러멜 케이크, 레몬그라스의 향",
+"harvest": "11월~3월 (인티부카 주 수확기)",
+"awards": [
+"Cup of Excellence Honduras 2026 엑조틱 부문 1A·1B위 — 90.50점, 게이샤 워시드 (대통령상)",
+"Cup of Excellence Honduras 2024 18위"
+],
+"refs": [
+{
+"t": "농장·생산자 소개",
+"u": "https://farmdirectory.cupofexcellence.org/listing/1-el-pimporro-honduras-2026-honduras-exotic/"
+},
+{
+"t": "현지 보도(수상·고도)",
+"u": "https://thenexuscoffee.com/honduras-premia-mejores-cafes-taza-excelencia-2026/"
+}
+],
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-honduras-2026-el-pimporro-1a",
+"competition": "CoE Honduras 2026 · Honduras Exotic",
+"year": 2026,
+"rank": "1A",
+"score": 90.5,
+"farm": "El Pimporro",
+"variety": "Geisha",
+"process": "Washed",
+"buyers": [
+"커피미업",
+"해월커피"
+],
+"buyersEn": [
+"Coffee Me Up",
+"Haewol Coffee"
+],
+"buyersJa": [
+"Coffee Me Up",
+"Haewol Coffee"
+],
+"joint": true,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/honduras-2026/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/honduras-2026/"
+}
+],
+"auctionCount": 1,
+"terroir": "마사과라 · 인티부카 고지 · 4년 전부터 기른 게이샤 밭",
+"trend": "2026년 대회 최고 점수를 낸 농장으로, 한국과 중국 로스터들이 나눠 낙찰받았습니다.",
+"profileLevel": "place",
+"photo": {
+"m": "exact_origin",
+"f": "photos/hn-masaguara.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Iglesia_Cat%C3%B3lica_de_Masaguara.jpg/960px-Iglesia_Cat%C3%B3lica_de_Masaguara.jpg",
+"c": {
+"ko": "마사과라의 성당",
+"en": "Church in Masaguara",
+"ja": "マサグアラの教会"
+},
+"a": "Wilson Giron Orellana",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0",
+"s": "commons",
+"p": "https://commons.wikimedia.org/wiki/File:Iglesia_Cat%C3%B3lica_de_Masaguara.jpg"
 }
 },
 {
@@ -23438,33 +24295,56 @@
 "country": "온두라스",
 "name": "핀카스 미에리시 라 알리타",
 "nameEn": "Fincas Mierisch – La Alita",
-"nameJa": "Fincas Mierisch – La Alita",
-"lat": 14.921674,
-"lon": -88.236444,
-"precision": "region",
-"evidence": "Santa Bárbara, 20101, Honduras",
-"source": "https://www.openstreetmap.org/search?query=Fincas+Mierisch+–+La+Alita",
+"nameJa": "フィンカス・ミエリッシュ ラ・アリタ",
+"lat": 14.75621,
+"lon": -87.89391,
+"precision": "village",
+"evidence": "시과테페케 리오 보니토 · OSM Río Bonito · 1,450~1,550m · 15헥타르",
+"source": "https://43factory.coffee/en/alita-fincas-mierisch/",
 "alias": [
-"Fincas Mierisch – La Alita"
+"라 알리타",
+"라알리타",
+"la alita",
+"lalita",
+"fincas mierisch la alita",
+"ラ・アリタ"
 ],
-"varieties": "레드 카투아이",
-"processes": "워시드",
+"producer": "핀카스 미에리시 (Fincas Mierisch) — 매니저 윌리엄 라모스",
+"founded": "2014년 매입 (당시 이름 라리타)",
+"elevation": "1,450~1,550m",
+"story": "온두라스 코마야과 시과테페케 리오 보니토의 농장입니다. 핀카스 미에리시가 2014년 사들여 '라리타'에서 '라 알리타(작은 날개)'로 이름을 바꿨고, 짐 헨드릭스 노래에서 따온 이름입니다. 15헥타르 가운데 7헥타르가 원래 숲으로 남아 있고, 해발 1,450~1,550m의 서늘한 기후에서 2월부터 6월까지 긴 수확기가 이어집니다. 에티오사르, 게이샤, 라우리나, SL28, 파카마라를 기르고 내추럴 랏에서 포도와 체리, 진한 꿀의 단맛이 나옵니다.",
+"varieties": "에티오사르 · 게이샤 · 라우리나 · SL28 · 파카마라",
+"processes": "내추럴 · 워시드",
+"flavorProfile": "포도 · 체리 · 진한 꿀, 깨끗한 단맛",
+"harvest": "2월~6월 (주 수확기)",
+"refs": [
+{
+"t": "농장 소개(면적·품종)",
+"u": "https://43factory.coffee/en/alita-fincas-mierisch/"
+},
+{
+"t": "농장·가문 소개",
+"u": "https://www.origincoffee.co.uk/blogs/journal/mierisch-family"
+}
+],
 "beanCount": 0,
+"terroir": "시과테페케 리오 보니토 · 15헥타르 가운데 7헥타르가 원래 숲 · 아보카도와 바나나 그늘",
+"trend": "가문의 세 농장 가운데 가장 작지만 품종 실험 밭 역할을 합니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/1-honduras-6219595785-6873cfb239-b.jpg",
-"g": "https://live.staticflickr.com/6222/6219595785_6873cfb239_b.jpg",
+"m": "exact_origin",
+"f": "photos/hn-siguatepeque-street.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Siguatepeque08.JPG/960px-Siguatepeque08.JPG",
 "c": {
-"ko": "온두라스 커피 체리 (국가 대표 사진)",
-"en": "Honduras coffee cherries (country representative photo)",
-"ja": "ホンジュラスのコーヒーチェリー（代表写真）"
+"ko": "시과테페케 시가지",
+"en": "Street in Siguatepeque",
+"ja": "シグアテペケの市街地"
 },
-"a": "CIDSE - together for global justice",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0/",
-"s": "openverse",
-"p": "https://www.flickr.com/photos/8278288@N02/6219595785"
+"a": "Thelmadatter",
+"l": "CC BY-SA 3.0",
+"lu": "https://creativecommons.org/licenses/by-sa/3.0",
+"s": "commons",
+"p": "https://commons.wikimedia.org/wiki/File:Siguatepeque08.JPG"
 }
 },
 {
@@ -62420,7 +63300,7 @@
 "variety": null,
 "process": "Natural",
 "cupNotes": [],
-"placeId": "C|온두라스",
+"placeId": "F|온두라스|라 페냐",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -62520,7 +63400,7 @@
 "카카오",
 "스파이시"
 ],
-"placeId": "C|온두라스",
+"placeId": "F|온두라스|라스 아카시아스",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
