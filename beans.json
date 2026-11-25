@@ -7,29 +7,29 @@
 "beans": 3113,
 "listings": 4195,
 "countries": 38,
-"places": 400,
+"places": 409,
 "regions": 224,
-"farms": 143,
+"farms": 152,
 "jpBeans": 292,
 "auctions": 421,
-"auctionPlaces": 105
+"auctionPlaces": 113
 },
 "precision": {
-"farm": 87,
+"farm": 88,
 "region": 930,
-"village": 460,
-"country": 1636
+"village": 483,
+"country": 1612
 },
 "coordSource": "Photon/OpenStreetMap (ODbL), 일부 주요 산지는 관리 중심지 좌표로 보정",
 "profileFill": {
-"elevation": 350,
-"harvest": 333,
-"terroir": 333,
-"varieties": 395,
-"processes": 394,
-"flavorProfile": 333,
-"trend": 333,
-"story": 346
+"elevation": 361,
+"harvest": 344,
+"terroir": 344,
+"varieties": 404,
+"processes": 404,
+"flavorProfile": 344,
+"trend": 345,
+"story": 358
 },
 "profileFallback": 55,
 "process": {
@@ -84,68 +84,6 @@
 "lu": "https://creativecommons.org/licenses/by-sa/2.0",
 "s": "commons",
 "p": "https://commons.wikimedia.org/wiki/File:NP_2DU_colombia_16_lo_(5244849876).jpg"
-}
-},
-{
-"kind": "country",
-"country": "브라질",
-"name": "브라질",
-"nameEn": "Brazil",
-"lat": -10.3333333,
-"lon": -53.2,
-"precision": "country",
-"evidence": "Brazil, Brazil",
-"id": "C|브라질",
-"beanCount": 169,
-"auctions": [
-{
-"id": "coe-brazil-2024-sitio-pedro-varinha-3",
-"competition": "CoE Brazil 2024 · Washed + Honey",
-"year": 2024,
-"rank": "3",
-"score": 90.21,
-"farm": "Sitio Pedro Varinha",
-"variety": "Arara",
-"process": "Pulped",
-"buyers": [
-"테라로사"
-],
-"buyersEn": [
-"Terarosa"
-],
-"buyersJa": [
-"Terarosa"
-],
-"joint": true,
-"level": "country",
-"src": "https://allianceforcoffeeexcellence.org/brazil-2024/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2024/"
-}
-],
-"auctionCount": 1,
-"elevation": "800~1,300m (고급 랏은 1,100m 이상)",
-"harvest": "5월~9월 (주 수확기)",
-"terroir": "넓은 고원 · 라테라이트 토양 · 뚜렷한 건기와 우기",
-"varieties": "카투아이 · 문도 노보 · 카투라 · 버번 (최근 게이샤·아루샤)",
-"processes": "내추럴·펄프드 내추럴 중심 · 워시드와 실험 가공 확대",
-"flavorProfile": "견과 · 밀크초콜릿 · 카라멜의 둥근 단맛, 낮은 산미",
-"trend": "코닐론(로부스타) 가격 강세 속에 고급 아라비카 랏과 실험적 발효가 늘었고, 대농장은 기계 수확 비중이 높습니다.",
-"story": "브라질은 세계 생산량의 3분의 1을 차지하는 커피 대국입니다. 미나스 제라이스·바이아·상파울루의 대농장이 중심이고, 건조한 겨울에 체리를 말리는 내추럴·펄프드 내추럴이 표준입니다. 둥글고 단맛이 강한 컵이 브라질 커피의 인상입니다.",
-"profileLevel": "place",
-"photo": {
-"m": "country_fallback",
-"f": "photos/up-coffee-berries.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Coffee_Berries.jpg/960px-Coffee_Berries.jpg",
-"c": {
-"ko": "브라질 커피 체리 (국가 대표 사진)",
-"en": "Brazil coffee cherries (country representative photo)",
-"ja": "ブラジルのコーヒーチェリー（代表写真）"
-},
-"a": "Jonathan Wilkins",
-"l": "CC BY-SA 3.0",
-"lu": "https://creativecommons.org/licenses/by-sa/3.0",
-"s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Coffee_Berries.jpg"
 }
 },
 {
@@ -271,6 +209,68 @@
 "s": "commons",
 "p": "https://commons.wikimedia.org/wiki/File:Sifting_good_beans_from_bad.jpg",
 "o": "50% 62%"
+}
+},
+{
+"kind": "country",
+"country": "브라질",
+"name": "브라질",
+"nameEn": "Brazil",
+"lat": -10.3333333,
+"lon": -53.2,
+"precision": "country",
+"evidence": "Brazil, Brazil",
+"id": "C|브라질",
+"beanCount": 145,
+"auctions": [
+{
+"id": "coe-brazil-2024-sitio-pedro-varinha-3",
+"competition": "CoE Brazil 2024 · Washed + Honey",
+"year": 2024,
+"rank": "3",
+"score": 90.21,
+"farm": "Sitio Pedro Varinha",
+"variety": "Arara",
+"process": "Pulped",
+"buyers": [
+"테라로사"
+],
+"buyersEn": [
+"Terarosa"
+],
+"buyersJa": [
+"Terarosa"
+],
+"joint": true,
+"level": "country",
+"src": "https://allianceforcoffeeexcellence.org/brazil-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2024/"
+}
+],
+"auctionCount": 1,
+"elevation": "800~1,300m (고급 랏은 1,100m 이상)",
+"harvest": "5월~9월 (주 수확기)",
+"terroir": "넓은 고원 · 라테라이트 토양 · 뚜렷한 건기와 우기",
+"varieties": "카투아이 · 문도 노보 · 카투라 · 버번 (최근 게이샤·아루샤)",
+"processes": "내추럴·펄프드 내추럴 중심 · 워시드와 실험 가공 확대",
+"flavorProfile": "견과 · 밀크초콜릿 · 카라멜의 둥근 단맛, 낮은 산미",
+"trend": "코닐론(로부스타) 가격 강세 속에 고급 아라비카 랏과 실험적 발효가 늘었고, 대농장은 기계 수확 비중이 높습니다.",
+"story": "브라질은 세계 생산량의 3분의 1을 차지하는 커피 대국입니다. 미나스 제라이스·바이아·상파울루의 대농장이 중심이고, 건조한 겨울에 체리를 말리는 내추럴·펄프드 내추럴이 표준입니다. 둥글고 단맛이 강한 컵이 브라질 커피의 인상입니다.",
+"profileLevel": "place",
+"photo": {
+"m": "country_fallback",
+"f": "photos/up-coffee-berries.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Coffee_Berries.jpg/960px-Coffee_Berries.jpg",
+"c": {
+"ko": "브라질 커피 체리 (국가 대표 사진)",
+"en": "Brazil coffee cherries (country representative photo)",
+"ja": "ブラジルのコーヒーチェリー（代表写真）"
+},
+"a": "Jonathan Wilkins",
+"l": "CC BY-SA 3.0",
+"lu": "https://creativecommons.org/licenses/by-sa/3.0",
+"s": "commons",
+"p": "https://commons.wikimedia.org/wiki/File:Coffee_Berries.jpg"
 }
 },
 {
@@ -1281,55 +1281,6 @@
 "evidence": "산지 중심(관리자 보정)",
 "id": "R|브라질|세라도",
 "beanCount": 33,
-"auctions": [
-{
-"id": "coe-brazil-2025-fazenda-olhos-d-gua-4",
-"competition": "CoE Brazil 2025 · Natural",
-"year": 2025,
-"rank": "4",
-"score": 89.55,
-"farm": "Fazenda Olhos D’Água",
-"variety": "Arara",
-"process": "Natural",
-"buyers": [
-"동서식품"
-],
-"buyersEn": [
-"Dongsuh Foods"
-],
-"buyersJa": [
-"Dongsuh Foods"
-],
-"joint": true,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/brazil-2025/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2025/"
-},
-{
-"id": "coe-brazil-2025-fazenda-canastra-5",
-"competition": "CoE Brazil 2025 · Washed + Honey",
-"year": 2025,
-"rank": "5",
-"score": 89.32,
-"farm": "Fazenda Canastra",
-"variety": "Arara",
-"process": "Honey",
-"buyers": [
-"미커피"
-],
-"buyersEn": [
-"MI Coffee Corporation"
-],
-"buyersJa": [
-"MI Coffee Corporation"
-],
-"joint": true,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/brazil-2025/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2025/"
-}
-],
-"auctionCount": 2,
 "elevation": "1,000~1,300m",
 "harvest": "5월~9월 (주 수확기)",
 "terroir": "미나스 제라이스 서부 고원 · 넓은 평지 · 강한 건기",
@@ -3679,6 +3630,91 @@
 }
 },
 {
+"id": "F|브라질|파젠다 엄",
+"kind": "farm",
+"country": "브라질",
+"name": "파젠다 엄",
+"nameEn": "Fazenda Um",
+"nameJa": "ファゼンダ・ウム",
+"lat": -21.8905238,
+"lon": -45.5935943,
+"precision": "village",
+"evidence": "상 곤살루 두 사푸카이 시 중심 · OSM/Photon (농장 좌표는 비공개, 시 단위)",
+"source": "https://www.corcafe.com.br/farms-1/um-farm",
+"alias": [
+"파젠다엄",
+"엄 농장",
+"fazenda um",
+"fazendaum",
+"보람 엄",
+"보람엄",
+"boram um",
+"boramum",
+"가람 엄",
+"가람엄",
+"garam um",
+"garamum",
+"스테파노 엄",
+"stefano um",
+"ファゼンダ・ウム",
+"ボラム・ウム"
+],
+"producer": "스테파노 엄 (Stefano Um) — 아들 보람 엄 · 가람 엄이 품질과 가공을 맡음",
+"founded": "2009년 매입, 2012년부터 수확 (회사 소개에는 2002년으로 적혀 있음)",
+"elevation": "1,100~1,400m (미나스 농장 평균 1,300m 안팎)",
+"story": "서울에서 태어나 브라질로 이주한 스테파노 엄이 2009년 미나스 제라이스 남부 상 곤살루 두 사푸카이의 오래된 커피 농장을 사들였고, 2012년부터 커피를 본격적으로 길렀습니다(회사 소개에는 2002년 매입으로 적혀 있습니다). 처음에는 상업용 생두로 시작했지만 값이 맞지 않아 특수커피로 방향을 틀었고, 나무 절반가량을 그늘에서 기르며 가공은 과테말라 방식을 참고했습니다. 두 아들 보람과 가람은 2015년 상파울루 봉 레트루에 로스터리 카페 UM Coffee Co.를 열었습니다. 보람은 2023년 세계 바리스타 챔피언십에서 우승했고, 가람은 같은 해 세계 브루어스 컵 3위에 올랐습니다. 우승에 쓴 커피는 농장의 핑크 버번 구획(1만 5천 그루, 연 30~60자루)에서 나왔습니다. 2019년에는 이스피리투 산투 이비치라마에 두 번째 농장을 마련해 16~17가지 품종을 시험하고 있습니다.",
+"varieties": "핑크 버번 · 옐로 버번 · 레드·옐로 카투아이 · 카투카이 · 아라라 · 문도 노보 (게이샤·우슈우슈 등 40여 품종 시험)",
+"processes": "내추럴 · 허니 · 펄프드 내추럴 · 발효 랏 · 아프리칸 베드·노천 파티오·다크룸 건조",
+"flavorProfile": "캐러멜 · 갈색 설탕 · 구운 아몬드 · 밀크초콜릿, 낮은 산미와 둥근 단맛",
+"harvest": "5월~8월 (주 수확기)",
+"awards": [
+"보람 엄 — 2023 세계 바리스타 챔피언십(WBC) 우승",
+"보람 엄 — 브라질 바리스타 챔피언 2019·2022·2023",
+"가람 엄 — 2023 세계 브루어스 컵(WBrC) 3위"
+],
+"refs": [
+{
+"t": "농장·가족 소개",
+"u": "https://www.corcafe.com.br/farms-1/um-farm"
+},
+{
+"t": "농장·커피 정보",
+"u": "https://www.swisswater.com/blogs/sw/brazil-fazenda-um"
+},
+{
+"t": "농장 투어·재배 방식",
+"u": "https://europeancoffeetrip.com/speciality-coffee-farm-tour-boram-um/"
+},
+{
+"t": "인터뷰(소재지·연혁)",
+"u": "https://globorural.globo.com/entrevista/noticia/2024/09/conheca-o-embaixador-do-cafe-especial-do-brasil.ghtml"
+},
+{
+"t": "경연 기록·가족",
+"u": "https://www.rossocoffeeroasters.com/en-us/blogs/rosso-journal/in-conversation-with-boram-um"
+}
+],
+"beanCount": 12,
+"terroir": "미나스 제라이스 남부 상 곤살루 두 사푸카이의 구릉 · 나무 절반가량을 그늘로 길러 해를 가림 · 화산성 토양",
+"trend": "대회에서 익힌 발효·건조법을 농장에 옮기며 핑크 버번·게이샤 같은 실험 랏을 늘리고 있습니다.",
+"profileLevel": "place",
+"photo": {
+"m": "exact_origin",
+"f": "photos/br-fazenda-um-sao-goncalo-do-sapucai.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/S%C3%A3o_Gon%C3%A7alo_do_Sapuca%C3%AD_-_State_of_Minas_Gerais%2C_Brazil_-_panoramio.jpg/960px-S%C3%A3o_Gon%C3%A7alo_do_Sapuca%C3%AD_-_State_of_Minas_Gerais%2C_Brazil_-_panoramio.jpg",
+"c": {
+"ko": "상 곤살루 두 사푸카이의 마을 풍경",
+"en": "Town of São Gonçalo do Sapucaí",
+"ja": "サン・ゴンサロ・ド・サプカイの町"
+},
+"a": "ataide duca",
+"l": "CC BY 3.0",
+"lu": "https://creativecommons.org/licenses/by/3.0",
+"s": "commons",
+"p": "https://commons.wikimedia.org/wiki/File:S%C3%A3o_Gon%C3%A7alo_do_Sapuca%C3%AD_-_State_of_Minas_Gerais,_Brazil_-_panoramio.jpg"
+}
+},
+{
 "kind": "country",
 "country": "에콰도르",
 "name": "에콰도르",
@@ -4271,6 +4307,75 @@
 }
 },
 {
+"id": "F|브라질|다테하",
+"kind": "farm",
+"country": "브라질",
+"name": "다테하",
+"nameEn": "Daterra Coffee",
+"nameJa": "ダテラ・コーヒー",
+"lat": -18.9408294,
+"lon": -46.9926624,
+"precision": "village",
+"evidence": "파트로시니우 시 · 다테라 보아 비스타·타보옹이스 농장 소재지 · OSM/Photon (시 단위)",
+"source": "https://daterracoffee.com.br/sustainability/",
+"alias": [
+"데테라",
+"다테라",
+"daterra",
+"ファゼンダ・ダテラ"
+],
+"producer": "파스코알 가문 (Pascoal) — 루이스 노르베르투 파스코알",
+"founded": "1987년 프랑카 농장에서 시작, 1993년 보아 비스타·1994년 타보옹이스 인수",
+"elevation": "910~1,220m",
+"story": "1987년 루이스 노르베르투 파스코알이 모지아나 프랑카에 첫 농장을 사면서 시작됐습니다. 친구이던 일리 커피의 에르네스토 일리가 세라두를 권했고, 1993년 파트로시니우의 보아 비스타, 이듬해 타보옹이스를 사들여 지금의 다테라를 세웠습니다. 두 농장을 합쳐 6,200여 헥타르 가운데 2,800헥타르가 커피밭이고, 절반이 넘는 땅을 보전지로 남겼습니다. 브라질에서 처음으로 레인포레스트 얼라이언스 인증을 받았고 세계 첫 B콥 커피 농장이기도 합니다. 농장을 560여 구획으로 나눠 40여 명의 농업기술자가 구획마다 관리하고, 수확기에는 숙도별로 선별해 랏을 만듭니다. 라벨에서는 다테하 리저브·빌라·사비아·선버드처럼 구획과 품종을 나눈 이름으로 나옵니다.",
+"varieties": "이아시(IAC) · 버번 · 이카투 · 라우리나 · 아라라 · 파라이수 등 (품종 정원에서 40여 종 연구)",
+"processes": "내추럴 · 펄프드 내추럴 · 워시드 · 무산소·호기성·카보닉 발효 등 실험 가공",
+"flavorProfile": "밀크초콜릿 · 캐러멜 · 견과, 깨끗하고 둥근 단맛",
+"harvest": "6월~8월 (주 수확기)",
+"awards": [
+"브라질 첫 레인포레스트 얼라이언스 인증 농장",
+"세계 첫 B콥(B Corp) 커피 농장",
+"글로보 후랄 '프레미우 파젠다 수스텐타벨 2015' 수상"
+],
+"refs": [
+{
+"t": "농장 공식(연혁·인증)",
+"u": "https://daterracoffee.com.br/sustainability/"
+},
+{
+"t": "농장 개요(면적·품종)",
+"u": "https://drwakefield.com/wp-content/uploads/2022/09/Daterra.pdf"
+},
+{
+"t": "농장 소개(가문·구획)",
+"u": "https://efico.com/press-cuprima/brazils-coffee-trailblazers/"
+},
+{
+"t": "농장 소개(인증·연혁)",
+"u": "https://methodroastery.com/blogs/news/daterra-from-the-earth"
+}
+],
+"beanCount": 11,
+"terroir": "세라두 미네이루 파트로시니우 · 평지와 완만한 구릉 · 건기가 수확기와 겹침 · 커피밭 70% 관개",
+"trend": "농장을 560여 구획으로 나눠 관리하며 85,000자루 가운데 70%를 스페셜티로 내고, 2030년까지 관개를 100%로 늘릴 계획입니다.",
+"profileLevel": "place",
+"photo": {
+"m": "exact_origin",
+"f": "photos/br-daterra-patrocinio-silos.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Patroc%C3%ADnio_MG_Brasil_-_Silos_Caseng_-_panoramio.jpg/960px-Patroc%C3%ADnio_MG_Brasil_-_Silos_Caseng_-_panoramio.jpg",
+"c": {
+"ko": "파트로시니우의 커피 사일로",
+"en": "Coffee silos in Patrocínio",
+"ja": "パトロシニオのコーヒーサイロ"
+},
+"a": "Josue Marinho",
+"l": "CC BY 3.0",
+"lu": "https://creativecommons.org/licenses/by/3.0",
+"s": "commons",
+"p": "https://commons.wikimedia.org/wiki/File:Patroc%C3%ADnio_MG_Brasil_-_Silos_Caseng_-_panoramio.jpg"
+}
+},
+{
 "kind": "region",
 "country": "인도네시아",
 "name": "만델링",
@@ -4551,6 +4656,7 @@
 "country": "에티오피아",
 "name": "게샤 빌리지",
 "nameEn": "Gesha Village Coffee Estate",
+"nameJa": null,
 "lat": 6.538,
 "lon": 35.487,
 "precision": "village",
@@ -4881,6 +4987,7 @@
 "country": "파나마",
 "name": "알티에리",
 "nameEn": "Altieri Specialty Coffee",
+"nameJa": "Altieri Specialty Coffee",
 "lat": 8.798298,
 "lon": -82.432974,
 "precision": "region",
@@ -5899,29 +6006,6 @@
 "beanCount": 6,
 "auctions": [
 {
-"id": "coe-brazil-2025-fazenda-aracacu-1a",
-"competition": "CoE Brazil 2025",
-"year": 2025,
-"rank": "1A",
-"score": 90.79,
-"farm": "Fazenda Aracaçu",
-"variety": "Arara",
-"process": "Natural",
-"buyers": [
-"스노우빈스"
-],
-"buyersEn": [
-"Snow Beans Coffee"
-],
-"buyersJa": [
-"Snow Beans Coffee"
-],
-"joint": true,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/brazil-2025/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2025/"
-},
-{
 "id": "coe-brazil-2025-sitio-ponte-alta-6",
 "competition": "CoE Brazil 2025 · Natural",
 "year": 2025,
@@ -5945,7 +6029,7 @@
 "src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2025/"
 }
 ],
-"auctionCount": 2,
+"auctionCount": 1,
 "elevation": "900~1,200m",
 "harvest": "5월~9월 (주 수확기)",
 "terroir": "미나스 제라이스 남부 구릉 · 붉은 토양",
@@ -5956,19 +6040,19 @@
 "story": "술 데 미나스는 미나스 제라이스 남부의 구릉 지대로, 소규모 농장이 많습니다. 해발 900~1,200m의 붉은 토양에서 카투아이·카투라·버번을 기르고, 펄프드 내추럴로 카라멜과 견과가 산뜻하게 잡힌 랏이 나옵니다. 소농 비중이 높아 마이크로 랏과 품종 실험이 활발합니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-cafezal-urbano-cultura-de-caf-ar-bica-54318491032.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Cafezal_Urbano_-_Cultura_de_Caf%C3%A9_Ar%C3%A1bica_%2854318491032%29.jpg/960px-Cafezal_Urbano_-_Cultura_de_Caf%C3%A9_Ar%C3%A1bica_%2854318491032%29.jpg",
+"m": "exact_origin",
+"f": "photos/br-cafezal-em-flor-minas.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Cafezal_em_Flor.jpg/960px-Cafezal_em_Flor.jpg",
 "c": {
-"ko": "브라질 커피 재배지 (국가 대표 사진)",
-"en": "Brazil coffee plantation (country representative photo)",
-"ja": "ブラジルのコーヒー農園（代表写真）"
+"ko": "꽃이 핀 커피나무",
+"en": "Coffee trees in blossom",
+"ja": "花が咲いたコーヒーの木"
 },
-"a": "agriculturasp",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
+"a": "Jonathan Wilkins",
+"l": "CC BY-SA 3.0",
+"lu": "https://creativecommons.org/licenses/by-sa/3.0",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Cafezal_Urbano_-_Cultura_de_Caf%C3%A9_Ar%C3%A1bica_(54318491032).jpg"
+"p": "https://commons.wikimedia.org/wiki/File:Cafezal_em_Flor.jpg"
 }
 },
 {
@@ -6086,6 +6170,7 @@
 "country": "코스타리카",
 "name": "핀카 부",
 "nameEn": "Finca Voo",
+"nameJa": "Finca Voo",
 "lat": 9.5828031,
 "lon": -84.0659187,
 "precision": "region",
@@ -7999,6 +8084,7 @@
 "country": "니카라과",
 "name": "운 레갈로 데 디오스",
 "nameEn": "Un Regalo de Dios",
+"nameJa": null,
 "lat": 13.747,
 "lon": -86.4305,
 "precision": "village",
@@ -9200,52 +9286,6 @@
 "src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2025/"
 },
 {
-"id": "coe-brazil-2025-fazenda-boa-vista-2",
-"competition": "CoE Brazil 2025 · Washed + Honey",
-"year": 2025,
-"rank": "2",
-"score": 90.82,
-"farm": "Fazenda Boa Vista",
-"variety": "Catucaí",
-"process": "Pulped Natural",
-"buyers": [
-"사루타히코커피"
-],
-"buyersEn": [
-"Sarutahiko Coffee Inc."
-],
-"buyersJa": [
-"猿田彦珈琲"
-],
-"joint": false,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/brazil-2025/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2025/"
-},
-{
-"id": "coe-brazil-2025-fazenda-serta-o-5",
-"competition": "CoE Brazil 2025 · Natural",
-"year": 2025,
-"rank": "5",
-"score": 89.32,
-"farm": "Fazenda Sertão",
-"variety": "Topázio",
-"process": "Natural",
-"buyers": [
-"칼디커피팜"
-],
-"buyersEn": [
-"KALDI COFFEE FARM"
-],
-"buyersJa": [
-"カルディコーヒーファーム"
-],
-"joint": true,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/brazil-2025/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2025/"
-},
-{
 "id": "coe-brazil-2025-sitio-ponte-alta-7",
 "competition": "CoE Brazil 2025 · Natural",
 "year": 2025,
@@ -9318,29 +9358,6 @@
 "src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2024/"
 },
 {
-"id": "coe-brazil-2024-fazenda-rio-verde-5",
-"competition": "CoE Brazil 2024 · Experimental",
-"year": 2024,
-"rank": "5",
-"score": 90.14,
-"farm": "Fazenda Rio Verde",
-"variety": "Geisha",
-"process": "Anaerobic fermentation",
-"buyers": [
-"미커피"
-],
-"buyersEn": [
-"MI Coffee Corporation"
-],
-"buyersJa": [
-"MI Coffee Corporation"
-],
-"joint": true,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/brazil-2024/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2024/"
-},
-{
 "id": "coe-brazil-2024-si-tio-da-pedra-7",
 "competition": "CoE Brazil 2024 · Experimental",
 "year": 2024,
@@ -9387,7 +9404,7 @@
 "src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2024/"
 }
 ],
-"auctionCount": 9,
+"auctionCount": 6,
 "elevation": "900~1,500m (원산지 명칭 랏은 1,400m 이상)",
 "harvest": "5월~9월",
 "terroir": "만티케이라 산맥 남사면 · 험한 구릉 · 서늘하고 안개 잦음",
@@ -9398,19 +9415,19 @@
 "story": "만티케이라 데 미나스는 미나스 제라이스 남부, 만티케이라 산맥의 험한 구릉 지대입니다. 해발 900~1,500m의 서늘하고 안개 잦은 기후에서 버번·아카이아·카투아이를 기르고, 경사가 급해 다른 브라질 산지보다 손으로 딴 체리 비중이 높습니다. 2011년 브라질 커피 가운데 처음으로 원산지 명칭을 받았고, 7,000여 농가 가운데 90% 가까이가 소농이라 마이크로 랏이 꾸준히 나옵니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-coffee-berries.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Coffee_Berries.jpg/960px-Coffee_Berries.jpg",
+"m": "exact_origin",
+"f": "photos/br-fazenda-sertao-carmo-de-minas-cafezal.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Carmo_de_Minas_MG_Brasil_-_Cafezal_-_panoramio.jpg/960px-Carmo_de_Minas_MG_Brasil_-_Cafezal_-_panoramio.jpg",
 "c": {
-"ko": "브라질 커피 체리 (국가 대표 사진)",
-"en": "Brazil coffee cherries (country representative photo)",
-"ja": "ブラジルのコーヒーチェリー（代表写真）"
+"ko": "카르무 지 미나스의 커피밭",
+"en": "Coffee fields in Carmo de Minas",
+"ja": "カルモ・デ・ミナスのコーヒー畑"
 },
-"a": "Jonathan Wilkins",
-"l": "CC BY-SA 3.0",
-"lu": "https://creativecommons.org/licenses/by-sa/3.0",
+"a": "Josue Marinho",
+"l": "CC BY 3.0",
+"lu": "https://creativecommons.org/licenses/by/3.0",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Coffee_Berries.jpg"
+"p": "https://commons.wikimedia.org/wiki/File:Carmo_de_Minas_MG_Brasil_-_Cafezal_-_panoramio.jpg"
 }
 },
 {
@@ -9915,6 +9932,7 @@
 "country": "엘살바도르",
 "name": "엘 코나카스테",
 "nameEn": "El Conacaste",
+"nameJa": "El Conacaste",
 "lat": 13.972109,
 "lon": -89.56053,
 "precision": "region",
@@ -10934,6 +10952,7 @@
 "country": "과테말라",
 "name": "핀카 엘 피날",
 "nameEn": "Finca El Pinal",
+"nameJa": "Finca El Pinal",
 "lat": 14.462101,
 "lon": -90.438823,
 "precision": "region",
@@ -12389,6 +12408,7 @@
 "country": "온두라스",
 "name": "엘 푸엔테",
 "nameEn": "El Puente",
+"nameJa": "エル・プエンテ農園",
 "lat": 14.154658,
 "lon": -88.034741,
 "precision": "village",
@@ -12608,6 +12628,7 @@
 "country": "케냐",
 "name": "구아마",
 "nameEn": "Guama",
+"nameJa": "Guama",
 "lat": 1.4419683,
 "lon": 38.4313975,
 "precision": "country",
@@ -13196,6 +13217,7 @@
 "country": "파나마",
 "name": "로스 라호네스",
 "nameEn": "Los Lajones",
+"nameJa": "Los Lajones",
 "lat": 8.772259,
 "lon": -82.449331,
 "precision": "region",
@@ -13231,6 +13253,7 @@
 "country": "파나마",
 "name": "로스 브루호스",
 "nameEn": "Finca Los Brujos",
+"nameJa": "Finca Los Brujos",
 "lat": 8.74075,
 "lon": -82.385383,
 "precision": "region",
@@ -14176,6 +14199,7 @@
 "country": "멕시코",
 "name": "핀카 파티마",
 "nameEn": "Finca Fatima",
+"nameJa": "Finca Fatima",
 "lat": 16.5,
 "lon": -92.5,
 "precision": "region",
@@ -14453,6 +14477,102 @@
 }
 },
 {
+"id": "F|브라질|파젠다 세르탕",
+"kind": "farm",
+"country": "브라질",
+"name": "파젠다 세르탕",
+"nameEn": "Fazenda Sertão",
+"nameJa": "ファゼンダ・セルタン",
+"lat": -22.0999977,
+"lon": -45.189369,
+"precision": "farm",
+"evidence": "OSM 'Fazenda do Sertão' 농장 지점, 카르무 지 미나스",
+"source": "https://www.cafefamiliasertao.com.br/nossa-historia.html",
+"alias": [
+"파젠다세르탕",
+"세르탕",
+"fazenda sertao",
+"fazenda sertão",
+"sertao",
+"ファゼンダ・セルタン"
+],
+"producer": "프란시스쿠 이지드루 지아스 페레이라 (Francisco Isidro Dias Pereira, '시쿠') — 페레이라 가문 4대",
+"founded": "1908~1910년 증조부 부부가 첫 커피를 심음 · 1949년 조부모가 농장을 이어받음",
+"elevation": "1,100~1,450m",
+"story": "미나스 제라이스 카르무 지 미나스의 농장입니다. 1908~1910년 증조부 이지드루 안토니우 페레이라와 에메렌시아나 안드라지 페레이라가 심은 커피나무에서 시작해, 1949년 조제 이지드루 페레이라가 나제레 지아스 페레이라와 함께 농장을 이어받았습니다. 850헥타르 가운데 350헥타르가 커피밭이고, 나머지는 바나나·옥수수·콩과 젖소 사육에 씁니다. 같은 가문의 파젠다 산타 이네스 랏이 2005년 컵 오브 엑셀런스에서 95.85점을 받아 대회 최고 기록을 세웠고, 그해 가문이 1~3위를 모두 가져갔습니다. 지금은 4대째 프란시스쿠(시쿠) 이지드루 지아스 페레이라가 이끌며, 2025년 대회에서는 토파지우 내추럴 랏으로 5위(89.32)에 올랐습니다.",
+"varieties": "옐로 버번 · 레드 버번 · 카투아이 · 아라라 · 토파지우",
+"processes": "내추럴 중심 · 펄프드 내추럴",
+"flavorProfile": "코코아 · 무화과 · 헤이즐넛 · 꿀, 둥근 바디",
+"harvest": "5월~9월 (주 수확기)",
+"awards": [
+"Cup of Excellence Brasil 2025 5위 — 89.32점, 토파지우 내추럴",
+"같은 가문의 파젠다 산타 이네스 — Cup of Excellence Brasil 2005 1위, 95.85점(대회 최고 기록)"
+],
+"refs": [
+{
+"t": "농장·가문 공식",
+"u": "https://www.cafefamiliasertao.com.br/nossa-historia.html"
+},
+{
+"t": "가문 기록·수상",
+"u": "https://cafefamiliasertao.com.br/recordes-premiacoes.html"
+},
+{
+"t": "농장 소개(면적·고도)",
+"u": "https://www.partnerscoffee.com/products/brazil-sertao"
+},
+{
+"t": "Cup of Excellence Brasil 2025 결과",
+"u": "https://allianceforcoffeeexcellence.org/brazil-2025/"
+}
+],
+"beanCount": 1,
+"auctions": [
+{
+"id": "coe-brazil-2025-fazenda-serta-o-5",
+"competition": "CoE Brazil 2025 · Natural",
+"year": 2025,
+"rank": "5",
+"score": 89.32,
+"farm": "Fazenda Sertão",
+"variety": "Topázio",
+"process": "Natural",
+"buyers": [
+"칼디커피팜"
+],
+"buyersEn": [
+"KALDI COFFEE FARM"
+],
+"buyersJa": [
+"カルディコーヒーファーム"
+],
+"joint": true,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/brazil-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2025/"
+}
+],
+"auctionCount": 1,
+"terroir": "카르무 지 미나스 · 만티케이라 지맥의 고도 높은 구릉 · 만티케이라 지 미나스 원산지 명칭(D.O.) 안",
+"trend": "4대째 가족 농장으로, 랏마다 수확과 건조를 나눠 대회 출품과 직거래를 이어갑니다.",
+"profileLevel": "place",
+"photo": {
+"m": "exact_origin",
+"f": "photos/br-fazenda-sertao-carmo-de-minas-cafezal.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Carmo_de_Minas_MG_Brasil_-_Cafezal_-_panoramio.jpg/960px-Carmo_de_Minas_MG_Brasil_-_Cafezal_-_panoramio.jpg",
+"c": {
+"ko": "카르무 지 미나스의 커피밭",
+"en": "Coffee fields in Carmo de Minas",
+"ja": "カルモ・デ・ミナスのコーヒー畑"
+},
+"a": "Josue Marinho",
+"l": "CC BY 3.0",
+"lu": "https://creativecommons.org/licenses/by/3.0",
+"s": "commons",
+"p": "https://commons.wikimedia.org/wiki/File:Carmo_de_Minas_MG_Brasil_-_Cafezal_-_panoramio.jpg"
+}
+},
+{
 "kind": "farm",
 "country": "브라질",
 "name": "파젠다 카르모",
@@ -14479,7 +14599,7 @@
 ],
 "elevation": "950~1,200m (만티케이라 지맥)",
 "harvest": "6월~8월 (주 수확기)",
-"terroir": "미나스 제라이스 남부 헬리오도라 · 만티케이라 지맥",
+"terroir": "미나스 제라이스 남부 헬리오도라 · 만티케이라 지맥의 구릉",
 "varieties": "버번 아마렐로 · 문도 노보 · 카투아이 · 카투라",
 "processes": "펄프드 내추럴 · 내추럴 · 그늘 무산소 발효",
 "flavorProfile": "카라멜 · 견과 · 부드러운 산미",
@@ -16043,6 +16163,7 @@
 "country": "파나마",
 "name": "로메사스",
 "nameEn": "Romesas",
+"nameJa": "Romesas",
 "lat": 8.74075,
 "lon": -82.385383,
 "precision": "region",
@@ -16078,6 +16199,7 @@
 "country": "파나마",
 "name": "블랙문",
 "nameEn": "Black Moon Farm",
+"nameJa": "Black Moon Farm",
 "lat": 8.803836,
 "lon": -82.46646,
 "precision": "region",
@@ -16435,6 +16557,7 @@
 "country": "페루",
 "name": "엘 미라도르",
 "nameEn": "El Mirador",
+"nameJa": "El Mirador",
 "lat": -5.0,
 "lon": -78.0,
 "precision": "region",
@@ -16638,6 +16761,7 @@
 "country": "과테말라",
 "name": "그라니토 데 오로",
 "nameEn": "Granito de Oro",
+"nameJa": "Granito de Oro",
 "lat": 15.4075,
 "lon": -91.94683,
 "precision": "region",
@@ -16679,6 +16803,7 @@
 "country": "과테말라",
 "name": "라 그란 만사나",
 "nameEn": "La Gran Manzana",
+"nameJa": "La Gran Manzana",
 "lat": 15.606418,
 "lon": -91.6442217,
 "precision": "region",
@@ -16855,6 +16980,7 @@
 "country": "과테말라",
 "name": "라스 마카다미아스",
 "nameEn": "Las Macadamias",
+"nameJa": "Las Macadamias",
 "lat": 15.606418,
 "lon": -91.6442217,
 "precision": "region",
@@ -17300,6 +17426,7 @@
 "country": "과테말라",
 "name": "산 헤랄도",
 "nameEn": "San Gerardo",
+"nameJa": "サン・ヘラルド農園",
 "lat": 14.479238,
 "lon": -90.619525,
 "precision": "region",
@@ -17741,6 +17868,7 @@
 "country": "과테말라",
 "name": "플란 데 라 베가",
 "nameEn": "Plan de la Vega",
+"nameJa": "Plan de la Vega",
 "lat": 15.606418,
 "lon": -91.6442217,
 "precision": "region",
@@ -17966,6 +18094,7 @@
 "country": "니카라과",
 "name": "로스 알페스",
 "nameEn": "Los Alpes",
+"nameJa": "Los Alpes",
 "lat": 13.7719023,
 "lon": -86.0584542,
 "precision": "region",
@@ -18007,6 +18136,7 @@
 "country": "니카라과",
 "name": "로스 콩고스",
 "nameEn": "Los Congos",
+"nameJa": "Los Congos",
 "lat": 13.7719023,
 "lon": -86.0584542,
 "precision": "region",
@@ -18306,6 +18436,7 @@
 "country": "니카라과",
 "name": "베야 아우로라",
 "nameEn": "Bella Aurora",
+"nameJa": "Bella Aurora",
 "lat": 13.7719023,
 "lon": -86.0584542,
 "precision": "region",
@@ -18548,6 +18679,7 @@
 "country": "니카라과",
 "name": "엘 포르베니르",
 "nameEn": "El Porvenir",
+"nameJa": "El Porvenir",
 "lat": 13.7719023,
 "lon": -86.0584542,
 "precision": "region",
@@ -18589,6 +18721,7 @@
 "country": "니카라과",
 "name": "우고 메디나",
 "nameEn": "Hugo Medina",
+"nameJa": "Hugo Medina",
 "lat": 13.8,
 "lon": -85.5,
 "precision": "region",
@@ -18791,6 +18924,7 @@
 "country": "대만",
 "name": "아리산 진롱",
 "nameEn": "Alishan Jing Long",
+"nameJa": "Alishan Jing Long",
 "lat": 23.471219,
 "lon": 120.714654,
 "precision": "region",
@@ -18931,6 +19065,7 @@
 "country": "라오스",
 "name": "반 롱란",
 "nameEn": "Ban Longlan",
+"nameJa": "バン・ロンラン",
 "lat": 19.888744,
 "lon": 102.135898,
 "precision": "region",
@@ -18978,6 +19113,7 @@
 "country": "라오스",
 "name": "볼라벤 티피카",
 "nameEn": "Bolaven Typica",
+"nameJa": "ボラベン・ティピカ",
 "lat": 15.07451,
 "lon": 106.445595,
 "precision": "region",
@@ -19761,6 +19897,7 @@
 "country": "멕시코",
 "name": "우에우에테판",
 "nameEn": "Huehuetepan",
+"nameJa": "Huehuetepan",
 "lat": 19.33333,
 "lon": -96.66667,
 "precision": "region",
@@ -19934,6 +20071,7 @@
 "country": "멕시코",
 "name": "핀카 산타 크루스",
 "nameEn": "Finca Santa Cruz",
+"nameJa": "Finca Santa Cruz",
 "lat": 16.5,
 "lon": -92.5,
 "precision": "region",
@@ -19975,6 +20113,7 @@
 "country": "멕시코",
 "name": "핀카 오코소틀라",
 "nameEn": "Finca Ocoxotla",
+"nameJa": "Finca Ocoxotla",
 "lat": 19.33333,
 "lon": -96.66667,
 "precision": "region",
@@ -20016,6 +20155,7 @@
 "country": "멕시코",
 "name": "핀카 포시토스",
 "nameEn": "Finca Pocitos",
+"nameJa": "Finca Pocitos",
 "lat": 18.700556,
 "lon": -96.787222,
 "precision": "region",
@@ -20050,6 +20190,7 @@
 "country": "미얀마",
 "name": "지니어스 샨 스테이트",
 "nameEn": "Genius Shan State",
+"nameJa": "ジーニアス・シャン・ステート",
 "lat": 21.283762,
 "lon": 96.500936,
 "precision": "region",
@@ -20097,6 +20238,7 @@
 "country": "볼리비아",
 "name": "아그로타케시",
 "nameEn": "Agro Takesi",
+"nameJa": "アグロタケシ",
 "lat": -16.399339,
 "lon": -67.736581,
 "precision": "village",
@@ -20148,38 +20290,138 @@
 "country": "브라질",
 "name": "M&F 커피",
 "nameEn": "M&F Coffee",
-"lat": -18.940829,
-"lon": -46.992662,
-"precision": "region",
-"evidence": "Cerrado Mineiro · OSM/Photon",
-"source": "https://www.openstreetmap.org/search?query=M&F+Coffee",
+"nameJa": "M&Fコーヒー（ビオマ・カフェ）",
+"lat": -19.696389,
+"lon": -46.171389,
+"precision": "village",
+"evidence": "캄푸스 알투스 시 · 비오마 카페(M&F Coffee) · CoE 2024 농장 소개",
+"source": "https://auction.allianceforcoffeeexcellence.org/en/lots/mf-coffee-5",
 "alias": [
-"M&F Coffee"
+"M&F Coffee",
+"비오마 카페",
+"bioma cafe",
+"bioma café",
+"ファゼンダ・M&F"
 ],
-"producer": "Bioma Cafe",
-"varieties": "아라라",
+"producer": "플라비우 · 마르셀루 (Flávio & Marcelo) — 2001년 의기투합, 2010년 캄푸스 알투스에 농장 조성",
+"founded": "2010년 비오마 카페 조성 (두 사람은 2001년부터 함께 농사)",
+"elevation": "1,200m 안팎",
+"story": "미나스 제라이스 캄푸스 알투스, 세라두 미네이루의 농장입니다. 농가에서 자란 플라비우와 마르셀루가 2001년 만나 함께 땅을 일구기로 했고, 2010년 캄푸스 알투스에 비오마 카페를 세웠습니다. 229헥타르에서 아라라를 기르며 수확 전에 성숙도와 당도(Brix)를 재고 기계로 딴 뒤 미숙과를 15% 이내로 걸러 냅니다. 체리는 스테인리스 탱크에서 72시간 무산소 발효하고 온실에서 15일 말립니다. 2024년 컵 오브 엑셀런스 실험 가공 부문에서 아라라 무산소 랏으로 93.14점을 받아 1A·1B 두 자리를 모두 가져갔습니다.",
+"varieties": "아라라 중심",
+"processes": "무산소 발효(스테인리스 탱크 72시간) · 내추럴 · 워시드",
+"flavorProfile": "건포도 · 헤이즐넛 · 오렌지, 둥근 질감",
+"harvest": "6월~9월 (주 수확기)",
+"awards": [
+"Cup of Excellence Brasil 2024 실험 가공 부문 1위 — 93.14점, 아라라 무산소 (1A·1B)",
+"레인포레스트 얼라이언스 인증 (2022년~, RA_00083182202)"
+],
 "refs": [
 {
-"t": "경매 기록",
+"t": "농장·가족 소개(CoE 랏)",
+"u": "https://auction.allianceforcoffeeexcellence.org/en/lots/mf-coffee-5"
+},
+{
+"t": "농장 소개(연혁·가공)",
+"u": "https://comandantegrinder.com/blogs/top-farm-awards/brazil-1st-palce-experimental"
+},
+{
+"t": "Cup of Excellence Brasil 2024 결과",
 "u": "https://allianceforcoffeeexcellence.org/brazil-2024/"
 }
 ],
 "beanCount": 0,
+"auctions": [
+{
+"id": "coe-brazil-2024-m-f-coffee-1a",
+"competition": "CoE Brazil 2024 · Experimental",
+"year": 2024,
+"rank": "1A",
+"score": 93.14,
+"farm": "M&F Coffee",
+"variety": "Arara",
+"process": "",
+"buyers": [
+"와타루"
+],
+"buyersEn": [
+"Wataru & Co., Ltd."
+],
+"buyersJa": [
+"ワタル"
+],
+"joint": true,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/brazil-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2024/"
+},
+{
+"id": "coe-brazil-2024-m-f-coffee-1b",
+"competition": "CoE Brazil 2024 · Experimental",
+"year": 2024,
+"rank": "1B",
+"score": 93.14,
+"farm": "M&F Coffee",
+"variety": "Arara",
+"process": "",
+"buyers": [
+"글리치커피",
+"마루카이"
+],
+"buyersEn": [
+"GLITCH COFFEE & ROASTERS",
+"Marukai"
+],
+"buyersJa": [
+"グリッチコーヒー",
+"マルカイ"
+],
+"joint": true,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/brazil-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2024/"
+},
+{
+"id": "coe-brazil-2024-fazenda-m-f-coffee-8",
+"competition": "CoE Brazil 2024 · Natural",
+"year": 2024,
+"rank": "8",
+"score": 88.61,
+"farm": "Fazenda M&F Coffee",
+"variety": "Arara",
+"process": "Natural",
+"buyers": [
+"와타루"
+],
+"buyersEn": [
+"Wataru & Co., Ltd."
+],
+"buyersJa": [
+"ワタル"
+],
+"joint": true,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/brazil-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2024/"
+}
+],
+"auctionCount": 3,
+"terroir": "세라두 미네이루 캄푸스 알투스 · 229헥타르 · 기계 수확과 선별",
+"trend": "대회 실험 가공 부문에서 최고 점수를 내며 세라두의 발효 랏을 대표하는 농장이 됐습니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-cafezal-urbano-cultura-de-caf-ar-bica-54318491032.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Cafezal_Urbano_-_Cultura_de_Caf%C3%A9_Ar%C3%A1bica_%2854318491032%29.jpg/960px-Cafezal_Urbano_-_Cultura_de_Caf%C3%A9_Ar%C3%A1bica_%2854318491032%29.jpg",
+"m": "exact_origin",
+"f": "photos/br-bioma-cafe-cerrado-cafezal.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Cafezal_ao_lado_de_mata_nativa_do_cerrado_de_cerrad%C3%A3o%2C_na_regi%C3%A3o_do_alto_parana%C3%ADba_no_munic%C3%ADpio_de_Arapu%C3%A1_MG_-_panoramio.jpg/960px-Cafezal_ao_lado_de_mata_nativa_do_cerrado_de_cerrad%C3%A3o%2C_na_regi%C3%A3o_do_alto_parana%C3%ADba_no_munic%C3%ADpio_de_Arapu%C3%A1_MG_-_panoramio.jpg",
 "c": {
-"ko": "브라질 커피 재배지 (국가 대표 사진)",
-"en": "Brazil coffee plantation (country representative photo)",
-"ja": "ブラジルのコーヒー農園（代表写真）"
+"ko": "세하당 숲과 맞닿은 세라두 커피밭(알투 파라나이바)",
+"en": "Cerrado coffee field beside native cerradão forest (Alto Paranaíba)",
+"ja": "セラドンの森に隣接するセラードのコーヒー畑（アルト・パラナイーバ）"
 },
-"a": "agriculturasp",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
+"a": "Tiago Firmino Boaven…",
+"l": "CC BY 3.0",
+"lu": "https://creativecommons.org/licenses/by/3.0",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Cafezal_Urbano_-_Cultura_de_Caf%C3%A9_Ar%C3%A1bica_(54318491032).jpg"
+"p": "https://commons.wikimedia.org/wiki/File:Cafezal_ao_lado_de_mata_nativa_do_cerrado_de_cerrad%C3%A3o,_na_regi%C3%A3o_do_alto_parana%C3%ADba_no_munic%C3%ADpio_de_Arapu%C3%A1_MG_-_panoramio.jpg"
 }
 },
 {
@@ -20406,6 +20648,7 @@
 "country": "브라질",
 "name": "사만바이아",
 "nameEn": "Fazenda Samambaia",
+"nameJa": "サマンバイア農園",
 "lat": -20.941339,
 "lon": -44.91874,
 "precision": "village",
@@ -20609,124 +20852,6 @@
 "beanCount": 0,
 "auctions": [
 {
-"id": "coe-brazil-2025-fazenda-agua-limpa-1a",
-"competition": "CoE Brazil 2025",
-"year": 2025,
-"rank": "1A",
-"score": 91.37,
-"farm": "Fazenda Agua Limpa",
-"variety": "Arara",
-"process": "Honey",
-"buyers": [
-"스노우빈스"
-],
-"buyersEn": [
-"Snow Beans Coffee"
-],
-"buyersJa": [
-"Snow Beans Coffee"
-],
-"joint": true,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/brazil-2025/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2025/"
-},
-{
-"id": "coe-brazil-2025-fazenda-agua-limpa-1b",
-"competition": "CoE Brazil 2025 · Washed + Honey",
-"year": 2025,
-"rank": "1B",
-"score": 91.37,
-"farm": "Fazenda Agua Limpa",
-"variety": "Arara",
-"process": "Honey",
-"buyers": [
-"허니커피"
-],
-"buyersEn": [
-"HoneyCoffee (Izaki Coffee Co., Ltd.)"
-],
-"buyersJa": [
-"ハニーコーヒー"
-],
-"joint": false,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/brazil-2025/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2025/"
-},
-{
-"id": "coe-brazil-2025-fazenda-sucuri-2",
-"competition": "CoE Brazil 2025 · Natural",
-"year": 2025,
-"rank": "2",
-"score": 90.32,
-"farm": "Fazenda Sucuri",
-"variety": "Geisha",
-"process": "Natural",
-"buyers": [
-"사루타히코커피"
-],
-"buyersEn": [
-"Sarutahiko Coffee Inc."
-],
-"buyersJa": [
-"猿田彦珈琲"
-],
-"joint": false,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/brazil-2025/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2025/"
-},
-{
-"id": "coe-brazil-2024-m-f-coffee-1a",
-"competition": "CoE Brazil 2024 · Experimental",
-"year": 2024,
-"rank": "1A",
-"score": 93.14,
-"farm": "M&F Coffee",
-"variety": "Arara",
-"process": "",
-"buyers": [
-"와타루"
-],
-"buyersEn": [
-"Wataru & Co., Ltd."
-],
-"buyersJa": [
-"ワタル"
-],
-"joint": true,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/brazil-2024/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2024/"
-},
-{
-"id": "coe-brazil-2024-m-f-coffee-1b",
-"competition": "CoE Brazil 2024 · Experimental",
-"year": 2024,
-"rank": "1B",
-"score": 93.14,
-"farm": "M&F Coffee",
-"variety": "Arara",
-"process": "",
-"buyers": [
-"글리치커피",
-"마루카이"
-],
-"buyersEn": [
-"GLITCH COFFEE & ROASTERS",
-"Marukai"
-],
-"buyersJa": [
-"グリッチコーヒー",
-"マルカイ"
-],
-"joint": true,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/brazil-2024/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2024/"
-},
-{
 "id": "coe-brazil-2024-fazenda-queixadas-cacheira-e-palmital-3",
 "competition": "CoE Brazil 2024",
 "year": 2024,
@@ -20745,29 +20870,6 @@
 "Snow Beans Coffee"
 ],
 "joint": false,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/brazil-2024/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2024/"
-},
-{
-"id": "coe-brazil-2024-fazenda-m-f-coffee-8",
-"competition": "CoE Brazil 2024 · Natural",
-"year": 2024,
-"rank": "8",
-"score": 88.61,
-"farm": "Fazenda M&F Coffee",
-"variety": "Arara",
-"process": "Natural",
-"buyers": [
-"와타루"
-],
-"buyersEn": [
-"Wataru & Co., Ltd."
-],
-"buyersJa": [
-"ワタル"
-],
-"joint": true,
 "level": "region",
 "src": "https://allianceforcoffeeexcellence.org/brazil-2024/",
 "src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2024/"
@@ -20819,7 +20921,7 @@
 "src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2024/"
 }
 ],
-"auctionCount": 9,
+"auctionCount": 3,
 "elevation": "800~1,300m (고급 랏은 1,100m 이상)",
 "harvest": "5월~9월 (주 수확기)",
 "terroir": "넓은 고원 · 라테라이트 토양 · 뚜렷한 건기와 우기",
@@ -20830,19 +20932,19 @@
 "story": "브라질의 세라두 미네이루 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 브라질 산지의 공통 특성으로 소개합니다.",
 "profileLevel": "country",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-cafezal-urbano-cultura-de-caf-ar-bica-54318491032.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Cafezal_Urbano_-_Cultura_de_Caf%C3%A9_Ar%C3%A1bica_%2854318491032%29.jpg/960px-Cafezal_Urbano_-_Cultura_de_Caf%C3%A9_Ar%C3%A1bica_%2854318491032%29.jpg",
+"m": "exact_origin",
+"f": "photos/br-daterra-patrocinio-irrigacao.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Represa_para_irrigacao_de_cafe_-_Sitio_Irmaos_Borri_-_panoramio.jpg/960px-Represa_para_irrigacao_de_cafe_-_Sitio_Irmaos_Borri_-_panoramio.jpg",
 "c": {
-"ko": "브라질 커피 재배지 (국가 대표 사진)",
-"en": "Brazil coffee plantation (country representative photo)",
-"ja": "ブラジルのコーヒー農園（代表写真）"
+"ko": "세라두 미네이루 커피밭 관개용 저수지",
+"en": "Irrigation reservoir for coffee in the Cerrado Mineiro",
+"ja": "セラード・ミネイロのコーヒー農園の灌漑用貯水池"
 },
-"a": "agriculturasp",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
+"a": "Alex S Araujo",
+"l": "CC BY-SA 3.0",
+"lu": "https://creativecommons.org/licenses/by-sa/3.0",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Cafezal_Urbano_-_Cultura_de_Caf%C3%A9_Ar%C3%A1bica_(54318491032).jpg"
+"p": "https://commons.wikimedia.org/wiki/File:Represa_para_irrigacao_de_cafe_-_Sitio_Irmaos_Borri_-_panoramio.jpg"
 }
 },
 {
@@ -20851,6 +20953,7 @@
 "country": "브라질",
 "name": "시치우 폰치 알타",
 "nameEn": "Sitio Ponte Alta",
+"nameJa": "Sitio Ponte Alta",
 "lat": -21.55,
 "lon": -45.45,
 "precision": "region",
@@ -20860,15 +20963,21 @@
 "Sitio Ponte Alta"
 ],
 "producer": "Fatima Cilene Oliveira Lami",
+"story": "2025년 컵 오브 엑셀런스에 '시치우 폰치 알타' 이름으로 두 농장이 올랐습니다. 술 데 미나스에서는 올리베이라 컨설토리아·트레이나멘투가 운영하는 농장이 아라라 내추럴로 6위(88.18), 만티케이라 지 미나스에서는 파티마 실레네 올리베이라 라미의 농장이 7위(88.08)를 했습니다. 이름이 같아 한 곳으로 묶기 어려워 두 기록을 함께 적습니다.",
 "varieties": "아라라",
 "processes": "내추럴",
+"awards": [
+"Cup of Excellence Brasil 2025 6위 — 88.18점, 아라라 내추럴 (술 데 미나스 · 올리베이라 컨설토리아)",
+"Cup of Excellence Brasil 2025 7위 — 88.08점, 아라라 내추럴 (만티케이라 지 미나스 · 파티마 실레네 올리베이라 라미)"
+],
 "refs": [
 {
-"t": "경매 기록",
+"t": "Cup of Excellence Brasil 2025 결과",
 "u": "https://allianceforcoffeeexcellence.org/brazil-2025/"
 }
 ],
 "beanCount": 0,
+"trend": "2025년 대회에 같은 이름의 두 농장이 나란히 이름을 올렸습니다.",
 "profileLevel": "place",
 "photo": {
 "m": "country_fallback",
@@ -20973,44 +21082,676 @@
 }
 },
 {
+"id": "F|브라질|파젠다 보아 비스타",
+"kind": "farm",
+"country": "브라질",
+"name": "파젠다 보아 비스타",
+"nameEn": "Fazenda Boa Vista",
+"nameJa": "ファゼンダ・ボア・ヴィスタ",
+"lat": -22.2534164,
+"lon": -45.1603324,
+"precision": "village",
+"evidence": "돔 비소주 시 · 만티케이라 지 미나스 · BSCA 2025 결과",
+"source": "https://www.graocafe.com.br/cafe-mantiqueira-fazenda-boavista",
+"alias": [
+"보아 비스타",
+"fazenda boa vista",
+"boa vista",
+"ファゼンダ・ボア・ヴィスタ"
+],
+"producer": "마르셀루·플라비우 카르발류 페라즈 형제 (Marcelo & Flávio Carvalho Ferraz)",
+"founded": "1880년대 파젠다 두 로자리우에서 갈라져 1952년 '보아 비스타'가 됨 · 1975년 커피 시작",
+"elevation": "1,200~1,300m",
+"story": "미나스 제라이스 돔 비소주, 만티케이라 지맥의 농장입니다. 1880년대 쿠스토디우 테오도루 히베이루 지 카르발류가 세운 파젠다 두 로자리우에서 갈라져, 1952년 마리아 아파레시다 카르발류 페라즈와 페드루 카를루스 주니케이라 페라즈 부부가 가장 높은 땅을 물려받아 '보아 비스타'라 이름 붙였습니다. 1975년부터 커피를 심었고 1986년 자녀들에게 나눠 준 뒤 지금은 마르셀루·플라비우·리비우 형제가 110헥타르를 운영합니다. 해발 1,200~1,300m의 돌 많은 땅에 카투카이·카투아이·버번을 기르고, 2025년 컵 오브 엑셀런스 가공 부문에서 카투카이 펄프드 내추럴로 2위(90.82)에 올랐습니다.",
+"varieties": "카투카이 · 카투아이 · 버번 · 아카이아 · 이카투 등 15가지 시험 품종",
+"processes": "펄프드 내추럴(CD) 중심 · 내추럴",
+"flavorProfile": "노란 과일 · 꿀 · 시트러스, 높은 단맛",
+"harvest": "5월~9월 (주 수확기)",
+"awards": [
+"Cup of Excellence Brasil 2025 가공(Via Úmida) 부문 2위 — 90.82점, 카투카이 펄프드 내추럴"
+],
+"refs": [
+{
+"t": "농장·가문 소개",
+"u": "https://www.graocafe.com.br/cafe-mantiqueira-fazenda-boavista"
+},
+{
+"t": "농장 소개(고도·품종)",
+"u": "http://www.faemg.org.br/noticias/segredos-de-um-cafe-premiado-cultivado-no-alto-das-montanhas"
+},
+{
+"t": "지역 언론(규모·관리)",
+"u": "https://cccmg.com.br/noticias/o-ouro-verde-de-dom-vicoso-mg/"
+},
+{
+"t": "Cup of Excellence Brasil 2025 결과",
+"u": "https://allianceforcoffeeexcellence.org/brazil-2025/"
+}
+],
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-brazil-2025-fazenda-boa-vista-2",
+"competition": "CoE Brazil 2025 · Washed + Honey",
+"year": 2025,
+"rank": "2",
+"score": 90.82,
+"farm": "Fazenda Boa Vista",
+"variety": "Catucaí",
+"process": "Pulped Natural",
+"buyers": [
+"사루타히코커피"
+],
+"buyersEn": [
+"Sarutahiko Coffee Inc."
+],
+"buyersJa": [
+"猿田彦珈琲"
+],
+"joint": false,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/brazil-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2025/"
+}
+],
+"auctionCount": 1,
+"terroir": "돔 비소주 · 만티케이라 지맥 · 돌 많은 토양과 4개 미소 테루아 · 110헥타르",
+"trend": "2014년부터 대회에 이름을 올리며 2025년 가공 부문 2위에 올랐습니다.",
+"profileLevel": "place",
+"photo": {
+"m": "exact_origin",
+"f": "photos/br-fazenda-boa-vista-dom-vicoso.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Estrada_de_Terra_em_Dom_Vi%C3%A7oso_MG.jpg/960px-Estrada_de_Terra_em_Dom_Vi%C3%A7oso_MG.jpg",
+"c": {
+"ko": "돔 비소주, 비소주 벨류로 가는 흙길",
+"en": "Dirt road to Viçoso Velho, Dom Viçoso",
+"ja": "ドン・ビソゾ、ビソゾ・ヴェーリョへの道"
+},
+"a": "Tomás R M de Paula",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0",
+"s": "commons",
+"p": "https://commons.wikimedia.org/wiki/File:Estrada_de_Terra_em_Dom_Vi%C3%A7oso_MG.jpg"
+}
+},
+{
+"id": "F|브라질|파젠다 수쿠리",
+"kind": "farm",
+"country": "브라질",
+"name": "파젠다 수쿠리",
+"nameEn": "Fazenda Sucuri",
+"nameJa": "ファゼンダ・スクリ",
+"lat": -18.473889,
+"lon": -47.200278,
+"precision": "village",
+"evidence": "코로만데우 시 중심 · 세라두 미네이루(DBarbosa 수쿠리 농장) · OSM",
+"source": "https://www.dbarbosacoffee.com.br/producao",
+"alias": [
+"수쿠리",
+"fazenda sucuri",
+"sucuri",
+"ファゼンダ・スクリ"
+],
+"producer": "다닐루 바르보자 (Danilo Barbosa) — D'Barbosa Coffee, 아버지 자이루 바르보자와 1980년 시작",
+"founded": "1980년 작은 농장에서 시작, 2018년부터 스페셜티 전환",
+"elevation": "1,000~1,100m (판매 랏 표기 1,050m)",
+"story": "세라두 미네이루 코로만데우의 농장입니다. 1980년 다닐루 바르보자가 아버지 자이루 바르보자와 작은 땅에서 커피를 심으며 시작했고, 2018년부터 스페셜티로 방향을 바꿨습니다. 가족이 카르무 두 파라나이바·파트로시니우·캄푸스 알투스까지 여러 농장을 운영하는데, 코로만데우의 수쿠리는 그중 게이샤와 발효 가공을 맡습니다. 2021년 컵 오브 엑셀런스 브라질 우승을 냈고, 2025년에는 게이샤 내추럴 랏으로 2위(90.32)에 올랐습니다.",
+"varieties": "게이샤 · 카투아이 · 카투카이 · 아카우아 · 토파지우 · 이카투 · 문도 노보",
+"processes": "내추럴 · 펄프드 내추럴 · 호기성·무산소 발효",
+"flavorProfile": "레몬그라스 · 꽃향 · 오렌지 · 파파야 · 꿀",
+"harvest": "6월~8월 (주 수확기)",
+"awards": [
+"Cup of Excellence Brasil 2021 우승",
+"Cup of Excellence Brasil 2025 건식 부문 2위 — 90.32점, 게이샤 내추럴",
+"Cup of Excellence Brasil 2023 9위"
+],
+"refs": [
+{
+"t": "농장·가족 공식",
+"u": "https://www.dbarbosacoffee.com.br/quemsomos"
+},
+{
+"t": "농장 목록(소재지)",
+"u": "https://www.dbarbosacoffee.com.br/producao"
+},
+{
+"t": "Cup of Excellence Brasil 2025 결과",
+"u": "https://allianceforcoffeeexcellence.org/brazil-2025/"
+}
+],
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-brazil-2025-fazenda-sucuri-2",
+"competition": "CoE Brazil 2025 · Natural",
+"year": 2025,
+"rank": "2",
+"score": 90.32,
+"farm": "Fazenda Sucuri",
+"variety": "Geisha",
+"process": "Natural",
+"buyers": [
+"사루타히코커피"
+],
+"buyersEn": [
+"Sarutahiko Coffee Inc."
+],
+"buyersJa": [
+"猿田彦珈琲"
+],
+"joint": false,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/brazil-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2025/"
+}
+],
+"auctionCount": 1,
+"terroir": "세라두 미네이루 코로만데우 · 게이샤와 발효 가공을 맡는 구획",
+"trend": "2021년 대회 우승 뒤 게이샤와 발효 랏을 앞세워 해외 로스터리 납품을 늘렸습니다.",
+"profileLevel": "place",
+"photo": {
+"m": "exact_origin",
+"f": "photos/br-fazenda-sucuri-coromandel.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Coromandel_-_State_of_Minas_Gerais%2C_Brazil_-_panoramio.jpg/960px-Coromandel_-_State_of_Minas_Gerais%2C_Brazil_-_panoramio.jpg",
+"c": {
+"ko": "코로만데우의 풍경",
+"en": "Countryside around Coromandel",
+"ja": "コロマンデウの風景"
+},
+"a": "gleuber",
+"l": "CC BY-SA 3.0",
+"lu": "https://creativecommons.org/licenses/by-sa/3.0",
+"s": "commons",
+"p": "https://commons.wikimedia.org/wiki/File:Coromandel_-_State_of_Minas_Gerais,_Brazil_-_panoramio.jpg"
+}
+},
+{
 "id": "F|브라질|파젠다 아구아 린파",
 "kind": "farm",
 "country": "브라질",
 "name": "파젠다 아구아 린파",
 "nameEn": "Fazenda Água Limpa",
-"lat": -18.940829,
-"lon": -46.992662,
-"precision": "region",
-"evidence": "Cerrado Mineiro · OSM/Photon",
-"source": "https://www.openstreetmap.org/search?query=Fazenda+Água+Limpa",
+"nameJa": "ファゼンダ・アグア・リンパ",
+"lat": -19.696389,
+"lon": -46.171389,
+"precision": "village",
+"evidence": "캄푸스 알투스 시 · 세라두 미네이루 · BSCA 2025 (마르셀루 아시스 노게이라 농장)",
+"source": "https://allianceforcoffeeexcellence.org/brazil-2025/",
 "alias": [
-"Fazenda Água Limpa"
+"아구아 린파",
+"아과 린파",
+"fazenda agua limpa",
+"fazenda água limpa",
+"agua limpa",
+"ファゼンダ・アグア・リンパ"
 ],
-"producer": "Marcelo Assis Nogueira",
-"varieties": "아라라",
-"processes": "허니",
+"producer": "마르셀루 아시스 노게이라 (Marcelo Assis Nogueira)",
+"elevation": "1,200m 안팎",
+"story": "미나스 제라이스 캄푸스 알투스, 세라두 미네이루의 농장입니다. 마르셀루 아시스 노게이라가 운영하며 해발 1,200m 안팎에서 아라라를 기릅니다. 2025년 컵 오브 엑셀런스 브라질 가공(Via Úmida) 부문에서 아라라 허니 랏으로 91.37점을 받아 1위에 올랐습니다. 브라질에는 같은 이름의 아구아 린파 농장이 여럿 있어 생산자와 지역으로 구분합니다.",
+"varieties": "아라라 중심",
+"processes": "허니(펄프드 내추럴) 중심 · 내추럴",
+"flavorProfile": "꿀 · 흰 꽃 · 시트러스, 부드러운 단맛과 깨끗한 컵",
+"harvest": "6월~9월 (주 수확기)",
+"awards": [
+"Cup of Excellence Brasil 2025 가공(Via Úmida) 부문 1위 — 91.37점, 아라라 허니 (1A·1B)"
+],
 "refs": [
 {
-"t": "경매 기록",
+"t": "Cup of Excellence Brasil 2025 결과",
+"u": "https://allianceforcoffeeexcellence.org/brazil-2025/"
+},
+{
+"t": "BSCA 2025 결과(소재지·생산자)",
+"u": "https://www.bsca.com.br/brasil-melhores-cafes-especiais-2025/"
+},
+{
+"t": "농장 구분·품종",
+"u": "https://roasttocup.coffee/dictionary/fazenda-agua-limpa-nogueira-profile/"
+}
+],
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-brazil-2025-fazenda-agua-limpa-1a",
+"competition": "CoE Brazil 2025",
+"year": 2025,
+"rank": "1A",
+"score": 91.37,
+"farm": "Fazenda Agua Limpa",
+"variety": "Arara",
+"process": "Honey",
+"buyers": [
+"스노우빈스"
+],
+"buyersEn": [
+"Snow Beans Coffee"
+],
+"buyersJa": [
+"Snow Beans Coffee"
+],
+"joint": true,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/brazil-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2025/"
+},
+{
+"id": "coe-brazil-2025-fazenda-agua-limpa-1b",
+"competition": "CoE Brazil 2025 · Washed + Honey",
+"year": 2025,
+"rank": "1B",
+"score": 91.37,
+"farm": "Fazenda Agua Limpa",
+"variety": "Arara",
+"process": "Honey",
+"buyers": [
+"허니커피"
+],
+"buyersEn": [
+"HoneyCoffee (Izaki Coffee Co., Ltd.)"
+],
+"buyersJa": [
+"ハニーコーヒー"
+],
+"joint": false,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/brazil-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2025/"
+}
+],
+"auctionCount": 2,
+"terroir": "세라두 미네이루 캄푸스 알투스 · 1,200m의 완만한 구릉 · 건기가 수확기와 겹침",
+"trend": "2025년 대회 우승 뒤 아라라 허니 랏을 중심으로 직거래가 늘었습니다.",
+"profileLevel": "place",
+"photo": {
+"m": "exact_origin",
+"f": "photos/br-campos-altos-santuario.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Campos_Altos_minas_Gerais.jpg/960px-Campos_Altos_minas_Gerais.jpg",
+"c": {
+"ko": "캄푸스 알투스의 마을과 산",
+"en": "Town and hills of Campos Altos",
+"ja": "カンポス・アルトスの町と山"
+},
+"a": "alexandra maria nunes",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0",
+"s": "commons",
+"p": "https://commons.wikimedia.org/wiki/File:Campos_Altos_minas_Gerais.jpg"
+}
+},
+{
+"id": "F|브라질|파젠다 아라사수",
+"kind": "farm",
+"country": "브라질",
+"name": "파젠다 아라사수",
+"nameEn": "Fazenda Araçaçu",
+"nameJa": "ファゼンダ・アラサス",
+"lat": -21.3686224,
+"lon": -45.5122937,
+"precision": "village",
+"evidence": "트레스 폰타스 시 · 술 데 미나스 · BSCA 2025 결과",
+"source": "https://www.corcafe.com.br/farms-1/caxambu-farm-and-araca%C3%A7u",
+"alias": [
+"아라사수",
+"파젠다 아라카수",
+"아라카수",
+"fazenda aracacu",
+"fazenda araçaçu",
+"aracacu",
+"ファゼンダ・アラサス"
+],
+"producer": "카르멘 루시아 샤베스 지 브리투 ('우샤', Carmem Lúcia Chaves de Brito) — 브리투·멘데스 가문 3대",
+"founded": "증조부 때부터 100년 넘게 카샴부·아라사수 두 농장을 운영",
+"elevation": "930~1,150m",
+"story": "술 데 미나스 트레스 폰타스의 농장으로, 카샴부와 아라사수를 합쳐 380헥타르, 그중 235헥타르가 커피밭입니다. 백 년 넘게 이어온 가문 농장으로 지금은 3대째 카르멘 루시아 샤베스 지 브리투('우샤')가 이끌며 브라질 스페셜티 커피 협회(BSCA) 회장을 맡고 있습니다. '아라사수'는 토착어로 '하늘과 땅을 잇는 큰 나무'라는 뜻이고, 농장에는 원주민이 남긴 흔적도 남아 있습니다. 2025년 컵 오브 엑셀런스 건식 부문에서 아라라 내추럴 랏으로 90.79점을 받아 1위에 올랐습니다.",
+"varieties": "아라라 · 옐로·레드 버번 · 옐로·레드 카투아이",
+"processes": "내추럴 · 허니 · 펄프드 내추럴 · 발효 랏",
+"flavorProfile": "당밀 · 흑설탕 · 살구 · 노란 과일, 실키한 바디",
+"harvest": "5월~9월 (주 수확기)",
+"awards": [
+"Cup of Excellence Brasil 2025 건식(Natural) 부문 1위 — 90.79점, 아라라 내추럴"
+],
+"refs": [
+{
+"t": "농장·가문 소개",
+"u": "https://www.corcafe.com.br/farms-1/caxambu-farm-and-araca%C3%A7u"
+},
+{
+"t": "Cup of Excellence Brasil 2025 결과",
+"u": "https://allianceforcoffeeexcellence.org/brazil-2025/"
+},
+{
+"t": "BSCA 2025 결과·소재지",
+"u": "https://www.bsca.com.br/resultado_cup_of_excellence_brasil_2025/"
+},
+{
+"t": "지역 언론(경영 전환·수상)",
+"u": "https://diariodocomercio.com.br/agronegocio/cafe-mineiro-lance-leilao/"
+}
+],
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-brazil-2025-fazenda-aracacu-1a",
+"competition": "CoE Brazil 2025",
+"year": 2025,
+"rank": "1A",
+"score": 90.79,
+"farm": "Fazenda Aracaçu",
+"variety": "Arara",
+"process": "Natural",
+"buyers": [
+"스노우빈스"
+],
+"buyersEn": [
+"Snow Beans Coffee"
+],
+"buyersJa": [
+"Snow Beans Coffee"
+],
+"joint": true,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/brazil-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2025/"
+}
+],
+"auctionCount": 1,
+"terroir": "술 데 미나스 트레스 폰타스 · 카샴부와 함께 380헥타르 단지 · 930~1,150m 구릉",
+"trend": "3대째 가문 경영을 법인처럼 정리하고 생산의 80%를 스페셜티로 내며 대회 출품을 이어갑니다.",
+"profileLevel": "place",
+"photo": {
+"m": "exact_origin",
+"f": "photos/br-fazenda-aracacu-tres-pontas.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Cidade_de_Tr%C3%AAs_Pontas_e_serra.JPG/960px-Cidade_de_Tr%C3%AAs_Pontas_e_serra.JPG",
+"c": {
+"ko": "트레스 폰타스의 마을과 산줄기",
+"en": "Town and ridge of Três Pontas",
+"ja": "トレス・ポンタスの町と山並み"
+},
+"a": "WOtP",
+"l": "CC BY-SA 3.0",
+"lu": "https://creativecommons.org/licenses/by-sa/3.0",
+"s": "commons",
+"p": "https://commons.wikimedia.org/wiki/File:Cidade_de_Tr%C3%AAs_Pontas_e_serra.JPG"
+}
+},
+{
+"id": "F|브라질|파젠다 올료스 다구아",
+"kind": "farm",
+"country": "브라질",
+"name": "파젠다 올료스 다구아",
+"nameEn": "Fazenda Olhos D'Água",
+"nameJa": "ファゼンダ・オリョス・ダグア",
+"lat": -19.696389,
+"lon": -46.171389,
+"precision": "village",
+"evidence": "캄푸스 알투스 시 · 세라두 미네이루 · BSCA 2025 결과",
+"source": "https://allianceforcoffeeexcellence.org/brazil-2025/",
+"alias": [
+"올료스 다구아",
+"올류스 다구아",
+"올료스 다 아구아",
+"fazenda olhos d agua",
+"fazenda olhos d'água",
+"olhos d agua",
+"ファゼンダ・オリョス・ダグア"
+],
+"producer": "플라비우 마르시우 페레이라 다 시우바 (Flávio Márcio Ferreira da Silva)",
+"elevation": "1,200m 안팎",
+"story": "미나스 제라이스 캄푸스 알투스, 세라두 미네이루의 농장입니다. 플라비우 마르시우 페레이라 다 시우바가 가족과 함께 운영하며 해발 1,200m 안팎에서 아라라와 파라이수를 기릅니다. 2025년 컵 오브 엑셀런스에서 같은 아라라로 건식 4위(89.55)와 실험 가공 4위(89.89)에 나란히 올랐습니다.",
+"varieties": "아라라 · 파라이수 · 카투아이",
+"processes": "내추럴 · 실험(발효) 가공 · 펄프드 내추럴",
+"flavorProfile": "노란 과일 · 꿀 · 시트러스, 둥근 단맛",
+"harvest": "6월~9월 (주 수확기)",
+"awards": [
+"Cup of Excellence Brasil 2025 건식 부문 4위 — 89.55점, 아라라 내추럴",
+"Cup of Excellence Brasil 2025 실험 가공 부문 4위 — 89.89점, 아라라"
+],
+"refs": [
+{
+"t": "Cup of Excellence Brasil 2025 결과",
+"u": "https://allianceforcoffeeexcellence.org/brazil-2025/"
+},
+{
+"t": "BSCA 2025 결과(소재지)",
+"u": "https://www.bsca.com.br/resultado_cup_of_excellence_brasil_2025/"
+},
+{
+"t": "폴랴 대회 결과표",
+"u": "https://www1.folha.uol.com.br/blogs/cafe-na-prensa/2025/11/cafe-da-mantiqueira-de-minas-e-eleito-o-melhor-do-brasil-no-oscar-da-categoria.shtml"
+}
+],
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-brazil-2025-fazenda-olhos-d-gua-4",
+"competition": "CoE Brazil 2025 · Natural",
+"year": 2025,
+"rank": "4",
+"score": 89.55,
+"farm": "Fazenda Olhos D’Água",
+"variety": "Arara",
+"process": "Natural",
+"buyers": [
+"동서식품"
+],
+"buyersEn": [
+"Dongsuh Foods"
+],
+"buyersJa": [
+"Dongsuh Foods"
+],
+"joint": true,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/brazil-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2025/"
+}
+],
+"auctionCount": 1,
+"terroir": "세라두 미네이루 캄푸스 알투스 · 1,200m 고지",
+"trend": "2025년 한 해에만 건식·실험 가공 두 부문에서 나란히 4위에 오르며 이름을 알렸습니다.",
+"profileLevel": "place",
+"photo": {
+"m": "exact_origin",
+"f": "photos/br-campos-altos-santuario.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Campos_Altos_minas_Gerais.jpg/960px-Campos_Altos_minas_Gerais.jpg",
+"c": {
+"ko": "캄푸스 알투스의 마을과 산",
+"en": "Town and hills of Campos Altos",
+"ja": "カンポス・アルトスの町と山"
+},
+"a": "alexandra maria nunes",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0",
+"s": "commons",
+"p": "https://commons.wikimedia.org/wiki/File:Campos_Altos_minas_Gerais.jpg"
+}
+},
+{
+"id": "F|브라질|파젠다 카나스트라",
+"kind": "farm",
+"country": "브라질",
+"name": "파젠다 카나스트라",
+"nameEn": "Fazenda Canastra",
+"nameJa": "ファゼンダ・カナストラ",
+"lat": -19.9225,
+"lon": -46.823056,
+"precision": "village",
+"evidence": "타피라 시 · 세라두 미네이루 상 페드루 다 카나스트라 농장 · BSCA 2025",
+"source": "https://greenlot.coffee/fazenda-canastra/",
+"alias": [
+"카나스트라",
+"상 페드루 다 카나스트라",
+"fazenda canastra",
+"sao pedro da canastra",
+"ファゼンダ・カナストラ"
+],
+"producer": "에드손 루이스 이그나시우 (Edson Luiz Ignácio) · 마우리시우 멘데스 (Maurício Mendes)",
+"founded": "2019년 상 페드루 다 카나스트라 농장으로 설립 (1990년대부터 오렌지 농사를 지은 생산자)",
+"elevation": "1,200~1,250m",
+"story": "세라두 미네이루 타피라, 세라 다 카나스트라 자락의 농장입니다. 1990년대부터 상파울루에서 오렌지를 재배해 온 에드손 루이스 이그나시우와 마우리시우 멘데스가 2019년 상 페드루 다 카나스트라 농장을 세우고 커피로 방향을 잡았습니다. 해발 1,200m가 넘는 서늘한 구릉에서 아라라를 기르고, 189헥타르 가운데 커피밭을 꾸려 2025년 컵 오브 엑셀런스 가공 부문에서 아라라 허니 랏으로 5위(89.32)에 올랐습니다.",
+"varieties": "아라라 중심",
+"processes": "허니 · 내추럴",
+"flavorProfile": "꿀 · 살구 · 시트러스, 깨끗한 단맛",
+"harvest": "6월~8월 (주 수확기)",
+"awards": [
+"Cup of Excellence Brasil 2025 가공(Via Úmida) 부문 5위 — 89.32점, 아라라 허니"
+],
+"refs": [
+{
+"t": "농장 소개(설립·소재지)",
+"u": "https://greenlot.coffee/fazenda-canastra/"
+},
+{
+"t": "BSCA 2025 결과·소재지",
+"u": "https://www.bsca.com.br/finalistas-cup-of-excellence-brazil-cafes-especiais-2025/"
+},
+{
+"t": "Cup of Excellence Brasil 2025 결과",
 "u": "https://allianceforcoffeeexcellence.org/brazil-2025/"
 }
 ],
 "beanCount": 0,
+"auctions": [
+{
+"id": "coe-brazil-2025-fazenda-canastra-5",
+"competition": "CoE Brazil 2025 · Washed + Honey",
+"year": 2025,
+"rank": "5",
+"score": 89.32,
+"farm": "Fazenda Canastra",
+"variety": "Arara",
+"process": "Honey",
+"buyers": [
+"미커피"
+],
+"buyersEn": [
+"MI Coffee Corporation"
+],
+"buyersJa": [
+"MI Coffee Corporation"
+],
+"joint": true,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/brazil-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2025/"
+}
+],
+"auctionCount": 1,
+"terroir": "세라두 미네이루 타피라 · 세라 다 카나스트라 자락의 1,200m 고지 · 서늘한 바람",
+"trend": "2019년 세운 농장으로 대회 출품과 함께 스페셜티 비중을 늘려 가고 있습니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-coffee-berries.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Coffee_Berries.jpg/960px-Coffee_Berries.jpg",
+"m": "exact_origin",
+"f": "photos/br-fazenda-canastra-serra-da-canastra.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Coffee_Farm_near_Ibiraci_town.jpg/960px-Coffee_Farm_near_Ibiraci_town.jpg",
 "c": {
-"ko": "브라질 커피 체리 (국가 대표 사진)",
-"en": "Brazil coffee cherries (country representative photo)",
-"ja": "ブラジルのコーヒーチェリー（代表写真）"
+"ko": "세라 다 카나스트라를 배경으로 한 이비라시 인근 커피 농장",
+"en": "Coffee farm near Ibiraci with the Serra da Canastra behind",
+"ja": "セラ・ダ・カナストラを望むイビラシ近郊のコーヒー農園"
 },
 "a": "Jonathan Wilkins",
 "l": "CC BY-SA 3.0",
 "lu": "https://creativecommons.org/licenses/by-sa/3.0",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Coffee_Berries.jpg"
+"p": "https://commons.wikimedia.org/wiki/File:Coffee_Farm_near_Ibiraci_town.jpg"
+}
+},
+{
+"id": "F|브라질|파젠다 히우 베르지",
+"kind": "farm",
+"country": "브라질",
+"name": "파젠다 히우 베르지",
+"nameEn": "Fazenda Rio Verde",
+"nameJa": "ファゼンダ・ヒオ・ヴェルデ",
+"lat": -21.881078,
+"lon": -45.0868526,
+"precision": "village",
+"evidence": "콘세이상 두 히우 베르지 시 · 만티케이라 지 미나스 · 이파네마 아그리콜라",
+"source": "https://www.belco.fr/en/fermes/cafe/fazenda_rio_verde",
+"alias": [
+"히우 베르지",
+"리우 베르지",
+"리오 베르데",
+"fazenda rio verde",
+"rio verde",
+"ファゼンダ・ヒオ・ヴェルデ"
+],
+"producer": "이파네마 아그리콜라 (Ipanema Agrícola S/A) — 1887년 주니케이라 가문이 세운 농장",
+"founded": "1887년 안토니우 파샤르두 주니케이라·가브리에우라 아우구스타 부부가 혼인 선물로 받아 커피를 심음 · 2008년 이파네마가 인수",
+"elevation": "1,100~1,260m (대회 출품 랏 1,260m)",
+"story": "만티케이라 지 미나스 콘세이상 두 히우 베르지의 농장입니다. 1887년 안토니우 파샤르두 주니케이라와 가브리에우라 아우구스타가 혼인 선물로 받은 땅에 커피를 심은 것이 시작이고, 1964년 사위 루이스 시릴루 페르난데스가 가공 설비와 비료 프로그램을 새로 갖췄습니다. 2008년 이파네마 커피스가 인수해 1,500헥타르 가운데 770헥타르를 보전림으로 두고 620헥타르에서 커피를 기릅니다. 구획을 32개의 미소 테루아로 나눠 품종별로 따로 수확하고, 2018년에 지은 밀에서는 무산소 발효와 온실 건조를 합니다. 2023년 대회 가공 부문 1위, 2024년 내추럴 3위와 실험 가공 5위, 2025년 실험 가공 1위를 냈습니다.",
+"varieties": "게이샤 · 옐로 아라라 · 옐로 파라이수 · 레드 아카이아 · 옐로 버번 · 옐로 카투아이",
+"processes": "내추럴 · 펄프드 내추럴 · 무산소 발효 · 온실·수직 건조기 건조",
+"flavorProfile": "꽃향 · 시트러스 · 열대과일 · 꿀",
+"harvest": "5월~9월 (주 수확기)",
+"awards": [
+"Cup of Excellence Brasil 2025 실험 가공 부문 1위 — 91.68점, 게이샤",
+"Cup of Excellence Brasil 2024 내추럴 부문 3위 — 91.57점, 게이샤",
+"Cup of Excellence Brasil 2024 실험 가공 부문 5위 — 90.14점, 게이샤",
+"Cup of Excellence Brasil 2023 가공 부문 1위 — 92.15점, 게이샤"
+],
+"refs": [
+{
+"t": "농장 소개(연혁·규모)",
+"u": "https://www.belco.fr/en/fermes/cafe/fazenda_rio_verde"
+},
+{
+"t": "농장 방문기(가문·가공)",
+"u": "https://www.lepiantagionidelcaffe.com/en/fazenda-rio-verde-a-story-of-family-and-innovation/"
+},
+{
+"t": "Cup of Excellence 랏 소개",
+"u": "https://auction.allianceforcoffeeexcellence.org/en/lots/fazenda-rio-verde-3"
+},
+{
+"t": "수상 기록",
+"u": "https://catastro.coffee/en/finca/fazenda-rio-verde/"
+}
+],
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-brazil-2024-fazenda-rio-verde-5",
+"competition": "CoE Brazil 2024 · Experimental",
+"year": 2024,
+"rank": "5",
+"score": 90.14,
+"farm": "Fazenda Rio Verde",
+"variety": "Geisha",
+"process": "Anaerobic fermentation",
+"buyers": [
+"미커피"
+],
+"buyersEn": [
+"MI Coffee Corporation"
+],
+"buyersJa": [
+"MI Coffee Corporation"
+],
+"joint": true,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/brazil-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2024/"
+}
+],
+"auctionCount": 1,
+"terroir": "만티케이라 산맥 한복판 · 32개 미소 테루아 · 1,500헥타르 중 770헥타르 보전림 · 미네랄 많은 점토질 토양",
+"trend": "2023년 이후 게이샤 실험 랏으로 대회 1위를 이어가며 이파네마의 대회 출품 농장으로 자리 잡았습니다.",
+"profileLevel": "place",
+"photo": {
+"m": "exact_origin",
+"f": "photos/br-fazenda-rio-verde-conceicao.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/PAISAGEM_-_panoramio.jpg/960px-PAISAGEM_-_panoramio.jpg",
+"c": {
+"ko": "콘세이상 두 히우 베르지의 풍경",
+"en": "Countryside of Conceição do Rio Verde",
+"ja": "コンセイサン・ド・リオ・ヴェルデの風景"
+},
+"a": "MICROLARM",
+"l": "CC BY-SA 3.0",
+"lu": "https://creativecommons.org/licenses/by-sa/3.0",
+"s": "commons",
+"p": "https://commons.wikimedia.org/wiki/File:PAISAGEM_-_panoramio.jpg"
 }
 },
 {
@@ -21245,6 +21986,7 @@
 "country": "엘살바도르",
 "name": "라스 두아나스",
 "nameEn": "Las Duanas",
+"nameJa": "Las Duanas",
 "lat": 14.33218,
 "lon": -89.4481,
 "precision": "region",
@@ -21286,6 +22028,7 @@
 "country": "엘살바도르",
 "name": "로스 모랄레스",
 "nameEn": "Los Morales",
+"nameJa": "Los Morales",
 "lat": 14.33218,
 "lon": -89.4481,
 "precision": "region",
@@ -21327,6 +22070,7 @@
 "country": "엘살바도르",
 "name": "산타 엘레나",
 "nameEn": "Santa Elena",
+"nameJa": "サンタ・エレナ農園",
 "lat": 13.85142,
 "lon": -89.629021,
 "precision": "region",
@@ -21905,6 +22649,7 @@
 "country": "엘살바도르",
 "name": "엘 마난티알",
 "nameEn": "El Manantial",
+"nameJa": "El Manantial",
 "lat": 14.33218,
 "lon": -89.4481,
 "precision": "region",
@@ -21946,6 +22691,7 @@
 "country": "엘살바도르",
 "name": "엘 앙헬",
 "nameEn": "El Angel",
+"nameJa": "El Angel",
 "lat": 13.85885,
 "lon": -89.80398,
 "precision": "region",
@@ -22050,6 +22796,7 @@
 "country": "엘살바도르",
 "name": "핀카 에티오피아",
 "nameEn": "Finca Ethiopia",
+"nameJa": "Finca Ethiopia",
 "lat": 13.85885,
 "lon": -89.80398,
 "precision": "region",
@@ -22091,6 +22838,7 @@
 "country": "온두라스",
 "name": "로스 프리모스",
 "nameEn": "Los Primos",
+"nameJa": "Los Primos",
 "lat": 15.09606,
 "lon": -88.36737,
 "precision": "region",
@@ -22549,6 +23297,7 @@
 "country": "온두라스",
 "name": "세로 아술 (핀카스 미에리시)",
 "nameEn": "Fincas Mierisch – Cerro Azul",
+"nameJa": "Fincas Mierisch – Cerro Azul",
 "lat": 14.921674,
 "lon": -88.236444,
 "precision": "region",
@@ -22584,6 +23333,7 @@
 "country": "온두라스",
 "name": "엘 망고",
 "nameEn": "El Mango",
+"nameJa": "El Mango",
 "lat": 15.09606,
 "lon": -88.36737,
 "precision": "region",
@@ -22688,6 +23438,7 @@
 "country": "온두라스",
 "name": "핀카스 미에리시 라 알리타",
 "nameEn": "Fincas Mierisch – La Alita",
+"nameJa": "Fincas Mierisch – La Alita",
 "lat": 14.921674,
 "lon": -88.236444,
 "precision": "region",
@@ -22722,6 +23473,7 @@
 "country": "케냐",
 "name": "퉁구리 워싱스테이션",
 "nameEn": "Thunguri Washing Station",
+"nameJa": "トゥングリ・ウォッシングステーション",
 "lat": -0.320672,
 "lon": 36.929807,
 "precision": "region",
@@ -22766,6 +23518,7 @@
 "country": "케냐",
 "name": "티티 팩토리",
 "nameEn": "Thithi Coffee Factory",
+"nameJa": "ティティ・ファクトリー",
 "lat": -0.831709,
 "lon": 37.004922,
 "precision": "region",
@@ -22813,6 +23566,7 @@
 "country": "코스타리카",
 "name": "산 마르틴",
 "nameEn": "San Martín",
+"nameJa": "San Martín",
 "lat": 9.5828031,
 "lon": -84.0659187,
 "precision": "region",
@@ -22854,6 +23608,7 @@
 "country": "코스타리카",
 "name": "산타 테레사",
 "nameEn": "Santa Teresa",
+"nameJa": "Santa Teresa",
 "lat": 9.5828031,
 "lon": -84.0659187,
 "precision": "region",
@@ -23050,6 +23805,7 @@
 "country": "코스타리카",
 "name": "아시엔다 코페이 이타다키",
 "nameEn": "Hacienda Copey – Itadaki",
+"nameJa": "Hacienda Copey – Itadaki",
 "lat": 9.5828031,
 "lon": -84.0659187,
 "precision": "region",
@@ -23249,6 +24005,7 @@
 "country": "콜롬비아",
 "name": "핀카 밀란",
 "nameEn": "Finca Milan",
+"nameJa": "フィンカ・ミラン",
 "lat": 4.865071,
 "lon": -75.621155,
 "precision": "village",
@@ -23841,6 +24598,7 @@
 "country": "파나마",
 "name": "게이샤360 (티에라 블랑카)",
 "nameEn": "Geisha360 (Tierra Blanca)",
+"nameJa": "Geisha360 (Tierra Blanca)",
 "lat": 8.708389,
 "lon": -82.599856,
 "precision": "region",
@@ -23877,6 +24635,7 @@
 "country": "파나마",
 "name": "돈 페페",
 "nameEn": "Don Pepe",
+"nameJa": "ドン・ペペ農園",
 "lat": 8.74075,
 "lon": -82.385383,
 "precision": "village",
@@ -23986,6 +24745,7 @@
 "country": "파나마",
 "name": "라 후아카",
 "nameEn": "La Huaca",
+"nameJa": "La Huaca",
 "lat": 8.74075,
 "lon": -82.385383,
 "precision": "region",
@@ -24166,6 +24926,7 @@
 "country": "파나마",
 "name": "루이토 (라마스투스)",
 "nameEn": "Luito Geisha Estates (Lamastus)",
+"nameJa": "Luito Geisha Estates (Lamastus)",
 "lat": 8.800509,
 "lon": -82.451566,
 "precision": "region",
@@ -24239,6 +25000,7 @@
 "country": "파나마",
 "name": "밤비토 베르데",
 "nameEn": "Bambito Verde",
+"nameJa": "Bambito Verde",
 "lat": 8.832637,
 "lon": -82.613163,
 "precision": "region",
@@ -24396,6 +25158,7 @@
 "country": "파나마",
 "name": "부락 (로스트 오리진)",
 "nameEn": "Burac (Lost Origin)",
+"nameJa": "Burac (Lost Origin)",
 "lat": 8.780619,
 "lon": -82.644284,
 "precision": "region",
@@ -24662,6 +25425,7 @@
 "country": "파나마",
 "name": "아라우즈",
 "nameEn": "Araúz",
+"nameJa": "Araúz",
 "lat": 8.74075,
 "lon": -82.385383,
 "precision": "region",
@@ -24696,6 +25460,7 @@
 "country": "파나마",
 "name": "아랑고",
 "nameEn": "Finca Arango",
+"nameJa": "Finca Arango",
 "lat": 8.780619,
 "lon": -82.644284,
 "precision": "region",
@@ -25030,6 +25795,7 @@
 "country": "파나마",
 "name": "엘 페르가미노",
 "nameEn": "Finca El Pergamino",
+"nameJa": "Finca El Pergamino",
 "lat": 8.813903,
 "lon": -82.618281,
 "precision": "region",
@@ -25127,6 +25893,7 @@
 "country": "파나마",
 "name": "유니클리 세니소스",
 "nameEn": "Finca Los Cenizos",
+"nameJa": "Finca Los Cenizos",
 "lat": 8.852574,
 "lon": -82.573627,
 "precision": "region",
@@ -25359,6 +26126,7 @@
 "country": "파나마",
 "name": "코파치",
 "nameEn": "Corpachi Coffee Company",
+"nameJa": "Corpachi Coffee Company",
 "lat": 8.74075,
 "lon": -82.385383,
 "precision": "region",
@@ -25587,6 +26355,7 @@
 "country": "파나마",
 "name": "토투마스",
 "nameEn": "Mount Totumas",
+"nameJa": "Mount Totumas",
 "lat": 8.870758,
 "lon": -82.69117,
 "precision": "region",
@@ -25621,6 +26390,7 @@
 "country": "파나마",
 "name": "티에라 블랑카",
 "nameEn": "Tierra Blanca",
+"nameJa": "Tierra Blanca",
 "lat": 8.708389,
 "lon": -82.599856,
 "precision": "region",
@@ -25825,6 +26595,7 @@
 "country": "파나마",
 "name": "핀카 마야",
 "nameEn": "Finca Maya",
+"nameJa": "Finca Maya",
 "lat": 8.766743,
 "lon": -82.417759,
 "precision": "region",
@@ -26031,6 +26802,7 @@
 "country": "페루",
 "name": "캄포 베르데",
 "nameEn": "Campo Verde",
+"nameJa": "Campo Verde",
 "lat": -12.5,
 "lon": -72.5,
 "precision": "region",
@@ -30909,7 +31681,7 @@
 "토피",
 "당밀"
 ],
-"placeId": "C|브라질",
+"placeId": "F|브라질|다테하",
 "listingCount": 2,
 "processId": "pulped-natural",
 "processGroup": "semi",
@@ -30931,7 +31703,7 @@
 "캐러멜",
 "미디엄바디"
 ],
-"placeId": "C|브라질",
+"placeId": "F|브라질|다테하",
 "listingCount": 2,
 "processId": "pulped-natural",
 "processGroup": "semi",
@@ -31652,7 +32424,7 @@
 "시트러스",
 "토스트"
 ],
-"placeId": "C|브라질",
+"placeId": "F|브라질|파젠다 엄",
 "listingCount": 2,
 "processId": "pulped-natural",
 "processGroup": "semi",
@@ -31675,7 +32447,7 @@
 "그래놀라",
 "몰트"
 ],
-"placeId": "C|브라질",
+"placeId": "F|브라질|파젠다 엄",
 "listingCount": 2,
 "processId": "pulped-natural",
 "processGroup": "semi",
@@ -31697,7 +32469,7 @@
 "옥수수차",
 "호밀빵"
 ],
-"placeId": "C|브라질",
+"placeId": "F|브라질|파젠다 엄",
 "listingCount": 2,
 "processId": "pulped-natural",
 "processGroup": "semi",
@@ -31721,7 +32493,7 @@
 "카카오닙스",
 "몰트"
 ],
-"placeId": "C|브라질",
+"placeId": "F|브라질|파젠다 엄",
 "listingCount": 2,
 "processId": "natural",
 "processGroup": "natural"
@@ -31742,7 +32514,7 @@
 "피칸",
 "밀크초콜릿"
 ],
-"placeId": "C|브라질",
+"placeId": "F|브라질|파젠다 엄",
 "listingCount": 2,
 "processId": "pulped-natural",
 "processGroup": "semi",
@@ -31764,7 +32536,7 @@
 "그래놀라바",
 "몰트"
 ],
-"placeId": "C|브라질",
+"placeId": "F|브라질|파젠다 엄",
 "listingCount": 2,
 "processId": "pulped-natural",
 "processGroup": "semi",
@@ -31786,7 +32558,7 @@
 "카카오닙스",
 "몰트"
 ],
-"placeId": "C|브라질",
+"placeId": "F|브라질|파젠다 엄",
 "listingCount": 2,
 "processId": "pulped-natural",
 "processGroup": "semi",
@@ -51323,7 +52095,7 @@
 "아몬드",
 "살구"
 ],
-"placeId": "C|브라질",
+"placeId": "F|브라질|다테하",
 "listingCount": 1,
 "processId": "pulped-natural",
 "processGroup": "semi",
@@ -51346,7 +52118,7 @@
 "헤이즐넛",
 "벨베티"
 ],
-"placeId": "C|브라질",
+"placeId": "F|브라질|다테하",
 "listingCount": 1,
 "processId": "pulped-natural",
 "processGroup": "semi",
@@ -51367,7 +52139,7 @@
 "초콜릿",
 "바디"
 ],
-"placeId": "C|브라질",
+"placeId": "F|브라질|다테하",
 "listingCount": 1,
 "processId": "pulped-natural",
 "processGroup": "semi",
@@ -51388,7 +52160,7 @@
 "아몬드",
 "약한시트러스"
 ],
-"placeId": "C|브라질",
+"placeId": "F|브라질|다테하",
 "listingCount": 1,
 "processId": "pulped-natural",
 "processGroup": "semi",
@@ -51412,7 +52184,7 @@
 "밀크초콜릿",
 "시트릭"
 ],
-"placeId": "C|브라질",
+"placeId": "F|브라질|다테하",
 "listingCount": 1,
 "processId": "pulped-natural",
 "processGroup": "semi",
@@ -51434,7 +52206,7 @@
 "열대과일",
 "꿀"
 ],
-"placeId": "C|브라질",
+"placeId": "F|브라질|다테하",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -51452,7 +52224,7 @@
 "아몬드",
 "핵과류"
 ],
-"placeId": "C|브라질",
+"placeId": "F|브라질|다테하",
 "listingCount": 1,
 "processId": "pulped-natural",
 "processGroup": "semi",
@@ -51469,7 +52241,7 @@
 "variety": null,
 "process": null,
 "cupNotes": [],
-"placeId": "C|브라질",
+"placeId": "F|브라질|다테하",
 "listingCount": 1
 },
 {
@@ -52937,7 +53709,7 @@
 "밀크캐러멜",
 "단맛"
 ],
-"placeId": "C|브라질",
+"placeId": "F|브라질|파젠다 세르탕",
 "listingCount": 1,
 "processId": "pulped-natural",
 "processGroup": "semi",
@@ -52988,7 +53760,7 @@
 "variety": null,
 "process": "Natural",
 "cupNotes": [],
-"placeId": "C|브라질",
+"placeId": "F|브라질|파젠다 엄",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -53007,7 +53779,7 @@
 "토스트",
 "시트러스"
 ],
-"placeId": "C|브라질",
+"placeId": "F|브라질|파젠다 엄",
 "listingCount": 1,
 "processId": "anaerobic-natural",
 "processGroup": "anaerobic",
@@ -53029,7 +53801,7 @@
 "캐슈넛",
 "아몬드초콜릿"
 ],
-"placeId": "C|브라질",
+"placeId": "F|브라질|파젠다 엄",
 "listingCount": 1,
 "processId": "dark-room",
 "processGroup": "anaerobic"
@@ -53043,7 +53815,7 @@
 "variety": null,
 "process": "Dark Room",
 "cupNotes": [],
-"placeId": "C|브라질",
+"placeId": "F|브라질|파젠다 엄",
 "listingCount": 1,
 "processId": "dark-room",
 "processGroup": "anaerobic"
@@ -53062,7 +53834,7 @@
 "그래놀라",
 "시트러스"
 ],
-"placeId": "C|브라질",
+"placeId": "F|브라질|파젠다 엄",
 "listingCount": 1,
 "processId": "pulped-natural",
 "processGroup": "semi",
@@ -53198,7 +53970,7 @@
 "단맛",
 "견과류"
 ],
-"placeId": "C|브라질",
+"placeId": "F|브라질|다테하",
 "listingCount": 1,
 "processId": "pulped-natural",
 "processGroup": "semi",
