@@ -50,6 +50,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   }
   *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
   html,body{margin:0;padding:0;height:100%}
+  html.pm-lock,html.pm-lock body{overflow:hidden}
   body{
     background:var(--cream);
     color:var(--ink);
@@ -233,6 +234,66 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   .chip.on{background:var(--ink);border-color:var(--ink);color:#FFF8EF}
   .chip.on .cnt{color:var(--terra-soft)}
   .chip .cnt{font-size:10.5px;opacity:.7;font-weight:700}
+
+  /* ---------- 가공방식 필터 ---------- */
+  .chips.proc{padding:0 18px 9px;gap:6px;align-items:center}
+  .chips.proc .plabel{
+    flex:none;font-size:10px;font-weight:800;letter-spacing:.1em;color:#A79C8D;
+    padding-right:3px;white-space:nowrap;text-transform:uppercase;
+  }
+  .chips.proc .chip{height:27px;padding:0 10px;font-size:11.5px;gap:4px}
+  .chips.proc .chip.on{background:var(--green);border-color:var(--green);color:#FFF8EF}
+  .chips.proc .chip.on .cnt{color:#CBDCC5}
+  .chips.detail{padding:0 18px 9px;gap:5px;align-items:center}
+  .chips.detail .chip{height:24px;padding:0 9px;font-size:11px;gap:4px;background:#FFFDF8}
+  .chips.detail .chip.on{background:#8A5A2B;border-color:#8A5A2B;color:#FFF8EF}
+  .chips.detail .chip.on .cnt{color:#F2DEC8}
+  .chips[hidden]{display:none}
+
+  /* 원두 목록·카드 안의 가공방식 배지 — 누르면 설명이 뜹니다 */
+  .proc{
+    display:inline-flex;align-items:center;border-radius:5px;font-weight:700;font-style:normal;
+    color:#8A5A2B;background:#F7EFE4;border:1px solid #EFDFC9;padding:0 5px;line-height:1.5;
+    text-decoration:underline;text-decoration-style:dotted;text-underline-offset:2px;
+    cursor:pointer;letter-spacing:-.01em;
+  }
+  .proc:hover,.proc:focus-visible{background:#F1E3CE;border-color:#E3CDAE;outline:none}
+  .proc.lg{font-size:12.5px;padding:1px 7px}
+
+  /* 가공방식 설명 모달 */
+  .pmback{
+    position:fixed;inset:0;z-index:10060;display:flex;align-items:flex-end;justify-content:center;
+    background:rgba(34,30,26,.52);-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);
+  }
+  .pmback[hidden]{display:none}
+  .pmmodal{
+    width:100%;max-width:520px;max-height:86dvh;overflow:auto;background:var(--cream);color:var(--ink);
+    border:1px solid var(--line);border-bottom:0;border-radius:20px 20px 0 0;
+    padding:16px 18px calc(16px + env(safe-area-inset-bottom));
+    box-shadow:0 -18px 50px -24px rgba(34,30,26,.55);animation:psup .24s cubic-bezier(.2,.7,.3,1) both;
+  }
+  @media(min-width:600px){ .pmback{align-items:center;padding:20px} .pmmodal{border-bottom:1px solid var(--line);border-radius:20px} }
+  .pmhead{display:flex;align-items:flex-start;gap:12px}
+  .pmhead .kick{display:block;font-size:9.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--terra);margin-bottom:2px}
+  .pmhead h2{margin:0;font-size:19px;line-height:1.3;letter-spacing:-.02em}
+  .pmx{
+    margin-left:auto;flex:none;width:34px;height:34px;border-radius:999px;background:#F1E9DC;
+    color:var(--ink-soft);font-size:14px;display:inline-flex;align-items:center;justify-content:center;
+  }
+  .pmx:hover{background:#E9DFCE}
+  .pmsum{margin:10px 0 0;font-size:14px;font-weight:600;line-height:1.6;color:var(--ink)}
+  .pmnote{margin:8px 0 0;font-size:12.5px;line-height:1.6;color:var(--ink-soft)}
+  .pmsec{border-top:1px solid var(--line);margin-top:11px;padding-top:9px}
+  .pmsec dt{font-size:10px;font-weight:800;letter-spacing:.08em;color:#A79C8D;text-transform:uppercase;margin-bottom:3px}
+  .pmsec dd{margin:0;font-size:13.5px;line-height:1.65;color:var(--ink)}
+  .pmfoot{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:14px;border-top:1px solid var(--line);padding-top:12px}
+  .pmlink,.pmfilter{
+    display:inline-flex;align-items:center;height:36px;padding:0 13px;border-radius:999px;
+    font-size:12.5px;font-weight:700;text-decoration:none;white-space:nowrap;
+  }
+  .pmlink{background:#fff;border:1px solid var(--line);color:var(--ink)}
+  .pmfilter{background:var(--green);color:#FFF8EF;border:1px solid var(--green)}
+  .pmlink:hover{border-color:var(--terra);color:var(--terra)}
 
   /* ---------- map ----------
      touch-action:none — 폴드 펼친 화면·태블릿에서 두 손가락 핀치가 브라우저 페이지 확대로
@@ -663,6 +724,8 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   </header>
 
   <div class="chips" id="chips" role="tablist" aria-label="산지 필터"></div>
+  <div class="chips proc" id="procChips" role="tablist" aria-label="가공방식 필터" hidden></div>
+  <div class="chips detail" id="procDetail" role="tablist" aria-label="세부 가공방식" hidden></div>
 
   <div class="mapwrap">
     <div id="map" aria-label="커피 산지 지도"></div>
@@ -702,8 +765,23 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 <input type="file" id="psInpCam" accept="image/*" capture="environment" hidden />
 <input type="file" id="psInpLib" accept="image/*" hidden />
 
+<!-- 가공방식 설명: 원두 목록·카드의 가공 배지를 누르면 뜹니다 -->
+<div class="pmback" id="pmBack" hidden>
+  <div class="pmmodal" role="dialog" aria-modal="true" aria-labelledby="pmTitle">
+    <div class="pmhead">
+      <div>
+        <span class="kick" id="pmKick" data-ci-skip></span>
+        <h2 id="pmTitle"></h2>
+      </div>
+      <button class="pmx" type="button" id="pmClose" aria-label="닫기" data-ci-skip>✕</button>
+    </div>
+    <div id="pmBody" data-ci-skip></div>
+  </div>
+</div>
+
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script src="process-data.js?v=20261125a"></script>
 <script>
 /* =========================================================
    ONCOFFEELOG · 온커피로그 (KRUMBLE ROASTERS)  v0.3
@@ -711,11 +789,13 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
    ========================================================= */
 
 const state = {
-  filter: "all",        // all | country:<name>
+  filter: "all",        // all | auction | country:<name>
   query: "",
   bean: null,           // 선택된 카탈로그 생두
   place: null,          // 선택된 장소
   results: null,
+  proc: "all",          // 가공방식 상위 갈래 (CI_PROCESS.chips)
+  procDetail: "",       // 세부 가공방식 id (비어 있으면 갈래 전체)
   ready: false
 };
 var PS_ON = false;      // 사진 검색 패널이 시트에 붙어 있는지
@@ -847,7 +927,14 @@ function visibleItems() {
     if (state.filter.startsWith("country:") && p.country !== state.filter.slice(8)) continue;
     if (state.filter === "auction" && !p.auctionCount) continue;
     const n = p.beanCount || (beansByPlace.get(p.id) || []).length;
-    out.push({ id: p.id, tier: pinTier(p), lat: p.lat, lon: p.lon, name: p.name, sub: `${p.country} · ${n}종`, place: p, count: n });
+    let count = n;
+    if (procFilterOn()) {
+      /* 가공방식으로 좁히면 그 방식의 생두가 있는 곳만, 숫자도 그 방식 기준으로 */
+      const hit = (beansByPlace.get(p.id) || []).filter(beanMatchesProc).length;
+      if (!hit) continue;
+      count = hit;
+    }
+    out.push({ id: p.id, tier: pinTier(p), lat: p.lat, lon: p.lon, name: p.name, sub: `${p.country} · ${count}종`, place: p, count });
   }
   return out;
 }
@@ -887,6 +974,11 @@ function updateHint() {
       : `옥션 낙찰 산지·농장 <b>${n}</b>곳 · 낙찰 랏 <b>${(c.auctions || 0).toLocaleString()}</b>건`;
     return;
   }
+  if (procFilterOn()) {
+    const hit = procScopeBeans().filter(beanMatchesProc).length;
+    el.innerHTML = `<b>${n}</b>곳 · ${esc(procFilterName())} ${hit.toLocaleString()}종`;
+    return;
+  }
   el.innerHTML = narrowMap
     ? `<b>${n}</b>곳 표시 · ${(c.beans || 0).toLocaleString()}종`
     : `<b>${n}</b>곳 표시 · 카탈로그 ${(c.beans || 0).toLocaleString()}종 / ${c.countries || 0}개국`;
@@ -912,7 +1004,233 @@ function renderChips() {
     state.query = ""; qEl.value = "";
     renderChips(); renderSheet(); drawPins(); fitVisible(); syncUrl();
   }));
+  renderProcChips();
 }
+
+/* ---------- 가공방식 필터 · 설명 모달 ----------
+   가공방식 사전(process-data.js · CI_PROCESS)의 8개 갈래와 36종 세부 방식을
+   국가·옥션 필터와 함께 좁혀 보고, 배지를 누르면 쉬운 설명이 뜨게 합니다.
+   ------------------------------------------------ */
+const PROC = window.CI_PROCESS || null;
+function langIdx() { const l = uiLang(); return l === "en" ? 1 : (l === "ja" ? 2 : 0); }
+function tr(v) {
+  if (v == null) return "";
+  if (Array.isArray(v)) return v[langIdx()] || v[0] || "";
+  return v[uiLang()] || v.ko || "";
+}
+function uiStr(k) { return PROC && PROC.ui && PROC.ui[k] ? tr(PROC.ui[k]) : ""; }
+function procFilterOn() { return !!(state.procDetail || (state.proc && state.proc !== "all")); }
+function procIdOf(b) { return (b && b.processId) || (b && b.processUnverified ? "__unverified" : ""); }
+
+/* 목록·카드의 가공방식 값. 누르면명 모달이 열립니다. */
+function processBadge(b, cls) {
+  if (!b) return "";
+  const id = procIdOf(b);
+  const p = id && PROC && PROC.processes[id] ? PROC.processes[id] : null;
+  const label = p ? (uiLang() === "ko" ? (b.process || tr(p.label)) : tr(p.label)) : (b.process || "");
+  if (!label) return "";
+  if (!id) return esc(label);
+  return `<span class="proc${cls ? " " + cls : ""}" role="button" tabindex="0" data-proc="${esc(id)}" data-ci-skip aria-label="${esc(label)}">${esc(label)}</span>`;
+}
+
+function beanMatchesProc(b) {
+  if (!procFilterOn()) return true;
+  if (state.procDetail) return b.processId === state.procDetail || (b.processTags || []).indexOf(state.procDetail) > -1;
+  return b.processGroup === state.proc;
+}
+
+/* 지금 고른 국가·옥션 필터 안의 생두 (가공 칩 숫자도 이 범위로 셈) */
+function procScopeBeans() {
+  if (!state.ready) return [];
+  if (!state.filter || state.filter === "all") return CAT.beans;
+  const out = [];
+  for (const b of CAT.beans) {
+    const p = placeById.get(b.placeId);
+    if (!p) continue;
+    if (state.filter.startsWith("country:") && p.country !== state.filter.slice(8)) continue;
+    if (state.filter === "auction" && !p.auctionCount) continue;
+    out.push(b);
+  }
+  return out;
+}
+
+function procFilterName() {
+  if (!PROC) return "";
+  if (state.procDetail) {
+    const p = PROC.processes[state.procDetail];
+    return p ? tr(p.label) : state.procDetail;
+  }
+  if (!state.proc || state.proc === "all") return uiStr("filterAll") || "전체";
+  const c = PROC.chips.find((x) => x.id === state.proc);
+  if (c) return tr(c.label);
+  const p = PROC.processes[state.proc];
+  return p ? tr(p.label) : state.proc;
+}
+
+function procGroupCounts() {
+  const m = {};
+  if (!state.ready) return null;
+  for (const b of procScopeBeans()) if (b.processGroup) m[b.processGroup] = (m[b.processGroup] || 0) + 1;
+  return m;
+}
+function procSubCounts() {
+  const m = {};
+  if (!state.ready) return m;
+  for (const b of procScopeBeans()) {
+    const ids = [b.processId].concat(b.processTags || []);
+    for (const id of ids) if (id) m[id] = (m[id] || 0) + 1;
+  }
+  return m;
+}
+
+function renderProcChips() {
+  const row = $("#procChips"), det = $("#procDetail");
+  if (!row || !det) return;
+  if (!PROC) { row.hidden = true; det.hidden = true; return; }
+  const counts = procGroupCounts();
+  const total = counts ? procScopeBeans().length : ((PROC.counts && PROC.counts.beans) || 0);
+  const out = [`<span class="plabel">${esc(uiStr("filterTitle") || "가공방식")}</span>`];
+  out.push(`<button type="button" class="chip ${(!state.procDetail && state.proc === "all") ? "on" : ""}" data-p="all">${esc(uiStr("filterAll") || "전체")} <span class="cnt">${total.toLocaleString()}</span></button>`);
+  for (const c of PROC.chips) {
+    if (c.id === "all") continue;
+    const n = counts ? (counts[c.id] || 0)
+      : ((PROC.counts && PROC.counts.groups && PROC.counts.groups[c.id]) || 0);
+    out.push(`<button type="button" class="chip ${(!state.procDetail && state.proc === c.id) ? "on" : ""}" data-p="${esc(c.id)}">${esc(tr(c.label))} <span class="cnt">${n.toLocaleString()}</span></button>`);
+  }
+  row.hidden = false;
+  row.innerHTML = out.join("");
+  row.querySelectorAll("[data-p]").forEach((b) => b.addEventListener("click", () => {
+    state.proc = b.dataset.p; state.procDetail = "";
+    state.bean = null; state.place = null; state.results = null;
+    state.query = ""; qEl.value = "";
+    renderProcChips(); renderSheet(); drawPins(); fitVisible(); syncUrl();
+  }));
+
+  /* 갈래를 고르면 그 안의 세부 가공방식을 한 줄 더 보여 줍니다 (CM·ASD·써멀쇼크 등) */
+  const subs = [];
+  if (state.proc && state.proc !== "all") {
+    const m = procSubCounts();
+    for (const pid of PROC.order) {
+      const p = PROC.processes[pid];
+      if (!p) continue;
+      if (p.chip !== state.proc) continue;
+      if (state.ready && !(m[pid] > 0)) continue;
+      subs.push({ id: pid, label: tr(p.label), n: m[pid] || 0 });
+    }
+    subs.sort((a, b) => b.n - a.n);
+  }
+  if (!subs.length) { det.hidden = true; det.innerHTML = ""; return; }
+  const gcount = counts ? (counts[state.proc] || 0) : 0;
+  det.innerHTML = [`<span class="plabel">${esc(uiStr("detail") || "세부")}</span>`,
+    `<button type="button" class="chip detail ${state.procDetail ? "" : "on"}" data-d="">${esc(uiStr("filterAll") || "전체")} <span class="cnt">${gcount.toLocaleString()}</span></button>`]
+    .concat(subs.map((s) => `<button type="button" class="chip detail ${state.procDetail === s.id ? "on" : ""}" data-d="${esc(s.id)}">${esc(s.label)} <span class="cnt">${s.n.toLocaleString()}</span></button>`))
+    .join("");
+  det.hidden = false;
+  det.querySelectorAll("[data-d]").forEach((b) => b.addEventListener("click", () => {
+    state.procDetail = b.dataset.d || "";
+    state.bean = null; state.place = null; state.results = null;
+    state.query = ""; qEl.value = "";
+    renderProcChips(); renderSheet(); drawPins(); fitVisible(); syncUrl();
+  }));
+}
+
+/* 세부 가공으로 좁혔을 때: 그 방식만 골라 보여 주는 목록 */
+function procSheet() {
+  const list = procScopeBeans().filter(beanMatchesProc);
+  const name = procFilterName();
+  const p = state.procDetail && PROC ? PROC.processes[state.procDetail] : null;
+  const chip = !p && PROC ? PROC.chips.find((c) => c.id === state.proc) : null;
+  const desc = p ? tr(p.summary) : (chip ? tr(chip.desc) : "");
+  const tpl = uiStr("resultTitle") || "{} 가공 생두";
+  return `<div class="results">
+    <div class="res-head"><h2>${esc(name)}</h2><span>${esc(tpl.replace("{}", list.length.toLocaleString()))}</span></div>
+    ${desc ? `<p class="qr-note">${esc(desc)}</p>` : ""}
+    ${list.length ? list.slice(0, 60).map(beanRow).join("") : `<p class="qr-note">${esc(uiStr("empty") || "이 가공의 생두가 아직 없습니다.")}</p>`}
+    ${list.length > 60 ? `<p class="qr-note">상위 60종만 표시합니다. 검색어를 좁혀 보세요.</p>` : ""}
+  </div>`;
+}
+
+/* ---------- 가공방식 설명 모달 ---------- */
+function openProcModal(key) {
+  if (!PROC) return;
+  const back = $("#pmBack"), body = $("#pmBody"), ttl = $("#pmTitle"), kick = $("#pmKick");
+  if (!back || !body || !ttl) return;
+  let title = "", kicker = uiStr("modalTitle") || "가공방식", html = "";
+  if (key === "__unverified") {
+    title = uiStr("unverifiedTitle") || "의미를 확인하지 못한 표기";
+    html = `<p class="pmsum">${esc(tr(PROC.unverified && PROC.unverified.VAP))}</p>
+      <p class="pmnote">${esc(uiStr("unverifiedBody"))}</p>`;
+  } else {
+    const p = PROC.processes[key];
+    if (!p) return;
+    title = tr(p.label);
+    const chip = PROC.chips.find((c) => c.id === p.chip);
+    kicker = chip ? tr(chip.label) : (p.group || (uiStr("modalTitle") || "가공방식"));
+    const secs = [
+      [uiStr("how"), tr(p.how)],
+      [uiStr("cup"), tr(p.cup)],
+      [uiStr("roast"), tr(p.roast)],
+      [uiStr("origins"), tr(p.origins)],
+      [uiStr("caution"), tr(p.caution)]
+    ].filter((x) => x[0] && x[1]);
+    html = `<p class="pmsum">${esc(tr(p.summary))}</p>
+      <dl>${secs.map(([k, v]) => `<div class="pmsec"><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join("")}</dl>
+      <div class="pmfoot">
+        <a class="pmlink" href="guide.html#process-${esc(key)}">${esc(uiStr("guideLink") || "가이드에서 더 읽기")} →</a>
+        <button class="pmfilter" type="button" data-pmf="${esc(key)}">${esc(uiStr("filterNote") || "가공방식으로 좁혀 보기")}</button>
+      </div>`;
+  }
+  if (kick) kick.textContent = kicker;
+  ttl.textContent = title;
+  body.innerHTML = html;
+  back.hidden = false;
+  const de = document.documentElement;
+  if (de && de.classList) de.classList.add("pm-lock");
+  const x = $("#pmClose"); if (x) { try { x.focus({ preventScroll: true }); } catch (e) {} }
+}
+function closeProcModal() {
+  const back = $("#pmBack");
+  if (back) back.hidden = true;
+  const de = document.documentElement;
+  if (de && de.classList) de.classList.remove("pm-lock");
+}
+
+/* 설명 모달의 "이 가공만 보기" — 지도 필터를 그 방식으로 바꿉니다 */
+function applyProcFilter(id) {
+  if (!PROC) return;
+  const p = PROC.processes[id];
+  if (!p) return;
+  state.proc = p.chip || "all";
+  state.procDetail = id;
+  state.bean = null; state.place = null; state.results = null;
+  state.query = ""; qEl.value = "";
+  closeProcModal();
+  renderProcChips(); renderSheet(); drawPins(); fitVisible(); syncUrl();
+}
+/* ?process= 딥링크 — 갈래 id도, 세부 방식 id도 받습니다 */
+function applyProcParam(v) {
+  if (!v || !PROC) return;
+  if (PROC.chips.some((c) => c.id === v)) {
+    state.proc = v; state.procDetail = "";
+  } else if (PROC.processes[v]) {
+    state.proc = PROC.processes[v].chip || "all"; state.procDetail = v;
+  } else return;
+  renderProcChips();
+}
+
+(function bindProcModal() {
+  const back = $("#pmBack");
+  if (!back) return;
+  const x = $("#pmClose");
+  if (x) x.addEventListener("click", closeProcModal);
+  back.addEventListener("click", (e) => { if (e.target === back) closeProcModal(); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !back.hidden) closeProcModal(); });
+  const body = $("#pmBody");
+  if (body) body.addEventListener("click", (e) => {
+    const b = e.target.closest && e.target.closest("[data-pmf]");
+    if (b) applyProcFilter(b.dataset.pmf);
+  });
+})();
 
 /* ---------- 카드 ---------- */
 function precisionBadge(p) {
@@ -1061,12 +1379,17 @@ function placeRow(p) {
 }
 
 function beanRow(b) {
-  const meta = [ (b.region || b.country), b.process, b.variety ].filter(Boolean).join(" · ");
+  const bits = [];
+  if (b.region || b.country) bits.push(esc(b.region || b.country));
+  const pb = processBadge(b);
+  if (pb) bits.push(pb);
+  if (b.variety) bits.push(esc(b.variety));
+  const meta = bits.join(" · ");
   return `<button type="button" class="res ${state.bean && state.bean.id === b.id ? "on" : ""}" data-bean="${esc(b.id)}">
     <span class="dot" style="background:${b.placeId && placeById.get(b.placeId)?.kind === "farm" ? "#9A5B2E" : "#2F4636"}"></span>
     <span>
       <span class="rn">${esc(beanName(b))}${jpTag(b)}${placeById.get(b.placeId)?.auctionCount ? '<span class="tag auc">🏆</span>' : ''}</span>
-      <span class="rm">${esc(meta)}</span>
+      <span class="rm">${meta}</span>
       ${b.cupNotes && b.cupNotes.length ? `<span class="rt">${esc(b.cupNotes.slice(0, 5).join(" · "))}</span>` : ""}
     </span>
   </button>`;
@@ -1085,7 +1408,7 @@ function cardForBean(b) {
       <div class="stat"><dt>국가</dt><dd>${esc(b.country)}</dd></div>
       <div class="stat"><dt>지역</dt><dd>${esc(b.region || "—")}</dd></div>
       <div class="stat"><dt>품종</dt><dd>${esc(b.variety || "—")}</dd></div>
-      <div class="stat"><dt>가공</dt><dd>${esc(b.process || "—")}</dd></div>
+      <div class="stat"><dt>가공</dt><dd>${processBadge(b, "lg") || esc(b.process || "—")}</dd></div>
       ${b.farm ? `<div class="stat wide"><dt>농장 · 워싱스테이션</dt><dd>${esc(b.farm)}</dd></div>` : ""}
       ${p && p.kind === "farm" ? `<div class="stat wide"><dt>지도 위치</dt><dd>${esc(p.name)} · ${p.precision === "farm" ? "농장 좌표" : p.precision === "village" ? "마을 단위" : "산지 단위"}</dd></div>` : ""}
     </dl>
@@ -1447,6 +1770,8 @@ function renderSheet() {
       ${r.length ? r.slice(0, 60).map(beanRow).join("") : `<p class="qr-note">${ps.length ? "이 농장·산지에서 온 생두는 아직 카탈로그에 없습니다. 위 카드를 눌러 위치와 이야기를 보세요." : "이 이름의 생두는 카탈로그에 없습니다. 농장·산지 이름으로 다시 검색해 보세요."}</p>`}
       ${r.length > 60 ? `<p class="qr-note">상위 60종만 표시합니다. 검색어를 좁혀 보세요.</p>` : ""}
     </div>`;
+  } else if (procFilterOn()) {
+    html = procSheet();
   } else {
     html = homeSheet();
   }
@@ -1526,6 +1851,12 @@ function bindSheet() {
     });
   }));
   sheetEl.querySelectorAll("[data-lookup]").forEach((b) => b.addEventListener("click", () => lookupFarm(b)));
+  /* 목록·카드의 가공방식 배지: 줄을 고르지 않고 설명만 띄웁니다 */
+  sheetEl.querySelectorAll("[data-proc]").forEach((el) => {
+    const open = (ev) => { ev.preventDefault(); ev.stopPropagation(); openProcModal(el.dataset.proc); };
+    el.addEventListener("click", open);
+    el.addEventListener("keydown", (ev) => { if (ev.key === "Enter" || ev.key === " ") open(ev); });
+  });
   bindReviews(sheetEl);
   hydrateReviews(sheetEl);
 }
@@ -1558,7 +1889,7 @@ function searchPlaces(q) {
   if (!toks.length || !CAT.places.length) return [];
   const out = [];
   for (const p of CAT.places) {
-    const t = norm([p.name, p.nameEn, p.nameJa, p.country].filter(Boolean).join(" "));
+    const t = norm([p.name, p.nameEn, p.nameJa, p.country, (p.alias || []).join(" ")].filter(Boolean).join(" "));
     let ok = true;
     for (const k of toks) if (!t.includes(k)) { ok = false; break; }
     if (ok) out.push(p);
@@ -1567,8 +1898,10 @@ function searchPlaces(q) {
   return out;
 }
 function hay(b) {
+  /* 표시 이름이 바뀐 산지(예: 윈난 → 운남)는 옛 이름으로도 찾히도록 별칭을 함께 넣습니다 */
+  const pa = (placeById.get(b.placeId) || {}).alias || [];
   return norm([b.name, b.nameEn, b.nameJa, b.region, b.farm, b.country, b.variety, b.process,
-               (b.cupNotes || []).join(" ")].join(" "));
+               (b.cupNotes || []).join(" "), pa.join(" ")].join(" "));
 }
 let INDEX = [];
 function buildIndex() {
@@ -1616,6 +1949,8 @@ function syncUrl() {
   if (state.bean) p.set("bean", state.bean.id);
   else if (state.place) p.set("place", state.place.id);
   else if (state.query) p.set("q", state.query);
+  if (state.procDetail) p.set("process", state.procDetail);
+  else if (state.proc && state.proc !== "all") p.set("process", state.proc);
   const s = p.toString();
   history.replaceState(null, "", location.pathname + (s ? "?" + s : ""));
 }
@@ -1645,6 +1980,7 @@ async function boot() {
   }
   renderChips();
   drawPins();
+  applyProcParam(params.get("process"));
   const beanId = params.get("bean"), placeId = params.get("place"), q = params.get("q"), coffee = params.get("coffee");
   if (beanId) { const b = CAT.beans.find((x) => x.id === beanId); if (b) return selectBean(b); }
   if (placeId) { const p = placeById.get(placeId); if (p) return selectPlace(p); }
