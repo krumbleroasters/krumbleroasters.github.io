@@ -68,6 +68,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   .status.soonEv{background:#F1E2CB;color:#7A4A28}
   .status.past{background:#EDE8DF;color:#8A8074}
   .status.scheduled{background:#E8EDF4;color:#3C5573}
+  .status.tba{background:#EFEDE8;color:#6B6259}
 
   .complist{display:grid;gap:12px;margin:14px 0 0}
   .comp{
@@ -291,8 +292,8 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     oneday:   ["정원 100명 · 당일 토너먼트", "Capped at 100 · one-day knockout", "定員100名・当日トーナメント"],
     fee3:     ["참가비 종목당 3만 원 · 지정 생두 별도", "Entry KRW 30,000 per category · official beans sold separately", "参加費は種目ごと3万ウォン・指定生豆は別売り"],
     kclreg:   ["KCL 7종목 참가 접수는 6월 1~30일 일괄", "KCL entries for all 7 competitions open 1–30 June", "KCL7種目の参加受付は6月1〜30日に一括"],
-    finalists:["분기 상위자 진출", "Quarterly winners qualify", "四半期上位者が進出"],
-    league:   ["리그 1~3 통과 12명 → 한국 대표 3명", "12 qualifiers from leagues 1–3 → 3 national representatives", "リーグ1〜3の通過者12名 → 韓国代表3名"],
+    quarterly:["분기 상위자 진출", "Quarterly winners qualify", "四半期上位者が進出"],
+    leagueq:  ["리그 1~3 통과자", "Qualifiers from leagues 1–3", "リーグ1〜3の通過者"],
     seed:     ["지정 생두 출품 → 블라인드 커핑", "Enter a roasted sample of the set green bean → blind cupping", "指定生豆の出品 → ブラインドカッピング"],
     size:     ["예선 규모가 큰 종목은 카드의 공식 페이지에서 확인하세요", "For large heats, check the official page linked on the card", "予選規模の大きい種目はカードの公式ページでご確認ください"]
   };
@@ -307,12 +308,12 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     {id:"kctc26", mon:[3], cat:["cup","natl"], way:"national", grade:"official",
      nm:["KCTC 코리아 컵 테이스터스 챔피언십","KCTC · Korea Cup Tasters Championship","KCTC · Korea Cup Tasters Championship"],
      ev:"2026.03.24–03.27", evT:["삼각 테이스팅 8세트 · 영도","8 triangle sets · Yeongdo","三角テイスティング8セット・影島"],
-     reg:"2026.02–03", o:["sca","beeple","busan3"], p:"yeongdo", href:"https://korea.sca.coffee/kctc"},
+     reg:"2026.02–03", o:["sca","busan3"], p:"yeongdo", href:"https://korea.sca.coffee/kctc"},
 
     {id:"kcigs", mon:[3], cat:["barista","natl"], way:"national", grade:"official",
      nm:["KCIGS 코리아 커피 인 굿 스피릿","KCIGS · Korea Coffee in Good Spirits","KCIGS · Korea Coffee in Good Spirits"],
      ev:"2026.03.27–03.29", evT:["스피릿바 3.27 · 스테이지 3.28 · 결선·시상 3.29","Spirits bar 3.27 · stage 3.28 · final and awards 3.29","スピリッツバー3.27・ステージ3.28・決勝と表彰3.29"],
-     reg:"2026.02–03", o:["sca","beeple","busan3"], p:"yeongdo", href:"https://korea.sca.coffee/kcigs", note:"tba2027"},
+     reg:"2026.02–03", o:["sca","busan3"], p:"yeongdo", href:"https://korea.sca.coffee/kcigs", note:"tba2027"},
 
     {id:"kcrc27", mon:[6], cat:["roast","natl"], way:"national", grade:"official",
      nm:["2027 KCRC 코리아 커피 로스팅 챔피언십","2027 KCRC · Korea Coffee Roasting Championship","2027 KCRC · Korea Coffee Roasting Championship"],
@@ -322,7 +323,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     {id:"kctc27", mon:[10], cat:["cup","natl"], way:"national", grade:"official",
      nm:["2027 KCTC 코리아 컵 테이스터스 챔피언십","2027 KCTC · Korea Cup Tasters Championship","2027 KCTC · Korea Cup Tasters Championship"],
      ev:"2026.10.01–10.04", evT:["예선 246명 → 본선 120 → 준결선 32 → 결선 4 · 부산커피웨이브와 동시 개최","246 → 120 → 32 → 4 · held with Busan Coffee Wave","予選246名 → 本選120 → 準決勝32 → 決勝4・釜山コーヒーウェーブと同時開催"],
-     reg:"2026.08–09", o:["sca","beeple","busan3"], p:"haeundae", href:"https://korea.sca.coffee/kctc"},
+     reg:"2026.08–09", o:["sca","busan3"], p:"haeundae", href:"https://korea.sca.coffee/kctc"},
 
     {id:"knbc27", mon:[11], cat:["barista","natl"], way:"national", grade:"official",
      nm:["2027 KNBC 코리아 내셔널 바리스타 챔피언십","2027 KNBC · Korea National Barista Championship","2027 KNBC · Korea National Barista Championship"],
@@ -477,7 +478,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     {id:"wrl_final", mon:[2], cat:["roast","natl"], way:"national", grade:"official",
      nm:["WRL KOREA 2027 결선","WRL KOREA 2027 Final","WRL KOREA 2027 決勝"],
      ev:"2027.02.17–02.20", evT:["리그 1~3 통과 12명 → 한국 대표 3명 선발 · 성수 이지스터","12 qualifiers from leagues 1–3 → 3 national representatives · Easystar, Seongsu","リーグ1〜3の通過者12名 → 韓国代表3名を選出・聖水イージスター"],
-     reg:"finalists", o:["wrl"], p:"seongsu", href:"https://wrlkorea.com", note:"league"},
+     reg:"leagueq", o:["wrl"], p:"seongsu", href:"https://wrlkorea.com"},
 
     {id:"src_kr", mon:[9,10], cat:["roast","natl"], way:"national", grade:"official",
      nm:["SRC Korea 스트롱홀드 로스팅 챔피언십","SRC Korea · Stronghold Roasting Championship","SRC Korea ストロングホールド・ロースティングチャンピオンシップ"],
@@ -513,7 +514,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     {id:"krca_final", mon:[12], cat:["roast"], way:"onsite", grade:"official",
      nm:["KRCA 왕중왕전","KRCA Grand Final","KRCA 王者決定戦"],
      ev:"2026.12.18–12.20", evT:["분기 출품전 상위자가 부산에서 현장 로스팅으로 겨룸","Quarterly winners meet for on-site roasting in Busan","四半期の上位者が釜山で会場焙煎で競う"],
-     reg:"finalists", o:["krca"], p:"look", href:"https://roastingawards.com", note:"krca27"},
+     reg:"quarterly", o:["krca"], p:"look", href:"https://roastingawards.com", note:"krca27"},
 
     {id:"krca_1", mon:[1], cat:["roast"], way:"bean", grade:"official",
      nm:["KRCA 2027 시즌 1월 출품전","KRCA 2027 season — January entry round","KRCA 2027シーズン 1月出品戦"],
@@ -584,7 +585,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
       cats: { roast:"로스팅", barista:"바리스타", brew:"브루잉", cup:"커핑 · 테이스팅", latte:"라떼아트", natl:"국가대표 선발전(KCC·WRL)" },
       ways: { onsite:"현장 경연", bean:"원두 출품", national:"국가대표 선발" },
       grades: { official:"공식", press:"보도", second:"2차" },
-      st: { open:"접수 중", soonReg:"곧 접수", soonEv:"다가오는 일정", past:"지난 일정", scheduled:"일정 확정" },
+      st: { open:"접수 중", soonReg:"곧 접수", soonEv:"다가오는 일정", past:"지난 일정", scheduled:"일정 확정", tba:"일정 미발표" },
       ev:"대회 날짜", reg:"접수 신청", org:"주최", place:"장소", official:"공식 페이지",
       link:"공식 페이지 →", countA:"개 대회 가운데", countB:"개 표시", empty:"이 조건에 맞는 대회가 없습니다. 다른 달이나 종목을 골라 보세요.",
       hlEmpty:"지금 접수 중이거나 곧 열리는 대회가 없습니다. 다음 시즌 일정은 주최 측 공지를 확인하세요.",
@@ -596,7 +597,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
       cats: { roast:"Roasting", barista:"Barista", brew:"Brewing", cup:"Cupping · tasting", latte:"Latte art", natl:"National team (KCC · WRL)" },
       ways: { onsite:"On-site", bean:"Bean entry", national:"National team" },
       grades: { official:"Official", press:"Press", second:"2nd-hand" },
-      st: { open:"Entry open", soonReg:"Entry soon", soonEv:"Coming up", past:"Past", scheduled:"Scheduled" },
+      st: { open:"Entry open", soonReg:"Entry soon", soonEv:"Coming up", past:"Past", scheduled:"Scheduled", tba:"Date TBA" },
       ev:"Date", reg:"Entry", org:"Organiser", place:"Venue", official:"Official page",
       link:"Official page →", countA:"competitions,", countB:"shown", empty:"No competition matches this filter. Try another month or category.",
       hlEmpty:"Nothing is open for entry or coming up right now. Check the organiser's notice for the next season.",
@@ -608,7 +609,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
       cats: { roast:"ロースト", barista:"バリスタ", brew:"ブリューイング", cup:"カッピング・テイスティング", latte:"ラテアート", natl:"代表選考（KCC・WRL）" },
       ways: { onsite:"会場競技", bean:"生豆出品", national:"代表選考" },
       grades: { official:"公式", press:"報道", second:"二次資料" },
-      st: { open:"受付中", soonReg:"まもなく受付", soonEv:"近日開催", past:"終了", scheduled:"日程確定" },
+      st: { open:"受付中", soonReg:"まもなく受付", soonEv:"近日開催", past:"終了", scheduled:"日程確定", tba:"日程未発表" },
       ev:"開催日", reg:"受付期間", org:"主催", place:"会場", official:"公式ページ",
       link:"公式ページ →", countA:"件のうち", countB:"件を表示", empty:"この条件に合う大会はありません。別の月や種目をお選びください。",
       hlEmpty:"いま受付中・近日開催の大会はありません。次のシーズンの日程は主催者の告知をご確認ください。",
@@ -675,6 +676,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     if (reg && reg.e && reg.e >= TODAY && (!reg.s || reg.s <= TODAY)) return "open";
     if (reg && reg.s && reg.s > TODAY && days(reg.s) <= 60) return "soonReg";
     if (ev && ev.s && days(ev.s) >= 0 && days(ev.s) <= 100) return "soonEv";
+    if (!ev) return "tba";   // 날짜를 아직 공표하지 않은 대회
     return "scheduled";
   }
   function nextDate(it) {
