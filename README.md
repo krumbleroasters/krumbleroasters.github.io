@@ -125,3 +125,24 @@
 - `i18n-data.js` — 공통·index·log의 문장 사전(`text`), 태그가 섞인 문장(`html`), 속성 값(`attr`), 숫자가 끼는 문장 틀(`templ`), 국가·산지·가공·컵노트 낱말 사전(`gloss`).
 - `i18n-pages.js` — about · guide · privacy · farms의 번역. 원문 열쇠는 페이지에서 그대로 뽑은 문자열이라, **페이지 문장을 고치면 이 파일도 다시 만들어야 합니다**(`work/krumble-i18n/build_dict.py`, `work/krumble-i18n/tr-<page>.json`).
 - 문장을 고칠 때는 `i18n*.js?v=` 값을 올리고 `sw.js`의 `CACHE`도 함께 올립니다. `build_farms.py`로 `farms.html`을 다시 만들 때도 같은 값을 씁니다(`I18N_VER`).
+
+## 마스터 관리자 (`/admin.html` + `/api/admin`) — 2026-11-25
+
+세민님이 AI 도움 없이도 급할 때 사이트 내용을 직접 고칠 수 있게 만든 화면입니다. 검색에 노출되지 않고(`noindex`, `robots.txt` Disallow) 사이트 메뉴·푸터 어디에도 링크하지 않습니다. 주소를 아는 사람만 엽니다.
+
+- **화면**: <https://oncoffeelog.pages.dev/admin.html> (Cloudflare Pages는 `.html`을 떼고 `/admin`으로 308 리다이렉트하므로 `/admin`도 같습니다). GitHub Pages(`oncoffeelog.com`)에는 Functions가 없어서 로그인할 수 없습니다 — 관리자 기능은 pages.dev에서만 동작합니다.
+- **백엔드**: `functions/api/admin.js` — Cloudflare Pages Functions. 로그인은 HMAC-SHA256 서명 HttpOnly 쿠키(12시간, '로그인 유지' 30일), 비밀번호는 `ADMIN_PASSWORD`(평문) 또는 `ADMIN_PASSWORD_HASH`(`pbkdf2$sha256$<iter>$<salt>$<hash>`, base64url)로 확인합니다.
+- **필요한 환경변수** (Cloudflare 대시보드 → Workers & Pages → `oncoffeelog` → Settings → Variables and Secrets):
+  - `ADMIN_PASSWORD` (Secret) — 마스터 비밀번호
+  - `GITHUB_TOKEN` (Secret) — 이 저장소 Contents **Read and write** 권한의 fine-grained 토큰. 저장 시 GitHub Contents API로 커밋합니다.
+  - `SESSION_SECRET` (선택) — 없으면 `ADMIN_PASSWORD`에서 파생합니다.
+  값은 저장소에 절대 커밋하지 않습니다. **`functions/`에는 비밀값이 한 글자도 없습니다.**
+- **관리 항목과 저장 위치**:
+  | 화면 | 저장 파일 | 사이트 반영 방법 |
+  |---|---|---|
+  | 공지 배너 · 메인 첫 문장 | `site-config.json` | 모든 페이지가 `site-notice.js`로 배너를 읽고, index가 `ledeSub`를 씁니다 |
+  | 커피대회 일정 수정·추가 | `competitions-extra.json` | `competitions.html`이 원본 `DATA` 위에 덧씌웁니다(원본은 안 건드림) |
+  | 농장·산지 정보 수정 | `admin-overrides.json` | `index.html`(카드)과 `farms.html`(`place-overrides.js`)이 덧씌웁니다 |
+- **덧씌우기 방식인 이유**: `beans.json`·`farms.html`은 매일 21시 자동 업데이트가 새로 만들기 때문에, 원본을 고치면 다음 날 지워집니다. 관리자 수정은 별도 파일에만 쌓여 그대로 남습니다.
+- **적용 시점**: 저장하면 `main`에 커밋되고 Cloudflare Pages·GitHub Pages가 1~2분 안에 다시 배포합니다.
+- **로고 클릭**: 상단 `ONCOFFEELOG · 온커피로그`를 누르면 검색어·필터·선택을 모두 지우고 첫 화면으로 돌아갑니다(`index.html`의 `goHome()`). 다른 페이지에서는 `./`로 이동합니다.
