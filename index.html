@@ -936,7 +936,8 @@ function auctionBadge(p) {
 
 function uiLang() {
   return (window.CI && window.CI.i18n && window.CI.i18n.lang)
-    || document.documentElement.getAttribute("data-lang") || "ko";
+    || (document.documentElement && document.documentElement.getAttribute
+        && document.documentElement.getAttribute("data-lang")) || "ko";
 }
 
 function setLede(c) {
