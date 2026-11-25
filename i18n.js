@@ -413,7 +413,11 @@
     placeBox();
     observe();
     // 언어 전환 뒤에 그려지는 내용이 첫 화면과 같은 언어가 되도록 한 번 더
-    setTimeout(function () { walk(document.body); paintBox(); }, 600);
+    setTimeout(function () {
+      walk(document.body); paintBox();
+      // 이 스크립트보다 먼저 그려진 화면(지도 카드 등)이 현재 언어로 다시 그려지도록 알립니다.
+      try { document.dispatchEvent(new CustomEvent("ci:lang", { detail: { lang: lang } })); } catch (e) {}
+    }, 600);
   }
 
   function t(ko) {
