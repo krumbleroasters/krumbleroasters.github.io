@@ -976,8 +976,8 @@ function updateHint() {
   }
   if (procFilterOn()) {
     const hit = procScopeBeans().filter(beanMatchesProc).length;
-    const pw = tr({ ko: "곳", en: "places", ja: "か所" });
-    const bw = tr({ ko: "종", en: "beans", ja: "種" });
+    const pw = tr({ ko: "곳", en: " places", ja: "か所" });
+    const bw = tr({ ko: "종", en: " beans", ja: "種" });
     el.innerHTML = `<b>${n}</b>${pw} · ${esc(procFilterName())} ${hit.toLocaleString()}${bw}`;
     return;
   }
@@ -1143,9 +1143,9 @@ function procSheet() {
   const p = state.procDetail && PROC ? PROC.processes[state.procDetail] : null;
   const chip = !p && PROC ? PROC.chips.find((c) => c.id === state.proc) : null;
   const desc = p ? tr(p.summary) : (chip ? tr(chip.desc) : "");
-  const tpl = uiStr("resultTitle") || "{} 가공 생두";
+  const bw = tr({ ko: "종", en: " beans", ja: "種" });
   return `<div class="results">
-    <div class="res-head"><h2>${esc(name)}</h2><span>${esc(tpl.replace("{}", list.length.toLocaleString()))}</span></div>
+    <div class="res-head"><h2>${esc(name)}</h2><span>${esc(list.length.toLocaleString() + bw)}</span></div>
     ${desc ? `<p class="qr-note">${esc(desc)}</p>` : ""}
     ${list.length ? list.slice(0, 60).map(beanRow).join("") : `<p class="qr-note">${esc(uiStr("empty") || "이 가공의 생두가 아직 없습니다.")}</p>`}
     ${list.length > 60 ? `<p class="qr-note">상위 60종만 표시합니다. 검색어를 좁혀 보세요.</p>` : ""}
@@ -1981,9 +1981,8 @@ async function boot() {
     return;
   }
   renderChips();
-  drawPins();
   applyProcParam(params.get("process"));
-  updateHint();
+  drawPins();
   const beanId = params.get("bean"), placeId = params.get("place"), q = params.get("q"), coffee = params.get("coffee");
   if (beanId) { const b = CAT.beans.find((x) => x.id === beanId); if (b) return selectBean(b); }
   if (placeId) { const p = placeById.get(placeId); if (p) return selectPlace(p); }
