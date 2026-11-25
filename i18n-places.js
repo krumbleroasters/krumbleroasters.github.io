@@ -9,7 +9,7 @@
   Object.keys(P).forEach(function (k) {
     if (!T[k]) T[k] = P[k];
   });
-  var M = ["{#} 옥션 낙찰||{} auction lots||{} オークション落札","{}°, {}° · 이곳에서 온 생두||{}°, {}° · beans from here||{}°、{}° · ここから来た生豆","{}의 {} 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, {} 산지의 공통 특성으로 소개합니다.||An origin in {}: {}. Records of this particular origin's history and farms have not been confirmed yet, so it is introduced with the common characteristics of {} coffee||{}の{}産地です。この産地の個別の沿革・農園資料はまだ確認できていないため、{}の共通の特徴で紹介します","Cup of Excellence·Best of Panama 경매에서 한국·일본 로스터리가 낙찰받은 랏 {#}건을 🏆로 표시합니다.||{} lots that Korean and Japanese roasters won at Cup of Excellence and Best of Panama auctions are marked 🏆||Cup of Excellence・Best of Panama オークションで韓国・日本のロースターが落札した{}件のロットを🏆で表示します"];
+  var M = ["{#} 옥션 낙찰||{} auction lot(s)||{} オークション落札","{}°, {}° · 이곳에서 온 생두||{}°, {}° · beans from here||{}°、{}° · ここから来た生豆","{}의 {} 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, {} 산지의 공통 특성으로 소개합니다.||An origin in {}: {}. Records of this particular origin's history and farms have not been confirmed yet, so it is introduced with the common characteristics of {} coffee.||{}の{}産地です。この産地の個別の沿革・農園資料はまだ確認できていないため、{}の共通の特徴で紹介します。","Cup of Excellence·Best of Panama 경매에서 한국·일본 로스터리가 낙찰받은 랏 {#}건을 🏆로 표시합니다.||{} lots that Korean and Japanese roasters won at Cup of Excellence and Best of Panama auctions are marked 🏆||Cup of Excellence・Best of Panama オークションで韓国・日本のロースターが落札した{}件のロットを🏆で表示します"];
   var D2 = D.templ || (D.templ = []);
   M.forEach(function (row) { D2.push(row); });
 })();
