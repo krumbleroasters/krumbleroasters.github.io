@@ -2,7 +2,7 @@
 "meta": {
 "title": "국내·일본 유통 생두 산지 카탈로그",
 "note": "국내와 일본에 유통되는 생두의 산지·농장 정보를 정리했습니다. 일본 유통분은 '일본 내 유통'으로 표시합니다. 가격·매입·유통사 정보는 담지 않습니다.",
-"generatedAt": "2026-11-25",
+"generatedAt": "2026-11-26",
 "counts": {
 "beans": 3121,
 "listings": 4207,
@@ -50270,6 +50270,8 @@
 "story": "님빈 위쪽 산자락, 해발 300m 남짓의 화산토에서 케냐 K7 아라비카만 기른다. 고도는 낮지만 위도가 높아 체리가 천천히 익고, 그 덕에 단맛과 초콜릿 같은 결이 진해진다. 1998년 무렵 앤드루 포드가 세운 농장의 마이크로랏은 2004년 팀 웬델보가 세계 바리스타 챔피언십에서 우승할 때 쓴 커피로 알려졌고, 2021년과 2024년 시드니 로열 파인푸드 쇼에서 챔피언 트로피를 받았다. 기계로 수확한 뒤 익은 정도로 나눠 워시드와 내추럴로 가공하며, 2020년부터 휘트니 가문이 운영을 잇고 있다.",
 "producer": "휘트니 가문(데니스·오언 휘트니, 2020년 인수)",
 "founded": "1998~1999년 앤드루 포드 설립, 2020년 휘트니 가문 인수",
+"history": "1998년 무렵 앤드루 포드가 세운 농장으로, 2004년 세계 바리스타 챔피언십에서 팀 웬델보가 이 농장 커피로 우승하면서 이름이 알려졌다. 2020년 휘트니 가문이 인수해 로스팅과 농장 운영을 이어 가고 있다.",
+"features": "저고도·고위도 천천히 익는 K7, 유기농·무농약 재배, 2021·2024 시드니 로열 파인푸드 쇼 챔피언, 연 1회 수확",
 "photo": {
 "m": "place",
 "f": "photos/au-nimbin-rocks-mist.jpg",
@@ -50353,6 +50355,8 @@
 "story": "바이런 베이에서 70km 안쪽, 맥켈러 산맥 자락의 호가스 레인지에서 크레이그와 타마라 헤이워드 부부가 2000년부터 아라비카를 심어 온 가족 농장이다. 해발 215~250m 초콜릿빛 현무암 능선의 미기후는 해안보다 습도가 낮고 겨울이 따뜻해 체리가 천천히 익으며, 그 결과 견과·초콜릿 쪽 향미가 짙다. 농약 없이 재배해 손이나 기계로 수확한 뒤 천일 건조하고, 2011/12년 골든빈 호주산 커피 부문에서 금메달을 받았다. 자체 로스터리에서 주문을 받아 두 번씩 볶아 출하한다.",
 "producer": "크레이그·타마라 헤이워드",
 "founded": "2000년(가족 농장 지분 매입·식재 시작)",
+"history": "2000년 크레이그 헤이워드가 가족 농장의 250에이커 지분을 사들여 아라비카를 심었다. 노던테리토리에서 운영하던 펍을 정리하고 농지로 돌아온 부부의 선택이었고, 지금은 자체 로스팅으로 호주 전역에 유통한다.",
+"features": "바이런 베이에서 70km 내륙, 해안보다 건조하고 겨울이 따뜻한 미기후, 무농약, 2011/12 골든빈 호주산 부문 금메달, 주문 후 로스팅",
 "refs": [
 {
 "t": "농장 공식 페이지",
@@ -50420,6 +50424,8 @@
 "story": "1987년 매클라플린 가족이 인수해 3대째 이어 온, 호주에서 가장 오래된 상업 커피 농장이다. 해발 520m 그레이트디바이딩 산맥 능선의 배수가 좋은 모래 토양과 연 800mm 비, 서리 없는 겨울이 버번 품종의 주 무대를 만들었고, 최근에는 기계 수확에 맞는 카투아이로 한 구획씩 바꾸고 있다. 38개 구획 가운데 10개가 커피밭이며 9만 그루에서 연간 생두 40t이 나온다. 농장 안 카페와 로스터리에서 직접 내리고, 같은 땅에서 키운 적파파야가 커피가 없는 달의 수입을 받쳐 준다.",
 "producer": "매클라플린 가문(이언·매리언 창업, 캔디 매클라플린 운영)",
 "founded": "1987년(매클라플린 가족이 조성된 커피 농장을 인수)",
+"history": "이언·매리언 매클라플린 부부가 1987년 인수했을 때 이미 커피 농장이 있었다. 11년을 커피만 재배하다 커피가 없는 달의 수입을 위해 적파파야를 들였고, 지금은 3대가 농장에서 함께 산다.",
+"features": "호주 최고령 상업 커피 농장, 커피나무 9만 그루, 연간 생두 40t, 농장 내 카페·로스터리, 유럽·일본 수출 이력",
 "photo": {
 "m": "place",
 "f": "photos/au-atherton-tableland-mchugh.jpg",
@@ -50546,23 +50552,25 @@
 "precision": "farm",
 "evidence": "지도 서비스 'Jack Murat Coffee'(441 Tyrconnell Rd) 좌표 · OSM Tyrconnell Road(Arriga)와 일치 · SRTM 594m로 공식 고도 600m와 부합",
 "source": "https://www.openstreetmap.org/?mlat=-17.009931&mlon=145.3003544#map=16/-17.009931/145.3003544",
-"elevation": "600m(구획별 610m 표기)",
-"harvest": "7월~9월",
-"terroir": "붉은 화산토와 모래 섞인 양토",
-"varieties": "카투아이(레드·옐로) 중심 · 마르셀레사 · NR25 · 파라이소 · IPR 107 시험 재배",
-"processes": "워시드 · 내추럴(호기성/혐기성) · 허니, 구획별 분리 가공",
+"elevation": "600m(구획별 610m)",
+"harvest": "7월~9월(저널은 6월~8월)",
+"terroir": "붉은 화산 현무암 토양과 모래 섞인 양토. 산맥 뒤편의 비 그늘로 수확기에는 비가 적고, 낮과 밤의 기온 차가 다른 산지의 고도만큼 체리를 천천히 익힌다.",
+"varieties": "카투아이 레드·옐로 중심(코스타리카에서 정부 시험 사업으로 들어온 종자, 2025년 확장분은 자체 채종) · 2026년 다섯 번째 구획에 마르셀레사 · NR25 · 파라이소 · IPR 107 시험 재배",
+"processes": "워시드(주력, 6시간 안팎 발효 후 세척) · 내추럴(6~14일, 호기성/혐기성) · 허니(옐로·레드) · 락틱 발효(2024년 도입), 구획별 분리 가공",
 "flavorProfile": "케인슈가 단맛 · 흰 복숭아·넥타린 산미 · 긴 캐러멜 여운",
-"story": "2014년 마리바 북쪽 아리가의 옛 담배 농장에 처음 커피를 심은 가족 농장으로, 지금은 다섯 구획 95ha에 아라비카를 재배하는 호주 최대 규모의 스페셜티 농장이다. 해발 600m의 붉은 화산토와 모래 섞인 양토, 17°S의 뚜렷한 건기와 늦게 익는 체리가 이 농장의 컵을 만든다. 구획마다 따로 수확해 워시드·내추럴·허니로 가공하고, 체리는 수확 당일 습식 밀로 옮겨 광학 선별기로 익은 것만 골라낸다. 로스터리가 농장 안에 있어 생두가 백 미터만 움직이면 손님 컵에 닿는다.",
+"story": "2014년 마리바 북쪽 아리가의 옛 담배 농장에 첫 커피를 심은 가족 농장이다. 지금은 다섯 구획 95ha에 아라비카를 기르는 호주 최대 규모의 스페셜티 농장으로, 묘목장에서 기른 카투아이를 2019·2020·2025·2026년에 나눠 심어 왔다. 해발 600m의 붉은 화산토와 모래 섞인 양토, 17°S의 건조한 수확기와 낮밤 기온 차가 체리를 천천히 익힌다. 수확은 기계로 하고 광학 선별기와 물에 띄우는 선별로 익은 체리만 골라낸 뒤 구획마다 워시드·내추럴·허니로 나눠 가공하며, 2024년부터는 20°C 아래에서 발효하는 락틱 랏도 따로 낸다. 콜롬비아 가공 전문가들과 만든 습식 밀이 수확 당일 체리를 받고, 로스터리는 밀에서 100m 떨어진 곳에 있어 생두가 며칠 안에 손님 컵에 닿는다.",
 "producer": "무랫 가문(제멀 무랫 운영, 세르히오 론도로 커피 총괄)",
-"founded": "2014년 첫 식재",
+"founded": "2014년 첫 식재 · 2026년 다섯 구획 95ha",
+"history": "할아버지 하이메트 '잭' 무랫이 1929년 열여섯 살에 호주로 와 나무꾼으로 일하다 마리바 서쪽 땅을 마련해 담배를 길렀다. 그는 커피를 보지 못했고, 2014년 손자 제멀의 손으로 옛 담배밭에 첫 커피 줄이 들어갔다. 2019년과 2020년, 2025년, 2026년에 구획을 더해 다섯 구획 95ha가 됐다.",
+"features": "기계 수확과 광학·비중 선별 · 수확 당일 습식 밀 · 태양광과 퇴비 순환 · 항온항습 생두 저장고 · 밀에서 100m 거리의 로스터리 · 시드니 로스터리와 노스 본다이 카페 · 3월부터 수확기까지 농장 투어",
 "photo": {
 "m": "place",
 "f": "photos/au-coffee-harvester-mareeba.jpg",
 "g": "https://upload.wikimedia.org/wikipedia/commons/7/74/Coffee_Harvester_Mareeba.JPG",
 "c": {
-"ko": "마리바 지역의 커피 수확기(2012). 이 농장 사진이 아니라 마리바 커피 산지의 기계 수확을 보여 주는 자료 사진이다.",
-"en": "A coffee harvester in the Mareeba district, 2012. Not this farm: a reference photo for machine harvesting in the Mareeba coffee country.",
-"ja": "マリーバ地区のコーヒー収穫機（2012年）。この農園の写真ではなく、マリーバ産地の機械収穫を示す資料写真。"
+"ko": "마리바 지역의 커피 수확기(2012). 이 농장 사진이 아니라, 이 농장이 쓰는 기계 수확과 수확 뒤 광학 선별을 보여 주는 자료 사진이다.",
+"en": "A coffee harvester in the Mareeba district, 2012. Not this farm: a reference photo for the machine harvesting and post-harvest optical sorting the farm relies on.",
+"ja": "マリーバ地区のコーヒー収穫機（2012年）。この農園の写真ではなく、この農園が使う機械収穫と収穫後の光学選別を示す資料写真。"
 },
 "a": "Photnart",
 "l": "CC BY-SA 3.0",
@@ -50577,16 +50585,20 @@
 "u": "https://jackmurat.com/pages/story"
 },
 {
-"t": "농장 공식 저널",
+"t": "저널 · 재배와 가공",
+"u": "https://jackmurat.com/blogs/journal/how-we-grow-and-process-coffee"
+},
+{
+"t": "저널 · 품종",
 "u": "https://jackmurat.com/blogs/journal/australian-coffee-varietals"
 },
 {
-"t": "농장 공식 안내",
-"u": "https://jackmurat.com/blogs/journal/coffee-farm-tour-mareeba-jack-murat"
+"t": "저널 · 2025 수확",
+"u": "https://jackmurat.com/blogs/journal/2025-jack-murat-harvest"
 },
 {
-"t": "지역지 보도",
-"u": "https://www.theexpressnewspaper.com.au/award-winning-coffee-grower-expands-crop-2026-01-31"
+"t": "저널 · 락틱 발효",
+"u": "https://jackmurat.com/blogs/journal/lactic-fermentation-coffee"
 },
 {
 "t": "ABC Rural 보도",
@@ -50596,27 +50608,29 @@
 "lang": {
 "en": {
 "elevation": "600 m (paddocks listed at 610 m)",
-"varieties": "Catuai (red and yellow) as the core · Marsellesa · NR25 · Paraiso · IPR 107 in trial",
-"processes": "Washed · natural (aerobic or anaerobic) · honey, each paddock processed separately",
-"harvest": "July–September",
-"history": "The land was cleared by Hymet 'Jack' Murat, who arrived from Europe in 1929 at sixteen and grew tobacco. After the tobacco industry wound down, his grandson Jemal pushed for coffee in 2014, and within a decade it became the country's largest specialty estate.",
-"features": "Machine harvest with optical sorting, cherry to the wet mill the same day, stainless automated processing line, roastery and café on the property, 17°S",
-"story": "The family planted its first coffee in 2014 on a former tobacco farm at Arriga, north of Mareeba, and now grows arabica across 95 hectares in five paddocks — the largest specialty estate in Australia. Red volcanic and sandy loam soil at 600 m, a real dry season at 17°S and slow-ripening cherry shape the cup. Each paddock is picked and processed on its own as washed, natural or honey, with cherry reaching the wet mill the same day and graded by optical sorters. The roastery stands on the same property, a hundred metres from the mill.",
-"terroir": "Red volcanic soil and sandy loam",
+"varieties": "Catuai Red and Yellow as the core (the first seed came from Costa Rica through a government programme; the 2025 planting uses the farm's own seed) · Marsellesa, NR25, Paraiso and IPR 107 under trial in the fifth paddock from 2026",
+"processes": "Washed (the main process, about six hours of fermentation before washing) · natural (6–14 days, aerobic or anaerobic) · honey (yellow and red) · lactic fermentation since 2024, each paddock processed separately",
+"harvest": "July–September (the farm journal says June–August)",
+"history": "Hymet 'Jack' Murat came to Australia in 1929 at sixteen, worked as a timber getter, then bought a plot west of Mareeba and grew tobacco. He never saw coffee on the land; the first rows went in on the old tobacco ground in 2014, and paddocks added in 2019, 2020, 2025 and 2026 brought the farm to five blocks and 95 hectares.",
+"features": "Machine harvest with optical and density sorting · cherry to the wet mill the same day · solar power and composted pulp returned to the paddocks · climate-controlled green bean store · roastery 100 m from the mill · a second roastery in Sydney and Jack's Café in North Bondi · farm tours from March to the end of harvest",
+"story": "The family planted its first coffee in 2014 on a former tobacco farm at Arriga, north of Mareeba. It now grows arabica across 95 hectares in five paddocks — the largest specialty estate in Australia — with nursery-raised Catuai added block by block in 2019, 2020, 2025 and 2026. Red volcanic soil and sandy loam at 600 m, a dry harvest season at 17°S and a wide day-night swing ripen the cherry slowly. Harvest is mechanical, with optical sorters and float tanks taking out unripe and light fruit before each paddock is processed on its own as washed, natural or honey; since 2024 there are also lactic lots fermented below 20°C. A wet mill built with Colombian processing specialists takes cherry the same day, and the roastery stands 100 m away, so green coffee reaches a cup within days.",
+"terroir": "Red volcanic basalt and sandy loam. A rain shadow off the ranges keeps the harvest season dry, and the day-to-night swing ripens cherry as slowly as altitude does at other origins.",
 "flavorProfile": "Cane-sugar sweetness · white peach and nectarine acidity · long caramel finish",
-"producer": "The Murat family (Jemal Murat; Sergio Londoro, head of coffee)"
+"producer": "The Murat family (Jemal Murat; Sergio Londoro, head of coffee)",
+"founded": "First planted 2014 · five paddocks, 95 ha, by 2026"
 },
 "ja": {
 "elevation": "600m（区画により610m）",
-"varieties": "カトゥアイ（レッド・イエロー）中心・マルセレサ・NR25・パライソ・IPR107は試験栽培",
-"processes": "ウォッシュド・ナチュラル（好気／嫌気）・ハニー、区画ごとに分別加工",
-"harvest": "7月〜9月",
-"history": "祖父ハイメット「ジャック」・ムラットが1929年に16歳で渡豪し、タバコ栽培を営んだ土地。タバコ産業の衰退後、2014年に孫のジェマルがコーヒーへの転換を進め、10年で国内最大のスペシャルティ農園になった。",
-"features": "機械収穫と光学選別、収穫当日にウェットミルへ、ステンレス製の自動加工ライン、敷地内にローストリーとカフェ、17°S",
-"story": "2014年、マリーバ北のアリガにある元タバコ農場に初めてコーヒーを植えた家族農園。現在は5区画・95haでアラビカを栽培するオーストラリア最大のスペシャルティ農園だ。標高600mの赤い火山土と砂混じりのローム、17°Sの明確な乾季とゆっくり熟すチェリーがカップをつくる。区画ごとに収穫・加工してウォッシュド、ナチュラル、ハニーに分け、チェリーは収穫当日にウェットミルへ運び光学選別機で熟したものだけを選ぶ。ローストリーは同じ敷地内、ミルから100mの場所にある。",
-"terroir": "赤い火山土と砂混じりのローム",
+"varieties": "カトゥアイ（レッド・イエロー）中心（最初の種子はコスタリカから政府の試験事業で導入、2025年の拡植は自園採種）・2026年から第5区画でマルセレサ、NR25、パライソ、IPR107を試験栽培",
+"processes": "ウォッシュド（主力、約6時間発酵後に水洗）・ナチュラル（6〜14日、好気／嫌気）・ハニー（イエロー・レッド）・乳酸発酵（2024年導入）、区画ごとに分別加工",
+"harvest": "7月〜9月（ジャーナルでは6月〜8月）",
+"history": "祖父ハイメット「ジャック」・ムラットは1929年に16歳で渡豪し、木こりを経てマリーバ西の土地を買ってタバコを栽培した。コーヒーをその目で見ることはなく、2014年に孫のジェマルの代で元タバコ畑に最初の列が植わった。2019年、2020年、2025年、2026年に区画を加え、5区画・95haになった。",
+"features": "機械収穫と光学・比重選別・収穫当日のウェットミル・太陽光と堆肥の循環・恒温恒湿の生豆倉庫・ミルから100mのローストリー・シドニーのローストリーとノースボンダイのカフェ・3月から収穫期までの農園ツアー",
+"story": "2014年、マリーバ北のアリガにある元タバコ農場に最初のコーヒーを植えた家族農園。現在は5区画・95haでアラビカを育てるオーストラリア最大のスペシャルティ農園で、苗畑で育てたカトゥアイを2019・2020・2025・2026年に区画ごとに植え足してきた。標高600mの赤い火山土と砂混じりのローム、17°Sの乾いた収穫期と大きな昼夜の気温差がチェリーをゆっくり熟させる。収穫は機械で行い、光学選別機と水選で未熟果や軽い実を除いたあと、区画ごとにウォッシュド・ナチュラル・ハニーに分けて加工する。2024年からは20°C以下で発酵させる乳酸ロットもある。コロンビアの加工専門家とつくったウェットミルが収穫当日のチェリーを受け取り、ローストリーはミルから100mの場所にある。",
+"terroir": "赤い火山玄武岩土と砂混じりのローム。山脈の雨陰で収穫期は雨が少なく、昼夜の気温差が他産地の標高と同じようにチェリーをゆっくり熟させる。",
 "flavorProfile": "黒糖のような甘さ・白桃とネクタリンの酸・長いキャラメルの余韻",
-"producer": "ムラット家（ジェマル・ムラット、コーヒー責任者セルヒオ・ロンドロ）"
+"producer": "ムラット家（ジェマル・ムラット、コーヒー責任者セルヒオ・ロンドロ）",
+"founded": "2014年に初植え・2026年に5区画95ha"
 }
 },
 "beanCount": 0
@@ -50642,6 +50656,8 @@
 "story": "1987년 준 젠트벨트 시니어 부부가 뉴사우스웨일스에서 처음으로 상업 규모 커피를 심은 농장으로, 지금은 아들 존과 며느리 리베카가 이어받아 12ha 남짓의 밭을 가꾼다. 바이런 베이 뒤편의 깊은 적색 화산토와 서늘한 아열대 기후에서 K7이 천천히 익고, 농약 없이 재생 농법으로 관리한다. 수확한 체리는 농장에서 가공하고 태양광 로스터리에서 소량으로 볶으며, 3분의 2는 워시드, 3분의 1은 자연 건조 내추럴로 만든다. 2020년대 들어 마르셀레사 같은 왜성 품종도 K7 옆에서 시험 재배하고 있다.",
 "producer": "젠트벨트 가문(존·리베카 젠트벨트, 1993년부터)",
 "founded": "1987년",
+"history": "1987년 준·존 젠트벨트 시니어 부부가 뉴사우스웨일스에서 처음 상업 규모 커피를 심었다. 1993년 아들 존과 리베카가 이어받아 생두를 넘기던 사업을 자체 로스팅으로 돌려세웠고, 리베카는 호주산 커피 협회 회장을 맡고 있다.",
+"features": "뉴사우스웨일스 첫 상업 커피 농장, 무농약 재생 농법, 태양광 로스터리, 꿀벌·야생동물 서식지, 농장 카페·투어",
 "photo": {
 "m": "place",
 "f": "photos/au-byron-bay-hinterland.jpg",
@@ -50729,6 +50745,8 @@
 "story": "알스턴빌 고원, 테번의 사유지 9ha 가운데 4ha에 K7을 심은 단일 농장이다. 2003년 아보카도 밭을 사들여 2004년 커피를 시작했고 2007년 첫 수확을 냈으며, 2022년부터 세스·미셸 레이퍼드 부부가 이어받았다. 이름 '카하와'는 동아프리카 스와힐리어로 커피를 뜻하고, 열대우림에 둘러싸인 붉은 화산토에서 농약 없이 키운다. 수확·가공·로스팅을 모두 농장 안에서 처리하며, 한때 K7 1만2천 그루에서 생두 6t가량을 냈다.",
 "producer": "레히퍼드 가문(세스·미셸, 2022년 인수)",
 "founded": "2003년 토지 매입 · 2004년 식재 · 2007년 첫 수확",
+"history": "2003년 아보카도 밭을 사들여 2004년 커피를 심었고 2007년 첫 생두를 냈다. 캔버라에서 수의사로 일하던 조스 웨버와 케냐에서 자란 웬디 부부가 시작했고, 2022년 세스·미셸 레이퍼드 부부가 이어받았다.",
+"features": "단일 농장 추적, 농약 없이 재배, 수확·가공·로스팅 일괄 처리, 이름은 스와힐리어로 '커피'",
 "photo": {
 "m": "place",
 "f": "photos/au-alstonville.jpg",
@@ -50812,6 +50830,8 @@
 "story": "아테르턴 테이블랜즈 남쪽 어퍼 배런, 말란다 산으로 불리는 사화산 사면 해발 약 1,030m에 있다. 호주에서 가장 높은 곳의 커피 농장으로, 연 2~3m 비가 내리고 안개가 잦은 이 고도에서 체리는 10~11개월에 걸쳐 천천히 익는다. 2010년대 중반 카투아이 로호 3만2천 그루로 시작해 2020/21 시즌 첫 상업 수확을 냈고, 그해 골든빈 필터 부문에서 동메달을 받았다. 워시드·내추럴·허니에 더해 와인 효모를 쓴 내추럴 같은 발효 실험을 소량으로 이어 가고, 매달 첫 일요일에는 농장 문을 열어 커피를 내어 준다.",
 "producer": "루시 스토커 · 제임스 매스터먼",
 "founded": "2010년대 중반 식재, 2020/21 시즌 첫 상업 수확",
+"history": "아보카도·소를 기르던 가족 농장에서 2010년대 중반 커피로 전환했다. 주립 농업부에서 15품종을 받아 시험한 뒤 카투아이 로호를 골랐고, 2020/21 시즌 첫 상업 수확으로 골든빈 필터 부문 동메달을 받았다.",
+"features": "호주 최고 고도, 안개와 2~3m 강수, 경사지 수작업, 매달 첫 일요일 농장 개방, 농장 안 로스터리",
 "photo": {
 "m": "place",
 "f": "photos/au-atherton-tableland-1986.jpg",
