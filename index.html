@@ -1339,6 +1339,11 @@ function rankLabel(r) {
   const lang = uiLang();
   if (/^NW$/i.test(s)) return "NW";
   if (/^[A-Za-z]{1,3}-\d+$/.test(s) || /^[A-Z]{2,4}$/.test(s)) return lang === "ko" ? `랏 ${s}` : (lang === "ja" ? `ロット ${s}` : `Lot ${s}`);
+  const m = /^(\d+)([A-Za-z])$/.exec(s);
+  if (m) {
+    const n = m[1], L = m[2].toUpperCase();
+    return lang === "ko" ? `${n}위(${L})` : (lang === "ja" ? `${n}位（${L}）` : `${n}${n === "1" ? "st" : n === "2" ? "nd" : n === "3" ? "rd" : "th"} (${L})`);
+  }
   return lang === "ko" ? `${s}위` : (lang === "ja" ? `${s}位` : `#${s}`);
 }
 
@@ -2566,7 +2571,7 @@ boot();
 <script src="site-tools.js?v=20261122d"></script>
 <script src="i18n-data.js?v=20261125m"></script>
 <script src="i18n-pages.js?v=20261125l"></script>
-<script src="i18n-places.js?v=20261125v"></script>
+<script src="i18n-places.js?v=20261125w"></script>
 <script src="i18n.js?v=20261125j"></script>
 </body>
 </html>
