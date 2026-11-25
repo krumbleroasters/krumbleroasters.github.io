@@ -4877,10 +4877,10 @@
 "evidence": "Alto Lino · Quiel · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Altieri+Specialty+Coffee",
 "varieties": "게이샤",
-"processes": "내추럴 · 내추럴·무산소 내추럴",
+"processes": "내추럴·무산소 내추럴",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://roasttocup.coffee/markets/auctions/best-of-panama-2025/"
 }
 ],
@@ -6081,7 +6081,7 @@
 "processes": "발효 · 내추럴",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/costa-rica-2024/"
 }
 ],
@@ -16287,7 +16287,7 @@
 "processes": "내추럴 · 워시드",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/peru-2024/"
 }
 ],
@@ -16487,7 +16487,7 @@
 "processes": "워시드",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/guatemala-2025/"
 }
 ],
@@ -16525,7 +16525,7 @@
 "processes": "내추럴 · 워시드",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/guatemala-2024/"
 }
 ],
@@ -16698,7 +16698,7 @@
 "processes": "워시드",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/guatemala-2026/"
 }
 ],
@@ -17578,7 +17578,7 @@
 "processes": "내추럴 · 워시드",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/guatemala-2024/"
 }
 ],
@@ -17800,7 +17800,7 @@
 "processes": "내추럴",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/nicaragua-2024/"
 }
 ],
@@ -17838,7 +17838,7 @@
 "processes": "내추럴",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/nicaragua-2025/"
 }
 ],
@@ -18157,7 +18157,7 @@
 "processes": "워시드",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/nicaragua-2024/"
 }
 ],
@@ -18396,7 +18396,7 @@
 "processes": "내추럴 · 워시드",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/nicaragua-2024/"
 }
 ],
@@ -18434,7 +18434,7 @@
 "processes": "워시드",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/nicaragua-2024/"
 }
 ],
@@ -19594,7 +19594,7 @@
 "processes": "워시드",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/mexico-2026/"
 }
 ],
@@ -19764,7 +19764,7 @@
 "processes": "내추럴 · 워시드",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/mexico-2025/"
 }
 ],
@@ -19802,7 +19802,7 @@
 "processes": "워시드",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/mexico-2025/"
 }
 ],
@@ -19925,7 +19925,7 @@
 "u": "https://www.maruyamacoffee.com/brand/agrotakesi/"
 },
 {
-"t": "대회 기록",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/bolivia-2009/"
 }
 ],
@@ -19962,7 +19962,7 @@
 "varieties": "아라라",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/brazil-2024/"
 }
 ],
@@ -20223,7 +20223,7 @@
 "u": "https://official.maruyamacoffee.com/product/farm-map/"
 },
 {
-"t": "대회 기록",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/brazil-2001/"
 }
 ],
@@ -20660,7 +20660,7 @@
 "processes": "내추럴",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/brazil-2025/"
 }
 ],
@@ -20784,7 +20784,7 @@
 "processes": "허니",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/brazil-2025/"
 }
 ],
@@ -21047,7 +21047,7 @@
 "processes": "워시드",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/el-salvador-2024/"
 }
 ],
@@ -21085,7 +21085,7 @@
 "processes": "내추럴",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/el-salvador-2025/"
 }
 ],
@@ -21128,7 +21128,7 @@
 "u": "https://official.maruyamacoffee.com/product/farm-map/"
 },
 {
-"t": "대회 기록",
+"t": "경매 기록",
 "u": "https://official.maruyamacoffee.com/specialist/"
 }
 ],
@@ -21698,7 +21698,7 @@
 "processes": "내추럴 · 워시드",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/el-salvador-2024/"
 }
 ],
@@ -21736,7 +21736,7 @@
 "processes": "내추럴",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/el-salvador-2024/"
 }
 ],
@@ -21837,7 +21837,7 @@
 "processes": "허니 · 내추럴",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/el-salvador-2024/"
 }
 ],
@@ -21875,7 +21875,7 @@
 "processes": "워시드",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/honduras-2024/"
 }
 ],
@@ -22361,7 +22361,7 @@
 "processes": "워시드",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/honduras-2024/"
 }
 ],
@@ -22578,7 +22578,7 @@
 "processes": "워시드",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/costa-rica-2024/"
 }
 ],
@@ -22616,7 +22616,7 @@
 "processes": "워시드",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/costa-rica-2024/"
 }
 ],
@@ -22809,7 +22809,7 @@
 "processes": "워시드",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/costa-rica-2024/"
 }
 ],
@@ -24847,10 +24847,10 @@
 "evidence": "Cerro Punta · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Finca+Los+Cenizos",
 "varieties": "게이샤",
-"processes": "내추럴 · 내추럴·무산소 내추럴",
+"processes": "내추럴·무산소 내추럴",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://bestofpanama.auction/auction-2024"
 }
 ],
@@ -25740,7 +25740,7 @@
 "processes": "워시드",
 "refs": [
 {
-"t": "자료",
+"t": "경매 기록",
 "u": "https://allianceforcoffeeexcellence.org/peru-2024/"
 }
 ],
