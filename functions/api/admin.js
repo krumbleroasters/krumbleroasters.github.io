@@ -724,10 +724,12 @@ async function handle(context) {
   const url = new URL(request.url);
   const missing = missingEnv(env);
   const configured = missing.length === 0;
-  const method = request.method.toUpperCase();
+  const rawMethod = request.method.toUpperCase();
+  /* HEAD는 GET과 같은 상태 응답을 돌려줍니다(모니터링·링크 검사기가 HEAD를 쓰기도 합니다). */
+  const method = rawMethod === "HEAD" ? "GET" : rawMethod;
 
   if (method !== "GET" && method !== "POST") {
-    return fail("method_not_allowed", "GET 또는 POST만 사용할 수 있습니다.", 405, { allow: "GET, POST" });
+    return fail("method_not_allowed", "GET 또는 POST만 사용할 수 있습니다.", 405, { allow: "GET, HEAD, POST" });
   }
 
   if (method === "POST") {
