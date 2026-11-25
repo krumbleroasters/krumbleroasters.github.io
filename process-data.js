@@ -4,7 +4,7 @@
  */
 window.CI_PROCESS = {
 "version": "2.0",
-"generatedAt": "2026-11-25T20:24:20",
+"generatedAt": "2026-11-25T20:40:09",
 "chips": [
 {
 "id": "all",
@@ -2885,7 +2885,7 @@ window.CI_PROCESS = {
 },
 "unverified": {
 "VAP": {
-"ko": "판매처가 붙인 표기. 판매처 설명을 확인하지 못해 가공 의미를 확정하지 않음(향미 첨가·특수발효 계열로 추정).",
+"ko": "판매처가 붙인 표기. 웹 검색으로도 커피 가공 용어로서의 정의를 확인하지 못해 가공 의미를 확정하지 않음.",
 "en": "A retailer's own label. The seller's description could not be checked, so its meaning is not interpreted.",
 "ja": "販売店独自の表記です。販売元の説明を確認できなかったため、意味は解釈していません。"
 }
