@@ -91,6 +91,12 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     background:var(--navcomp-deep);border-color:var(--navcomp-deep);color:#FFFFFF;
   }
   .hdrnav a.nav-comp:focus-visible{outline:2px solid var(--navcomp);outline-offset:2px}
+  /* 좁은 폰(≤419px)에서는 브랜드 + 메뉴 3개가 한 줄에 다 들어가지 않아
+     커피대회 버튼 오른쪽이 잘리므로, 메뉴를 아래 줄로 내려 온전히 보이게 합니다. */
+  @media(max-width:419px){
+    .hdrrow{flex-wrap:wrap;row-gap:6px}
+    .hdrnav{margin-left:0;width:100%;justify-content:flex-start}
+  }
   .hdr h1{margin:8px 0 0;font-size:20px;line-height:1.3;letter-spacing:-.025em;font-weight:800}
   .hdr h1 em{font-style:normal;color:var(--terra)}
 
