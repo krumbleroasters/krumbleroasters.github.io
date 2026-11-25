@@ -126,6 +126,8 @@ window.CI_I18N = (function () {
     "원두·산지·농장·컵노트 검색": "Bean, origin, farm or tasting note||豆・産地・農園・カップノートで検索",
     "검색 제안": "Search suggestions||検索候補",
     "산지 필터": "Origin filter||産地フィルター",
+    "가공방식 필터": "Process filter||精製方法フィルター",
+    "세부 가공방식": "Process detail||精製方法の詳細",
     "커피 산지 지도": "Coffee origin map||コーヒー産地マップ",
     "사이트 안내": "Site menu||サイト案内",
     "전체 카탈로그": "Whole catalog||全カタログ",

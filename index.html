@@ -1100,7 +1100,6 @@ function renderProcChips() {
     out.push(`<button type="button" class="chip ${(!state.procDetail && state.proc === c.id) ? "on" : ""}" data-p="${esc(c.id)}">${esc(tr(c.label))} <span class="cnt">${n.toLocaleString()}</span></button>`);
   }
   row.hidden = false;
-  row.setAttribute("aria-label", uiStr("filterTitle") || "가공방식 필터");
   row.innerHTML = out.join("");
   row.querySelectorAll("[data-p]").forEach((b) => b.addEventListener("click", () => {
     state.proc = b.dataset.p; state.procDetail = "";
@@ -1129,7 +1128,6 @@ function renderProcChips() {
     .concat(subs.map((s) => `<button type="button" class="chip detail ${state.procDetail === s.id ? "on" : ""}" data-d="${esc(s.id)}">${esc(s.label)} <span class="cnt">${s.n.toLocaleString()}</span></button>`))
     .join("");
   det.hidden = false;
-  det.setAttribute("aria-label", uiStr("detail") || "세부 가공방식");
   det.querySelectorAll("[data-d]").forEach((b) => b.addEventListener("click", () => {
     state.procDetail = b.dataset.d || "";
     state.bean = null; state.place = null; state.results = null;
@@ -1985,6 +1983,7 @@ async function boot() {
   renderChips();
   drawPins();
   applyProcParam(params.get("process"));
+  updateHint();
   const beanId = params.get("bean"), placeId = params.get("place"), q = params.get("q"), coffee = params.get("coffee");
   if (beanId) { const b = CAT.beans.find((x) => x.id === beanId); if (b) return selectBean(b); }
   if (placeId) { const p = placeById.get(placeId); if (p) return selectPlace(p); }
