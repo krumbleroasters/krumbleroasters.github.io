@@ -3,7 +3,7 @@
  * 네트워크를 먼저 보고, 실패할 때만 캐시를 씁니다. (beans.json은 항상 최신을 우선)
  */
 const CACHE = "oncoffeelog-v65";
-const SHELL = ["/", "/index.html", "/farms.html", "/competitions.html", "/process-data.js?v=20261125a", "/site.css?v=20261125b", "/site-tools.css?v=20261122d", "/site-tools.js?v=20261122d", "/i18n-data.js?v=20261125k", "/i18n-pages.js?v=20261125j", "/i18n-places.js?v=20261125k", "/i18n-competitions.js?v=20261125a", "/i18n.js?v=20261125j", "/photos.js?v=20261125a", "/qrcode.min.js?v=20261122e", "/qr-tools.js?v=20261125b", "/icon-192.png"];
+const SHELL = ["/", "/index.html", "/farms.html", "/competitions.html", "/process-data.js?v=20261125a", "/site.css?v=20261125b", "/site-tools.css?v=20261122d", "/site-tools.js?v=20261122d", "/i18n-data.js?v=20261125k", "/i18n-pages.js?v=20261125j", "/i18n-places.js?v=20261125k", "/i18n-competitions.js?v=20261125a", "/i18n.js?v=20261125j", "/photos.js?v=20261125b", "/qrcode.min.js?v=20261122e", "/qr-tools.js?v=20261125b", "/icon-192.png"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(

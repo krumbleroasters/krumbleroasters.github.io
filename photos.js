@@ -47,8 +47,9 @@
     var attr = esc(tr(STR.photo)) + ": " + who + (lic ? " / " + lic : "") + " / " + srcLink;
     var fileBase = String(name || "oncoffeelog").replace(/[\\/:*?"<>|\r\n\t]+/g, " ").replace(/\s+/g, " ").trim() || "oncoffeelog";
     var cls = "cardph" + (opts.cls ? " " + opts.cls : "");
+    var pos = ph.o ? ' style="object-position:' + esc(ph.o) + '"' : "";
     return '<figure class="' + cls + '" data-ci-skip>'
-      + '<div class="phimg"><img src="' + esc(src) + '" alt="' + esc(cap) + '" loading="lazy" decoding="async">'
+      + '<div class="phimg"><img src="' + esc(src) + '" alt="' + esc(cap) + '"' + pos + ' loading="lazy" decoding="async">'
       + '<button class="phdl" type="button" data-photo="' + esc(ph.f || ph.g) + '" data-phorig="' + esc(ph.g || ph.f)
       + '" data-phname="' + esc(fileBase) + '">' + icon() + "<span>" + esc(tr(STR.save)) + "</span></button></div>"
       + '<figcaption><span class="phcap">' + esc(cap) + "</span>"
