@@ -4,7 +4,7 @@
  */
 window.CI_PROCESS = {
 "version": "2.0",
-"generatedAt": "2026-11-25T20:40:09",
+"generatedAt": "2026-11-25T20:42:15",
 "chips": [
 {
 "id": "all",
@@ -2169,9 +2169,9 @@ window.CI_PROCESS = {
 "group": "워시드 세부",
 "chip": "washed",
 "label": {
-"ko": "케냐 더블 워시드",
-"en": "Kenyan Double Washed",
-"ja": "ケニア式ダブルウォッシュ"
+"ko": "더블 워시드 (케냐식)",
+"en": "Double Washed (Kenyan style)",
+"ja": "ダブルウォッシュド（ケニア式）"
 },
 "alias": {
 "ko": [
@@ -3000,7 +3000,7 @@ window.CI_PROCESS = {
 "other": 22
 },
 "processes": {
-"washed": 1116,
+"washed": 1115,
 "natural": 798,
 "full-washed": 121,
 "wet-polished": 17,
@@ -3011,6 +3011,7 @@ window.CI_PROCESS = {
 "decaf-co2": 6,
 "honey": 166,
 "anaerobic-natural": 184,
+"kenya-double-washed": 1,
 "mosto": 15,
 "yeast": 13,
 "anaerobic-honey": 15,

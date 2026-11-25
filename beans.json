@@ -53684,8 +53684,11 @@
 ],
 "placeId": "C|베트남",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "kenya-double-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0164",
