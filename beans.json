@@ -7,29 +7,29 @@
 "beans": 3113,
 "listings": 4195,
 "countries": 38,
-"places": 399,
+"places": 400,
 "regions": 224,
-"farms": 142,
+"farms": 143,
 "jpBeans": 292,
 "auctions": 421,
-"auctionPlaces": 104
+"auctionPlaces": 105
 },
 "precision": {
 "farm": 87,
 "region": 930,
-"village": 456,
-"country": 1640
+"village": 460,
+"country": 1636
 },
 "coordSource": "Photon/OpenStreetMap (ODbL), 일부 주요 산지는 관리 중심지 좌표로 보정",
 "profileFill": {
-"elevation": 349,
-"harvest": 332,
-"terroir": 332,
-"varieties": 394,
-"processes": 393,
-"flavorProfile": 332,
-"trend": 332,
-"story": 345
+"elevation": 350,
+"harvest": 333,
+"terroir": 333,
+"varieties": 395,
+"processes": 394,
+"flavorProfile": 333,
+"trend": 333,
+"story": 346
 },
 "profileFallback": 55,
 "process": {
@@ -1234,42 +1234,6 @@
 }
 },
 {
-"kind": "country",
-"country": "니카라과",
-"name": "니카라과",
-"nameEn": "Nicaragua",
-"lat": 12.3506436,
-"lon": -85.7841006,
-"precision": "country",
-"evidence": "Nicaragua, Nicaragua",
-"id": "C|니카라과",
-"beanCount": 36,
-"elevation": "1,100~1,700m",
-"harvest": "11월~3월 (주 수확기)",
-"terroir": "북부 산맥 · 화산성 토양 · 온두라스 국경 고지",
-"varieties": "카투라 · 버번 · 마라카투라 · 파카마라 · 게이샤",
-"processes": "워시드 중심 · 허니·내추럴·무산소",
-"flavorProfile": "초콜릿 · 시트러스 · 붉은 과일",
-"trend": "대회 상위에 오르는 소농 농장이 늘면서 무산소·게이샤 랏도 힘을 얻었습니다.",
-"story": "니카라과는 북부 누에바 세고비아·마타갈파·히노테가의 산지에서 커피를 짓습니다. 1,100~1,700m의 화산성 토양에서 카투라·버번에 마라카투라·파카마라·게이샤까지 심고, 워시드가 기본인 가운데 허니·내추럴·무산소 랏이 늘었습니다. 초콜릿과 시트러스, 붉은 과일의 부드러운 단맛이 기본이고, 규모는 크지 않지만 품질 대회에 꾸준히 이름을 올립니다.",
-"profileLevel": "place",
-"photo": {
-"m": "country_fallback",
-"f": "photos/1-nicaragua-cafe-tuma-la-dalia.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Cafe%2C_Tuma_La_Dalia.jpg/960px-Cafe%2C_Tuma_La_Dalia.jpg",
-"c": {
-"ko": "니카라과 커피 체리 (국가 대표 사진)",
-"en": "Nicaragua coffee cherries (country representative photo)",
-"ja": "ニカラグアのコーヒーチェリー（代表写真）"
-},
-"a": "Maren Barbee",
-"l": "CC BY-SA 2.0",
-"lu": "https://creativecommons.org/licenses/by-sa/2.0/",
-"s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Cafe,_Tuma_La_Dalia.jpg"
-}
-},
-{
 "kind": "region",
 "country": "에티오피아",
 "name": "구지",
@@ -1510,6 +1474,42 @@
 "lu": "https://creativecommons.org/licenses/by/2.0",
 "s": "commons",
 "p": "https://commons.wikimedia.org/wiki/File:Guatemala_2011_228_-_San_Mart%C3%ADn_Jilotepeque_Coffee_Harvest.jpg"
+}
+},
+{
+"kind": "country",
+"country": "니카라과",
+"name": "니카라과",
+"nameEn": "Nicaragua",
+"lat": 12.3506436,
+"lon": -85.7841006,
+"precision": "country",
+"evidence": "Nicaragua, Nicaragua",
+"id": "C|니카라과",
+"beanCount": 32,
+"elevation": "1,100~1,700m",
+"harvest": "11월~3월 (주 수확기)",
+"terroir": "북부 산맥 · 화산성 토양 · 온두라스 국경 고지",
+"varieties": "카투라 · 버번 · 마라카투라 · 파카마라 · 게이샤",
+"processes": "워시드 중심 · 허니·내추럴·무산소",
+"flavorProfile": "초콜릿 · 시트러스 · 붉은 과일",
+"trend": "대회 상위에 오르는 소농 농장이 늘면서 무산소·게이샤 랏도 힘을 얻었습니다.",
+"story": "니카라과는 북부 누에바 세고비아·마타갈파·히노테가의 산지에서 커피를 짓습니다. 1,100~1,700m의 화산성 토양에서 카투라·버번에 마라카투라·파카마라·게이샤까지 심고, 워시드가 기본인 가운데 허니·내추럴·무산소 랏이 늘었습니다. 초콜릿과 시트러스, 붉은 과일의 부드러운 단맛이 기본이고, 규모는 크지 않지만 품질 대회에 꾸준히 이름을 올립니다.",
+"profileLevel": "place",
+"photo": {
+"m": "country_fallback",
+"f": "photos/1-nicaragua-cafe-tuma-la-dalia.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Cafe%2C_Tuma_La_Dalia.jpg/960px-Cafe%2C_Tuma_La_Dalia.jpg",
+"c": {
+"ko": "니카라과 커피 체리 (국가 대표 사진)",
+"en": "Nicaragua coffee cherries (country representative photo)",
+"ja": "ニカラグアのコーヒーチェリー（代表写真）"
+},
+"a": "Maren Barbee",
+"l": "CC BY-SA 2.0",
+"lu": "https://creativecommons.org/licenses/by-sa/2.0/",
+"s": "commons",
+"p": "https://commons.wikimedia.org/wiki/File:Cafe,_Tuma_La_Dalia.jpg"
 }
 },
 {
@@ -4556,6 +4556,12 @@
 "precision": "village",
 "evidence": "벤치 마지(Bench Maji) 고리 게샤 숲 인근 · 거래 자료 GPS 6.538N 35.487E (OSM 'Gori Gesha Forest' 노드 6.583N 35.467E에서 남서 6km)",
 "source": "https://www.geshavillage.com/",
+"alias": [
+"게샤빌리지",
+"gesha village",
+"geshavillage",
+"게샤 빌리지 오마"
+],
 "producer": "애덤 오버턴 · 레이첼 새뮤얼 (Adam Overton & Rachel Samuel), 개발에 빌렘 부트(Willem Boot) 참여",
 "founded": "2007년 다큐멘터리 촬영으로 인연, 2011년 벤치 마지 471ha 임차해 조성",
 "elevation": "1,909~2,063m (나르샤 블록 1,963~1,977m)",
@@ -4880,6 +4886,9 @@
 "precision": "region",
 "evidence": "Alto Lino · Quiel · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Altieri+Specialty+Coffee",
+"alias": [
+"Altieri Specialty Coffee"
+],
 "varieties": "게이샤",
 "processes": "내추럴·무산소 내추럴",
 "refs": [
@@ -6082,6 +6091,9 @@
 "precision": "region",
 "evidence": "Tarrazú · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Finca+Voo",
+"alias": [
+"Finca Voo"
+],
 "producer": "Cafe Solis&Cordero S.A.",
 "varieties": "카투아이",
 "processes": "발효 · 내추럴",
@@ -7982,6 +7994,113 @@
 }
 },
 {
+"id": "F|니카라과|운 레갈로 데 디오스",
+"kind": "farm",
+"country": "니카라과",
+"name": "운 레갈로 데 디오스",
+"nameEn": "Un Regalo de Dios",
+"lat": 13.747,
+"lon": -86.4305,
+"precision": "village",
+"evidence": "Quisulí Arriba, Mozonte, Nueva Segovia · 농장 재배·가공 조사 자료의 마을 좌표(UTM 16P 561563E 1519822N)",
+"source": "https://cenida.una.edu.ni/Pasantia/panf01b188.pdf",
+"alias": [
+"운레갈로데디오스",
+"레갈로 데 디오스",
+"레갈로데디오스",
+"엘 디오스",
+"엘디오스",
+"un regalo de dios",
+"unregalodedios",
+"regalo de dios",
+"un regalo",
+"el dios",
+"eldios",
+"ウン・レガロ・デ・ディオス",
+"ウン・レガロ",
+"エル・ディオス"
+],
+"beanCount": 4,
+"auctions": [
+{
+"id": "coe-nicaragua-2026-un-regalo-de-dios-8",
+"competition": "CoE Nicaragua 2026 · Natural & Honey",
+"year": 2026,
+"rank": "8",
+"score": 88.0,
+"farm": "Un Regalo De Dios",
+"variety": "Maracaturra",
+"process": "Natural",
+"buyers": [
+"칼디커피팜"
+],
+"buyersEn": [
+"KALDI COFFEE FARM"
+],
+"buyersJa": [
+"カルディコーヒーファーム"
+],
+"joint": true,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/nicaragua-2026/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/nicaragua-2026/"
+}
+],
+"auctionCount": 1,
+"elevation": "1,350~1,800m",
+"harvest": "12월~3월 (주 수확기)",
+"terroir": "디필토-할라파 산맥 · 모손테 키술리 아리바 · 구아바·소나무 그늘",
+"varieties": "파카마라 · 마라카투라 · 카투아이(레드·옐로) · 버번 · 자바 · 마르셀레사 · 카티모르",
+"processes": "워시드 36시간 발효 · 허니 · 내추럴 · 파티오·건조대에서 20~35일",
+"flavorProfile": "붉은 과일 · 체리 · 자두 · 시나몬 · 부드러운 산미",
+"trend": "같은 농장 라벨로 대회 상위 랏을 꾸준히 내며, 최근에는 마라카투라 내추럴로 상위에 올랐습니다.",
+"story": "누에바 세고비아 모손테의 키술리 아리바, 온두라스 국경의 디필토-할라파 산맥 자락에 있습니다. 오코탈에서 32km 들어간 183헥타르 농장 가운데 62헥타르에 커피를 심었고, 1,350~1,800m의 구아바·소나무 그늘에서 파카마라와 마라카투라, 카투아이를 기릅니다. 농장주 루이스 알베르토 바야다레스 몬카다는 4대째 커피를 재배하는 농학자로, 가문은 온두라스에서 디필토로 옮겨와 커피를 시작했습니다. 내전 때 온두라스로 피했다가 1990년대 돌아와 오코탈에서 커피 수출을 시작했고, 2004년 라스 세고비아스 가공장을 세운 뒤 2010년 이 농장을 샀습니다. 농장 안 웻밀에서 발효·세척한 뒤 가공장의 파티오와 건조대에서 20~35일 천천히 말리고, 이웃 농가 체리까지 함께 선별합니다.",
+"producer": "루이스 알베르토 바야다레스 몬카다 (Luis Alberto Balladarez Moncada) · 아들 루이스 가디엘과 함께",
+"founded": "가문 4대째 · 2010년 인수 (2004년 라스 세고비아스 가공장 설립)",
+"refs": [
+{
+"t": "농장 소개",
+"u": "https://www.roastmasters.com/nicaragua-regalo.html"
+},
+{
+"t": "재배·가공 조사",
+"u": "https://cenida.una.edu.ni/Pasantia/panf01b188.pdf"
+},
+{
+"t": "CoE 수상 기록",
+"u": "https://catastro.coffee/en/finca/un-regalo-de-dios/"
+},
+{
+"t": "생산자 소개",
+"u": "https://carrborocoffee.com/luis_alberto_balladarez/"
+}
+],
+"awards": [
+"Cup of Excellence 니카라과 2026 8위(88.00 · 마라카투라 내추럴)",
+"CoE 니카라과 2025 8위(88.14 · 마라카투라 내추럴)",
+"CoE 니카라과 2022 3위(89.53 · 마라카투라 내추럴)",
+"CoE 니카라과 2021 6위(89.79)",
+"CoE 니카라과 2018 5a·5b위(90.22 · 레드 파카마라 허니)",
+"CoE 니카라과 2017 13위(87.91)"
+],
+"profileLevel": "place",
+"photo": {
+"m": "country_fallback",
+"f": "photos/1-nicaragua-cafe-tuma-la-dalia.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Cafe%2C_Tuma_La_Dalia.jpg/960px-Cafe%2C_Tuma_La_Dalia.jpg",
+"c": {
+"ko": "니카라과 커피 체리 (국가 대표 사진)",
+"en": "Nicaragua coffee cherries (country representative photo)",
+"ja": "ニカラグアのコーヒーチェリー（代表写真）"
+},
+"a": "Maren Barbee",
+"l": "CC BY-SA 2.0",
+"lu": "https://creativecommons.org/licenses/by-sa/2.0/",
+"s": "commons",
+"p": "https://commons.wikimedia.org/wiki/File:Cafe,_Tuma_La_Dalia.jpg"
+}
+},
+{
 "kind": "farm",
 "country": "니카라과",
 "name": "핀카 리브레",
@@ -9801,6 +9920,9 @@
 "precision": "region",
 "evidence": "Santa Ana, Santa Ana Centro, Santa Ana, El Salvador",
 "source": "https://www.openstreetmap.org/search?query=El+Conacaste",
+"alias": [
+"El Conacaste"
+],
 "varieties": "게이샤",
 "processes": "워시드",
 "beanCount": 3,
@@ -10817,6 +10939,9 @@
 "precision": "region",
 "evidence": "Fraijanes, Departamento de Guatemala, Guatemala",
 "source": "https://www.openstreetmap.org/search?query=Finca+El+Pinal",
+"alias": [
+"Finca El Pinal"
+],
 "varieties": "게이샤",
 "processes": "워시드",
 "beanCount": 2,
@@ -12269,6 +12394,9 @@
 "precision": "village",
 "evidence": "Marcala, La Paz, Honduras",
 "source": "https://www.openstreetmap.org/search?query=El+Puente",
+"alias": [
+"El Puente"
+],
 "producer": "마리사벨·모이세스 부부",
 "elevation": "1,500~1,680m",
 "story": "온두라스 마르칼라 지역의 농장으로, 일본과 한국의 로스터가 각각 2016년과 15년 전부터 직거래를 이어 왔다. 2026년 농장 30주년 행사에는 한국 로스터가 초청받아 마리사벨·모이세스 부부와의 관계를 소개했다.",
@@ -12485,6 +12613,9 @@
 "precision": "country",
 "evidence": "OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Guama",
+"alias": [
+"Guama"
+],
 "processes": "워시드",
 "beanCount": 2,
 "profileLevel": "place",
@@ -13070,6 +13201,9 @@
 "precision": "region",
 "evidence": "Volcancito, Bajo Boquete, Boquete, Chiriquí, 0413, Panamá",
 "source": "https://www.openstreetmap.org/search?query=Los+Lajones",
+"alias": [
+"Los Lajones"
+],
 "elevation": "1,870~2,350m",
 "varieties": "게이샤",
 "processes": "내추럴",
@@ -13102,6 +13236,9 @@
 "precision": "region",
 "evidence": "Boquete, Chiriquí, 0413, Panamá",
 "source": "https://www.openstreetmap.org/search?query=Finca+Los+Brujos",
+"alias": [
+"Finca Los Brujos"
+],
 "varieties": "게이샤",
 "processes": "내추럴",
 "beanCount": 2,
@@ -14044,6 +14181,9 @@
 "precision": "region",
 "evidence": "Chiapas, México",
 "source": "https://www.openstreetmap.org/search?query=Finca+Fatima",
+"alias": [
+"Finca Fatima"
+],
 "varieties": "카투라",
 "processes": "내추럴(디카페인)",
 "beanCount": 1,
@@ -15908,6 +16048,9 @@
 "precision": "region",
 "evidence": "Boquete, Chiriquí, 0413, Panamá",
 "source": "https://www.openstreetmap.org/search?query=Romesas",
+"alias": [
+"Romesas"
+],
 "elevation": "1,600m",
 "varieties": "게이샤",
 "processes": "내추럴(ASD) · 워시드(모스토)",
@@ -15940,6 +16083,9 @@
 "precision": "region",
 "evidence": "Alto Quiel, Los Naranjos, Boquete, Chiriquí, 0413, Panamá",
 "source": "https://www.openstreetmap.org/search?query=Black+Moon+Farm",
+"alias": [
+"Black Moon Farm"
+],
 "producer": "헌터 테드먼",
 "elevation": "1,700~1,780m",
 "varieties": "게이샤 · 치로소",
@@ -16294,6 +16440,9 @@
 "precision": "region",
 "evidence": "Amazonas · Cajamarca · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=El+Mirador",
+"alias": [
+"El Mirador"
+],
 "producer": "Hitler Tantalian Valqui",
 "varieties": "게이샤 · 빌라 사르치",
 "processes": "내추럴 · 워시드",
@@ -16494,6 +16643,9 @@
 "precision": "region",
 "evidence": "Cuilco · Huehuetenango · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Granito+de+Oro",
+"alias": [
+"Granito de Oro"
+],
 "producer": "Arcenio Castillo Villatoro",
 "varieties": "옐로 버번 · 카투아이 아마리요 · 카투라",
 "processes": "워시드",
@@ -16532,6 +16684,9 @@
 "precision": "region",
 "evidence": "Huehuetenango · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=La+Gran+Manzana",
+"alias": [
+"La Gran Manzana"
+],
 "producer": "Angel Alejandro Morales De La Peña",
 "varieties": "게이샤",
 "processes": "내추럴 · 워시드",
@@ -16705,6 +16860,9 @@
 "precision": "region",
 "evidence": "Huehuetenango · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Las+Macadamias",
+"alias": [
+"Las Macadamias"
+],
 "producer": "Las Macadamias, Sociedad Anonima",
 "varieties": "게이샤",
 "processes": "워시드",
@@ -17147,6 +17305,9 @@
 "precision": "region",
 "evidence": "Amatitlán, Departamento de Guatemala, Guatemala",
 "source": "https://www.openstreetmap.org/search?query=San+Gerardo",
+"alias": [
+"San Gerardo"
+],
 "producer": "폴 스털리",
 "elevation": "1,400~1,500m",
 "story": "과테말라시티 남쪽, 아마티틀란 호수를 내려다보는 위치에 있다. 농장주 폴 스털리는 다른 농장과 다른 산지의 재배 기술을 배워 적용하며 품질을 끌어올렸고, 수확 시 완숙한 체리만 딴다. 대표 품종인 버번은 가나슈처럼 매끄럽고 깊은 향미를 낸다.",
@@ -17585,6 +17746,9 @@
 "precision": "region",
 "evidence": "Huehuetenango · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Plan+de+la+Vega",
+"alias": [
+"Plan de la Vega"
+],
 "producer": "Argueta Herrera, Erwin Humberto",
 "varieties": "버번 · 카투라 · 마라고지페 · 파카마라",
 "processes": "내추럴 · 워시드",
@@ -17807,6 +17971,9 @@
 "precision": "region",
 "evidence": "Dipilto · Nueva Segovia · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Los+Alpes",
+"alias": [
+"Los Alpes"
+],
 "producer": "Inversiones Valladarez Acevedo S.A",
 "varieties": "게이샤",
 "processes": "내추럴",
@@ -17845,6 +18012,9 @@
 "precision": "region",
 "evidence": "Mozonte · Nueva Segovia · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Los+Congos",
+"alias": [
+"Los Congos"
+],
 "producer": "Leyman Aaron Blandino Romero",
 "varieties": "핑크 버번",
 "processes": "내추럴",
@@ -18102,32 +18272,9 @@
 "level": "region",
 "src": "https://allianceforcoffeeexcellence.org/nicaragua-2026/",
 "src2": "https://catastro.coffee/en/cup-of-excellence/nicaragua-2026/"
-},
-{
-"id": "coe-nicaragua-2026-un-regalo-de-dios-8",
-"competition": "CoE Nicaragua 2026 · Natural & Honey",
-"year": 2026,
-"rank": "8",
-"score": 88.0,
-"farm": "Un Regalo De Dios",
-"variety": "Maracaturra",
-"process": "Natural",
-"buyers": [
-"칼디커피팜"
-],
-"buyersEn": [
-"KALDI COFFEE FARM"
-],
-"buyersJa": [
-"カルディコーヒーファーム"
-],
-"joint": true,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/nicaragua-2026/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/nicaragua-2026/"
 }
 ],
-"auctionCount": 5,
+"auctionCount": 4,
 "elevation": "1,100~1,700m",
 "harvest": "11월~3월 (주 수확기)",
 "terroir": "북부 산맥 · 화산성 토양 · 온두라스 국경 고지",
@@ -18164,6 +18311,9 @@
 "precision": "region",
 "evidence": "Nueva Segovia · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Bella+Aurora",
+"alias": [
+"Bella Aurora"
+],
 "producer": "Luis Joaquin Lovo Gutierrez",
 "varieties": "마라카투라",
 "processes": "워시드",
@@ -18403,6 +18553,9 @@
 "precision": "region",
 "evidence": "Nueva Segovia · San Fernando · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=El+Porvenir",
+"alias": [
+"El Porvenir"
+],
 "producer": "Martha Margarita Marin Rodriguez",
 "varieties": "마라고지페 · 파카마라 · 파카마라 아마리요",
 "processes": "내추럴 · 워시드",
@@ -18441,6 +18594,9 @@
 "precision": "region",
 "evidence": "Jinotega · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Hugo+Medina",
+"alias": [
+"Hugo Medina"
+],
 "producer": "Yadira Medina De Morgan",
 "varieties": "파카마라",
 "processes": "워시드",
@@ -18640,6 +18796,9 @@
 "precision": "region",
 "evidence": "阿里山鄉, 嘉義縣, 605, 臺灣",
 "source": "https://www.openstreetmap.org/search?query=Alishan+Jing+Long",
+"alias": [
+"Alishan Jing Long"
+],
 "elevation": "1,400m",
 "varieties": "게이샤",
 "processes": "콜드룸 내추럴",
@@ -18777,6 +18936,9 @@
 "precision": "region",
 "evidence": "ຫຼວງພະບາງ, ເມືອງຫຼວງພະບາງ, ຫລວງພະບາງ, 10554, ປະເທດລາວ",
 "source": "https://www.openstreetmap.org/search?query=Ban+Longlan",
+"alias": [
+"Ban Longlan"
+],
 "producer": "롱란 마을 몽족 농가 약 70세대",
 "elevation": "900~1,400m",
 "story": "루앙프라방 시내에서 차로 한 시간 반 거리의 롱란 마을에서 만드는 마이크로 랏이다. 약 70세대 몽족 농가가 숲을 남겨 두고 그 그늘에서 커피를 재배하며, 완숙한 붉은 열매만 손으로 딴다. 2016년부터 일본의 한 로스터가 현지에 들어가 품질 개선을 함께 해 왔고, 농약과 화학비료를 쓰지 않는다.",
@@ -18821,6 +18983,9 @@
 "precision": "region",
 "evidence": "참파삭 주 볼라벤 고원 · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Bolaven+Typica",
+"alias": [
+"Bolaven Typica"
+],
 "producer": "볼라벤 고원 생산자 협동조합",
 "elevation": "1,200~1,400m",
 "story": "라오스 남부 볼라벤 고원에서 티피카 단일 품종으로 만드는 랏이다. 수확량이 적고 병해에 약한 티피카를 지키려는 생산자 협동조합이 재배·가공을 직접 관리하며, 건조대도 손으로 만든다. 화산성 토양과 해발 1,200m 안팎의 고원 기후가 배경이다.",
@@ -19601,6 +19766,9 @@
 "precision": "region",
 "evidence": "Veracruz · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Huehuetepan",
+"alias": [
+"Huehuetepan"
+],
 "producer": "María Del Rosario Iraís Valdivia Ortiz",
 "varieties": "게이샤",
 "processes": "워시드",
@@ -19771,6 +19939,9 @@
 "precision": "region",
 "evidence": "Chiapas · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Finca+Santa+Cruz",
+"alias": [
+"Finca Santa Cruz"
+],
 "producer": "Cruz Jose Arguello Enriquez",
 "varieties": "게이샤",
 "processes": "내추럴 · 워시드",
@@ -19809,6 +19980,9 @@
 "precision": "region",
 "evidence": "Veracruz · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Finca+Ocoxotla",
+"alias": [
+"Finca Ocoxotla"
+],
 "producer": "Gustavo Adolfo Tapia Vazquez",
 "varieties": "아나카페 14 · 마르셀레사",
 "processes": "워시드",
@@ -19847,6 +20021,9 @@
 "precision": "region",
 "evidence": "Pocitos, Tezonapa, Veracruz, México",
 "source": "https://www.openstreetmap.org/search?query=Finca+Pocitos",
+"alias": [
+"Finca Pocitos"
+],
 "varieties": "게이샤",
 "processes": "워시드",
 "beanCount": 0,
@@ -19878,6 +20055,9 @@
 "precision": "region",
 "evidence": "샨 주 유앙안 · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Genius+Shan+State",
+"alias": [
+"Genius Shan State"
+],
 "producer": "지니어스 커피(응웨 툰)",
 "elevation": "1,400~1,600m",
 "story": "샨 주 유앙안의 소규모 농가들이 만드는 커피로, 현지 사회적 기업이 농가와 함께 재배 기술과 가공을 끌어올려 왔다. 2018년 지역 최대 규모의 선별·가공 시설을 열었고, 농가와 전속 계약을 맺지 않고 신뢰를 쌓는 방식을 택한다. 일본의 한 로스터가 이곳에서 워시드·내추럴·허니 세 가지 가공 랏을 들여온다.",
@@ -19922,6 +20102,9 @@
 "precision": "village",
 "evidence": "Yanacachi, Municipio Yanacachi, Provincia Sud Yungas, La Paz, Bolivia",
 "source": "https://www.openstreetmap.org/search?query=Agro+Takesi",
+"alias": [
+"Agro Takesi"
+],
 "producer": "마리아나 이투랄데",
 "elevation": "1,850~3,100m (게이샤 1,890~2,300m)",
 "story": "무르라타산(5,850m)을 마주 보는 해발 1,850~3,100m의 고지 농장이다. 높은 고도 탓에 꽃에서 완숙까지 10~11개월이 걸리고, 토양에 섞인 돌이 낮 동안 열을 머금어 새벽 추위로부터 나무를 지킨다. 2009년 볼리비아 컵 오브 엑설런스에서 1위를 했고, 직거래가 허용된 바이어는 세계 5곳뿐이다.",
@@ -19970,6 +20153,9 @@
 "precision": "region",
 "evidence": "Cerrado Mineiro · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=M&F+Coffee",
+"alias": [
+"M&F Coffee"
+],
 "producer": "Bioma Cafe",
 "varieties": "아라라",
 "refs": [
@@ -20225,6 +20411,9 @@
 "precision": "village",
 "evidence": "미나스제라이스 캄푸 다스 베르텐치스 산투 안토니우 두 암파루 · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Fazenda+Samambaia",
+"alias": [
+"Fazenda Samambaia"
+],
 "producer": "엔히케 지아스 캄브라이라",
 "elevation": "1,000~1,200m",
 "story": "100년 넘게 커피를 재배해 온 미나스제라이스의 농장이다. 2001년 컵 오브 엑설런스에서 낙찰되며 국제 시장에 이름을 알렸고, 내추럴 가공 랏의 단맛과 깨끗한 컵, 비터초콜릿 계열 향미로 알려져 있다.",
@@ -20667,6 +20856,9 @@
 "precision": "region",
 "evidence": "Mantiqueira de Minas · Sul de Minas · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Sitio+Ponte+Alta",
+"alias": [
+"Sitio Ponte Alta"
+],
 "producer": "Fatima Cilene Oliveira Lami",
 "varieties": "아라라",
 "processes": "내추럴",
@@ -20791,6 +20983,9 @@
 "precision": "region",
 "evidence": "Cerrado Mineiro · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Fazenda+Água+Limpa",
+"alias": [
+"Fazenda Água Limpa"
+],
 "producer": "Marcelo Assis Nogueira",
 "varieties": "아라라",
 "processes": "허니",
@@ -21055,6 +21250,9 @@
 "precision": "region",
 "evidence": "Alotepec – Metapan · Alotepec-Metapan · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Las+Duanas",
+"alias": [
+"Las Duanas"
+],
 "producer": "Enrique Mena Gutierrez",
 "varieties": "파카마라",
 "processes": "워시드",
@@ -21093,6 +21291,9 @@
 "precision": "region",
 "evidence": "Alotepec-Metapan · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Los+Morales",
+"alias": [
+"Los Morales"
+],
 "producer": "Henri Milton Morales Umaña",
 "varieties": "게이샤",
 "processes": "내추럴",
@@ -21131,6 +21332,9 @@
 "precision": "region",
 "evidence": "Volcán de Santa Ana, Santa Ana, Santa Ana Centro, Santa Ana, 0503, El Salvador",
 "source": "https://www.openstreetmap.org/search?query=Santa+Elena",
+"alias": [
+"Santa Elena"
+],
 "producer": "페르난도 리마",
 "elevation": "1,600~1,875m",
 "story": "산타아나 화산 사면에 있는 농장으로, 2003년 엘살바도르 컵 오브 엑설런스에서 낙찰되며 국제 거래가 시작됐다. 2005년 화산 분화로 큰 피해를 입었지만, 이후 쌓인 광물질 화산재가 토양을 비옥하게 만들어 안정적인 품질의 기반이 됐다. 대표 품종인 버번은 오렌지와 밀크초콜릿 계열 향미를 낸다.",
@@ -21706,6 +21910,9 @@
 "precision": "region",
 "evidence": "Alotepec-Metapan · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=El+Manantial",
+"alias": [
+"El Manantial"
+],
 "producer": "Noe Aquiles Chacon Murcia",
 "varieties": "파카마라",
 "processes": "내추럴 · 워시드",
@@ -21744,6 +21951,9 @@
 "precision": "region",
 "evidence": "Apaneca Ilamatepec · Apaneca-Ilamatepec · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=El+Angel",
+"alias": [
+"El Angel"
+],
 "producer": "Carlos Alfredo Mendez Florez Cabezas",
 "varieties": "파카마라 · 파카마라 아마리요",
 "processes": "내추럴",
@@ -21845,6 +22055,9 @@
 "precision": "region",
 "evidence": "Apaneca Ilamatepec · Apaneca-Ilamatepec · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Finca+Ethiopia",
+"alias": [
+"Finca Ethiopia"
+],
 "producer": "Sandra Xiomara Velasquez Moreno",
 "varieties": "버번 · 게이샤 · SL28",
 "processes": "허니 · 내추럴",
@@ -21883,6 +22096,9 @@
 "precision": "region",
 "evidence": "Santa Barbara · Santa Bárbara · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Los+Primos",
+"alias": [
+"Los Primos"
+],
 "producer": "Manuel De Jesus Vallecillo Fernandez",
 "varieties": "파카스",
 "processes": "워시드",
@@ -22338,6 +22554,10 @@
 "precision": "region",
 "evidence": "Santa Bárbara, 20101, Honduras",
 "source": "https://www.openstreetmap.org/search?query=Fincas+Mierisch+–+Cerro+Azul",
+"alias": [
+"Fincas Mierisch – Cerro Azul",
+"세로 아술"
+],
 "varieties": "게이샤",
 "processes": "워시드",
 "beanCount": 0,
@@ -22369,6 +22589,9 @@
 "precision": "region",
 "evidence": "Santa Barbara · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=El+Mango",
+"alias": [
+"El Mango"
+],
 "producer": "Alma Aydee Pineda Alvarado",
 "varieties": "SL28",
 "processes": "워시드",
@@ -22470,6 +22693,9 @@
 "precision": "region",
 "evidence": "Santa Bárbara, 20101, Honduras",
 "source": "https://www.openstreetmap.org/search?query=Fincas+Mierisch+–+La+Alita",
+"alias": [
+"Fincas Mierisch – La Alita"
+],
 "varieties": "레드 카투아이",
 "processes": "워시드",
 "beanCount": 0,
@@ -22501,6 +22727,9 @@
 "precision": "region",
 "evidence": "니에리 퉁구리 워싱스테이션 · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Thunguri+Washing+Station",
+"alias": [
+"Thunguri Washing Station"
+],
 "producer": "루무키아 농부 협동조합(Rumukia FCS) 소농 700여 명",
 "story": "1967년에 세워진 니에리 지역의 가공소로, 루무키아 농부 협동조합 아래 700여 소농이 각자 0.5에이커 남짓에 250그루 정도를 기르며 수확을 모은다. 한국의 한 로스터가 16개국 150개 농장과 직거래하며 매 시즌 산지를 방문하는데, 이 가공소는 그중 케냐 산지로 소개됐다.",
 "refs": [
@@ -22542,6 +22771,9 @@
 "precision": "region",
 "evidence": "무랑가 주 티티 팩토리 · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Thithi+Coffee+Factory",
+"alias": [
+"Thithi Coffee Factory"
+],
 "producer": "티카기키 농부 협동조합(Thikagiki FCS)",
 "elevation": "1,650~1,800m",
 "story": "무랑가 지역 티카기키 농부 협동조합 산하의 가공소로, 1,650~1,800m에서 재배한 커피를 풀리 워시드로 가공한다. 국내에 소개된 랏은 발렌시아 오렌지, 캐러멜, 밀크초콜릿 계열 향미로 알려져 있다.",
@@ -22586,6 +22818,9 @@
 "precision": "region",
 "evidence": "Tarrazú · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=San+Martín",
+"alias": [
+"San Martín"
+],
 "producer": "Lisbeth Venegas Gamboa",
 "varieties": "게이샤",
 "processes": "워시드",
@@ -22624,6 +22859,9 @@
 "precision": "region",
 "evidence": "Los Santos · Tarrazú · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Santa+Teresa",
+"alias": [
+"Santa Teresa"
+],
 "producer": "Roger Ureña Hidalgo",
 "varieties": "게이샤",
 "processes": "워시드",
@@ -22817,6 +23055,9 @@
 "precision": "region",
 "evidence": "Los-Santos · Tarrazú · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Hacienda+Copey+–+Itadaki",
+"alias": [
+"Hacienda Copey – Itadaki"
+],
 "producer": "Daito Giken Costa Rica, S.A.",
 "varieties": "게이샤",
 "processes": "워시드",
@@ -23013,6 +23254,9 @@
 "precision": "village",
 "evidence": "Santa Rosa de Cabal, Risaralda, RAP Eje Cafetero, 661020, Colombia",
 "source": "https://www.openstreetmap.org/search?query=Finca+Milan",
+"alias": [
+"Finca Milan"
+],
 "producer": "밀란 농장",
 "elevation": "1,600m",
 "story": "파인애플 등 발효 과일에서 뽑은 스타터 컬처로 커피 체리를 발효시키는 '컬처링' 공정으로 알려진 농장이다. 균주·양·시간을 조절해 원하는 향미를 설계하며, 품종의 경계를 넘어선 랏을 만든다. 일본의 한 로스터가 이 농장의 컬처링 랏을 'Logan'이라는 이름으로 소개했다.",
@@ -23602,6 +23846,10 @@
 "precision": "region",
 "evidence": "Cordillera, Boquerón, Chiriquí, Panamá",
 "source": "https://www.openstreetmap.org/search?query=Geisha360+(Tierra+Blanca)",
+"alias": [
+"Geisha360 (Tierra Blanca)",
+"게이샤360"
+],
 "elevation": "1,400m",
 "varieties": "게이샤",
 "processes": "내추럴",
@@ -23634,6 +23882,9 @@
 "precision": "village",
 "evidence": "Boquete, Chiriquí, 0413, Panamá",
 "source": "https://www.openstreetmap.org/search?query=Don+Pepe",
+"alias": [
+"Don Pepe"
+],
 "producer": "호세(토니 할아버지의 아들)",
 "story": "2014년 한국의 한 로스터가 처음 찾은 보케테의 농장으로, 고도별로 게이샤 재배지를 나눠 관리한다. 그 로스터는 게이샤보다 파나마라는 산지를 먼저 소개하고 싶어 몇 해 동안 게이샤를 사지 않았고, 2017~2018년 농장이 고품질 게이샤를 대량 생산하면서 거래가 본격화됐다. 2018년부터 해마다 파나마 게이샤 워시드가 국내에 소개되고 있다.",
 "varieties": "게이샤",
@@ -23740,6 +23991,9 @@
 "precision": "region",
 "evidence": "Boquete, Chiriquí, 0413, Panamá",
 "source": "https://www.openstreetmap.org/search?query=La+Huaca",
+"alias": [
+"La Huaca"
+],
 "varieties": "게이샤",
 "processes": "내추럴",
 "beanCount": 0,
@@ -23917,6 +24171,10 @@
 "precision": "region",
 "evidence": "Bajo Mono, Bajo Lino, Los Naranjos, Boquete, Chiriquí, 0413, Panamá",
 "source": "https://www.openstreetmap.org/search?query=Luito+Geisha+Estates+(Lamastus)",
+"alias": [
+"Luito Geisha Estates (Lamastus)",
+"루이토"
+],
 "elevation": "1,600~1,750m",
 "varieties": "버본×게이샤",
 "processes": "내추럴",
@@ -23986,6 +24244,9 @@
 "precision": "region",
 "evidence": "Bambito, Paso Ancho, Tierras Altas, Chiriquí, Panamá",
 "source": "https://www.openstreetmap.org/search?query=Bambito+Verde",
+"alias": [
+"Bambito Verde"
+],
 "varieties": "게이샤",
 "processes": "워시드",
 "beanCount": 0,
@@ -24140,6 +24401,9 @@
 "precision": "region",
 "evidence": "Volcán, Tierras Altas, Chiriquí, Panamá",
 "source": "https://www.openstreetmap.org/search?query=Burac+(Lost+Origin)",
+"alias": [
+"Burac (Lost Origin)"
+],
 "producer": "마누엘 부락",
 "elevation": "1,600m",
 "varieties": "게이샤",
@@ -24403,6 +24667,9 @@
 "precision": "region",
 "evidence": "Boquete, Chiriquí, 0413, Panamá",
 "source": "https://www.openstreetmap.org/search?query=Araúz",
+"alias": [
+"Araúz"
+],
 "varieties": "게이샤",
 "processes": "워시드 · 허니 · 내추럴",
 "beanCount": 0,
@@ -24434,6 +24701,9 @@
 "precision": "region",
 "evidence": "Volcán, Tierras Altas, Chiriquí, Panamá",
 "source": "https://www.openstreetmap.org/search?query=Finca+Arango",
+"alias": [
+"Finca Arango"
+],
 "elevation": "1,650m",
 "varieties": "카투라",
 "processes": "내추럴",
@@ -24765,6 +25035,9 @@
 "precision": "region",
 "evidence": "Paso Ancho, Tierras Altas, Chiriquí, Panamá",
 "source": "https://www.openstreetmap.org/search?query=Finca+El+Pergamino",
+"alias": [
+"Finca El Pergamino"
+],
 "varieties": "버본 · 카투아이 · 게이샤",
 "processes": "내추럴 · 허니 · 워시드",
 "beanCount": 0,
@@ -24859,6 +25132,9 @@
 "precision": "region",
 "evidence": "Cerro Punta · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Finca+Los+Cenizos",
+"alias": [
+"Finca Los Cenizos"
+],
 "varieties": "게이샤",
 "processes": "내추럴·무산소 내추럴",
 "refs": [
@@ -25088,6 +25364,9 @@
 "precision": "region",
 "evidence": "Boquete, Chiriquí, 0413, Panamá",
 "source": "https://www.openstreetmap.org/search?query=Corpachi+Coffee+Company",
+"alias": [
+"Corpachi Coffee Company"
+],
 "elevation": "1,400~1,600m",
 "varieties": "ET-47",
 "processes": "슈퍼 내추럴",
@@ -25313,6 +25592,9 @@
 "precision": "region",
 "evidence": "Los Pozos, Nueva California, Tierras Altas, Chiriquí, Panamá",
 "source": "https://www.openstreetmap.org/search?query=Mount+Totumas",
+"alias": [
+"Mount Totumas"
+],
 "varieties": "게이샤",
 "processes": "워시드 계열",
 "beanCount": 0,
@@ -25344,6 +25626,9 @@
 "precision": "region",
 "evidence": "Cordillera, Boquerón, Chiriquí, Panamá",
 "source": "https://www.openstreetmap.org/search?query=Tierra+Blanca",
+"alias": [
+"Tierra Blanca"
+],
 "elevation": "1,900m",
 "varieties": "게이샤",
 "processes": "내추럴 · 하프 워시드",
@@ -25545,6 +25830,9 @@
 "precision": "region",
 "evidence": "Jaramillo, Boquete, Chiriquí, Panamá",
 "source": "https://www.openstreetmap.org/search?query=Finca+Maya",
+"alias": [
+"Finca Maya"
+],
 "varieties": "게이샤",
 "processes": "워시드",
 "beanCount": 0,
@@ -25748,6 +26036,9 @@
 "precision": "region",
 "evidence": "Cusco · OSM/Photon",
 "source": "https://www.openstreetmap.org/search?query=Campo+Verde",
+"alias": [
+"Campo Verde"
+],
 "producer": "Wilfredo Arias Candia",
 "varieties": "버번 · 게이샤",
 "processes": "워시드",
@@ -29223,7 +29514,7 @@
 "메이플시럽",
 "청사과"
 ],
-"placeId": "C|니카라과",
+"placeId": "F|니카라과|운 레갈로 데 디오스",
 "listingCount": 2,
 "processId": "washed",
 "processGroup": "washed"
@@ -29244,7 +29535,7 @@
 "복숭아",
 "사탕수수"
 ],
-"placeId": "C|니카라과",
+"placeId": "F|니카라과|운 레갈로 데 디오스",
 "listingCount": 2,
 "processId": "honey",
 "processGroup": "honey"
@@ -48592,7 +48883,7 @@
 "마카다미아",
 "사탕수수"
 ],
-"placeId": "C|니카라과",
+"placeId": "F|니카라과|운 레갈로 데 디오스",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -48613,7 +48904,7 @@
 "시트러스",
 "사탕수수"
 ],
-"placeId": "C|니카라과",
+"placeId": "F|니카라과|운 레갈로 데 디오스",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
