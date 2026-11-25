@@ -18,6 +18,8 @@
   --navlog-deep:#254B3B;
   --navcomp:#9A5B13;         /* 커피대회 버튼 — 트로피·로스팅 느낌의 따뜻한 앰버·브론즈 */
   --navcomp-deep:#7C480E;
+  --navfarm:#6B4423;         /* 농장 아카이브 버튼 — 로스트·에스프레소 브라운 */
+  --navfarm-deep:#57361A;
   --shadow:0 10px 30px -18px rgba(34,30,26,.45);
   --r:18px;
 }
@@ -90,6 +92,22 @@ button{font-family:inherit}
 .nav a.nav-comp[aria-current="page"]{
   background:var(--navcomp-deep);color:#FFFFFF;
   box-shadow:inset 0 0 0 1px rgba(255,246,232,.4),0 8px 18px -10px rgba(122,72,14,.9);
+}
+
+/* 농장 아카이브 — 로스트·에스프레소 브라운 알약 버튼 (그린 기록·앰버 대회·테라코타 CTA와 구분) */
+.nav a.nav-farm,.nav a.nav-farm:visited{
+  background:var(--navfarm);color:#FFFFFF;font-weight:800;letter-spacing:-.015em;
+  font-size:14.5px;line-height:1.3;padding:8px 16px;margin:0 8px;border-radius:999px;
+  box-shadow:0 8px 18px -10px rgba(87,54,26,.85);
+}
+.nav a.nav-farm:hover,.nav a.nav-farm:focus-visible{
+  background:var(--navfarm-deep);color:#FFFFFF;
+  box-shadow:0 9px 20px -10px rgba(87,54,26,.95);
+}
+.nav a.nav-farm:focus-visible{outline:2px solid var(--navfarm);outline-offset:2px}
+.nav a.nav-farm[aria-current="page"]{
+  background:var(--navfarm-deep);color:#FFFFFF;
+  box-shadow:inset 0 0 0 1px rgba(255,246,232,.45),0 8px 18px -10px rgba(87,54,26,.95);
 }
 
 /* ---------- layout ---------- */
@@ -271,6 +289,7 @@ td a{color:var(--terra);font-weight:700;text-decoration:none}
   .nav a{font-size:12.5px;padding:6px 8px}
   .nav a.nav-log{padding:8px 13px;margin:0 5px;font-size:13.5px}
   .nav a.nav-comp{padding:8px 13px;margin:0 5px;font-size:13.5px}
+  .nav a.nav-farm{padding:8px 13px;margin:0 5px;font-size:13.5px}
   section{margin-top:38px}
   .origin{padding:16px 16px 14px}
   .farm{padding:16px}

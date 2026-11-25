@@ -47,6 +47,8 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     --navlog-deep:#254B3B;
     --navcomp:#9A5B13;     /* 커피대회 버튼 — 트로피·로스팅 느낌의 앰버·브론즈 */
     --navcomp-deep:#7C480E;
+    --navfarm:#6B4423;     /* 농장 아카이브 버튼 — 로스트·에스프레소 브라운 */
+    --navfarm-deep:#57361A;
     --shadow:0 10px 30px -18px rgba(34,30,26,.45);
     --r:18px;
   }
@@ -640,6 +642,21 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     background:var(--navcomp-deep);color:#FFFFFF;
     box-shadow:inset 0 0 0 1px rgba(255,246,232,.4),0 8px 18px -10px rgba(122,72,14,.9);
   }
+  /* 농장 아카이브 — 로스트·에스프레소 브라운 알약 버튼 */
+  .sitelinks a.nav-farm,.sitelinks a.nav-farm:visited{
+    background:var(--navfarm);color:#FFFFFF;font-weight:800;
+    font-size:13.5px;line-height:1.35;letter-spacing:-.02em;
+    padding:6px 14px;margin:3px 5px;border-radius:999px;
+    box-shadow:0 8px 18px -10px rgba(87,54,26,.85);
+  }
+  .sitelinks a.nav-farm:hover,.sitelinks a.nav-farm:focus-visible{
+    background:var(--navfarm-deep);color:#FFFFFF;
+  }
+  .sitelinks a.nav-farm:focus-visible{outline:2px solid var(--navfarm);outline-offset:2px}
+  .sitelinks a.nav-farm[aria-current="page"]{
+    background:var(--navfarm-deep);color:#FFFFFF;
+    box-shadow:inset 0 0 0 1px rgba(255,246,232,.45),0 8px 18px -10px rgba(87,54,26,.9);
+  }
   /* 모바일: 구분점 없이 넉넉한 간격으로 — 좁은 화면에서 줄바꿈될 때 점이 줄 끝에 남지 않게 */
   @media(max-width:899px){
     .sitelinks{gap:7px 9px}
@@ -658,6 +675,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     .sitelinks a{font-size:11px}
     .sitelinks a.nav-log{font-size:12.5px;padding:5px 12px;margin:2px 4px}
     .sitelinks a.nav-comp{font-size:12.5px;padding:5px 12px;margin:2px 4px}
+    .sitelinks a.nav-farm{font-size:12.5px;padding:5px 12px;margin:2px 4px}
     .lede{margin:7px 0 0;font-size:20px}
     .lede small{margin-top:4px;font-size:12px}
     .search{margin:10px 0 0}
@@ -713,6 +731,55 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     .lede{font-size:20px}
     .stat dd{font-size:12.5px}
   }
+
+  /* ---------- 검색 중심 모드 ----------
+     초기 화면과 검색 결과 목록에서는 위에서 아래로
+     검색창 → 결과 목록 → 카테고리(산지·가공) → 지도 순으로 놓습니다.
+     산지·농장을 하나 고르면(has-sel) 예전처럼 카드+지도 화면으로 돌아갑니다. */
+  .app.mode-browse{display:flex;flex-direction:column;height:auto;min-height:100dvh}
+  .app.mode-browse .head{order:0}
+  .app.mode-browse .sheet{order:1;flex:none;height:auto;overflow:visible;overscroll-behavior:auto;padding:12px 16px 4px}
+  .app.mode-browse .flt-label{order:2}
+  .app.mode-browse #chips{order:3}
+  .app.mode-browse #procChips{order:4}
+  .app.mode-browse #procDetail{order:5}
+  .app.mode-browse .map-label{order:6}
+  .app.mode-browse .mapwrap{order:7;position:relative;inset:auto;width:auto;height:46dvh;min-height:300px;max-height:600px;border:0;border-top:1px solid var(--line)}
+  .flt-label,.map-label{display:none}
+  .app.mode-browse .flt-label,.app.mode-browse .map-label{
+    display:block;margin:0;padding:15px 16px 6px;font-size:10.5px;font-weight:800;
+    letter-spacing:.14em;color:#9A8F80;
+  }
+  .app.mode-browse .chips{padding:0 16px 11px}
+  .app.mode-browse .pagefoot{order:8;margin:14px 16px 22px}
+  .app.has-sel .pagefoot{display:none}
+  .app.mode-browse .sheet > .results:first-child{padding-top:2px}
+  /* 상세 카드 위의 '목록으로 / 처음으로' */
+  .backnav{margin:0 0 10px}
+  .backnav button{
+    display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:800;letter-spacing:-.01em;
+    padding:7px 12px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--ink-soft);
+    box-shadow:var(--shadow);
+  }
+  .backnav button:hover{border-color:var(--terra-soft);color:var(--terra)}
+  .backnav button i{font-style:normal;color:var(--terra);font-weight:800}
+  @media(min-width:600px){
+    .app.mode-browse{width:min(100%,920px);margin:0 auto;padding:0 22px 34px}
+    .app.mode-browse .head{padding:30px 0 8px}
+    .app.mode-browse .sheet{padding:16px 0 4px}
+    .app.mode-browse .flt-label,.app.mode-browse .map-label{padding:18px 0 7px}
+    .app.mode-browse .chips{padding:0 0 11px}
+    .app.mode-browse .pagefoot{margin:16px 0 4px}
+    .app.mode-browse .mapwrap{border:1px solid var(--line);border-radius:16px;height:min(58vh,560px);min-height:360px}
+    .app.mode-browse .sheet > .card{max-width:720px;margin-left:auto;margin-right:auto}
+  }
+  @media(min-width:820px){
+    .app.mode-browse .results{display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:start}
+    .app.mode-browse .results > .res{margin-bottom:0}
+    .app.mode-browse .results > .res-head,
+    .app.mode-browse .results > .sec-h,
+    .app.mode-browse .results > p{grid-column:1/-1}
+  }
 </style>
 <script type="application/ld+json">
 {
@@ -741,7 +808,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 <link rel="alternate" hreflang="x-default" href="https://oncoffeelog.com/" />
 </head>
 <body>
-<div class="app" id="app">
+<div class="app mode-browse" id="app">
   <header class="head">
     <div class="headtop">
       <div class="brand">
@@ -759,7 +826,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     </div>
     <nav class="sitelinks" aria-label="사이트 안내">
       <a href="guide.html">가이드</a><span class="sep" aria-hidden="true">·</span>
-      <a href="farms.html">농장 아카이브</a><span class="sep" aria-hidden="true">·</span>
+      <a href="farms.html" class="nav-farm">농장 아카이브</a><span class="sep" aria-hidden="true">·</span>
       <a href="log.html" class="nav-log">내 커피 기록</a><span class="sep" aria-hidden="true">·</span>
       <a href="competitions.html" class="nav-comp">커피대회</a>
     </nav>
@@ -780,16 +847,22 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     </form>
   </header>
 
+  <p class="flt-label">산지 · 가공방식으로 좁혀 보기</p>
   <div class="chips" id="chips" role="tablist" aria-label="산지 필터"></div>
   <div class="chips pf" id="procChips" role="tablist" aria-label="가공방식 필터" hidden></div>
   <div class="chips detail" id="procDetail" role="tablist" aria-label="세부 가공방식" hidden></div>
 
+  <p class="map-label">지도에서 보기</p>
   <div class="mapwrap">
     <div id="map" aria-label="커피 산지 지도"></div>
     <div class="map-hint" id="mapHint">
       <b>핀</b>을 눌러 산지를, 검색으로 원두를 찾아보세요
     </div>
   </div>
+
+  <p class="foot pagefoot"><b>ONCOFFEELOG</b> · 온커피로그 · 손님용 산지 지도 · KRUMBLE ROASTERS<br>
+    <a href="guide.html">산지 가이드</a> · <a href="farms.html">농장 아카이브</a> · <a href="log.html">내 커피 기록</a> · <a href="competitions.html">커피대회</a> · <a href="about.html">소개</a> · <a href="privacy.html">개인정보처리방침</a>
+  </p>
 
   <main class="sheet" id="sheet"></main>
 </div>
@@ -854,6 +927,7 @@ const state = {
   results: null,
   proc: "all",          // 가공방식 상위 갈래 (CI_PROCESS.chips)
   procDetail: "",       // 세부 가공방식 id (비어 있으면 갈래 전체)
+  _back: null,          // 상세에서 '목록으로' 돌아갈 때 복원할 목록 상태
   ready: false
 };
 var PS_ON = false;      // 사진 검색 패널이 시트에 붙어 있는지
@@ -1071,7 +1145,7 @@ function renderChips() {
   el.innerHTML = chips.join("");
   el.querySelectorAll("button").forEach((b) => b.addEventListener("click", () => {
     state.filter = b.dataset.f;
-    state.bean = null; state.place = null; state.results = null;
+    state.bean = null; state.place = null; state.results = null; state._back = null;
     state.query = ""; qEl.value = "";
     renderChips(); renderSheet(); drawPins(); fitVisible(); syncUrl();
   }));
@@ -1172,7 +1246,7 @@ function renderProcChips() {
   row.innerHTML = out.join("");
   row.querySelectorAll("[data-p]").forEach((b) => b.addEventListener("click", () => {
     state.proc = b.dataset.p; state.procDetail = "";
-    state.bean = null; state.place = null; state.results = null;
+    state.bean = null; state.place = null; state.results = null; state._back = null;
     state.query = ""; qEl.value = "";
     renderProcChips(); renderSheet(); drawPins(); fitVisible(); syncUrl();
   }));
@@ -1199,7 +1273,7 @@ function renderProcChips() {
   det.hidden = false;
   det.querySelectorAll("[data-d]").forEach((b) => b.addEventListener("click", () => {
     state.procDetail = b.dataset.d || "";
-    state.bean = null; state.place = null; state.results = null;
+    state.bean = null; state.place = null; state.results = null; state._back = null;
     state.query = ""; qEl.value = "";
     renderProcChips(); renderSheet(); drawPins(); fitVisible(); syncUrl();
   }));
@@ -1410,6 +1484,7 @@ function cardForPlace(p0) {
   const vars = countField(beans, "variety");
   return `
   <div class="card">
+    ${backNav()}
     ${photoBlock(p)}
     <div class="eyebrow">${p.kind === "farm" ? "FARM" : p.kind === "country" ? "COUNTRY" : "ORIGIN"} ${precisionBadge(p)} ${auctionBadge(p)}</div>
     <h2 class="c-name">${esc(p.country)} · ${esc(p.name)}</h2>
@@ -1483,6 +1558,7 @@ function cardForBean(b) {
   const p = placeView(placeById.get(b.placeId));
   return `
   <div class="card">
+    ${backNav()}
     ${p ? photoBlock(p, "small") : ""}
     <div class="eyebrow">BEAN ${p ? precisionBadge(p) : ""} ${jpBadge(b)}</div>
     <h2 class="c-name">${esc(beanName(b))}</h2>
@@ -1862,11 +1938,18 @@ function renderSheet() {
   }
   sheetEl.innerHTML = html;
   sheetEl.scrollTop = 0;
+  const detailMode = !!(state.bean || state.place);
+  appEl.classList.toggle("mode-browse", !detailMode);
+  appEl.classList.toggle("has-sel", detailMode);
   // 좁은 화면(1단·폴드 2단)은 문서 전체가 스크롤되므로, 시트 위쪽이 화면 밖으로 올라가 있으면 시트 머리로 되돌립니다.
   if (getComputedStyle(sheetEl).overflowY === "visible") {
     const alignSheetTop = () => {
-      const r = sheetEl.getBoundingClientRect();
-      if (r.top < -4) window.scrollTo({ top: Math.max(0, window.scrollY + r.top - 6), behavior: "auto" });
+      if (Date.now() < SKIP_ALIGN) return;
+      /* 검색 중심 화면에서는 결과 위에 검색창이 남도록 검색창 자리를 기준으로 맞춥니다. */
+      const anchor = appEl.classList.contains("mode-browse") ? $("#searchForm") : sheetEl;
+      if (!anchor) return;
+      const r = anchor.getBoundingClientRect();
+      if (r.top < -4) window.scrollTo({ top: Math.max(0, window.scrollY + r.top - 10), behavior: "auto" });
     };
     alignSheetTop();
     // 선택 시 지도 높이 전환(.3s)으로 시트가 위로 밀리므로 한 번 더 맞춰 줍니다.
@@ -1874,7 +1957,11 @@ function renderSheet() {
   }
   bindSheet();
   if (PS_ON) psMount();
-  appEl.classList.toggle("has-sel", !!(state.bean || state.place));
+  /* 지도가 위/아래로 옮겨가거나 폭·높이가 바뀌면 타일이 깨지지 않도록 다시 그립니다. */
+  const resizeMap = () => { try { map.invalidateSize({ animate: false }); } catch (e) {} };
+  requestAnimationFrame(resizeMap);
+  setTimeout(resizeMap, 90);
+  setTimeout(resizeMap, 380);
 }
 
 function homeSheet() {
@@ -1906,10 +1993,7 @@ function homeSheet() {
       <span><span class="rn">${esc(p.country)} · ${esc(p.name)}</span>
       <span class="rm">${(p.beanCount || 0).toLocaleString()}종 · ${p.precision === "country" ? "국가 단위" : p.precision === "farm" ? "농장 좌표" : "산지 단위"}</span></span>
     </button>`).join("")}
-  </div>` : ""}
-  <p class="foot"><b>ONCOFFEELOG</b> · 온커피로그 · 손님용 산지 지도 · KRUMBLE ROASTERS<br>
-    <a href="guide.html">산지 가이드</a> · <a href="farms.html">농장 아카이브</a> · <a href="log.html">내 커피 기록</a> · <a href="competitions.html">커피대회</a> · <a href="about.html">소개</a> · <a href="privacy.html">개인정보처리방침</a>
-  </p>`;
+  </div>` : ""}`;
 }
 
 function bindSheet() {
@@ -1921,6 +2005,7 @@ function bindSheet() {
     const p = placeById.get(b.dataset.place);
     if (p) selectPlace(p);
   }));
+  sheetEl.querySelectorAll("[data-back]").forEach((b) => b.addEventListener("click", goBackToList));
   sheetEl.querySelectorAll("[data-copy]").forEach((b) => b.addEventListener("click", async () => {
     try { await navigator.clipboard.writeText(b.dataset.copy); b.textContent = "복사됨"; b.classList.add("done"); }
     catch { b.textContent = "복사 실패"; }
@@ -1955,12 +2040,52 @@ function zoomFor(p) {
   return ZOOM[p.precision] != null ? ZOOM[p.precision] : (p.kind === "country" ? 5 : 9);
 }
 
+/* 검색 결과 목록에서 상세로 들어갈 때, 돌아올 목록 상태(검색어·결과·스크롤 위치)를 기억해 둡니다 */
+function rememberBrowse() {
+  if (state.bean || state.place) return;
+  state._back = (state.query || (state.results && state.results.length))
+    ? { query: state.query, results: state.results, filter: state.filter, proc: state.proc, procDetail: state.procDetail, scrollY: Math.round(window.scrollY) }
+    : null;
+}
+
+/* 카드 위 '목록으로 / 처음으로' 단추 — 검색 결과로 돌아가거나 처음 카탈로그 화면으로 */
+function backNav() {
+  const toList = !!(state._back && state._back.query);
+  return `<div class="backnav"><button type="button" data-back><i aria-hidden="true">←</i> <span>${toList ? "목록으로" : "처음으로"}</span></button></div>`;
+}
+let SKIP_ALIGN = 0;   // 뒤로 가기 직전에는 화면 자동 맞춤(alignSheetTop)을 잠시 멈춥니다
+function goBackToList() {
+  const b = state._back;
+  state.bean = null; state.place = null;
+  if (b && b.query) {
+    state.query = b.query;
+    state.results = b.results;
+    state.filter = b.filter || "all";
+    state.proc = b.proc || "all";
+    state.procDetail = b.procDetail || "";
+    qEl.value = b.query;
+  } else {
+    state.query = ""; state.results = null; qEl.value = "";
+  }
+  state._back = null;
+  const y = (b && b.scrollY) || 0;
+  SKIP_ALIGN = Date.now() + 800;
+  renderChips(); renderSheet(); drawPins(); syncUrl();
+  /* 원래 보던 목록 자리로 돌아갑니다 */
+  const restore = () => { try { window.scrollTo({ top: y, behavior: "auto" }); } catch (e) {} };
+  restore();
+  requestAnimationFrame(restore);
+  setTimeout(restore, 120);
+}
+
 function selectPlace(p) {
+  rememberBrowse();
   state.place = p; state.bean = null; state.results = null;
   map.flyTo([p.lat, p.lon], zoomFor(p), { duration: 1.1 });
   drawPins(); renderSheet(); syncUrl();
 }
 function selectBean(b) {
+  rememberBrowse();
   state.bean = b; state.results = null;
   const p = placeById.get(b.placeId);
   state.place = p || null;
@@ -2088,7 +2213,7 @@ $("#searchForm").addEventListener("submit", (e) => {
   e.preventDefault();
   const q = qEl.value.trim();
   if (!q) return;
-  state.query = q; state.bean = null; state.place = null;
+  state.query = q; state.bean = null; state.place = null; state._back = null;
   state.results = searchBeans(q);
   sugEl.classList.remove("on");
   renderSheet(); syncUrl();
@@ -2603,9 +2728,9 @@ boot();
 <script src="qrcode.min.js?v=20261122e"></script>
 <script src="qr-tools.js?v=20261125b"></script>
 <script src="site-tools.js?v=20261127a"></script>
-<script src="i18n-data.js?v=20261127b"></script>
+<script src="i18n-data.js?v=20261128a"></script>
 <script src="i18n-pages.js?v=20261127a"></script>
-<script src="i18n-places.js?v=20261127a"></script>
+<script src="i18n-places.js?v=20261128a"></script>
 <script src="i18n.js?v=20261127a"></script>
 </body>
 </html>

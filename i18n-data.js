@@ -13,6 +13,11 @@ window.CI_I18N = (function () {
     "일본에서 유통되는 생두 가운데 국내 목록에 없던 품목입니다. 어느 수입사·판매처에서 왔는지는 표시하지 않습니다.": "Green coffee sold in Japan that was not already in the Korean catalogue. The importer or shop it came from is not shown.||韓国側のリストになかった、日本で流通する生豆です。輸入元や販売店は表示しません。",
     "국내에 유통되는 생두에 일본에서 유통되는 생두를 더해 한자리에 모았습니다. 같은 생두는 한 번으로 합쳤고, 일본 쪽에서 새로 들어온 품목에는 일본 내 유통 표시를 붙였습니다.": "Green coffees traded in Korea and Japan are gathered in one place. The same coffee is counted once, and items new from the Japanese market carry a Japan market label.||韓国に流通する生豆に、日本で流通する生豆を加えて一か所にまとめました。同じ生豆は一度だけ数え、日本側から新しく入った品目には「日本国内流通」の表示を付けています。",
     /* ───────── 공통: 브랜드·메뉴·바닥글 ───────── */
+    "산지 · 가공방식으로 좁혀 보기": "Narrow it down by origin or process||産地・精製方法で絞り込む",
+    "지도에서 보기": "On the map||地図で見る",
+    "목록으로": "Back to list||一覧へ",
+    "처음으로": "Start over||最初へ",
+    "카탈로그 미수록": "Not in the catalog||カタログ未収録",
     "지도": "Map||地図",
     "가이드": "Guide||ガイド",
     "커피대회": "Competitions||大会",

@@ -25,9 +25,17 @@
       "읽는 법": ["How to read it", "読み方"],
 
       "지금 접수 중 · 다가오는 일정": ["Open for entry now, and coming up", "受付中・近日開催"],
+      "분야": ["Category", "種目"],
+      "위에서 분야를 고르면 이 목록도 그 분야만 남습니다. 접수 기간이 남았거나 곧 열리는 대회를 앞에 모았고, 날짜가 지나면 목록에서 빠져 아래 전체 목록에 지난 일정으로 남습니다.":
+        ["Pick a category above and this list narrows to it. Competitions whose entry period is still running, or that open soon, are gathered at the top; once the dates pass they drop off and stay in the full list below as past events.",
+         "上で種目を選ぶと、このリストもその種目だけになります。受付期間が残っている大会と、これから開かれる大会を上にまとめ、日付が過ぎるとこのリストから外れて下の一覧に終了した大会として残ります。"],
       "접수 기간이 남았거나 곧 열리는 대회를 앞에 모았습니다. 날짜가 지나면 목록에서 빠지고, 아래 전체 목록에는 지난 일정으로 남습니다.":
         ["Competitions whose entry period is still running, or that open soon, gathered at the top. Once the dates pass they drop off this list and stay below as past events.",
          "受付期間が残っている大会と、これから開かれる大会を上にまとめました。日付が過ぎるとこのリストから外れ、下の一覧に終了した大会として残ります。"],
+
+      "다가오는 일정을 위에, 지난 일정은 아래쪽에 두었습니다. 위에서 고른 분야와 아래 달 필터로 걸러 볼 수 있고, 카드의 공식 링크에서 그 대회의 공고를 확인할 수 있습니다.":
+        ["Upcoming events come first and past ones sit at the bottom. Filter by the category chosen above and by month below, and the official link on each card leads to that competition's announcement.",
+         "これからの大会を上に、終了した大会は下に置いています。上で選んだ種目と下の月フィルターで絞り込め、カードの公式リンクからその大会の告知を確認できます。"],
 
       "다가오는 일정을 위에, 지난 일정은 아래쪽에 두었습니다. 월별·종목별로 걸러 볼 수 있고, 카드의 공식 링크에서 그 대회의 공고를 확인할 수 있습니다.":
         ["Upcoming events come first and past ones sit at the bottom. Filter by month or category, and the official link on each card leads to that competition's announcement.",

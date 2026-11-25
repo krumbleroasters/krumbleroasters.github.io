@@ -26,7 +26,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 <meta property="og:url" content="https://oncoffeelog.com/competitions.html" />
 <meta name="twitter:card" content="summary" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
-<link rel="stylesheet" href="site.css?v=20261127a" />
+<link rel="stylesheet" href="site.css?v=20261128a" />
 <link rel="stylesheet" href="site-tools.css?v=20261127a" />
 <link rel="alternate" hreflang="ko" href="https://oncoffeelog.com/competitions.html" />
 <link rel="alternate" hreflang="en" href="https://oncoffeelog.com/competitions.html?lang=en" />
@@ -46,6 +46,21 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   .chip[aria-pressed="true"]:hover{color:#FFF8EF}
   .fgroup{margin:0 0 14px}
   .flabel{margin:0 0 7px;font-size:10.5px;font-weight:800;letter-spacing:.16em;color:var(--muted);text-transform:uppercase}
+  /* 분야(종목) 분류 — 페이지 맨 위에서 바로 고르고, 스크롤해도 상단에 붙어 있습니다 */
+  .catbar{
+    position:sticky;top:var(--tb,0px);z-index:15;
+    margin:26px 0 4px;padding:11px 0 12px;
+    background:rgba(251,247,240,.97);-webkit-backdrop-filter:saturate(140%) blur(10px);backdrop-filter:saturate(140%) blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .catbar .flabel{margin:0 0 8px}
+  @media (max-width:520px){
+    .catbar{margin:18px 0 2px;padding:9px 0 10px;background:rgba(251,247,240,.99)}
+    .catbar .chip{font-size:12px;padding:6px 10px}
+    .catbar .chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:2px}
+    .catbar .chips::-webkit-scrollbar{display:none}
+    .catbar .chip{flex:none}
+  }
   .countline{margin:16px 0 0;font-size:12.5px;font-weight:700;color:var(--muted)}
   .countline b{color:var(--ink);font-weight:800}
 
@@ -113,7 +128,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   <nav class="nav" aria-label="주요 메뉴">
     <a href="./">지도</a>
     <a href="guide.html">가이드</a>
-    <a href="farms.html">농장 아카이브</a>
+    <a href="farms.html" class="nav-farm">농장 아카이브</a>
     <a href="log.html" class="nav-log">내 커피 기록</a>
     <a href="competitions.html" class="nav-comp" aria-current="page">커피대회</a>
   </nav>
@@ -138,9 +153,14 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     </div>
   </div>
 
+  <div class="catbar" id="catBar">
+    <p class="flabel">분야</p>
+    <div class="chips" id="catChips" data-ci-skip></div>
+  </div>
+
   <section id="now">
     <h2><span class="n">1</span> 지금 접수 중 · 다가오는 일정</h2>
-    <p class="sub">접수 기간이 남았거나 곧 열리는 대회를 앞에 모았습니다. 날짜가 지나면 목록에서 빠지고, 아래 전체 목록에는 지난 일정으로 남습니다.</p>
+    <p class="sub">위에서 분야를 고르면 이 목록도 그 분야만 남습니다. 접수 기간이 남았거나 곧 열리는 대회를 앞에 모았고, 날짜가 지나면 목록에서 빠져 아래 전체 목록에 지난 일정으로 남습니다.</p>
     <ul class="hl-list" id="hlList" data-ci-skip></ul>
   </section>
 
@@ -150,15 +170,11 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 
   <section id="list">
     <h2><span class="n">2</span> 대회 전체 목록</h2>
-    <p class="sub">다가오는 일정을 위에, 지난 일정은 아래쪽에 두었습니다. 월별·종목별로 걸러 볼 수 있고, 카드의 공식 링크에서 그 대회의 공고를 확인할 수 있습니다.</p>
+    <p class="sub">다가오는 일정을 위에, 지난 일정은 아래쪽에 두었습니다. 위에서 고른 분야와 아래 달 필터로 걸러 볼 수 있고, 카드의 공식 링크에서 그 대회의 공고를 확인할 수 있습니다.</p>
 
     <div class="fgroup">
       <p class="flabel">월별</p>
       <div class="chips" id="monChips" data-ci-skip></div>
-    </div>
-    <div class="fgroup">
-      <p class="flabel">종목 · 성격</p>
-      <div class="chips" id="catChips" data-ci-skip></div>
     </div>
 
     <p class="countline" id="countLine" data-ci-skip></p>
@@ -213,10 +229,10 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   손님용 산지 지도 · 운영 크럼블로스터스(KRUMBLE ROASTERS) · 가격과 매입 정보는 싣지 않습니다.
 </footer>
 
-<script src="i18n-data.js?v=20261127b"></script>
+<script src="i18n-data.js?v=20261128a"></script>
 <script src="i18n-pages.js?v=20261127a"></script>
-<script src="i18n-places.js?v=20261127a"></script>
-<script src="i18n-competitions.js?v=20261127a"></script>
+<script src="i18n-places.js?v=20261128a"></script>
+<script src="i18n-competitions.js?v=20261128a"></script>
 <script src="i18n.js?v=20261127a"></script>
 <script src="site-tools.js?v=20261127a"></script>
 <script>
@@ -601,6 +617,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
       ev:"대회 날짜", reg:"접수 신청", org:"주최", place:"장소", official:"공식 페이지",
       link:"공식 페이지 →", countA:"개 대회 가운데", countB:"개 표시", empty:"이 조건에 맞는 대회가 없습니다. 다른 달이나 종목을 골라 보세요.",
       hlEmpty:"지금 접수 중이거나 곧 열리는 대회가 없습니다. 다음 시즌 일정은 주최 측 공지를 확인하세요.",
+      hlEmptyCat:"이 분야에 지금 접수 중이거나 곧 열리는 대회가 없습니다. 다른 분야를 고르거나 아래 전체 목록에서 지난 일정을 보세요.",
       hlEv:"대회", hlReg:"접수"
     },
     en: {
@@ -613,6 +630,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
       ev:"Date", reg:"Entry", org:"Organiser", place:"Venue", official:"Official page",
       link:"Official page →", countA:"competitions,", countB:"shown", empty:"No competition matches this filter. Try another month or category.",
       hlEmpty:"Nothing is open for entry or coming up right now. Check the organiser's notice for the next season.",
+      hlEmptyCat:"Nothing in this category is open for entry or coming up right now. Pick another category, or see past events in the full list below.",
       hlEv:"Date", hlReg:"Entry"
     },
     ja: {
@@ -625,6 +643,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
       ev:"開催日", reg:"受付期間", org:"主催", place:"会場", official:"公式ページ",
       link:"公式ページ →", countA:"件のうち", countB:"件を表示", empty:"この条件に合う大会はありません。別の月や種目をお選びください。",
       hlEmpty:"いま受付中・近日開催の大会はありません。次のシーズンの日程は主催者の告知をご確認ください。",
+      hlEmptyCat:"この種目で受付中・近日開催の大会はありません。別の種目を選ぶか、下の一覧で終了した大会をご覧ください。",
       hlEv:"開催", hlReg:"受付"
     }
   };
@@ -743,6 +762,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   function renderHighlight() {
     var l = L();
     var show = DATA.filter(function (it) {
+      if (state.cat !== "all" && (it.cat || []).indexOf(state.cat) < 0) return false;
       var st = statusOf(it);
       return st === "open" || st === "soonReg" || st === "soonEv";
     }).sort(function (a, b) {
@@ -750,7 +770,10 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
       return (da ? da.getTime() : 9e15) - (db ? db.getTime() : 9e15);
     });
     var box = document.getElementById("hlList");
-    if (!show.length) { box.innerHTML = '<li class="emptybox">' + esc(l.hlEmpty) + "</li>"; return; }
+    if (!show.length) {
+      box.innerHTML = '<li class="emptybox">' + esc(state.cat === "all" ? l.hlEmpty : l.hlEmptyCat) + "</li>";
+      return;
+    }
     box.innerHTML = show.map(function (it) {
       var st = statusOf(it), ev = parseRange(it.ev), reg = parseRange(it.reg);
       var line = "";
@@ -807,7 +830,8 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     if (!b) return;
     if (b.hasAttribute("data-mon")) state.mon = parseInt(b.getAttribute("data-mon"), 10) || 0;
     if (b.hasAttribute("data-cat")) state.cat = b.getAttribute("data-cat") || "all";
-    renderChips(); renderList();
+    /* 분야를 고르면 1번(지금 접수 중)·2번(전체 목록) 섹션이 함께 걸러집니다 */
+    renderChips(); renderHighlight(); renderList();
   }
 
   function detectLang() {
@@ -838,6 +862,19 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 
   window.CI = window.CI || {};
   window.CI.competitions = { data: DATA, state: state, render: renderAll };
+})();
+</script>
+<script>
+/* 상단 메뉴(topbar) 높이만큼 분야 필터 바를 그 아래에 붙입니다 */
+(function () {
+  var tb = document.querySelector(".topbar");
+  if (!tb) return;
+  function sync() { document.documentElement.style.setProperty("--tb", tb.offsetHeight + "px"); }
+  sync();
+  addEventListener("resize", sync, { passive: true });
+  addEventListener("orientationchange", sync, { passive: true });
+  setTimeout(sync, 400);
+  document.addEventListener("ci:lang", function () { setTimeout(sync, 60); });
 })();
 </script>
 </body>
