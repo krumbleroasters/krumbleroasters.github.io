@@ -42,6 +42,8 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     --line:#E2D8C9;
     --terra:#C2603C;
     --terra-soft:#E8B9A6;
+    --navcomp:#9A5B13;      /* 커피대회 버튼 — 트로피·로스팅 느낌의 앰버·브론즈 */
+    --navcomp-deep:#7C480E;
     --green:#2F4636;
     --muted:#8A8074;
     --shadow:0 10px 30px -18px rgba(34,30,26,.45);
@@ -82,6 +84,13 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   .hdrnav a:hover,.hdrnav a:focus-visible{color:var(--terra);border-color:var(--terra-soft)}
   .hdrnav a.map{background:var(--ink);border-color:var(--ink);color:#FFF8EF}
   .hdrnav a.map:hover,.hdrnav a.map:focus-visible{background:var(--green);border-color:var(--green);color:#FFF8EF}
+  .hdrnav a.nav-comp,.hdrnav a.nav-comp:visited{
+    background:var(--navcomp);border-color:var(--navcomp);color:#FFFFFF;font-weight:800;
+  }
+  .hdrnav a.nav-comp:hover,.hdrnav a.nav-comp:focus-visible{
+    background:var(--navcomp-deep);border-color:var(--navcomp-deep);color:#FFFFFF;
+  }
+  .hdrnav a.nav-comp:focus-visible{outline:2px solid var(--navcomp);outline-offset:2px}
   .hdr h1{margin:8px 0 0;font-size:20px;line-height:1.3;letter-spacing:-.025em;font-weight:800}
   .hdr h1 em{font-style:normal;color:var(--terra)}
 
@@ -497,7 +506,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     <nav class="hdrnav" aria-label="주요 메뉴">
       <a class="map" href="./">산지 지도</a>
       <a href="guide.html">가이드</a>
-      <a href="competitions.html">커피대회</a>
+      <a href="competitions.html" class="nav-comp">커피대회</a>
     </nav>
   </div>
   <h1>내가 마신 커피를 <em>지도에</em></h1>

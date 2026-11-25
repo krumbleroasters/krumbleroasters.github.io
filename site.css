@@ -16,6 +16,8 @@
   --muted:#8A8074;
   --navlog:#2F5D4A;          /* 내 커피 기록 버튼 — 차분한 세이지·포레스트 그린 */
   --navlog-deep:#254B3B;
+  --navcomp:#9A5B13;         /* 커피대회 버튼 — 트로피·로스팅 느낌의 따뜻한 앰버·브론즈 */
+  --navcomp-deep:#7C480E;
   --shadow:0 10px 30px -18px rgba(34,30,26,.45);
   --r:18px;
 }
@@ -70,6 +72,22 @@ button{font-family:inherit}
 }
 .nav a.nav-log:focus-visible{outline:2px solid var(--navlog);outline-offset:2px}
 .nav a.nav-log[aria-current="page"]{background:var(--navlog-deep);color:#FFFDF8}
+
+/* 커피대회 — 트로피·로스팅 느낌의 앰버·브론즈 알약 버튼 (테라코타 CTA·그린 기록 버튼과 구분) */
+.nav a.nav-comp,.nav a.nav-comp:visited{
+  background:var(--navcomp);color:#FFFFFF;font-weight:800;letter-spacing:-.015em;
+  font-size:14.5px;line-height:1.3;padding:8px 16px;margin:0 8px;border-radius:999px;
+  box-shadow:0 8px 18px -10px rgba(122,72,14,.8);
+}
+.nav a.nav-comp:hover,.nav a.nav-comp:focus-visible{
+  background:var(--navcomp-deep);color:#FFFFFF;
+  box-shadow:0 9px 20px -10px rgba(122,72,14,.95);
+}
+.nav a.nav-comp:focus-visible{outline:2px solid var(--navcomp);outline-offset:2px}
+.nav a.nav-comp[aria-current="page"]{
+  background:var(--navcomp-deep);color:#FFFFFF;
+  box-shadow:inset 0 0 0 1px rgba(255,246,232,.4),0 8px 18px -10px rgba(122,72,14,.9);
+}
 
 /* ---------- layout ---------- */
 .wrap{max-width:860px;margin:0 auto;padding:38px 20px 72px}
@@ -245,6 +263,7 @@ td a{color:var(--terra);font-weight:700;text-decoration:none}
   .nav{margin-left:0;width:100%;gap:0 2px;flex-wrap:wrap;overflow:visible}
   .nav a{font-size:12.5px;padding:6px 8px}
   .nav a.nav-log{padding:8px 13px;margin:0 5px;font-size:13.5px}
+  .nav a.nav-comp{padding:8px 13px;margin:0 5px;font-size:13.5px}
   section{margin-top:38px}
   .origin{padding:16px 16px 14px}
   .farm{padding:16px}
