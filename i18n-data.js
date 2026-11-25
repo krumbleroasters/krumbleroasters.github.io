@@ -8,6 +8,9 @@
  */
 window.CI_I18N = (function () {
   var T = {
+    "일본 내 유통": "Japan market||日本国内流通",
+    "일본에서 유통되는 생두 가운데 국내 목록에 없던 품목입니다. 어느 수입사·판매처에서 왔는지는 표시하지 않습니다.": "Green coffee sold in Japan that was not already in the Korean catalogue. The importer or shop it came from is not shown.||韓国側のリストになかった、日本で流通する生豆です。輸入元や販売店は表示しません。",
+    "국내에 유통되는 생두에 일본에서 유통되는 생두를 더해 한자리에 모았습니다. 같은 생두는 한 번으로 합쳤고, 일본 쪽에서 새로 들어온 품목에는 일본 내 유통 표시를 붙였습니다.": "Green coffees traded in Korea and Japan are gathered in one place. The same coffee is counted once, and items new from the Japanese market carry a Japan market label.||韓国に流通する生豆に、日本で流通する生豆を加えて一か所にまとめました。同じ生豆は一度だけ数え、日本側から新しく入った品目には「日本国内流通」の表示を付けています。",
     /* ───────── 공통: 브랜드·메뉴·바닥글 ───────── */
     "지도": "Map||地図",
     "가이드": "Guide||ガイド",
@@ -285,6 +288,8 @@ window.CI_I18N = (function () {
 
   /* 태그가 섞인 문장: 열쇠는 태그를 뺀 글자 전체 */
   var H = {
+    "국내에 유통되는 생두에 일본에서 유통되는 생두를 더해 한자리에 모았습니다. 같은 생두는 한 번으로 합쳤고, 일본 쪽에서 새로 들어온 품목에는 일본 내 유통 표시를 붙였습니다.":
+      "Green coffees traded in Korea and Japan are gathered in one place. The same coffee is counted once, and items new from the Japanese market carry a <b>Japan market</b> label.||韓国に流通する生豆に、日本で流通する生豆を加えて一か所にまとめました。同じ生豆は一度だけ数え、日本側から新しく入った品目には<b>日本国内流通</b>の表示を付けています。",
     "ONCOFFEELOG · 온커피로그": "ONCOFFEELOG||ONCOFFEELOG · オンコーヒーログ",
     "한 잔이 시작된 곳. 마시거나 사 간 원두의 산지·농장을 지도에서 만나보세요.":
       "Where a cup began<em>.</em> <small id=\"ledeSub\">Find where the beans you drank or bought were grown.</small>||一杯が始まった場所<em>。</em> <small id=\"ledeSub\">飲んだ豆、買った豆の産地と農園を地図で見てみましょう。</small>",
@@ -294,6 +299,9 @@ window.CI_I18N = (function () {
 
   /* 숫자·이름이 끼는 문장 틀 */
   var M = [
+    "국내와 일본에 유통되는 생두 {#}종이 자란 곳||{} green coffees traded in Korea and Japan grew here||韓国と日本に流通する生豆{}種が育った場所",
+    "{}개국 {}곳의 산지·농장이 지도에 표시됩니다. 마시는 원두 이름을 검색하면 그 커피가 시작된 곳으로 지도가 이동합니다.||{} origins and farms across {} countries appear on the map. Search a coffee name and the map moves to where it began.||{}か国{}か所の産地・農園が地図に表示されます。飲んでいる豆の名前を検索すると、そのコーヒーが始まった場所へ地図が動きます。",
+    
     "국내에 유통되는 생두 {#}종이 어디서 자랐는지 산지·농장 지도로 보여주는 손님용 화면입니다.||A customer-facing map of where the {} green beans sold in Korea were grown.||韓国に流通する生豆{}種がどこで育ったかを、産地・農園マップで見せるお客さま向けの画面です。",
     "온커피로그(ONCOFFEELOG) 커피 산지·농장 지도 — 국내에 들어온 생두 2,800여 종이 어디서 자랐는지 지도에서 보여줍니다. 크럼블로스터스(KRUMBLE ROASTERS)가 운영합니다.||ONCOFFEELOG — a coffee origin and farm map showing where the roughly 2,800 green beans sold in Korea were grown. Operated by KRUMBLE ROASTERS.||ONCOFFEELOG コーヒー産地・農園マップ — 韓国に入ってきた生豆約2,800種がどこで育ったかを地図で示します。運営は KRUMBLE ROASTERS。",
     "국내에 유통되는 생두 {#}종이 어디서 자랐는지 지도에서 보여줍니다.||A map of where the {} green beans sold in Korea were grown.||韓国に流通する生豆{}種がどこで育ったかを地図で示します。",
@@ -358,6 +366,32 @@ window.CI_I18N = (function () {
     "탄자니아||Tanzania||タンザニア",
     "카메룬||Cameroon||カメルーン",
     "콩고||Congo||コンゴ",
+    "도미니카공화국||Dominican Republic||ドミニカ共和国",
+    "아이티||Haiti||ハイチ",
+    "잠비아||Zambia||ザンビア",
+    "하와이||Hawaii||ハワイ",
+    "미국||United States||アメリカ",
+    "세인트헬레나||St Helena||セントヘレナ",
+    "쿠바||Cuba||キューバ",
+    "유와간||Ywangan||ユワンガン",
+    "하라바코아||Jarabacoa||ハラバコア",
+    "티오테||Thiotte||ティオット",
+    "알리산||Alishan||阿里山",
+    "시엥쿠앙||Xiangkhouang||シエンクアン",
+    "루앙프라방||Luang Prabang||ルアンパバーン",
+    "후아판||Houaphanh||フアパン",
+    "웨스트 밸리||West Valley||ウエストバレー",
+    "아이나로||Ainaro||アイナロ",
+    "카브레 팔란초크||Kavre Palanchok||カブレパランチョーク",
+    "부키드논||Bukidnon||ブキドノン",
+    "치앙라이||Chiang Rai||チェンライ",
+    "북부주||Northern Province||北部州",
+    "카스카다 엔칸타다||Cascada Encantada||カスカーダ・エンカンタダ",
+    "로스마||Rosma||ロスマ",
+    "콩고니||Kongoni||コンゴニ",
+    "로마 라 글로리아||Loma La Gloria||ロマ・ラ・グロリア",
+    "그란하 상 프란시스코||Granja São Francisco||グランハ・サン・フランシスコ",
+    "카이날리우||Kainaliu||カイナリウ",
     "수퍼내추럴||Super Natural||スーパーナチュラル",
     "슈퍼내추럴||Super Natural||スーパーナチュラル",
     "슈퍼 내추럴||Super Natural||スーパーナチュラル",

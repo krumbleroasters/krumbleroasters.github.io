@@ -447,7 +447,7 @@
   function useCatalog(cat) {
     if (!cat || !cat.places) return;
     cat.places.forEach(function (p) {
-      if (p && p.name && p.nameEn && p.kind !== "country") addGloss(p.name, p.nameEn, p.nameEn);
+      if (p && p.name && p.nameEn && p.kind !== "country") addGloss(p.name, p.nameEn, p.nameJa || p.nameEn);
     });
     if (dirty) {
       GLOSS.sort(function (a, b) { return b[0].length - a[0].length; });

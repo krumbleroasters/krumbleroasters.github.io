@@ -25,7 +25,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="온커피로그 ONCOFFEELOG" />
 <meta property="og:title" content="온커피로그 ONCOFFEELOG · 커피 산지·농장 지도" />
-<meta property="og:description" content="국내에 유통되는 생두 2,821종이 어디서 자랐는지 지도에서 보여줍니다." />
+<meta property="og:description" content="국내와 일본에 유통되는 생두 3,113종이 어디서 자랐는지 지도에서 보여줍니다." />
 <meta property="og:url" content="https://oncoffeelog.com/" />
 <meta name="twitter:card" content="summary" />
 <link rel="alternate" type="application/xml" title="사이트맵" href="sitemap.xml" />
@@ -309,6 +309,8 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   .badge.sample{background:#E8EDF4;color:#3C5573}
   .badge.live{background:#EFE9E2;color:#4B4238}
   .badge.auc{background:#F6E3CB;color:#8A4B22;letter-spacing:.04em}
+  .badge.jp{background:#EDEAF6;color:#4B4376;letter-spacing:.04em;text-transform:none}
+  .res .tag.jp{background:#EDEAF6;color:#4B4376;text-transform:none;letter-spacing:.02em}
 
   /* ---------- auction lots won by Korean buyers ---------- */
   .auctions{margin:14px 0 0;padding:13px;background:#FFF8EC;border:1px solid #EEDCBE;border-radius:12px}
@@ -604,7 +606,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   "alternateName": "ONCOFFEELOG",
   "url": "https://oncoffeelog.com/",
   "inLanguage": "ko",
-  "description": "국내에 유통되는 생두 2,821종이 어디서 자랐는지 산지·농장 지도로 보여주는 손님용 화면입니다.",
+  "description": "국내와 일본에 유통되는 생두 3,113종이 어디서 자랐는지 산지·농장 지도로 보여주는 손님용 화면입니다.",
   "publisher": {
     "@type": "Organization",
     "name": "크럼블로스터스",
@@ -936,6 +938,25 @@ function uiLang() {
   return (window.CI && window.CI.i18n && window.CI.i18n.lang) || "ko";
 }
 
+/* 카탈로그 이름·설명은 한국어를 기본으로 두고, 일본 유통 생두처럼 언어별 표기가 있는 항목은 그 언어를 씁니다. */
+function beanName(b) {
+  if (!b) return "";
+  const l = uiLang();
+  return (l === "ja" && b.nameJa) || (l === "en" && b.nameEn) || b.name || "";
+}
+function placeView(p) {
+  if (!p) return p;
+  const l = uiLang();
+  const block = p.lang && p.lang[l];
+  return block ? Object.assign({}, p, block) : p;
+}
+function jpTag(b) {
+  return b && b.market === "jp" ? `<span class="tag jp">일본 내 유통</span>` : "";
+}
+function jpBadge(b) {
+  return b && b.market === "jp" ? `<span class="badge jp">일본 내 유통</span>` : "";
+}
+
 function rankLabel(r) {
   const s = String(r || "");
   if (!s) return "";
@@ -967,7 +988,8 @@ function auctionsBlock(p) {
   </div>`;
 }
 
-function cardForPlace(p) {
+function cardForPlace(p0) {
+  const p = placeView(p0);
   const beans = beansByPlace.get(p.id) || [];
   const notes = countNotes(beans);
   const proc = countField(beans, "process");
@@ -1030,7 +1052,7 @@ function beanRow(b) {
   return `<button type="button" class="res ${state.bean && state.bean.id === b.id ? "on" : ""}" data-bean="${esc(b.id)}">
     <span class="dot" style="background:${b.placeId && placeById.get(b.placeId)?.kind === "farm" ? "#9A5B2E" : "#2F4636"}"></span>
     <span>
-      <span class="rn">${esc(b.name)}${placeById.get(b.placeId)?.auctionCount ? '<span class="tag auc">🏆</span>' : ''}</span>
+      <span class="rn">${esc(beanName(b))}${jpTag(b)}${placeById.get(b.placeId)?.auctionCount ? '<span class="tag auc">🏆</span>' : ''}</span>
       <span class="rm">${esc(meta)}</span>
       ${b.cupNotes && b.cupNotes.length ? `<span class="rt">${esc(b.cupNotes.slice(0, 5).join(" · "))}</span>` : ""}
     </span>
@@ -1038,11 +1060,12 @@ function beanRow(b) {
 }
 
 function cardForBean(b) {
-  const p = placeById.get(b.placeId);
+  const p = placeView(placeById.get(b.placeId));
   return `
   <div class="card">
-    <div class="eyebrow">BEAN ${p ? precisionBadge(p) : ""}</div>
-    <h2 class="c-name">${esc(b.name)}</h2>
+    <div class="eyebrow">BEAN ${p ? precisionBadge(p) : ""} ${jpBadge(b)}</div>
+    <h2 class="c-name">${esc(beanName(b))}</h2>
+    ${b.nameJa && uiLang() !== "ja" ? `<p class="c-en">${esc(b.nameJa)}</p>` : ""}
     <div class="c-region"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="2"/></svg>
       ${esc(b.country)}${b.region ? " · " + esc(b.region) : ""}${b.farm ? " · " + esc(b.farm) : ""}</div>
     <dl class="stats">
@@ -1437,16 +1460,19 @@ function homeSheet() {
   return `
   <div class="card">
     <div class="eyebrow">CATALOG</div>
-    <h2 class="c-name">국내에 들어온 생두 ${(c.beans || 0).toLocaleString()}종이 자란 곳</h2>
-    <p class="story">국내에 유통되는 생두를 한자리에 모아, 같은 생두는 한 번으로 합쳤습니다. ${c.countries || 0}개국 ${c.places || 0}곳의 산지·농장이 지도에 표시됩니다. 마시는 원두 이름을 검색하면 그 커피가 시작된 곳으로 지도가 이동합니다.</p>
+    <h2 class="c-name">국내와 일본에 유통되는 생두 ${(c.beans || 0).toLocaleString()}종이 자란 곳</h2>
+    <p class="story">국내에 유통되는 생두에 일본에서 유통되는 생두를 더해 한자리에 모았습니다. 같은 생두는 한 번으로 합쳤고, 일본 쪽에서 새로 들어온 품목에는 <b>일본 내 유통</b> 표시를 붙였습니다.</p>
+    <p class="story">${c.countries || 0}개국 ${c.places || 0}곳의 산지·농장이 지도에 표시됩니다. 마시는 원두 이름을 검색하면 그 커피가 시작된 곳으로 지도가 이동합니다.</p>
     <dl class="stats">
       <div class="stat"><dt>생두</dt><dd>${(c.beans || 0).toLocaleString()}종</dd></div>
       <div class="stat"><dt>산지·농장</dt><dd>${(c.places || 0).toLocaleString()}곳</dd></div>
-      <div class="stat wide"><dt>국가</dt><dd>${c.countries || 0}개국</dd></div>
+      <div class="stat"><dt>국가</dt><dd>${c.countries || 0}개국</dd></div>
+      <div class="stat"><dt>일본 내 유통</dt><dd>${(c.jpBeans || 0).toLocaleString()}종</dd></div>
     </dl>
     <div class="src">
       <div class="row"><span class="k">좌표</span><span>OpenStreetMap · Photon 지오코딩, 주요 산지는 관리 중심지로 보정</span></div>
       <div class="row"><span class="k">안내</span><span>가격과 매입 정보는 싣지 않습니다. 컵노트·품종 표기는 판매처에 따라 다를 수 있습니다.</span></div>
+      <div class="row"><span class="k">일본 내 유통</span><span>일본에서 유통되는 생두 가운데 국내 목록에 없던 품목입니다. 어느 수입사·판매처에서 왔는지는 표시하지 않습니다.</span></div>
       ${c.auctions ? `<div class="row"><span class="k">옥션</span><span>Cup of Excellence·Best of Panama 경매에서 한국 로스터리가 낙찰받은 랏 <b>${c.auctions.toLocaleString()}</b>건을 🏆로 표시합니다.</span></div>` : ""}
     </div>
   </div>
@@ -1528,7 +1554,8 @@ function searchPlaces(q) {
   return out;
 }
 function hay(b) {
-  return norm([b.name, b.region, b.farm, b.country, b.variety, b.process, (b.cupNotes || []).join(" ")].join(" "));
+  return norm([b.name, b.nameEn, b.nameJa, b.region, b.farm, b.country, b.variety, b.process,
+               (b.cupNotes || []).join(" ")].join(" "));
 }
 let INDEX = [];
 function buildIndex() {
@@ -1555,12 +1582,12 @@ function suggest(q) {
     <span><span class="nm">${esc(p.country)} · ${esc(p.name)}</span><span class="mt">${p.kind === "farm" ? "농장" : p.kind === "country" ? "국가" : "산지"} · ${(p.beanCount || 0) ? (p.beanCount).toLocaleString() + "종" : "카탈로그 미수록"}</span></span>
   </button>`).join("") + r.map((b) => `<button type="button" data-sb="${esc(b.id)}">
     <span class="dot" style="background:#2F4636"></span>
-    <span><span class="nm">${esc(b.name)}</span><span class="mt">${esc([b.country, b.region, b.process].filter(Boolean).join(" · "))}</span></span>
+    <span><span class="nm">${esc(beanName(b))}</span><span class="mt">${esc([b.country, b.region, b.process].filter(Boolean).join(" · "))}</span></span>
   </button>`).join("");
   sugEl.querySelectorAll("[data-sb]").forEach((el) => el.addEventListener("click", () => {
     const b = CAT.beans.find((x) => x.id === el.dataset.sb);
     sugEl.classList.remove("on");
-    qEl.value = b.name;
+    qEl.value = beanName(b);
     selectBean(b);
   }));
   sugEl.querySelectorAll("[data-sp]").forEach((el) => el.addEventListener("click", () => {
@@ -1597,7 +1624,7 @@ async function boot() {
     await loadCatalog();
     buildIndex();
     const c = CAT.meta.counts;
-    $("#ledeSub").textContent = `국내에 들어온 생두 ${c.beans.toLocaleString()}종 · ${c.places}곳의 산지와 농장`;
+    $("#ledeSub").textContent = `국내·일본에 유통되는 생두 ${c.beans.toLocaleString()}종 · ${c.places}곳의 산지와 농장`;
   } catch (e) {
     sheetEl.innerHTML = `<div class="empty"><h3>카탈로그를 불러오지 못했습니다</h3>
       <p>beans.json을 같은 폴더에 두고 웹 서버로 열어 주세요.<br><small>${esc(e.message)}</small></p></div>`;
@@ -1633,6 +1660,22 @@ qEl.addEventListener("input", () => {
 qEl.addEventListener("focus", () => { if (qEl.value.trim() && state.ready) { suggest(qEl.value.trim()); sugEl.classList.add("on"); } });
 document.addEventListener("click", (e) => {
   if (!e.target.closest(".search")) sugEl.classList.remove("on");
+});
+
+/* 언어를 바꾸면 생두·산지 이름과 설명을 그 언어 표기로 다시 그립니다. */
+document.addEventListener("ci:lang", () => {
+  if (!state.ready) return;
+  renderChips();
+  drawPins();
+  renderSheet();
+  const c = CAT.meta && CAT.meta.counts;
+  if (c && $("#ledeSub")) {
+    $("#ledeSub").textContent = uiLang() === "ko"
+      ? `국내·일본에 유통되는 생두 ${c.beans.toLocaleString()}종 · ${c.places}곳의 산지와 농장`
+      : (uiLang() === "ja"
+        ? `韓国・日本に流通する生豆 ${c.beans.toLocaleString()}種 · ${c.places}か所の産地と農園`
+        : `${c.beans.toLocaleString()} green coffees traded in Korea and Japan · ${c.places} origins and farms`);
+  }
 });
 
 /* =========================================================
@@ -2038,7 +2081,7 @@ function psChoose(i) {
     const b = CAT.beans.find((x) => x.id === c.bean.id);
     if (!b) return;
     psClose();
-    qEl.value = b.name;
+    qEl.value = beanName(b);
     selectBean(b);
   } else {
     const p = placeById.get(c.place.id);
@@ -2124,9 +2167,9 @@ boot();
 <script src="qrcode.min.js?v=20261122e"></script>
 <script src="qr-tools.js?v=20261125b"></script>
 <script src="site-tools.js?v=20261122d"></script>
-<script src="i18n-data.js?v=20261125a"></script>
-<script src="i18n-pages.js?v=20261124d"></script>
-<script src="i18n-places.js?v=20261124e"></script>
-<script src="i18n.js?v=20261124d"></script>
+<script src="i18n-data.js?v=20261125b"></script>
+<script src="i18n-pages.js?v=20261125b"></script>
+<script src="i18n-places.js?v=20261125b"></script>
+<script src="i18n.js?v=20261125b"></script>
 </body>
 </html>
