@@ -303,7 +303,7 @@ window.CI_I18N = (function () {
   /* 숫자·이름이 끼는 문장 틀 */
   var M = [
     "국내와 일본에 유통되는 생두 {#}종이 자란 곳||{} green coffees traded in Korea and Japan grew here||韓国と日本に流通する生豆{}種が育った場所",
-    "{}개국 {}곳의 산지·농장이 지도에 표시됩니다. 마시는 원두 이름을 검색하면 그 커피가 시작된 곳으로 지도가 이동합니다.||{} origins and farms across {} countries appear on the map. Search a coffee name and the map moves to where it began.||{}か国{}か所の産地・農園が地図に表示されます。飲んでいる豆の名前を検索すると、そのコーヒーが始まった場所へ地図が動きます。",
+    "{}개국 {}곳의 산지·농장이 지도에 표시됩니다. 마시는 원두 이름을 검색하면 그 커피가 시작된 곳으로 지도가 이동합니다.||{} origins and farms in {} countries appear on the map. Search a coffee name and the map moves to where it began.||{}か国{}か所の産地・農園が地図に表示されます。飲んでいる豆の名前を検索すると、そのコーヒーが始まった場所へ地図が動きます。",
     
     "국내에 유통되는 생두 {#}종이 어디서 자랐는지 산지·농장 지도로 보여주는 손님용 화면입니다.||A customer-facing map of where the {} green beans sold in Korea were grown.||韓国に流通する生豆{}種がどこで育ったかを、産地・農園マップで見せるお客さま向けの画面です。",
     "온커피로그(ONCOFFEELOG) 커피 산지·농장 지도 — 국내에 들어온 생두 2,800여 종이 어디서 자랐는지 지도에서 보여줍니다. 크럼블로스터스(KRUMBLE ROASTERS)가 운영합니다.||ONCOFFEELOG — a coffee origin and farm map showing where the roughly 2,800 green beans sold in Korea were grown. Operated by KRUMBLE ROASTERS.||ONCOFFEELOG コーヒー産地・農園マップ — 韓国に入ってきた生豆約2,800種がどこで育ったかを地図で示します。運営は KRUMBLE ROASTERS。",
