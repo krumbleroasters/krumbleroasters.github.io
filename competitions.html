@@ -755,7 +755,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     var l = L();
     var all = sorted();
     var shown = all.filter(matches);
-    var sp = LANG === "ko" ? "" : " ";
+    var sp = (LANG === "ko" || LANG === "ja") ? "" : " ";
     document.getElementById("countLine").innerHTML =
       "<b>" + all.length + "</b>" + sp + esc(l.countA) + " <b>" + shown.length + "</b>" + sp + esc(l.countB);
 
