@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3586645783677633" crossorigin="anonymous"></script>
+<!-- Google tag (gtag.js) — GA4 방문 통계: 온커피로그 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-89MN0XMENB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-89MN0XMENB');
+</script>
+<script>/* 진단용: 페이지에서 난 오류를 메모리에 모아 둡니다 (서버로 보내지 않음) */
+window.__ciErrors = [];
+addEventListener("error", function (e) { window.__ciErrors.push((e.message || "error") + " @ " + (e.filename || "")); });
+addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("rejection: " + e.reason); });</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#FBF7F0" />
+<title>국내 커피대회 일정 — 온커피로그 ONCOFFEELOG</title>
+<meta name="description" content="국내에서 열리는 커피대회 50여 개의 대회 날짜와 접수 기간, 주최, 장소, 공식 링크를 월별·종목별로 정리했습니다. 국가대표 선발전부터 원두 출품전, 지역 축제 경연까지 2026년 11월 25일 기준." />
+<link rel="canonical" href="https://oncoffeelog.com/competitions.html" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="국내 커피대회 일정 — 온커피로그 ONCOFFEELOG" />
+<meta property="og:description" content="국내 커피대회 50여 개를 대회 날짜·접수 기간·주최·장소·공식 링크와 함께 월별·종목별로 정리했습니다." />
+<meta property="og:url" content="https://oncoffeelog.com/competitions.html" />
+<meta name="twitter:card" content="summary" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+<link rel="stylesheet" href="site.css?v=20261125a" />
+<link rel="alternate" hreflang="ko" href="https://oncoffeelog.com/competitions.html" />
+<link rel="alternate" hreflang="en" href="https://oncoffeelog.com/competitions.html?lang=en" />
+<link rel="alternate" hreflang="ja" href="https://oncoffeelog.com/competitions.html?lang=ja" />
+<link rel="alternate" hreflang="x-default" href="https://oncoffeelog.com/competitions.html" />
+<style>
+  /* ---------- 대회 목록 전용 ---------- */
+  .wrap.wide{max-width:900px}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin:0}
+  .chip{
+    font:inherit;font-size:12.5px;font-weight:700;line-height:1.2;color:var(--ink-soft);
+    background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 12px;cursor:pointer;
+    white-space:nowrap;
+  }
+  .chip:hover{border-color:var(--terra-soft);color:var(--terra)}
+  .chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#FFF8EF}
+  .chip[aria-pressed="true"]:hover{color:#FFF8EF}
+  .fgroup{margin:0 0 14px}
+  .flabel{margin:0 0 7px;font-size:10.5px;font-weight:800;letter-spacing:.16em;color:var(--muted);text-transform:uppercase}
+  .countline{margin:16px 0 0;font-size:12.5px;font-weight:700;color:var(--muted)}
+  .countline b{color:var(--ink);font-weight:800}
+
+  .hl-list{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(248px,1fr));margin:18px 0 0;padding:0;list-style:none}
+  .hl{
+    display:block;text-decoration:none;background:var(--paper);border:1px solid var(--line);
+    border-left:3px solid var(--terra);border-radius:12px;padding:12px 14px;box-shadow:var(--shadow);
+  }
+  .hl:hover{border-color:var(--terra-soft);border-left-color:var(--terra)}
+  .hl .chead{display:flex;align-items:flex-start;gap:8px}
+  .hl b{flex:1 1 auto;min-width:0;font-size:14px;line-height:1.45;font-weight:800;word-break:keep-all;color:var(--ink)}
+  .hl .hlmeta{margin:6px 0 0;font-size:12px;line-height:1.65;color:var(--ink-soft);word-break:keep-all}
+  .hl .hlmeta span{color:var(--muted);font-weight:700}
+
+  .status{
+    flex:none;margin-left:auto;font-size:10px;font-weight:800;letter-spacing:.02em;
+    padding:3px 8px;border-radius:999px;white-space:nowrap;
+  }
+  .status.open{background:#37563C;color:#F3F8F1}
+  .status.soonReg{background:#C2603C;color:#FFF8EF}
+  .status.soonEv{background:#F1E2CB;color:#7A4A28}
+  .status.past{background:#EDE8DF;color:#8A8074}
+  .status.scheduled{background:#E8EDF4;color:#3C5573}
+
+  .complist{display:grid;gap:12px;margin:14px 0 0}
+  .comp{
+    background:var(--paper);border:1px solid var(--line);border-radius:16px;
+    padding:16px 18px 14px;box-shadow:var(--shadow);scroll-margin-top:80px;
+  }
+  .comp .chead{display:flex;align-items:flex-start;gap:8px}
+  .comp h3{flex:1 1 auto;min-width:0;margin:0;font-size:17px;line-height:1.42;letter-spacing:-.015em;word-break:keep-all}
+  .comp .badges{display:flex;flex-wrap:wrap;gap:5px;margin:9px 0 0}
+  .tag{font-size:10px;font-weight:800;letter-spacing:.03em;padding:3px 7px;border-radius:5px;background:var(--cream-2);color:var(--ink-soft);white-space:nowrap}
+  .tag.way{background:#F1E4D3;color:#7A5A32}
+  .tag.natl{background:#E7EEE4;color:#37563C}
+  .tag.grade{background:#EFEDE8;color:#6B6259}
+  .comp dl{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:5px 12px;margin:12px 0 0;font-size:13px;line-height:1.65}
+  .comp dt{color:var(--muted);font-weight:700;white-space:nowrap}
+  .comp dd{margin:0;color:var(--ink-mid);word-break:keep-all}
+  .comp dd .evd{display:block;margin-top:1px;font-size:11.5px;color:var(--muted);line-height:1.6}
+  .comp .cnote{margin:10px 0 0;font-size:12px;line-height:1.65;color:#7A4A28;background:#FBF3E3;border-radius:8px;padding:7px 10px;word-break:keep-all}
+  .comp .cgo{margin:11px 0 0;padding-top:10px;border-top:1px dashed var(--line)}
+  .comp .cgo a{text-decoration:none;font-size:12.5px;font-weight:800;color:var(--terra)}
+  .comp .cgo a:hover{text-decoration:underline}
+  .emptybox{margin:18px 0 0;padding:18px;border:1px dashed var(--line);border-radius:12px;text-align:center;font-size:13.5px;color:var(--muted);background:#fff}
+
+  @media (max-width:520px){
+    .comp{padding:14px 14px 12px}
+    .comp dl{grid-template-columns:max-content minmax(0,1fr);gap:4px 10px;font-size:12.5px}
+    .hl-list{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="./">
+    <svg class="bean" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <ellipse cx="12" cy="12" rx="7.4" ry="10" transform="rotate(35 12 12)" fill="#C2603C"/>
+      <path d="M7.4 16.6C10.6 14.4 11 9.6 16.6 7.4" stroke="#FBF7F0" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+    <b>ONCOFFEELOG <i>·</i> 온커피로그</b>
+  </a>
+  <nav class="nav" aria-label="주요 메뉴">
+    <a href="./">지도</a>
+    <a href="guide.html">가이드</a>
+    <a href="competitions.html" aria-current="page">커피대회</a>
+    <a href="farms.html">농장 아카이브</a>
+    <a href="log.html" class="nav-log">내 커피 기록</a>
+    <a href="about.html">소개</a>
+    <a href="privacy.html">개인정보처리방침</a>
+  </nav>
+</header>
+
+<main class="wrap wide">
+
+  <div class="hero">
+    <p class="kicker">Competitions</p>
+    <h1>국내 커피대회, <em>한 해 일정 한눈에</em></h1>
+    <p class="lede">국가대표 선발전부터 원두 출품전, 지역 축제 경연까지 국내에서 열리는 커피대회를 한 페이지에 모았습니다. 대회 날짜와 접수 기간을 나란히 적어, 지금 무엇을 준비할 수 있는지 바로 보이게 했습니다.</p>
+    <p class="updated">2026년 11월 25일 기준 · 대회 50여 개 · 주최 측 공식 페이지와 보도로 확인</p>
+    <div class="toc">
+      <a href="#now">지금 접수 중</a>
+      <a href="#list">대회 전체 목록</a>
+      <a href="#howto">읽는 법</a>
+    </div>
+  </div>
+
+  <section id="now">
+    <h2><span class="n">1</span>지금 접수 중 · 다가오는 일정</h2>
+    <p class="sub">접수 기간이 남았거나 곧 열리는 대회를 앞에 모았습니다. 날짜가 지나면 목록에서 빠지고, 아래 전체 목록에는 지난 일정으로 남습니다.</p>
+    <ul class="hl-list" id="hlList" data-ci-skip></ul>
+  </section>
+
+  <div class="note">
+    <p><b>대회 이름의 연도와 실제 열리는 해는 다를 수 있습니다.</b> SCA 계열 대회는 그 대회 우승자가 출전할 세계대회의 연도를 이름에 씁니다. 예를 들어 <b>2027 KNBC·KBrC</b>는 2026년 11월 11~14일 코엑스에서, <b>2027 KCRC</b>는 2026년 6월 4~7일 킨텍스에서, <b>2027 KCTC</b>는 2026년 10월 1~4일 부산 해운대에서 열렸습니다. 이 페이지의 월 필터는 이름이 아니라 실제 개최일을 기준으로 합니다.</p>
+  </div>
+
+  <section id="list">
+    <h2><span class="n">2</span>대회 전체 목록</h2>
+    <p class="sub">다가오는 일정을 위에, 지난 일정은 아래쪽에 두었습니다. 월별·종목별로 걸러 볼 수 있고, 카드의 공식 링크에서 그 대회의 공고를 확인할 수 있습니다.</p>
+
+    <div class="fgroup">
+      <p class="flabel">월별</p>
+      <div class="chips" id="monChips" data-ci-skip></div>
+    </div>
+    <div class="fgroup">
+      <p class="flabel">종목 · 성격</p>
+      <div class="chips" id="catChips" data-ci-skip></div>
+    </div>
+
+    <p class="countline" id="countLine" data-ci-skip></p>
+    <div class="complist" id="compList" data-ci-skip></div>
+    <noscript><div class="emptybox">목록과 필터는 브라우저에서 자바스크립트로 그립니다. 자바스크립트를 켜면 대회 목록이 나옵니다.</div></noscript>
+  </section>
+
+  <section id="howto">
+    <h2><span class="n">3</span>읽는 법과 확인 한계</h2>
+    <p class="sub">이 목록은 2026년 11월 25일에 주최 측 공식 페이지, 주최 측 발표를 인용한 보도, 업계 정리 자료를 교차 확인해 만들었습니다. 그 뒤에 바뀐 일정은 반영되지 않았습니다.</p>
+
+    <h3>표기 등급</h3>
+    <ul class="principles">
+      <li><b>공식</b>주최 측 공식 페이지나 공고에서 직접 확인한 항목입니다.</li>
+      <li><b>보도</b>주최 측 발표를 인용한 언론·업계 매체 보도로 확인한 항목입니다.</li>
+      <li><b>2차</b>업계 정리 매체로 확인했고 주최 측 공식 페이지에서 다시 확인하지 못한 항목입니다. 참가 전에 주최 측 공고를 확인하세요.</li>
+    </ul>
+
+    <h3>이름이 비슷한 대회</h3>
+    <p>컵테이스터스만 해도 서로 다른 대회가 여섯 개입니다. KCTC(SCA·부산), CTC(GCA·부산여대), MOC(KCL·코엑스), DCTC(대구), GPCC(영도), WCT(시흥 WCC). 이름이 비슷해도 주최와 권위가 다르니 카드의 주최와 링크를 함께 보세요. 같은 이유로 로스팅 대회도 KCRC(SCA)·KCR(KCL)·SRC(스트롱홀드)·WRL KOREA·KRCA처럼 여러 갈래가 있습니다.</p>
+
+    <h3>확인하지 못한 대회</h3>
+    <p>아래 대회는 2026년 개최 기록이나 세부 일정을 확인하지 못해 목록에 넣지 않았습니다.</p>
+    <ul>
+      <li><strong>K-Cafe Championship</strong> — (사)한국커피연합회. 2025년 지역 리그 개최는 확인되지만 2026년 개최 기록은 확인되지 않았습니다.</li>
+      <li><strong>WSBC 월드 슈퍼 바리스타 챔피언십</strong> — 2012~2023년 서울커피엑스포 부대행사로 열렸고, 2026년 프로그램에는 없습니다.</li>
+      <li><strong>카누 바리스타 대회</strong> — 동서식품. 2026년 대회 세부 일정을 확인하지 못했습니다.</li>
+      <li><strong>더 블랙 골드 컵</strong> — 국내 로스터가 다수 참가하지만 국내 개최지와 주최를 확인하지 못했습니다.</li>
+    </ul>
+
+    <h3>이 목록의 범위</h3>
+    <p>지자체·상인협의체·카페 커뮤니티가 여는 즉석 라떼아트 배틀처럼 공식 목록이 없는 1회성 행사는 넣지 않았습니다. 금액·참가비·상금은 2026년 기준이며 다음 시즌에 바뀔 수 있습니다. 일정이 달라졌거나 빠진 대회가 있으면 저장소 이슈로 알려 주세요.</p>
+  </section>
+
+  <div class="cta">
+    <a class="btn" href="./">지도 열기</a>
+    <a class="btn ghost" href="farms.html">농장 아카이브</a>
+    <a class="btn ghost" href="guide.html">산지 가이드</a>
+  </div>
+</main>
+
+<footer class="pagefoot">
+  <b>ONCOFFEELOG · 온커피로그</b>
+  <nav aria-label="바닥글 메뉴">
+    <a href="./">지도</a>
+    <a href="guide.html">가이드</a>
+    <a href="competitions.html">커피대회</a>
+    <a href="farms.html">농장 아카이브</a>
+    <a href="log.html">내 커피 기록</a>
+    <a href="about.html">소개</a>
+    <a href="privacy.html">개인정보처리방침</a>
+  </nav>
+  손님용 산지 지도 · 운영 크럼블로스터스(KRUMBLE ROASTERS) · 가격과 매입 정보는 싣지 않습니다.
+</footer>
+
+<script src="i18n-data.js?v=20261125k"></script>
+<script src="i18n-pages.js?v=20261125j"></script>
+<script src="i18n-places.js?v=20261125k"></script>
+<script src="i18n-competitions.js?v=20261125a"></script>
+<script src="i18n.js?v=20261125j"></script>
+<script>
+/* ===================== 대회 목록 =====================
+ * 자료: 2026-11-25 확인 (korea-coffee-competitions.md)
+ * 배열 = [한국어, English, 日本語]
+ * ev  대회 날짜 / reg  접수신청 날짜 / evT 날짜 설명 / note 비고
+ * 문장이 없는 날짜는 같은 문자열을 세 언어에 함께 씁니다.
+ */
+(function () {
+  "use strict";
+
+  var ORG = {
+    sca:      ["SCA 한국챕터", "SCA Korea Chapter", "SCA韓国チャプター"],
+    expo:     ["엑스포럼", "ExpoForum", "エキスポフォーラム"],
+    mirae:    ["미래전람", "Mirae Fairs", "ミレ展示"],
+    beeple:   ["비플", "BEOPLE", "ビープル"],
+    busan3:   ["부산광역시 · 부산일보 · 비플", "Busan City · Busan Ilbo · BEOPLE", "釜山広域市・釜山日報・ビープル"],
+    crak:     ["(사)한국커피로스터연합 · 월간커피앤티", "Korea Coffee Roasters Association (CRAK) · Monthly Coffee & Tea", "韓国コーヒーロースター連合（CRAK）・月刊コーヒー＆ティー"],
+    kcl:      ["(주)아이비라인 · 월간커피", "IVLine · Monthly Coffee", "アイビーライン・月刊コーヒー"],
+    cca:      ["커피비평가협회(CCA) · 해로토로국제환경문화사업단", "Coffee Critics Association (CCA) · Harotoro", "コーヒー批評家協会（CCA）・ハロトロ"],
+    daegu:    ["(사)대구커피협회", "Daegu Coffee Association", "大邱コーヒー協会"],
+    yeongdo:  ["영도구 · (사)한국커피협회", "Yeongdo-gu · Korea Coffee Association", "影島区・韓国コーヒー協会"],
+    ulsan:    ["성남동 커피사업추진협의체", "Seongnam-dong Coffee Committee, Ulsan", "蔚山・城南洞コーヒー事業推進協議会"],
+    daegucc:  ["대구커피챔피언십운영위원회", "Daegu Coffee Championship Committee", "大邱コーヒーチャンピオンシップ運営委員会"],
+    wrl:      ["CBSC · WRL 글로벌 본부", "CBSC · WRL Global", "CBSC・WRLグローバル本部"],
+    strong:   ["스트롱홀드", "Stronghold", "ストロングホールド"],
+    asca:     ["아시아스페셜티커피협회 · (사)액츠29", "ASCA · Acts29", "アジアスペシャルティコーヒー協会・アクツ29"],
+    krca:     ["한국로스팅커피협회 · KCII", "Korea Roasting Coffee Association · KCII", "韓国ロースティングコーヒー協会・KCII"],
+    wwoc:     ["월드위너스오브커피 · 오층커피랩", "World Winners of Coffee · Ocheung Coffee Lab", "ワールドウィナーズオブコーヒー・オチュンコーヒーラボ"],
+    kbta:     ["한국바리스타기술협회", "Korea Barista Technology Association", "韓国バリスタ技術協会"],
+    wbca:     ["월드베스트커피협회", "World Best Coffee Association", "ワールドベストコーヒー協会"],
+    oneccc:   ["에그스톤", "Eggstone", "エッグストーン"],
+    gcs:      ["글로벌커피스쿨(GCS) 한국챕터", "Global Coffee School (GCS) Korea", "グローバルコーヒースクール（GCS）韓国"],
+    allopen:  ["올오픈커피랩", "All Open Coffee Lab", "オールオープンコーヒーラボ"],
+    heyblue:  ["헤이블루", "Hey Blue", "ヘイブルー"],
+    cafeworks:["커피앳웍스", "Coffee at Works", "コーヒーアットワークス"],
+    aeropress:["180 커피 로스터스", "180 Coffee Roasters", "180コーヒーロースターズ"]
+  };
+
+  var PLC = {
+    coex:     ["코엑스", "COEX, Seoul", "COEX（ソウル）"],
+    coexd:    ["코엑스 3층 D홀", "COEX Hall D, 3F", "COEX 3階 Dホール"],
+    setec:    ["양재 SETEC", "SETEC, Yangjae", "ヤンジェ SETEC"],
+    kintex:   ["킨텍스", "KINTEX, Goyang", "KINTEX（高陽）"],
+    at:       ["양재 aT센터", "aT Center, Yangjae", "ヤンジェ aTセンター"],
+    yeongdo:  ["부산 영도 블루포트2021", "Blueport 2021, Yeongdo, Busan", "釜山・影島ブルーポート2021"],
+    haeundae: ["부산 해운대 더베이101", "The Bay 101, Haeundae, Busan", "釜山・海雲台ザベイ101"],
+    exco:     ["대구 엑스코 서관", "EXCO West Hall, Daegu", "大邱 EXCO 西館"],
+    ulsanst:  ["울산 중구 문화의거리", "Culture Street, Jung-gu, Ulsan", "蔚山・中区文化の通り"],
+    paju:     ["파주 펠리시타", "Pellicita, Paju", "坡州ペリシタ"],
+    gangneung:["강릉 강원도립대", "Gangwon Provincial College, Gangneung", "江陵・江原道立大学"],
+    seongsu:  ["서울 성수 이지스터", "Easystar, Seongsu, Seoul", "ソウル・聖水イージスター"],
+    jeju:     ["제주 블랙원커피바리스타학원", "Black One Coffee Barista Academy, Jeju", "済州ブラックワンコーヒーバリスタ学院"],
+    geumcheon:["서울 금천 스트롱홀드 본사", "Stronghold HQ, Geumcheon, Seoul", "ソウル・衿川ストロングホールド本社"],
+    gasan:    ["서울 금천 커피비평가협회", "Coffee Critics Association, Geumcheon, Seoul", "ソウル・衿川コーヒー批評家協会"],
+    siheung:  ["시흥 은계호수공원", "Eunghye Lake Park, Siheung", "始興ウンゲ湖公園"],
+    sangam:   ["서울 상암 CJ ENM 센터", "CJ ENM Center, Sangam, Seoul", "ソウル・上岩 CJ ENMセンター"],
+    yeoda:    ["부산여자대학교", "Busan Women's University", "釜山女子大学"],
+    pangyo:   ["판교테크원", "Pangyo Techno Valley", "板橋テクノバレー"],
+    coread:   ["코어드빈커피바리스타학원", "Cored Bean Coffee Barista Academy", "コアドビーン・コーヒーバリスタ学院"],
+    cosci:    ["커피과학 교육장", "Coffee Science training room", "コーヒー科学 教育場"],
+    palgong:  ["대구 굿테이스트커피 팔공산점", "Good Taste Coffee, Palgong, Daegu", "大邱グッドテイストコーヒー八公山店"],
+    online:   ["온라인 접수 · 심사는 서울", "Online entry · judging in Seoul", "オンライン受付・審査はソウル"],
+    look:     ["부산 룩앳더바리스타", "Look at the Barista, Busan", "釜山ルックアットザバリスタ"]
+  };
+
+  var NOTE = {
+    tba2027:  ["2027 일정 미발표 · 2026년 11월 기준", "2027 date not announced · as of November 2026", "2027年の日程は未発表・2026年11月時点"],
+    tba2028:  ["2028 일정 미발표 · 2027 카페&베이커리페어 예정", "2028 date not announced · planned at the 2027 Café & Bakery Fair", "2028年の日程は未発表・2027カフェ＆ベーカリーフェア予定"],
+    prize10:  ["월드 챔피언 상금 1,000만 원 · 공식 생두는 에콰도르 시드라", "World champion prize KRW 10 million · official bean is Ecuador Sidra", "世界王者の賞金1,000万ウォン・公式生豆はエクアドル・シードラ"],
+    krca27:   ["2027 왕중왕전 1위 상금 1,000만 원 예고", "2027 final first prize announced at KRW 10 million", "2027年王者決定戦の優勝賞金1,000万ウォンを予告"],
+    joint:    ["한·일 공동 심사 · 제6회", "Joint Korea–Japan judging · 6th edition", "韓日共同審査・第6回"],
+    reopen27: ["2027 재개최 예고", "2027 edition announced", "2027年の再開催を予告"],
+    first:    ["2026년 첫 개최", "First held in 2026", "2026年に初開催"],
+    new26:    ["2026년 신설 종목", "Added in 2026", "2026年の新設種目"],
+    oneday:   ["정원 100명 · 당일 토너먼트", "Capped at 100 · one-day knockout", "定員100名・当日トーナメント"],
+    fee3:     ["참가비 종목당 3만 원 · 지정 생두 별도", "Entry KRW 30,000 per category · official beans sold separately", "参加費は種目ごと3万ウォン・指定生豆は別売り"],
+    kclreg:   ["KCL 7종목 참가 접수는 6월 1~30일 일괄", "KCL entries for all 7 competitions open 1–30 June", "KCL7種目の参加受付は6月1〜30日に一括"],
+    finalists:["분기 상위자 진출", "Quarterly winners qualify", "四半期上位者が進出"],
+    league:   ["리그 1~3 통과 12명 → 한국 대표 3명", "12 qualifiers from leagues 1–3 → 3 national representatives", "リーグ1〜3の通過者12名 → 韓国代表3名"],
+    seed:     ["지정 생두 출품 → 블라인드 커핑", "Enter a roasted sample of the set green bean → blind cupping", "指定生豆の出品 → ブラインドカッピング"],
+    size:     ["예선 규모가 큰 종목은 카드의 공식 페이지에서 확인하세요", "For large heats, check the official page linked on the card", "予選規模の大きい種目はカードの公式ページでご確認ください"]
+  };
+
+  var DATA = [
+    /* ───── SCA 한국챕터 · 코리아커피챔피언십(KCC) 6종목 ───── */
+    {id:"klac", mon:[2], cat:["latte","natl"], way:"national", grade:"official",
+     nm:["KLAC 코리아 라떼아트 챔피언십","KLAC · Korea Latte Art Championship","KLAC · Korea Latte Art Championship"],
+     ev:"2026.02.25–02.28", evT:["워크숍 2.23–24 · 예선 2.25–26 · 결선 2.27–28","Workshop 2.23–24 · heats 2.25–26 · final 2.27–28","ワークショップ2.23–24・予選2.25–26・決勝2.27–28"],
+     reg:"2026.01–02", o:["sca","mirae"], p:"setec", href:"https://korea.sca.coffee/klac", note:"tba2027"},
+
+    {id:"kctc26", mon:[3], cat:["cup","natl"], way:"national", grade:"official",
+     nm:["KCTC 코리아 컵 테이스터스 챔피언십","KCTC · Korea Cup Tasters Championship","KCTC · Korea Cup Tasters Championship"],
+     ev:"2026.03.24–03.27", evT:["삼각 테이스팅 8세트 · 영도","8 triangle sets · Yeongdo","三角テイスティング8セット・影島"],
+     reg:"2026.02–03", o:["sca","beeple","busan3"], p:"yeongdo", href:"https://korea.sca.coffee/kctc"},
+
+    {id:"kcigs", mon:[3], cat:["barista","natl"], way:"national", grade:"official",
+     nm:["KCIGS 코리아 커피 인 굿 스피릿","KCIGS · Korea Coffee in Good Spirits","KCIGS · Korea Coffee in Good Spirits"],
+     ev:"2026.03.27–03.29", evT:["스피릿바 3.27 · 스테이지 3.28 · 결선·시상 3.29","Spirits bar 3.27 · stage 3.28 · final and awards 3.29","スピリッツバー3.27・ステージ3.28・決勝と表彰3.29"],
+     reg:"2026.02–03", o:["sca","beeple","busan3"], p:"yeongdo", href:"https://korea.sca.coffee/kcigs", note:"tba2027"},
+
+    {id:"kcrc27", mon:[6], cat:["roast","natl"], way:"national", grade:"official",
+     nm:["2027 KCRC 코리아 커피 로스팅 챔피언십","2027 KCRC · Korea Coffee Roasting Championship","2027 KCRC · Korea Coffee Roasting Championship"],
+     ev:"2026.06.04–06.07", evT:["예선 88명 → 결선 12명 · 킨텍스","88 in the heats → 12 in the final · KINTEX","予選88名 → 決勝12名・KINTEX"],
+     reg:"2026.04–05", o:["sca","mirae"], p:"kintex", href:"https://korea.sca.coffee/kcrc", note:"tba2028"},
+
+    {id:"kctc27", mon:[10], cat:["cup","natl"], way:"national", grade:"official",
+     nm:["2027 KCTC 코리아 컵 테이스터스 챔피언십","2027 KCTC · Korea Cup Tasters Championship","2027 KCTC · Korea Cup Tasters Championship"],
+     ev:"2026.10.01–10.04", evT:["예선 246명 → 본선 120 → 준결선 32 → 결선 4 · 부산커피웨이브와 동시 개최","246 → 120 → 32 → 4 · held with Busan Coffee Wave","予選246名 → 本選120 → 準決勝32 → 決勝4・釜山コーヒーウェーブと同時開催"],
+     reg:"2026.08–09", o:["sca","beeple","busan3"], p:"haeundae", href:"https://korea.sca.coffee/kctc"},
+
+    {id:"knbc27", mon:[11], cat:["barista","natl"], way:"national", grade:"official",
+     nm:["2027 KNBC 코리아 내셔널 바리스타 챔피언십","2027 KNBC · Korea National Barista Championship","2027 KNBC · Korea National Barista Championship"],
+     ev:"2026.11.11–11.14", evT:["예선 11.11–12 · 결선 11.13 · 발표 11.14 · 우승자는 2027 WBC(도쿄) 출전","Heats 11.11–12 · final 11.13 · awards 11.14 · winner goes to WBC 2027 in Tokyo","予選11.11–12・決勝11.13・表彰11.14・優勝者は2027 WBC（東京）へ"],
+     reg:"2026.09–10", o:["sca","expo"], p:"coexd", href:"https://korea.sca.coffee/knbc"},
+
+    {id:"kbrc27", mon:[11], cat:["brew","natl"], way:"national", grade:"official",
+     nm:["2027 KBrC 코리아 브루어스 컵","2027 KBrC · Korea Brewers Cup","2027 KBrC · Korea Brewers Cup"],
+     ev:"2026.11.11–11.14", evT:["본선 11.11–12 · 준결선 11.13 · 결선 11.14 · 우승자는 2027 WBrC(보고타) 출전","Main round 11.11–12 · semi 11.13 · final 11.14 · winner goes to WBrC 2027 in Bogotá","本選11.11–12・準決勝11.13・決勝11.14・優勝者は2027 WBrC（ボゴタ）へ"],
+     reg:"2026.09–10", o:["sca","expo"], p:"coexd", href:"https://korea.sca.coffee/kbrc"},
+
+    /* ───── CRAK 골든커피어워드(GCA) ───── */
+    {id:"gca_ana", mon:[4], cat:["roast"], way:"bean", grade:"official",
+     nm:["GCA 애너로빅 출품대회","GCA Anaerobic","GCA Anaerobic"],
+     ev:"2026.04.24–04.26", evT:["애너로빅 가공 생두만 · Brew·Coldbrew·Dripbag + 매장부문","Anaerobic greens only · brew, cold brew, drip bag + café category","アナエロビック精製のみ・ブリュー／コールドブリュー／ドリップバッグ＋店舗部門"],
+     reg:"2026.03.05–04.05", o:["crak"], p:"coread", href:"https://crak.or.kr/award"},
+
+    {id:"gca_classic", mon:[9], cat:["roast"], way:"bean", grade:"official",
+     nm:["GCA 클래식 출품대회","GCA Classic","GCA Classic"],
+     ev:"2026.09.10–09.13", evT:["매장 7 · 개인 4 · 제조사 2부문, 총 13부문 · 결과 발표 9.17","7 café, 4 individual, 2 manufacturer categories — 13 in all · results 9.17","店舗7・個人4・メーカー2の計13部門・結果発表9.17"],
+     reg:"2026.07.15–08.31", o:["crak"], p:"cosci", href:"https://crak.or.kr/award"},
+
+    {id:"gca_onsite", mon:[10], cat:["roast","brew","barista"], way:"onsite", grade:"official",
+     nm:["GCA 현장대회 (로스팅 · 핸드드립 · 바리스타)","GCA On-site Championships (roasting, hand drip, barista)","GCA会場大会（ロースティング・ハンドドリップ・バリスタ）"],
+     ev:"2026.10.15–10.18", evT:["로스팅 · 핸드드립 · 콜드에스프레소 바리스타 3종목 · 서울커피앤티페어(CoFa) 기간","Roasting, hand drip and cold-espresso barista · during CoFa","ロースト・ハンドドリップ・コールドエスプレッソバリスタの3種目・CoFa期間中"],
+     reg:"2026.07.15–08.31", o:["crak"], p:"at", href:"https://www.cofa.kr"},
+
+    {id:"gca_ctc", mon:[10,11], cat:["cup"], way:"onsite", grade:"official",
+     nm:["CTC 컵테이스트 챔피언십 (GCA)","CTC Cup Taste Championship (GCA)","CTC カップテイストチャンピオンシップ（GCA）"],
+     ev:"2026.10.30–11.01", reg:"2026.09–10", o:["crak"], p:"yeoda", href:"https://crak.or.kr/award"},
+
+    {id:"irhea", mon:[], cat:["brew"], way:"onsite", grade:"official",
+     nm:["아이레아(iRHEA) 핸드드립 챔피언십","iRHEA Hand Drip Championship","iRHEA ハンドドリップチャンピオンシップ"],
+     ev:["일정 미정","Date to be announced","日程未定"], reg:["미정","To be announced","未定"],
+     o:["crak"], p:["미정","To be announced","未定"], href:"https://crak.or.kr/award",
+     note:["공식 브루잉 머신(iRHEA-M5) 사용 · 홈페이지·SNS 추후 공지","Brewed on the official iRHEA-M5 · announced later on the website and social channels","公式ブリューイングマシン（iRHEA-M5）を使用・ウェブとSNSで追って告知"]},
+
+    /* ───── 코리아커피리그(KCL) 7종목 ───── */
+    {id:"kbc", mon:[8,11], cat:["barista"], way:"onsite", grade:"official",
+     nm:["KBC 한국바리스타챔피언십","KBC · Korea Barista Championship","KBC 韓国バリスタチャンピオンシップ"],
+     ev:"2026.11.12–11.14", evT:["예선 8.19–21 · 본·결선 11.12–14","Heats 8.19–21 · main round and final 11.12–14","予選8.19–21・本選と決勝11.12–14"],
+     reg:"2026.06.01–06.30", o:["kcl"], p:"coex", href:"https://www.koreacoffeeleague.com", note:"kclreg"},
+
+    {id:"ktcc", mon:[8,11], cat:["cup"], way:"onsite", grade:"official",
+     nm:["KTCC 한국팀커핑챔피언십","KTCC · Korea Team Cupping Championship","KTCC 韓国チームカッピングチャンピオンシップ"],
+     ev:"2026.11.14", evT:["예선 8.26–28 · 결선 11.14 · 2인 1팀","Heats 8.26–28 · final 11.14 · teams of two","予選8.26–28・決勝11.14・2人1組"],
+     reg:"2026.06.01–06.30", o:["kcl"], p:"coex", href:"https://www.koreacoffeeleague.com"},
+
+    {id:"moc", mon:[9,11], cat:["cup"], way:"onsite", grade:"official",
+     nm:["MOC 마스터 오브 커핑","MOC · Master of Cupping","MOC マスターオブカッピング"],
+     ev:"2026.11.13", evT:["예선 9.9–11 · 결선 11.13 · 같은 향미 찾기","Heats 9.9–11 · final 11.13 · find the matching cup","予選9.9–11・決勝11.13・同じ風味を探す"],
+     reg:"2026.06.01–06.30", o:["kcl"], p:"coex", href:"https://www.koreacoffeeleague.com"},
+
+    {id:"mob", mon:[8,11], cat:["brew"], way:"onsite", grade:"official",
+     nm:["MOB 마스터 오브 브루잉","MOB · Master of Brewing","MOB マスターオブブリューイング"],
+     ev:"2026.11.11", evT:["예선 8.5–7 · 결선 11.11 · 예선 10분·결선 15분+창작 음료","Heats 8.5–7 · final 11.11 · 10 min in the heats, 15 min plus a signature drink in the final","予選8.5–7・決勝11.11・予選10分／決勝15分＋創作ドリンク"],
+     reg:"2026.06.01–06.30", o:["kcl"], p:"coex", href:"https://www.koreacoffeeleague.com"},
+
+    {id:"ikrc", mon:[8,11], cat:["roast"], way:"onsite", grade:"official",
+     nm:["IKRC 이카와 코리아 로스팅 챔피언십","IKRC · Ikawa Korea Roasting Championship","IKRC イカワ・コリア・ロースティングチャンピオンシップ"],
+     ev:"2026.11.12", evT:["예선 8.12–13 · 결선 11.12 · 샘플 로스터 현장 로스팅 + 브루잉","Heats 8.12–13 · final 11.12 · sample-roaster roasting on site plus brewing","予選8.12–13・決勝11.12・サンプルロースターで会場焙煎＋ブリューイング"],
+     reg:"2026.06.01–06.30", o:["kcl"], p:"coex", href:"https://www.koreacoffeeleague.com"},
+
+    {id:"kcr", mon:[10], cat:["roast"], way:"bean", grade:"official",
+     nm:["KCR 코리아 커피 로스팅 (KCL)","KCR · Korea Coffee Roasting (KCL)","KCR コリア・コーヒーロースティング（KCL）"],
+     ev:"2026.10.19–10.21", evT:["원두 출품 · 예선 커핑 → 결선 40명","Bean entry · cupping heats → 40 in the final","生豆出品・予選カッピング → 決勝40名"],
+     reg:"2026.06.01–06.30", o:["kcl"], p:"coex", href:"https://www.koreacoffeeleague.com"},
+
+    {id:"kcac", mon:[9,11], cat:["latte"], way:"onsite", grade:"official",
+     nm:["KCAC 코리아 커피 아트 챔피언십","KCAC · Korea Coffee Art Championship","KCAC コリア・コーヒーアートチャンピオンシップ"],
+     ev:"2026.11.11", evT:["온라인 예선 9.2–4 · 결선 11.11 · 우유와 식물성 음료 모두 사용","Online heats 9.2–4 · final 11.11 · dairy and plant milks both used","オンライン予選9.2–4・決勝11.11・乳と植物性ミルクの両方を使用"],
+     reg:"2026.06.01–06.30", o:["kcl"], p:"coex", href:"https://www.koreacoffeeleague.com", note:"new26"},
+
+    /* ───── 세계커피대회(WCC) · 시흥 세계커피콩축제 ───── */
+    {id:"wcc_wcr", mon:[10], cat:["roast"], way:"bean", grade:"official",
+     nm:["WCC 로스팅 챔피언십 (WCR)","WCC Roasting Championship (WCR)","WCC ロースティングチャンピオンシップ（WCR）"],
+     ev:"2026.10.11", evT:["접수 8.3–31 · 출품 9.11 · 예선 심사 9.12 · 결선 10.11 · 시상 10.31","Entry 8.3–31 · samples 9.11 · heats 9.12 · final 10.11 · awards 10.31","受付8.3–31・出品9.11・予選審査9.12・決勝10.11・表彰10.31"],
+     reg:"2026.08.03–08.31", o:["cca"], p:"gasan", href:"https://www.ccacoffee.co.kr/wcc", note:"fee3"},
+
+    {id:"wcc_wcl", mon:[10], cat:["latte"], way:"onsite", grade:"official",
+     nm:["WCC 라테 아트 챔피언십 (WCL)","WCC Latte Art Championship (WCL)","WCC ラテアートチャンピオンシップ（WCL）"],
+     ev:"2026.10.10", evT:["접수 9.1–30 · 경연 10.10 · 시상 10.31 · 예선 없이 1회","Entry 9.1–30 · contest 10.10 · awards 10.31 · one round, no heats","受付9.1–30・競技10.10・表彰10.31・予選なしの1回"],
+     reg:"2026.09.01–09.30", o:["cca"], p:"gasan", href:"https://www.ccacoffee.co.kr/wcl", note:"fee3"},
+
+    {id:"wcc_wct", mon:[10], cat:["cup"], way:"onsite", grade:"official",
+     nm:["WCC 테이스팅 챔피언십 (WCT)","WCC Tasting Championship (WCT)","WCC テイスティングチャンピオンシップ（WCT）"],
+     ev:"2026.10.25", evT:["접수 9.1–10.15 · 선착순 30명 · 시상 10.31","Entry 9.1–10.15 · first 30 only · awards 10.31","受付9.1–10.15・先着30名・表彰10.31"],
+     reg:"2026.09.01–10.15", o:["cca"], p:"gasan", href:"https://www.ccacoffee.co.kr/wct", note:"fee3"},
+
+    {id:"wcc_award", mon:[10], cat:["roast"], way:"bean", grade:"official",
+     nm:["WCC K-Coffee Award (국제 생두 품평)","WCC K-Coffee Award (international green grading)","WCC K-Coffee Award（国際生豆品評）"],
+     ev:"2026.08–10", evT:["전통 워시드·내추럴·허니·기타 4부문 → 소비자 평가로 BEST OF THE BEST","Four categories — washed, natural, honey, other — with consumers picking BEST OF THE BEST","ウォッシュド・ナチュラル・ハニー・その他の4部門 → 消費者評価でBEST OF THE BEST"],
+     reg:"2026.08–10", o:["cca"], p:"siheung", href:"https://www.ccacoffee.co.kr/wcc"},
+
+    {id:"wcc_etc", mon:[10], cat:["barista"], way:"onsite", grade:"official",
+     nm:["WCC 장애인·청소년 바리스타 · 카페 그랑프리 · 커피 퀴즈","WCC barista contests for people with disabilities and teens, Café Grand Prix, coffee quiz","WCC 障がい者・青少年バリスタ、カフェグランプリ、コーヒークイズ"],
+     ev:"2026.10.31", evT:["장애인 바리스타(참가비 없음) · 청소년 커피짓기(만 19세 이하) · 카페 그랑프리 · 커피 퀴즈","Barista contest for people with disabilities (no fee) · teen coffee-making (19 and under) · Café Grand Prix · coffee quiz","障がい者バリスタ（参加費なし）・青少年コーヒーづくり（19歳以下）・カフェグランプリ・コーヒークイズ"],
+     reg:["10월","October","10月"], o:["cca"], p:"siheung", href:"https://www.ccacoffee.co.kr/wcc"},
+
+    /* ───── 전시회 · 지역 축제 연계 ───── */
+    {id:"dctc", mon:[10], cat:["cup"], way:"onsite", grade:"official",
+     nm:["DCTC 대구 컵 테이스터스 챔피언십","DCTC · Daegu Cup Tasters Championship","DCTC 大邱カップテイスターズチャンピオンシップ"],
+     ev:"2026.10.29–10.31", evT:["예선·본선 10.29–30 · 준결선 10.31 10:30 · 결선 11:30 · 시상 14:30","Heats and main round 10.29–30 · semi 10.31 10:30 · final 11:30 · awards 14:30","予選と本選10.29–30・準決勝10.31 10:30・決勝11:30・表彰14:30"],
+     reg:"2026.09–10", o:["daegu"], p:"exco", href:"https://daegucoffee.kr/coffeefesta"},
+
+    {id:"dhc", mon:[10], cat:["barista"], way:"onsite", grade:"official",
+     nm:["DHC K-커피 학생 챌린지","DHC · K-Coffee Student Challenge","DHC K-コーヒー学生チャレンジ"],
+     ev:"2026.10.29–10.31", evT:["본선 10.29–30 · 결선 10.31","Main round 10.29–30 · final 10.31","本選10.29–30・決勝10.31"],
+     reg:"2026.09–10", o:["daegu"], p:"exco", href:"https://daegucoffee.kr/challenge", note:"first"},
+
+    {id:"gpcc", mon:[5], cat:["cup"], way:"onsite", grade:"official",
+     nm:["GPCC 글로벌 펜타곤 커피 컵테이스터스 챔피언십","GPCC · Global Pentagon Coffee Cup Tasters Championship","GPCC グローバル・ペンタゴン・カップテイスターズ"],
+     ev:"2026.05.15–05.17", evT:["예선 5.15–16 · 결선·시상 5.17 · 54명 선착순 · 대상 100만 원","Heats 5.15–16 · final and awards 5.17 · first 54 only · top prize KRW 1 million","予選5.15–16・決勝と表彰5.17・先着54名・大賞100万ウォン"],
+     reg:"2026.04–05", o:["yeongdo"], p:"yeongdo", href:"https://www.yeongdo.go.kr/yd_coffee_festival/"},
+
+    {id:"gcbc", mon:[5], cat:["brew"], way:"onsite", grade:"official",
+     nm:["GCBC 글로벌 커피 브루잉 챔피언십","GCBC · Global Coffee Brewing Championship","GCBC グローバル・コーヒー・ブリューイングチャンピオンシップ"],
+     ev:"2026.05.15–05.17", evT:["예선 5.15–16 · 결선·시상 5.17 · 50명 선착순 · 대상 500만 원","Heats 5.15–16 · final and awards 5.17 · first 50 only · top prize KRW 5 million","予選5.15–16・決勝と表彰5.17・先着50名・大賞500万ウォン"],
+     reg:"2026.04–05", o:["yeongdo"], p:"yeongdo", href:"https://www.yeongdo.go.kr/yd_coffee_festival/"},
+
+    {id:"ubtd", mon:[10], cat:["brew"], way:"onsite", grade:"official",
+     nm:["UBTD 울산 브루잉 스트로우다운","UBTD · Ulsan Brewing Throwdown","UBTD 蔚山ブリューイング・スローダウン"],
+     ev:"2026.10.31", evT:["32강 1:1 토너먼트 · 심사 3명 + 관객 2명","Round of 32, one on one · three judges plus two from the crowd","32強の1対1トーナメント・審査3名＋観客2名"],
+     reg:["10월","October","10月"], o:["ulsan"], p:"ulsanst", href:"http://www.uscoffeefest.com"},
+
+    {id:"ultd", mon:[11], cat:["latte"], way:"onsite", grade:"official",
+     nm:["ULTD 울산 라떼아트 스트로우다운","ULTD · Ulsan Latte Art Throwdown","ULTD 蔚山ラテアート・スローダウン"],
+     ev:"2026.11.01", evT:["32강 1:1 · 결선은 자유 패턴 + 유니콘 지정 패턴","Round of 32, one on one · free pour in the final plus a set unicorn pattern","32強の1対1・決勝はフリーパターン＋ユニコーン指定パターン"],
+     reg:["10월","October","10月"], o:["ulsan"], p:"ulsanst", href:"http://www.uscoffeefest.com"},
+
+    {id:"dcc", mon:[9], cat:["roast","brew"], way:"onsite", grade:"second",
+     nm:["대구커피챔피언십 (DCC)","Daegu Coffee Championship (DCC)","大邱コーヒーチャンピオンシップ（DCC）"],
+     ev:"2026.09.10–09.12", evT:["로스팅(워시드·허니) + 핸드드립 · 예선 9.10 → 결선·시상 9.12","Roasting (washed and honey) plus hand drip · heats 9.10 → final and awards 9.12","ロースト（ウォッシュド・ハニー）＋ハンドドリップ・予選9.10 → 決勝と表彰9.12"],
+     reg:["8월경","Around August","8月頃"], o:["daegucc"], p:"palgong", href:"https://www.instagram.com/daegu_coffee_championship/"},
+
+    /* ───── 민간 로스팅 · 원두 출품 대회 ───── */
+    {id:"wrl_l1", mon:[8,9], cat:["roast","natl"], way:"national", grade:"official",
+     nm:["WRL KOREA 리그 1","WRL KOREA League 1","WRL KOREA リーグ1"],
+     ev:"2026.09.19–09.21", evT:["접수 8.10– · 원두 제출 9.18 · 심사 9.19–21 · 상위 4명","Entry from 8.10 · beans 9.18 · judging 9.19–21 · top four","受付8.10〜・生豆提出9.18・審査9.19–21・上位4名"],
+     reg:"2026.08.10–", o:["wrl"], p:"online", href:"https://wrlkorea.com", note:"seed"},
+
+    {id:"wrl_l2", mon:[11], cat:["roast","natl"], way:"national", grade:"official",
+     nm:["WRL KOREA 리그 2","WRL KOREA League 2","WRL KOREA リーグ2"],
+     ev:"2026.11.26–11.28", evT:["원두 제출 11.25 · 심사 11.26–28 · 상위 4명","Beans 11.25 · judging 11.26–28 · top four","生豆提出11.25・審査11.26–28・上位4名"],
+     reg:"2026.10.12–", o:["wrl"], p:"online", href:"https://wrlkorea.com", note:"seed"},
+
+    {id:"wrl_l3", mon:[12,1], cat:["roast","natl"], way:"national", grade:"official",
+     nm:["WRL KOREA 리그 3","WRL KOREA League 3","WRL KOREA リーグ3"],
+     ev:"2027.01.14–01.16", evT:["접수 12.14– · 원두 제출 2027.1.13 · 심사 1.14–16 · 상위 4명","Entry from 12.14 · beans 2027.1.13 · judging 1.14–16 · top four","受付12.14〜・生豆提出2027.1.13・審査1.14–16・上位4名"],
+     reg:"2026.12.14–", o:["wrl"], p:"online", href:"https://wrlkorea.com", note:"seed"},
+
+    {id:"wrl_final", mon:[2], cat:["roast","natl"], way:"national", grade:"official",
+     nm:["WRL KOREA 2027 결선","WRL KOREA 2027 Final","WRL KOREA 2027 決勝"],
+     ev:"2027.02.17–02.20", evT:["리그 1~3 통과 12명 → 한국 대표 3명 선발 · 성수 이지스터","12 qualifiers from leagues 1–3 → 3 national representatives · Easystar, Seongsu","リーグ1〜3の通過者12名 → 韓国代表3名を選出・聖水イージスター"],
+     reg:"finalists", o:["wrl"], p:"seongsu", href:"https://wrlkorea.com", note:"league"},
+
+    {id:"src_kr", mon:[9,10], cat:["roast","natl"], way:"national", grade:"official",
+     nm:["SRC Korea 스트롱홀드 로스팅 챔피언십","SRC Korea · Stronghold Roasting Championship","SRC Korea ストロングホールド・ロースティングチャンピオンシップ"],
+     ev:"2026.09.29–10.01", evT:["예선 9.29 · 본선·결선 10.1 · 공식 로스터 S2","Heats 9.29 · main round and final 10.1 · official S2 roaster","予選9.29・本選と決勝10.1・公式ロースターS2"],
+     reg:"2026.08–09", o:["strong"], p:"geumcheon"},
+
+    {id:"src_global", mon:[11], cat:["roast","natl"], way:"national", grade:"official",
+     nm:["SRC Global 2026","SRC Global 2026","SRC Global 2026"],
+     ev:"2026.11.11–11.14", evT:["각국 대표가 코엑스 D홀에서 겨루는 결선","National winners meet in the final at COEX Hall D","各国代表がCOEX Dホールで競う決勝"],
+     reg:["각국 대표 선발","National winners only","各国代表のみ"], o:["strong"], p:"coexd"},
+
+    {id:"asca_mor", mon:[10,11], cat:["roast"], way:"onsite", grade:"official",
+     nm:["ASCA 마스터오브로스터(MOR) 시즌8","ASCA Master of Roaster (MOR), Season 8","ASCA マスターオブロースター（MOR）シーズン8"],
+     ev:"2026.10.29–11.01", evT:["원두 출품 예선 → 본선 10.29–30 · 결선 11.1 킨텍스 · 챔피언 상금 500만 원","Bean entry heats → main round 10.29–30 · final 11.1 at KINTEX · champion prize KRW 5 million","生豆出品の予選 → 本選10.29–30・決勝11.1 KINTEX・優勝賞金500万ウォン"],
+     reg:"2026.07–09.02", o:["asca"], p:"kintex", href:"https://www.masterofroaster.com"},
+
+    {id:"asca_moc", mon:[12], cat:["roast"], way:"bean", grade:"official",
+     nm:["ASCA 마스터오브카페(MOC) 시즌21","ASCA Master of Cafe (MOC), Season 21","ASCA マスターオブカフェ（MOC）シーズン21"],
+     ev:"2026.12.15–12.21", evT:["원두 제출 12.15 · 결과 12.21 · 업체전·개인전","Beans 12.15 · results 12.21 · business and individual divisions","生豆提出12.15・結果12.21・企業戦と個人戦"],
+     reg:"–2026.11.30", o:["asca"], p:"online", href:"https://www.masterofcafe.com",
+     note:["업체전 골드는 2027.3 카페&베이커리페어에 초청","Gold in the business division is invited to the March 2027 Café & Bakery Fair","企業戦ゴールドは2027年3月のカフェ＆ベーカリーフェアに招待"]},
+
+    {id:"krca_6", mon:[6], cat:["roast"], way:"bean", grade:"official",
+     nm:["KRCA 코리아 로스팅 커피 어워즈 6월 출품전","KRCA Korea Roasting Coffee Awards — June entry round","KRCA コリア・ロースティング・コーヒーアワード 6月出品戦"],
+     ev:"2026.06", evT:["6월 출품전 · 분기 상위자는 연말 왕중왕전으로","June entry round · quarterly winners go to the year-end final","6月の出品戦・四半期上位者は年末の王者決定戦へ"],
+     reg:["2026.05경","Around May 2026","2026年5月頃"], o:["krca"], p:"online", href:"https://roastingawards.com"},
+
+    {id:"krca_9", mon:[9], cat:["roast"], way:"bean", grade:"official",
+     nm:["KRCA 코리아 로스팅 커피 어워즈 9월 출품전","KRCA Korea Roasting Coffee Awards — September entry round","KRCA コリア・ロースティング・コーヒーアワード 9月出品戦"],
+     ev:"2026.09.11–09.13", evT:["접수 7.7–8.17 · 원두 제출 9.4 · 심사 9.11–13","Entry 7.7–8.17 · beans 9.4 · judging 9.11–13","受付7.7–8.17・生豆提出9.4・審査9.11–13"],
+     reg:"2026.07.07–08.17", o:["krca"], p:"online", href:"https://roastingawards.com"},
+
+    {id:"krca_final", mon:[12], cat:["roast"], way:"onsite", grade:"official",
+     nm:["KRCA 왕중왕전","KRCA Grand Final","KRCA 王者決定戦"],
+     ev:"2026.12.18–12.20", evT:["분기 출품전 상위자가 부산에서 현장 로스팅으로 겨룸","Quarterly winners meet for on-site roasting in Busan","四半期の上位者が釜山で会場焙煎で競う"],
+     reg:"finalists", o:["krca"], p:"look", href:"https://roastingawards.com", note:"krca27"},
+
+    {id:"krca_1", mon:[1], cat:["roast"], way:"bean", grade:"official",
+     nm:["KRCA 2027 시즌 1월 출품전","KRCA 2027 season — January entry round","KRCA 2027シーズン 1月出品戦"],
+     ev:["2027.01 중순 예정","Mid-January 2027 (planned)","2027年1月中旬予定"], reg:["미발표","To be announced","未発表"],
+     o:["krca"], p:"online", href:"https://roastingawards.com", note:"tba2027"},
+
+    {id:"wwoc", mon:[12], cat:["roast"], way:"bean", grade:"official",
+     nm:["WWOC 로스팅 챔피언십","WWOC Roasting Championship","WWOC ロースティングチャンピオンシップ"],
+     ev:"2026.12.08–12.11", evT:["원두 제출 12.08 · 예선 결과 12.11 · 한국·일본·중국 → 월드 파이널","Beans 12.08 · heat results 12.11 · Korea, Japan and China → world final","生豆提出12.08・予選結果12.11・韓日中 → ワールドファイナル"],
+     reg:"2026.11.04–11.27", o:["wwoc"], p:["온라인 · 월드 파이널","Online · world final","オンライン・ワールドファイナル"], note:"prize10"},
+
+    {id:"kbta_rwc", mon:[11,12], cat:["roast"], way:"bean", grade:"official",
+     nm:["KBTA RWC 한·일 국제 로스팅 대회","KBTA RWC · Korea–Japan International Roasting Championship","KBTA RWC 韓日国際ロースティング大会"],
+     ev:"2026.11.27–12.03", evT:["한국 예선 11.27 · 한·일 결선 12.03 제주 · 4부문","Korean heats 11.27 · Korea–Japan final 12.03 in Jeju · four categories","韓国予選11.27・韓日決勝12.03 済州・4部門"],
+     reg:"2026.10.11–11.18", o:["kbta"], p:"jeju", note:"joint"},
+
+    {id:"wbca_wbr", mon:[8], cat:["roast"], way:"bean", grade:"official",
+     nm:["WBCA WBR 월드베스트로스팅챔피언십","WBCA WBR · World Best Roasting Championship","WBCA WBR ワールドベストロースティングチャンピオンシップ"],
+     ev:"2026.08.20–08.22", evT:["모집 6.11–7.2 · 원두 7.15 · 본선 8.20–21 · 결선 8.22","Entry 6.11–7.2 · beans 7.15 · main round 8.20–21 · final 8.22","募集6.11–7.2・生豆7.15・本選8.20–21・決勝8.22"],
+     reg:"2026.06.11–07.02", o:["wbca"], p:["온라인 · 결선 서울","Online · final in Seoul","オンライン・決勝はソウル"]},
+
+    {id:"wbca_wbb", mon:[11,12], cat:["roast"], way:"bean", grade:"official",
+     nm:["WBCA WBB 월드베스트빈 (에스프레소)","WBCA WBB · World Best Bean (espresso)","WBCA WBB ワールドベストビーン（エスプレッソ）"],
+     ev:"2026.11.26–12.18", evT:["원두 제출 11.24 · 심사 11.26–28 · 시상 12.18","Beans 11.24 · judging 11.26–28 · awards 12.18","生豆提出11.24・審査11.26–28・表彰12.18"],
+     reg:"2026.10.06–11.13", o:["wbca"], p:["온라인 접수 · 심사 서울","Online entry · judging in Seoul","オンライン受付・審査はソウル"]},
+
+    {id:"oneccc", mon:[9], cat:["roast"], way:"bean", grade:"second",
+     nm:["1CCC KOREA (1st Crack Coffee Challenge)","1CCC KOREA · 1st Crack Coffee Challenge","1CCC KOREA（ファーストクラック・コーヒーチャレンジ）"],
+     ev:"2026.09.18", evT:["결선 9.18 판교 · 만 20~35세 신인 로스터 · 모델빈 재현","Final 9.18 in Pangyo · new roasters aged 20–35 · reproduce a model bean","決勝9.18 板橋・20〜35歳の新人ロースター・モデルビーンの再現"],
+     reg:"2026.06.27–07.06", o:["oneccc"], p:"pangyo", note:"reopen27"},
+
+    {id:"gcs", mon:[3], cat:["roast"], way:"bean", grade:"second",
+     nm:["GCS 로스팅 챌린지컵 (상반기)","GCS Roasting Challenge Cup (first half)","GCS ロースティングチャレンジカップ（上半期）"],
+     ev:"2026.03.23", evT:["상반기 심사 · 3.23 발표 · 하반기는 따로 운영","First-half judging · results 3.23 · a second round runs later in the year","上半期の審査・3.23発表・下半期は別途開催"],
+     reg:"2026.02–03", o:["gcs"], p:["온라인 접수 · 심사 서울","Online entry · judging in Seoul","オンライン受付・審査はソウル"]},
+
+    {id:"allopen", mon:[6], cat:["roast"], way:"bean", grade:"second",
+     nm:["올오픈 로스팅 콘테스트 시즌3","All Open Roasting Contest, Season 3","オールオープン・ロースティングコンテスト シーズン3"],
+     ev:"2026.06.06–06.08", evT:["접수 5.11–6.4 · 심사 6.6 · 발표 6.8 · 자율 블렌딩","Entry 5.11–6.4 · judging 6.6 · results 6.8 · free blending","受付5.11–6.4・審査6.6・発表6.8・自由ブレンド"],
+     reg:"2026.05.11–06.04", o:["allopen"], p:["온라인 접수 · 심사 성남","Online entry · judging in Seongnam","オンライン受付・審査は城南"]},
+
+    {id:"heyblue", mon:[10], cat:["roast"], way:"bean", grade:"second",
+     nm:["헤이블루 HBCPC 커피 페어링 챔피언십","Hey Blue HBCPC Coffee Pairing Championship","ヘイブルー HBCPC コーヒーペアリングチャンピオンシップ"],
+     ev:"2026.10.24", evT:["결선 10.24 파주 펠리시타 · 빵 4종 페어링 · 총상금 550만 원","Final 10.24 at Pellicita, Paju · pairing with four breads · KRW 5.5 million in prizes","決勝10.24 坡州ペリシタ・パン4種とのペアリング・賞金総額550万ウォン"],
+     reg:"2026.08.20–09.21", o:["heyblue"], p:"paju"},
+
+    {id:"para92", mon:[11], cat:["roast"], way:"onsite", grade:"second",
+     nm:["커피앳웍스 파라이소92 로스팅 챔피언십","Coffee at Works Paraiso 92 Roasting Championship","コーヒーアットワークス パライソ92 ロースティングチャンピオンシップ"],
+     ev:"2026.11.18", evT:["강릉 강원도립대 · 같은 생두로 12명 현장 로스팅","Gangwon Provincial College, Gangneung · 12 roasters on the same green bean","江陵・江原道立大学・同じ生豆で12名が会場焙煎"],
+     reg:["2026.10–11","October–November 2026","2026年10〜11月"], o:["cafeworks"], p:"gangneung", note:"first"},
+
+    /* ───── 기타 종목 ───── */
+    {id:"kac", mon:[10], cat:["brew"], way:"onsite", grade:"official",
+     nm:["KAC 코리아 에어로프레스 챔피언십","KAC · Korea AeroPress Championship","KAC コリア・エアロプレスチャンピオンシップ"],
+     ev:"2026.10.31", evT:["10:00–18:00 상암 · 세계대회는 2026.12.6 멕시코시티","10:00–18:00 in Sangam · world championship 2026.12.6 in Mexico City","10:00–18:00 上岩・世界大会は2026.12.6 メキシコシティ"],
+     reg:"2026.09–10", o:["aeropress"], p:"sangam",
+     href:"https://worldaeropresschampionship.com/pages/korea-south-2026", note:"oneday"}
+  ];
+
+  /* ---------- 언어 ---------- */
+  var LANG = "ko";
+  var IX = { ko: 0, en: 1, ja: 2 };
+
+  var LBL = {
+    ko: {
+      mon: "월별", cat: "종목", all: "전체", allCat: "전체",
+      months: ["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"],
+      cats: { roast:"로스팅", barista:"바리스타", brew:"브루잉", cup:"커핑 · 테이스팅", latte:"라떼아트", natl:"국가대표 선발전(KCC·WRL)" },
+      ways: { onsite:"현장 경연", bean:"원두 출품", national:"국가대표 선발" },
+      grades: { official:"공식", press:"보도", second:"2차" },
+      st: { open:"접수 중", soonReg:"곧 접수", soonEv:"다가오는 일정", past:"지난 일정", scheduled:"일정 확정" },
+      ev:"대회 날짜", reg:"접수 신청", org:"주최", place:"장소", official:"공식 페이지",
+      link:"공식 페이지 →", countA:"개 대회 가운데", countB:"개 표시", empty:"이 조건에 맞는 대회가 없습니다. 다른 달이나 종목을 골라 보세요.",
+      hlEmpty:"지금 접수 중이거나 곧 열리는 대회가 없습니다. 다음 시즌 일정은 주최 측 공지를 확인하세요.",
+      hlEv:"대회", hlReg:"접수"
+    },
+    en: {
+      mon: "Month", cat: "Category", all: "All", allCat: "All",
+      months: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+      cats: { roast:"Roasting", barista:"Barista", brew:"Brewing", cup:"Cupping · tasting", latte:"Latte art", natl:"National team (KCC · WRL)" },
+      ways: { onsite:"On-site", bean:"Bean entry", national:"National team" },
+      grades: { official:"Official", press:"Press", second:"2nd-hand" },
+      st: { open:"Entry open", soonReg:"Entry soon", soonEv:"Coming up", past:"Past", scheduled:"Scheduled" },
+      ev:"Date", reg:"Entry", org:"Organiser", place:"Venue", official:"Official page",
+      link:"Official page →", countA:"competitions,", countB:"shown", empty:"No competition matches this filter. Try another month or category.",
+      hlEmpty:"Nothing is open for entry or coming up right now. Check the organiser's notice for the next season.",
+      hlEv:"Date", hlReg:"Entry"
+    },
+    ja: {
+      mon: "月別", cat: "種目", all: "すべて", allCat: "すべて",
+      months: ["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],
+      cats: { roast:"ロースト", barista:"バリスタ", brew:"ブリューイング", cup:"カッピング・テイスティング", latte:"ラテアート", natl:"代表選考（KCC・WRL）" },
+      ways: { onsite:"会場競技", bean:"生豆出品", national:"代表選考" },
+      grades: { official:"公式", press:"報道", second:"二次資料" },
+      st: { open:"受付中", soonReg:"まもなく受付", soonEv:"近日開催", past:"終了", scheduled:"日程確定" },
+      ev:"開催日", reg:"受付期間", org:"主催", place:"会場", official:"公式ページ",
+      link:"公式ページ →", countA:"件のうち", countB:"件を表示", empty:"この条件に合う大会はありません。別の月や種目をお選びください。",
+      hlEmpty:"いま受付中・近日開催の大会はありません。次のシーズンの日程は主催者の告知をご確認ください。",
+      hlEv:"開催", hlReg:"受付"
+    }
+  };
+
+  function L() { return LBL[LANG] || LBL.ko; }
+  function pick(v) {
+    if (v == null) return "";
+    if (typeof v === "string") {
+      if (NOTE[v]) return NOTE[v][IX[LANG]] || NOTE[v][0];
+      if (PLC[v]) return PLC[v][IX[LANG]] || PLC[v][0];
+      return v;
+    }
+    return v[IX[LANG]] != null ? v[IX[LANG]] : (v[0] || "");
+  }
+  function orgs(keys) {
+    return keys.map(function (k) { return ORG[k] ? (ORG[k][IX[LANG]] || ORG[k][0]) : k; }).join(" · ");
+  }
+  function esc(s) {
+    return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  }
+
+  /* ---------- 날짜 ---------- */
+  function parseRange(v) {
+    if (typeof v !== "string") return null;
+    var s = v.trim();
+    var endOnly = /^[–~\-]/.test(s);
+    var m = s.match(/(\d{4})\.(\d{1,2})(?:\.(\d{1,2}))?/);
+    if (!m) return null;
+    var y = +m[1], mo = +m[2] - 1, day = m[3] ? +m[3] : 1;
+    var start = new Date(y, mo, day), end = new Date(y, mo, day);
+    var rest = s.slice(m.index + m[0].length);
+    if (!m[3]) {
+      // 월 단위 표기: 2026.08–10
+      start = new Date(y, mo, 1);
+      end = new Date(y, mo + 1, 0);
+      var mm = rest.match(/[–~\-]\s*(\d{1,2})(?!\d)/);
+      if (mm) { end = new Date(y, +mm[1], 0); if (end < start) end = new Date(y + 1, +mm[1], 0); }
+    } else {
+      var m2 = rest.match(/[–~\-]\s*(\d{1,2})\.(\d{1,2})/);
+      var m3 = rest.match(/[–~\-]\s*(\d{1,2})(?!\d)/);
+      if (m2) {
+        end = new Date(y, +m2[1] - 1, +m2[2]);
+        if (end < start) end = new Date(y + 1, +m2[1] - 1, +m2[2]);
+      } else if (m3) {
+        end = new Date(y, mo, +m3[1]);
+        if (end < start) end = new Date(y, mo + 1, +m3[1]);
+      } else if (/[–~\-]\s*$/.test(s)) {
+        end = null; // 2026.12.14– (끝 미정)
+      }
+    }
+    if (endOnly) return { s: null, e: end };
+    return { s: start, e: end };
+  }
+  var TODAY = new Date();
+  TODAY.setHours(0, 0, 0, 0);
+  function days(d) { return Math.round((d - TODAY) / 86400000); }
+
+  function statusOf(it) {
+    var ev = parseRange(it.ev), reg = parseRange(it.reg);
+    if (ev && ev.e && ev.e < TODAY) return "past";
+    if (reg && reg.e && reg.e >= TODAY && (!reg.s || reg.s <= TODAY)) return "open";
+    if (reg && reg.s && reg.s > TODAY && days(reg.s) <= 60) return "soonReg";
+    if (ev && ev.s && days(ev.s) >= 0 && days(ev.s) <= 100) return "soonEv";
+    return "scheduled";
+  }
+  function nextDate(it) {
+    var st = statusOf(it), ev = parseRange(it.ev), reg = parseRange(it.reg);
+    if (st === "open" && reg && reg.e) return reg.e;
+    if (st === "soonReg" && reg && reg.s) return reg.s;
+    if (ev && ev.s) return ev.s;
+    return null;
+  }
+
+  /* ---------- 상태 ---------- */
+  var state = { mon: 0, cat: "all" };
+
+  function matches(it) {
+    if (state.mon && (it.mon || []).indexOf(state.mon) < 0) return false;
+    if (state.cat !== "all" && (it.cat || []).indexOf(state.cat) < 0) return false;
+    return true;
+  }
+
+  function sorted() {
+    var up = [], past = [], tba = [];
+    DATA.forEach(function (it) {
+      var ev = parseRange(it.ev), st = statusOf(it);
+      if (st === "past") { past.push({ it: it, d: ev && ev.e ? ev.e : new Date(0) }); }
+      else if (ev && ev.s) { up.push({ it: it, d: ev.s }); }
+      else { tba.push(it); }
+    });
+    up.sort(function (a, b) { return a.d - b.d; });
+    past.sort(function (a, b) { return b.d - a.d; });
+    return up.map(function (x) { return x.it; })
+      .concat(past.map(function (x) { return x.it; }))
+      .concat(tba);
+  }
+
+  function chip(label, active, attrs) {
+    return '<button type="button" class="chip" aria-pressed="' + (active ? "true" : "false") + '" ' + attrs + ">" + esc(label) + "</button>";
+  }
+
+  function renderChips() {
+    var l = L();
+    var mhtml = chip(l.all, state.mon === 0, 'data-mon="0"');
+    for (var i = 1; i <= 12; i++) mhtml += chip(l.months[i - 1], state.mon === i, 'data-mon="' + i + '"');
+    document.getElementById("monChips").innerHTML = mhtml;
+
+    var chtml = chip(l.allCat, state.cat === "all", 'data-cat="all"');
+    ["roast", "barista", "brew", "cup", "latte", "natl"].forEach(function (k) {
+      chtml += chip(l.cats[k], state.cat === k, 'data-cat="' + k + '"');
+    });
+    document.getElementById("catChips").innerHTML = chtml;
+  }
+
+  function renderHighlight() {
+    var l = L();
+    var show = DATA.filter(function (it) {
+      var st = statusOf(it);
+      return st === "open" || st === "soonReg" || st === "soonEv";
+    }).sort(function (a, b) {
+      var da = nextDate(a), db = nextDate(b);
+      return (da ? da.getTime() : 9e15) - (db ? db.getTime() : 9e15);
+    });
+    var box = document.getElementById("hlList");
+    if (!show.length) { box.innerHTML = '<li class="emptybox">' + esc(l.hlEmpty) + "</li>"; return; }
+    box.innerHTML = show.map(function (it) {
+      var st = statusOf(it), ev = parseRange(it.ev), reg = parseRange(it.reg);
+      var line = "";
+      if (reg && (reg.e || reg.s)) line += '<span>' + esc(l.hlReg) + "</span> " + esc(pick(it.reg));
+      if (ev && ev.s) line += (line ? " · " : "") + '<span>' + esc(l.hlEv) + "</span> " + esc(pick(it.ev));
+      var inner = '<div class="chead"><b>' + esc(it.nm[IX[LANG]] || it.nm[0]) + '</b><span class="status ' + st + '">' + esc(l.st[st]) + "</span></div>" +
+        '<p class="hlmeta">' + line + "</p>";
+      if (it.href) return '<li><a class="hl" href="' + esc(it.href) + '" target="_blank" rel="noopener">' + inner + "</a></li>";
+      return '<li><div class="hl">' + inner + "</div></li>";
+    }).join("");
+  }
+
+  function renderList() {
+    var l = L();
+    var all = sorted();
+    var shown = all.filter(matches);
+    var sp = LANG === "ko" ? "" : " ";
+    document.getElementById("countLine").innerHTML =
+      "<b>" + all.length + "</b>" + sp + esc(l.countA) + " <b>" + shown.length + "</b>" + sp + esc(l.countB);
+
+    var box = document.getElementById("compList");
+    if (!shown.length) { box.innerHTML = '<div class="emptybox">' + esc(l.empty) + "</div>"; return; }
+
+    box.innerHTML = shown.map(function (it) {
+      var st = statusOf(it);
+      var tags = '<span class="tag way">' + esc(l.ways[it.way] || it.way) + "</span>";
+      (it.cat || []).forEach(function (c) {
+        if (c === "natl" && it.way === "national") return; // 방식 배지와 같은 뜻이라 한 번만
+        tags += '<span class="tag' + (c === "natl" ? " natl" : "") + '">' + esc(l.cats[c] || c) + "</span>";
+      });
+      tags += '<span class="tag grade">' + esc(l.grades[it.grade] || "공식") + "</span>";
+
+      var evT = it.evT ? '<span class="evd">' + esc(it.evT[IX[LANG]] || it.evT[0]) + "</span>" : "";
+      var rows = '<dt>' + esc(l.ev) + "</dt><dd>" + esc(pick(it.ev)) + evT + "</dd>" +
+        "<dt>" + esc(l.reg) + "</dt><dd>" + esc(pick(it.reg)) + "</dd>" +
+        "<dt>" + esc(l.org) + "</dt><dd>" + esc(orgs(it.o)) + "</dd>" +
+        "<dt>" + esc(l.place) + "</dt><dd>" + esc(pick(it.p)) + "</dd>";
+      var note = it.note ? '<p class="cnote">' + esc(pick(it.note)) + "</p>" : "";
+      var go = it.href ? '<div class="cgo"><a href="' + esc(it.href) + '" target="_blank" rel="noopener">' + esc(l.link) + "</a></div>" : "";
+
+      return '<article class="comp" id="c-' + esc(it.id) + '">' +
+        '<div class="chead"><h3>' + esc(it.nm[IX[LANG]] || it.nm[0]) + '</h3><span class="status ' + st + '">' + esc(l.st[st]) + "</span></div>" +
+        '<div class="badges">' + tags + "</div>" +
+        "<dl>" + rows + "</dl>" + note + go + "</article>";
+    }).join("");
+  }
+
+  function renderAll() {
+    renderChips(); renderHighlight(); renderList();
+  }
+
+  function onChip(e) {
+    var b = e.target.closest ? e.target.closest("button.chip") : null;
+    if (!b) return;
+    if (b.hasAttribute("data-mon")) state.mon = parseInt(b.getAttribute("data-mon"), 10) || 0;
+    if (b.hasAttribute("data-cat")) state.cat = b.getAttribute("data-cat") || "all";
+    renderChips(); renderList();
+  }
+
+  function detectLang() {
+    try {
+      var q = (new URLSearchParams(location.search).get("lang") || "").toLowerCase();
+      if (IX[q] !== undefined) return q;
+    } catch (e) {}
+    try { var s = localStorage.getItem("oncoffeelog.lang"); if (IX[s] !== undefined) return s; } catch (e) {}
+    if (window.CI && window.CI.i18n && window.CI.i18n.lang) return window.CI.i18n.lang;
+    return "ko";
+  }
+
+  function boot() {
+    LANG = detectLang();
+    document.getElementById("monChips").addEventListener("click", onChip);
+    document.getElementById("catChips").addEventListener("click", onChip);
+    renderAll();
+    document.addEventListener("ci:lang", function (ev) {
+      var next = ev && ev.detail && ev.detail.lang;
+      if (!next || IX[next] === undefined || next === LANG) return;
+      LANG = next;
+      renderAll();
+    });
+  }
+
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot, { once: true });
+  else boot();
+
+  window.CI = window.CI || {};
+  window.CI.competitions = { data: DATA, state: state, render: renderAll };
+})();
+</script>
+</body>
+</html>
