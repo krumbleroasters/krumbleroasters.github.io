@@ -251,6 +251,10 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   .chips.detail .chip.on{background:#8A5A2B;border-color:#8A5A2B;color:#FFF8EF}
   .chips.detail .chip.on .cnt{color:#F2DEC8}
   .chips[hidden]{display:none}
+  @media(min-width:600px){
+    .chips.pf,.chips.detail{flex-wrap:wrap;row-gap:6px;overflow-x:visible}
+    .chips.pf{padding-bottom:10px}
+  }
 
   /* 원두 목록·카드 안의 가공방식 배지 — 누르면 설명이 뜹니다 */
   .proc{
@@ -820,7 +824,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
-<script src="process-data.js?v=20261125a"></script>
+<script src="process-data.js?v=20261126a"></script>
 <script src="photos.js?v=20261125b"></script>
 <script>
 /* =========================================================
@@ -1053,7 +1057,7 @@ function renderChips() {
 }
 
 /* ---------- 가공방식 필터 · 설명 모달 ----------
-   가공방식 사전(process-data.js · CI_PROCESS)의 8개 갈래와 36종 세부 방식을
+   가공방식 사전(process-data.js · CI_PROCESS)의 8개 갈래와 50종 세부 방식을
    국가·옥션 필터와 함께 좁혀 보고, 배지를 누르면 쉬운 설명이 뜨게 합니다.
    ------------------------------------------------ */
 const PROC = window.CI_PROCESS || null;
@@ -1080,7 +1084,7 @@ function processBadge(b, cls) {
 
 function beanMatchesProc(b) {
   if (!procFilterOn()) return true;
-  if (state.procDetail) return b.processId === state.procDetail || (b.processTags || []).indexOf(state.procDetail) > -1;
+  if (state.procDetail) return b.processId === state.procDetail;
   return b.processGroup === state.proc;
 }
 
@@ -1122,8 +1126,8 @@ function procSubCounts() {
   const m = {};
   if (!state.ready) return m;
   for (const b of procScopeBeans()) {
-    const ids = [b.processId].concat(b.processTags || []);
-    for (const id of ids) if (id) m[id] = (m[id] || 0) + 1;
+    if (state.proc && state.proc !== "all" && b.processGroup !== state.proc) continue;
+    if (b.processId) m[b.processId] = (m[b.processId] || 0) + 1;
   }
   return m;
 }
@@ -1822,11 +1826,11 @@ function renderSheet() {
     const r = state.results;
     const ps = searchPlaces(state.query).slice(0, 6);
     html = `<div class="results">
-      <div class="res-head"><h2>“${esc(state.query)}” 검색 결과</h2><span>${r.length.toLocaleString()}종</span></div>
+      <div class="res-head"><h2>“${esc(state.query)}” 검색 결과${procFilterOn() ? " · " + esc(procFilterName()) : ""}</h2><span>${r.length.toLocaleString()}종</span></div>
       ${ps.length ? `<div class="sec-h">산지 · 농장</div>
         ${ps.map(placeRow).join("")}
         <div class="sec-h">원두</div>` : ""}
-      ${r.length ? r.slice(0, 60).map(beanRow).join("") : `<p class="qr-note">${ps.length ? "이 농장·산지에서 온 생두는 아직 카탈로그에 없습니다. 위 카드를 눌러 위치와 이야기를 보세요." : "이 이름의 생두는 카탈로그에 없습니다. 농장·산지 이름으로 다시 검색해 보세요."}</p>`}
+      ${r.length ? r.slice(0, 60).map(beanRow).join("") : `<p class="qr-note">${procFilterOn() ? esc(procFilterName()) + " 안에서는 찾지 못했습니다. 가공 칩의 '전체'를 누르면 전체 카탈로그에서 다시 찾습니다." : (ps.length ? "이 농장·산지에서 온 생두는 아직 카탈로그에 없습니다. 위 카드를 눌러 위치와 이야기를 보세요." : "이 이름의 생두는 카탈로그에 없습니다. 농장·산지 이름으로 다시 검색해 보세요.")}</p>`}
       ${r.length > 60 ? `<p class="qr-note">상위 60종만 표시합니다. 검색어를 좁혀 보세요.</p>` : ""}
     </div>`;
   } else if (procFilterOn()) {
@@ -1952,7 +1956,10 @@ function searchPlaces(q) {
     const t = norm([p.name, p.nameEn, p.nameJa, p.country, (p.alias || []).join(" ")].filter(Boolean).join(" "));
     let ok = true;
     for (const k of toks) if (!t.includes(k)) { ok = false; break; }
-    if (ok) out.push(p);
+    if (!ok) continue;
+    /* 가공 필터가 켜져 있으면 그 가공의 생두가 있는 산지만 보여 줍니다 */
+    if (procFilterOn() && !(beansByPlace.get(p.id) || []).some(beanMatchesProc)) continue;
+    out.push(p);
   }
   out.sort((a, b) => (PLACE_RANK[a.precision] ?? 4) - (PLACE_RANK[b.precision] ?? 4) || (b.beanCount || 0) - (a.beanCount || 0));
   return out;
@@ -1972,6 +1979,7 @@ function searchBeans(q) {
   if (!toks.length) return [];
   const out = [];
   for (const { b, h } of INDEX) {
+    if (procFilterOn() && !beanMatchesProc(b)) continue;
     let ok = true;
     for (const t of toks) if (!h.includes(t)) { ok = false; break; }
     if (ok) out.push(b);
@@ -1982,7 +1990,11 @@ function searchBeans(q) {
 function suggest(q) {
   const places = searchPlaces(q).slice(0, 3);
   const r = searchBeans(q).slice(0, places.length ? 4 : 8);
-  if (!r.length && !places.length) { sugEl.innerHTML = `<div class="live">${esc(q)} — 카탈로그에서 찾지 못했습니다. 산지 이름이나 국가로 검색해 보세요.</div>`; return; }
+  if (!r.length && !places.length) {
+    const scope = procFilterOn() ? ` (${esc(procFilterName())} 안)` : "";
+    sugEl.innerHTML = `<div class="live">${esc(q)} — 카탈로그${scope}에서 찾지 못했습니다. 산지 이름이나 국가로 검색해 보세요.</div>`;
+    return;
+  }
   sugEl.innerHTML = places.map((p) => `<button type="button" data-sp="${esc(p.id)}" class="p">
     <span class="dot" style="background:${p.kind === "farm" ? "#9A5B2E" : "#2F4636"}"></span>
     <span><span class="nm">${esc(p.country)} · ${esc(p.name)}</span><span class="mt">${p.kind === "farm" ? "농장" : p.kind === "country" ? "국가" : "산지"} · ${(p.beanCount || 0) ? (p.beanCount).toLocaleString() + "종" : "카탈로그 미수록"}</span></span>
@@ -2570,7 +2582,7 @@ boot();
 <script src="qr-tools.js?v=20261125b"></script>
 <script src="site-tools.js?v=20261122d"></script>
 <script src="i18n-data.js?v=20261125m"></script>
-<script src="i18n-pages.js?v=20261125l"></script>
+<script src="i18n-pages.js?v=20261126a"></script>
 <script src="i18n-places.js?v=20261125x"></script>
 <script src="i18n.js?v=20261125j"></script>
 </body>

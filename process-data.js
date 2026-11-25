@@ -3,8 +3,8 @@
  * KO/EN/JA 라벨·설명·주의가 모두 들어 있어, 화면은 현재 언어 값만 그대로 그립니다.
  */
 window.CI_PROCESS = {
-"version": "1.0",
-"generatedAt": "2026-11-25T10:59:40",
+"version": "2.0",
+"generatedAt": "2026-11-25T20:24:20",
 "chips": [
 {
 "id": "all",
@@ -27,9 +27,9 @@ window.CI_PROCESS = {
 "ja": "ウォッシュド"
 },
 "desc": {
-"ko": "과육과 점액질을 씻어 낸 깨끗한 커피. 워시드·케냐 더블 워시드가 들어갑니다.",
-"en": "Clean cups with fruit and mucilage washed off: washed and Kenyan double washed.",
-"ja": "果肉とミュシレージを洗い流したきれいなコーヒー。ウォッシュドとケニア式ダブルウォッシュドが入ります。"
+"ko": "과육과 점액질을 씻어 낸 계열. 풀리 워시드·이중 발효·DRD 워시드·장시간 발효·세미 워시드·웻 폴리시드가 들어갑니다.",
+"en": "Fruit and mucilage washed off: fully washed, double fermented, DRD washed, extended fermentation, semi-washed and wet polished.",
+"ja": "果肉とミュシレージを洗い流した系統。フリーウォッシュド・二段発酵・DRDウォッシュド・長時間発酵・セミウォッシュド・ウェットポリッシュが入ります。"
 }
 },
 {
@@ -40,9 +40,9 @@ window.CI_PROCESS = {
 "ja": "ナチュラル"
 },
 "desc": {
-"ko": "체리를 통째로 말린 과일향 중심의 커피.",
-"en": "Fruit-forward coffee dried as whole cherry.",
-"ja": "チェリーを丸ごと乾かした果実感中心のコーヒー。"
+"ko": "체리를 통째로 말린 과일향 중심의 계열. 클래식 내추럴과 DRD 내추럴, 레이즌 내추럴이 들어갑니다.",
+"en": "Fruit-forward coffee dried as whole cherry: classic natural, DRD natural and raisin natural.",
+"ja": "チェリーを丸ごと乾かした果実感中心の系統。クラシックナチュラル、DRDナチュラル、レーズンナチュラルが入ります。"
 }
 },
 {
@@ -53,9 +53,9 @@ window.CI_PROCESS = {
 "ja": "ハニー"
 },
 "desc": {
-"ko": "점액질을 남겨 단맛과 바디를 올린 커피. 화이트·옐로우·레드·블랙으로 나뉩니다.",
-"en": "Mucilage left on for sweetness and body: white, yellow, red and black.",
-"ja": "ミュシレージを残して甘さとボディを上げたコーヒー。ホワイト・イエロー・レッド・ブラックに分かれます。"
+"ko": "점액질을 남겨 단맛과 바디를 올린 계열. 화이트·옐로우·골드·레드·블랙·레이즌 허니와 펄프드 내추럴이 들어갑니다.",
+"en": "Mucilage left on for sweetness and body: white, yellow, gold, red, black and raisin honey, plus pulped natural.",
+"ja": "ミュシレージを残して甘さとボディを上げた系統。ホワイト・イエロー・ゴールド・レッド・ブラック・レーズンハニーとパルプドナチュラルが入ります。"
 }
 },
 {
@@ -66,9 +66,9 @@ window.CI_PROCESS = {
 "ja": "セミ・ウェットハル"
 },
 "desc": {
-"ko": "펄프드 내추럴·세미 워시드·웻 헐링·웻 폴리시드처럼 워시드와 내추럴 사이에 놓이는 방식.",
-"en": "Methods between washed and natural: pulped natural, semi-washed, wet hulled and wet polished.",
-"ja": "パルプドナチュラル・セミウォッシュド・ウェットハル・ウェットポリッシュなど、ウォッシュドとナチュラルの間の方法。"
+"ko": "전통 방식이 남은 계열. 웻 헐링(길링 바사)과 몬순이 들어갑니다.",
+"en": "Traditional methods: wet hulling (giling basah) and monsooning.",
+"ja": "伝統的な方法の系統。ウェットハル（ギリン・バサ）とモンスーンが入ります。"
 }
 },
 {
@@ -79,22 +79,22 @@ window.CI_PROCESS = {
 "ja": "アナエロビック・特殊"
 },
 "desc": {
-"ko": "밀폐 발효와 정밀 가공. 탄산침용(CM)·ASD·써멀쇼크·모스토·코지·이스트·락틱·아세틱·다크룸·EF2가 들어갑니다.",
-"en": "Sealed fermentation and precision methods: CM, ASD, thermal shock, mosto, koji, yeast, lactic, acetic, dark room and EF2.",
-"ja": "密閉発酵と精密精製。CM・ASD・サーマルショック・モスト・麹・酵母・乳酸・酢酸・ダークルーム・EF2が入ります。"
+"ko": "밀폐 발효와 정밀 가공. 무산소 내추럴·워시드·허니, CM·ASD·써멀쇼크·모스토·코지·이스트·락틱·트리플·나이트로·다크룸·EF2가 들어갑니다.",
+"en": "Sealed fermentation and precision methods: anaerobic natural, washed and honey; CM, ASD, thermal shock, mosto, koji, yeast, lactic, triple, nitro, dark room and EF2.",
+"ja": "密閉発酵と精密精製。嫌気ナチュラル・ウォッシュド・ハニー、CM・ASD・サーマルショック・モスト・麹・酵母・乳酸・トリプル・ニトロ・ダークルーム・EF2が入ります。"
 }
 },
 {
 "id": "infused",
 "label": {
-"ko": "인퓨즈드·코퍼멘",
-"en": "Infused & Co-fermented",
-"ja": "インフュージョン・共発酵"
+"ko": "공동발효·인퓨즈드",
+"en": "Co-fermented & Infused",
+"ja": "共発酵・インフュージョン"
 },
 "desc": {
-"ko": "커피 외 재료를 더한 커피. 공동발효와 인퓨즈드가 들어갑니다.",
-"en": "Coffee with added ingredients: co-fermentation and infusion.",
-"ja": "コーヒー以外の材料を加えたコーヒー。共発酵とインフュージョンが入ります。"
+"ko": "커피 외 재료를 더한 커피. 체리 발효 단계에서 함께 발효한 공동발효와, 가공 후 향을 입힌 인퓨즈드를 나눠 보여 줍니다.",
+"en": "Coffee with added ingredients: co-fermentation during the cherry stage and infusion after processing, kept apart.",
+"ja": "コーヒー以外の材料を加えたコーヒー。チェリー発酵段階で一緒に発酵させる共発酵と、精製後に香りを付けるインフュージョンを分けて表示します。"
 }
 },
 {
@@ -105,9 +105,9 @@ window.CI_PROCESS = {
 "ja": "デカフェ"
 },
 "desc": {
-"ko": "카페인을 뺀 커피. EA 슈가케인·스위스워터·CO2·마운틴워터가 들어갑니다.",
-"en": "Caffeine removed: EA sugarcane, Swiss Water, CO2 and Mountain Water.",
-"ja": "カフェインを抜いたコーヒー。EAサトウキビ・スイスウォーター・CO2・マウンテンウォーターが入ります。"
+"ko": "카페인을 뺀 커피. EA 슈가케인·스위스워터·CO2·마운틴워터와 공법 미표기를 나눠 보여 줍니다.",
+"en": "Caffeine removed: EA sugarcane, Swiss Water, CO2, Mountain Water and unstated methods, kept apart.",
+"ja": "カフェインを抜いたコーヒー。EAサトウキビ・スイスウォーター・CO2・マウンテンウォーターと、方法不明の表記を分けて表示します。"
 }
 }
 ],
@@ -125,23 +125,37 @@ window.CI_PROCESS = {
 "thermal-shock",
 "carbonic-maceration",
 "asd",
-"dark-room",
+"triple-anaerobic",
 "double-anaerobic",
+"nitro",
 "yeast",
 "co-fermentation",
 "anaerobic-natural",
 "anaerobic-washed",
 "anaerobic-honey",
+"dark-room-washed",
+"dark-room-natural",
+"dark-room",
 "infused",
+"gold-honey",
 "white-honey",
 "yellow-honey",
 "red-honey",
 "black-honey",
+"raisin-honey",
+"light-honey",
 "wet-hulled",
 "wet-polished",
+"full-washed",
+"double-fermented-washed",
+"extended-washed",
 "kenya-double-washed",
+"double-fermented-natural",
+"double-fermented-honey",
 "double-fermentation",
 "pulped-natural",
+"raisin-natural",
+"monsooned",
 "semi-washed",
 "honey",
 "natural",
@@ -870,62 +884,61 @@ window.CI_PROCESS = {
 "ja": "ASDは団体の標準ではなく、生産者や輸入業者が使う名称です。発酵4〜10日、乾燥3〜5週間のようにロットごとに数字が違うため、名前より数字も一緒に見る必要があります。"
 }
 },
-"dark-room": {
+"triple-anaerobic": {
 "level": 2,
 "group": "무산소·특수",
 "chip": "anaerobic",
 "label": {
-"ko": "다크룸 (암실 발효·건조)",
-"en": "Dark Room (DRD)",
-"ja": "ダークルーム（DRD）"
+"ko": "트리플 무산소 발효",
+"en": "Triple Anaerobic",
+"ja": "トリプルアナエロビック"
 },
 "alias": {
 "ko": [
-"다크룸",
-"다크 룸",
-"암실 건조",
-"DRD"
+"트리플 무산소",
+"삼중 무산소",
+"3중 무산소",
+"트리플 퍼멘테이션"
 ],
 "en": [
-"Dark Room",
-"DRD",
-"Dark Room Dried"
+"Triple Anaerobic",
+"Triple Fermentation",
+"Triple Anaerobic Natural"
 ],
 "ja": [
-"ダークルーム",
-"暗室乾燥",
-"DRD"
+"トリプルアナエロビック",
+"三段発酵"
 ]
 },
 "summary": {
-"ko": "빛을 차단한 방에서 온도와 습도를 맞춰 발효·건조하는 방식입니다.",
-"en": "Fermentation and drying inside a light-blocked room with controlled temperature and humidity.",
-"ja": "光を遮った部屋で温度と湿度を管理しながら発酵・乾燥させる方法です。"
+"ko": "밀폐 무산소 발효를 두세 번, 사이사이 건조를 넣어 반복하는 방식입니다.",
+"en": "Sealed anaerobic fermentation repeated two or three times, with short drying between rounds.",
+"ja": "密閉した嫌気発酵を二〜三回、間に乾燥を挟んで繰り返す方法です。"
 },
 "how": {
-"ko": "발효는 밀폐 탱크나 전용 실에서 하고, 건조는 빛이 들지 않는 방에서 제습기와 팬으로 수분을 천천히 뺍니다. 파나마 엘리다의 DRD는 발효가 끝난 생두를 암실에서 6~8주 말리는 건조 방식입니다.",
-"en": "Fermentation happens in sealed tanks or a dedicated room; drying happens in a dark room where dehumidifiers and fans pull moisture out slowly. Elida's DRD in Panama is a drying stage: six to eight weeks in the dark after fermentation.",
-"ja": "発酵は密閉タンクや専用室で行い、乾燥は光の入らない部屋で除湿機とファンを使ってゆっくり水分を抜きます。パナマのエリダのDRDは、発酵後の豆を暗室で6〜8週間乾かす乾燥工程です。"
+"ko": "체리 또는 펄프 상태로 48시간 안팎 무산소 발효하고 짧게 말린 뒤 다시 밀폐하는 식으로 3회 반복합니다. 전체 20~25일이 걸리기도 합니다.",
+"en": "Cherries or parchment ferment sealed for about 48 hours, dry briefly, are sealed again, and the cycle repeats three times; the whole run can take 20–25 days.",
+"ja": "チェリーまたはパーチメントの状態で48時間ほど嫌気発酵し、短く乾かして再び密閉する工程を3回繰り返します。全体で20〜25日かかることもあります。"
 },
 "cup": {
-"ko": "향이 맑고 깨끗하게 남습니다. 과일향이 과하게 튀지 않고, 산미와 단맛이 정돈된 인상을 줍니다.",
-"en": "Aromas stay clear and clean: fruit that does not shout, with acidity and sweetness held in order.",
-"ja": "香りが澄んで残ります。果実香が過度に主張せず、酸味と甘さが整った印象です。"
+"ko": "과일향이 겹겹이 쌓이고 와인 같은 복합미와 강한 단맛. 과하면 발효 취가 앞섭니다.",
+"en": "Layered fruit, wine-like complexity and strong sweetness; overdone, the ferment note dominates.",
+"ja": "果実香が幾重にも重なり、ワインのような複雑さと強い甘さ。行き過ぎると発酵臭が前に出ます。"
 },
 "roast": {
-"ko": "수분이 낮고 향이 섬세해 초반 열량을 낮게 잡습니다. 배전이 길면 깨끗함이 먼저 사라집니다.",
-"en": "Low moisture and delicate aromas call for gentle early heat; a long roast loses the cleanliness first.",
-"ja": "水分が低く香りが繊細なので、序盤の熱量を低めにします。焙煎が長いと、まずきれいさが失われます。"
+"ko": "발효 향이 강해 라이트미디엄에서 균형을 잡습니다. 배전이 길면 시럽처럼 뭉갭니다.",
+"en": "Strong ferment aromas balance best at light-medium; a long roast turns them syrupy.",
+"ja": "発酵香が強いのでライトミディアムで均衡を取ります。焙煎が長いとシロップのように潰れます。"
 },
 "origins": {
-"ko": "파나마 엘리다(DRD), 콜롬비아 후일라(엘 미라도르·노갈레스), 코스타리카. 대회 출품 랏에 많습니다.",
-"en": "Elida in Panama (DRD), Huila in Colombia (El Mirador, Nogales) and Costa Rica; common in competition lots.",
-"ja": "パナマのエリダ（DRD）、コロンビアのウイラ（エル・ミラドール、ノガレス）、コスタリカ。大会出品ロットに多いです。"
+"ko": "콜롬비아 엘 파라이소·라 마리아, 중국 윈난. 이 데이터에는 아직 없습니다.",
+"en": "El Paraíso and La María in Colombia and Yunnan in China; none in this dataset yet.",
+"ja": "コロンビアのエル・パライソ・ラ・マリア、中国雲南。このデータにはまだありません。"
 },
 "caution": {
-"ko": "DRD는 발효가 아니라 건조 방식이고, 다크룸 발효와는 단계가 다릅니다. '다크룸'이라는 라벨만으로 발효 방식까지 알 수는 없습니다.",
-"en": "DRD is a drying method, not a fermentation, and sits at a different stage from dark-room fermentation. The label alone does not tell you how the coffee fermented.",
-"ja": "DRDは発酵ではなく乾燥方法で、ダークルーム発酵とは段階が違います。「ダークルーム」の表示だけでは発酵方法までは分かりません。"
+"ko": "무엇을 한 번으로 세는지는 생산자마다 달라, '트리플'이 정해진 공정이나 품질 보증은 아닙니다.",
+"en": "Producers count rounds differently, so 'triple' is neither a fixed protocol nor a guarantee of quality.",
+"ja": "何を一回と数えるかは生産者ごとに違い、「トリプル」が決まった工程や品質保証ではありません。"
 }
 },
 "double-anaerobic": {
@@ -981,6 +994,64 @@ window.CI_PROCESS = {
 "ko": "1차·2차 시간과 온도는 생산자마다 다르고 표준이 없습니다. 같은 '이중 무산소'라도 36+20시간인지 52+48시간인지에 따라 맛이 크게 달라집니다.",
 "en": "Stage times and temperatures vary by producer with no standard. One double anaerobic can be 36+20 hours, another 52+48, and the cup differs a lot.",
 "ja": "一次・二次の時間と温度は生産者ごとに違い、標準はありません。同じ「ダブルアナエロビック」でも36+20時間か52+48時間かで味が大きく変わります。"
+}
+},
+"nitro": {
+"level": 2,
+"group": "무산소·특수",
+"chip": "anaerobic",
+"label": {
+"ko": "나이트로 발효 (질소)",
+"en": "Nitro Fermentation",
+"ja": "ニトロ発酵（窒素）"
+},
+"alias": {
+"ko": [
+"나이트로",
+"나이트로 발효",
+"질소 발효",
+"질소 퍼지"
+],
+"en": [
+"Nitro",
+"Nitro Fermentation",
+"Nitro Washed",
+"Nitrogen Fermentation"
+],
+"ja": [
+"ニトロ発酵",
+"窒素発酵"
+]
+},
+"summary": {
+"ko": "밀폐 탱크에 식품용 질소를 넣어 산소를 밀어내고 발효를 제어하는 방식입니다.",
+"en": "Food-grade nitrogen displaces oxygen in a sealed tank so the fermentation can be steered.",
+"ja": "密閉タンクに食品用窒素を入れて酸素を追い出し、発酵を制御する方法です。"
+},
+"how": {
+"ko": "체리나 펄프를 탱크에 넣고 질소로 산소를 치환합니다. 스타터와 모스트를 더하기도 하며 4~6일 pH와 당도(Brix)를 보며 발효하고, 세척해 천천히 말립니다.",
+"en": "Cherries or parchment go into a tank and nitrogen replaces the oxygen. Starter cultures and must are sometimes added; fermentation runs four to six days with pH and Brix monitored, then the lot is washed and dried slowly.",
+"ja": "チェリーやパーチメントをタンクに入れ、窒素で酸素を置換します。スターターやモストを加えることもあり、4〜6日pHとBrixを見ながら発酵させ、洗ってゆっくり乾かします。"
+},
+"cup": {
+"ko": "과일향이 선명하고 단맛이 강하며 산미는 깨끗합니다. 거친 발효 취가 적습니다.",
+"en": "Clear fruit, strong sweetness and clean acidity, with fewer rough ferment notes.",
+"ja": "果実香が鮮明で甘さが強く、酸味はきれいです。粗い発酵臭が少ないのが特徴です。"
+},
+"roast": {
+"ko": "향이 실험적이라 라이트미디엄에서 과일향을 지키는 편이 좋습니다.",
+"en": "Experimental aromas hold best at light-medium.",
+"ja": "香りが実験的なので、ライトミディアムで果実香を保つのがよいです。"
+},
+"origins": {
+"ko": "콜롬비아 리사랄다 카페 우바·핀카 밀란. 이 데이터에는 아직 없습니다.",
+"en": "Café Uba and Finca Milán in Risaralda, Colombia; none in this dataset yet.",
+"ja": "コロンビアのリサラルダ、カフェ・ウバとフィンカ・ミラン。このデータにはまだありません。"
+},
+"caution": {
+"ko": "질소는 향료가 아니라 산소를 빼는 도구입니다. 카페에서 파는 질소 콜드브루와는 다른 생두 가공입니다.",
+"en": "Nitrogen is an oxygen-displacing tool, not a flavouring, and this is green-bean processing, not nitro cold brew.",
+"ja": "窒素は香料ではなく酸素を除く道具です。カフェのニトロコールドブリューとは別の生豆加工です。"
 }
 },
 "yeast": {
@@ -1237,6 +1308,176 @@ window.CI_PROCESS = {
 "ja": "コスタリカのラス・ラハス（ブラックダイヤモンド、アルマ・ネグラ）、コロンビア、パナマ。"
 }
 },
+"dark-room-washed": {
+"level": 2,
+"group": "워시드 세부",
+"chip": "washed",
+"label": {
+"ko": "DRD 워시드 (암실 건조)",
+"en": "DRD Washed (Dark Room Dried)",
+"ja": "DRDウォッシュド（暗室乾燥）"
+},
+"alias": {
+"ko": [
+"DRD 워시드",
+"워시드 다크룸",
+"암실 건조 워시드"
+],
+"en": [
+"DRD Washed",
+"Washed DRD",
+"Dark Room Dried Washed"
+],
+"ja": [
+"DRDウォッシュド",
+"ウォッシュド・ダークルーム"
+]
+},
+"summary": {
+"ko": "워시드로 가공한 생두를 빛이 들지 않는 방에서 저온·저습으로 천천히 말리는 방식입니다.",
+"en": "Washed parchment dried slowly in a light-blocked room kept cool and dry.",
+"ja": "ウォッシュドで精製した豆を、光の入らない低温・低湿の部屋でゆっくり乾かす方法です。"
+},
+"how": {
+"ko": "발효와 세척을 마친 생두를 암실로 옮겨 제습기와 팬으로 6~8주 건조합니다. DRD는 Dark Room Dried의 약자로, 발효가 끝난 뒤의 건조 단계를 가리킵니다.",
+"en": "After fermentation and washing the parchment moves to a dark room and dries for six to eight weeks with dehumidifiers and fans. DRD stands for Dark Room Dried and names the drying stage after fermentation.",
+"ja": "発酵と洗浄を終えたパーチメントを暗室へ移し、除湿機とファンで6〜8週間乾かします。DRDはDark Room Driedの略で、発酵後の乾燥段階を指します。"
+},
+"cup": {
+"ko": "향이 맑고 깨끗하게 남습니다. 과일향이 과하게 튀지 않고 산미와 단맛이 정돈됩니다.",
+"en": "Aromas stay clear and clean: fruit that does not shout, with acidity and sweetness held in order.",
+"ja": "香りが澄んで残ります。果実香が過度に主張せず、酸味と甘さが整います。"
+},
+"roast": {
+"ko": "수분이 낮고 향이 섬세해 초반 열량을 낮게 잡습니다. 배전이 길면 깨끗함이 먼저 사라집니다.",
+"en": "Low moisture and delicate aromas call for gentle early heat; a long roast loses the cleanliness first.",
+"ja": "水分が低く香りが繊細なので序盤の熱量を低めに。焙煎が長いと、まずきれいさが失われます。"
+},
+"origins": {
+"ko": "파나마 엘리다·체바스, 브라질 파젠다 엄, 에티오피아 케라모. 이 데이터에서 7종입니다.",
+"en": "Elida and Chevas in Panama, Fazenda Um in Brazil and Keramo in Ethiopia; seven beans here.",
+"ja": "パナマのエリダ・チェバス、ブラジルのファゼンダ・ウム、エチオピアのケラモ。このデータでは7種です。"
+},
+"caution": {
+"ko": "DRD는 발효가 아니라 건조 방식입니다. '다크룸 발효'와 단계가 다르고, 라벨만으로 발효 방법까지 알 수는 없습니다.",
+"en": "DRD is a drying method, not a fermentation. It sits at a different stage from dark-room fermentation, and the label alone does not reveal how the coffee fermented.",
+"ja": "DRDは発酵ではなく乾燥方法です。ダークルーム発酵とは段階が違い、ラベルだけでは発酵方法までは分かりません。"
+}
+},
+"dark-room-natural": {
+"level": 2,
+"group": "내추럴 세부",
+"chip": "natural",
+"label": {
+"ko": "DRD 내추럴 (암실 건조)",
+"en": "DRD Natural (Dark Room Dried)",
+"ja": "DRDナチュラル（暗室乾燥）"
+},
+"alias": {
+"ko": [
+"DRD 내추럴",
+"내추럴 다크룸",
+"암실 건조 내추럴"
+],
+"en": [
+"DRD Natural",
+"Natural DRD",
+"Dark Room Dried Natural"
+],
+"ja": [
+"DRDナチュラル",
+"ナチュラル・ダークルーム"
+]
+},
+"summary": {
+"ko": "체리를 통째로 암실에서 저온·저습으로 말리는 내추럴입니다.",
+"en": "Whole cherries dried slowly in a cool, dark, low-humidity room.",
+"ja": "チェリーを丸ごと、低温・低湿の暗室でゆっくり乾かすナチュラルです。"
+},
+"how": {
+"ko": "선별한 체리를 암실 건조대에 얇게 펴고 2~4주 이상 뒤집어 가며 말립니다. 빛과 온도를 막아 과발효와 곰팡이를 관리하는 것이 핵심입니다.",
+"en": "Sorted cherries are spread thin on dark-room beds and turned for two to four weeks or more. Blocking light and holding temperature down is how over-fermentation and mould are kept in check.",
+"ja": "選別したチェリーを暗室の乾燥台に薄く広げ、2〜4週間以上かけて裏返しながら乾かします。光と温度を遮り、過発酵とカビを抑えるのが要点です。"
+},
+"cup": {
+"ko": "과일향이 선명하지만 잼처럼 뭉개지지 않고, 단맛과 산미가 정돈됩니다.",
+"en": "Fruit comes through clearly without turning jammy, with sweetness and acidity kept tidy.",
+"ja": "果実香が鮮明でもジャムのように潰れず、甘さと酸味が整います。"
+},
+"roast": {
+"ko": "잔당이 많아 초반 열량을 낮게 시작합니다. 중배전에서 과일향과 초콜릿이 균형을 이룹니다.",
+"en": "Lots of residual sugar, so start gentle; medium balances the fruit with chocolate.",
+"ja": "残糖が多いので序盤は弱めに。中煎りで果実香とチョコレートが釣り合います。"
+},
+"origins": {
+"ko": "파나마 엘리다 토레·체바스, 브라질 파젠다 호도무뇨. 이 데이터에서 5종입니다.",
+"en": "Elida Torre and Chevas in Panama and Fazenda Rodomunho in Brazil; five beans here.",
+"ja": "パナマのエリダ・トーレとチェバス、ブラジルのファゼンダ・ロドムーニョ。このデータでは5種です。"
+},
+"caution": {
+"ko": "건조 방식 이름이라 발효 방법은 따로 확인해야 합니다. 같은 DRD라도 무산소 발효를 거친 랏이 있습니다.",
+"en": "This names the drying, so check the fermentation separately; some DRD lots also went through anaerobic fermentation.",
+"ja": "乾燥方法の名前なので、発酵方法は別に確認する必要があります。同じDRDでも嫌気発酵を経たロットがあります。"
+}
+},
+"dark-room": {
+"level": 2,
+"group": "무산소·특수",
+"chip": "anaerobic",
+"label": {
+"ko": "다크룸 (암실 발효)",
+"en": "Dark Room (fermentation)",
+"ja": "ダークルーム（発酵）"
+},
+"alias": {
+"ko": [
+"다크룸",
+"다크 룸",
+"암실 건조",
+"DRD"
+],
+"en": [
+"Dark Room",
+"DRD",
+"Dark Room Dried"
+],
+"ja": [
+"ダークルーム",
+"暗室乾燥",
+"DRD"
+]
+},
+"summary": {
+"ko": "빛을 차단한 방에서 온도와 습도를 맞춰 발효하는 방식입니다. 건조 단계를 가리키는 DRD와는 구분합니다.",
+"en": "Fermentation inside a light-blocked room with controlled temperature and humidity, distinct from DRD, which names the drying stage.",
+"ja": "光を遮った部屋で温度と湿度を管理しながら発酵させる方法です。乾燥段階を指すDRDとは区別します。"
+},
+"how": {
+"ko": "발효는 밀폐 탱크나 전용 실에서 하고, 건조는 빛이 들지 않는 방에서 제습기와 팬으로 수분을 천천히 뺍니다. 파나마 엘리다의 DRD는 발효가 끝난 생두를 암실에서 6~8주 말리는 건조 방식입니다.",
+"en": "Fermentation happens in sealed tanks or a dedicated room; drying happens in a dark room where dehumidifiers and fans pull moisture out slowly. Elida's DRD in Panama is a drying stage: six to eight weeks in the dark after fermentation.",
+"ja": "発酵は密閉タンクや専用室で行い、乾燥は光の入らない部屋で除湿機とファンを使ってゆっくり水分を抜きます。パナマのエリダのDRDは、発酵後の豆を暗室で6〜8週間乾かす乾燥工程です。"
+},
+"cup": {
+"ko": "향이 맑고 깨끗하게 남습니다. 과일향이 과하게 튀지 않고, 산미와 단맛이 정돈된 인상을 줍니다.",
+"en": "Aromas stay clear and clean: fruit that does not shout, with acidity and sweetness held in order.",
+"ja": "香りが澄んで残ります。果実香が過度に主張せず、酸味と甘さが整った印象です。"
+},
+"roast": {
+"ko": "수분이 낮고 향이 섬세해 초반 열량을 낮게 잡습니다. 배전이 길면 깨끗함이 먼저 사라집니다.",
+"en": "Low moisture and delicate aromas call for gentle early heat; a long roast loses the cleanliness first.",
+"ja": "水分が低く香りが繊細なので、序盤の熱量を低めにします。焙煎が長いと、まずきれいさが失われます。"
+},
+"origins": {
+"ko": "파나마 엘리다(DRD), 콜롬비아 후일라(엘 미라도르·노갈레스), 코스타리카. 대회 출품 랏에 많습니다.",
+"en": "Elida in Panama (DRD), Huila in Colombia (El Mirador, Nogales) and Costa Rica; common in competition lots.",
+"ja": "パナマのエリダ（DRD）、コロンビアのウイラ（エル・ミラドール、ノガレス）、コスタリカ。大会出品ロットに多いです。"
+},
+"caution": {
+"ko": "DRD는 발효가 아니라 건조 방식이고, 다크룸 발효와는 단계가 다릅니다. '워시드 다크룸'·'내추럴 다크룸'처럼 베이스가 적히면 DRD 워시드·DRD 내추럴로 따로 분류합니다.",
+"en": "DRD is a drying method, not a fermentation, and sits at a different stage. When a base is given, as in washed or natural dark room, the lot is filed under DRD Washed or DRD Natural instead.",
+"ja": "DRDは発酵ではなく乾燥方法で、ダークルーム発酵とは段階が違います。「ウォッシュド・ダークルーム」「ナチュラル・ダークルーム」のようにベースが書かれていれば、DRDウォッシュド・DRDナチュラルとして分けます。"
+}
+},
 "infused": {
 "level": 2,
 "group": "인퓨즈드·코퍼멘",
@@ -1291,6 +1532,60 @@ window.CI_PROCESS = {
 "ko": "인퓨즈드와 공동발효는 업계에서도 정의가 통일되지 않았습니다. 원두를 고를 때는 '무엇을 언제 넣었는지'를 판매처 설명에서 확인하는 것이 가장 확실합니다.",
 "en": "Even the industry has no agreed definition of infused versus co-fermented. The surest check is the seller's note on what was added and when.",
 "ja": "インフュージョンと共発酵の定義は業界でも統一されていません。豆を選ぶときは「何をいつ加えたか」を販売者の説明で確認するのが確実です。"
+}
+},
+"gold-honey": {
+"level": 2,
+"group": "허니 세부",
+"chip": "honey",
+"label": {
+"ko": "골드 허니",
+"en": "Gold Honey",
+"ja": "ゴールドハニー"
+},
+"alias": {
+"ko": [
+"골드 허니",
+"골든 허니"
+],
+"en": [
+"Gold Honey",
+"Golden Honey"
+],
+"ja": [
+"ゴールドハニー",
+"ゴールデンハニー"
+]
+},
+"summary": {
+"ko": "옐로우와 레드 사이에 놓이는 허니로, 점액질을 절반 이상 남기고 햇볕에서 말립니다.",
+"en": "A honey grade between yellow and red: more than half the mucilage kept and dried in the sun.",
+"ja": "イエローとレッドの間に位置するハニーで、ミュシレージを半分以上残して天日で乾かします。"
+},
+"how": {
+"ko": "디뮤실리지를 50~75% 남기도록 맞추고 10~14일 볕에 말립니다. 생산자에 따라 50~60%로 적기도 합니다.",
+"en": "The demucilager is set to leave 50–75% of the mucilage and the coffee dries in sun for 10–14 days; some producers state 50–60%.",
+"ja": "デミュシレージャーを50〜75%残す設定にし、天日で10〜14日乾かします。生産者によっては50〜60%と表記します。"
+},
+"cup": {
+"ko": "중간 정도의 단맛과 둥근 바디, 온화한 과일향. 옐로우보다 과일감이 있고 레드보다 깔끔합니다.",
+"en": "Medium sweetness, a rounded body and mild fruit: fruitier than yellow, cleaner than red.",
+"ja": "中程度の甘さと丸いボディ、穏やかな果実香。イエローより果実感があり、レッドよりきれいです。"
+},
+"roast": {
+"ko": "중배전에서 단맛과 산미가 균형을 이룹니다. 초반 열량을 조금 낮춰 점액질이 타지 않게 합니다.",
+"en": "Medium roast balances sweetness and acidity; ease the early heat so the mucilage does not scorch.",
+"ja": "中煎りで甘さと酸味が釣り合います。序盤の熱量を少し下げ、ミュシレージを焦がさないようにします。"
+},
+"origins": {
+"ko": "코스타리카 마이크로밀. 이 데이터에는 아직 없고, 대개 옐로우 허니로 표기됩니다.",
+"en": "Costa Rican micro-mills; none in this dataset yet, as most such lots are labelled yellow honey.",
+"ja": "コスタリカのマイクロミル。このデータにはまだなく、多くはイエローハニーとして表記されます。"
+},
+"caution": {
+"ko": "색 등급은 표준이 아니며, 골드 허니를 옐로우 허니와 같은 뜻으로 쓰는 판매처가 많습니다. 점액질 비율도 농장마다 다릅니다.",
+"en": "The colour grades are not standard, and many sellers use gold and yellow interchangeably; the mucilage ratio also varies by farm.",
+"ja": "色の等級は標準ではなく、ゴールドとイエローを同じ意味で使う販売者も多いです。ミュシレージの比率も農園ごとに違います。"
 }
 },
 "white-honey": {
@@ -1351,16 +1646,13 @@ window.CI_PROCESS = {
 "alias": {
 "ko": [
 "옐로우 허니",
-"옐로 허니",
-"골드 허니"
+"옐로 허니"
 ],
 "en": [
-"Yellow Honey",
-"Gold Honey"
+"Yellow Honey"
 ],
 "ja": [
-"イエローハニー",
-"ゴールドハニー"
+"イエローハニー"
 ]
 },
 "summary": {
@@ -1448,11 +1740,11 @@ window.CI_PROCESS = {
 "ko": [
 "블랙 허니",
 "블랙허니",
-"라이트 허니"
+"블랙 다이아몬드"
 ],
 "en": [
 "Black Honey",
-"Light Honey"
+"Black Diamond"
 ],
 "ja": [
 "ブラックハニー"
@@ -1484,14 +1776,120 @@ window.CI_PROCESS = {
 "ja": "コスタリカ、パナマ、コロンビア。ラス・ラハスの「ブラックダイヤモンド」はふつうこの段階かアナエロビックハニーです。"
 },
 "caution": {
-"ko": "이 데이터에는 '라이트 허니'가 블랙 허니로 표기돼 있습니다. 판매처에 따라 라이트 허니를 화이트·옐로우 사이로 쓰기도 하므로, 라이트 허니 라벨은 점액질 양을 따로 확인하는 편이 좋습니다.",
-"en": "This dataset files 'Light Honey' under black honey. Some sellers use light honey between white and yellow, so check the mucilage level behind that label.",
-"ja": "このデータでは「ライトハニー」をブラックハニーに分類しています。販売者によってはホワイトとイエローの間に置くため、ラベルだけで判断せず残存率を確認するのがよいです。"
+"ko": "색 이름의 점액질 잔류율(화이트 10%, 옐로우 25~50%, 골드 50~75%, 레드 75~90%, 블랙 90~100%)은 어느 단체도 정한 기준이 아닙니다. 같은 농장의 '레드'가 다른 농장의 '옐로우'일 수 있어, 수치보다 판매처의 건조 설명을 보는 편이 정확합니다.",
+"en": "The mucilage percentages behind the colour names (white 10%, yellow 25–50%, gold 50–75%, red 75–90%, black 90–100%) are not fixed by any standards body. One farm's red can be another's yellow, so read the producer's drying notes rather than the number.",
+"ja": "色名のミュシレージ残存率（ホワイト10%、イエロー25〜50%、ゴールド50〜75%、レッド75〜90%、ブラック90〜100%）は、どの団体も定めた基準ではありません。ある農園の「レッド」が別の農園の「イエロー」であることもあるため、数値より生産者の乾燥説明を見るほうが正確です。"
+}
+},
+"raisin-honey": {
+"level": 2,
+"group": "허니 세부",
+"chip": "honey",
+"label": {
+"ko": "레이즌 허니",
+"en": "Raisin Honey",
+"ja": "レーズンハニー"
+},
+"alias": {
+"ko": [
+"레이즌 허니",
+"레이즌허니",
+"건포도 허니"
+],
+"en": [
+"Raisin Honey",
+"Raisin Honey Process"
+],
+"ja": [
+"レーズンハニー"
+]
+},
+"summary": {
+"ko": "체리를 먼저 2~3일 말려 건포도처럼 만든 뒤 탈피해 허니로 마무리하는 코스타리카식 방식입니다.",
+"en": "Costa Rica's two-stage method: cherries dry for two to three days until raisin-like, then are pulped and finished as a honey.",
+"ja": "チェリーをまず2〜3日乾かしてレーズン状にし、パルピングしてハニーとして仕上げるコスタリカ式です。"
+},
+"how": {
+"ko": "완숙 체리를 물에 띄워 선별하고 건조대에서 2~3일 말립니다. 껍질이 오므라들면 탈피해 점액질을 거의 다 남긴 채 다시 말리고 발효시킵니다.",
+"en": "Fully ripe cherries are float-sorted and dried on beds for two to three days. Once the skin wrinkles they are pulped, and the mucilage is left almost entirely on for a second drying and fermentation.",
+"ja": "完熟チェリーを浮選で選別し、乾燥台で2〜3日乾かします。皮がしぼんだらパルピングし、ミュシレージをほぼ全部残したまま再度乾燥・発酵させます。"
+},
+"cup": {
+"ko": "건포도·자두·장미 같은 향과 시럽 같은 바디, 와인 같은 여운. 단맛이 매우 진합니다.",
+"en": "Raisin, plum and rose aromas with a syrupy body and a wine-like finish; the sweetness is intense.",
+"ja": "レーズン・プラム・バラのような香りとシロップのようなボディ、ワインのような余韻。甘さが非常に濃いです。"
+},
+"roast": {
+"ko": "잔당이 많아 초반에 타기 쉽습니다. 낮은 열량으로 천천히 끌고 갑니다.",
+"en": "Lots of residual sugar scorches easily; start low and draw the roast out.",
+"ja": "残糖が多く序盤に焦げやすいです。低い熱量でゆっくり進めます。"
+},
+"origins": {
+"ko": "코스타리카 타라수(뮤지션 시리즈). 이 데이터에서 1종입니다.",
+"en": "Tarrazú in Costa Rica, including the Musician series; one bean here.",
+"ja": "コスタリカのタラス（ミュージシャン・シリーズ）。このデータでは1種です。"
+},
+"caution": {
+"ko": "표준 등급이 아니고, 브라질의 '레이즌 공정'과 순서가 다릅니다. 이쪽은 체리를 먼저 말린 뒤 허니 단계를 거칩니다.",
+"en": "Not a standard grade, and the order differs from Brazil's raisin process: here the cherry dries first, then the honey stage follows.",
+"ja": "標準的な等級ではなく、ブラジルの「レーズン工程」とは順序が違います。こちらはチェリーを先に乾かしてからハニー段階に入ります。"
+}
+},
+"light-honey": {
+"level": 2,
+"group": "허니 세부",
+"chip": "honey",
+"label": {
+"ko": "라이트 허니",
+"en": "Light Honey",
+"ja": "ライトハニー"
+},
+"alias": {
+"ko": [
+"라이트 허니",
+"라이트허니"
+],
+"en": [
+"Light Honey"
+],
+"ja": [
+"ライトハニー"
+]
+},
+"summary": {
+"ko": "점액질을 적게 남긴 밝은 색 허니를 가리키는 생산자 표기입니다.",
+"en": "A producer label for a pale honey coffee with little mucilage left on.",
+"ja": "ミュシレージを少なく残した明るい色のハニーを指す生産者表記です。"
+},
+"how": {
+"ko": "탈피 뒤 점액질을 10~25%만 남기고 빠르게 말립니다. 화이트와 옐로우 사이로 쓰이는 경우가 많습니다.",
+"en": "After pulping only 10–25% of the mucilage remains and the coffee dries quickly; it is often used between white and yellow.",
+"ja": "パルピング後にミュシレージを10〜25%だけ残して速く乾かします。ホワイトとイエローの間に使われることが多いです。"
+},
+"cup": {
+"ko": "깨끗하고 가벼운 단맛, 부드러운 산미. 화이트 허니에 가깝습니다.",
+"en": "Clean, light sweetness and soft acidity, close to a white honey.",
+"ja": "きれいで軽い甘さ、やわらかな酸味。ホワイトハニーに近いです。"
+},
+"roast": {
+"ko": "수분이 비교적 고르므로 워시드에 준해 볶습니다. 중배전에서 단맛이 살아납니다.",
+"en": "Fairly even moisture, so roast close to a washed profile; medium brings out the sweetness.",
+"ja": "水分が比較的均一なのでウォッシュドに準じて焙煎します。中煎りで甘さが生きてきます。"
+},
+"origins": {
+"ko": "코스타리카 핀카 단토 센트로아메리카노, 핀카 살라카. 이 데이터에서 2종입니다.",
+"en": "Finca Danto Centroamericano and Finca Salaca in Costa Rica; two beans here.",
+"ja": "コスタリカのフィンカ・ダント・セントロアメリカーノとフィンカ・サラカ。このデータでは2種です。"
+},
+"caution": {
+"ko": "표준 등급이 아닙니다. 판매처에 따라 라이트 허니를 화이트~옐로우 사이로 쓰므로 점액질 양은 따로 확인하는 편이 좋습니다.",
+"en": "Not a standard grade: sellers place light honey anywhere between white and yellow, so check the mucilage level separately.",
+"ja": "標準的な等級ではありません。販売者によってホワイト〜イエローの間に置かれるため、ミュシレージ量は別に確認するのがよいです。"
 }
 },
 "wet-hulled": {
 "level": 2,
-"group": "세미·웻헐",
+"group": "세미·웻헐·전통",
 "chip": "semi",
 "label": {
 "ko": "웻 헐링 (길링 바사)",
@@ -1544,8 +1942,8 @@ window.CI_PROCESS = {
 },
 "wet-polished": {
 "level": 2,
-"group": "세미·웻헐",
-"chip": "semi",
+"group": "워시드 세부",
+"chip": "washed",
 "label": {
 "ko": "웻 폴리시드",
 "en": "Wet Polished",
@@ -1599,9 +1997,176 @@ window.CI_PROCESS = {
 "ja": "この表記には三つの意味があります。①乾燥後のシルバースキン除去（最も文書化されている意味）②水に浸してから研磨 ③機械式ミュシレージ除去後の乾燥。「ウェット」は水を使ったという意味で、湿式精製や発酵を意味しません。"
 }
 },
+"full-washed": {
+"level": 2,
+"group": "워시드 세부",
+"chip": "washed",
+"label": {
+"ko": "풀리 워시드",
+"en": "Fully Washed",
+"ja": "フリーウォッシュド"
+},
+"alias": {
+"ko": [
+"풀리 워시드",
+"풀리워시드",
+"완전 수세식"
+],
+"en": [
+"Fully Washed",
+"Full Wash"
+],
+"ja": [
+"フリーウォッシュド",
+"完全水洗"
+]
+},
+"summary": {
+"ko": "표준 워시드와 같은 공정을 '완전히 씻었다'고 강조한 표기입니다. 과육과 점액질을 모두 걷어내고 속껍질째 말립니다.",
+"en": "The standard washed process, labelled to stress that everything was washed off: fruit and mucilage removed before the parchment dries.",
+"ja": "標準的なウォッシュドと同じ工程を「完全に洗った」と強調する表記です。果肉とミュシレージをすべて除き、パーチメントのまま乾かします。"
+},
+"how": {
+"ko": "탈피 뒤 물속에서 12~72시간 두어 점액질을 풀고, 맑은 물로 씻어 낸 다음 수분 10~12%까지 말립니다. '풀리'는 세척을 끝까지 했다는 뜻일 뿐, 별도의 발효나 건조를 더하지는 않습니다.",
+"en": "After pulping the coffee sits in water for 12–72 hours so the mucilage breaks down, is washed clean and dried to 10–12% moisture. 'Fully' only says the washing went all the way; it adds no separate fermentation or drying step.",
+"ja": "パルピング後に水中で12〜72時間おいてミュシレージを分解し、きれいな水で洗って水分10〜12%まで乾かします。「フリー」は洗浄を最後まで行ったという意味で、別の発酵や乾燥を加えるものではありません。"
+},
+"cup": {
+"ko": "산지와 품종의 개성이 가장 또렷합니다. 밝은 산미와 깨끗한 여운, 가벼운 바디가 특징입니다.",
+"en": "Origin and variety show most clearly: bright acidity, a clean finish and a lighter body.",
+"ja": "産地と品種の個性がいちばんはっきり出ます。明るい酸味ときれいな余韻、軽いボディが特徴です。"
+},
+"roast": {
+"ko": "밀도가 높아 초반 열량을 넉넉히 줍니다. 배전이 빠르면 산미가 날카롭고, 길면 향이 뭉갭니다.",
+"en": "Dense, so charge with enough heat; a fast roast sharpens the acidity and a long one flattens the aromatics.",
+"ja": "密度が高いので序盤の熱量をしっかり。焙煎が速いと酸味が鋭く、長いと香りがぼやけます。"
+},
+"origins": {
+"ko": "과테말라·니카라과·에티오피아 등 중미와 동아프리카 전반. 이 데이터에서 121종이 이 표기입니다.",
+"en": "Guatemala, Nicaragua, Ethiopia and across Central America and East Africa; 121 beans in this dataset carry the label.",
+"ja": "グアテマラ・ニカラグア・エチオピアなど中米と東アフリカ全般。このデータでは121種がこの表記です。"
+},
+"caution": {
+"ko": "별도 공법이 아니라 워시드의 강조 표기입니다. 판매처에 따라 풀리 워시드를 72시간 발효로 설명하기도 하지만, 발효 시간은 라벨에 드러나지 않습니다.",
+"en": "It is an emphatic label for washed, not a separate method. Some sellers describe fully washed as a 72-hour ferment, but the label itself does not give the hours.",
+"ja": "別の製法ではなく、ウォッシュドを強調した表記です。販売者によっては72時間発酵と説明しますが、発酵時間はラベルには出てきません。"
+}
+},
+"double-fermented-washed": {
+"level": 2,
+"group": "워시드 세부",
+"chip": "washed",
+"label": {
+"ko": "이중 발효 워시드",
+"en": "Double Fermented Washed",
+"ja": "二段発酵ウォッシュド"
+},
+"alias": {
+"ko": [
+"이중 발효 워시드",
+"워시드 이중발효",
+"더블 퍼먼테이션 워시드"
+],
+"en": [
+"Double Fermented Washed",
+"Double Fermentation Washed"
+],
+"ja": [
+"二段発酵ウォッシュド",
+"ダブルファーメンテーションウォッシュド"
+]
+},
+"summary": {
+"ko": "발효를 두 단계로 나눠 하는 워시드입니다. 두 번째 발효를 다른 온도나 용기에서 하기도 합니다.",
+"en": "A washed coffee fermented in two deliberately separate stages, sometimes at a different temperature or in a different vessel.",
+"ja": "発酵を二段階に分けるウォッシュドです。二回目を別の温度や容器で行うこともあります。"
+},
+"how": {
+"ko": "1차 발효와 세척 뒤 12~48시간 한 번 더 발효하고 다시 씻어 말립니다. 케냐식처럼 침수를 더하는 방식과 달리, 발효 자체를 두 번 하는 데 초점이 있습니다.",
+"en": "A first fermentation and wash, then a second fermentation of 12–48 hours, another wash and drying. Unlike the Kenyan style, the point is two fermentations rather than an added soak.",
+"ja": "一次発酵と洗浄のあと、12〜48時間もう一度発酵させ、再度洗って乾かします。ケニア式の浸水とは違い、発酵そのものを二回行う点にあります。"
+},
+"cup": {
+"ko": "산미와 단맛이 겹겹이 쌓이고, 워시드 특유의 깨끗함은 유지됩니다.",
+"en": "Layered acidity and sweetness while keeping the cleanliness of a washed cup.",
+"ja": "酸味と甘さが幾重にも重なり、ウォッシュドらしいきれいさも残ります。"
+},
+"roast": {
+"ko": "표준 워시드보다 단맛이 앞서 중배전까지 무난합니다. 초반 열량은 워시드와 비슷하게 잡습니다.",
+"en": "Sweeter than standard washed and forgiving to medium; charge like a washed lot.",
+"ja": "標準ウォッシュドより甘さが前に出て中煎りまで無難です。序盤の熱量はウォッシュドと同じで構いません。"
+},
+"origins": {
+"ko": "콜롬비아·파나마·코스타리카의 마이크로 랏. 이 데이터에서 10종입니다.",
+"en": "Micro-lots in Colombia, Panama and Costa Rica; ten beans here.",
+"ja": "コロンビア・パナマ・コスタリカのマイクロロット。このデータでは10種です。"
+},
+"caution": {
+"ko": "케냐 더블 워시드와 이름이 비슷하지만 같은 말은 아닙니다. 케냐식은 세척과 침수 중심이고, 이 표기는 발효 단계가 두 번이라는 뜻입니다.",
+"en": "The name resembles Kenyan double washed but is not the same: the Kenyan style centres on washing and soaking, while this label means two fermentation stages.",
+"ja": "ケニア式ダブルウォッシュと名前は似ていますが同じではありません。ケニア式は洗浄と浸水が中心で、この表記は発酵段階が二回という意味です。"
+}
+},
+"extended-washed": {
+"level": 2,
+"group": "워시드 세부",
+"chip": "washed",
+"label": {
+"ko": "장시간 발효 워시드",
+"en": "Extended Fermentation Washed",
+"ja": "長時間発酵ウォッシュド"
+},
+"alias": {
+"ko": [
+"장시간 발효 워시드",
+"워시드 퍼먼티드",
+"발효 워시드",
+"저온 발효 워시드"
+],
+"en": [
+"Extended Fermentation Washed",
+"Fermented Washed",
+"Extended Wash"
+],
+"ja": [
+"長時間発酵ウォッシュド",
+"発酵ウォッシュド"
+]
+},
+"summary": {
+"ko": "점액질이 풀린 뒤에도 발효를 48~96시간 이상으로 끌고 가는 워시드입니다.",
+"en": "A washed coffee whose fermentation runs on past the usual point, to 48–96 hours or more.",
+"ja": "ミュシレージが落ちたあとも発酵を48〜96時間以上に長引かせるウォッシュドです。"
+},
+"how": {
+"ko": "탈피 후 탱크에서 표준보다 오래 두며 온도와 pH를 확인합니다. 48·72·96시간처럼 시간을 적는 경우가 많고, 세척과 건조는 워시드와 같습니다.",
+"en": "After pulping the tank is held longer than usual while temperature and pH are watched. Lots often state 48, 72 or 96 hours; washing and drying follow the washed routine.",
+"ja": "パルピング後、温度とpHを見ながら通常より長くタンクに置きます。48・72・96時間と表記することが多く、洗浄と乾燥はウォッシュドと同じです。"
+},
+"cup": {
+"ko": "과일향과 산미가 진해지고 바디가 두터워집니다. 지나치면 식초나 발효 취가 앞섭니다.",
+"en": "Fruit and acidity deepen and the body thickens; pushed too far, vinegar or ferment notes take over.",
+"ja": "果実香と酸味が濃くなり、ボディが厚くなります。行き過ぎると酢や発酵臭が前に出ます。"
+},
+"roast": {
+"ko": "발효 향이 예민해 배전이 길면 시럽처럼 뭉갭니다. 라이트미디엄에서 향을 지키는 편이 좋습니다.",
+"en": "The ferment aromas are fragile; a long roast turns them syrupy. Light-medium keeps them distinct.",
+"ja": "発酵香が繊細で、焙煎が長いとシロップのように潰れます。ライトミディアムで香りを保つのがよいです。"
+},
+"origins": {
+"ko": "파나마 알티에리, 콜롬비아, 에티오피아의 실험적인 마이크로 랏. 이 데이터에서 8종입니다.",
+"en": "Experimental micro-lots in Panama (Altieri), Colombia and Ethiopia; eight beans here.",
+"ja": "パナマのアルティエリ、コロンビア、エチオピアの実験的なマイクロロット。このデータでは8種です。"
+},
+"caution": {
+"ko": "'워시드 퍼먼티드'는 표준 워시드에도 있는 발효 단계를 강조한 이름입니다. 시간이 적히지 않으면 장시간 발효라고 단정할 수 없습니다.",
+"en": "'Fermented washed' names a step that standard washed also has. Without hours on the label, it cannot be called extended.",
+"ja": "「発酵ウォッシュド」は標準ウォッシュドにもある発酵段階を強調した名前です。時間の記載がなければ長時間発酵と決めつけられません。"
+}
+},
 "kenya-double-washed": {
 "level": 2,
-"group": "세미·웻헐",
+"group": "워시드 세부",
 "chip": "washed",
 "label": {
 "ko": "케냐 더블 워시드",
@@ -1657,39 +2222,149 @@ window.CI_PROCESS = {
 "ja": "「ダブルウォッシュド」がいつも二回発酵という意味ではありません。発酵後の浸水だけでもこう呼ぶことが多いため、ケニア以外では「二回発酵」か「浸水」かを分けて説明するのがよいです。"
 }
 },
+"double-fermented-natural": {
+"level": 2,
+"group": "내추럴 세부",
+"chip": "natural",
+"label": {
+"ko": "이중 발효 내추럴",
+"en": "Double Fermented Natural",
+"ja": "二段発酵ナチュラル"
+},
+"alias": {
+"ko": [
+"이중 발효 내추럴",
+"이중발효 내추럴",
+"더블 퍼먼테이션 내추럴"
+],
+"en": [
+"Double Fermented Natural",
+"Double Fermentation Natural"
+],
+"ja": [
+"二段発酵ナチュラル",
+"ダブルファーメンテーションナチュラル"
+]
+},
+"summary": {
+"ko": "통체리 발효를 두 단계로 나눠 하는 내추럴입니다.",
+"en": "A natural coffee whose whole-cherry fermentation is split into two stages.",
+"ja": "チェリー丸ごとの発酵を二段階に分けるナチュラルです。"
+},
+"how": {
+"ko": "체리를 탱크나 밀폐 용기에 두어 1차 발효하고, 짧게 말리거나 그대로 둔 뒤 2차 발효를 이어 갑니다. 마지막에 통체리로 건조합니다.",
+"en": "Cherries ferment once in a tank or sealed vessel, dry briefly or rest, then ferment a second time before finishing as a whole-cherry natural.",
+"ja": "チェリーをタンクや密閉容器で一次発酵させ、短く乾かすか休ませてから二次発酵へ。最後はチェリーのまま乾燥します。"
+},
+"cup": {
+"ko": "발효 과일향이 진하고 바디가 무겁습니다. 단맛이 강하지만 과하면 시큼한 발효 취가 납니다.",
+"en": "Deep fermented fruit and a heavy body; the sweetness is strong, but pushed too far it turns sour-fermented.",
+"ja": "発酵した果実香が濃くボディも重いです。甘さは強いものの、行き過ぎると酸っぱい発酵臭が出ます。"
+},
+"roast": {
+"ko": "잔당이 많아 초반 열량을 낮게 잡습니다. 중배전에서 과일향과 초콜릿이 어울립니다.",
+"en": "Lots of residual sugar, so keep the early heat low; medium brings fruit and chocolate together.",
+"ja": "残糖が多いので序盤の熱量を低く。中煎りで果実香とチョコレートが調和します。"
+},
+"origins": {
+"ko": "콜롬비아 엘 엔칸토·벨라비스타, 코스타리카 돈 사비노. 이 데이터에서 5종입니다.",
+"en": "El Encanto and Bella Vista in Colombia and Don Sabino in Costa Rica; five beans here.",
+"ja": "コロンビアのエル・エンカント・ベラビスタ、コスタリカのドン・サビノ。このデータでは5種です。"
+},
+"caution": {
+"ko": "'이중 무산소 내추럴'과 다릅니다. 이쪽은 밀폐 여부와 무관하게 발효를 두 번 한 내추럴이고, 저쪽은 밀폐 발효를 두 번 한 경우입니다.",
+"en": "Not the same as double anaerobic natural: this means two fermentations regardless of sealing, while that one means two sealed fermentations.",
+"ja": "「二段嫌気ナチュラル」とは違います。こちらは密閉かどうかに関わらず発酵を二回したナチュラルで、あちらは密閉発酵を二回した場合です。"
+}
+},
+"double-fermented-honey": {
+"level": 2,
+"group": "허니 세부",
+"chip": "honey",
+"label": {
+"ko": "이중 발효 허니",
+"en": "Double Fermented Honey",
+"ja": "二段発酵ハニー"
+},
+"alias": {
+"ko": [
+"이중 발효 허니",
+"이중발효 허니",
+"더블 퍼먼테이션 허니"
+],
+"en": [
+"Double Fermented Honey",
+"Double Fermentation Honey"
+],
+"ja": [
+"二段発酵ハニー",
+"ダブルファーメンテーションハニー"
+]
+},
+"summary": {
+"ko": "점액질을 남긴 허니 상태에서 발효를 두 번 하는 방식입니다.",
+"en": "A honey coffee that ferments twice with the mucilage still on.",
+"ja": "ミュシレージを残したハニー状態で発酵を二回行う方法です。"
+},
+"how": {
+"ko": "탈피해 점액질을 남긴 생두를 1차 발효하고, 세척하거나 건조한 뒤 2차 발효를 더 합니다. 이후 허니 방식으로 말립니다.",
+"en": "Pulped parchment with mucilage ferments once, is washed or dried, then ferments a second time before drying as a honey.",
+"ja": "パルピングしてミュシレージを残した豆を一次発酵し、洗うか乾かしてから二次発酵を加えます。その後ハニー方式で乾燥します。"
+},
+"cup": {
+"ko": "꿀 같은 단맛에 과일향이 겹치고 바디가 있습니다. 산미는 부드럽습니다.",
+"en": "Honeyed sweetness layered with fruit and a full body; the acidity stays soft.",
+"ja": "はちみつのような甘さに果実香が重なり、ボディがあります。酸味はやわらかいです。"
+},
+"roast": {
+"ko": "점액질이 남아 수분이 고르지 않으니 초반 열량을 조절합니다. 중배전에서 단맛이 살아납니다.",
+"en": "Mucilage makes moisture uneven, so moderate the early heat; medium brings out the sweetness.",
+"ja": "ミュシレージが残り水分が不均一なので、序盤の熱量を調整します。中煎りで甘さが生きてきます。"
+},
+"origins": {
+"ko": "콜롬비아 리오네그로·벨라비스타, 온두라스. 이 데이터에서 3종입니다.",
+"en": "Río Negro and Bella Vista in Colombia and Honduras; three beans here.",
+"ja": "コロンビアのリオネグロ・ベラビスタ、ホンジュラス。このデータでは3種です。"
+},
+"caution": {
+"ko": "허니 색 등급과 발효 횟수는 별개입니다. 라벨에 색이 없으면 점액질 양은 알 수 없습니다.",
+"en": "Colour grade and fermentation count are separate things; without a colour on the label the mucilage level is unknown.",
+"ja": "ハニーの色等級と発酵回数は別です。ラベルに色がなければミュシレージ量は分かりません。"
+}
+},
 "double-fermentation": {
 "level": 2,
 "group": "무산소·특수",
 "chip": "anaerobic",
 "label": {
-"ko": "이중 발효",
-"en": "Double Fermentation",
-"ja": "二重発酵"
+"ko": "이중 발효 (베이스 미표기)",
+"en": "Double Fermentation (base not stated)",
+"ja": "二段発酵（ベース表記なし）"
 },
 "alias": {
 "ko": [
 "이중 발효",
 "더블 퍼멘테이션",
-"2차 발효"
+"더블 퍼먼테이션"
 ],
 "en": [
 "Double Fermentation",
-"Double Fermented"
+"Double Ferment"
 ],
 "ja": [
-"二重発酵",
+"二段発酵",
 "ダブルファーメンテーション"
 ]
 },
 "summary": {
-"ko": "발효를 두 번에 나눠 하는 방식을 통칭하는 말로, 뜻이 넓고 표준이 없습니다.",
-"en": "An umbrella term for fermenting in two stages — broad, and without a standard.",
-"ja": "発酵を二回に分ける方法の総称で、意味が広く標準はありません。"
+"ko": "발효를 두 단계로 나눴지만 베이스 가공(워시드·내추럴·허니)이 라벨에 없는 표기입니다.",
+"en": "A label that says the fermentation ran in two stages but does not name the base process (washed, natural or honey).",
+"ja": "発酵を二段階に分けたものの、ベース精製（ウォッシュド・ナチュラル・ハニー）がラベルにない表記です。"
 },
 "how": {
-"ko": "통체리로 한 번 발효한 뒤 탈피해 다시 발효하기도 하고, 발효 후 맑은 물에 담그는 단계를 가리키기도 합니다. 케냐식 더블 워시드도 이 이름으로 불립니다.",
-"en": "It can mean a whole-cherry ferment followed by a second ferment after pulping, or simply a post-fermentation soak. Kenyan double washed also travels under this name.",
-"ja": "チェリーで一度発酵させてからパルピング後に再度発酵する場合も、発酵後の浸水を指す場合もあります。ケニア式ダブルウォッシュドもこの名で呼ばれます。"
+"ko": "1차 발효 뒤 짧게 말리거나 그대로 두었다가 2차 발효를 이어 갑니다. 베이스가 적힌 라벨은 워시드·내추럴·허니 이중 발효로 나눠 보여 줍니다.",
+"en": "A first fermentation, a short rest or drying, then a second fermentation. Where the base is stated, the lot is shown under double fermented washed, natural or honey instead.",
+"ja": "一次発酵のあと短く乾かすか休ませ、二次発酵へ進みます。ベースが書かれている場合は、ウォッシュド・ナチュラル・ハニーの二段発酵として分けて表示します。"
 },
 "cup": {
 "ko": "두 번 발효하면 산미가 깊어지고 단맛이 늘지만, 과하면 발효취가 앞섭니다. 컵은 베이스 가공에 따라 크게 갈립니다.",
@@ -1707,15 +2382,15 @@ window.CI_PROCESS = {
 "ja": "ケニア・ルワンダ・ブルンジのダブルウォッシュド、コロンビア・グアテマラの実験的な二次発酵。表記がいちばんばらつく項目です。"
 },
 "caution": {
-"ko": "'이중 발효'는 '이중 무산소'와 다릅니다. 두 번째 발효가 산소에 노출된 상태라면 무산소가 아니고, 반대로 두 번 모두 밀폐였다면 이중 무산소로 부르는 편이 정확합니다.",
-"en": "Double fermentation is not double anaerobic. If the second stage is open to air it is not anaerobic; if both stages were sealed, double anaerobic is the more accurate name.",
-"ja": "「二重発酵」は「ダブルアナエロビック」とは違います。二回目が空気に触れていれば嫌気ではなく、両方とも密閉ならダブルアナエロビックと呼ぶほうが正確です。"
+"ko": "베이스가 없으면 컵도 예측하기 어렵습니다. 가능하면 판매처의 공정 설명에서 1차·2차 발효 대상을 확인하세요.",
+"en": "Without the base the cup is hard to predict; check the seller's protocol notes for what fermented in each stage.",
+"ja": "ベースがないとカップも予想しにくいです。できれば販売元の工程説明で一次・二次発酵の対象を確認してください。"
 }
 },
 "pulped-natural": {
 "level": 2,
-"group": "세미·웻헐",
-"chip": "semi",
+"group": "허니 세부",
+"chip": "honey",
 "label": {
 "ko": "펄프드 내추럴",
 "en": "Pulped Natural",
@@ -1736,9 +2411,9 @@ window.CI_PROCESS = {
 ]
 },
 "summary": {
-"ko": "과육만 벗기고 점액질은 거의 씻지 않은 채 말리는 브라질식 방식입니다.",
-"en": "Brazil's method: strip the fruit only, leave the mucilage on almost entirely, and dry.",
-"ja": "果肉だけを除き、ミュシレージはほとんど洗わずに乾かすブラジル式の方法です。"
+"ko": "과육만 벗기고 점액질은 거의 씻지 않은 채 말리는 브라질식 방식으로, 브라질에서는 허니의 한 갈래로 봅니다.",
+"en": "Brazil's method — strip the fruit only, leave the mucilage almost entirely — treated there as a branch of honey.",
+"ja": "果肉だけを除き、ミュシレージはほとんど洗わずに乾かすブラジル式で、ブラジルではハニーの一種として扱います。"
 },
 "how": {
 "ko": "탈피 후 발효조와 세척 수로를 거의 쓰지 않고 바로 건조대로 옮깁니다. 물 사용이 적고, 점액질이 남아 건조 중에도 발효가 조금씩 이어집니다.",
@@ -1761,10 +2436,123 @@ window.CI_PROCESS = {
 "ja": "ブラジル、コロンビア、インド。ブラジルではふつうイエローハニーに近い結果になります。"
 }
 },
+"raisin-natural": {
+"level": 2,
+"group": "내추럴 세부",
+"chip": "natural",
+"label": {
+"ko": "레이즌 내추럴 (오버라이프)",
+"en": "Raisin Natural (Overripe)",
+"ja": "レーズンナチュラル（完熟超過）"
+},
+"alias": {
+"ko": [
+"레이즌 내추럴",
+"건포도 내추럴",
+"오버라이프 내추럴"
+],
+"en": [
+"Raisin Natural",
+"Overripe Natural",
+"Raisin Process"
+],
+"ja": [
+"レーズンナチュラル",
+"完熟超過ナチュラル"
+]
+},
+"summary": {
+"ko": "체리를 나무에 더 두어 건포도처럼 오므라들게 한 뒤 통째로 말리는 내추럴입니다.",
+"en": "Cherries left on the tree until they shrivel like raisins, then dried whole.",
+"ja": "チェリーを木に残してレーズンのようにしぼませ、丸ごと乾かすナチュラルです。"
+},
+"how": {
+"ko": "과숙 단계까지 익힌 체리를 선별해 통체리로 3~6주 건조합니다. 브라질의 '레이즌 공정'이 대표적이며, 수확 전에 당이 농축되는 것이 특징입니다.",
+"en": "Cherries ripened past full maturity are sorted and dried whole for three to six weeks. Brazil's raisin process is the reference, and the sugars concentrate on the tree before picking.",
+"ja": "完熟を超えたチェリーを選別し、丸ごと3〜6週間乾かします。ブラジルの「レーズン工程」が代表例で、収穫前に糖が濃縮されるのが特徴です。"
+},
+"cup": {
+"ko": "건포도·자두·럼 같은 진한 과일향과 무거운 바디. 지나치면 발효 취와 곰팡이 결점이 납니다.",
+"en": "Deep raisin, plum and rum-like fruit with a heavy body; pushed too far it turns fermented or mouldy.",
+"ja": "レーズン・プラム・ラムのような濃い果実香と重いボディ。行き過ぎると発酵臭やカビの欠点が出ます。"
+},
+"roast": {
+"ko": "잔당과 수분 불균일로 초반에 타기 쉬워 낮은 열량에서 시작합니다.",
+"en": "Residual sugar and uneven moisture scorch easily, so start with low heat.",
+"ja": "残糖と水分のばらつきで序盤に焦げやすいため、低い熱量から始めます。"
+},
+"origins": {
+"ko": "브라질 세하도, 예멘·에티오피아의 전통 내추럴. 이 데이터에는 아직 이 표기의 생두가 없습니다.",
+"en": "Brazil's Cerrado and traditional naturals in Yemen and Ethiopia; no bean in this dataset carries the label yet.",
+"ja": "ブラジルのセラード、イエメン・エチオピアの伝統的なナチュラル。このデータにはまだこの表記の豆がありません。"
+},
+"caution": {
+"ko": "'레이즌'은 성숙도와 건조 상태를 가리키는 말이지 표준 공법명이 아닙니다. 과숙 체리는 결점 위험이 커 선별과 건조 관리가 관건입니다.",
+"en": "'Raisin' describes ripeness and drying, not a standard method. Overripe cherry carries more defect risk, so sorting and drying control decide the lot.",
+"ja": "「レーズン」は熟度と乾燥状態を指す言葉で、標準的な製法名ではありません。完熟超過のチェリーは欠点リスクが高く、選別と乾燥管理が鍵です。"
+}
+},
+"monsooned": {
+"level": 2,
+"group": "세미·웻헐·전통",
+"chip": "semi",
+"label": {
+"ko": "몬순 (말라바르)",
+"en": "Monsooned Malabar",
+"ja": "モンスーンド・マラバール"
+},
+"alias": {
+"ko": [
+"몬순",
+"몬순드",
+"말라바르",
+"몬순 말라바르"
+],
+"en": [
+"Monsooned",
+"Monsooned Malabar",
+"Monsoon Malabar"
+],
+"ja": [
+"モンスーンド",
+"モンスーンド・マラバール"
+]
+},
+"summary": {
+"ko": "인도 말라바르 해안에서 몬순 계절의 습한 바람에 12~16주 노출해 부풀리고 숙성시키는 전통 방식입니다.",
+"en": "India's traditional method: green coffee exposed to the humid monsoon winds of the Malabar coast for 12–16 weeks, swelling and mellowing.",
+"ja": "インドのマラバール海岸で、モンスーン期の湿った風に12〜16週間さらして膨らませ、熟成させる伝統的な方法です。"
+},
+"how": {
+"ko": "건조 내추럴 생두를 창고 바닥에 10~15cm로 펴고 3시간마다 긁어 습기를 흡수시킵니다(수분 14~15%). 자루에 반쯤 담아 12~16주 두며 일주일에 한 번 갈아 주고, 마지막에 광택을 냅니다.",
+"en": "Dry natural green beans are spread 10–15 cm deep on warehouse floors and raked every three hours to take up moisture (14–15%). They then sit half-filled in sacks for 12–16 weeks, re-bagged weekly, and are polished at the end.",
+"ja": "乾燥させたナチュラル生豆を倉庫の床に10〜15cmの厚さで広げ、3時間ごとにかき混ぜて湿気を吸わせます（水分14〜15%）。袋に半分ほど入れて12〜16週間置き、週に一度入れ替えて最後に光沢を出します。"
+},
+"cup": {
+"ko": "산미가 낮고 바디가 무겁습니다. 흙·나무·향신료와 부드러운 단맛, 묽은 듯한 질감이 특징입니다.",
+"en": "Low acidity and a heavy body: earth, wood and spice with soft sweetness and a mellow, almost thin texture.",
+"ja": "低い酸味と重いボディ。土・木・スパイスとやわらかな甘さ、さらりとした質感が特徴です。"
+},
+"roast": {
+"ko": "밀도가 낮아 초반에 빨리 익습니다. 열량을 낮게 잡고 중배전 이상에서 향이 정돈됩니다.",
+"en": "Low density browns quickly; keep the heat low, and medium or darker settles the aromatics.",
+"ja": "密度が低く序盤に早く色づきます。熱量を低めにし、中煎り以上で香りが整います。"
+},
+"origins": {
+"ko": "인도 카르나타카 망갈로르에서 케랄라 코지코드까지 말라바르 해안. 이 데이터에는 아직 없습니다.",
+"en": "The Malabar coast from Mangalore in Karnataka to Kozhikode in Kerala, India; none in this dataset yet.",
+"ja": "インドのカルナータカ州マンガルールからケーララ州コージコードまでのマラバール海岸。このデータにはまだありません。"
+},
+"caution": {
+"ko": "발효라기보다 습기 숙성에 가깝고, 곰팡이와 해충 관리가 필수입니다. 인도에서는 지리적표시(GI)로 보호되는 전통 공정입니다.",
+"en": "Closer to humid ageing than fermentation, and mould and pest control are essential. In India the process is protected as a geographical indication.",
+"ja": "発酵というより湿気による熟成に近く、カビと害虫の管理が欠かせません。インドでは地理的表示（GI）で保護された伝統工程です。"
+}
+},
 "semi-washed": {
 "level": 2,
-"group": "세미·웻헐",
-"chip": "semi",
+"group": "워시드 세부",
+"chip": "washed",
 "label": {
 "ko": "세미 워시드",
 "en": "Semi-washed",
@@ -1845,9 +2633,9 @@ window.CI_PROCESS = {
 "ja": "果肉だけを除き、粘つくミュシレージを残したまま乾かして甘さとボディを引き上げる中間的な方法です。"
 },
 "how": {
-"ko": "탈피한 뒤 점액질을 얼마나 남길지 기계로 조절하고, 그대로 건조대에 널어 1~4주 말립니다. 남긴 양과 그늘 정도에 따라 화이트·옐로우·레드·블랙으로 나뉩니다.",
-"en": "After pulping, a demucilager sets how much mucilage remains. The coffee dries on beds for one to four weeks, and the amount left plus the shade decides white, yellow, red or black.",
-"ja": "パルピング後にミュシレージをどれだけ残すかを機械で調整し、そのまま1〜4週間乾かします。残す量と日陰の程度でホワイト・イエロー・レッド・ブラックに分かれます。"
+"ko": "탈피한 뒤 점액질을 얼마나 남길지 기계로 조절하고, 그대로 건조대에 널어 1~4주 말립니다. 남긴 양과 그늘 정도에 따라 화이트·옐로우·골드·레드·블랙으로 나뉩니다.",
+"en": "After pulping, a demucilager sets how much mucilage remains. The coffee dries on beds for one to four weeks, and the amount left plus the shade decides white, yellow, gold, red or black.",
+"ja": "パルピング後にミュシレージをどれだけ残すかを機械で調整し、そのまま1〜4週間乾かします。残す量と日陰の程度でホワイト・イエロー・ゴールド・レッド・ブラックに分かれます。"
 },
 "cup": {
 "ko": "꿀·캐러멜 같은 단맛과 부드러운 산미, 중간 정도의 바디. 워시드보다 과일향이 앞서고 내추럴보다 정돈된 편입니다.",
@@ -1865,9 +2653,9 @@ window.CI_PROCESS = {
 "ja": "コスタリカのマイクロミル、ブラジル、グアテマラ、エルサルバドル。韓国の流通では「ハニー」だけの表記がいちばん多いです。"
 },
 "caution": {
-"ko": "색 이름의 점액질 잔류율(화이트 10%, 옐로우 25%, 레드 50%, 블랙 75~100%)은 어느 단체도 정한 기준이 아닙니다. 같은 농장의 '레드'가 다른 농장의 '옐로우'일 수 있어, 수치보다 판매처의 건조 설명을 보는 편이 정확합니다.",
-"en": "The mucilage percentages behind the colour names (white 10%, yellow 25%, red 50%, black 75–100%) are not set by any standards body. One farm's red can be another's yellow, so read the producer's drying notes rather than the number.",
-"ja": "色名のミュシレージ残存率（ホワイト10%、イエロー25%、レッド50%、ブラック75〜100%）は、どの団体も定めた基準ではありません。ある農園の「レッド」が別の農園の「イエロー」であることもあるため、数値より生産者の乾燥説明を見るほうが正確です。"
+"ko": "색 이름의 점액질 잔류율(화이트 10%, 옐로우 25~50%, 골드 50~75%, 레드 75~90%, 블랙 90~100%)은 어느 단체도 정한 기준이 아닙니다. 같은 농장의 '레드'가 다른 농장의 '옐로우'일 수 있어, 수치보다 판매처의 건조 설명을 보는 편이 정확합니다.",
+"en": "The mucilage percentages behind the colour names (white 10%, yellow 25–50%, gold 50–75%, red 75–90%, black 90–100%) are not set by any standards body. One farm's red can be another's yellow, so read the producer's drying notes rather than the number.",
+"ja": "色名のミュシレージ残存率（ホワイト10%、イエロー25〜50%、ゴールド50〜75%、レッド75〜90%、ブラック90〜100%）は、どの団体も定めた基準ではありません。ある農園の「レッド」が別の農園の「イエロー」であることもあるため、数値より生産者の乾燥説明を見るほうが正確です。"
 }
 },
 "natural": {
@@ -2097,7 +2885,7 @@ window.CI_PROCESS = {
 },
 "unverified": {
 "VAP": {
-"ko": "올인커피 판매 표기. 판매처 설명을 확인하지 못해 가공 의미를 확정하지 않음(향미 첨가·특수발효 계열로 추정).",
+"ko": "판매처가 붙인 표기. 판매처 설명을 확인하지 못해 가공 의미를 확정하지 않음(향미 첨가·특수발효 계열로 추정).",
 "en": "A retailer's own label. The seller's description could not be checked, so its meaning is not interpreted.",
 "ja": "販売店独自の表記です。販売元の説明を確認できなかったため、意味は解釈していません。"
 }
@@ -2202,25 +2990,26 @@ window.CI_PROCESS = {
 "counts": {
 "beans": 3113,
 "groups": {
-"washed": 1250,
-"natural": 801,
-"semi": 136,
+"washed": 1313,
+"natural": 808,
 "decaf": 106,
-"honey": 203,
-"anaerobic": 355,
+"semi": 30,
+"honey": 263,
+"anaerobic": 331,
 "infused": 65,
 "other": 22
 },
 "processes": {
-"washed": 1250,
-"natural": 801,
+"washed": 1116,
+"natural": 798,
+"full-washed": 121,
 "wet-polished": 17,
 "decaf-ea": 34,
 "wet-hulled": 30,
 "decaf-mountain-water": 47,
 "decaf-swiss-water": 9,
 "decaf-co2": 6,
-"honey": 167,
+"honey": 166,
 "anaerobic-natural": 184,
 "mosto": 15,
 "yeast": 13,
@@ -2229,22 +3018,30 @@ window.CI_PROCESS = {
 "red-honey": 12,
 "pulped-natural": 57,
 "carbonic-maceration": 16,
-"black-honey": 17,
+"black-honey": 15,
+"extended-washed": 9,
 "anaerobic": 19,
 "asd": 14,
 "yellow-honey": 4,
 "co-fermentation": 55,
 "semi-washed": 32,
-"double-fermentation": 20,
+"double-fermented-natural": 5,
 "experimental-other": 12,
+"raisin-honey": 1,
 "double-anaerobic": 12,
+"double-fermented-washed": 10,
+"double-fermentation": 2,
 "infused": 10,
 "lactic": 2,
 "decaf": 10,
+"double-fermented-honey": 3,
+"dark-room-washed": 8,
 "koji": 1,
-"dark-room": 8,
+"dark-room": 2,
+"dark-room-natural": 5,
 "white-honey": 3,
 "thermal-shock": 1,
+"light-honey": 2,
 "ef2": 1
 }
 }

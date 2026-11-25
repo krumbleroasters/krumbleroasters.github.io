@@ -33,17 +33,17 @@
 },
 "profileFallback": 55,
 "process": {
-"dictionary": "1.0",
-"processes": 36,
+"dictionary": "2.0",
+"processes": 50,
 "labeled": 2938,
 "unlabeled": 175,
 "groups": {
-"washed": 1250,
-"natural": 801,
-"semi": 136,
+"washed": 1313,
+"natural": 808,
 "decaf": 106,
-"honey": 203,
-"anaerobic": 355,
+"semi": 30,
+"honey": 263,
+"anaerobic": 331,
 "infused": 65,
 "other": 22
 }
@@ -50404,8 +50404,11 @@
 ],
 "placeId": "F|과테말라|엘 인헤르또",
 "listingCount": 4,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0009",
@@ -50458,7 +50461,7 @@
 "placeId": "C|베트남",
 "listingCount": 4,
 "processId": "wet-polished",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b0011",
@@ -50484,7 +50487,7 @@
 "placeId": "C|베트남",
 "listingCount": 4,
 "processId": "wet-polished",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b0012",
@@ -51045,8 +51048,11 @@
 ],
 "placeId": "C|인도",
 "listingCount": 3,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0036",
@@ -51104,8 +51110,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 3,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0039",
@@ -51350,8 +51359,11 @@
 ],
 "placeId": "C|과테말라",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0050",
@@ -51473,8 +51485,11 @@
 ],
 "placeId": "C|과테말라",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0056",
@@ -51919,8 +51934,11 @@
 ],
 "placeId": "R|과테말라|시에라 데 라스 미나스",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0079",
@@ -52139,8 +52157,11 @@
 ],
 "placeId": "C|과테말라",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0090",
@@ -52159,8 +52180,11 @@
 ],
 "placeId": "F|과테말라|엘 소코로",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0091",
@@ -52178,8 +52202,11 @@
 ],
 "placeId": "F|과테말라|엘 소코로",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0092",
@@ -52197,8 +52224,11 @@
 ],
 "placeId": "F|과테말라|엘 소코로",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0093",
@@ -52216,8 +52246,11 @@
 ],
 "placeId": "F|과테말라|엘 소코로",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0094",
@@ -52235,8 +52268,11 @@
 ],
 "placeId": "F|과테말라|엘 소코로",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0095",
@@ -52271,8 +52307,11 @@
 ],
 "placeId": "F|과테말라|엘 인헤르또",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0097",
@@ -52314,8 +52353,11 @@
 ],
 "placeId": "F|과테말라|엘 인헤르또",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0099",
@@ -52367,8 +52409,11 @@
 "cupNotes": [],
 "placeId": "R|과테말라|우에우에테낭고",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0102",
@@ -52640,8 +52685,11 @@
 ],
 "placeId": "C|니카라과",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0116",
@@ -52678,8 +52726,11 @@
 ],
 "placeId": "C|니카라과",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0118",
@@ -52801,8 +52852,11 @@
 ],
 "placeId": "C|니카라과",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0124",
@@ -52841,8 +52895,11 @@
 ],
 "placeId": "C|니카라과",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0126",
@@ -53161,8 +53218,11 @@
 ],
 "placeId": "R|르완다|키부",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0142",
@@ -53182,8 +53242,11 @@
 ],
 "placeId": "R|르완다|키부",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0143",
@@ -54028,8 +54091,11 @@
 ],
 "placeId": "R|부룬디|은고지",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0183",
@@ -54127,7 +54193,7 @@
 "placeId": "F|브라질|파젠다 산타 알리나",
 "listingCount": 2,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -54189,7 +54255,7 @@
 "placeId": "C|브라질",
 "listingCount": 2,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -54212,7 +54278,7 @@
 "placeId": "R|브라질|세라도",
 "listingCount": 2,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -54233,7 +54299,7 @@
 "placeId": "C|브라질",
 "listingCount": 2,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -54274,7 +54340,7 @@
 "placeId": "C|브라질",
 "listingCount": 2,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -54298,7 +54364,7 @@
 "placeId": "F|브라질|다테하",
 "listingCount": 2,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -54320,7 +54386,7 @@
 "placeId": "F|브라질|다테하",
 "listingCount": 2,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -54340,7 +54406,7 @@
 "placeId": "C|브라질",
 "listingCount": 2,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -54362,7 +54428,7 @@
 "placeId": "F|브라질|파젠다 로메로",
 "listingCount": 2,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -54404,7 +54470,7 @@
 "placeId": "C|브라질",
 "listingCount": 2,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -54501,7 +54567,7 @@
 "placeId": "C|브라질",
 "listingCount": 2,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -54523,7 +54589,7 @@
 "placeId": "C|브라질",
 "listingCount": 2,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -54718,7 +54784,7 @@
 "placeId": "C|브라질",
 "listingCount": 2,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -54799,7 +54865,7 @@
 "placeId": "C|브라질",
 "listingCount": 2,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -54840,7 +54906,7 @@
 "placeId": "C|브라질",
 "listingCount": 2,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -54862,7 +54928,7 @@
 "placeId": "C|브라질",
 "listingCount": 2,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -54960,7 +55026,7 @@
 "placeId": "C|브라질",
 "listingCount": 2,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -54999,7 +55065,7 @@
 "placeId": "C|브라질",
 "listingCount": 2,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -55041,7 +55107,7 @@
 "placeId": "F|브라질|파젠다 엄",
 "listingCount": 2,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -55064,7 +55130,7 @@
 "placeId": "F|브라질|파젠다 엄",
 "listingCount": 2,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -55086,7 +55152,7 @@
 "placeId": "F|브라질|파젠다 엄",
 "listingCount": 2,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -55131,7 +55197,7 @@
 "placeId": "F|브라질|파젠다 엄",
 "listingCount": 2,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -55153,7 +55219,7 @@
 "placeId": "F|브라질|파젠다 엄",
 "listingCount": 2,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -55175,7 +55241,7 @@
 "placeId": "F|브라질|파젠다 엄",
 "listingCount": 2,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -55858,8 +55924,11 @@
 ],
 "placeId": "F|에티오피아|할로 베리티",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "extended-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0273",
@@ -55991,8 +56060,11 @@
 ],
 "placeId": "F|에티오피아|아르소살라",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0280",
@@ -57590,8 +57662,11 @@
 ],
 "placeId": "F|에티오피아|할로 베리티",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0362",
@@ -57647,8 +57722,11 @@
 ],
 "placeId": "R|에티오피아|예가체프",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0365",
@@ -58420,8 +58498,11 @@
 ],
 "placeId": "C|엘살바도르",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0403",
@@ -58511,8 +58592,11 @@
 ],
 "placeId": "C|엘살바도르",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0407",
@@ -58549,8 +58633,11 @@
 ],
 "placeId": "C|엘살바도르",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0409",
@@ -58740,8 +58827,11 @@
 ],
 "placeId": "C|온두라스",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0418",
@@ -58804,8 +58894,11 @@
 ],
 "placeId": "C|온두라스",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0421",
@@ -58929,8 +59022,11 @@
 ],
 "placeId": "C|온두라스",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0427",
@@ -58989,8 +59085,11 @@
 ],
 "placeId": "C|온두라스",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0430",
@@ -59113,8 +59212,11 @@
 ],
 "placeId": "C|온두라스",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0436",
@@ -59132,8 +59234,11 @@
 ],
 "placeId": "C|온두라스",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0437",
@@ -59151,8 +59256,11 @@
 ],
 "placeId": "C|온두라스",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0438",
@@ -59209,8 +59317,11 @@
 ],
 "placeId": "C|온두라스",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0441",
@@ -59291,8 +59402,11 @@
 ],
 "placeId": "C|온두라스",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0445",
@@ -59329,8 +59443,11 @@
 ],
 "placeId": "C|온두라스",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0447",
@@ -59348,8 +59465,11 @@
 ],
 "placeId": "C|온두라스",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0448",
@@ -59406,8 +59526,11 @@
 ],
 "placeId": "C|온두라스",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0451",
@@ -59469,8 +59592,11 @@
 ],
 "placeId": "C|온두라스",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0454",
@@ -59769,8 +59895,11 @@
 ],
 "placeId": "R|우간다|엘곤",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0469",
@@ -59864,8 +59993,11 @@
 ],
 "placeId": "C|인도",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0474",
@@ -60239,7 +60371,7 @@
 "placeId": "R|인도네시아|자바",
 "listingCount": 2,
 "processId": "wet-polished",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b0493",
@@ -60316,7 +60448,7 @@
 "placeId": "R|인도네시아|만델링",
 "listingCount": 2,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b0497",
@@ -60537,7 +60669,7 @@
 "placeId": "R|인도네시아|만델링",
 "listingCount": 2,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b0508",
@@ -60758,8 +60890,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0519",
@@ -60777,8 +60912,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0520",
@@ -60796,8 +60934,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0521",
@@ -60815,8 +60956,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0522",
@@ -60834,8 +60978,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0523",
@@ -60874,8 +61021,11 @@
 ],
 "placeId": "R|케냐|니에리",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0525",
@@ -60995,8 +61145,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0531",
@@ -61033,8 +61186,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0533",
@@ -61110,8 +61266,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0537",
@@ -61151,8 +61310,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0539",
@@ -61170,8 +61332,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0540",
@@ -61189,8 +61354,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0541",
@@ -61208,8 +61376,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0542",
@@ -61246,8 +61417,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0544",
@@ -61265,8 +61439,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0545",
@@ -61346,8 +61523,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0549",
@@ -61365,8 +61545,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0550",
@@ -61384,8 +61567,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0551",
@@ -61402,8 +61588,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0552",
@@ -61459,8 +61648,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0555",
@@ -61521,8 +61713,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0558",
@@ -61539,8 +61734,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0559",
@@ -61556,8 +61754,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0560",
@@ -61575,8 +61776,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0561",
@@ -61615,8 +61819,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0563",
@@ -61676,8 +61883,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0566",
@@ -61695,8 +61905,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0567",
@@ -61713,8 +61926,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0568",
@@ -61731,8 +61947,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0569",
@@ -61806,8 +62025,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0573",
@@ -61886,8 +62108,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0577",
@@ -62096,10 +62321,11 @@
 ],
 "placeId": "F|코스타리카|돈 사비노",
 "listingCount": 2,
-"processId": "double-fermentation",
-"processGroup": "anaerobic",
+"processId": "double-fermented-natural",
+"processGroup": "natural",
 "processTags": [
-"natural"
+"natural",
+"double-fermentation"
 ]
 },
 {
@@ -62203,8 +62429,11 @@
 ],
 "placeId": "R|코스타리카|타라수",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0593",
@@ -62442,8 +62671,11 @@
 ],
 "placeId": "C|코스타리카",
 "listingCount": 2,
-"processId": "honey",
-"processGroup": "honey"
+"processId": "raisin-honey",
+"processGroup": "honey",
+"processTags": [
+"honey"
+]
 },
 {
 "id": "b0605",
@@ -62742,7 +62974,7 @@
 "placeId": "C|코스타리카",
 "listingCount": 2,
 "processId": "pulped-natural",
-"processGroup": "semi"
+"processGroup": "honey"
 },
 {
 "id": "b0620",
@@ -62905,7 +63137,7 @@
 "placeId": "C|코스타리카",
 "listingCount": 2,
 "processId": "pulped-natural",
-"processGroup": "semi"
+"processGroup": "honey"
 },
 {
 "id": "b0628",
@@ -63055,10 +63287,12 @@
 ],
 "placeId": "C|코스타리카",
 "listingCount": 2,
-"processId": "double-fermentation",
-"processGroup": "anaerobic",
+"processId": "double-fermented-washed",
+"processGroup": "washed",
 "processTags": [
-"washed"
+"washed",
+"extended-washed",
+"double-fermentation"
 ]
 },
 {
@@ -63757,8 +63991,11 @@
 "cupNotes": [],
 "placeId": "F|콜롬비아|베타니아",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "extended-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0670",
@@ -63837,8 +64074,11 @@
 ],
 "placeId": "F|콜롬비아|라스 마가리타스",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0674",
@@ -63881,7 +64121,7 @@
 "processId": "co-fermentation",
 "processGroup": "infused",
 "processTags": [
-"washed"
+"extended-washed"
 ]
 },
 {
@@ -63905,7 +64145,7 @@
 "processId": "co-fermentation",
 "processGroup": "infused",
 "processTags": [
-"washed"
+"extended-washed"
 ]
 },
 {
@@ -63928,7 +64168,7 @@
 "processId": "co-fermentation",
 "processGroup": "infused",
 "processTags": [
-"washed"
+"extended-washed"
 ]
 },
 {
@@ -63998,7 +64238,7 @@
 "processId": "co-fermentation",
 "processGroup": "infused",
 "processTags": [
-"washed"
+"extended-washed"
 ]
 },
 {
@@ -64021,7 +64261,7 @@
 "processId": "co-fermentation",
 "processGroup": "infused",
 "processTags": [
-"washed"
+"extended-washed"
 ]
 },
 {
@@ -64044,7 +64284,7 @@
 "processId": "co-fermentation",
 "processGroup": "infused",
 "processTags": [
-"washed"
+"extended-washed"
 ]
 },
 {
@@ -64632,10 +64872,12 @@
 ],
 "placeId": "C|콜롬비아",
 "listingCount": 2,
-"processId": "double-fermentation",
-"processGroup": "anaerobic",
+"processId": "double-fermented-washed",
+"processGroup": "washed",
 "processTags": [
-"washed"
+"washed",
+"extended-washed",
+"double-fermentation"
 ]
 },
 {
@@ -64676,10 +64918,12 @@
 ],
 "placeId": "C|콜롬비아",
 "listingCount": 2,
-"processId": "double-fermentation",
-"processGroup": "anaerobic",
+"processId": "double-fermented-washed",
+"processGroup": "washed",
 "processTags": [
-"washed"
+"washed",
+"extended-washed",
+"double-fermentation"
 ]
 },
 {
@@ -64720,8 +64964,11 @@
 ],
 "placeId": "R|콜롬비아|안티오키아",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0717",
@@ -64798,10 +65045,12 @@
 ],
 "placeId": "C|콜롬비아",
 "listingCount": 2,
-"processId": "double-fermentation",
-"processGroup": "anaerobic",
+"processId": "double-fermented-washed",
+"processGroup": "washed",
 "processTags": [
-"washed"
+"washed",
+"extended-washed",
+"double-fermentation"
 ]
 },
 {
@@ -64821,10 +65070,11 @@
 ],
 "placeId": "C|콜롬비아",
 "listingCount": 2,
-"processId": "double-fermentation",
-"processGroup": "anaerobic",
+"processId": "double-fermented-natural",
+"processGroup": "natural",
 "processTags": [
-"natural"
+"natural",
+"double-fermentation"
 ]
 },
 {
@@ -66552,8 +66802,11 @@
 ],
 "placeId": "R|콜롬비아|후일라",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0809",
@@ -66732,8 +66985,11 @@
 ],
 "placeId": "C|콜롬비아",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0818",
@@ -66845,10 +67101,11 @@
 ],
 "placeId": "F|콜롬비아|핀카 리오 네그로",
 "listingCount": 2,
-"processId": "double-fermentation",
-"processGroup": "anaerobic",
+"processId": "double-fermented-honey",
+"processGroup": "honey",
 "processTags": [
-"honey"
+"honey",
+"double-fermentation"
 ]
 },
 {
@@ -66868,10 +67125,11 @@
 ],
 "placeId": "F|콜롬비아|핀카 벨라비스타",
 "listingCount": 2,
-"processId": "double-fermentation",
-"processGroup": "anaerobic",
+"processId": "double-fermented-honey",
+"processGroup": "honey",
 "processTags": [
-"honey"
+"honey",
+"double-fermentation"
 ]
 },
 {
@@ -66890,10 +67148,11 @@
 ],
 "placeId": "F|콜롬비아|핀카 벨라비스타",
 "listingCount": 2,
-"processId": "double-fermentation",
-"processGroup": "anaerobic",
+"processId": "double-fermented-natural",
+"processGroup": "natural",
 "processTags": [
-"natural"
+"natural",
+"double-fermentation"
 ]
 },
 {
@@ -66916,7 +67175,7 @@
 "processId": "yeast",
 "processGroup": "anaerobic",
 "processTags": [
-"washed"
+"extended-washed"
 ]
 },
 {
@@ -66978,10 +67237,12 @@
 ],
 "placeId": "F|콜롬비아|핀카 엘 엔칸토",
 "listingCount": 2,
-"processId": "double-fermentation",
-"processGroup": "anaerobic",
+"processId": "double-fermented-washed",
+"processGroup": "washed",
 "processTags": [
-"washed"
+"washed",
+"extended-washed",
+"double-fermentation"
 ]
 },
 {
@@ -67002,10 +67263,11 @@
 ],
 "placeId": "F|콜롬비아|핀카 엘 엔칸토",
 "listingCount": 2,
-"processId": "double-fermentation",
-"processGroup": "anaerobic",
+"processId": "double-fermented-natural",
+"processGroup": "natural",
 "processTags": [
-"natural"
+"natural",
+"double-fermentation"
 ]
 },
 {
@@ -67026,10 +67288,11 @@
 ],
 "placeId": "F|콜롬비아|핀카 엘 엔칸토",
 "listingCount": 2,
-"processId": "double-fermentation",
-"processGroup": "anaerobic",
+"processId": "double-fermented-natural",
+"processGroup": "natural",
 "processTags": [
-"natural"
+"natural",
+"double-fermentation"
 ]
 },
 {
@@ -67136,10 +67399,12 @@
 ],
 "placeId": "F|콜롬비아|핀카 케브라디타스",
 "listingCount": 2,
-"processId": "double-fermentation",
-"processGroup": "anaerobic",
+"processId": "double-fermented-washed",
+"processGroup": "washed",
 "processTags": [
-"washed"
+"washed",
+"extended-washed",
+"double-fermentation"
 ]
 },
 {
@@ -67257,7 +67522,7 @@
 "placeId": "C|콜롬비아",
 "listingCount": 2,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b0843",
@@ -67922,8 +68187,11 @@
 ],
 "placeId": "F|파나마|엘리다",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "dark-room-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0878",
@@ -68119,8 +68387,11 @@
 ],
 "placeId": "C|파푸아뉴기니",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0888",
@@ -68361,8 +68632,11 @@
 "cupNotes": [],
 "placeId": "C|파푸아뉴기니",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0901",
@@ -68752,8 +69026,11 @@
 ],
 "placeId": "C|페루",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0920",
@@ -68772,8 +69049,11 @@
 ],
 "placeId": "C|페루",
 "listingCount": 2,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0921",
@@ -69225,8 +69505,11 @@
 ],
 "placeId": "R|과테말라|안티구아",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0947",
@@ -69244,8 +69527,11 @@
 ],
 "placeId": "R|과테말라|안티구아",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0948",
@@ -69361,8 +69647,11 @@
 ],
 "placeId": "C|과테말라",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b0955",
@@ -70668,8 +70957,11 @@
 ],
 "placeId": "C|과테말라",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b1022",
@@ -70830,8 +71122,11 @@
 ],
 "placeId": "R|과테말라|안티구아",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b1030",
@@ -72080,8 +72375,11 @@
 "cupNotes": [],
 "placeId": "C|니카라과",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b1100",
@@ -72197,8 +72495,11 @@
 "cupNotes": [],
 "placeId": "C|니카라과",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b1106",
@@ -73100,8 +73401,11 @@
 ],
 "placeId": "C|르완다",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b1156",
@@ -73369,7 +73673,7 @@
 "placeId": "C|베트남",
 "listingCount": 1,
 "processId": "wet-polished",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b1172",
@@ -73437,7 +73741,7 @@
 "placeId": "C|베트남",
 "listingCount": 1,
 "processId": "wet-polished",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b1177",
@@ -73492,7 +73796,7 @@
 "placeId": "R|베트남|다랏",
 "listingCount": 1,
 "processId": "wet-polished",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b1180",
@@ -73608,8 +73912,11 @@
 ],
 "placeId": "C|베트남",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b1185",
@@ -73693,7 +74000,7 @@
 "placeId": "C|베트남",
 "listingCount": 1,
 "processId": "wet-polished",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b1190",
@@ -73747,7 +74054,7 @@
 "placeId": "C|베트남",
 "listingCount": 1,
 "processId": "wet-polished",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b1193",
@@ -73761,7 +74068,7 @@
 "placeId": "C|베트남",
 "listingCount": 1,
 "processId": "wet-polished",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b1194",
@@ -73780,7 +74087,7 @@
 "placeId": "C|베트남",
 "listingCount": 1,
 "processId": "wet-polished",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b1195",
@@ -73799,7 +74106,7 @@
 "placeId": "C|베트남",
 "listingCount": 1,
 "processId": "wet-polished",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b1196",
@@ -73817,7 +74124,7 @@
 "placeId": "C|베트남",
 "listingCount": 1,
 "processId": "wet-polished",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b1197",
@@ -73835,7 +74142,7 @@
 "placeId": "C|베트남",
 "listingCount": 1,
 "processId": "wet-polished",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b1198",
@@ -73917,7 +74224,7 @@
 "placeId": "C|베트남",
 "listingCount": 1,
 "processId": "wet-polished",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b1202",
@@ -73954,7 +74261,7 @@
 "placeId": "C|베트남",
 "listingCount": 1,
 "processId": "wet-polished",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b1204",
@@ -74010,7 +74317,7 @@
 "placeId": "C|베트남",
 "listingCount": 1,
 "processId": "wet-polished",
-"processGroup": "semi",
+"processGroup": "washed",
 "processTags": [
 "pulped-natural"
 ]
@@ -74156,7 +74463,7 @@
 "placeId": "C|브라질",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -74187,7 +74494,7 @@
 "placeId": "C|브라질",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -74611,7 +74918,7 @@
 "placeId": "C|브라질",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -74712,7 +75019,7 @@
 "placeId": "F|브라질|다테하",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -74735,7 +75042,7 @@
 "placeId": "F|브라질|다테하",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -74756,7 +75063,7 @@
 "placeId": "F|브라질|다테하",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -74777,7 +75084,7 @@
 "placeId": "F|브라질|다테하",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -74801,7 +75108,7 @@
 "placeId": "F|브라질|다테하",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -74841,7 +75148,7 @@
 "placeId": "F|브라질|다테하",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -74982,7 +75289,7 @@
 "placeId": "C|브라질",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -75317,7 +75624,7 @@
 "placeId": "C|브라질",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -75334,7 +75641,7 @@
 "placeId": "C|브라질",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -75732,7 +76039,7 @@
 "placeId": "R|브라질|세라도",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -75837,7 +76144,7 @@
 "placeId": "C|브라질",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi"
+"processGroup": "honey"
 },
 {
 "id": "b1313",
@@ -75971,7 +76278,7 @@
 "placeId": "C|브라질",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -75993,7 +76300,7 @@
 "placeId": "C|브라질",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -76015,7 +76322,7 @@
 "placeId": "C|브라질",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi"
+"processGroup": "honey"
 },
 {
 "id": "b1323",
@@ -76066,7 +76373,7 @@
 "placeId": "C|브라질",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -76083,7 +76390,7 @@
 "placeId": "C|브라질",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -76142,7 +76449,7 @@
 "placeId": "C|브라질",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -76164,7 +76471,7 @@
 "placeId": "C|브라질",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -76186,7 +76493,7 @@
 "placeId": "C|브라질",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -76255,7 +76562,7 @@
 "placeId": "C|브라질",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -76272,7 +76579,7 @@
 "placeId": "C|브라질",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -76326,7 +76633,7 @@
 "placeId": "F|브라질|파젠다 세르탕",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -76451,7 +76758,7 @@
 "placeId": "F|브라질|파젠다 엄",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -76490,8 +76797,12 @@
 ],
 "placeId": "C|브라질",
 "listingCount": 1,
-"processId": "dark-room",
-"processGroup": "anaerobic"
+"processId": "dark-room-natural",
+"processGroup": "natural",
+"processTags": [
+"natural",
+"dark-room"
+]
 },
 {
 "id": "b1349",
@@ -76546,7 +76857,7 @@
 "placeId": "C|브라질",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -76587,7 +76898,7 @@
 "placeId": "F|브라질|다테하",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -76695,7 +77006,7 @@
 "placeId": "C|브라질",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -76850,10 +77161,12 @@
 ],
 "placeId": "C|에콰도르",
 "listingCount": 1,
-"processId": "double-fermentation",
-"processGroup": "anaerobic",
+"processId": "double-fermented-washed",
+"processGroup": "washed",
 "processTags": [
-"washed"
+"washed",
+"extended-washed",
+"double-fermentation"
 ]
 },
 {
@@ -83109,8 +83422,8 @@
 ],
 "placeId": "F|에티오피아|케라모",
 "listingCount": 1,
-"processId": "dark-room",
-"processGroup": "anaerobic",
+"processId": "dark-room-washed",
+"processGroup": "washed",
 "processTags": [
 "washed"
 ]
@@ -83169,8 +83482,8 @@
 ],
 "placeId": "F|에티오피아|케라모",
 "listingCount": 1,
-"processId": "dark-room",
-"processGroup": "anaerobic",
+"processId": "dark-room-washed",
+"processGroup": "washed",
 "processTags": [
 "washed"
 ]
@@ -84173,8 +84486,11 @@
 "cupNotes": [],
 "placeId": "R|엘살바도르|산타 아나",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b1791",
@@ -84830,8 +85146,11 @@
 "cupNotes": [],
 "placeId": "R|온두라스|마르칼라",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b1828",
@@ -85022,8 +85341,11 @@
 "cupNotes": [],
 "placeId": "C|온두라스",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b1839",
@@ -85650,8 +85972,11 @@
 "cupNotes": [],
 "placeId": "C|온두라스",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b1876",
@@ -85806,10 +86131,11 @@
 ],
 "placeId": "C|온두라스",
 "listingCount": 1,
-"processId": "double-fermentation",
-"processGroup": "anaerobic",
+"processId": "double-fermented-honey",
+"processGroup": "honey",
 "processTags": [
-"honey"
+"honey",
+"double-fermentation"
 ]
 },
 {
@@ -86509,7 +86835,7 @@
 "placeId": "C|인도",
 "listingCount": 1,
 "processId": "wet-polished",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b1932",
@@ -86561,7 +86887,7 @@
 "placeId": "R|인도네시아|발리",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -86597,7 +86923,7 @@
 "placeId": "R|인도네시아|발리",
 "listingCount": 1,
 "processId": "pulped-natural",
-"processGroup": "semi",
+"processGroup": "honey",
 "processTags": [
 "natural"
 ]
@@ -87092,8 +87418,11 @@
 ],
 "placeId": "R|인도네시아|술라웨시",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b1966",
@@ -87420,8 +87749,11 @@
 ],
 "placeId": "R|중국|푸얼",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b1986",
@@ -87538,7 +87870,7 @@
 "placeId": "C|카메룬",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b1994",
@@ -87552,7 +87884,7 @@
 "placeId": "R|카메룬|벨로",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b1995",
@@ -87580,7 +87912,7 @@
 "placeId": "C|카메룬",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b1997",
@@ -87594,7 +87926,7 @@
 "placeId": "C|카메룬",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b1998",
@@ -87608,7 +87940,7 @@
 "placeId": "R|카메룬|음베사",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b1999",
@@ -87636,7 +87968,7 @@
 "placeId": "C|카메룬",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b2001",
@@ -87650,7 +87982,7 @@
 "placeId": "C|카메룬",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b2002",
@@ -87664,7 +87996,7 @@
 "placeId": "R|카메룬|오쿠",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b2003",
@@ -87678,7 +88010,7 @@
 "placeId": "C|카메룬",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b2004",
@@ -87696,7 +88028,7 @@
 "placeId": "C|카메룬",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b2005",
@@ -87714,7 +88046,7 @@
 "placeId": "R|카메룬|벨로",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b2006",
@@ -87733,7 +88065,7 @@
 "placeId": "C|카메룬",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b2007",
@@ -87751,7 +88083,7 @@
 "placeId": "C|카메룬",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b2008",
@@ -87770,7 +88102,7 @@
 "placeId": "C|카메룬",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b2009",
@@ -87788,7 +88120,7 @@
 "placeId": "R|카메룬|오쿠",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b2010",
@@ -87806,7 +88138,7 @@
 "placeId": "R|카메룬|음베사",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b2011",
@@ -87824,7 +88156,7 @@
 "placeId": "R|카메룬|오쿠",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b2012",
@@ -87842,7 +88174,7 @@
 "placeId": "R|카메룬|음베사",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b2013",
@@ -87944,7 +88276,7 @@
 "placeId": "R|카메룬|오쿠",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b2019",
@@ -88411,8 +88743,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2048",
@@ -88519,8 +88854,11 @@
 "cupNotes": [],
 "placeId": "R|케냐|키리냐가",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2054",
@@ -88533,8 +88871,11 @@
 "cupNotes": [],
 "placeId": "R|케냐|키리냐가",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2055",
@@ -88553,8 +88894,11 @@
 ],
 "placeId": "R|케냐|키리냐가",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2056",
@@ -88594,8 +88938,11 @@
 ],
 "placeId": "R|케냐|키암부",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2058",
@@ -88644,8 +88991,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2061",
@@ -88663,8 +89013,11 @@
 ],
 "placeId": "R|케냐|키리냐가",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2062",
@@ -88677,8 +89030,11 @@
 "cupNotes": [],
 "placeId": "R|케냐|키리냐가",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2063",
@@ -88691,8 +89047,11 @@
 "cupNotes": [],
 "placeId": "C|케냐",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2064",
@@ -88771,8 +89130,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2069",
@@ -88790,8 +89152,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2070",
@@ -88839,8 +89204,11 @@
 "cupNotes": [],
 "placeId": "C|케냐",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2073",
@@ -89298,8 +89666,11 @@
 ],
 "placeId": "R|케냐|엠부",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2099",
@@ -89319,8 +89690,11 @@
 ],
 "placeId": "R|케냐|엠부",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2100",
@@ -89403,8 +89777,11 @@
 "cupNotes": [],
 "placeId": "C|케냐",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2105",
@@ -89552,8 +89929,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2113",
@@ -89571,8 +89951,11 @@
 ],
 "placeId": "R|케냐|키리냐가",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2114",
@@ -89669,8 +90052,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2119",
@@ -89738,8 +90124,11 @@
 ],
 "placeId": "C|케냐",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2123",
@@ -89996,7 +90385,7 @@
 "placeId": "C|코스타리카",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b2140",
@@ -90352,8 +90741,11 @@
 ],
 "placeId": "R|코스타리카|타라수",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2163",
@@ -90881,7 +91273,7 @@
 "placeId": "C|코스타리카",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b2196",
@@ -90895,7 +91287,7 @@
 "placeId": "C|코스타리카",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b2197",
@@ -91131,7 +91523,7 @@
 "placeId": "C|코스타리카",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b2212",
@@ -91322,7 +91714,7 @@
 "placeId": "F|코스타리카|산타 테레사 2000",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b2223",
@@ -91595,7 +91987,7 @@
 "placeId": "C|코스타리카",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b2240",
@@ -91664,8 +92056,11 @@
 "cupNotes": [],
 "placeId": "C|코스타리카",
 "listingCount": 1,
-"processId": "black-honey",
-"processGroup": "honey"
+"processId": "light-honey",
+"processGroup": "honey",
+"processTags": [
+"honey"
+]
 },
 {
 "id": "b2244",
@@ -91866,8 +92261,11 @@
 "cupNotes": [],
 "placeId": "C|코스타리카",
 "listingCount": 1,
-"processId": "black-honey",
-"processGroup": "honey"
+"processId": "light-honey",
+"processGroup": "honey",
+"processTags": [
+"honey"
+]
 },
 {
 "id": "b2256",
@@ -92844,7 +93242,7 @@
 "placeId": "C|콜롬비아",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b2325",
@@ -92858,7 +93256,7 @@
 "placeId": "C|콜롬비아",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b2326",
@@ -94709,8 +95107,7 @@
 "processId": "yeast",
 "processGroup": "anaerobic",
 "processTags": [
-"semi-washed",
-"washed"
+"semi-washed"
 ]
 },
 {
@@ -95695,8 +96092,11 @@
 ],
 "placeId": "R|콜롬비아|카우카",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2492",
@@ -96016,8 +96416,11 @@
 ],
 "placeId": "C|콜롬비아",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2510",
@@ -96876,7 +97279,7 @@
 "placeId": "F|콜롬비아|엘 파라이소",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b2561",
@@ -96890,7 +97293,7 @@
 "placeId": "F|콜롬비아|엘 파라이소",
 "listingCount": 1,
 "processId": "semi-washed",
-"processGroup": "semi"
+"processGroup": "washed"
 },
 {
 "id": "b2562",
@@ -97817,8 +98220,11 @@
 ],
 "placeId": "F|태국|도이 인타논",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "extended-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2619",
@@ -98130,8 +98536,11 @@
 "cupNotes": [],
 "placeId": "F|파나마|엘리다",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "dark-room-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2640",
@@ -98455,8 +98864,11 @@
 "cupNotes": [],
 "placeId": "C|파나마",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "extended-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2663",
@@ -98483,8 +98895,11 @@
 "cupNotes": [],
 "placeId": "C|파나마",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "extended-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2665",
@@ -98497,8 +98912,11 @@
 "cupNotes": [],
 "placeId": "C|파나마",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "extended-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2666",
@@ -99266,9 +99684,10 @@
 ],
 "placeId": "C|파나마",
 "listingCount": 1,
-"processId": "natural",
+"processId": "dark-room-natural",
 "processGroup": "natural",
 "processTags": [
+"natural",
 "experimental-other"
 ]
 },
@@ -99348,8 +99767,11 @@
 ],
 "placeId": "F|파나마|알티에리",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "extended-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2713",
@@ -99388,8 +99810,11 @@
 ],
 "placeId": "F|파나마|알티에리",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "extended-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2715",
@@ -99408,8 +99833,11 @@
 ],
 "placeId": "F|파나마|알티에리",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "extended-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2716",
@@ -99508,8 +99936,8 @@
 ],
 "placeId": "C|파나마",
 "listingCount": 1,
-"processId": "dark-room",
-"processGroup": "anaerobic",
+"processId": "dark-room-washed",
+"processGroup": "washed",
 "processTags": [
 "washed"
 ]
@@ -99525,8 +99953,11 @@
 "cupNotes": [],
 "placeId": "F|파나마|엘리다",
 "listingCount": 1,
-"processId": "natural",
-"processGroup": "natural"
+"processId": "dark-room-natural",
+"processGroup": "natural",
+"processTags": [
+"natural"
+]
 },
 {
 "id": "b2722",
@@ -99546,8 +99977,11 @@
 ],
 "placeId": "F|파나마|엘리다",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "dark-room-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2723",
@@ -99587,8 +100021,11 @@
 ],
 "placeId": "F|파나마|엘리다",
 "listingCount": 1,
-"processId": "natural",
-"processGroup": "natural"
+"processId": "dark-room-natural",
+"processGroup": "natural",
+"processTags": [
+"natural"
+]
 },
 {
 "id": "b2725",
@@ -99608,8 +100045,11 @@
 ],
 "placeId": "F|파나마|엘리다",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "dark-room-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2726",
@@ -99708,8 +100148,8 @@
 "cupNotes": [],
 "placeId": "C|파나마",
 "listingCount": 1,
-"processId": "dark-room",
-"processGroup": "anaerobic",
+"processId": "dark-room-natural",
+"processGroup": "natural",
 "processTags": [
 "natural"
 ]
@@ -99735,8 +100175,8 @@
 ],
 "placeId": "C|파나마",
 "listingCount": 1,
-"processId": "dark-room",
-"processGroup": "anaerobic",
+"processId": "dark-room-washed",
+"processGroup": "washed",
 "processTags": [
 "washed"
 ]
@@ -99814,7 +100254,8 @@
 "processId": "anaerobic-natural",
 "processGroup": "anaerobic",
 "processTags": [
-"natural"
+"natural",
+"dark-room-natural"
 ]
 },
 {
@@ -100828,8 +101269,11 @@
 ],
 "placeId": "C|페루",
 "listingCount": 1,
-"processId": "washed",
-"processGroup": "washed"
+"processId": "full-washed",
+"processGroup": "washed",
+"processTags": [
+"washed"
+]
 },
 {
 "id": "b2797",
@@ -100868,10 +101312,11 @@
 ],
 "placeId": "C|페루",
 "listingCount": 1,
-"processId": "double-fermentation",
-"processGroup": "anaerobic",
+"processId": "double-fermented-washed",
+"processGroup": "washed",
 "processTags": [
-"washed"
+"washed",
+"double-fermentation"
 ]
 },
 {
@@ -100911,10 +101356,11 @@
 ],
 "placeId": "C|페루",
 "listingCount": 1,
-"processId": "double-fermentation",
-"processGroup": "anaerobic",
+"processId": "double-fermented-washed",
+"processGroup": "washed",
 "processTags": [
-"washed"
+"washed",
+"double-fermentation"
 ]
 },
 {
@@ -100934,10 +101380,11 @@
 ],
 "placeId": "F|페루|엘 미라도르",
 "listingCount": 1,
-"processId": "double-fermentation",
-"processGroup": "anaerobic",
+"processId": "double-fermented-washed",
+"processGroup": "washed",
 "processTags": [
-"washed"
+"washed",
+"double-fermentation"
 ]
 },
 {

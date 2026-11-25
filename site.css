@@ -146,6 +146,8 @@ a.link:hover{border-bottom-color:var(--terra)}
 .facts{display:grid;grid-template-columns:88px 1fr;gap:5px 14px;margin:12px 0 0;font-size:12.5px;line-height:1.65}
 .facts dt{color:var(--muted);font-weight:700}
 .facts dd{margin:0;color:var(--ink-mid)}
+/* 영어·일본어는 dt가 길어져 88px 칸을 넘습니다. 첫 칸을 내용 폭에 맞춰 겹침을 막습니다. */
+html[lang="en"] .facts,html[lang="ja"] .facts{grid-template-columns:max-content 1fr}
 .origin .go{margin-top:12px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 .maplink{
   display:inline-flex;align-items:center;gap:5px;text-decoration:none;
