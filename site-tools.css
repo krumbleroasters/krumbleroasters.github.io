@@ -10,6 +10,17 @@
 
 .topact { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 9px; }
 
+/* ── 페이지 오른쪽 위 작은 도구 모음 (KO/EN/JA · 농장 추가 요청 · 홈 화면 추가) ── */
+.topright{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:5px;flex:none}
+.ci-langslot{display:inline-flex;flex:none}
+.topright .tbtn{font-size:10.5px;line-height:1.1;padding:5px 8px;gap:4px;border-radius:999px}
+.topright .cilang button{padding:4px 5px;font-size:9.5px;letter-spacing:.03em}
+@media (max-width:760px){
+  .topright{max-width:60%;gap:4px}
+  .topright .tbtn{font-size:10px;padding:4px 7px}
+  .topright .cilang button{padding:4px 5px;font-size:9px}
+}
+
 .tbtn {
   display: inline-flex; align-items: center; gap: 5px;
   border: 1px solid var(--ci-terra);
@@ -108,4 +119,5 @@ a.ci-btn { text-decoration: none; display: inline-block; line-height: 1.2; }
   .ci-pop { max-height: 92dvh; }
   .ci-pop-body { padding: 12px 14px 16px; }
   .tbtn { font-size: 11px; padding: 7px 10px; }
+  .topright .tbtn { font-size: 10px; padding: 4px 7px; }
 }

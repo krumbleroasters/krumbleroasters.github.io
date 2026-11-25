@@ -21,7 +21,7 @@ window.CI_I18N = (function () {
     "소개": "About||このサイト",
     "개인정보처리방침": "Privacy||プライバシー",
     "산지 지도": "Origin Map||産地マップ",
-    "＋ 농장 추가 요청": "＋ Request a farm||＋ 農園の追加リクエスト",
+    "＋ 농장 추가 요청": "＋ Submit a farm||＋ 農園の追加を依頼",
     "홈 화면 추가": "Add to Home Screen||ホーム画面に追加",
     "산지 가이드": "Origin guide||産地ガイド",
     "손님용 산지 지도 · 운영 크럼블로스터스(KRUMBLE ROASTERS) · 가격과 매입 정보는 싣지 않습니다.":
@@ -106,7 +106,7 @@ window.CI_I18N = (function () {
     "· 기타품종": " · other varieties|| · その他品種",
     "기타품종": "Other varieties||その他品種",
     "ONCOFFEELOG · 온커피로그": "ONCOFFEELOG||ONCOFFEELOG · オンコーヒーログ",
-    "한 잔이 시작된 곳": "Where a cup began||一杯が始まった場所",
+    "한 잔이 시작된 곳": "Where your cup began||一杯が始まった場所",
     "마시거나 사 간 원두의 산지·농장을 지도에서 만나보세요.":
       "Find where the beans you drank or bought were grown.||飲んだ豆、買った豆の産地と農園を地図で見てみましょう。",
     "검색": "Search||検索",
@@ -120,7 +120,7 @@ window.CI_I18N = (function () {
     "사진 보관함에서 고르기": "Choose from your photos||写真から選ぶ",
     "이미 찍어 둔 사진을 고르세요": "Pick a photo you already took||撮っておいた写真を選びます",
     "사진은 이 기기 안에서만 읽고 서버로 보내지 않습니다. 처음 한 번은 글자 인식 데이터(약 18MB)를 내려받습니다.":
-      "Photos are read only on this device and are never sent to a server. The first time, the text-recognition data (about 18MB) is downloaded.||写真はこの端末内だけで読み取り、サーバーには送りません。初回のみ文字認識データ（約18MB）をダウンロードします。",
+      "Photos are read only on this device and never sent to a server. The OCR recognition data (about 18MB) is downloaded only once.||写真はこの端末内だけで読み取り、サーバーには送りません。OCR認識データ（約18MB）は初回のみダウンロードします。",
     "사진으로 검색": "Search by photo||写真で検索",
     "사진 검색 닫기": "Close photo search||写真検索を閉じる",
     "커피 검색": "Search coffee||コーヒーを検索",
@@ -251,9 +251,9 @@ window.CI_I18N = (function () {
     "인식 엔진을 불러오지 못했어요(네트워크 확인). 검색창에서 직접 찾을 수 있어요.":
       "The recognition engine couldn't be loaded (check your connection). You can still search by name.||認識エンジンを読み込めませんでした（ネットワークをご確認ください）。検索窓で直接探せます。",
     "처음 한 번만 글자 데이터(약 18MB)를 내려받습니다. 사진은 이 기기 안에서만 읽습니다.":
-      "The text data (about 18MB) is downloaded only once. Photos are read only on this device.||文字データ（約18MB）は初回のみダウンロードします。写真はこの端末内だけで読み取ります。",
+      "The OCR recognition data (about 18MB) is downloaded only once. Photos are read only on this device.||OCR認識データ（約18MB）は初回のみダウンロードします。写真はこの端末内だけで読み取ります。",
     "사진은 이 기기 안에서만 읽고 서버로 보내지 않습니다. 처음 한 번은 글자 인식 데이터(약 18MB)를 내려받습니다.":
-      "Photos are read only on this device and never sent to a server. The text data (about 18MB) is downloaded once.||写真はこの端末内だけで読み取り、サーバーには送りません。文字認識データ（約18MB）は初回のみダウンロードします。",
+      "Photos are read only on this device and never sent to a server. The OCR recognition data (about 18MB) is downloaded only once.||写真はこの端末内だけで読み取り、サーバーには送りません。OCR認識データ（約18MB）は初回のみダウンロードします。",
 
     /* ───────── index.html: JS가 그리는 문장 ───────── */
     "생두": "Green beans||生豆",
@@ -296,7 +296,7 @@ window.CI_I18N = (function () {
       "Green coffees traded in Korea and Japan are gathered in one place. The same coffee is counted once, and items new from the Japanese market carry a <b>Japan market</b> label.||韓国に流通する生豆に、日本で流通する生豆を加えて一か所にまとめました。同じ生豆は一度だけ数え、日本側から新しく入った品目には<b>日本国内流通</b>の表示を付けています。",
     "ONCOFFEELOG · 온커피로그": "ONCOFFEELOG||ONCOFFEELOG · オンコーヒーログ",
     "한 잔이 시작된 곳. 마시거나 사 간 원두의 산지·농장을 지도에서 만나보세요.":
-      "Where a cup began<em>.</em> <small id=\"ledeSub\">Find where the beans you drank or bought were grown.</small>||一杯が始まった場所<em>。</em> <small id=\"ledeSub\">飲んだ豆、買った豆の産地と農園を地図で見てみましょう。</small>",
+      "Where your cup began <small id=\"ledeSub\">Find where the beans you drank or bought were grown.</small>||一杯が始まった場所 <small id=\"ledeSub\">飲んだ豆、買った豆の産地と農園を地図で見てみましょう。</small>",
     "핀을 눌러 산지를, 검색으로 원두를 찾아보세요":
       "<b>Tap a pin</b> to open an origin, or search for a bean||<b>ピン</b>を押して産地を、検索で豆を探してみてください"
   };
@@ -311,7 +311,7 @@ window.CI_I18N = (function () {
     "국내에 유통되는 생두 {#}종이 어디서 자랐는지 지도에서 보여줍니다.||A map of where the {} green beans sold in Korea were grown.||韓国に流通する生豆{}種がどこで育ったかを地図で示します。",
     "국내에 들어온 생두 {#}종 · {#}곳의 산지와 농장||{} green beans sold in Korea · {} origins and farms||韓国に入ってきた生豆{}種 · {}か所の産地と農園",
     "국내에 들어온 생두 {#}종이 자란 곳||Where the {} green beans sold in Korea were grown||韓国に入ってきた生豆{}種が育った場所",
-    "국내에 유통되는 생두를 한자리에 모아, 같은 생두는 한 번으로 합쳤습니다. {#}개국 {#}곳의 산지·농장이 지도에 표시됩니다. 마시는 원두 이름을 검색하면 그 커피가 시작된 곳으로 지도가 이동합니다.||Every green bean sold in Korea in one place, with the same coffee counted once. Origins and farms in {} countries and {} places appear on the map. Search the name of the beans you're drinking and the map moves to where that coffee began.||韓国に流通する生豆を一か所に集め、同じ生豆は一度だけ数えています。{}か国{}か所の産地・農園が地図に表示されます。飲んでいる豆の名前を検索すると、そのコーヒーが始まった場所へ地図が動きます。",
+    "국내에 유통되는 생두를 한자리에 모아, 같은 생두는 한 번으로 합쳤습니다. {#}개국 {#}곳의 산지·농장이 지도에 표시됩니다. 마시는 원두 이름을 검색하면 그 커피가 시작된 곳으로 지도가 이동합니다.||Every green bean sold in Korea in one place—deduplicated across sellers. Origins and farms in {} countries and {} places appear on the map. Search the name of the beans you're drinking and the map moves to where that coffee began.||韓国に流通する生豆を一か所に集め、同じ生豆は一度だけ数えています。{}か国{}か所の産地・農園が地図に表示されます。飲んでいる豆の名前を検索すると、そのコーヒーが始まった場所へ地図が動きます。",
     "{#}종||{} beans||{}種",
     "{#}곳||{} places||{}か所",
     "{#}개국||{} countries||{}か国",
@@ -367,6 +367,7 @@ window.CI_I18N = (function () {
     "산지||origin||産地",
     "국가||country||国",
     "에티오피아||Ethiopia||エチオピア",
+    "호주||Australia||オーストラリア",
     "케냐||Kenya||ケニア",
     "콜롬비아||Colombia||コロンビア",
     "브라질||Brazil||ブラジル",
@@ -1075,7 +1076,7 @@ window.CI_I18N = (function () {
       "지도에": "on a map||地図に",
       "잔": "cups||杯",
       "마신 커피": "Cups drunk||飲んだコーヒー",
-      "개국": "countries||か国",
+      "개국": " countries||か国",
       "방문한 국가": "Countries visited||訪れた国",
       "마지막 기록": "Last entry||最後の記録",
       "내가 마신": "My||私が飲んだ",
@@ -1229,6 +1230,7 @@ window.CI_I18N = (function () {
         "Take a photo of the coffee you drank<br />or pick one from your album||飲んだコーヒーの写真を撮るか<br />アルバムから選んでください"
     },
     attr: {
+      "생두는 아직 없고, 확인된 농장만 지도에 있습니다.": "No green beans yet — only confirmed farms are on the map.||生豆はまだなく、確認できた農園だけが地図にあります。",
       "사진 한 장으로 마신 커피를 산지 지도에 남기는 개인 커피 다이어리.":
         "A personal coffee diary that pins the cups you drink onto an origin map.||写真一枚で飲んだコーヒーを産地マップに残す、個人のコーヒーダイアリー。",
       "커피 기록": "Coffee log||コーヒー記録",
@@ -1305,7 +1307,7 @@ window.CI_I18N = (function () {
       "곳 표시 · {#}종||places · {} beans||か所を表示 · {}種",
       "지도 © Esri, HERE, Garmin, OpenStreetMap contributors||Map © Esri, HERE, Garmin, OpenStreetMap contributors||地図 © Esri, HERE, Garmin, OpenStreetMap contributors",
       "지도 © {}||Map © {}||地図 © {}",
-      "· 온커피로그 · 손님용 산지 지도 · KRUMBLE ROASTERS||· Coffee origin map · KRUMBLE ROASTERS||· コーヒー産地マップ · KRUMBLE ROASTERS",
+      "온커피로그 · 손님용 산지 지도 · KRUMBLE ROASTERS||Coffee origin map · KRUMBLE ROASTERS||コーヒー産地マップ · KRUMBLE ROASTERS",
       "시트를 불러오지 못해 이 기기 기록만 반영했어요 · 코드는 앞 두 글자만 표시합니다||The sheet couldn't be loaded, so only this device's records are counted · codes show only their first two characters||シートを読み込めなかったため、この端末の記録だけを反映しています · コードは最初の2文字だけを表示します",
       "{#}명 참여 · 시트 반영은 최대 5분(방금 남긴 내 기록은 바로 반영) · 코드는 앞 두 글자만 표시합니다||{} people · the sheet updates within 5 minutes (cups you just logged count right away) · codes show only their first two characters||{}人が参加 · シートへの反映は最大5分（たった今の記録はすぐ反映） · コードは最初の2文字だけを表示します",
       "순위를 불러오는 중이에요 · 코드는 앞 두 글자만 표시합니다||Loading the ranking · codes show only their first two characters||ランキングを読み込んでいます · コードは最初の2文字だけを表示します"

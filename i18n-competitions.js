@@ -46,9 +46,9 @@
       "확인하지 못한 대회": ["Competitions not confirmed", "確認できなかった大会"],
       "이 목록의 범위": ["What this list covers", "このリストの範囲"],
 
-      "컵테이스터스만 해도 서로 다른 대회가 여섯 개입니다. KCTC(SCA·부산), CTC(GCA·부산여대), MOC(KCL·코엑스), DCTC(대구), GPCC(영도), WCT(시흥 WCC). 이름이 비슷해도 주최와 권위가 다르니 카드의 주최와 링크를 함께 보세요. 같은 이유로 로스팅 대회도 KCRC(SCA)·KCR(KCL)·SRC(스트롱홀드)·WRL KOREA·KRCA처럼 여러 갈래가 있습니다.":
-        ["Cupping alone has six different competitions: KCTC (SCA, Busan), CTC (GCA, Busan Women's University), MOC (KCL, COEX), DCTC (Daegu), GPCC (Yeongdo) and WCT (WCC in Siheung). Similar names, different organisers and standing, so read the organiser and the link on each card. Roasting splits the same way — KCRC (SCA), KCR (KCL), SRC (Stronghold), WRL KOREA and KRCA.",
-         "カッピングだけでも六つの別の大会があります。KCTC（SCA・釜山）、CTC（GCA・釜山女子大）、MOC（KCL・COEX）、DCTC（大邱）、GPCC（影島）、WCT（始興WCC）。名前は似ていても主催と位置づけが違うので、カードの主催とリンクを一緒に見てください。ローストも同じで、KCRC（SCA）・KCR（KCL）・SRC（ストロングホールド）・WRL KOREA・KRCA に分かれます。"],
+      "컵테이스터스만 해도 서로 다른 대회가 여섯 개입니다. KCTC(SCA·부산), CTC(GCA·부산여대), MOC(KCL·코엑스), DCTC(대구), GPCC(영도), WCT(시흥 WCC). 이름이 비슷해도 주최와 권위가 다르니 카드의 주최와 링크를 함께 보세요. 같은 이유로 로스팅 대회도 KCRC(SCA)·KCR(KCL 로스팅)·SRC(스트롱홀드)·WRL KOREA·KRCA처럼 여러 갈래가 있습니다.":
+        ["Cupping alone has six different competitions: KCTC (SCA, Busan), CTC (GCA, Busan Women's University), MOC (KCL, COEX), DCTC (Daegu), GPCC (Yeongdo) and WCT (WCC in Siheung). Similar names, different organisers and standing, so read the organiser and the link on each card. Roasting splits the same way — KCRC (SCA), KCR (KCL roasting), SRC (Stronghold), WRL KOREA and KRCA.",
+         "カッピングだけでも六つの別の大会があります。KCTC（SCA・釜山）、CTC（GCA・釜山女子大）、MOC（KCL・COEX）、DCTC（大邱）、GPCC（影島）、WCT（始興WCC）。名前は似ていても主催と位置づけが違うので、カードの主催とリンクを一緒に見てください。ローストも同じで、KCRC（SCA）・KCR（KCLロースト）・SRC（ストロングホールド）・WRL KOREA・KRCA に分かれます。"],
 
       "아래 대회는 2026년 개최 기록이나 세부 일정을 확인하지 못해 목록에 넣지 않았습니다.":
         ["These competitions are left out of the list because their 2026 record or detailed schedule could not be confirmed.",
@@ -67,9 +67,9 @@
       "국내 커피대회, 한 해 일정 한눈에":
         ["Korean coffee competitions, <em>a year at a glance</em>", "韓国のコーヒー大会、<em>一年の日程を一望</em>"],
 
-      "대회 이름의 연도와 실제 열리는 해는 다를 수 있습니다. SCA 계열 대회는 그 대회 우승자가 출전할 세계대회의 연도를 이름에 씁니다. 예를 들어 2027 KNBC·KBrC는 2026년 11월 11~14일 코엑스에서, 2027 KCRC는 2026년 6월 4~7일 킨텍스에서, 2027 KCTC는 2026년 10월 1~4일 부산 해운대에서 열렸습니다. 이 페이지의 월 필터는 이름이 아니라 실제 개최일을 기준으로 합니다.":
-        ["<b>A competition's name may carry a different year from the year it is held.</b> SCA events are named after the world championship their winner enters. For example <b>2027 KNBC and KBrC</b> were held on 11–14 November 2026 at COEX, <b>2027 KCRC</b> on 4–7 June 2026 at KINTEX, and <b>2027 KCTC</b> on 1–4 October 2026 in Haeundae, Busan. The month filter on this page follows the actual dates, not the name.",
-         "<b>大会名の年と、実際に開かれる年は違うことがあります。</b>SCA系の大会は、その大会の優勝者が出場する世界大会の年を名前に使います。たとえば<b>2027 KNBC・KBrC</b>は2026年11月11〜14日にCOEXで、<b>2027 KCRC</b>は2026年6月4〜7日にKINTEXで、<b>2027 KCTC</b>は2026年10月1〜4日に釜山・海雲台で開かれました。このページの月フィルターは名前ではなく実際の開催日で分けています。"],
+      "대회 이름의 연도와 실제 열리는 해는 다를 수 있습니다. SCA 계열 대회는 그 대회 우승자가 출전할 세계대회의 연도를 이름에 씁니다. 예를 들어 2027 KNBC·KBrC는 2026년 11월 11~14일 코엑스에서, 2027 KCRC는 2026년 6월 4~7일 킨텍스에서, 2027 KCTC는 2026년 10월 1~4일 부산 해운대 더베이101에서 열렸습니다. 이 페이지의 월 필터는 이름이 아니라 실제 개최일을 기준으로 합니다.":
+        ["<b>A competition's name may carry a different year from the year it is held.</b> SCA events are named after the world championship their winner enters. For example <b>2027 KNBC and KBrC</b> were held on 11–14 November 2026 at COEX, <b>2027 KCRC</b> on 4–7 June 2026 at KINTEX, and <b>2027 KCTC</b> on 1–4 October 2026 at The Bay 101 in Haeundae, Busan. The month filter on this page follows the actual dates, not the name.",
+         "<b>大会名の年と、実際に開かれる年は違うことがあります。</b>SCA系の大会は、その大会の優勝者が出場する世界大会の年を名前に使います。たとえば<b>2027 KNBC・KBrC</b>は2026年11月11〜14日にCOEXで、<b>2027 KCRC</b>は2026年6月4〜7日にKINTEXで、<b>2027 KCTC</b>は2026年10月1〜4日に釜山・海雲台のザベイ101で開かれました。このページの月フィルターは名前ではなく実際の開催日で分けています。"],
 
       "공식주최 측 공식 페이지나 공고에서 직접 확인한 항목입니다.":
         ["<b>Official</b>Checked directly on the organiser's own page or announcement.",
@@ -87,9 +87,6 @@
       "WSBC 월드 슈퍼 바리스타 챔피언십 — 2012~2023년 서울커피엑스포 부대행사로 열렸고, 2026년 프로그램에는 없습니다.":
         ["<strong>WSBC World Super Barista Championship</strong> — ran from 2012 to 2023 as a side event of the Seoul Coffee Expo, and is not in the 2026 programme.",
          "<strong>WSBC ワールドスーパーバリスタチャンピオンシップ</strong> — 2012〜2023年にソウルコーヒーエキスポの併催行事として開かれ、2026年のプログラムにはありません。"],
-      "카누 바리스타 대회 — 동서식품. 2026년 대회 세부 일정을 확인하지 못했습니다.":
-        ["<strong>Kanu Barista Contest</strong> — Dongsuh Foods. The 2026 schedule could not be confirmed.",
-         "<strong>カヌ・バリスタ大会</strong> — 東西食品。2026年大会の詳細日程は確認できませんでした。"],
       "더 블랙 골드 컵 — 국내 로스터가 다수 참가하지만 국내 개최지와 주최를 확인하지 못했습니다.":
         ["<strong>The Black Gold Cup</strong> — many Korean roasters enter, but the Korean venue and organiser could not be confirmed.",
          "<strong>ザ・ブラックゴールドカップ</strong> — 韓国のロースターが多く参加していますが、国内の会場と主催は確認できませんでした。"]

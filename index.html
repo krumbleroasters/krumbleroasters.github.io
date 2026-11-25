@@ -20,7 +20,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 <meta name="naver-site-verification" content="ea8d506e436c2cec2e02ec4e2ef3a9b823caa9f1" />
 <meta name="google-site-verification" content="TFD7t46niSmxDj6azZclhs_e1QPJRlDTRvqquwfB4NU" />
 <title>온커피로그 ONCOFFEELOG · 커피 산지·농장 지도</title>
-<meta name="description" content="온커피로그(ONCOFFEELOG) 커피 산지·농장 지도 — 국내에 들어온 생두 2,800여 종이 어디서 자랐는지 지도에서 보여줍니다. 크럼블로스터스(KRUMBLE ROASTERS)가 운영합니다." />
+<meta name="description" content="온커피로그(ONCOFFEELOG) 커피 산지·농장 지도 — 국내와 일본에 유통되는 생두 3,100여 종이 어디서 자랐는지 지도에서 보여줍니다. 크럼블로스터스(KRUMBLE ROASTERS)가 운영합니다." />
 <link rel="canonical" href="https://oncoffeelog.com/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="온커피로그 ONCOFFEELOG" />
@@ -68,13 +68,28 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 
   /* ---------- header ---------- */
   .head{padding:18px 18px 12px;flex:none;background:var(--cream);position:relative;z-index:5}
-  .brand{display:flex;align-items:center;gap:9px}
+  .headtop{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:6px 10px}
+  .brand{display:flex;align-items:center;gap:9px;min-width:0}
   .bean{width:22px;height:22px;flex:none}
-  .brand-txt{font-size:11.5px;letter-spacing:.22em;font-weight:700;color:var(--ink)}
+  .brand-txt{font-size:11.5px;letter-spacing:.22em;font-weight:700;color:var(--ink);white-space:nowrap}
   .brand-txt span{color:var(--terra)}
   .lede{margin:10px 0 0;font-size:22px;line-height:1.28;font-weight:700;letter-spacing:-.02em}
   .lede em{font-style:normal;color:var(--terra)}
+  /* 영어·일본어 제목은 마침표 없이 ("Where your cup began") */
+  html[lang="en"] .lede em,html[lang="ja"] .lede em{display:none}
   .lede small{display:block;margin-top:6px;font-size:12.5px;font-weight:500;color:var(--ink-soft);letter-spacing:0}
+
+  /* ---------- 페이지 오른쪽 위 도구 (KO/EN/JA · 농장 추가 요청 · 홈 화면 추가) ---------- */
+  .topright{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:5px;flex:none}
+  .ci-langslot{display:inline-flex;flex:none}
+  .topright .tbtn{font-size:10.5px;line-height:1.1;padding:5px 8px;gap:4px}
+  .topright .cilang button{padding:4px 5px;font-size:9.5px;letter-spacing:.03em}
+  @media(max-width:520px){
+    .headtop{flex-wrap:wrap;gap:6px}
+    .topright{margin-left:auto;gap:4px}
+    .topright .tbtn{font-size:10px;padding:4px 7px}
+    .topright .cilang button{padding:4px 5px;font-size:9px}
+  }
 
   /* ---------- search ---------- */
   .search{position:relative;margin:14px 0 0}
@@ -643,7 +658,6 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     .sitelinks a{font-size:11px}
     .sitelinks a.nav-log{font-size:12.5px;padding:5px 12px;margin:2px 4px}
     .sitelinks a.nav-comp{font-size:12.5px;padding:5px 12px;margin:2px 4px}
-    .topact{margin-top:7px}
     .lede{margin:7px 0 0;font-size:20px}
     .lede small{margin-top:4px;font-size:12px}
     .search{margin:10px 0 0}
@@ -670,7 +684,6 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     .sitelinks a{font-size:11px}
     .lede{margin:8px 0 0;font-size:20px}
     .lede small{margin-top:4px;font-size:12px}
-    .topact{margin-top:8px}
     .search{margin:11px 0 0}
     .search-box{height:44px}
     .chips{padding:10px 16px}
@@ -721,7 +734,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 </script>
 <link rel="manifest" href="manifest.webmanifest" />
 <link rel="apple-touch-icon" href="icon-192.png" />
-<link rel="stylesheet" href="site-tools.css?v=20261122d" />
+<link rel="stylesheet" href="site-tools.css?v=20261127a" />
 <link rel="alternate" hreflang="ko" href="https://oncoffeelog.com/" />
 <link rel="alternate" hreflang="en" href="https://oncoffeelog.com/?lang=en" />
 <link rel="alternate" hreflang="ja" href="https://oncoffeelog.com/?lang=ja" />
@@ -730,25 +743,26 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 <body>
 <div class="app" id="app">
   <header class="head">
-    <div class="brand">
-      <svg class="bean" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <ellipse cx="12" cy="12" rx="7.4" ry="10" transform="rotate(35 12 12)" fill="#C2603C"/>
-        <path d="M7.4 16.6C10.6 14.4 11 9.6 16.6 7.4" stroke="#FBF7F0" stroke-width="1.5" stroke-linecap="round"/>
-      </svg>
-      <div class="brand-txt">ONCOFFEELOG <span>·</span> 온커피로그</div>
+    <div class="headtop">
+      <div class="brand">
+        <svg class="bean" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <ellipse cx="12" cy="12" rx="7.4" ry="10" transform="rotate(35 12 12)" fill="#C2603C"/>
+          <path d="M7.4 16.6C10.6 14.4 11 9.6 16.6 7.4" stroke="#FBF7F0" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <div class="brand-txt">ONCOFFEELOG <span>·</span> 온커피로그</div>
+      </div>
+      <div class="topright">
+        <span class="ci-langslot" data-cilang></span>
+        <button type="button" class="tbtn" data-farmreq>＋ 농장 추가 요청</button>
+        <button type="button" class="tbtn ghost" data-install>홈 화면 추가</button>
+      </div>
     </div>
     <nav class="sitelinks" aria-label="사이트 안내">
       <a href="guide.html">가이드</a><span class="sep" aria-hidden="true">·</span>
       <a href="farms.html">농장 아카이브</a><span class="sep" aria-hidden="true">·</span>
       <a href="log.html" class="nav-log">내 커피 기록</a><span class="sep" aria-hidden="true">·</span>
-      <a href="competitions.html" class="nav-comp">커피대회</a><span class="sep" aria-hidden="true">·</span>
-      <a href="about.html">소개</a><span class="sep" aria-hidden="true">·</span>
-      <a href="privacy.html">개인정보처리방침</a>
+      <a href="competitions.html" class="nav-comp">커피대회</a>
     </nav>
-    <div class="topact">
-      <button type="button" class="tbtn" data-farmreq>＋ 농장 추가 요청</button>
-      <button type="button" class="tbtn ghost" data-install>홈 화면 추가</button>
-    </div>
     <p class="lede">한 잔이 시작된 곳<em>.</em>
       <small id="ledeSub">마시거나 사 간 원두의 산지·농장을 지도에서 만나보세요.</small>
     </p>
@@ -825,7 +839,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script src="process-data.js?v=20261126b"></script>
-<script src="photos.js?v=20261125b"></script>
+<script src="photos.js?v=20261127a"></script>
 <script>
 /* =========================================================
    ONCOFFEELOG · 온커피로그 (KRUMBLE ROASTERS)  v0.3
@@ -1045,6 +1059,14 @@ function renderChips() {
   if (nAuc) chips.push(`<button class="chip ${state.filter === "auction" ? "on" : ""}" data-f="auction">🏆 옥션·CoE <span class="cnt">${nAuc.toLocaleString()}</span></button>`);
   for (const [c, n] of top) {
     chips.push(`<button class="chip ${state.filter === "country:" + c ? "on" : ""}" data-f="country:${esc(c)}">${esc(c)} <span class="cnt">${n.toLocaleString()}</span></button>`);
+  }
+  /* 생두가 아직 없고 농장만 확인된 나라(호주)도 칩에 둡니다. 숫자는 생두가 아니라 지도에 올라온 곳 수입니다. */
+  const placeCounts = new Map();
+  for (const p of CAT.places) placeCounts.set(p.country, (placeCounts.get(p.country) || 0) + 1);
+  const shown = new Set(top.map(([c]) => c));
+  for (const c of [...placeCounts.keys()].sort()) {
+    if (shown.has(c) || (counts.get(c) || 0)) continue;
+    chips.push(`<button class="chip ${state.filter === "country:" + c ? "on" : ""}" data-f="country:${esc(c)}" title="생두는 아직 없고, 확인된 농장만 지도에 있습니다.">${esc(c)} <span class="cnt">${placeCounts.get(c)}곳</span></button>`);
   }
   el.innerHTML = chips.join("");
   el.querySelectorAll("button").forEach((b) => b.addEventListener("click", () => {
@@ -1397,7 +1419,7 @@ function cardForPlace(p0) {
     <dl class="stats">
       <div class="stat"><dt>국가</dt><dd>${esc(p.country)}</dd></div>
       <div class="stat"><dt>지역</dt><dd>${esc(p.kind === "country" ? "—" : p.name)}</dd></div>
-      <div class="stat wide"><dt>주요 가공</dt><dd>${proc.slice(0, 4).map(([k, v]) => `${esc(k)} <small style="color:#9A8F80">${v}</small>`).join(" · ") || "—"}</dd></div>
+      <div class="stat wide"><dt>주요 가공</dt><dd>${proc.slice(0, 4).map(([k, v]) => `${esc(k)} <small style="color:#9A8F80">${v}</small>`).join(" · ") || esc(p.processes || "—")}</dd></div>
     </dl>
     ${notes.length ? `<div class="notes">${notes.slice(0, 10).map(([n, c]) => `<span class="note">${esc(n)}${c > 1 ? ` <small style="opacity:.6">${c}</small>` : ""}</span>`).join("")}</div>` : ""}
     ${vars.length ? `<p class="story">품종: ${vars.slice(0, 6).map(([k, v]) => `${esc(k)} <small style="color:#9A8F80">${v}</small>`).join(" · ")}</p>` : ""}
@@ -2580,10 +2602,10 @@ boot();
 </script>
 <script src="qrcode.min.js?v=20261122e"></script>
 <script src="qr-tools.js?v=20261125b"></script>
-<script src="site-tools.js?v=20261122d"></script>
-<script src="i18n-data.js?v=20261125m"></script>
-<script src="i18n-pages.js?v=20261126b"></script>
-<script src="i18n-places.js?v=20261125x"></script>
-<script src="i18n.js?v=20261125j"></script>
+<script src="site-tools.js?v=20261127a"></script>
+<script src="i18n-data.js?v=20261127a"></script>
+<script src="i18n-pages.js?v=20261127a"></script>
+<script src="i18n-places.js?v=20261127a"></script>
+<script src="i18n.js?v=20261127a"></script>
 </body>
 </html>
