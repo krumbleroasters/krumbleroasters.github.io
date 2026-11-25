@@ -572,7 +572,8 @@
         '<label class="f"><span>메모 (카드에 그대로 보입니다 · 선택)</span><input data-f="note" type="text" value="' + esc(it.adminNote || "") + '" /></label>' +
         '<label class="switch" style="margin-top:10px"><input data-f="cancelled" type="checkbox" ' + (it.cancelled ? "checked" : "") + ' /> 취소된 대회로 표시</label>' +
         '<div class="actions"><button type="button" class="btn small" data-save>저장</button>' +
-        '<button type="button" class="btn danger small" data-undo>되돌리기</button></div>' +
+        '<button type="button" class="btn danger small" data-undo>되돌리기</button>' +
+        (it.added ? '<button type="button" class="btn danger small" data-del>추가한 대회 삭제</button>' : '') + '</div>' +
       "</div></div>";
   }
 
@@ -605,6 +606,11 @@
         saveUpdate(id, u);
       });
       row.querySelector("[data-undo]").addEventListener("click", function () { saveUpdate(id, null); });
+      var delBtn = row.querySelector("[data-del]");
+      if (delBtn) delBtn.addEventListener("click", function () {
+        if (!confirm("이 대회를 목록에서 지울까요? (관리자 화면에서 추가한 대회만 지울 수 있습니다)")) return;
+        removeAdded(id);
+      });
     });
   }
 
@@ -616,6 +622,16 @@
     api("", { method: "POST", body: { action: "competitions", extra: extra } }).then(function (r) {
       if (!r.ok) { toast(r.message || "저장하지 못했습니다.", true); return; }
       toast(fields ? "저장했습니다. 1~2분 뒤 사이트에 반영됩니다." : "되돌렸습니다.");
+      loadCompetitions();
+    }).catch(function (err) { toast(err.message, true); });
+  }
+
+  function removeAdded(id) {
+    var extra = state.extra || { updates: {}, add: [] };
+    extra.add = (extra.add || []).filter(function (a) { return a.id !== id; });
+    api("", { method: "POST", body: { action: "competitions", extra: extra } }).then(function (r) {
+      if (!r.ok) { toast(r.message || "지우지 못했습니다.", true); return; }
+      toast("지웠습니다. 1~2분 뒤 사이트에서도 빠집니다.");
       loadCompetitions();
     }).catch(function (err) { toast(err.message, true); });
   }
