@@ -264,3 +264,23 @@ td a{color:var(--terra);font-weight:700;text-decoration:none}
 .terra-dl dd{margin:3px 0 0;font-size:12.5px;font-weight:700;line-height:1.55;color:#3D372F;word-break:keep-all;overflow-wrap:anywhere}
 @media (max-width:470px){.terra-dl{grid-template-columns:1fr}}
 .terra-dl>div:last-child:nth-child(odd){grid-column:1/-1}
+
+/* ---------- 산지·농장 사진: 무료 사진 + 출처·라이선스 + 사진 저장 ---------- */
+.cardph{margin:0 0 14px;border-radius:12px;overflow:hidden;background:#F3EDE4;border:1px solid var(--line)}
+.cardph .phimg{position:relative;line-height:0}
+.cardph img{display:block;width:100%;height:200px;object-fit:cover;object-position:center 45%;background:#F3EDE4}
+.farm .cardph{margin:-4px 0 16px}
+.cardph .phdl{
+  position:absolute;right:9px;bottom:9px;display:inline-flex;align-items:center;gap:4px;
+  font:inherit;font-size:10.5px;font-weight:800;line-height:1;letter-spacing:.01em;
+  padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.10);
+  background:rgba(255,253,249,.94);color:#3D372F;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.14);
+  -webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);
+}
+.cardph .phdl:hover{background:#fff}
+.cardph .phdl.done{background:#E7EEE4;color:#37563C;border-color:#C9D8C7}
+.cardph figcaption{display:flex;flex-direction:column;gap:2px;padding:8px 11px 9px;background:#FFFDF9;border-top:1px solid var(--line);line-height:1.45}
+.cardph .phcap{font-size:11.5px;font-weight:600;color:#4B4238}
+.cardph .phattr{font-size:9.5px;color:#8C8377}
+.cardph .phattr a{color:#8A6A46;text-decoration:underline;text-underline-offset:2px}
+@media (max-width:520px){ .cardph img{height:170px} }
