@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="robots" content="noindex, nofollow, noarchive" />
+<meta name="theme-color" content="#2F4636" />
+<title>마스터 관리자 — 온커피로그</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+<style>
+  :root{
+    --cream:#FBF7F0; --cream2:#F3ECE1; --ink:#221E1A; --soft:#5A5148; --muted:#8C8377;
+    --line:#E2D8C9; --terra:#C2603C; --green:#2F4636; --green2:#3C5A47; --navlog:#2F5D4A;
+    --warn:#9A5B13; --bad:#A33A2A; --r:14px;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;padding:0;background:var(--cream);color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,'Noto Sans KR',-apple-system,BlinkMacSystemFont,system-ui,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+  a{color:var(--green);text-decoration:none}
+  a:hover{text-decoration:underline}
+  button{font-family:inherit;font-size:inherit;color:inherit;cursor:pointer}
+  input,textarea,select{font-family:inherit;font-size:14px;color:inherit}
+  .wrap{max-width:760px;margin:0 auto;padding:0 16px 60px}
+  header.top{position:sticky;top:0;z-index:20;background:rgba(47,70,54,.98);color:#F7F2E8;
+    display:flex;align-items:center;gap:10px;padding:12px 16px;box-shadow:0 6px 18px -14px rgba(0,0,0,.6)}
+  header.top .bean{width:20px;height:20px;flex:none}
+  header.top .bt{font-size:11.5px;letter-spacing:.18em;font-weight:700;white-space:nowrap}
+  header.top .bt i{font-style:normal;color:#E2A98F}
+  header.top .tag{margin-left:auto;font-size:10.5px;font-weight:800;letter-spacing:.12em;
+    background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:4px 9px}
+  header.top a.back{margin-left:auto;font-size:11.5px;color:#EFE7DA;border:1px solid rgba(255,255,255,.28);
+    border-radius:999px;padding:4px 10px}
+  h1{font-size:21px;letter-spacing:-.02em;margin:22px 0 4px}
+  h2{font-size:16px;margin:0 0 10px;letter-spacing:-.01em}
+  p.lede{color:var(--soft);font-size:13.5px;margin:0 0 18px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:16px;margin:0 0 14px;
+    box-shadow:0 10px 26px -24px rgba(34,30,26,.6)}
+  .card h2{display:flex;align-items:center;gap:8px}
+  .card h2 .n{font-size:10.5px;font-weight:800;letter-spacing:.1em;color:var(--muted)}
+  .hint{font-size:12.5px;color:var(--soft);margin:6px 0 0}
+  .hint.warn{color:var(--warn)}
+  .hint.bad{color:var(--bad)}
+  label.f{display:block;margin:12px 0 0}
+  label.f > span{display:block;font-size:11.5px;font-weight:800;letter-spacing:.06em;color:var(--muted);margin-bottom:5px}
+  input[type=text],input[type=password],input[type=url],textarea,select{
+    width:100%;background:#FFFDF9;border:1px solid var(--line);border-radius:10px;padding:10px 12px;line-height:1.45;outline:none}
+  input:focus,textarea:focus,select:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(47,70,54,.09)}
+  textarea{min-height:88px;resize:vertical}
+  .row{display:flex;gap:10px;flex-wrap:wrap}
+  .row > *{flex:1 1 160px;min-width:0}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:1px solid var(--green);
+    background:var(--green);color:#FFF8EF;border-radius:999px;padding:10px 18px;font-size:14px;font-weight:700}
+  .btn:hover{background:var(--green2);text-decoration:none}
+  .btn:disabled{opacity:.5;cursor:default}
+  .btn.ghost{background:#fff;color:var(--green);border-color:var(--line)}
+  .btn.ghost:hover{background:var(--cream2)}
+  .btn.small{padding:7px 13px;font-size:12.5px}
+  .btn.danger{background:#fff;color:var(--bad);border-color:#E7C6BF}
+  .btn.danger:hover{background:#FBEFEC}
+  .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;align-items:center}
+  .chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+  .chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:700;color:var(--soft)}
+  .chip[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:#FFF8EF}
+  .tabs{display:flex;gap:6px;overflow-x:auto;padding:12px 0 8px;scrollbar-width:none}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{flex:none;border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 14px;font-size:13px;font-weight:700;color:var(--soft)}
+  .tab[aria-selected=true]{background:var(--green);border-color:var(--green);color:#FFF8EF}
+  .panel[hidden]{display:none}
+  .list{margin:12px 0 0;border-top:1px solid var(--line)}
+  .item{border-bottom:1px solid var(--line);padding:11px 0}
+  .item .t{font-size:14px;font-weight:700;letter-spacing:-.01em}
+  .item .m{font-size:12.5px;color:var(--soft);margin-top:2px}
+  .item .badges{display:flex;gap:5px;flex-wrap:wrap;margin-top:5px}
+  .b{font-size:10.5px;font-weight:800;letter-spacing:.04em;border-radius:999px;padding:3px 8px;background:var(--cream2);color:var(--soft)}
+  .b.on{background:#E9F1EB;color:var(--navlog)}
+  .b.edit{background:#FBF0E6;color:var(--warn)}
+  .b.add{background:#EAF0F7;color:#2C4C6E}
+  .b.cancel{background:#FBEFEC;color:var(--bad)}
+  .item .edit{margin-top:10px;display:none}
+  .item.open .edit{display:block}
+  .switch{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;font-weight:700}
+  .switch input{width:18px;height:18px}
+  .toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);max-width:min(92vw,560px);
+    background:#221E1A;color:#FFF8EF;font-size:13.5px;line-height:1.45;border-radius:12px;padding:11px 16px;
+    box-shadow:0 14px 40px -18px rgba(0,0,0,.7);opacity:0;pointer-events:none;transition:opacity .18s ease,transform .18s ease;z-index:50}
+  .toast.on{opacity:1;transform:translateX(-50%) translateY(-4px)}
+  .toast.err{background:#7E2A1D}
+  .kv{font-size:12.5px;color:var(--soft);display:grid;grid-template-columns:auto 1fr;gap:2px 10px;margin:10px 0 0}
+  .kv dt{font-weight:800;color:var(--muted);letter-spacing:.04em}
+  .kv dd{margin:0;word-break:break-all}
+  .links{display:grid;gap:8px;grid-template-columns:1fr;margin-top:8px}
+  @media(min-width:560px){.links{grid-template-columns:1fr 1fr}}
+  .lnk{display:block;border:1px solid var(--line);border-radius:12px;background:#FFFDF9;padding:12px 14px}
+  .lnk b{display:block;font-size:14px}
+  .lnk span{font-size:12.5px;color:var(--soft)}
+  .lnk:hover{border-color:var(--green);text-decoration:none}
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;word-break:break-all}
+  .foot{margin:26px 0 0;font-size:12px;color:var(--muted);text-align:center;line-height:1.7}
+  .empty{font-size:13px;color:var(--muted);padding:14px 0}
+  .spinner{display:inline-block;width:14px;height:14px;border:2px solid rgba(255,255,255,.4);border-top-color:#fff;
+    border-radius:50%;animation:sp .7s linear infinite;vertical-align:-2px}
+  @keyframes sp{to{transform:rotate(360deg)}}
+  .note{font-size:12.5px;color:var(--warn);background:#FDF6EC;border:1px solid #F0DEC4;border-radius:10px;padding:10px 12px;margin:12px 0 0}
+  .ok{font-size:12.5px;color:var(--navlog);background:#EEF5F0;border:1px solid #CFE0D4;border-radius:10px;padding:10px 12px;margin:12px 0 0}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <svg class="bean" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <ellipse cx="12" cy="12" rx="7.4" ry="10" transform="rotate(35 12 12)" fill="#E2A98F"/>
+    <path d="M7.4 16.6C10.6 14.4 11 9.6 16.6 7.4" stroke="#2F4636" stroke-width="1.5" stroke-linecap="round"/>
+  </svg>
+  <span class="bt">ONCOFFEELOG <i>·</i> 온커피로그</span>
+  <span class="tag">MASTER</span>
+  <a class="back" href="/">사이트로</a>
+</header>
+
+<div class="wrap">
+
+  <!-- ───────── 로그인 ───────── -->
+  <section id="loginView" hidden>
+    <h1>마스터 관리자</h1>
+    <p class="lede">세민님 전용 화면입니다. 사이트에 바로 반영할 공지·대회 일정·농장 정보를 여기서 고칩니다.</p>
+
+    <div class="card">
+      <h2>로그인</h2>
+      <div id="envWarn" hidden></div>
+      <form id="loginForm">
+        <label class="f"><span>마스터 비밀번호</span>
+          <input id="pw" type="password" autocomplete="current-password" placeholder="비밀번호" required />
+        </label>
+        <label class="switch" style="margin-top:12px">
+          <input id="remember" type="checkbox" /> 이 기기에서 로그인 유지 (30일)
+        </label>
+        <div class="actions">
+          <button class="btn" id="loginBtn" type="submit">로그인</button>
+        </div>
+        <p class="hint" id="loginMsg" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>이 화면에 대해</h2>
+      <p class="hint">주소는 <b>/admin.html</b> 하나뿐이고, 사이트 메뉴·푸터에는 걸지 않았습니다. 검색에도 나오지 않습니다.</p>
+      <p class="hint">비밀번호·GitHub 토큰은 Cloudflare Pages 환경변수에만 있고, 저장소에는 아무 값도 들어 있지 않습니다.</p>
+    </div>
+  </section>
+
+  <!-- ───────── 관리 화면 ───────── -->
+  <section id="appView" hidden>
+    <h1>마스터 관리자</h1>
+    <p class="lede" id="statusLine">불러오는 중…</p>
+
+    <nav class="tabs" role="tablist" aria-label="관리 항목">
+      <button class="tab" role="tab" data-tab="notice" aria-selected="true">공지·문구</button>
+      <button class="tab" role="tab" data-tab="comp" aria-selected="false">커피대회</button>
+      <button class="tab" role="tab" data-tab="farm" aria-selected="false">농장·산지</button>
+      <button class="tab" role="tab" data-tab="links" aria-selected="false">바로가기</button>
+      <button class="tab" role="tab" data-tab="help" aria-selected="false">도움말</button>
+    </nav>
+
+    <!-- 공지·문구 -->
+    <div class="panel" id="panel-notice">
+      <div class="card">
+        <h2><span class="n">01</span> 상단 공지 배너</h2>
+        <p class="hint">켜 두면 모든 페이지 맨 위에 한 줄 배너가 뜹니다. 내리면 곧바로 사라집니다.</p>
+        <label class="switch" style="margin-top:12px"><input id="bnOn" type="checkbox" /> 배너 표시</label>
+        <label class="f"><span>문구 (한국어)</span><input id="bnKo" type="text" maxlength="300" placeholder="예: 12월 1일 로스터리 휴무 안내" /></label>
+        <div class="row">
+          <label class="f"><span>English (선택)</span><input id="bnEn" type="text" maxlength="300" placeholder="optional" /></label>
+          <label class="f"><span>日本語 (선택)</span><input id="bnJa" type="text" maxlength="300" placeholder="任意" /></label>
+        </div>
+        <div class="row">
+          <label class="f"><span>링크 이름 (선택)</span><input id="bnLabel" type="text" maxlength="40" placeholder="자세히 보기" /></label>
+          <label class="f"><span>링크 주소 (선택)</span><input id="bnUrl" type="text" maxlength="500" placeholder="https://… 또는 /competitions.html" /></label>
+        </div>
+        <label class="f"><span>색</span>
+          <select id="bnTone">
+            <option value="info">안내 (세이지 그린)</option>
+            <option value="warn">중요 (앰버·브라운)</option>
+            <option value="promo">소식 (테라코타)</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="card">
+        <h2><span class="n">02</span> 메인 첫 문장</h2>
+        <p class="hint">홈 화면 제목 아래 작은 문장입니다. 비워 두면 원래 문장(생두 수·산지 수)이 그대로 나옵니다.</p>
+        <label class="f"><span>한국어</span><input id="ldKo" type="text" maxlength="300" placeholder="비우면 자동" /></label>
+        <div class="row">
+          <label class="f"><span>English (선택)</span><input id="ldEn" type="text" maxlength="300" /></label>
+          <label class="f"><span>日本語 (선택)</span><input id="ldJa" type="text" maxlength="300" /></label>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="btn" id="cfgSave" type="button">저장하고 반영</button>
+        <button class="btn danger small" id="cfgReset" type="button">배너 내리기</button>
+        <span class="hint" id="cfgMsg"></span>
+      </div>
+      <p class="hint">저장하면 GitHub에 커밋되고, Cloudflare Pages가 1~2분 안에 새로 배포합니다.</p>
+    </div>
+
+    <!-- 커피대회 -->
+    <div class="panel" id="panel-comp" hidden>
+      <div class="card">
+        <h2><span class="n">03</span> 대회 일정 고치기</h2>
+        <p class="hint">competitions.html의 대회 목록을 읽어 옵니다. 날짜·접수 기간·메모만 덧씌워 저장하므로 원본 목록은 건드리지 않습니다.</p>
+        <div class="row" style="margin-top:12px">
+          <input id="compQ" type="text" placeholder="대회 이름으로 찾기" />
+          <button class="btn ghost small" id="compReload" type="button" style="flex:0 0 auto">새로고침</button>
+        </div>
+        <div class="list" id="compList"><div class="empty">불러오는 중…</div></div>
+      </div>
+
+      <div class="card">
+        <h2><span class="n">04</span> 새 대회 추가</h2>
+        <label class="f"><span>대회 이름 (한국어) *</span><input id="addName" type="text" maxlength="120" placeholder="예: 2027 KCRC 코리아 커피 로스팅 챔피언십" /></label>
+        <div class="row">
+          <label class="f"><span>English (선택)</span><input id="addNameEn" type="text" maxlength="120" /></label>
+          <label class="f"><span>日本語 (선택)</span><input id="addNameJa" type="text" maxlength="120" /></label>
+        </div>
+        <div class="row">
+          <label class="f"><span>대회 날짜</span><input id="addEv" type="text" maxlength="80" placeholder="2027.03.11–03.14" /></label>
+          <label class="f"><span>접수 기간</span><input id="addReg" type="text" maxlength="80" placeholder="2027.01–02" /></label>
+        </div>
+        <div class="row">
+          <label class="f"><span>장소</span><input id="addPlace" type="text" maxlength="60" placeholder="예: 서울 코엑스" /></label>
+          <label class="f"><span>주최</span><input id="addOrg" type="text" maxlength="60" placeholder="예: SCA 한국챕터" /></label>
+        </div>
+        <div class="row">
+          <label class="f"><span>공식 페이지</span><input id="addHref" type="text" maxlength="500" placeholder="https://…" /></label>
+          <label class="f"><span>진행 방식</span>
+            <select id="addWay">
+              <option value="onsite">현장 경연</option>
+              <option value="bean">원두 출품</option>
+              <option value="national">국가대표 선발</option>
+            </select>
+          </label>
+        </div>
+        <label class="f"><span>분야 (하나 이상)</span></label>
+        <div class="chips" id="addCats"></div>
+        <label class="f"><span>짧은 메모 (선택)</span><input id="addNote" type="text" maxlength="200" placeholder="예: 접수 시작일은 주최 공지 확인" /></label>
+        <div class="actions"><button class="btn" id="addSave" type="button">대회 추가</button><span class="hint" id="addMsg"></span></div>
+      </div>
+    </div>
+
+    <!-- 농장·산지 -->
+    <div class="panel" id="panel-farm" hidden>
+      <div class="card">
+        <h2><span class="n">05</span> 농장·산지 정보 고치기</h2>
+        <p class="hint">카탈로그(beans.json)에서 농장·산지를 찾아 고칩니다. 고친 내용은 <b>admin-overrides.json</b>에만 쌓여서 매일 저녁 자동 업데이트가 원본을 새로 만들어도 지워지지 않습니다.</p>
+        <div class="row" style="margin-top:12px">
+          <input id="placeQ" type="text" placeholder="농장·산지 이름 (예: 아그로타케시, 핀카 이사벨)" />
+          <button class="btn small" id="placeSearch" type="button" style="flex:0 0 auto">찾기</button>
+        </div>
+        <div class="list" id="placeList"></div>
+      </div>
+
+      <div class="card" id="placeEditCard" hidden>
+        <h2><span class="n">06</span> <span id="placeTitle">농장</span></h2>
+        <p class="hint" id="placeMeta"></p>
+        <label class="f"><span>짧은 공지 (카드 맨 위에 강조해서 보입니다)</span><input id="pNotice" type="text" maxlength="400" placeholder="예: 2026 수확분은 12월부터 입고" /></label>
+        <label class="f"><span>이야기 (story)</span><textarea id="pStory" maxlength="4000"></textarea></label>
+        <div class="row">
+          <label class="f"><span>대표 향미</span><input id="pFlavor" type="text" maxlength="400" /></label>
+          <label class="f"><span>고도</span><input id="pElev" type="text" maxlength="300" /></label>
+        </div>
+        <div class="row">
+          <label class="f"><span>대표 품종</span><input id="pVarieties" type="text" maxlength="400" /></label>
+          <label class="f"><span>가공</span><input id="pProcesses" type="text" maxlength="300" /></label>
+        </div>
+        <div class="row">
+          <label class="f"><span>수확기</span><input id="pHarvest" type="text" maxlength="300" /></label>
+          <label class="f"><span>토양·기후</span><input id="pTerroir" type="text" maxlength="400" /></label>
+        </div>
+        <label class="f"><span>최근 동향</span><input id="pTrend" type="text" maxlength="600" /></label>
+        <div class="actions">
+          <button class="btn" id="placeSave" type="button">저장하고 반영</button>
+          <button class="btn danger small" id="placeClear" type="button">수정 되돌리기</button>
+          <span class="hint" id="placeMsg"></span>
+        </div>
+        <p class="hint">영어·일본어 설명은 원문 번역이 따로 있어서, 고친 한국어 문장은 그 언어 화면에서도 한국어 그대로 보입니다.</p>
+      </div>
+    </div>
+
+    <!-- 바로가기 -->
+    <div class="panel" id="panel-links" hidden>
+      <div class="card">
+        <h2><span class="n">07</span> 자주 쓰는 대시보드</h2>
+        <p class="hint">새 창에서 열립니다. 로그인은 각 서비스 계정(flatpeople4146@gmail.com)으로 되어 있어야 합니다.</p>
+        <div class="links">
+          <a class="lnk" href="https://docs.google.com/forms/d/1nBJVvmkRjOiVOEYuMLp98E4pFWTUin6_nS15Sc23dB8/edit#responses" target="_blank" rel="noopener"><b>농장 추가 요청 — 응답 보기</b><span>방문자가 보낸 요청 목록 (폼 응답 탭)</span></a>
+          <a class="lnk" href="https://docs.google.com/forms/d/1nBJVvmkRjOiVOEYuMLp98E4pFWTUin6_nS15Sc23dB8/edit" target="_blank" rel="noopener"><b>농장 추가 요청 — 폼 편집</b><span>질문·안내 문구 고치기</span></a>
+          <a class="lnk" href="https://docs.google.com/spreadsheets/d/1qIGVwlhB5O22dMrFrfffW2Xm8vsNHObUDsI8euzKi4U/edit" target="_blank" rel="noopener"><b>로스터 한줄 후기 시트</b><span>reviews 탭 — 사이트에 그대로 보입니다</span></a>
+          <a class="lnk" href="https://docs.google.com/spreadsheets/d/1Jp8xsE0GOEJJcEwcgi3ZJ5yGyLq2hftl_ND7v5T_c3g/edit" target="_blank" rel="noopener"><b>내 커피 기록 시트</b><span>logs 탭 — 손님 기록 동기화</span></a>
+          <a class="lnk" href="https://analytics.google.com/analytics/web/#/a417156400p565488538/reports/dashboard" target="_blank" rel="noopener"><b>GA4 방문 통계</b><span>속성 565488538 · 스트림 G-89MN0XMENB</span></a>
+          <a class="lnk" href="https://adsense.google.com/start" target="_blank" rel="noopener"><b>Google AdSense</b><span>pub-3586645783677633 · 심사·지급</span></a>
+          <a class="lnk" href="https://search.google.com/search-console" target="_blank" rel="noopener"><b>Google Search Console</b><span>색인·사이트맵 상태</span></a>
+          <a class="lnk" href="https://searchadvisor.naver.com/" target="_blank" rel="noopener"><b>네이버 서치어드바이저</b><span>수집·노출 상태</span></a>
+          <a class="lnk" href="https://github.com/krumbleroasters/krumbleroasters.github.io/commits/main" target="_blank" rel="noopener"><b>GitHub 커밋 기록</b><span>사이트 파일 원본·변경 이력</span></a>
+          <a class="lnk" href="https://dash.cloudflare.com/7b1e558765bfd99febc1330e18b1c30d/pages/view/oncoffeelog" target="_blank" rel="noopener"><b>Cloudflare Pages</b><span>oncoffeelog 프로젝트 · 배포·환경변수</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 도움말 -->
+    <div class="panel" id="panel-help" hidden>
+      <div class="card">
+        <h2>처음 한 번만 하면 되는 설정</h2>
+        <p class="hint">아래 두 값이 없으면 이 화면은 로그인할 수 없습니다. 값은 저장소가 아니라 Cloudflare에만 넣습니다.</p>
+        <dl class="kv">
+          <dt>경로</dt><dd>Cloudflare 대시보드 → Workers &amp; Pages → <b>oncoffeelog</b> → Settings → Variables and Secrets</dd>
+          <dt>ADMIN_PASSWORD</dt><dd>마스터 비밀번호 (Type: Secret)</dd>
+          <dt>GITHUB_TOKEN</dt><dd>저장소 <span class="mono">krumbleroasters/krumbleroasters.github.io</span> Contents Read and write 권한의 fine-grained 토큰 (Secret)</dd>
+          <dt>SESSION_SECRET</dt><dd>선택. 비워 두면 ADMIN_PASSWORD에서 자동으로 파생합니다.</dd>
+        </dl>
+        <p class="note">값을 넣은 뒤에는 <b>Deployments → 최신 배포 → Retry deployment</b>(또는 아무 커밋이나 push)로 한 번 다시 배포해야 반영됩니다.</p>
+      </div>
+      <div class="card">
+        <h2>무엇이 바뀌나</h2>
+        <dl class="kv">
+          <dt>공지·문구</dt><dd><span class="mono">site-config.json</span> — 모든 페이지 상단 배너, 홈 첫 문장</dd>
+          <dt>커피대회</dt><dd><span class="mono">competitions-extra.json</span> — 기존 대회 날짜·접수 덧씌우기, 새 대회 추가</dd>
+          <dt>농장·산지</dt><dd><span class="mono">admin-overrides.json</span> — 카드의 이야기·향미·고도·품종·공지 덧씌우기</dd>
+        </dl>
+        <p class="hint">모두 GitHub 커밋으로 저장되고, Cloudflare Pages·GitHub Pages가 각각 1~2분 안에 새로 배포합니다.</p>
+      </div>
+      <div class="card">
+        <h2>지금 연결 상태</h2>
+        <dl class="kv" id="helpState"></dl>
+      </div>
+      <div class="actions"><button class="btn ghost" id="logoutBtn" type="button">로그아웃</button></div>
+    </div>
+
+    <p class="foot">ONCOFFEELOG · 온커피로그 마스터 관리자<br>이 화면은 검색에 노출되지 않으며 사이트 메뉴에 걸려 있지 않습니다.</p>
+  </section>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function () {
+  "use strict";
+
+  var $ = function (id) { return document.getElementById(id); };
+  var state = { status: null, config: null, extra: null, items: [], places: {}, currentPlace: null, cats: [] };
+
+  var TONES = { info: "#2F4636", warn: "#7C480E", promo: "#8E3F27" };
+
+  function toast(msg, isErr) {
+    var el = $("toast");
+    el.textContent = msg;
+    el.className = "toast on" + (isErr ? " err" : "");
+    clearTimeout(toast._t);
+    toast._t = setTimeout(function () { el.className = "toast"; }, isErr ? 5200 : 3200);
+  }
+
+  function api(query, opts) {
+    var url = "/api/admin" + (query ? "?" + query : "");
+    var init = Object.assign({ credentials: "same-origin", cache: "no-store", headers: {} }, opts || {});
+    if (init.body && typeof init.body !== "string") {
+      init.headers["content-type"] = "application/json";
+      init.body = JSON.stringify(init.body);
+    }
+    if (init.headers["content-type"] == null) delete init.headers["content-type"];
+    return fetch(url, init).then(function (res) {
+      return res.text().then(function (text) {
+        var data = null;
+        try { data = text ? JSON.parse(text) : null; } catch (e) { data = null; }
+        if (!data) {
+          throw new Error(res.ok
+            ? "서버 응답을 읽지 못했습니다."
+            : "이 주소에는 관리자 API가 없습니다. https://oncoffeelog.pages.dev/admin.html 로 열어 주세요.");
+        }
+        data.__status = res.status;
+        return data;
+      });
+    });
+  }
+
+  function fmtExp(sec) {
+    if (!sec) return "";
+    var d = new Date(Date.now() + sec * 1000);
+    return d.toLocaleString("ko-KR", { month: "long", day: "numeric", hour: "2-digit", minute: "2-digit" });
+  }
+
+  /* ── 로그인 ── */
+  function showLogin(status) {
+    $("loginView").hidden = false;
+    $("appView").hidden = true;
+    var box = $("envWarn");
+    if (status && status.configured === false) {
+      box.hidden = false;
+      box.className = "note";
+      box.innerHTML = "<b>아직 환경변수가 없습니다.</b><br>" +
+        (status.message || "ADMIN_PASSWORD · GITHUB_TOKEN 을 Cloudflare Pages에 넣어 주세요.") +
+        "<br><br>없는 값: <b>" + (status.missing || []).join(", ") + "</b>";
+      $("loginBtn").disabled = true;
+      $("pw").disabled = true;
+    } else {
+      box.hidden = true;
+      $("loginBtn").disabled = false;
+      $("pw").disabled = false;
+      setTimeout(function () { try { $("pw").focus(); } catch (e) {} }, 60);
+    }
+  }
+
+  $("loginForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var btn = $("loginBtn");
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spinner"></span> 확인 중';
+    $("loginMsg").textContent = "";
+    api("", { method: "POST", body: { action: "login", password: $("pw").value, remember: $("remember").checked } })
+      .then(function (r) {
+        if (r.ok) {
+          $("pw").value = "";
+          toast("로그인했습니다.");
+          startApp();
+        } else {
+          $("loginMsg").textContent = r.message || "로그인하지 못했습니다.";
+          $("loginMsg").className = "hint bad";
+          if (r.code === "env_missing") showLogin({ configured: false, message: r.message, missing: r.missing });
+        }
+      })
+      .catch(function (err) { $("loginMsg").textContent = err.message; $("loginMsg").className = "hint bad"; })
+      .then(function () { btn.disabled = false; btn.textContent = "로그인"; });
+  });
+
+  /* ── 앱 시작 ── */
+  function startApp() {
+    api("", { method: "GET" }).then(function (st) {
+      if (!st.ok && st.code === "env_missing") { showLogin(st); return; }
+      if (!st.authed) { showLogin(st); return; }
+      state.status = st;
+      $("loginView").hidden = true;
+      $("appView").hidden = false;
+      var who = st.repo + " · " + st.branch;
+      $("statusLine").textContent = "로그인됨 · " + who;
+      $("helpState").innerHTML =
+        "<dt>저장소</dt><dd>" + st.repo + "</dd>" +
+        "<dt>브랜치</dt><dd>" + st.branch + "</dd>" +
+        "<dt>환경변수</dt><dd>" + (st.configured ? "ADMIN_PASSWORD · GITHUB_TOKEN 확인됨" : "미설정") + "</dd>";
+      loadConfig();
+    }).catch(function (err) {
+      showLogin(null);
+      $("loginMsg").textContent = err.message;
+      $("loginMsg").className = "hint bad";
+    });
+  }
+
+  $("logoutBtn").addEventListener("click", function () {
+    api("", { method: "POST", body: { action: "logout" } }).then(function () {
+      toast("로그아웃했습니다.");
+      showLogin({ configured: true });
+    });
+  });
+
+  /* ── 탭 ── */
+  var TABS = ["notice", "comp", "farm", "links", "help"];
+  function selectTab(name) {
+    TABS.forEach(function (t) {
+      var btn = document.querySelector('.tab[data-tab="' + t + '"]');
+      if (btn) btn.setAttribute("aria-selected", String(t === name));
+      var panel = $("panel-" + t);
+      if (panel) panel.hidden = t !== name;
+    });
+    if (name === "comp" && !state.items.length) loadCompetitions();
+  }
+  document.querySelectorAll(".tab").forEach(function (btn) {
+    btn.addEventListener("click", function () { selectTab(btn.dataset.tab); });
+  });
+
+  /* ── 공지·문구 ── */
+  function loadConfig() {
+    api("action=config").then(function (r) {
+      if (!r.ok) { toast(r.message || "설정을 불러오지 못했습니다.", true); return; }
+      state.config = r.config || {};
+      var b = (state.config.banner || {});
+      var t = (b.text || {});
+      var site = (state.config.site || {});
+      var ld = (site.ledeSub || {});
+      $("bnOn").checked = !!b.on;
+      $("bnKo").value = t.ko || "";
+      $("bnEn").value = t.en || "";
+      $("bnJa").value = t.ja || "";
+      $("bnLabel").value = (b.link && b.link.label) || "";
+      $("bnUrl").value = (b.link && b.link.url) || "";
+      $("bnTone").value = b.tone || "info";
+      $("ldKo").value = ld.ko || "";
+      $("ldEn").value = ld.en || "";
+      $("ldJa").value = ld.ja || "";
+      if (r.missingFile) $("cfgMsg").textContent = "아직 site-config.json이 없어 기본값으로 시작합니다.";
+    }).catch(function (err) { toast(err.message, true); });
+  }
+
+  function currentConfig() {
+    return {
+      banner: {
+        on: $("bnOn").checked,
+        text: { ko: $("bnKo").value.trim(), en: $("bnEn").value.trim(), ja: $("bnJa").value.trim() },
+        link: { label: $("bnLabel").value.trim(), url: $("bnUrl").value.trim() },
+        tone: $("bnTone").value
+      },
+      site: { ledeSub: { ko: $("ldKo").value.trim(), en: $("ldEn").value.trim(), ja: $("ldJa").value.trim() } }
+    };
+  }
+
+  function saveConfig(cfg, reset) {
+    var btn = $("cfgSave");
+    btn.disabled = true;
+    $("cfgMsg").textContent = "저장 중…";
+    api("", { method: "POST", body: { action: "config", config: cfg, reset: !!reset } }).then(function (r) {
+      if (!r.ok) { $("cfgMsg").textContent = r.message || "저장하지 못했습니다."; toast(r.message || "저장 실패", true); return; }
+      state.config = r.config;
+      $("cfgMsg").textContent = "저장했습니다. 1~2분 뒤 사이트에 반영됩니다.";
+      toast(r.commit ? "커밋 " + String(r.commit).slice(0, 7) + " 저장 완료" : "저장 완료");
+      loadConfig();
+    }).catch(function (err) { $("cfgMsg").textContent = err.message; toast(err.message, true); })
+      .then(function () { btn.disabled = false; });
+  }
+
+  $("cfgSave").addEventListener("click", function () {
+    var cfg = currentConfig();
+    if (cfg.banner.on && !cfg.banner.text.ko) { toast("배너 문구(한국어)를 적어 주세요.", true); return; }
+    saveConfig(cfg, false);
+  });
+  $("cfgReset").addEventListener("click", function () {
+    $("bnOn").checked = false;
+    saveConfig(currentConfig(), true);
+  });
+
+  /* ── 커피대회 ── */
+  var CATLABEL = { roast: "로스팅", barista: "바리스타", brew: "브루잉", cup: "커핑·테이스팅", latte: "라떼아트", natl: "국가대표" };
+
+  function catChips() {
+    var box = $("addCats");
+    box.innerHTML = Object.keys(CATLABEL).map(function (k) {
+      var on = state.cats.indexOf(k) >= 0;
+      return '<button type="button" class="chip" data-cat="' + k + '" aria-pressed="' + on + '">' + CATLABEL[k] + "</button>";
+    }).join("");
+    box.querySelectorAll("[data-cat]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var k = b.dataset.cat;
+        var i = state.cats.indexOf(k);
+        if (i >= 0) state.cats.splice(i, 1); else state.cats.push(k);
+        catChips();
+      });
+    });
+  }
+  catChips();
+
+  function compRow(it) {
+    var name = it.nm && it.nm[0] ? it.nm[0] : it.id;
+    var badges = "";
+    if (it.overridden) badges += '<span class="b edit">수정됨</span>';
+    if (it.added) badges += '<span class="b add">추가함</span>';
+    if (it.cancelled) badges += '<span class="b cancel">취소</span>';
+    if (it.grade) badges += '<span class="b">' + esc(it.grade) + "</span>";
+    var catTxt = (it.cat || []).map(function (c) { return CATLABEL[c] || c; }).join(" · ");
+    return '<div class="item" data-id="' + esc(it.id) + '">' +
+      '<div class="t">' + esc(name) + "</div>" +
+      '<div class="m">' + esc(it.ev || "날짜 미정") + " · 접수 " + esc(it.reg || "미정") + (catTxt ? " · " + esc(catTxt) : "") + "</div>" +
+      (badges ? '<div class="badges">' + badges + "</div>" : "") +
+      '<div style="margin-top:7px"><button type="button" class="btn ghost small" data-toggle>고치기</button></div>' +
+      '<div class="edit">' +
+        '<div class="row"><label class="f"><span>대회 날짜</span><input data-f="ev" type="text" value="' + esc(it.ev || "") + '" /></label>' +
+        '<label class="f"><span>접수 기간</span><input data-f="reg" type="text" value="' + esc(it.reg || "") + '" /></label></div>' +
+        '<label class="f"><span>메모 (카드에 그대로 보입니다 · 선택)</span><input data-f="note" type="text" value="' + esc(it.adminNote || "") + '" /></label>' +
+        '<label class="switch" style="margin-top:10px"><input data-f="cancelled" type="checkbox" ' + (it.cancelled ? "checked" : "") + ' /> 취소된 대회로 표시</label>' +
+        '<div class="actions"><button type="button" class="btn small" data-save>저장</button>' +
+        '<button type="button" class="btn danger small" data-undo>되돌리기</button></div>' +
+      "</div></div>";
+  }
+
+  function esc(v) {
+    return String(v == null ? "" : v).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+
+  function renderComps() {
+    var q = ($("compQ").value || "").trim().toLowerCase();
+    var list = state.items.filter(function (it) {
+      if (!q) return true;
+      var hay = ((it.nm || []).join(" ") + " " + (it.id || "") + " " + (it.place || "")).toLowerCase();
+      return hay.indexOf(q) >= 0;
+    });
+    var box = $("compList");
+    if (!list.length) { box.innerHTML = '<div class="empty">조건에 맞는 대회가 없습니다.</div>'; return; }
+    box.innerHTML = list.map(compRow).join("");
+    box.querySelectorAll(".item").forEach(function (row) {
+      var id = row.dataset.id;
+      row.querySelector("[data-toggle]").addEventListener("click", function () { row.classList.toggle("open"); });
+      row.querySelector("[data-save]").addEventListener("click", function () {
+        var u = {};
+        row.querySelectorAll("[data-f]").forEach(function (el) {
+          var k = el.dataset.f;
+          if (k === "cancelled") u.cancelled = el.checked;
+          else u[k] = el.value;
+        });
+        saveUpdate(id, u);
+      });
+      row.querySelector("[data-undo]").addEventListener("click", function () { saveUpdate(id, null); });
+    });
+  }
+
+  function saveUpdate(id, fields) {
+    var extra = state.extra || { updates: {}, add: [] };
+    extra.updates = extra.updates || {};
+    if (fields) extra.updates[id] = fields;
+    else delete extra.updates[id];
+    api("", { method: "POST", body: { action: "competitions", extra: extra } }).then(function (r) {
+      if (!r.ok) { toast(r.message || "저장하지 못했습니다.", true); return; }
+      toast(fields ? "저장했습니다. 1~2분 뒤 사이트에 반영됩니다." : "되돌렸습니다.");
+      loadCompetitions();
+    }).catch(function (err) { toast(err.message, true); });
+  }
+
+  function loadCompetitions() {
+    $("compList").innerHTML = '<div class="empty">불러오는 중…</div>';
+    api("action=competitions").then(function (r) {
+      if (!r.ok) { $("compList").innerHTML = '<div class="empty">' + esc(r.message || "불러오지 못했습니다.") + "</div>"; return; }
+      state.items = r.items || [];
+      state.extra = r.extra || { updates: {}, add: [] };
+      state.rawCount = r.rawCount || 0;
+      renderComps();
+    }).catch(function (err) {
+      $("compList").innerHTML = '<div class="empty">' + esc(err.message) + "</div>";
+    });
+  }
+
+  $("compReload").addEventListener("click", loadCompetitions);
+  $("compQ").addEventListener("input", function () { renderComps(); });
+
+  $("addSave").addEventListener("click", function () {
+    var name = $("addName").value.trim();
+    if (!name) { $("addMsg").textContent = "대회 이름을 적어 주세요."; return; }
+    if (!state.cats.length) { $("addMsg").textContent = "분야를 하나 이상 골라 주세요."; return; }
+    var entry = {
+      id: "admin-" + Date.now().toString(36),
+      nm: [name, $("addNameEn").value.trim(), $("addNameJa").value.trim()],
+      ev: $("addEv").value.trim(),
+      reg: $("addReg").value.trim(),
+      cat: state.cats.slice(),
+      way: $("addWay").value,
+      org: $("addOrg").value.trim(),
+      place: $("addPlace").value.trim(),
+      href: $("addHref").value.trim(),
+      note: $("addNote").value.trim()
+    };
+    var extra = state.extra || { updates: {}, add: [] };
+    extra.add = (extra.add || []).concat([entry]);
+    $("addMsg").textContent = "저장 중…";
+    api("", { method: "POST", body: { action: "competitions", extra: extra } }).then(function (r) {
+      if (!r.ok) { $("addMsg").textContent = r.message || "저장하지 못했습니다."; return; }
+      $("addMsg").textContent = "추가했습니다. 1~2분 뒤 사이트에 반영됩니다.";
+      $("addName").value = ""; $("addNameEn").value = ""; $("addNameJa").value = "";
+      $("addEv").value = ""; $("addReg").value = ""; $("addPlace").value = ""; $("addOrg").value = "";
+      $("addHref").value = ""; $("addNote").value = "";
+      state.cats = []; catChips();
+      toast("대회를 추가했습니다.");
+      loadCompetitions();
+    }).catch(function (err) { $("addMsg").textContent = err.message; });
+  });
+
+  /* ── 농장·산지 ── */
+  $("placeSearch").addEventListener("click", function () { searchPlaces(); });
+  $("placeQ").addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); searchPlaces(); } });
+
+  function searchPlaces() {
+    var q = $("placeQ").value.trim();
+    $("placeList").innerHTML = '<div class="empty">찾는 중…</div>';
+    api("action=places&q=" + encodeURIComponent(q)).then(function (r) {
+      if (!r.ok) { $("placeList").innerHTML = '<div class="empty">' + esc(r.message || "찾지 못했습니다.") + "</div>"; return; }
+      var list = r.results || [];
+      if (!list.length) { $("placeList").innerHTML = '<div class="empty">찾는 이름이 없습니다. 다른 이름으로 시도해 보세요.</div>'; return; }
+      $("placeList").innerHTML = list.map(function (p) {
+        return '<div class="item"><div class="t">' + esc(p.country) + " · " + esc(p.name) + "</div>" +
+          '<div class="m">' + esc(p.nameEn || "") + " · " + (p.beanCount || 0) + "종 · " + esc(p.precision || "") + "</div>" +
+          '<div style="margin-top:6px"><button type="button" class="btn ghost small" data-open="' + esc(p.id) + '">열어서 고치기</button></div></div>';
+      }).join("");
+      $("placeList").querySelectorAll("[data-open]").forEach(function (b) {
+        b.addEventListener("click", function () { openPlace(b.dataset.open); });
+      });
+    }).catch(function (err) { $("placeList").innerHTML = '<div class="empty">' + esc(err.message) + "</div>"; });
+  }
+
+  function openPlace(id) {
+    api("action=place&id=" + encodeURIComponent(id)).then(function (r) {
+      if (!r.ok) { toast(r.message || "불러오지 못했습니다.", true); return; }
+      var p = r.place;
+      var o = r.override || {};
+      state.currentPlace = p;
+      state.places = r.overrides || {};
+      $("placeEditCard").hidden = false;
+      $("placeTitle").textContent = p.country + " · " + p.name;
+      $("placeMeta").textContent = (p.nameEn ? p.nameEn + " · " : "") + (p.kind === "farm" ? "농장" : "산지") + " · " + (p.beanCount || 0) + "종 · id " + p.id;
+      $("pNotice").value = o.notice || "";
+      $("pStory").value = o.story != null ? o.story : (p.story || "");
+      $("pFlavor").value = o.flavorProfile != null ? o.flavorProfile : (p.flavorProfile || "");
+      $("pElev").value = o.elevation != null ? o.elevation : (p.elevation || "");
+      $("pVarieties").value = o.varieties != null ? o.varieties : (p.varieties || "");
+      $("pProcesses").value = o.processes != null ? o.processes : (p.processes || "");
+      $("pHarvest").value = o.harvest != null ? o.harvest : (p.harvest || "");
+      $("pTerroir").value = o.terroir != null ? o.terroir : (p.terroir || "");
+      $("pTrend").value = o.trend != null ? o.trend : (p.trend || "");
+      $("placeMsg").textContent = o && Object.keys(o).length ? "지금 적용 중인 수정이 있습니다." : "";
+      $("placeEditCard").scrollIntoView({ behavior: "smooth", block: "start" });
+    }).catch(function (err) { toast(err.message, true); });
+  }
+
+  $("placeSave").addEventListener("click", function () {
+    if (!state.currentPlace) return;
+    var p = state.currentPlace;
+    var fields = {
+      notice: $("pNotice").value.trim(),
+      story: $("pStory").value.trim(),
+      flavorProfile: $("pFlavor").value.trim(),
+      elevation: $("pElev").value.trim(),
+      varieties: $("pVarieties").value.trim(),
+      processes: $("pProcesses").value.trim(),
+      harvest: $("pHarvest").value.trim(),
+      terroir: $("pTerroir").value.trim(),
+      trend: $("pTrend").value.trim()
+    };
+    $("placeMsg").textContent = "저장 중…";
+    api("", { method: "POST", body: { action: "place", id: p.id, fields: fields } }).then(function (r) {
+      if (!r.ok) { $("placeMsg").textContent = r.message || "저장하지 못했습니다."; return; }
+      $("placeMsg").textContent = "저장했습니다. 1~2분 뒤 사이트에 반영됩니다.";
+      toast("저장 완료");
+    }).catch(function (err) { $("placeMsg").textContent = err.message; });
+  });
+
+  $("placeClear").addEventListener("click", function () {
+    if (!state.currentPlace) return;
+    if (!confirm("이 농장·산지에 덧씌운 수정을 모두 지우고 원래 카탈로그 내용으로 되돌릴까요?")) return;
+    $("placeMsg").textContent = "되돌리는 중…";
+    api("", { method: "POST", body: { action: "place-clear", id: state.currentPlace.id } }).then(function (r) {
+      if (!r.ok) { $("placeMsg").textContent = r.message || "되돌리지 못했습니다."; return; }
+      $("placeMsg").textContent = "되돌렸습니다.";
+      openPlace(state.currentPlace.id);
+    }).catch(function (err) { $("placeMsg").textContent = err.message; });
+  });
+
+  /* ── 시작 ── */
+  api("", { method: "GET" }).then(function (st) {
+    state.status = st;
+    if (st.ok && st.authed) startApp();
+    else showLogin(st);
+  }).catch(function (err) {
+    showLogin(null);
+    $("loginMsg").textContent = err.message;
+    $("loginMsg").className = "hint bad";
+  });
+})();
+</script>
+</body>
+</html>

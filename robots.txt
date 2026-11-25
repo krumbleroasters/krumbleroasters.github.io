@@ -1,5 +1,9 @@
 User-agent: *
 Allow: /
 
+# 마스터 관리자 화면은 검색에 노출하지 않습니다 (메뉴에도 걸지 않음)
+Disallow: /admin.html
+Disallow: /api/
+
 # 지도 딥링크(?place=, ?q=, ?bean=)는 같은 페이지의 매개변수이므로 따로 막지 않습니다.
 Sitemap: https://oncoffeelog.com/sitemap.xml

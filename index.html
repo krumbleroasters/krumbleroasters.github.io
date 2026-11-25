@@ -71,7 +71,9 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   /* ---------- header ---------- */
   .head{padding:18px 18px 12px;flex:none;background:var(--cream);position:relative;z-index:5}
   .headtop{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:6px 10px}
-  .brand{display:flex;align-items:center;gap:9px;min-width:0}
+  .brand{display:flex;align-items:center;gap:9px;min-width:0;background:none;border:0;padding:0;color:inherit;text-align:left;cursor:pointer;font:inherit}
+  .brand:active{transform:scale(.985)}
+  .admin-note{margin:12px 0 0;padding:9px 12px;border-radius:10px;background:#FDF6EC;border:1px solid #F0DEC4;color:#7C480E;font-size:13px;font-weight:600}
   .bean{width:22px;height:22px;flex:none}
   .brand-txt{font-size:11.5px;letter-spacing:.22em;font-weight:700;color:var(--ink);white-space:nowrap}
   .brand-txt span{color:var(--terra)}
@@ -811,13 +813,13 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 <div class="app mode-browse" id="app">
   <header class="head">
     <div class="headtop">
-      <div class="brand">
+      <button type="button" class="brand" id="brandHome" aria-label="처음 화면으로" title="처음 화면으로">
         <svg class="bean" viewBox="0 0 24 24" fill="none" aria-hidden="true">
           <ellipse cx="12" cy="12" rx="7.4" ry="10" transform="rotate(35 12 12)" fill="#C2603C"/>
           <path d="M7.4 16.6C10.6 14.4 11 9.6 16.6 7.4" stroke="#FBF7F0" stroke-width="1.5" stroke-linecap="round"/>
         </svg>
-        <div class="brand-txt">ONCOFFEELOG <span>·</span> 온커피로그</div>
-      </div>
+        <span class="brand-txt">ONCOFFEELOG <span>·</span> 온커피로그</span>
+      </button>
       <div class="topright">
         <span class="ci-langslot" data-cilang></span>
         <button type="button" class="tbtn" data-farmreq>＋ 농장 추가 요청</button>
@@ -966,6 +968,36 @@ async function loadCatalog() {
   }
   for (const arr of beansByPlace.values()) arr.sort((a, b) => (b.listingCount || 1) - (a.listingCount || 1));
   state.ready = true;
+}
+
+/* ---------- 관리자 수정 덧씌우기 ----------
+ * /admin.html에서 고친 농장·산지 내용은 admin-overrides.json 에만 쌓입니다.
+ * 원본(beans.json)은 매일 저녁 자동 업데이트가 새로 만들기 때문에, 화면에서 읽을 때 여기서 덮어씁니다.
+ * 파일이 없거나 실패하면 원래 카탈로그 그대로 보입니다. */
+const OV_FIELDS = ["story", "flavorProfile", "elevation", "varieties", "processes", "harvest", "terroir", "trend", "notice"];
+async function loadAdminOverrides() {
+  try {
+    const res = await fetch("admin-overrides.json", { cache: "no-cache" });
+    if (!res.ok) return;
+    const data = await res.json();
+    const places = (data && data.places) || {};
+    for (const id of Object.keys(places)) {
+      const p = placeById.get(id);
+      if (!p) continue;
+      const o = places[id] || {};
+      for (const k of OV_FIELDS) {
+        if (typeof o[k] === "string" && o[k].trim()) p[k] = o[k].trim();
+      }
+      /* 고친 한국어 문장이 영어·일본어 번역으로 다시 덮이지 않게 그 언어 값을 비웁니다 */
+      if (p.lang) {
+        for (const l of Object.keys(p.lang)) {
+          const block = p.lang[l];
+          if (!block) continue;
+          for (const k of OV_FIELDS) delete block[k];
+        }
+      }
+    }
+  } catch (e) { /* 수정 파일이 없으면 그냥 원본으로 */ }
 }
 
 /* ---------- 지도 ---------- */
@@ -1407,6 +1439,9 @@ function setLede(c) {
   const el = $("#ledeSub");
   if (!el || !c) return;
   const l = uiLang();
+  const custom = window.CI_SITE_CONFIG && window.CI_SITE_CONFIG.site && window.CI_SITE_CONFIG.site.ledeSub;
+  const customText = custom ? String(custom[l] || custom.ko || "").trim() : "";
+  if (customText && (l === "ko" || custom[l])) { el.textContent = customText; return; }
   el.textContent = l === "ja"
     ? `韓国・日本に流通する生豆 ${c.beans.toLocaleString()}種 · ${c.places}か所の産地と農園`
     : l === "en"
@@ -1500,6 +1535,7 @@ function cardForPlace(p0) {
     ${vars.length ? `<p class="story">품종: ${vars.slice(0, 6).map(([k, v]) => `${esc(k)} <small style="color:#9A8F80">${v}</small>`).join(" · ")}</p>` : ""}
     ${terroirBlock(p)}
     ${storyBlock(p)}
+    ${p.notice ? `<p class="admin-note">${esc(p.notice)}</p>` : ""}
     ${auctionsBlock(p)}
     ${awardsBlock(p)}
     <div class="src">
@@ -2084,6 +2120,30 @@ function selectPlace(p) {
   map.flyTo([p.lat, p.lon], zoomFor(p), { duration: 1.1 });
   drawPins(); renderSheet(); syncUrl();
 }
+
+/* 상단 ONCOFFEELOG · 온커피로그 를 누르면 검색어·선택을 모두 지우고 첫 화면으로 돌아갑니다. */
+function goHome() {
+  state.bean = null;
+  state.place = null;
+  state.results = null;
+  state.query = "";
+  state.filter = "all";
+  state.proc = "all";
+  state.procDetail = "";
+  state._back = null;
+  if (qEl) qEl.value = "";
+  if (sugEl) sugEl.classList.remove("on");
+  SKIP_ALIGN = 0;
+  try { history.replaceState(null, "", location.pathname); } catch (e) {}
+  try { map.closePopup(); } catch (e) {}
+  renderChips();
+  renderSheet();
+  drawPins();
+  try { map.flyTo([12, 20], 2, { duration: 0.6 }); } catch (e) {}
+  try { window.scrollTo({ top: 0, behavior: "auto" }); } catch (e) { window.scrollTo(0, 0); }
+  requestAnimationFrame(() => { try { window.scrollTo(0, 0); } catch (e) {} });
+}
+
 function selectBean(b) {
   rememberBrowse();
   state.bean = b; state.results = null;
@@ -2190,6 +2250,7 @@ async function boot() {
   try {
     await loadCatalog();
     buildIndex();
+    await loadAdminOverrides();
     const c = CAT.meta.counts;
     setLede(c);
   } catch (e) {
@@ -2238,6 +2299,15 @@ document.addEventListener("ci:lang", () => {
   renderSheet();
   setLede(CAT.meta && CAT.meta.counts);
 });
+
+/* 관리자가 저장한 사이트 문구(site-config.json)가 늦게 도착하면 첫 문장만 다시 맞춥니다. */
+document.addEventListener("ci:siteconfig", () => {
+  if (state.ready) setLede(CAT.meta && CAT.meta.counts);
+});
+
+/* 상단 로고(ONCOFFEELOG · 온커피로그)를 누르면 첫 화면으로 */
+const brandHome = $("#brandHome");
+if (brandHome) brandHome.addEventListener("click", goHome);
 
 /* =========================================================
    사진으로 찾기 — 라벨·메뉴판 사진에서 글자를 읽어 카탈로그와 맞춰 봅니다
@@ -2728,6 +2798,7 @@ boot();
 <script src="qrcode.min.js?v=20261122e"></script>
 <script src="qr-tools.js?v=20261125b"></script>
 <script src="site-tools.js?v=20261127a"></script>
+<script src="site-notice.js?v=20261130a"></script>
 <script src="i18n-data.js?v=20261128a"></script>
 <script src="i18n-pages.js?v=20261129a"></script>
 <script src="i18n-places.js?v=20261128a"></script>

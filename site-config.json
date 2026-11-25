@@ -1,0 +1,12 @@
+{
+  "banner": {
+    "on": false,
+    "text": { "ko": "", "en": "", "ja": "" },
+    "link": { "label": "", "url": "" },
+    "tone": "info"
+  },
+  "site": {
+    "ledeSub": { "ko": "", "en": "", "ja": "" }
+  },
+  "updatedAt": null
+}
