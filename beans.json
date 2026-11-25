@@ -11454,7 +11454,7 @@
 "lat": 2.4738993,
 "lon": -75.5900113,
 "precision": "region",
-"evidence": "Huila 주(州) 중심",
+"evidence": "우일라 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2021/",
 "alias": [
 "Betania"
@@ -11527,7 +11527,7 @@
 "lat": 4.0355786,
 "lon": -75.2086642,
 "precision": "region",
-"evidence": "Tolima 주(州) 중심",
+"evidence": "톨리마 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2023/",
 "alias": [
 "Buenos Aires"
@@ -14215,7 +14215,7 @@
 "lat": 2.4738993,
 "lon": -75.5900113,
 "precision": "region",
-"evidence": "Huila 주(州) 중심",
+"evidence": "우일라 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2021/",
 "alias": [
 "Buena Vista"
@@ -17971,7 +17971,7 @@
 "lat": 1.2137723,
 "lon": -77.2961018,
 "precision": "village",
-"evidence": "Nariño Colón 중심",
+"evidence": "나리뇨 콜론 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-farmers-collection-2026/",
 "alias": [
 "La Loma"
@@ -18040,7 +18040,7 @@
 "lat": 2.6404294,
 "lon": -76.5325746,
 "precision": "village",
-"evidence": "Cauca Piendamó 중심",
+"evidence": "카우카 피엔다모 중심",
 "source": "https://colombialandofdiversity.com/2025-auction-results",
 "alias": [
 "La Macarena"
@@ -18109,7 +18109,7 @@
 "lat": 5.8500342,
 "lon": -76.0208666,
 "precision": "village",
-"evidence": "Antioquia Ciudad Bolívar 중심",
+"evidence": "안티오키아 시우다드 볼리바르 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-farmers-collection-2026/",
 "alias": [
 "La Colombia"
@@ -18280,7 +18280,7 @@
 "lat": 4.0355786,
 "lon": -75.2086642,
 "precision": "region",
-"evidence": "Tolima 주(州) 중심",
+"evidence": "톨리마 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2023/",
 "alias": [
 "San Pedro"
@@ -18480,7 +18480,7 @@
 "lat": 2.4738993,
 "lon": -75.5900113,
 "precision": "region",
-"evidence": "Huila 주(州) 중심",
+"evidence": "우일라 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2023/",
 "alias": [
 "El Refugio"
@@ -18553,7 +18553,7 @@
 "lat": 2.4738993,
 "lon": -75.5900113,
 "precision": "region",
-"evidence": "Huila 주(州) 중심",
+"evidence": "우일라 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2021/",
 "alias": [
 "El Bosque"
@@ -38487,7 +38487,7 @@
 "lat": 6.2442,
 "lon": -75.5812,
 "precision": "region",
-"evidence": "Antioquia 주(州) 중심",
+"evidence": "안티오키아 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2021/",
 "alias": [
 "Guayacanes – El Tejar"
@@ -38560,7 +38560,7 @@
 "lat": 1.8447122,
 "lon": -76.0456886,
 "precision": "village",
-"evidence": "Huila Pitalito 중심",
+"evidence": "우일라 피탈리토 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-farmers-collection-2026/",
 "alias": [
 "Nexo"
@@ -38629,7 +38629,7 @@
 "lat": 4.0355786,
 "lon": -75.2086642,
 "precision": "region",
-"evidence": "Tolima 주(州) 중심",
+"evidence": "톨리마 주(州) 중심",
 "source": "https://colombialandofdiversity.com/2026-auction-results",
 "alias": [
 "Darmency Arrubla Gue"
@@ -38707,7 +38707,7 @@
 "lat": 4.7831994,
 "lon": -73.6731282,
 "precision": "region",
-"evidence": "Cundinamarca 주(州) 중심",
+"evidence": "쿤디나마르카 주(州) 중심",
 "source": "https://colombialandofdiversity.com/2026-auction-results",
 "alias": [
 "David Amado Rodriguez Gutierrez"
@@ -38785,7 +38785,7 @@
 "lat": 8.4417924,
 "lon": -73.0492505,
 "precision": "region",
-"evidence": "Norte de Santander 주(州) 중심",
+"evidence": "북산탄데르 주(州) 중심",
 "source": "https://colombialandofdiversity.com/2026-auction-results",
 "alias": [
 "Domingo Torres"
@@ -38854,7 +38854,7 @@
 "lat": 2.4738993,
 "lon": -75.5900113,
 "precision": "region",
-"evidence": "Huila 주(州) 중심",
+"evidence": "우일라 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2023/",
 "alias": [
 "Diamante"
@@ -38927,7 +38927,7 @@
 "lat": 2.4738993,
 "lon": -75.5900113,
 "precision": "region",
-"evidence": "Huila 주(州) 중심",
+"evidence": "우일라 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2021/",
 "alias": [
 "La Guaca"
@@ -39000,7 +39000,7 @@
 "lat": 5.8500342,
 "lon": -76.0208666,
 "precision": "village",
-"evidence": "Antioquia Ciudad Bolívar 중심",
+"evidence": "안티오키아 시우다드 볼리바르 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-farmers-collection-2026/",
 "alias": [
 "La Reserva"
@@ -39072,7 +39072,7 @@
 "lat": 4.0355786,
 "lon": -75.2086642,
 "precision": "region",
-"evidence": "Tolima 주(州) 중심",
+"evidence": "톨리마 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2023/",
 "alias": [
 "La Roca"
@@ -39175,7 +39175,7 @@
 "lat": 4.7831994,
 "lon": -73.6731282,
 "precision": "region",
-"evidence": "Cundinamarca 주(州) 중심",
+"evidence": "쿤디나마르카 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2021/",
 "alias": [
 "La Meliza"
@@ -39248,7 +39248,7 @@
 "lat": 1.2136,
 "lon": -77.2811,
 "precision": "region",
-"evidence": "Nariño 주(州) 중심",
+"evidence": "나리뇨 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2023/",
 "alias": [
 "La Mina"
@@ -39321,7 +39321,7 @@
 "lat": 2.4738993,
 "lon": -75.5900113,
 "precision": "region",
-"evidence": "Huila 주(州) 중심",
+"evidence": "우일라 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2021/",
 "alias": [
 "La Miel"
@@ -39394,7 +39394,7 @@
 "lat": 6.3168685,
 "lon": -76.1344983,
 "precision": "village",
-"evidence": "Antioquia Urrao 중심",
+"evidence": "안티오키아 우라오 중심",
 "source": "https://colombialandofdiversity.com/2025-auction-results",
 "alias": [
 "La Vargas"
@@ -39463,7 +39463,7 @@
 "lat": 2.4738993,
 "lon": -75.5900113,
 "precision": "region",
-"evidence": "Huila 주(州) 중심",
+"evidence": "우일라 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2023/",
 "alias": [
 "La Vega"
@@ -39662,7 +39662,7 @@
 "lat": 2.4738993,
 "lon": -75.5900113,
 "precision": "region",
-"evidence": "Huila 주(州) 중심",
+"evidence": "우일라 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2021/",
 "alias": [
 "La Siria"
@@ -39761,7 +39761,7 @@
 "lat": 1.5989976,
 "lon": -77.1305999,
 "precision": "village",
-"evidence": "Nariño La Unión 중심",
+"evidence": "나리뇨 라 우니온 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-farmers-collection-2026/",
 "alias": [
 "La Siria"
@@ -39830,7 +39830,7 @@
 "lat": 4.0355786,
 "lon": -75.2086642,
 "precision": "region",
-"evidence": "Tolima 주(州) 중심",
+"evidence": "톨리마 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2021/",
 "alias": [
 "La Siberia"
@@ -39977,7 +39977,7 @@
 "lat": 5.9458633,
 "lon": -75.5246825,
 "precision": "village",
-"evidence": "Antioquia Montebello 중심",
+"evidence": "안티오키아 Montebello 중심",
 "source": "https://colombialandofdiversity.com/2025-auction-results",
 "alias": [
 "La Argentina"
@@ -40119,7 +40119,7 @@
 "lat": 1.2136,
 "lon": -77.2811,
 "precision": "village",
-"evidence": "Nariño Nariño 중심",
+"evidence": "나리뇨 나리뇨 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-farmers-collection-2026/",
 "alias": [
 "La Ermita"
@@ -40188,7 +40188,7 @@
 "lat": 1.5989976,
 "lon": -77.1305999,
 "precision": "village",
-"evidence": "Nariño La Unión 중심",
+"evidence": "나리뇨 라 우니온 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-farmers-collection-2026/",
 "alias": [
 "La Escuela"
@@ -40257,7 +40257,7 @@
 "lat": 2.4738993,
 "lon": -75.5900113,
 "precision": "region",
-"evidence": "Huila 주(州) 중심",
+"evidence": "우일라 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2021/",
 "alias": [
 "La Esperanza"
@@ -40330,7 +40330,7 @@
 "lat": 2.4738993,
 "lon": -75.5900113,
 "precision": "region",
-"evidence": "Huila 주(州) 중심",
+"evidence": "우일라 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2021/",
 "alias": [
 "La Carolina"
@@ -40403,7 +40403,7 @@
 "lat": 1.2136,
 "lon": -77.2811,
 "precision": "region",
-"evidence": "Nariño 주(州) 중심",
+"evidence": "나리뇨 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2022/",
 "alias": [
 "LA CUEVITA"
@@ -40476,7 +40476,7 @@
 "lat": 1.2136,
 "lon": -77.2811,
 "precision": "region",
-"evidence": "Nariño 주(州) 중심",
+"evidence": "나리뇨 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2022/",
 "alias": [
 "La cruz"
@@ -40576,7 +40576,7 @@
 "lat": 6.2442,
 "lon": -75.5812,
 "precision": "region",
-"evidence": "Antioquia 주(州) 중심",
+"evidence": "안티오키아 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2021/",
 "alias": [
 "La Falda"
@@ -40749,7 +40749,7 @@
 "lat": 6.2442,
 "lon": -75.5812,
 "precision": "region",
-"evidence": "Antioquia 주(州) 중심",
+"evidence": "안티오키아 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2023/",
 "alias": [
 "La Palma"
@@ -40895,7 +40895,7 @@
 "lat": 2.4738993,
 "lon": -75.5900113,
 "precision": "region",
-"evidence": "Huila 주(州) 중심",
+"evidence": "우일라 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2021/",
 "alias": [
 "La Fortuna"
@@ -41018,7 +41018,7 @@
 "lat": 1.7229505,
 "lon": -76.1311882,
 "precision": "village",
-"evidence": "Huila Palestina 중심",
+"evidence": "우일라 팔레스티나 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-farmers-collection-2026/",
 "alias": [
 "La Planada"
@@ -41081,7 +41081,7 @@
 "lat": 2.4738993,
 "lon": -75.5900113,
 "precision": "region",
-"evidence": "Huila 주(州) 중심",
+"evidence": "우일라 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2021/",
 "alias": [
 "La Piragua"
@@ -41204,7 +41204,7 @@
 "lat": 6.3168685,
 "lon": -76.1344983,
 "precision": "village",
-"evidence": "Antioquia Urrao 중심",
+"evidence": "안티오키아 우라오 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-farmers-collection-2026/",
 "alias": [
 "La Julieta"
@@ -41273,7 +41273,7 @@
 "lat": 2.6404294,
 "lon": -76.5325746,
 "precision": "village",
-"evidence": "Cauca Piendamó 중심",
+"evidence": "카우카 피엔다모 중심",
 "source": "https://colombialandofdiversity.com/2025-auction-results",
 "alias": [
 "Las Brisas"
@@ -41342,7 +41342,7 @@
 "lat": 2.4738993,
 "lon": -75.5900113,
 "precision": "region",
-"evidence": "Huila 주(州) 중심",
+"evidence": "우일라 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2021/",
 "alias": [
 "Las Palmas"
@@ -41415,7 +41415,7 @@
 "lat": 1.2136,
 "lon": -77.2811,
 "precision": "region",
-"evidence": "Nariño 주(州) 중심",
+"evidence": "나리뇨 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2023/",
 "alias": [
 "Los Guayacanes"
@@ -41488,7 +41488,7 @@
 "lat": 2.4738993,
 "lon": -75.5900113,
 "precision": "region",
-"evidence": "Huila 주(州) 중심",
+"evidence": "우일라 주(州) 중심",
 "source": "https://colombialandofdiversity.com/2026-auction-results",
 "alias": [
 "Los Naranjos"
@@ -41593,7 +41593,7 @@
 "lat": 2.4738993,
 "lon": -75.5900113,
 "precision": "region",
-"evidence": "Huila 주(州) 중심",
+"evidence": "우일라 주(州) 중심",
 "source": "https://colombialandofdiversity.com/2026-auction-results",
 "alias": [
 "Los Lagos"
@@ -41689,7 +41689,7 @@
 "lat": 4.0355786,
 "lon": -75.2086642,
 "precision": "region",
-"evidence": "Tolima 주(州) 중심",
+"evidence": "톨리마 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2023/",
 "alias": [
 "Los Aguacates"
@@ -41862,7 +41862,7 @@
 "lat": 2.4738993,
 "lon": -75.5900113,
 "precision": "region",
-"evidence": "Huila 주(州) 중심",
+"evidence": "우일라 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2021/",
 "alias": [
 "Los Eucaliptos"
@@ -41935,7 +41935,7 @@
 "lat": 2.4738993,
 "lon": -75.5900113,
 "precision": "region",
-"evidence": "Huila 주(州) 중심",
+"evidence": "우일라 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2023/",
 "alias": [
 "Los Cachingos"
@@ -42008,7 +42008,7 @@
 "lat": 6.2442,
 "lon": -75.5812,
 "precision": "region",
-"evidence": "Antioquia 주(州) 중심",
+"evidence": "안티오키아 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2021/",
 "alias": [
 "Los Palomos"
@@ -42081,7 +42081,7 @@
 "lat": 6.405955,
 "lon": -75.9825592,
 "precision": "village",
-"evidence": "Antioquia Caicedo 중심",
+"evidence": "안티오키아 Caicedo 중심",
 "source": "https://colombialandofdiversity.com/2025-auction-results",
 "alias": [
 "Los Pinos"
@@ -42150,7 +42150,7 @@
 "lat": 4.0355786,
 "lon": -75.2086642,
 "precision": "region",
-"evidence": "Tolima 주(州) 중심",
+"evidence": "톨리마 주(州) 중심",
 "source": "https://colombialandofdiversity.com/2026-auction-results",
 "alias": [
 "Luis Ernesto Nieto Cacais"
@@ -42219,7 +42219,7 @@
 "lat": 4.3341444,
 "lon": -75.7038062,
 "precision": "village",
-"evidence": "Quindío Pijao 중심",
+"evidence": "킨디오 피하오 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-farmers-collection-2026/",
 "alias": [
 "Río Dulce"
@@ -42361,7 +42361,7 @@
 "lat": 4.0355786,
 "lon": -75.2086642,
 "precision": "region",
-"evidence": "Tolima 주(州) 중심",
+"evidence": "톨리마 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2023/",
 "alias": [
 "Monteverde"
@@ -42434,7 +42434,7 @@
 "lat": 4.0355786,
 "lon": -75.2086642,
 "precision": "region",
-"evidence": "Tolima 주(州) 중심",
+"evidence": "톨리마 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2022/",
 "alias": [
 "MONTREAL"
@@ -42583,7 +42583,7 @@
 "lat": 2.3894154,
 "lon": -75.8926236,
 "precision": "village",
-"evidence": "Huila La Plata 중심",
+"evidence": "우일라 라 플라타 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-farmers-collection-2026/",
 "alias": [
 "Mi Nuevo Mundo"
@@ -42652,7 +42652,7 @@
 "lat": 8.4417924,
 "lon": -73.0492505,
 "precision": "region",
-"evidence": "Norte de Santander 주(州) 중심",
+"evidence": "북산탄데르 주(州) 중심",
 "source": "https://colombialandofdiversity.com/2026-auction-results",
 "alias": [
 "Miguel Albeiro Sepulveda Arias"
@@ -42721,7 +42721,7 @@
 "lat": 4.0355786,
 "lon": -75.2086642,
 "precision": "region",
-"evidence": "Tolima 주(州) 중심",
+"evidence": "톨리마 주(州) 중심",
 "source": "https://colombialandofdiversity.com/2026-auction-results",
 "alias": [
 "Milton Leonardo Monrroy Lopez"
@@ -42790,7 +42790,7 @@
 "lat": 2.4738993,
 "lon": -75.5900113,
 "precision": "region",
-"evidence": "Huila 주(州) 중심",
+"evidence": "우일라 주(州) 중심",
 "source": "https://colombialandofdiversity.com/2026-auction-results",
 "alias": [
 "Bella Alejandría"
@@ -42907,7 +42907,7 @@
 "lat": 1.8447122,
 "lon": -76.0456886,
 "precision": "village",
-"evidence": "Huila Pitalito 중심",
+"evidence": "우일라 피탈리토 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-farmers-collection-2026/",
 "alias": [
 "Borbon Rosado"
@@ -42976,7 +42976,7 @@
 "lat": 2.4738993,
 "lon": -75.5900113,
 "precision": "region",
-"evidence": "Huila 주(州) 중심",
+"evidence": "우일라 주(州) 중심",
 "source": "https://colombialandofdiversity.com/2026-auction-results",
 "alias": [
 "Victor Andres Ramirez Lopez"
@@ -43045,7 +43045,7 @@
 "lat": 2.4738993,
 "lon": -75.5900113,
 "precision": "region",
-"evidence": "Huila 주(州) 중심",
+"evidence": "우일라 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2021/",
 "alias": [
 "Villa del Prado"
@@ -43118,7 +43118,7 @@
 "lat": 4.0355786,
 "lon": -75.2086642,
 "precision": "region",
-"evidence": "Tolima 주(州) 중심",
+"evidence": "톨리마 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2023/",
 "alias": [
 "Zamora"
@@ -43264,7 +43264,7 @@
 "lat": 1.2136,
 "lon": -77.2811,
 "precision": "region",
-"evidence": "Nariño 주(州) 중심",
+"evidence": "나리뇨 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2023/",
 "alias": [
 "Santa Ana"
@@ -43460,7 +43460,7 @@
 "lat": 6.2442,
 "lon": -75.5812,
 "precision": "region",
-"evidence": "Antioquia 주(州) 중심",
+"evidence": "안티오키아 주(州) 중심",
 "source": "https://colombialandofdiversity.com/2026-auction-results",
 "alias": [
 "Sergio Alberto Caro Gomez"
@@ -43529,7 +43529,7 @@
 "lat": 1.8733279,
 "lon": -76.9919324,
 "precision": "village",
-"evidence": "Cauca Bolívar 중심",
+"evidence": "카우카 볼리바르 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-farmers-collection-2026/",
 "alias": [
 "Analu"
@@ -43598,7 +43598,7 @@
 "lat": 2.042096,
 "lon": -77.2157842,
 "precision": "village",
-"evidence": "Cauca Balboa 중심",
+"evidence": "카우카 발보아 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-farmers-collection-2026/",
 "alias": [
 "Alameda"
@@ -43661,7 +43661,7 @@
 "lat": 5.3302514,
 "lon": -75.2873471,
 "precision": "region",
-"evidence": "Caldas 주(州) 중심",
+"evidence": "칼다스 주(州) 중심",
 "source": "https://colombialandofdiversity.com/2026-auction-results",
 "alias": [
 "Alejandro Alvarez Berrío"
@@ -43730,7 +43730,7 @@
 "lat": 7.1193,
 "lon": -73.1227,
 "precision": "region",
-"evidence": "Santander 주(州) 중심",
+"evidence": "산탄데르 주(州) 중심",
 "source": "https://colombialandofdiversity.com/2026-auction-results",
 "alias": [
 "Alvaro Camilo Torres Rodriguez"
@@ -43805,7 +43805,7 @@
 "lat": 4.0355786,
 "lon": -75.2086642,
 "precision": "region",
-"evidence": "Tolima 주(州) 중심",
+"evidence": "톨리마 주(州) 중심",
 "source": "https://colombialandofdiversity.com/2026-auction-results",
 "alias": [
 "Angel Maria Rojas Vasquez"
@@ -43886,7 +43886,7 @@
 "lat": 6.2697324,
 "lon": -75.6025597,
 "precision": "village",
-"evidence": "Antioquia Medellín 중심",
+"evidence": "안티오키아 메델린 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-farmers-collection-2026/",
 "alias": [
 "Espejo"
@@ -43958,7 +43958,7 @@
 "lat": 4.3341444,
 "lon": -75.7038062,
 "precision": "village",
-"evidence": "Quindío Pijao 중심",
+"evidence": "킨디오 피하오 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-farmers-collection-2026/",
 "alias": [
 "Entre Montañas N1"
@@ -44027,7 +44027,7 @@
 "lat": 7.5778992,
 "lon": -72.4765555,
 "precision": "village",
-"evidence": "Norte de Santander Ragonvalia 중심",
+"evidence": "북산탄데르 라곤발리아 중심",
 "source": "https://colombialandofdiversity.com/2025-auction-results",
 "alias": [
 "El Naranjo"
@@ -44096,7 +44096,7 @@
 "lat": 2.715645,
 "lon": -76.662665,
 "precision": "region",
-"evidence": "Cauca 주(州) 중심",
+"evidence": "카우카 주(州) 중심",
 "source": "https://colombialandofdiversity.com/2026-auction-results",
 "alias": [
 "El Diviso"
@@ -44165,7 +44165,7 @@
 "lat": 7.5778992,
 "lon": -72.4765555,
 "precision": "village",
-"evidence": "Norte de Santander Ragonvalia 중심",
+"evidence": "북산탄데르 라곤발리아 중심",
 "source": "https://colombialandofdiversity.com/2025-auction-results",
 "alias": [
 "El Roble"
@@ -44234,7 +44234,7 @@
 "lat": 2.4738993,
 "lon": -75.5900113,
 "precision": "region",
-"evidence": "Huila 주(州) 중심",
+"evidence": "우일라 주(州) 중심",
 "source": "https://colombialandofdiversity.com/2026-auction-results",
 "alias": [
 "El Rubí"
@@ -44503,7 +44503,7 @@
 "lat": 3.5310723,
 "lon": -75.6452086,
 "precision": "village",
-"evidence": "Tolima Rioblanco 중심",
+"evidence": "톨리마 리오블랑코 중심",
 "source": "https://colombialandofdiversity.com/2025-auction-results",
 "alias": [
 "El Mirador"
@@ -44572,7 +44572,7 @@
 "lat": 2.715645,
 "lon": -76.662665,
 "precision": "region",
-"evidence": "Cauca 주(州) 중심",
+"evidence": "카우카 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2021/",
 "alias": [
 "El Zafiro"
@@ -44648,7 +44648,7 @@
 "lat": 4.0355786,
 "lon": -75.2086642,
 "precision": "region",
-"evidence": "Tolima 주(州) 중심",
+"evidence": "톨리마 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2023/",
 "alias": [
 "El Cedral"
@@ -44747,7 +44747,7 @@
 "lat": 2.4738993,
 "lon": -75.5900113,
 "precision": "region",
-"evidence": "Huila 주(州) 중심",
+"evidence": "우일라 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2021/",
 "alias": [
 "El Cedro"
@@ -44883,7 +44883,7 @@
 "lat": 1.4093115,
 "lon": -77.3923306,
 "precision": "village",
-"evidence": "Nariño El Tambo 중심",
+"evidence": "나리뇨 엘 탐보 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-farmers-collection-2026/",
 "alias": [
 "El Wilque"
@@ -44952,7 +44952,7 @@
 "lat": 2.4738993,
 "lon": -75.5900113,
 "precision": "region",
-"evidence": "Huila 주(州) 중심",
+"evidence": "우일라 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2021/",
 "alias": [
 "El Casino"
@@ -45025,7 +45025,7 @@
 "lat": 4.4871105,
 "lon": -73.8935278,
 "precision": "village",
-"evidence": "Cundinamarca Fómeque 중심",
+"evidence": "쿤디나마르카 포메케 중심",
 "source": "https://colombialandofdiversity.com/2025-auction-results",
 "alias": [
 "El Caucho"
@@ -45094,7 +45094,7 @@
 "lat": 1.2136,
 "lon": -77.2811,
 "precision": "region",
-"evidence": "Nariño 주(州) 중심",
+"evidence": "나리뇨 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2023/",
 "alias": [
 "El Cairo"
@@ -45167,7 +45167,7 @@
 "lat": 2.4738993,
 "lon": -75.5900113,
 "precision": "region",
-"evidence": "Huila 주(州) 중심",
+"evidence": "우일라 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2023/",
 "alias": [
 "El Cachingo"
@@ -45240,7 +45240,7 @@
 "lat": 6.3168685,
 "lon": -76.1344983,
 "precision": "village",
-"evidence": "Antioquia Urrao 중심",
+"evidence": "안티오키아 우라오 중심",
 "source": "https://colombialandofdiversity.com/2025-auction-results",
 "alias": [
 "El Curruso"
@@ -45332,7 +45332,7 @@
 "lat": 1.7229505,
 "lon": -76.1311882,
 "precision": "village",
-"evidence": "Huila Palestina 중심",
+"evidence": "우일라 팔레스티나 중심",
 "source": "https://colombialandofdiversity.com/2025-auction-results",
 "alias": [
 "El Porvenir"
@@ -45474,7 +45474,7 @@
 "lat": 4.6642049,
 "lon": -73.4911605,
 "precision": "village",
-"evidence": "Cundinamarca Gachalá 중심",
+"evidence": "쿤디나마르카 가찰라 중심",
 "source": "https://colombialandofdiversity.com/2025-auction-results",
 "alias": [
 "El Pino"
@@ -45619,7 +45619,7 @@
 "lat": 6.2442,
 "lon": -75.5812,
 "precision": "region",
-"evidence": "Antioquia 주(州) 중심",
+"evidence": "안티오키아 주(州) 중심",
 "source": "https://colombialandofdiversity.com/2026-auction-results",
 "alias": [
 "Elkin Mauricio Urrego Montoya"
@@ -45688,7 +45688,7 @@
 "lat": 6.2442,
 "lon": -75.5812,
 "precision": "region",
-"evidence": "Antioquia 주(州) 중심",
+"evidence": "안티오키아 주(州) 중심",
 "source": "https://colombialandofdiversity.com/2026-auction-results",
 "alias": [
 "Elpidio Arboleda Tabares"
@@ -45757,7 +45757,7 @@
 "lat": 1.2136,
 "lon": -77.2811,
 "precision": "region",
-"evidence": "Nariño 주(州) 중심",
+"evidence": "나리뇨 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2021/",
 "alias": [
 "Obraje"
@@ -45856,7 +45856,7 @@
 "lat": 1.2136,
 "lon": -77.2811,
 "precision": "region",
-"evidence": "Nariño 주(州) 중심",
+"evidence": "나리뇨 주(州) 중심",
 "source": "https://colombialandofdiversity.com/2026-auction-results",
 "alias": [
 "Wilson Orlando Janamejoy Carlosama"
@@ -45925,7 +45925,7 @@
 "lat": 1.2136,
 "lon": -77.2811,
 "precision": "region",
-"evidence": "Nariño 주(州) 중심",
+"evidence": "나리뇨 주(州) 중심",
 "source": "https://colombialandofdiversity.com/2026-auction-results",
 "alias": [
 "Isidro Castillo"
@@ -45994,7 +45994,7 @@
 "lat": 3.0980308,
 "lon": -75.856522,
 "precision": "village",
-"evidence": "Tolima Planadas 중심",
+"evidence": "톨리마 플라나다스 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-farmers-collection-2026/",
 "alias": [
 "Cañon Del Río Atá"
@@ -46063,7 +46063,7 @@
 "lat": 1.2137723,
 "lon": -77.2961018,
 "precision": "village",
-"evidence": "Nariño Colón 중심",
+"evidence": "나리뇨 콜론 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-farmers-collection-2026/",
 "alias": [
 "Curillo"
@@ -46132,7 +46132,7 @@
 "lat": 4.0355786,
 "lon": -75.2086642,
 "precision": "region",
-"evidence": "Tolima 주(州) 중심",
+"evidence": "톨리마 주(州) 중심",
 "source": "https://colombialandofdiversity.com/2026-auction-results",
 "alias": [
 "Criss Madelenny Salcedo Rios"
@@ -46201,7 +46201,7 @@
 "lat": 4.7831994,
 "lon": -73.6731282,
 "precision": "region",
-"evidence": "Cundinamarca 주(州) 중심",
+"evidence": "쿤디나마르카 주(州) 중심",
 "source": "https://colombialandofdiversity.com/2026-auction-results",
 "alias": [
 "Claudia P Colmenares Peñaloza"
@@ -46270,7 +46270,7 @@
 "lat": 6.2442,
 "lon": -75.5812,
 "precision": "region",
-"evidence": "Antioquia 주(州) 중심",
+"evidence": "안티오키아 주(州) 중심",
 "source": "https://colombialandofdiversity.com/2026-auction-results",
 "alias": [
 "Fabio Nelson Urrego Bolivar"
@@ -46387,7 +46387,7 @@
 "lat": 6.2442,
 "lon": -75.5812,
 "precision": "region",
-"evidence": "Antioquia 주(州) 중심",
+"evidence": "안티오키아 주(州) 중심",
 "source": "https://colombialandofdiversity.com/2026-auction-results",
 "alias": [
 "German Augusto Trujillo Arango"
@@ -46456,7 +46456,7 @@
 "lat": 6.2442,
 "lon": -75.5812,
 "precision": "region",
-"evidence": "Antioquia 주(州) 중심",
+"evidence": "안티오키아 주(州) 중심",
 "source": "https://colombialandofdiversity.com/2026-auction-results",
 "alias": [
 "Jose Mauricio Montoya Piedrahita"
@@ -46525,7 +46525,7 @@
 "lat": 2.715645,
 "lon": -76.662665,
 "precision": "region",
-"evidence": "Cauca 주(州) 중심",
+"evidence": "카우카 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2023/",
 "alias": [
 "Juan Martin"
@@ -46598,7 +46598,7 @@
 "lat": 1.2136,
 "lon": -77.2811,
 "precision": "region",
-"evidence": "Nariño 주(州) 중심",
+"evidence": "나리뇨 주(州) 중심",
 "source": "https://allianceforcoffeeexcellence.org/colombia-2023/",
 "alias": [
 "Juanambú"
