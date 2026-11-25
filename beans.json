@@ -50565,18 +50565,18 @@
 "features": "기계 수확과 광학·비중 선별 · 수확 당일 습식 밀 · 태양광과 퇴비 순환 · 항온항습 생두 저장고 · 밀에서 100m 거리의 로스터리 · 시드니 로스터리와 노스 본다이 카페 · 3월부터 수확기까지 농장 투어",
 "photo": {
 "m": "place",
-"f": "photos/au-coffee-harvester-mareeba.jpg",
-"g": "https://upload.wikimedia.org/wikipedia/commons/7/74/Coffee_Harvester_Mareeba.JPG",
+"f": "photos/au-mareeba-plantation-jaques.jpg",
+"g": "https://live.staticflickr.com/7435/10029255483_e0a0d16a78_b.jpg",
 "c": {
-"ko": "마리바 지역의 커피 수확기(2012). 이 농장 사진이 아니라, 이 농장이 쓰는 기계 수확과 수확 뒤 광학 선별을 보여 주는 자료 사진이다.",
-"en": "A coffee harvester in the Mareeba district, 2012. Not this farm: a reference photo for the machine harvesting and post-harvest optical sorting the farm relies on.",
-"ja": "マリーバ地区のコーヒー収穫機（2012年）。この農園の写真ではなく、この農園が使う機械収穫と収穫後の光学選別を示す資料写真。"
+"ko": "마리바의 이웃 커피 농장(자크 커피) 노지(2013). 이 농장 사진이 아니라, 마리바 고원에서 커피나무가 자라는 모습을 보여 주는 자료 사진이다.",
+"en": "Coffee rows at Jaques Coffee, a neighbouring Mareeba plantation, 2013. Not this farm: a reference photo for how coffee grows on the Mareeba tableland.",
+"ja": "マリーバの隣接コーヒー農園（ジャック・コーヒー）の圃場（2013年）。この農園の写真ではなく、マリーバ高原でコーヒーの木が育つ様子を示す資料写真。"
 },
-"a": "Photnart",
-"l": "CC BY-SA 3.0",
-"lu": "https://creativecommons.org/licenses/by-sa/3.0",
-"s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Coffee_Harvester_Mareeba.JPG",
+"a": "peter boer (minuseleven)",
+"l": "CC BY 2.0",
+"lu": "https://creativecommons.org/licenses/by/2.0/",
+"s": "openverse",
+"p": "https://www.flickr.com/photos/39297387@N00/10029255483",
 "o": "center"
 },
 "refs": [
