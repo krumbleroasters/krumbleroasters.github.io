@@ -1044,7 +1044,7 @@ function placeRow(p) {
   return `<button type="button" class="res places" data-place="${esc(p.id)}">
     <span class="dot" style="background:${color}"></span>
     <span><span class="rn">${esc(p.country)} · ${esc(p.name)}<span class="tag">${tier}</span>${p.auctionCount ? '<span class="tag auc">🏆</span>' : ''}</span>
-    <span class="rm">${esc(p.nameEn || "")}${p.nameEn ? " · " : ""}${n ? n.toLocaleString() + "종" : "카탈로그 미수록"}</span></span>
+    <span class="rm">${esc(p.nameEn || "")}${p.nameEn ? " · " : ""}<span>${n ? n.toLocaleString() + "종" : "카탈로그 미수록"}</span></span></span>
   </button>`;
 }
 
