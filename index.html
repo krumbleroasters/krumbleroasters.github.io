@@ -1545,7 +1545,7 @@ function searchPlaces(q) {
   if (!toks.length || !CAT.places.length) return [];
   const out = [];
   for (const p of CAT.places) {
-    const t = norm([p.name, p.nameEn, p.country].filter(Boolean).join(" "));
+    const t = norm([p.name, p.nameEn, p.nameJa, p.country].filter(Boolean).join(" "));
     let ok = true;
     for (const k of toks) if (!t.includes(k)) { ok = false; break; }
     if (ok) out.push(p);
