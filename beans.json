@@ -7,29 +7,29 @@
 "beans": 3113,
 "listings": 4195,
 "countries": 38,
-"places": 421,
+"places": 446,
 "regions": 224,
-"farms": 164,
+"farms": 189,
 "jpBeans": 292,
 "auctions": 421,
 "auctionPlaces": 127
 },
 "precision": {
 "farm": 88,
-"region": 931,
-"village": 484,
-"country": 1610
+"region": 953,
+"village": 489,
+"country": 1583
 },
 "coordSource": "Photon/OpenStreetMap (ODbL), 일부 주요 산지는 관리 중심지 좌표로 보정",
 "profileFill": {
-"elevation": 375,
-"harvest": 360,
-"terroir": 360,
-"varieties": 416,
-"processes": 416,
-"flavorProfile": 360,
-"trend": 361,
-"story": 374
+"elevation": 401,
+"harvest": 385,
+"terroir": 385,
+"varieties": 441,
+"processes": 441,
+"flavorProfile": 385,
+"trend": 386,
+"story": 399
 },
 "profileFallback": 55,
 "process": {
@@ -146,69 +146,6 @@
 "lu": "https://creativecommons.org/licenses/by/2.0",
 "s": "commons",
 "p": "https://commons.wikimedia.org/wiki/File:Guatemala_2011_228_-_San_Mart%C3%ADn_Jilotepeque_Coffee_Harvest.jpg"
-}
-},
-{
-"kind": "country",
-"country": "에티오피아",
-"name": "에티오피아",
-"nameEn": "Ethiopia",
-"lat": 10.2116702,
-"lon": 38.6521203,
-"precision": "country",
-"evidence": "Ethiopia, Ethiopia",
-"id": "C|에티오피아",
-"beanCount": 147,
-"auctions": [
-{
-"id": "coe-ethiopia-2024-sintayehu-7",
-"competition": "CoE Ethiopia 2024",
-"year": 2024,
-"rank": "7",
-"score": 89.02,
-"farm": "Sintayehu",
-"variety": "JARC 74158",
-"process": "Natural",
-"buyers": [
-"송도커피"
-],
-"buyersEn": [
-"Songdo Coffee"
-],
-"buyersJa": [
-"Songdo Coffee"
-],
-"joint": true,
-"level": "country",
-"src": "https://allianceforcoffeeexcellence.org/ethiopia-2024/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/etiopia-2024/"
-}
-],
-"auctionCount": 1,
-"elevation": "1,400~2,200m (구지 등 2,300m까지)",
-"harvest": "10월~1월 (저지) · 11월~2월 (고지)",
-"terroir": "화산성 니티솔 토양 · 원생림 그늘 · 고지의 큰 일교차",
-"varieties": "에티오피아 재래종(Heirloom) · JARC 선발종(74110·74112 등)",
-"processes": "워시드 · 내추럴 (최근 무산소 발효 확대)",
-"flavorProfile": "자스민 · 베르가못 · 복숭아 · 시트러스",
-"trend": "수출 유통 개편 이후 생산자 직거래가 늘었고, 작은 행정구역별 랏과 무산소 내추럴이 빠르게 퍼졌습니다.",
-"story": "에티오피아는 아라비카가 처음 자란 나라입니다. 남서부 짐마·게라·리무의 원생 숲과 남부 시다마·게데오의 고지에서 소농들이 작은 행정구역 단위로 체리를 모아 가공하며, 지역마다 다른 토착 품종이 남아 있습니다.",
-"profileLevel": "place",
-"photo": {
-"m": "country_fallback",
-"f": "photos/up-sifting-good-beans-from-bad.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Sifting_good_beans_from_bad.jpg/960px-Sifting_good_beans_from_bad.jpg",
-"c": {
-"ko": "에티오피아 커피 선별 (국가 대표 사진)",
-"en": "Ethiopia coffee sorting (country representative photo)",
-"ja": "エチオピアのコーヒー選別（代表写真）"
-},
-"a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
-"s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Sifting_good_beans_from_bad.jpg",
-"o": "50% 62%"
 }
 },
 {
@@ -444,6 +381,69 @@
 }
 },
 {
+"kind": "country",
+"country": "에티오피아",
+"name": "에티오피아",
+"nameEn": "Ethiopia",
+"lat": 10.2116702,
+"lon": 38.6521203,
+"precision": "country",
+"evidence": "Ethiopia, Ethiopia",
+"id": "C|에티오피아",
+"beanCount": 120,
+"auctions": [
+{
+"id": "coe-ethiopia-2024-sintayehu-7",
+"competition": "CoE Ethiopia 2024",
+"year": 2024,
+"rank": "7",
+"score": 89.02,
+"farm": "Sintayehu",
+"variety": "JARC 74158",
+"process": "Natural",
+"buyers": [
+"송도커피"
+],
+"buyersEn": [
+"Songdo Coffee"
+],
+"buyersJa": [
+"Songdo Coffee"
+],
+"joint": true,
+"level": "country",
+"src": "https://allianceforcoffeeexcellence.org/ethiopia-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/etiopia-2024/"
+}
+],
+"auctionCount": 1,
+"elevation": "1,400~2,200m (구지 등 2,300m까지)",
+"harvest": "10월~1월 (저지) · 11월~2월 (고지)",
+"terroir": "화산성 니티솔 토양 · 원생림 그늘 · 고지의 큰 일교차",
+"varieties": "에티오피아 재래종(Heirloom) · JARC 선발종(74110·74112 등)",
+"processes": "워시드 · 내추럴 (최근 무산소 발효 확대)",
+"flavorProfile": "자스민 · 베르가못 · 복숭아 · 시트러스",
+"trend": "수출 유통 개편 이후 생산자 직거래가 늘었고, 작은 행정구역별 랏과 무산소 내추럴이 빠르게 퍼졌습니다.",
+"story": "에티오피아는 아라비카가 처음 자란 나라입니다. 남서부 짐마·게라·리무의 원생 숲과 남부 시다마·게데오의 고지에서 소농들이 작은 행정구역 단위로 체리를 모아 가공하며, 지역마다 다른 토착 품종이 남아 있습니다.",
+"profileLevel": "place",
+"photo": {
+"m": "country_fallback",
+"f": "photos/up-sifting-good-beans-from-bad.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Sifting_good_beans_from_bad.jpg/960px-Sifting_good_beans_from_bad.jpg",
+"c": {
+"ko": "에티오피아 커피 선별 (국가 대표 사진)",
+"en": "Ethiopia coffee sorting (country representative photo)",
+"ja": "エチオピアのコーヒー選別（代表写真）"
+},
+"a": "DFID - UK Department for International Development",
+"l": "CC BY 2.0",
+"lu": "https://creativecommons.org/licenses/by/2.0",
+"s": "commons",
+"p": "https://commons.wikimedia.org/wiki/File:Sifting_good_beans_from_bad.jpg",
+"o": "50% 62%"
+}
+},
+{
 "kind": "region",
 "country": "에티오피아",
 "name": "예가체프",
@@ -453,7 +453,7 @@
 "precision": "village",
 "evidence": "Yirga Cheffe, Gedeo, South Ethiopia Regional State, Ethiopia",
 "id": "R|에티오피아|예가체프",
-"beanCount": 121,
+"beanCount": 101,
 "elevation": "1,700~2,200m",
 "harvest": "10월~1월 (주 수확기)",
 "terroir": "게데오 고지 · 붉은 화산성 니티솔 · 원생림 그늘",
@@ -464,318 +464,19 @@
 "story": "게데오 고지의 붉은 화산성 니티솔과 원생림 그늘 아래, 해발 1,700~2,200m에서 재래종이 자랍니다. 체리를 천천히 익혀 워시드로 가공하면 홍차처럼 정돈된 산미와 자스민·베르가못 향이 살아나고, 요즘은 고지 마이크로 랏과 무산소 내추럴도 늘었습니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-coffee-beans-ethiopia.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Coffee_Beans_%28Ethiopia%29.JPG/960px-Coffee_Beans_%28Ethiopia%29.JPG",
+"f": "photos/et-hand-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Girls_cleaning_coffee.JPG/960px-Girls_cleaning_coffee.JPG",
+"a": "Natnael Tadele",
+"p": "https://commons.wikimedia.org/wiki/File:Girls_cleaning_coffee.JPG",
 "c": {
-"ko": "에티오피아 커피 원두 (국가 대표 사진)",
-"en": "Ethiopia coffee beans (country representative photo)",
-"ja": "エチオピアのコーヒー豆（代表写真）"
+"ko": "손으로 생두를 고르는 모습",
+"en": "Hand sorting green coffee",
+"ja": "手作業で生豆を選別する様子"
 },
-"a": "Maurice Chédel",
-"l": "CC BY-SA 3.0",
-"lu": "https://creativecommons.org/licenses/by-sa/3.0",
-"s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Coffee_Beans_(Ethiopia).JPG"
-}
-},
-{
-"kind": "region",
-"country": "에티오피아",
-"name": "시다모",
-"nameEn": "Sidamo",
-"lat": 6.7,
-"lon": 38.42,
-"precision": "region",
-"evidence": "산지 중심(관리자 보정)",
-"source": "",
-"id": "R|에티오피아|시다모",
-"beanCount": 104,
-"auctions": [
-{
-"id": "coe-ethiopia-2024-tesfaye-12",
-"competition": "CoE Ethiopia 2024",
-"year": 2024,
-"rank": "12",
-"score": 87.65,
-"farm": "Tesfaye",
-"variety": "JARC 74110",
-"process": "Natural",
-"buyers": [
-"칼디커피팜"
-],
-"buyersEn": [
-"KALDI COFFEE FARM"
-],
-"buyersJa": [
-"カルディコーヒーファーム"
-],
-"joint": true,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/ethiopia-2024/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/etiopia-2024/"
-},
-{
-"id": "coe-ethiopia-2024-ermias-13",
-"competition": "CoE Ethiopia 2024",
-"year": 2024,
-"rank": "13",
-"score": 87.63,
-"farm": "Ermias",
-"variety": "JARC 74158",
-"process": "Natural",
-"buyers": [
-"사자커피"
-],
-"buyersEn": [
-"Saza Coffee"
-],
-"buyersJa": [
-"サザコーヒー"
-],
-"joint": false,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/ethiopia-2024/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/etiopia-2024/"
-},
-{
-"id": "coe-ethiopia-2024-azalech-14",
-"competition": "CoE Ethiopia 2024",
-"year": 2024,
-"rank": "14",
-"score": 87.61,
-"farm": "Azalech",
-"variety": "JARC 74112",
-"process": "Natural",
-"buyers": [
-"와타루"
-],
-"buyersEn": [
-"Wataru & Co., Ltd."
-],
-"buyersJa": [
-"ワタル"
-],
-"joint": true,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/ethiopia-2024/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/etiopia-2024/"
-},
-{
-"id": "coe-ethiopia-2024-belaineh-15",
-"competition": "CoE Ethiopia 2024",
-"year": 2024,
-"rank": "15",
-"score": 87.57,
-"farm": "Belaineh",
-"variety": "JARC 74158",
-"process": "Natural",
-"buyers": [
-"파디에사사구리"
-],
-"buyersEn": [
-"Fadie Sasaguri Roastery"
-],
-"buyersJa": [
-"ファディエ笹栗"
-],
-"joint": false,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/ethiopia-2024/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/etiopia-2024/"
-},
-{
-"id": "coe-ethiopia-2024-tamru-16",
-"competition": "CoE Ethiopia 2024",
-"year": 2024,
-"rank": "16",
-"score": 87.52,
-"farm": "Tamru",
-"variety": "74158",
-"process": "Natural",
-"buyers": [
-"라이언스커피"
-],
-"buyersEn": [
-"Ryans Coffee Roasters"
-],
-"buyersJa": [
-"Ryans Coffee Roasters"
-],
-"joint": true,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/ethiopia-2024/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/etiopia-2024/"
-},
-{
-"id": "coe-ethiopia-2024-basha-1b",
-"competition": "CoE Ethiopia 2024",
-"year": 2024,
-"rank": "1B",
-"score": 90.5,
-"farm": "Basha",
-"variety": "JARC 74158",
-"process": "Natural",
-"buyers": [
-"사자커피"
-],
-"buyersEn": [
-"Saza Coffee"
-],
-"buyersJa": [
-"サザコーヒー"
-],
-"joint": true,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/ethiopia-2024/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/etiopia-2024/"
-},
-{
-"id": "coe-ethiopia-2024-leikun-20",
-"competition": "CoE Ethiopia 2024",
-"year": 2024,
-"rank": "20",
-"score": 87.46,
-"farm": "Leikun",
-"variety": "74158",
-"process": "Natural",
-"buyers": [
-"커피미업"
-],
-"buyersEn": [
-"Coffee Me Up"
-],
-"buyersJa": [
-"Coffee Me Up"
-],
-"joint": true,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/ethiopia-2024/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/etiopia-2024/"
-},
-{
-"id": "coe-ethiopia-2024-almaz-26",
-"competition": "CoE Ethiopia 2024",
-"year": 2024,
-"rank": "26",
-"score": 87.04,
-"farm": "Almaz",
-"variety": "JARC 74158",
-"process": "Natural",
-"buyers": [
-"와타루"
-],
-"buyersEn": [
-"Wataru & Co., Ltd."
-],
-"buyersJa": [
-"ワタル"
-],
-"joint": true,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/ethiopia-2024/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/etiopia-2024/"
-},
-{
-"id": "coe-ethiopia-2024-bekele-5",
-"competition": "CoE Ethiopia 2024",
-"year": 2024,
-"rank": "5",
-"score": 89.41,
-"farm": "Bekele",
-"variety": "74158",
-"process": "Natural",
-"buyers": [
-"뮤제오",
-"커피화",
-"아얀투"
-],
-"buyersEn": [
-"MUSEO",
-"COFFEE HWA",
-"AYANTU"
-],
-"buyersJa": [
-"MUSEO",
-"COFFEE HWA",
-"AYANTU"
-],
-"joint": true,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/ethiopia-2024/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/etiopia-2024/"
-},
-{
-"id": "coe-ethiopia-2024-meswat-shimeles-abera-nw",
-"competition": "CoE Ethiopia 2024 · NW Auction Results",
-"year": 2024,
-"rank": "NW",
-"score": 86.59,
-"farm": "Meswat Shimeles Abera",
-"variety": "JARC 74158",
-"process": "Natural",
-"buyers": [
-"와타루"
-],
-"buyersEn": [
-"Wataru & Co., Ltd."
-],
-"buyersJa": [
-"ワタル"
-],
-"joint": true,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/ethiopia-2024/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/etiopia-2024/"
-},
-{
-"id": "coe-ethiopia-2024-negussie-nw",
-"competition": "CoE Ethiopia 2024 · NW Auction Results",
-"year": 2024,
-"rank": "NW",
-"score": 86.91,
-"farm": "Negussie",
-"variety": "JARC 74158",
-"process": "Natural",
-"buyers": [
-"노지커피"
-],
-"buyersEn": [
-"NOZY COFFEE"
-],
-"buyersJa": [
-"ノジコーヒー"
-],
-"joint": false,
-"level": "region",
-"src": "https://allianceforcoffeeexcellence.org/ethiopia-2024/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/etiopia-2024/"
-}
-],
-"auctionCount": 11,
-"elevation": "1,550~2,200m",
-"harvest": "10월~2월 (주 수확기)",
-"terroir": "시다마 고지 · 화산성 토양 · 원생림 그늘",
-"varieties": "에티오피아 재래종(Heirloom)",
-"processes": "워시드 · 내추럴",
-"flavorProfile": "복숭아 · 살구 · 오렌지 블로섬",
-"trend": "옛 행정명 '시다모' 대신 '시다마' 표기가 늘었고, 지역 이름을 건 랏도 많아졌습니다.",
-"story": "시다마 고지의 화산성 토양과 원생림 그늘에서 해발 1,550~2,200m 재래종을 기릅니다. 예가체프보다 산미가 부드럽고 바디가 조금 더 차 있어 스페셜티를 처음 접하는 사람에게 권하기 좋고, 옛 행정명 대신 '시다마'로 적는 랏이 늘었습니다.",
-"profileLevel": "place",
-"photo": {
 "m": "exact_origin",
-"f": "photos/1-sidamo-coffee-berry-sorting-process-near-hawassa.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Coffee_berry_sorting_process%2C_near_Hawassa.jpg/960px-Coffee_berry_sorting_process%2C_near_Hawassa.jpg",
-"c": {
-"ko": "시다모 커피 선별",
-"en": "Sidamo coffee sorting",
-"ja": "シダモのコーヒー選別"
-},
-"a": "Niels Van Iperen",
-"l": "CC BY-SA 4.0",
-"lu": "https://creativecommons.org/licenses/by-sa/4.0/",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Coffee_berry_sorting_process,_near_Hawassa.jpg"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -1090,6 +791,305 @@
 }
 },
 {
+"kind": "region",
+"country": "에티오피아",
+"name": "시다모",
+"nameEn": "Sidamo",
+"lat": 6.7,
+"lon": 38.42,
+"precision": "region",
+"evidence": "산지 중심(관리자 보정)",
+"source": "",
+"id": "R|에티오피아|시다모",
+"beanCount": 74,
+"auctions": [
+{
+"id": "coe-ethiopia-2024-tesfaye-12",
+"competition": "CoE Ethiopia 2024",
+"year": 2024,
+"rank": "12",
+"score": 87.65,
+"farm": "Tesfaye",
+"variety": "JARC 74110",
+"process": "Natural",
+"buyers": [
+"칼디커피팜"
+],
+"buyersEn": [
+"KALDI COFFEE FARM"
+],
+"buyersJa": [
+"カルディコーヒーファーム"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/ethiopia-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/etiopia-2024/"
+},
+{
+"id": "coe-ethiopia-2024-ermias-13",
+"competition": "CoE Ethiopia 2024",
+"year": 2024,
+"rank": "13",
+"score": 87.63,
+"farm": "Ermias",
+"variety": "JARC 74158",
+"process": "Natural",
+"buyers": [
+"사자커피"
+],
+"buyersEn": [
+"Saza Coffee"
+],
+"buyersJa": [
+"サザコーヒー"
+],
+"joint": false,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/ethiopia-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/etiopia-2024/"
+},
+{
+"id": "coe-ethiopia-2024-azalech-14",
+"competition": "CoE Ethiopia 2024",
+"year": 2024,
+"rank": "14",
+"score": 87.61,
+"farm": "Azalech",
+"variety": "JARC 74112",
+"process": "Natural",
+"buyers": [
+"와타루"
+],
+"buyersEn": [
+"Wataru & Co., Ltd."
+],
+"buyersJa": [
+"ワタル"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/ethiopia-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/etiopia-2024/"
+},
+{
+"id": "coe-ethiopia-2024-belaineh-15",
+"competition": "CoE Ethiopia 2024",
+"year": 2024,
+"rank": "15",
+"score": 87.57,
+"farm": "Belaineh",
+"variety": "JARC 74158",
+"process": "Natural",
+"buyers": [
+"파디에사사구리"
+],
+"buyersEn": [
+"Fadie Sasaguri Roastery"
+],
+"buyersJa": [
+"ファディエ笹栗"
+],
+"joint": false,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/ethiopia-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/etiopia-2024/"
+},
+{
+"id": "coe-ethiopia-2024-tamru-16",
+"competition": "CoE Ethiopia 2024",
+"year": 2024,
+"rank": "16",
+"score": 87.52,
+"farm": "Tamru",
+"variety": "74158",
+"process": "Natural",
+"buyers": [
+"라이언스커피"
+],
+"buyersEn": [
+"Ryans Coffee Roasters"
+],
+"buyersJa": [
+"Ryans Coffee Roasters"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/ethiopia-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/etiopia-2024/"
+},
+{
+"id": "coe-ethiopia-2024-basha-1b",
+"competition": "CoE Ethiopia 2024",
+"year": 2024,
+"rank": "1B",
+"score": 90.5,
+"farm": "Basha",
+"variety": "JARC 74158",
+"process": "Natural",
+"buyers": [
+"사자커피"
+],
+"buyersEn": [
+"Saza Coffee"
+],
+"buyersJa": [
+"サザコーヒー"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/ethiopia-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/etiopia-2024/"
+},
+{
+"id": "coe-ethiopia-2024-leikun-20",
+"competition": "CoE Ethiopia 2024",
+"year": 2024,
+"rank": "20",
+"score": 87.46,
+"farm": "Leikun",
+"variety": "74158",
+"process": "Natural",
+"buyers": [
+"커피미업"
+],
+"buyersEn": [
+"Coffee Me Up"
+],
+"buyersJa": [
+"Coffee Me Up"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/ethiopia-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/etiopia-2024/"
+},
+{
+"id": "coe-ethiopia-2024-almaz-26",
+"competition": "CoE Ethiopia 2024",
+"year": 2024,
+"rank": "26",
+"score": 87.04,
+"farm": "Almaz",
+"variety": "JARC 74158",
+"process": "Natural",
+"buyers": [
+"와타루"
+],
+"buyersEn": [
+"Wataru & Co., Ltd."
+],
+"buyersJa": [
+"ワタル"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/ethiopia-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/etiopia-2024/"
+},
+{
+"id": "coe-ethiopia-2024-bekele-5",
+"competition": "CoE Ethiopia 2024",
+"year": 2024,
+"rank": "5",
+"score": 89.41,
+"farm": "Bekele",
+"variety": "74158",
+"process": "Natural",
+"buyers": [
+"뮤제오",
+"커피화",
+"아얀투"
+],
+"buyersEn": [
+"MUSEO",
+"COFFEE HWA",
+"AYANTU"
+],
+"buyersJa": [
+"MUSEO",
+"COFFEE HWA",
+"AYANTU"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/ethiopia-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/etiopia-2024/"
+},
+{
+"id": "coe-ethiopia-2024-meswat-shimeles-abera-nw",
+"competition": "CoE Ethiopia 2024 · NW Auction Results",
+"year": 2024,
+"rank": "NW",
+"score": 86.59,
+"farm": "Meswat Shimeles Abera",
+"variety": "JARC 74158",
+"process": "Natural",
+"buyers": [
+"와타루"
+],
+"buyersEn": [
+"Wataru & Co., Ltd."
+],
+"buyersJa": [
+"ワタル"
+],
+"joint": true,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/ethiopia-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/etiopia-2024/"
+},
+{
+"id": "coe-ethiopia-2024-negussie-nw",
+"competition": "CoE Ethiopia 2024 · NW Auction Results",
+"year": 2024,
+"rank": "NW",
+"score": 86.91,
+"farm": "Negussie",
+"variety": "JARC 74158",
+"process": "Natural",
+"buyers": [
+"노지커피"
+],
+"buyersEn": [
+"NOZY COFFEE"
+],
+"buyersJa": [
+"ノジコーヒー"
+],
+"joint": false,
+"level": "region",
+"src": "https://allianceforcoffeeexcellence.org/ethiopia-2024/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/etiopia-2024/"
+}
+],
+"auctionCount": 11,
+"elevation": "1,550~2,200m",
+"harvest": "10월~2월 (주 수확기)",
+"terroir": "시다마 고지 · 화산성 토양 · 원생림 그늘",
+"varieties": "에티오피아 재래종(Heirloom)",
+"processes": "워시드 · 내추럴",
+"flavorProfile": "복숭아 · 살구 · 오렌지 블로섬",
+"trend": "옛 행정명 '시다모' 대신 '시다마' 표기가 늘었고, 지역 이름을 건 랏도 많아졌습니다.",
+"story": "시다마 고지의 화산성 토양과 원생림 그늘에서 해발 1,550~2,200m 재래종을 기릅니다. 예가체프보다 산미가 부드럽고 바디가 조금 더 차 있어 스페셜티를 처음 접하는 사람에게 권하기 좋고, 옛 행정명 대신 '시다마'로 적는 랏이 늘었습니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-green-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Women_checking_coffee.jpg/960px-Women_checking_coffee.jpg",
+"a": "Nhb201",
+"p": "https://commons.wikimedia.org/wiki/File:Women_checking_coffee.jpg",
+"c": {
+"ko": "생두 선별 라인",
+"en": "A green bean sorting line",
+"ja": "生豆の選別ライン"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
+}
+},
+{
 "kind": "country",
 "country": "베트남",
 "name": "베트남",
@@ -1231,43 +1231,6 @@
 "lu": "https://creativecommons.org/licenses/by-sa/2.0/",
 "s": "commons",
 "p": "https://commons.wikimedia.org/wiki/File:Papua_New_Guinea_1991-002_Picking_Coffee_Beans_Bobiufa_Eastern_Highlands_Province_(35mm_Slide)_(32919963013).jpg"
-}
-},
-{
-"kind": "region",
-"country": "에티오피아",
-"name": "구지",
-"nameEn": "Guji",
-"lat": 5.5501401,
-"lon": 39.2030529,
-"precision": "region",
-"evidence": "Guji, Oromia Region, Ethiopia",
-"id": "R|에티오피아|구지",
-"beanCount": 36,
-"elevation": "1,800~2,300m",
-"harvest": "11월~2월 (주 수확기)",
-"terroir": "오로미아 남부 고지 · 화산성 토양 · 원생림",
-"varieties": "에티오피아 재래종(Heirloom)",
-"processes": "내추럴 비중 높음 · 워시드·허니",
-"flavorProfile": "블루베리 · 복숭아 · 패션프루트",
-"trend": "샤키소·우라가·함벨라 같은 작은 행정구역별 랏이 구지 이름을 세계 시장에 알렸습니다.",
-"story": "구지는 에티오피아 남부의 고지 산지로, 지난 십여 년 사이 스페셜티 시장에서 가장 많이 회자된 이름입니다. 해발 1,800~2,300m의 화산성 토양과 원생림 사이 소농 밭에서 재래종을 기르고, 체리를 모아 내추럴로 말린 랏이 진한 과즙을 냅니다. 샤키소·우라가·함벨라 같은 작은 행정구역별 랏이 구지 이름을 세계에 알렸습니다.",
-"profileLevel": "place",
-"photo": {
-"m": "country_fallback",
-"f": "photos/up-sifting-good-beans-from-bad.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Sifting_good_beans_from_bad.jpg/960px-Sifting_good_beans_from_bad.jpg",
-"c": {
-"ko": "에티오피아 커피 선별 (국가 대표 사진)",
-"en": "Ethiopia coffee sorting (country representative photo)",
-"ja": "エチオピアのコーヒー選別（代表写真）"
-},
-"a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
-"s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Sifting_good_beans_from_bad.jpg",
-"o": "50% 62%"
 }
 },
 {
@@ -1662,6 +1625,42 @@
 "lu": "https://creativecommons.org/licenses/by-sa/4.0",
 "s": "commons",
 "p": "https://commons.wikimedia.org/wiki/File:Coffee_beans_drying_at_Fairview_Estate,_Kiambu,_KE.jpg"
+}
+},
+{
+"kind": "region",
+"country": "에티오피아",
+"name": "구지",
+"nameEn": "Guji",
+"lat": 5.5501401,
+"lon": 39.2030529,
+"precision": "region",
+"evidence": "Guji, Oromia Region, Ethiopia",
+"id": "R|에티오피아|구지",
+"beanCount": 24,
+"elevation": "1,800~2,300m",
+"harvest": "11월~2월 (주 수확기)",
+"terroir": "오로미아 남부 고지 · 화산성 토양 · 원생림",
+"varieties": "에티오피아 재래종(Heirloom)",
+"processes": "내추럴 비중 높음 · 워시드·허니",
+"flavorProfile": "블루베리 · 복숭아 · 패션프루트",
+"trend": "샤키소·우라가·함벨라 같은 작은 행정구역별 랏이 구지 이름을 세계 시장에 알렸습니다.",
+"story": "구지는 에티오피아 남부의 고지 산지로, 지난 십여 년 사이 스페셜티 시장에서 가장 많이 회자된 이름입니다. 해발 1,800~2,300m의 화산성 토양과 원생림 사이 소농 밭에서 재래종을 기르고, 체리를 모아 내추럴로 말린 랏이 진한 과즙을 냅니다. 샤키소·우라가·함벨라 같은 작은 행정구역별 랏이 구지 이름을 세계에 알렸습니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-depulper.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Men_by_coffee_peeling_machine%2C_near_awassa.jpg/960px-Men_by_coffee_peeling_machine%2C_near_awassa.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Men_by_coffee_peeling_machine,_near_awassa.jpg",
+"c": {
+"ko": "펄퍼로 체리의 과육을 벗기는 모습",
+"en": "Running cherry through a pulper",
+"ja": "パルパーでチェリーの果肉を除く様子"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -3327,19 +3326,19 @@
 "story": "구지 고지의 화산성 토양과 원생림이 남은 경사지, 해발 1,850~2,200m에서 소농이 재래종을 기릅니다. 워싱스테이션마다 체리를 나눠 가공해 구지 안에서도 선별이 유난히 꼼꼼한 마이크로 랏이 나옵니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-coffee-beans-ethiopia.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Coffee_Beans_%28Ethiopia%29.JPG/960px-Coffee_Beans_%28Ethiopia%29.JPG",
+"f": "photos/et-cherry-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Ethiopia-47.jpg/960px-Ethiopia-47.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Ethiopia-47.jpg",
 "c": {
-"ko": "에티오피아 커피 원두 (국가 대표 사진)",
-"en": "Ethiopia coffee beans (country representative photo)",
-"ja": "エチオピアのコーヒー豆（代表写真）"
+"ko": "건조대 위에서 커피 체리를 고르는 모습",
+"en": "Sorting coffee cherries on raised beds",
+"ja": "乾燥棚でコーヒーチェリーを選別する様子"
 },
-"a": "Maurice Chédel",
-"l": "CC BY-SA 3.0",
-"lu": "https://creativecommons.org/licenses/by-sa/3.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Coffee_Beans_(Ethiopia).JPG"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -3432,43 +3431,6 @@
 "lu": "https://creativecommons.org/licenses/by-sa/4.0/",
 "s": "commons",
 "p": "https://commons.wikimedia.org/wiki/File:Coffee_farmers_at_work.jpg"
-}
-},
-{
-"kind": "region",
-"country": "에티오피아",
-"name": "아르베고나",
-"nameEn": "Arbegona",
-"lat": 6.695609,
-"lon": 38.7215642,
-"precision": "region",
-"evidence": "Arbe Gonna, Sidama, Ethiopia",
-"id": "R|에티오피아|아르베고나",
-"beanCount": 14,
-"elevation": "1,800~2,200m",
-"harvest": "11월~1월 (주 수확기)",
-"terroir": "시다마 고지 · 원생림 그늘 · 서늘한 밤",
-"varieties": "에티오피아 재래종(Heirloom)",
-"processes": "워시드 · 내추럴",
-"flavorProfile": "꽃향 · 시트러스 · 복숭아",
-"trend": "시다마의 고지 작은 행정구역으로, 요즘은 무산소 발효 랏도 나옵니다.",
-"story": "시다마 고지의 원생림 그늘과 해발 1,800~2,200m의 서늘한 밤이 체리를 천천히 익힙니다. 소농 밭에서 난 재래종 체리를 마을 워싱스테이션에서 모아 워시드·내추럴로 가공하고, 최근에는 무산소 발효 랏도 나옵니다.",
-"profileLevel": "place",
-"photo": {
-"m": "country_fallback",
-"f": "photos/up-sifting-good-beans-from-bad.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Sifting_good_beans_from_bad.jpg/960px-Sifting_good_beans_from_bad.jpg",
-"c": {
-"ko": "에티오피아 커피 선별 (국가 대표 사진)",
-"en": "Ethiopia coffee sorting (country representative photo)",
-"ja": "エチオピアのコーヒー選別（代表写真）"
-},
-"a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
-"s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Sifting_good_beans_from_bad.jpg",
-"o": "50% 62%"
 }
 },
 {
@@ -3577,20 +3539,19 @@
 "story": "아바야 호수 인근 고지의 화산성 토양에서 해발 1,700~2,100m 재래종을 기릅니다. 호수를 둘러싼 원생림 그늘이 서늘한 미기후를 만들고, 소농들의 워시드·내추럴 랏이 조금씩 스페셜티로 유통됩니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-sifting-good-beans-from-bad.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Sifting_good_beans_from_bad.jpg/960px-Sifting_good_beans_from_bad.jpg",
+"f": "photos/et-green-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Women_checking_coffee.jpg/960px-Women_checking_coffee.jpg",
+"a": "Nhb201",
+"p": "https://commons.wikimedia.org/wiki/File:Women_checking_coffee.jpg",
 "c": {
-"ko": "에티오피아 커피 선별 (국가 대표 사진)",
-"en": "Ethiopia coffee sorting (country representative photo)",
-"ja": "エチオピアのコーヒー選別（代表写真）"
+"ko": "생두 선별 라인",
+"en": "A green bean sorting line",
+"ja": "生豆の選別ライン"
 },
-"a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Sifting_good_beans_from_bad.jpg",
-"o": "50% 62%"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -3614,19 +3575,19 @@
 "story": "구지 존의 고지 작은 행정구역으로, 해발 1,900~2,200m의 원생림과 큰 일교차가 체리를 천천히 익힙니다. 내추럴로 말린 체리가 진한 베리 향을 내고, 최근에는 무산소 가공 랏도 함께 나옵니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-the-start-of-your-morning-coffee-5984450578.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/The_start_of_your_morning_coffee_%285984450578%29.jpg/960px-The_start_of_your_morning_coffee_%285984450578%29.jpg",
+"f": "photos/et-cherry-drying.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Coffee_berry_sorting_process%2C_near_Hawassa.jpg/960px-Coffee_berry_sorting_process%2C_near_Hawassa.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Coffee_berry_sorting_process,_near_Hawassa.jpg",
 "c": {
-"ko": "에티오피아 커피 수확 (국가 대표 사진)",
-"en": "Ethiopia coffee harvest (country representative photo)",
-"ja": "エチオピアのコーヒー収穫（代表写真）"
+"ko": "햇볕에 말리는 커피 체리",
+"en": "Coffee cherries drying in the sun",
+"ja": "天日で乾かすコーヒーチェリー"
 },
-"a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:The_start_of_your_morning_coffee_(5984450578).jpg"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -3797,6 +3758,63 @@
 "lu": "https://creativecommons.org/licenses/by-sa/4.0",
 "s": "commons",
 "p": "https://commons.wikimedia.org/wiki/File:Coffee_Vilcabamba_Ecuador_1461.jpg"
+}
+},
+{
+"id": "F|에티오피아|케라모",
+"kind": "farm",
+"country": "에티오피아",
+"name": "케라모",
+"nameEn": "Keramo Washing Station",
+"nameJa": "ケラモ精製所",
+"lat": 6.62677,
+"lon": 38.91531,
+"precision": "village",
+"evidence": "시다마 벤사 지역 케라모 마을 · OSM Keramo(마을)",
+"source": "https://www.coffeelegends.co.uk/24-25-selections/keramo",
+"alias": [
+"keramo",
+"ケラモ"
+],
+"producer": "데일 벤사 커피 — 아세파 두카모, 물루게타 두카모 형제",
+"founded": "데일 벤사 1996년 설립(2006년 수출 시작)",
+"awards": [
+"에티오피아 Cup of Excellence 2020 수상(케라모 스테이션 커피)"
+],
+"refs": [
+{
+"t": "스테이션·수상",
+"u": "https://www.coffeelegends.co.uk/24-25-selections/keramo"
+},
+{
+"t": "농가·가공",
+"u": "https://ceremonycoffee.com/products/ethiopia-keramo-1"
+}
+],
+"beanCount": 12,
+"elevation": "1,800~2,360m (스테이션 주변 2,260~2,360m)",
+"harvest": "12월~2월",
+"terroir": "봄베 산맥 고지 · 큰 일교차로 늦게 익는 체리 · 붉은 화산성 토양",
+"varieties": "74158 · 74112 중심",
+"processes": "워시드 · 내추럴",
+"flavorProfile": "레몬그라스 · 홍차 · 흑설탕 · 백복숭아 · 구아바",
+"trend": "에티오피아에서 가장 높은 곳의 스테이션 중 하나로 고밀도 소립 랏이 특징입니다.",
+"story": "시다마 벤사, 봄베 산맥 자락의 케라모 마을에 있습니다. 데일 벤사가 마을 안에 스테이션을 두어 농가가 멀리 체리를 옮기지 않아도 되게 했고, 381~1,500 소농이 2,260~2,360m 밭에서 낸 체리를 받습니다. 고도가 높아 체리가 늦게 익고 씨앗이 작고 단단해집니다. 데일 벤사는 이 스테이션 커피로 2020년 에티오피아 CoE에서 상을 받았습니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-cherry-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Ethiopia-47.jpg/960px-Ethiopia-47.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Ethiopia-47.jpg",
+"c": {
+"ko": "건조대 위에서 커피 체리를 고르는 모습",
+"en": "Sorting coffee cherries on raised beds",
+"ja": "乾燥棚でコーヒーチェリーを選別する様子"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -4656,7 +4674,7 @@
 "country": "에티오피아",
 "name": "게샤 빌리지",
 "nameEn": "Gesha Village Coffee Estate",
-"nameJa": null,
+"nameJa": "ゲシャ・ビレッジ農園",
 "lat": 6.538,
 "lon": 35.487,
 "precision": "village",
@@ -4695,19 +4713,55 @@
 "trend": "블록(나르샤·수르마·오마·가일리 등) 단위로 나눠 내는 랏과 무산소·허니 실험 랏이 늘었습니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-the-start-of-your-morning-coffee-5984450578.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/The_start_of_your_morning_coffee_%285984450578%29.jpg/960px-The_start_of_your_morning_coffee_%285984450578%29.jpg",
+"f": "photos/et-hand-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Girls_cleaning_coffee.JPG/960px-Girls_cleaning_coffee.JPG",
+"a": "Natnael Tadele",
+"p": "https://commons.wikimedia.org/wiki/File:Girls_cleaning_coffee.JPG",
 "c": {
-"ko": "에티오피아 커피 수확 (국가 대표 사진)",
-"en": "Ethiopia coffee harvest (country representative photo)",
-"ja": "エチオピアのコーヒー収穫（代表写真）"
+"ko": "손으로 생두를 고르는 모습",
+"en": "Hand sorting green coffee",
+"ja": "手作業で生豆を選別する様子"
 },
-"a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:The_start_of_your_morning_coffee_(5984450578).jpg"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
+}
+},
+{
+"kind": "region",
+"country": "에티오피아",
+"name": "아르베고나",
+"nameEn": "Arbegona",
+"lat": 6.695609,
+"lon": 38.7215642,
+"precision": "region",
+"evidence": "Arbe Gonna, Sidama, Ethiopia",
+"id": "R|에티오피아|아르베고나",
+"beanCount": 10,
+"elevation": "1,800~2,200m",
+"harvest": "11월~1월 (주 수확기)",
+"terroir": "시다마 고지 · 원생림 그늘 · 서늘한 밤",
+"varieties": "에티오피아 재래종(Heirloom)",
+"processes": "워시드 · 내추럴",
+"flavorProfile": "꽃향 · 시트러스 · 복숭아",
+"trend": "시다마의 고지 작은 행정구역으로, 요즘은 무산소 발효 랏도 나옵니다.",
+"story": "시다마 고지의 원생림 그늘과 해발 1,800~2,200m의 서늘한 밤이 체리를 천천히 익힙니다. 소농 밭에서 난 재래종 체리를 마을 워싱스테이션에서 모아 워시드·내추럴로 가공하고, 최근에는 무산소 발효 랏도 나옵니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-cherry-drying.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Coffee_berry_sorting_process%2C_near_Hawassa.jpg/960px-Coffee_berry_sorting_process%2C_near_Hawassa.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Coffee_berry_sorting_process,_near_Hawassa.jpg",
+"c": {
+"ko": "햇볕에 말리는 커피 체리",
+"en": "Coffee cherries drying in the sun",
+"ja": "天日で乾かすコーヒーチェリー"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -4761,42 +4815,6 @@
 {
 "kind": "region",
 "country": "에티오피아",
-"name": "게뎁",
-"nameEn": "Gedeb",
-"lat": 5.91667,
-"lon": 38.25,
-"precision": "village",
-"evidence": "Gedeb, Gedeo, South Ethiopia Regional State, Ethiopia",
-"id": "R|에티오피아|게뎁",
-"beanCount": 9,
-"elevation": "1,900~2,200m",
-"harvest": "11월~1월 (주 수확기)",
-"terroir": "게데오 고지 · 화산성 니티솔 · 원생림 그늘",
-"varieties": "에티오피아 재래종(Heirloom)",
-"processes": "내추럴 · 워시드",
-"flavorProfile": "베리 · 꽃향 · 시트러스",
-"trend": "워카·첼첼레 등 워싱스테이션 랏이 게뎁 이름으로 널리 유통됩니다.",
-"story": "게데오 고지의 화산성 니티솔과 원생림 그늘 아래 해발 1,900~2,200m에서 재래종을 기릅니다. 고지의 소농 밭에서 난 체리를 마을 워싱스테이션에서 선별하고, 워카·첼첼레 같은 이름의 랏이 게뎁 이름으로 널리 유통됩니다.",
-"profileLevel": "place",
-"photo": {
-"m": "country_fallback",
-"f": "photos/up-coffee-beans-ethiopia.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Coffee_Beans_%28Ethiopia%29.JPG/960px-Coffee_Beans_%28Ethiopia%29.JPG",
-"c": {
-"ko": "에티오피아 커피 원두 (국가 대표 사진)",
-"en": "Ethiopia coffee beans (country representative photo)",
-"ja": "エチオピアのコーヒー豆（代表写真）"
-},
-"a": "Maurice Chédel",
-"l": "CC BY-SA 3.0",
-"lu": "https://creativecommons.org/licenses/by-sa/3.0",
-"s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Coffee_Beans_(Ethiopia).JPG"
-}
-},
-{
-"kind": "region",
-"country": "에티오피아",
 "name": "리무",
 "nameEn": "Limu",
 "lat": 7.3955578,
@@ -4815,19 +4833,142 @@
 "story": "리무는 에티오피아 남서부 고지의 커피 산지입니다. 해발 1,400~2,000m의 비 많은 원생림 지대에서 재래종을 기르고 워시드 중심으로 가공하며, 와인을 닮은 산미가 이 지역의 특징입니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-coffee-beans-ethiopia.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Coffee_Beans_%28Ethiopia%29.JPG/960px-Coffee_Beans_%28Ethiopia%29.JPG",
+"f": "photos/et-cherry-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Ethiopia-47.jpg/960px-Ethiopia-47.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Ethiopia-47.jpg",
 "c": {
-"ko": "에티오피아 커피 원두 (국가 대표 사진)",
-"en": "Ethiopia coffee beans (country representative photo)",
-"ja": "エチオピアのコーヒー豆（代表写真）"
+"ko": "건조대 위에서 커피 체리를 고르는 모습",
+"en": "Sorting coffee cherries on raised beds",
+"ja": "乾燥棚でコーヒーチェリーを選別する様子"
 },
-"a": "Maurice Chédel",
-"l": "CC BY-SA 3.0",
-"lu": "https://creativecommons.org/licenses/by-sa/3.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Coffee_Beans_(Ethiopia).JPG"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
+}
+},
+{
+"id": "F|에티오피아|물루게타 문타샤",
+"kind": "farm",
+"country": "에티오피아",
+"name": "물루게타 문타샤",
+"nameEn": "Mulugeta Muntasha (Dawencho)",
+"nameJa": "ムルゲタ・ムンタシャ（ダウェンチョ）",
+"lat": 6.58333,
+"lon": 38.6,
+"precision": "village",
+"evidence": "시다마 아르베고나 지역 부르사 마을 · OSM Bursa(마을)",
+"source": "https://www.blackwhiteroasters.com/products/r-mulugeta-muntasha-washed",
+"alias": [
+"문타샤",
+"muntasha",
+"물루게타",
+"몰루게타",
+"mulugeta muntasha",
+"다웬초",
+"dawencho",
+"ムンタシャ"
+],
+"producer": "물루게타 문타샤 · 아들 데게푸 물루게타",
+"founded": "2021년 다웬초 건조장 개설",
+"awards": [
+"Cup of Excellence 에티오피아 2022 — 다웬초 농가 그룹 2위, 본인 랏 6위"
+],
+"refs": [
+{
+"t": "생산자 소개",
+"u": "https://www.blackwhiteroasters.com/products/r-mulugeta-muntasha-washed"
+},
+{
+"t": "농가·규모",
+"u": "https://bursaspecialitycoffee.com/"
+}
+],
+"beanCount": 9,
+"elevation": "2,185~2,400m",
+"harvest": "12월~2월",
+"terroir": "아르베고나 고지 · 큰 일교차 · 유기질 많은 토양",
+"varieties": "74158 중심",
+"processes": "워시드 · 내추럴",
+"flavorProfile": "백작약 · 레몬 · 살구 · 야생화 꿀",
+"trend": "부르사 마을이 새 커피 산지로 떠오르면서 대회 상위권에 이름을 올렸습니다.",
+"story": "시다마 아르베고나의 부르사 마을에 있습니다. 물루게타 문타샤는 트럭 운전사로 커피를 실어 나르며 일을 배운 뒤 2021년 고향으로 돌아와 다웬초라는 건조장을 세웠습니다. 10년 넘게 커피에 몸담아 온 그는 부르사와 이웃 마을 300~600 소농의 74158 체리를 받아 가공합니다. 2022년 CoE에서 다웬초 농가 그룹 커피가 2위, 본인 커피가 6위에 올랐고 상위 10개 중 네 랏이 그의 스테이션에서 나왔습니다. 일부 유통 라벨에는 이 랏을 구지로 적어 내기도 합니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-cherry-drying.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Coffee_berry_sorting_process%2C_near_Hawassa.jpg/960px-Coffee_berry_sorting_process%2C_near_Hawassa.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Coffee_berry_sorting_process,_near_Hawassa.jpg",
+"c": {
+"ko": "햇볕에 말리는 커피 체리",
+"en": "Coffee cherries drying in the sun",
+"ja": "天日で乾かすコーヒーチェリー"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
+}
+},
+{
+"id": "F|에티오피아|바샤 베켈레",
+"kind": "farm",
+"country": "에티오피아",
+"name": "바샤 베켈레",
+"nameEn": "Basha Bekele Washing Station",
+"nameJa": "バシャ・ベケレ精製所",
+"lat": 6.52595,
+"lon": 38.82877,
+"precision": "region",
+"evidence": "시다마 벤사 지역 · 좌표는 벤사 중심(OSM Bensa Daye)",
+"source": "https://allianceforcoffeeexcellence.org/ethiopia-2024/",
+"alias": [
+"바샤베켈레",
+"basha bekele",
+"bashabekele",
+"バシャ・ベケレ"
+],
+"producer": "바샤 베켈레 부투샤",
+"founded": "직접 수출이 허용된 뒤 자기 밀을 세워 가공합니다.",
+"awards": [
+"Cup of Excellence 에티오피아 2024 공동 1위 90.50점 (1A·1B, 내추럴 74158)",
+"CoE 경매 최고가 기록 (1A, 파운드당 445달러)"
+],
+"refs": [
+{
+"t": "CoE 2024 공식 결과",
+"u": "https://allianceforcoffeeexcellence.org/ethiopia-2024/"
+},
+{
+"t": "생산자 소개",
+"u": "https://www.coffeesketcher.com/people/basha-bekele"
+}
+],
+"beanCount": 9,
+"elevation": "1,800~2,300m (밭마다 다름)",
+"harvest": "12월~2월",
+"terroir": "벤사 동쪽 고지 · 그늘 건조 · 반원생림",
+"varieties": "74158 중심 · 재래종",
+"processes": "내추럴 중심 · 무산소 내추럴 · 워시드",
+"flavorProfile": "망고 · 베르가못 · 파인애플 · 레몬그라스",
+"trend": "소농이 직접 수출하며 자기 이름으로 랏을 내는 새 세대의 대표 사례입니다.",
+"story": "시다마 동부 벤사에서 네 곳의 밭을 가진 소농이자 밀 운영자입니다. 아버지에게 배운 대로 커피를 기르다가 소농도 수출할 수 있게 된 뒤 자기 이름으로 랏을 내기 시작했습니다. 2024년 에티오피아 CoE에서 내추럴 74158로 90.50점을 받아 두 랏(1A·1B)이 공동 1위에 올랐고, 경매에서 1A가 파운드당 445달러에 낙찰되며 CoE 역대 최고가를 세웠습니다. 이웃 100여 농가의 체리를 함께 받아 그늘에서 천천히 말리는 방식으로 알려져 있습니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-cherry-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Ethiopia-47.jpg/960px-Ethiopia-47.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Ethiopia-47.jpg",
+"c": {
+"ko": "건조대 위에서 커피 체리를 고르는 모습",
+"en": "Sorting coffee cherries on raised beds",
+"ja": "乾燥棚でコーヒーチェリーを選別する様子"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -5079,19 +5220,73 @@
 "story": "구지 고지의 원생림에 인접한 해발 1,800~2,100m 밭에서 재래종을 기르고, 소농이 체리를 모아 워시드·내추럴로 가공합니다. 규모는 작지만 구지 특유의 과즙이 살아 있는 랏이 꾸준히 나옵니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-the-start-of-your-morning-coffee-5984450578.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/The_start_of_your_morning_coffee_%285984450578%29.jpg/960px-The_start_of_your_morning_coffee_%285984450578%29.jpg",
+"f": "photos/et-cherry-drying.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Coffee_berry_sorting_process%2C_near_Hawassa.jpg/960px-Coffee_berry_sorting_process%2C_near_Hawassa.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Coffee_berry_sorting_process,_near_Hawassa.jpg",
 "c": {
-"ko": "에티오피아 커피 수확 (국가 대표 사진)",
-"en": "Ethiopia coffee harvest (country representative photo)",
-"ja": "エチオピアのコーヒー収穫（代表写真）"
+"ko": "햇볕에 말리는 커피 체리",
+"en": "Coffee cherries drying in the sun",
+"ja": "天日で乾かすコーヒーチェリー"
 },
-"a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:The_start_of_your_morning_coffee_(5984450578).jpg"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
+}
+},
+{
+"id": "F|에티오피아|무라고",
+"kind": "farm",
+"country": "에티오피아",
+"name": "무라고",
+"nameEn": "Murag'o Washing Stations",
+"nameJa": "ムラゴ精製所",
+"lat": 6.52595,
+"lon": 38.82877,
+"precision": "region",
+"evidence": "시다마 벤사 지역 무라고 마을 · 좌표는 벤사 중심(OSM Bensa Daye)",
+"source": "https://www.muraagocoffee.com/",
+"alias": [
+"murago",
+"ムラゴ"
+],
+"producer": "무라고 커피(제네베 게날레) · 데일 벤사(코르마 콘토마) · 베켈레 카차라 가문 등 여러 스테이션",
+"founded": "2019~2021년 무렵 스테이션들이 잇달아 문을 열었습니다.",
+"refs": [
+{
+"t": "스테이션·규모",
+"u": "https://www.dayebensacoffee.com/kormakontoma"
+},
+{
+"t": "농장·생산자 소개",
+"u": "https://wideawake.coffee/blogs/producer-story/bekele-kachara"
+}
+],
+"beanCount": 8,
+"elevation": "2,100~2,350m (자료에 따라 2,625m까지 표기)",
+"harvest": "12월~2월",
+"terroir": "봄베 산맥 남쪽 고지 · 화산회 토양 · 반원생림",
+"varieties": "74158 중심 · 재래종",
+"processes": "내추럴 · 워시드 · 허니 · 무산소",
+"flavorProfile": "라즈베리 · 자스민 · 살구",
+"trend": "한 마을에 스테이션이 몰리면서 새로 부상한 벤사 고지로 꼽힙니다.",
+"story": "시다마 벤사, 봄베 산맥 남쪽의 무라고 마을에 있습니다. 최근 몇 해 사이 이 마을에 스테이션이 잇달아 들어섰습니다. 데일 벤사의 코르마 콘토마는 2,100~2,300m에서 74158 중심의 내추럴·워시드를 내고, 무라고 커피는 68헥타르 농장과 3,000여 소농을 묶어 2,100~2,625m 커피를 내보냅니다. 베켈레 카차라 가문은 2,350m 위성 사이트에서 아들 벨라이가 가공을 맡아 무산소·워시드 실험을 이어 갑니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-green-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Women_checking_coffee.jpg/960px-Women_checking_coffee.jpg",
+"a": "Nhb201",
+"p": "https://commons.wikimedia.org/wiki/File:Women_checking_coffee.jpg",
+"c": {
+"ko": "생두 선별 라인",
+"en": "A green bean sorting line",
+"ja": "生豆の選別ライン"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -5115,19 +5310,19 @@
 "story": "예가체프 고지의 원생림 그늘에서 해발 1,800~2,100m 재래종을 기릅니다. 마을 이름을 건 워싱스테이션이 주변 체리를 모아 내추럴로 말리고, 꽃향과 과즙이 함께 오는 랏으로 이름이 알려졌습니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-the-start-of-your-morning-coffee-5984450578.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/The_start_of_your_morning_coffee_%285984450578%29.jpg/960px-The_start_of_your_morning_coffee_%285984450578%29.jpg",
+"f": "photos/et-green-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Women_checking_coffee.jpg/960px-Women_checking_coffee.jpg",
+"a": "Nhb201",
+"p": "https://commons.wikimedia.org/wiki/File:Women_checking_coffee.jpg",
 "c": {
-"ko": "에티오피아 커피 수확 (국가 대표 사진)",
-"en": "Ethiopia coffee harvest (country representative photo)",
-"ja": "エチオピアのコーヒー収穫（代表写真）"
+"ko": "생두 선별 라인",
+"en": "A green bean sorting line",
+"ja": "生豆の選別ライン"
 },
-"a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:The_start_of_your_morning_coffee_(5984450578).jpg"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -5151,20 +5346,74 @@
 "story": "게데오 고지의 화산성 니티솔과 그늘 아래 해발 1,850~2,200m에서 재래종을 기르고, 워싱스테이션에서 선별해 워시드로 가공합니다. 예가체프의 대표 산지답게 맑은 꽃향과 시트러스가 단정하게 잡힙니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-sifting-good-beans-from-bad.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Sifting_good_beans_from_bad.jpg/960px-Sifting_good_beans_from_bad.jpg",
+"f": "photos/et-hand-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Girls_cleaning_coffee.JPG/960px-Girls_cleaning_coffee.JPG",
+"a": "Natnael Tadele",
+"p": "https://commons.wikimedia.org/wiki/File:Girls_cleaning_coffee.JPG",
 "c": {
-"ko": "에티오피아 커피 선별 (국가 대표 사진)",
-"en": "Ethiopia coffee sorting (country representative photo)",
-"ja": "エチオピアのコーヒー選別（代表写真）"
+"ko": "손으로 생두를 고르는 모습",
+"en": "Hand sorting green coffee",
+"ja": "手作業で生豆を選別する様子"
 },
-"a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Sifting_good_beans_from_bad.jpg",
-"o": "50% 62%"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
+}
+},
+{
+"id": "F|에티오피아|콩가",
+"kind": "farm",
+"country": "에티오피아",
+"name": "콩가",
+"nameEn": "Konga Washing Stations",
+"nameJa": "コンガ精製所",
+"lat": 6.15,
+"lon": 38.2,
+"precision": "village",
+"evidence": "게데오 존 예가체프 지역 콩가 마을 · OSM K'Onga(마을)",
+"source": "https://www.allycoffee.com/coffees/yirgacheffe-konga-washed/",
+"alias": [
+"konga",
+"코냐콩가",
+"コンガ"
+],
+"producer": "여러 웻밀 — 볼레두 인더스트리얼(2002년)·워테 암벨라 등",
+"founded": "스테이션마다 다름 (볼레두 콩가 2002년)",
+"refs": [
+{
+"t": "웻밀·농가 소개",
+"u": "https://www.allycoffee.com/coffees/yirgacheffe-konga-washed/"
+},
+{
+"t": "스테이션 자료",
+"u": "https://uk.covoyacoffee.com/ethiopia-yirgacheffe-konga-fully-washed-2024.html"
+}
+],
+"beanCount": 8,
+"elevation": "1,800~2,100m",
+"harvest": "10월~1월",
+"terroir": "예가체프 마을 인근 · 철분 많은 적갈색 토양 · 정원 커피",
+"varieties": "쿠루메 · 데가 · 월리쇼 · JARC 선발종",
+"processes": "워시드 중심 · 내추럴",
+"flavorProfile": "복숭아 · 홍차 · 시트러스 · 적포도",
+"trend": "한 마을에 웻밀이 여럿이라 스테이션 이름을 함께 표기하는 랏이 늘었습니다.",
+"story": "예가체프 마을 가까운 콩가 마을에 있습니다. 이 마을에는 웻밀이 여럿 있어, 볼레두 인더스트리얼이 2002년 세운 콩가 스테이션은 1,200 소농, 워테 암벨라의 워테 콩가 스테이션은 그보다 적은 농가와 일합니다. 농가 대부분이 집 뒤뜰의 작은 밭에서 커피를 기르고, 체리는 웻밀에서 36시간 안팎 발효한 뒤 12~15일 말립니다. 같은 예가체프여도 콩가는 산미가 밝고 단맛이 둥근 쪽에 속합니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-cherry-drying.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Coffee_berry_sorting_process%2C_near_Hawassa.jpg/960px-Coffee_berry_sorting_process%2C_near_Hawassa.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Coffee_berry_sorting_process,_near_Hawassa.jpg",
+"c": {
+"ko": "햇볕에 말리는 커피 체리",
+"en": "Coffee cherries drying in the sun",
+"ja": "天日で乾かすコーヒーチェリー"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -5681,6 +5930,64 @@
 }
 },
 {
+"id": "F|에티오피아|넨세보 리리파",
+"kind": "farm",
+"country": "에티오피아",
+"name": "넨세보 리리파",
+"nameEn": "Nensebo Riripa Washing Station",
+"nameJa": "ネンセボ・リリパ精製所",
+"lat": 6.48333,
+"lon": 39.1,
+"precision": "region",
+"evidence": "오로미아 웨스트 아르시 넨세보 지역 리리파 마을 · 좌표는 넨세보 중심(OSM Nensebo)",
+"source": "https://www.allycoffee.com/coffees/west-arsi-riripa-natural/",
+"alias": [
+"넨세보",
+"낸세보",
+"리리파",
+"riripa",
+"nensebo",
+"ネンセボ"
+],
+"producer": "SNAP 스페셜티 커피 — 네구세 데벨라",
+"founded": "2019년 개설",
+"refs": [
+{
+"t": "스테이션·농가",
+"u": "https://www.allycoffee.com/coffees/west-arsi-riripa-natural/"
+},
+{
+"t": "설립·품종",
+"u": "https://fuglencoffee.jp/en/blogs/coffee-beans/riripa-organic"
+}
+],
+"beanCount": 7,
+"elevation": "1,900~2,100m",
+"harvest": "11월~1월",
+"terroir": "웨스트 아르시 고지 · 수확기 이슬비 · 유기농 재배",
+"varieties": "월리쇼 · 쿠루메",
+"processes": "워시드 · 내추럴",
+"flavorProfile": "파파야 · 오렌지 · 복숭아 · 홍차",
+"trend": "웨스트 아르시가 새 산지로 뜨는 과정에서 실험실 같은 역할을 한 스테이션입니다.",
+"story": "오로미아 웨스트 아르시, 넨세보의 리리파 마을에 있습니다. 2019년 문을 연 SNAP의 스테이션으로 742~822 소농이 1,900~2,100m 밭에서 낸 체리를 받습니다. 품종은 월리쇼와 쿠루메가 중심이고, 유기농 인증을 받은 랏도 있습니다. 같은 넨세보 안의 하지 베트로와 시설을 함께 쓰던 시절이 있었고, 지금은 워시드와 내추럴을 모두 냅니다. 웨스트 아르시는 예가체프보다 과일향이 앞서고 홍차 같은 질감이 뒤따르는 것으로 알려졌습니다. 같은 넨세보 지역의 메와·타데세 데기페 같은 농가 랏도 이 카드에 함께 모였습니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-warehouse-bags.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Thousands_of_bean_bags.jpg/960px-Thousands_of_bean_bags.jpg",
+"a": "DFID - UK Department for International Development",
+"p": "https://commons.wikimedia.org/wiki/File:Thousands_of_bean_bags.jpg",
+"c": {
+"ko": "창고에 쌓인 커피 자루",
+"en": "Coffee bags stacked in a warehouse",
+"ja": "倉庫に積まれたコーヒー袋"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY 2.0",
+"lu": "https://creativecommons.org/licenses/by/2.0"
+}
+},
+{
 "kind": "region",
 "country": "에티오피아",
 "name": "짐마",
@@ -5701,19 +6008,74 @@
 "story": "짐마는 에티오피아 남서부 커피의 중심지로, 해발 1,400~1,900m의 비 많은 원생림에서 재래종이 자생에 가깝게 자랍니다. 숲 그늘과 화산성 토양이 둥근 과일 향을 만들고, 숲과 커피를 함께 지키는 재배가 이어집니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-the-start-of-your-morning-coffee-5984450578.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/The_start_of_your_morning_coffee_%285984450578%29.jpg/960px-The_start_of_your_morning_coffee_%285984450578%29.jpg",
+"f": "photos/et-cherry-drying.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Coffee_berry_sorting_process%2C_near_Hawassa.jpg/960px-Coffee_berry_sorting_process%2C_near_Hawassa.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Coffee_berry_sorting_process,_near_Hawassa.jpg",
 "c": {
-"ko": "에티오피아 커피 수확 (국가 대표 사진)",
-"en": "Ethiopia coffee harvest (country representative photo)",
-"ja": "エチオピアのコーヒー収穫（代表写真）"
+"ko": "햇볕에 말리는 커피 체리",
+"en": "Coffee cherries drying in the sun",
+"ja": "天日で乾かすコーヒーチェリー"
 },
-"a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:The_start_of_your_morning_coffee_(5984450578).jpg"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
+}
+},
+{
+"id": "F|에티오피아|하마쇼",
+"kind": "farm",
+"country": "에티오피아",
+"name": "하마쇼",
+"nameEn": "Hamasho Washing Station",
+"nameJa": "ハマショ精製所",
+"lat": 6.52595,
+"lon": 38.82877,
+"precision": "region",
+"evidence": "시다마 벤사 지역 하마쇼 보레나 마을(오로미아 경계) · 좌표는 벤사 중심(OSM Bensa Daye)",
+"source": "https://dbensacoffee.wixstudio.com/dayebensa/hamasho",
+"alias": [
+"하메쇼",
+"hamasho",
+"hamesho",
+"ハマショ"
+],
+"producer": "데일 벤사 — 아세파 두카모 코르마",
+"refs": [
+{
+"t": "스테이션 소개",
+"u": "https://dbensacoffee.wixstudio.com/dayebensa/hamasho"
+},
+{
+"t": "품종·가공",
+"u": "https://hydrangea.coffee/products/landrace-natural-hamasho"
+}
+],
+"beanCount": 7,
+"elevation": "2,300~2,400m",
+"harvest": "12월~2월",
+"terroir": "봄베 칠라카·케라모 사이 고지 · 낮은 습도 · 큰 일교차",
+"varieties": "74158 중심",
+"processes": "내추럴 · 워시드 · 무산소(내추럴·워시드)",
+"flavorProfile": "멜론 · 패션프루트 · 블루베리",
+"trend": "74158 단일 품종 랏과 무산소 계열로 벤사 고지의 기준을 보여 주는 스테이션입니다.",
+"story": "시다마 벤사에서 오로미아 경계에 가까운 하마쇼 보레나 마을에 있습니다. 마을 이름은 이 지역을 처음 연 하마쇼라는 사람에게서 왔습니다. 2,300~2,400m로 에티오피아에서 가장 높은 스테이션에 속하고, 161 공급자(자료에 따라 600가구 이상)가 주로 74158을 기릅니다. 건조대 130개와 발효조 14기를 갖추고 내추럴은 16~20일, 워시드는 72시간 발효 뒤 10~13일 말립니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-cherry-drying.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Coffee_berry_sorting_process%2C_near_Hawassa.jpg/960px-Coffee_berry_sorting_process%2C_near_Hawassa.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Coffee_berry_sorting_process,_near_Hawassa.jpg",
+"c": {
+"ko": "햇볕에 말리는 커피 체리",
+"en": "Coffee cherries drying in the sun",
+"ja": "天日で乾かすコーヒーチェリー"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -6076,20 +6438,79 @@
 "story": "서부 고지의 화산성 토양과 원생림 그늘에서 해발 1,500~2,000m 재래종을 기르고, 워시드 중심으로 가공합니다. 짐마처럼 숲이 많은 지역이라 와인을 닮은 향과 스파이스가 특징입니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-sifting-good-beans-from-bad.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Sifting_good_beans_from_bad.jpg/960px-Sifting_good_beans_from_bad.jpg",
+"f": "photos/et-cherry-drying.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Coffee_berry_sorting_process%2C_near_Hawassa.jpg/960px-Coffee_berry_sorting_process%2C_near_Hawassa.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Coffee_berry_sorting_process,_near_Hawassa.jpg",
 "c": {
-"ko": "에티오피아 커피 선별 (국가 대표 사진)",
-"en": "Ethiopia coffee sorting (country representative photo)",
-"ja": "エチオピアのコーヒー選別（代表写真）"
+"ko": "햇볕에 말리는 커피 체리",
+"en": "Coffee cherries drying in the sun",
+"ja": "天日で乾かすコーヒーチェリー"
 },
-"a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Sifting_good_beans_from_bad.jpg",
-"o": "50% 62%"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
+}
+},
+{
+"id": "F|에티오피아|할로 베리티",
+"kind": "farm",
+"country": "에티오피아",
+"name": "할로 베리티",
+"nameEn": "Halo Beriti Washing Station",
+"nameJa": "ハロ・ベリティ精製所",
+"lat": 5.91667,
+"lon": 38.25,
+"precision": "region",
+"evidence": "게데오 존 게뎁 지역 베리티 마을 · 좌표는 게뎁 마을 중심(OSM Gedeb)",
+"source": "https://www.trabocca.com/our-coffees/ethiopia/yirgacheffe/halo-beriti-washing-station/",
+"alias": [
+"할로베리티",
+"halo beriti",
+"haloberiti",
+"ハロ・ベリティ"
+],
+"producer": "볼레두 커피 — 아베요트 아게제, 메브라투 아이나렘",
+"founded": "2012년 스테이션 개설 · 2017년 볼레두 커피가 인수",
+"refs": [
+{
+"t": "스테이션 소개",
+"u": "https://www.trabocca.com/our-coffees/ethiopia/yirgacheffe/halo-beriti-washing-station/"
+},
+{
+"t": "거래 자료(고도·품종)",
+"u": "https://kaffeekommune.de/en/products/athiopien-halo-beriti-1"
+},
+{
+"t": "개설 연도·농가 수",
+"u": "https://haceacoffee.com/products/ethiopia-yirgacheffe-halo-beriti-grade-1-washed"
+}
+],
+"beanCount": 6,
+"elevation": "1,900~2,300m",
+"harvest": "11월~1월 (에티오피아에서 가장 늦은 수확)",
+"terroir": "원생림 그늘(비르비라·아카시아) · 강가의 붉은 점토 · 큰 일교차",
+"varieties": "월리쇼 · 데가 (JARC 74110·74112)",
+"processes": "워시드 · 내추럴 · 허니 · 무산소 발효",
+"flavorProfile": "자스민 · 복숭아 · 라임",
+"trend": "스테이션 단위로 랏을 나누고 허니·무산소 실험 랏을 늘리는 중입니다.",
+"story": "게데오 존 게뎁의 베리티 마을에 있습니다. 강가에 선 스테이션 둘레로 원생림이 이어지고, 비르비라와 아카시아 그늘 아래 1,000여 소농이 2헥타르 안팎의 밭에서 커피를 기릅니다. 2012년 문을 연 스테이션을 2017년 아베요트 아게제와 메브라투 아이나렘이 세운 볼레두 커피가 맡으면서, 체리를 낸 농가에 품질에 따라 값을 더 얹고 랏을 따로 나눠 가공하는 방식이 자리 잡았습니다. 고도가 높아 에티오피아에서 수확이 가장 늦은 편이고, 워시드는 48~72시간 발효 뒤 10~12일, 내추럴은 14~21일을 건조대에서 말립니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-cherry-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Ethiopia-47.jpg/960px-Ethiopia-47.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Ethiopia-47.jpg",
+"c": {
+"ko": "건조대 위에서 커피 체리를 고르는 모습",
+"en": "Sorting coffee cherries on raised beds",
+"ja": "乾燥棚でコーヒーチェリーを選別する様子"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -6550,6 +6971,63 @@
 }
 },
 {
+"id": "F|에티오피아|단체",
+"kind": "farm",
+"country": "에티오피아",
+"name": "단체",
+"nameEn": "Danche Washing Station",
+"nameJa": "ダンチェ精製所",
+"lat": 5.91667,
+"lon": 38.25,
+"precision": "region",
+"evidence": "게데오 존 게뎁 지역 첼베사 하위 마을 단체 · 좌표는 게뎁 마을 중심(OSM Gedeb)",
+"source": "https://bag.coffee/producers/danche",
+"alias": [
+"게뎁단체",
+"danche",
+"와테단체",
+"단체모디파이드",
+"ダンチェ"
+],
+"producer": "SNAP 스페셜티 커피 — 네구세 데벨라",
+"founded": "2019년 인수(첼베사 스테이션 증설 목적)",
+"refs": [
+{
+"t": "스테이션 소개",
+"u": "https://bag.coffee/producers/danche"
+},
+{
+"t": "연혁·규모",
+"u": "https://www.greatcirclecoffee.com/products/danche-washed"
+}
+],
+"beanCount": 5,
+"elevation": "2,000~2,300m",
+"harvest": "11월~1월",
+"terroir": "첼베사 안쪽 골짜기 · 반원생림 · 붉고 부식질 많은 토양",
+"varieties": "쿠루메 · 월리쇼 중심",
+"processes": "워시드 · 내추럴 · 허니 · 무산소 워시드",
+"flavorProfile": "자두 · 홍차 · 흑설탕",
+"trend": "첼베사와 함께 게뎁을 독립된 마이크로 리전으로 알린 스테이션입니다.",
+"story": "첼베사 안쪽, 단체라 불리는 작은 마을에 있습니다. 첼베사 스테이션이 감당하기 어려워지자 SNAP이 2019년 문을 연 두 번째 사이트로, 400~800 소농이 체리를 냅니다. 세라믹 발효조에서 36~96시간 발효하고 12~14일 건조하며, 워시드로 시작해 내추럴·허니·무산소 랏까지 넓혔습니다. 2024년 에티오피아 CoE에서 상위권에 오른 랏의 상당수가 게뎁 이웃 마을에서 나왔을 만큼 요즘 주목받는 골짜기입니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-cherry-drying.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Coffee_berry_sorting_process%2C_near_Hawassa.jpg/960px-Coffee_berry_sorting_process%2C_near_Hawassa.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Coffee_berry_sorting_process,_near_Hawassa.jpg",
+"c": {
+"ko": "햇볕에 말리는 커피 체리",
+"en": "Coffee cherries drying in the sun",
+"ja": "天日で乾かすコーヒーチェリー"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
+}
+},
+{
 "kind": "region",
 "country": "에티오피아",
 "name": "하라르",
@@ -6570,19 +7048,19 @@
 "story": "하라르는 에티오피아 동부의 고원 산지로, 해발 1,500~2,100m의 화산성 토양에서 재래종을 기릅니다. 건조한 기후에서 체리를 통째로 말리는 내추럴 가공이 오래 이어져 왔고, 손으로 골라낸 랏이 진한 베리 향과 와인 같은 산미를 냅니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-the-start-of-your-morning-coffee-5984450578.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/The_start_of_your_morning_coffee_%285984450578%29.jpg/960px-The_start_of_your_morning_coffee_%285984450578%29.jpg",
-"c": {
-"ko": "에티오피아 커피 수확 (국가 대표 사진)",
-"en": "Ethiopia coffee harvest (country representative photo)",
-"ja": "エチオピアのコーヒー収穫（代表写真）"
-},
+"f": "photos/et-warehouse-bags.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Thousands_of_bean_bags.jpg/960px-Thousands_of_bean_bags.jpg",
 "a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
+"p": "https://commons.wikimedia.org/wiki/File:Thousands_of_bean_bags.jpg",
+"c": {
+"ko": "창고에 쌓인 커피 자루",
+"en": "Coffee bags stacked in a warehouse",
+"ja": "倉庫に積まれたコーヒー袋"
+},
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:The_start_of_your_morning_coffee_(5984450578).jpg"
+"l": "CC BY 2.0",
+"lu": "https://creativecommons.org/licenses/by/2.0"
 }
 },
 {
@@ -8348,39 +8826,230 @@
 }
 },
 {
-"kind": "region",
+"id": "F|에티오피아|루무다모",
+"kind": "farm",
 "country": "에티오피아",
-"name": "아르시",
-"nameEn": "Arsi",
-"lat": 8.0101011,
-"lon": 39.6716774,
+"name": "루무다모",
+"nameEn": "Rumudamo Washing Station",
+"nameJa": "ルムダモ精製所",
+"lat": 6.68874,
+"lon": 38.71646,
 "precision": "region",
-"evidence": "Arsi, Oromia Region, Ethiopia",
-"id": "R|에티오피아|아르시",
+"evidence": "시다마 아르베고나 지역 루무다모 마을 · 좌표는 아르베고나 마을 중심(OSM Arbe Gona)",
+"source": "https://dbensacoffee.wixstudio.com/dayebensa/rumudamo",
+"alias": [
+"rumudamo",
+"ルムダモ"
+],
+"producer": "데일 벤사 — 아세파 두카모 코르마",
+"awards": [
+"Cup of Excellence 에티오피아 2020 2위·3위"
+],
+"refs": [
+{
+"t": "스테이션 소개",
+"u": "https://dbensacoffee.wixstudio.com/dayebensa/rumudamo"
+},
+{
+"t": "수상·가공",
+"u": "https://hatchcrafted.com/shop/rumudamo-washed"
+}
+],
 "beanCount": 4,
-"elevation": "1,700~2,200m",
-"harvest": "10월~1월 (주 수확기)",
-"terroir": "오로미아 중남부 고지 · 화산성 토양 · 큰 일교차",
-"varieties": "에티오피아 재래종(Heirloom)",
-"processes": "워시드 · 내추럴",
-"flavorProfile": "꽃향 · 시트러스 · 깨끗한 단맛",
-"trend": "고지 작은 행정구역별 랏이 스페셜티 시장에 새로 이름을 올렸습니다.",
-"story": "오로미아 중남부 고지의 화산성 토양과 큰 일교차 속, 해발 1,700~2,200m에서 재래종을 기릅니다. 천천히 익은 체리가 향이 맑은 컵을 내고, 최근 스페셜티 시장에 새로 이름을 올렸습니다.",
+"elevation": "2,100~2,400m",
+"harvest": "12월~2월",
+"terroir": "아르베고나 고지 · '비옥한 땅, 뿌리 많은 땅'이라는 이름값의 숲",
+"varieties": "74112 중심 · 74110 · 74158",
+"processes": "워시드 · 내추럴 · 무산소 워시드",
+"flavorProfile": "베리 잼 · 자스민 · 흑포도",
+"trend": "아르베고나를 대표하는 스테이션이며 2020년 CoE 2·3위를 냈습니다.",
+"story": "시다마 아르베고나의 루무다모 마을에 있습니다. 마을 이름은 '비옥한 땅' 또는 '뿌리가 많은 땅'이라는 뜻으로, 숲이 빽빽한 이 고지의 성격을 그대로 담고 있습니다. 데일 벤사가 운영하며 600여 소농이 2헥타르 안팎의 밭에서 낸 체리를 받습니다. 2,100~2,400m에서 74112를 중심으로 기르고, 워시드는 48~72시간 발효 뒤 8~12일, 내추럴은 20일 안팎 건조합니다. 2020년 에티오피아 CoE에서 이 스테이션 커피가 2위와 3위를 차지했습니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-coffee-beans-ethiopia.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Coffee_Beans_%28Ethiopia%29.JPG/960px-Coffee_Beans_%28Ethiopia%29.JPG",
+"f": "photos/et-depulper.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Men_by_coffee_peeling_machine%2C_near_awassa.jpg/960px-Men_by_coffee_peeling_machine%2C_near_awassa.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Men_by_coffee_peeling_machine,_near_awassa.jpg",
 "c": {
-"ko": "에티오피아 커피 원두 (국가 대표 사진)",
-"en": "Ethiopia coffee beans (country representative photo)",
-"ja": "エチオピアのコーヒー豆（代表写真）"
+"ko": "펄퍼로 체리의 과육을 벗기는 모습",
+"en": "Running cherry through a pulper",
+"ja": "パルパーでチェリーの果肉を除く様子"
 },
-"a": "Maurice Chédel",
-"l": "CC BY-SA 3.0",
-"lu": "https://creativecommons.org/licenses/by-sa/3.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Coffee_Beans_(Ethiopia).JPG"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
+}
+},
+{
+"id": "F|에티오피아|샨타웨네",
+"kind": "farm",
+"country": "에티오피아",
+"name": "샨타웨네",
+"nameEn": "Shantawene Washing Station",
+"nameJa": "シャンタウェネ精製所",
+"lat": 6.52595,
+"lon": 38.82877,
+"precision": "region",
+"evidence": "시다마 벤사 지역 샨타웨네 마을 · 좌표는 벤사 중심(OSM Bensa Daye)",
+"source": "https://dbensacoffee.wixstudio.com/dayebensa/shantawene-2",
+"alias": [
+"산타와네",
+"shantawene",
+"shantawane",
+"シャンタウェネ"
+],
+"producer": "데일 벤사 — 아세파 두카모",
+"founded": "2007년 개설 (콘카나에 이은 두 번째 스테이션)",
+"awards": [
+"Cup of Excellence 에티오피아 2020 7위 랏 가공"
+],
+"refs": [
+{
+"t": "스테이션 소개",
+"u": "https://dbensacoffee.wixstudio.com/dayebensa/shantawene-2"
+},
+{
+"t": "농가·수상 기록",
+"u": "https://www.coffeemaxgreen.com/ethiopia-shantewene/"
+}
+],
+"beanCount": 4,
+"elevation": "2,100~2,300m",
+"harvest": "12월~2월",
+"terroir": "봄베 마을과 봄베 산 사이 · 원생림 그늘 · 엔세트",
+"varieties": "74112 · 74158 · 재래종",
+"processes": "내추럴 · 워시드 · 냉장 발효 등 실험 랏",
+"flavorProfile": "베리 · 스톤프루트 · 흑설탕",
+"trend": "가타 농장 체리로 낸 랏이 대회 상위에 오르며 이름을 굳혔습니다.",
+"story": "시다마 벤사, 봄베 마을과 봄베 산 사이의 샨타웨네 마을에 있습니다. 데일 벤사가 2007년 콘카나에 이어 두 번째로 세운 스테이션입니다. 이름은 마을을 연 원로 샨타와 그의 아버지 웨네의 이름을 붙인 것입니다. 2,100~2,300m에서 1,100~1,500 아웃그로워가 낸 체리를 받아 건조대 205개, 발효조 18기로 가공합니다. 2020년 CoE 7위 랏도 이 스테이션에서 가공됐고, 근처 가타 농장 체리가 쓰였습니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-depulper.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Men_by_coffee_peeling_machine%2C_near_awassa.jpg/960px-Men_by_coffee_peeling_machine%2C_near_awassa.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Men_by_coffee_peeling_machine,_near_awassa.jpg",
+"c": {
+"ko": "펄퍼로 체리의 과육을 벗기는 모습",
+"en": "Running cherry through a pulper",
+"ja": "パルパーでチェリーの果肉を除く様子"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
+}
+},
+{
+"id": "F|에티오피아|아나소라",
+"kind": "farm",
+"country": "에티오피아",
+"name": "아나소라",
+"nameEn": "Ana Sora Washing Station",
+"nameJa": "アナ・ソラ精製所",
+"lat": 5.97027,
+"lon": 38.93018,
+"precision": "region",
+"evidence": "구지 아돌라 지역 · 좌표는 아돌라 중심(OSM Adola)",
+"source": "https://ozonecoffee.co.uk/pages/coffee-producer-israel-degfa",
+"alias": [
+"anasora",
+"ana sora",
+"アナ・ソラ"
+],
+"producer": "케르찬셰 트레이딩 — 이스라엘 데그파",
+"founded": "농장 2013년 · 워싱스테이션 2018년",
+"refs": [
+{
+"t": "농장·운영 소개",
+"u": "https://ozonecoffee.co.uk/pages/coffee-producer-israel-degfa"
+},
+{
+"t": "스테이션·가공",
+"u": "https://boxxcoffee.la/products/ethiopia-anasora-site"
+}
+],
+"beanCount": 4,
+"elevation": "1,900~2,350m",
+"harvest": "10월~1월",
+"terroir": "구지 고지 · 투로 강가 · 원생 그늘 · 반원생림",
+"varieties": "재래종 · 쿠루메 중심",
+"processes": "워시드 · 내추럴",
+"flavorProfile": "블루베리 · 오렌지 · 크림 · 정향",
+"trend": "노르딕 어프로치·트로픽이 이곳에서 실험 가공을 진행해 온 것으로 알려졌습니다.",
+"story": "구지 아돌라의 고지에 있습니다. 2013년 세운 아나소라 농장과 2018년 완공한 워싱스테이션이 함께 있는 곳으로, 케르찬셰 트레이딩의 이스라엘 데그파가 이끕니다. 350 소농이 2,200~2,300m 밭에서 낸 체리를 받아 건조대 200개로 가공합니다. 1,900~2,350m의 높은 고도와 투로 강가의 원생림 그늘이 늦게 익는 단단한 씨앗을 만듭니다. 노르딕 어프로치와 트로픽이 이곳에서 나추럴 실험을 진행해 온 것으로도 알려져 있습니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-cherry-drying.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Coffee_berry_sorting_process%2C_near_Hawassa.jpg/960px-Coffee_berry_sorting_process%2C_near_Hawassa.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Coffee_berry_sorting_process,_near_Hawassa.jpg",
+"c": {
+"ko": "햇볕에 말리는 커피 체리",
+"en": "Coffee cherries drying in the sun",
+"ja": "天日で乾かすコーヒーチェリー"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
+}
+},
+{
+"id": "F|에티오피아|첼베사",
+"kind": "farm",
+"country": "에티오피아",
+"name": "첼베사",
+"nameEn": "Worka Chelbesa Washing Station",
+"nameJa": "ワーク・チェルベサ精製所",
+"lat": 5.91667,
+"lon": 38.25,
+"precision": "region",
+"evidence": "게데오 존 게뎁 지역 워카 첼베사 마을(게뎁 마을 동쪽) · 좌표는 게뎁 마을 중심(OSM Gedeb)",
+"source": "https://www.croptocup.com/community/worka-chelbesa/",
+"alias": [
+"worka chelbesa",
+"workachelbesa",
+"워크아첼베사",
+"워카첼베사",
+"チェルベサ"
+],
+"producer": "SNAP 스페셜티 커피 — 네구세 데벨라 웰디예스",
+"founded": "2017년 SNAP의 첫 사이트 · 2019년 새 웻밀",
+"refs": [
+{
+"t": "산지·농가 소개",
+"u": "https://www.croptocup.com/community/worka-chelbesa/"
+},
+{
+"t": "가공·품종 자료",
+"u": "https://www.allycoffee.com/coffees/yirgacheffe-chelbesa-washed/"
+}
+],
+"beanCount": 4,
+"elevation": "1,900~2,220m",
+"harvest": "11월~1월",
+"terroir": "반(半)원생림의 엔세트·그늘나무 아래 · 게데오 문화경관",
+"varieties": "월리쇼 · 데가 · 쿠루메 (74110·74112)",
+"processes": "워시드 중심 · 내추럴 · 실험 랏",
+"flavorProfile": "캐러멜 · 귤 · 아몬드 · 라임 · 오렌지 블로섬",
+"trend": "세라믹 발효조와 마을별 분리 랏으로 게뎁 마이크로 로트의 기준을 세웠다는 평가를 받습니다.",
+"story": "게뎁 마을 바로 동쪽, 워카 첼베사 마을에 있습니다. 네구세 데벨라가 2017년 이곳에서 시작한 SNAP 스페셜티 커피의 첫 사이트로, 지금은 680~760 소농이 1,900~2,220m 밭에서 낸 체리를 받습니다. 세라믹 발효조에서 48~72시간 발효하고 수로에서 밀도로 나눈 뒤 10~14일 말리는데, 발효조가 빨리 데워져 잡맛이 덜 생긴다고 합니다. 워시드와 함께 내추럴·허니·실험 랏도 냅니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-depulper.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Men_by_coffee_peeling_machine%2C_near_awassa.jpg/960px-Men_by_coffee_peeling_machine%2C_near_awassa.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Men_by_coffee_peeling_machine,_near_awassa.jpg",
+"c": {
+"ko": "펄퍼로 체리의 과육을 벗기는 모습",
+"en": "Running cherry through a pulper",
+"ja": "パルパーでチェリーの果肉を除く様子"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -9482,6 +10151,209 @@
 {
 "kind": "region",
 "country": "에티오피아",
+"name": "게뎁",
+"nameEn": "Gedeb",
+"lat": 5.91667,
+"lon": 38.25,
+"precision": "village",
+"evidence": "Gedeb, Gedeo, South Ethiopia Regional State, Ethiopia",
+"id": "R|에티오피아|게뎁",
+"beanCount": 3,
+"elevation": "1,900~2,200m",
+"harvest": "11월~1월 (주 수확기)",
+"terroir": "게데오 고지 · 화산성 니티솔 · 원생림 그늘",
+"varieties": "에티오피아 재래종(Heirloom)",
+"processes": "내추럴 · 워시드",
+"flavorProfile": "베리 · 꽃향 · 시트러스",
+"trend": "워카·첼첼레 등 워싱스테이션 랏이 게뎁 이름으로 널리 유통됩니다.",
+"story": "게데오 고지의 화산성 니티솔과 원생림 그늘 아래 해발 1,900~2,200m에서 재래종을 기릅니다. 고지의 소농 밭에서 난 체리를 마을 워싱스테이션에서 선별하고, 워카·첼첼레 같은 이름의 랏이 게뎁 이름으로 널리 유통됩니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-cherry-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Ethiopia-47.jpg/960px-Ethiopia-47.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Ethiopia-47.jpg",
+"c": {
+"ko": "건조대 위에서 커피 체리를 고르는 모습",
+"en": "Sorting coffee cherries on raised beds",
+"ja": "乾燥棚でコーヒーチェリーを選別する様子"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
+}
+},
+{
+"id": "F|에티오피아|라레사",
+"kind": "farm",
+"country": "에티오피아",
+"name": "라레사",
+"nameEn": "Lalesa Washing Station",
+"nameJa": "ラレサ精製所",
+"lat": 5.91667,
+"lon": 38.25,
+"precision": "region",
+"evidence": "게데오 존 게뎁 지역 라레사 마을 · 좌표는 게뎁 마을 중심(OSM Gedeb)",
+"source": "https://www.falcon-micro.com/products/lalesa-gedeb-ephtah-yirgacheffe-ethiopia-anaerobic-natural-fsc-8749",
+"alias": [
+"lalesa",
+"laresa",
+"ラレサ"
+],
+"producer": "엡타 스페셜티 커피 — 우비트 베켈레",
+"founded": "2023년 부지 매입·건설",
+"refs": [
+{
+"t": "스테이션·가공 소개",
+"u": "https://www.falcon-micro.com/products/lalesa-gedeb-ephtah-yirgacheffe-ethiopia-anaerobic-natural-fsc-8749"
+},
+{
+"t": "운영·규모",
+"u": "https://suessmund-kaffee.com/en/products/athiopien-lalesa-filterkaffee"
+}
+],
+"beanCount": 3,
+"elevation": "2,150~2,200m",
+"harvest": "12월~1월",
+"terroir": "엔세트 그늘 · 게뎁 최대 규모의 건조장(3.5헥타르)",
+"varieties": "74110 · 74112 · 재래종",
+"processes": "무산소 내추럴 중심 · 워시드",
+"flavorProfile": "파파야 · 럼 · 카카오 · 자몽 · 시나몬",
+"trend": "여성 생산자를 앞세운 수매·교육 프로그램으로 게뎁에서 빠르게 알려졌습니다.",
+"story": "게뎁의 라레사 마을에 있습니다. 우비트 베켈레가 이끄는 엡타 스페셜티 커피가 2023년 땅을 사서 세운 스테이션으로, 3.5헥타르에 건조대 350~400개를 둔 게뎁에서 가장 큰 건조장입니다. 2,150~2,200m의 엔세트 그늘에서 자란 체리를 밀폐 통에 넣어 5~9일 무산소 발효한 뒤 13~18일 천천히 말립니다. 마을 아이들을 위한 보육 시설을 열고 여성 농가 교육을 함께 하는 것으로도 알려져 있습니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-cherry-drying.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Coffee_berry_sorting_process%2C_near_Hawassa.jpg/960px-Coffee_berry_sorting_process%2C_near_Hawassa.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Coffee_berry_sorting_process,_near_Hawassa.jpg",
+"c": {
+"ko": "햇볕에 말리는 커피 체리",
+"en": "Coffee cherries drying in the sun",
+"ja": "天日で乾かすコーヒーチェリー"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
+}
+},
+{
+"id": "F|에티오피아|아르소살라",
+"kind": "farm",
+"country": "에티오피아",
+"name": "아르소살라",
+"nameEn": "Arsosala Washing Station",
+"nameJa": "アルソサラ精製所",
+"lat": 6.0585,
+"lon": 38.51139,
+"precision": "region",
+"evidence": "구지 우라가 지역 하로 와추 · 좌표는 우라가 중심(OSM Uraga)",
+"source": "https://millcityroasters.com/blogs/blog/ethiopia-guji-arsosala-a-surprising-green-coffee-offering-and-insights-on-traceability-in-ethipia",
+"alias": [
+"arsosala",
+"アルソサラ"
+],
+"producer": "우라가 하로 와추 일대 1,200 소농",
+"founded": "2015년 개설",
+"refs": [
+{
+"t": "스테이션·연혁",
+"u": "https://millcityroasters.com/blogs/blog/ethiopia-guji-arsosala-a-surprising-green-coffee-offering-and-insights-on-traceability-in-ethipia"
+},
+{
+"t": "생산자·고도",
+"u": "https://anamorphiccoffee.com/products/ocholo-bedecho"
+}
+],
+"beanCount": 3,
+"elevation": "1,800~2,300m",
+"harvest": "11월~1월",
+"terroir": "우라가의 숲과 구릉 · 붉은 고지 토양",
+"varieties": "재래종",
+"processes": "워시드 중심",
+"flavorProfile": "사과꽃 · 자스민 · 마른 배 · 베르가못",
+"trend": "구지 안에서도 우라가 특유의 부드러운 산미를 보여 주는 스테이션입니다.",
+"story": "구지 우라가의 하로 와추 마을에 있습니다. 2015년 문을 연 이래 1,200 소농과 일하며, 농가들은 화학 비료나 농약 없이 작은 밭에서 커피를 기릅니다. 체리는 당일 펄핑해 하룻밤 발효하고 수로에서 씻은 뒤 건조대에서 8~15일, 흐린 날엔 20일까지 말립니다. 하로 와추에서 12km 떨어진 8헥타르 농장의 오촐로 베데초처럼, 이 지역에서는 큰 규모의 농가도 스테이션에 체리를 냅니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-green-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Women_checking_coffee.jpg/960px-Women_checking_coffee.jpg",
+"a": "Nhb201",
+"p": "https://commons.wikimedia.org/wiki/File:Women_checking_coffee.jpg",
+"c": {
+"ko": "생두 선별 라인",
+"en": "A green bean sorting line",
+"ja": "生豆の選別ライン"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
+}
+},
+{
+"id": "F|에티오피아|아메데라로",
+"kind": "farm",
+"country": "에티오피아",
+"name": "아메데라로",
+"nameEn": "Amederaro Washing Station",
+"nameJa": "アメデラロ精製所",
+"lat": 6.15586,
+"lon": 38.20285,
+"precision": "region",
+"evidence": "게데오 존 예가체프 지역 콩가 웨테 마을(예가체프 마을에서 6km) · 좌표는 예가체프 마을 중심(OSM Yirga Chefe)",
+"source": "https://primrosecoffee.v-auction.com/en/lots/amederaro-",
+"alias": [
+"amederaro",
+"アメデラロ"
+],
+"producer": "프림로즈 커피 (콩가 웨테 소농 약 1,890가구)",
+"founded": "2018년 개설 · 2.5헥타르",
+"awards": [
+"아프리카 파인 커피 협회 테이스트 오브 하베스트 2018·2019 수상",
+"에티오피아 첫 Cup of Excellence 7위"
+],
+"refs": [
+{
+"t": "경매 랏 소개",
+"u": "https://primrosecoffee.v-auction.com/en/lots/amederaro-"
+},
+{
+"t": "연혁·규모·수상",
+"u": "https://passportcoffee.com.au/blogs/roastery-ramblings/ethiopia-amederaro-natural"
+}
+],
+"beanCount": 3,
+"elevation": "1,999~2,099m",
+"harvest": "11월~1월",
+"terroir": "토라초 강가 · 그늘 건조대 190개 · 실험 발효조 10기",
+"varieties": "74110 · 74112 · 74165 · 74166",
+"processes": "워시드 · 내추럴 · 무스티카 발효 등 실험 랏",
+"flavorProfile": "자스민 · 캐러멜 · 레몬티 · 블랙베리",
+"trend": "대회 수상 랏을 꾸준히 내며 예가체프 실험 가공의 중심 중 하나가 됐습니다.",
+"story": "예가체프 마을에서 6km 떨어진 콩가 웨테 마을, 토라초 강가에 있습니다. 2018년 2.5헥타르에 문을 연 프림로즈 커피의 두 번째 스테이션으로, 1,890가구가 집 뒤뜰에서 기른 커피를 받습니다. 그늘 건조대 190개와 발효조 10기를 갖춰 워시드·내추럴·실험 랏을 함께 냅니다. 이름은 현지 말로 '꽃이 피어나라'는 뜻이고, 2018·2019년 아프리카 파인 커피 협회의 테이스트 오브 하베스트에서 상을 받았으며 에티오피아 첫 CoE에서 7위에 올랐습니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-green-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Women_checking_coffee.jpg/960px-Women_checking_coffee.jpg",
+"a": "Nhb201",
+"p": "https://commons.wikimedia.org/wiki/File:Women_checking_coffee.jpg",
+"c": {
+"ko": "생두 선별 라인",
+"en": "A green bean sorting line",
+"ja": "生豆の選別ライン"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
+}
+},
+{
+"kind": "region",
+"country": "에티오피아",
 "name": "안다라차",
 "nameEn": "Anderacha",
 "lat": 7.3729571,
@@ -9500,19 +10372,73 @@
 "story": "안다라차는 에티오피아 남서부 셰카·카파의 원생림 산지입니다. 1,500~1,900m의 비 많은 화산성 토양과 숲 그늘에서 재래종을 기르고, 워시드·내추럴로 가공합니다. 과일과 초콜릿 같은 둥근 향이 나고, 숲 보전과 함께 소량 랏이 나옵니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-the-start-of-your-morning-coffee-5984450578.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/The_start_of_your_morning_coffee_%285984450578%29.jpg/960px-The_start_of_your_morning_coffee_%285984450578%29.jpg",
+"f": "photos/et-green-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Women_checking_coffee.jpg/960px-Women_checking_coffee.jpg",
+"a": "Nhb201",
+"p": "https://commons.wikimedia.org/wiki/File:Women_checking_coffee.jpg",
 "c": {
-"ko": "에티오피아 커피 수확 (국가 대표 사진)",
-"en": "Ethiopia coffee harvest (country representative photo)",
-"ja": "エチオピアのコーヒー収穫（代表写真）"
+"ko": "생두 선별 라인",
+"en": "A green bean sorting line",
+"ja": "生豆の選別ライン"
 },
-"a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:The_start_of_your_morning_coffee_(5984450578).jpg"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
+}
+},
+{
+"id": "F|에티오피아|이디도",
+"kind": "farm",
+"country": "에티오피아",
+"name": "이디도",
+"nameEn": "Idido Washing Station",
+"nameJa": "イディド精製所",
+"lat": 6.15586,
+"lon": 38.20285,
+"precision": "region",
+"evidence": "게데오 존 예가체프 지역 이디도 마을(예가체프 마을 북쪽) · 좌표는 예가체프 마을 중심(OSM Yirga Chefe)",
+"source": "https://royalcoffee.com/products/39878",
+"alias": [
+"idido",
+"イディド"
+],
+"producer": "레인저 인더스트리 앤 트레이딩 (2017년부터) · 동명의 이디도 협동조합도 따로 있음",
+"founded": "1998년 개설 · 2017년 현재 운영사 인수",
+"refs": [
+{
+"t": "스테이션 기록",
+"u": "https://royalcoffee.com/products/39878"
+},
+{
+"t": "연혁·가공 소개",
+"u": "https://www.genuineorigin.com/site/images/factsheets/factsheet-GEN23ETL.pdf"
+}
+],
+"beanCount": 3,
+"elevation": "1,900~2,100m",
+"harvest": "10월~1월",
+"terroir": "예가체프 마을 북쪽 고지 · 원생림 그늘 · 큰 일교차",
+"varieties": "재래종 · 쿠루메 · 월리쇼 · 데가 · JARC 선발종",
+"processes": "워시드 · 내추럴",
+"flavorProfile": "레몬 · 베르가못 · 자스민 · 백차",
+"trend": "예가체프 내추럴의 원형을 만든 곳 중 하나로, 지금도 실험 랏이 꾸준합니다.",
+"story": "예가체프 마을 북쪽 이디도 마을에 있습니다. 1998년 문을 연 사설 스테이션이며, 2017년부터 레인저 인더스트리 앤 트레이딩이 운영합니다. 800가구가 넘는 소농이 4에이커 안팎의 밭에서 낸 체리를 받아 워시드와 내추럴로 모두 가공합니다. 2000년대 초 이디도와 이웃 아리차에서 내추럴 가공 실험이 시작되면서 예가체프 특유의 과일향 나추럴이 퍼졌다고 전해집니다. 같은 마을 이름을 쓰는 협동조합도 따로 있어, 라벨의 운영 주체를 확인할 필요가 있습니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-hand-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Girls_cleaning_coffee.JPG/960px-Girls_cleaning_coffee.JPG",
+"a": "Natnael Tadele",
+"p": "https://commons.wikimedia.org/wiki/File:Girls_cleaning_coffee.JPG",
+"c": {
+"ko": "손으로 생두를 고르는 모습",
+"en": "Hand sorting green coffee",
+"ja": "手作業で生豆を選別する様子"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -11777,94 +12703,75 @@
 "story": "구지 고지의 원생림 아래 해발 1,800~2,200m에서 재래종을 기르고, 체리를 모아 워시드·내추럴로 가공합니다. 구지 특유의 과즙 있는 컵이 살아 있고, 정밀 선별한 마이크로 랏이 늘었습니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-sifting-good-beans-from-bad.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Sifting_good_beans_from_bad.jpg/960px-Sifting_good_beans_from_bad.jpg",
+"f": "photos/et-cherry-drying.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Coffee_berry_sorting_process%2C_near_Hawassa.jpg/960px-Coffee_berry_sorting_process%2C_near_Hawassa.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Coffee_berry_sorting_process,_near_Hawassa.jpg",
 "c": {
-"ko": "에티오피아 커피 선별 (국가 대표 사진)",
-"en": "Ethiopia coffee sorting (country representative photo)",
-"ja": "エチオピアのコーヒー選別（代表写真）"
+"ko": "햇볕에 말리는 커피 체리",
+"en": "Coffee cherries drying in the sun",
+"ja": "天日で乾かすコーヒーチェリー"
 },
-"a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Sifting_good_beans_from_bad.jpg",
-"o": "50% 62%"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
-"kind": "region",
+"id": "F|에티오피아|방코 고티티",
+"kind": "farm",
 "country": "에티오피아",
-"name": "방코",
-"nameEn": "Banko",
-"lat": 6.0,
+"name": "방코 고티티",
+"nameEn": "Banko Gotiti Washing Station",
+"nameJa": "バンコ・ゴティティ精製所",
+"lat": 5.91667,
 "lon": 38.25,
 "precision": "region",
-"evidence": "산지 중심(관리자 보정)",
-"id": "R|에티오피아|방코",
-"beanCount": 2,
-"elevation": "약 1,800~2,000m",
-"harvest": "11월~1월 (주 수확기)",
-"terroir": "남부 고지 · 화산성 토양",
-"varieties": "에티오피아 재래종(Heirloom)",
-"processes": "워시드 · 내추럴",
-"flavorProfile": "과일 · 꽃향 · 깨끗한 단맛",
-"trend": "소규모 워싱스테이션 랏이 하나둘 생겼습니다.",
-"story": "남부 고지의 화산성 토양에서 해발 1,800~2,000m 재래종을 기르고, 마을 단위로 체리를 모아 가공합니다. 소농 중심지답게 소규모 랏이 하나둘 늘었습니다.",
-"profileLevel": "place",
-"photo": {
-"m": "country_fallback",
-"f": "photos/up-sifting-good-beans-from-bad.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Sifting_good_beans_from_bad.jpg/960px-Sifting_good_beans_from_bad.jpg",
-"c": {
-"ko": "에티오피아 커피 선별 (국가 대표 사진)",
-"en": "Ethiopia coffee sorting (country representative photo)",
-"ja": "エチオピアのコーヒー選別（代表写真）"
-},
-"a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
-"s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Sifting_good_beans_from_bad.jpg",
-"o": "50% 62%"
-}
+"evidence": "게데오 존 게뎁 지역 방코 고티티 마을(자료에 따라 코체레·예가체프로 적힌 곳도 있음) · 좌표는 게뎁 마을 중심(OSM Gedeb)",
+"source": "https://roundhillroastery.org/products/banko-gotiti",
+"alias": [
+"방코고티티",
+"banko gotiti",
+"bankogotiti",
+"バンコ・ゴティティ"
+],
+"producer": "방코 고티티 소농 (스테이션 관리 무세이드 세르멜로)",
+"founded": "2009년 개설",
+"refs": [
+{
+"t": "스테이션 소개",
+"u": "https://roundhillroastery.org/products/banko-gotiti"
 },
 {
-"kind": "region",
-"country": "에티오피아",
-"name": "베리티",
-"nameEn": "Beriti",
-"lat": 6.05,
-"lon": 38.18,
-"precision": "region",
-"evidence": "산지 중심(관리자 보정)",
-"id": "R|에티오피아|베리티",
+"t": "농가·가공 자료",
+"u": "https://eu.covoyacoffee.com/ethiopia-banko-gotiti-washed-2026-eu.html"
+}
+],
 "beanCount": 2,
-"elevation": "약 1,900~2,100m",
-"harvest": "11월~1월 (주 수확기)",
-"terroir": "게데오 고지 · 원생림 그늘",
-"varieties": "에티오피아 재래종(Heirloom)",
-"processes": "워시드 · 내추럴",
-"flavorProfile": "자스민 · 시트러스 · 깨끗한 단맛",
-"trend": "게데오의 워싱스테이션 랏이 꾸준히 나옵니다.",
-"story": "게데오 고지의 원생림 그늘에서 해발 1,900~2,100m 재래종을 기르고, 워시드·내추럴로 가공합니다. 예가체프와 같은 고지대에 속해 꽃향이 맑은 커피가 납니다.",
+"elevation": "1,950~2,150m",
+"harvest": "11월~1월",
+"terroir": "게뎁 동쪽 능선 · 엔세트·원생 그늘 · 1~2헥타르 커피밭",
+"varieties": "게데오 재래종",
+"processes": "워시드 중심 · 내추럴",
+"flavorProfile": "레몬 제스트 · 라즈베리 · 흰 꽃 · 자몽",
+"trend": "이 kebele 이름을 단 스테이션이 여럿 있어, 로스터들은 랏의 스테이션 이름을 함께 확인합니다.",
+"story": "게뎁 마을 동쪽 능선, 방코 고티티 마을에 있습니다. 2009년 문을 연 스테이션으로 650~1,300 소농이 체리를 냅니다. 농가 대부분이 1~2헥타르의 커피밭을 엔세트와 원생 그늘 아래 두고 화학 비료 없이 가꿉니다. 체리는 당일 펄핑해 발효조에서 36~48시간 두었다가 수로에서 밀도로 나누고, 건조대에서 10~15일 말립니다. 같은 마을 이름을 쓰는 스테이션이 몇 곳 있어 라벨의 스테이션 이름까지 봐야 같은 커피인지 알 수 있습니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-sifting-good-beans-from-bad.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Sifting_good_beans_from_bad.jpg/960px-Sifting_good_beans_from_bad.jpg",
+"f": "photos/et-cherry-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Ethiopia-47.jpg/960px-Ethiopia-47.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Ethiopia-47.jpg",
 "c": {
-"ko": "에티오피아 커피 선별 (국가 대표 사진)",
-"en": "Ethiopia coffee sorting (country representative photo)",
-"ja": "エチオピアのコーヒー選別（代表写真）"
+"ko": "건조대 위에서 커피 체리를 고르는 모습",
+"en": "Sorting coffee cherries on raised beds",
+"ja": "乾燥棚でコーヒーチェリーを選別する様子"
 },
-"a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Sifting_good_beans_from_bad.jpg",
-"o": "50% 62%"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -11888,19 +12795,76 @@
 "story": "벤치마지는 에티오피아 남서부의 원생림 산지로, 해발 1,400~2,000m의 비 많은 화산성 토양에서 재래종과 게이샤 계열을 기릅니다. 게이샤의 원산지로 알려진 게샤 지역이 이 일대에 있어, 숲 커피와 게이샤 랏이 함께 나옵니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-coffee-beans-ethiopia.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Coffee_Beans_%28Ethiopia%29.JPG/960px-Coffee_Beans_%28Ethiopia%29.JPG",
+"f": "photos/et-cherry-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Ethiopia-47.jpg/960px-Ethiopia-47.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Ethiopia-47.jpg",
 "c": {
-"ko": "에티오피아 커피 원두 (국가 대표 사진)",
-"en": "Ethiopia coffee beans (country representative photo)",
-"ja": "エチオピアのコーヒー豆（代表写真）"
+"ko": "건조대 위에서 커피 체리를 고르는 모습",
+"en": "Sorting coffee cherries on raised beds",
+"ja": "乾燥棚でコーヒーチェリーを選別する様子"
 },
-"a": "Maurice Chédel",
-"l": "CC BY-SA 3.0",
-"lu": "https://creativecommons.org/licenses/by-sa/3.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Coffee_Beans_(Ethiopia).JPG"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
+}
+},
+{
+"id": "F|에티오피아|벤티 넨카",
+"kind": "farm",
+"country": "에티오피아",
+"name": "벤티 넨카",
+"nameEn": "Benti Nenka Washing Station",
+"nameJa": "ベンティ・ネンカ精製所",
+"lat": 5.99709,
+"lon": 38.42628,
+"precision": "village",
+"evidence": "구지 함벨라 와메나 지역 벤티 네카 마을 · OSM Dimtu Hambella(마을)",
+"source": "https://weteambelacoffee.com/benti-nenka-washing-station-hambela-wamena-area/",
+"alias": [
+"벤티넨카",
+"구지벤티",
+"benti nenka",
+"bentinenka",
+"ベンティ・ネンカ"
+],
+"producer": "케디르 하산 (스테이션 운영) · 500~700 소농",
+"founded": "2017년 개설",
+"refs": [
+{
+"t": "스테이션 소개",
+"u": "https://weteambelacoffee.com/benti-nenka-washing-station-hambela-wamena-area/"
+},
+{
+"t": "농가·가공",
+"u": "https://www.nemesis.coffee/blogs/coffee-journal/ethiopia-benti-nenka"
+}
+],
+"beanCount": 2,
+"elevation": "1,850~2,200m",
+"harvest": "11월~1월",
+"terroir": "함벨라 와메나의 원생림 · 붉은 갈색 토양 · 구지에서 비교적 따뜻한 편",
+"varieties": "74100 · 74112 · 재래종",
+"processes": "내추럴 중심 · 워시드 · 무산소",
+"flavorProfile": "딸기 · 오렌지 · 망고",
+"trend": "대나무 건조대를 직접 쪼개 flat하게 만드는 등 관리로 구지 내추럴의 기준을 세웠습니다.",
+"story": "구지 함벨라 와메나의 벤티 네카 마을에 있습니다. 2017년 문을 연 스테이션으로 500~700 소농이 1.5~2헥타르 밭에서 낸 체리를 받습니다. 1,850~2,200m로 예가체프보다 낮고 조금 따뜻해 체리가 빨리 익지만, 대나무를 쪼개 평평하게 만든 건조대 181개에서 천천히 말려 잡맛을 줄입니다. 내추럴 중심이었으나 최근에는 워시드와 무산소 랏도 냅니다. 체리는 말을 타고 스테이션까지 옮겨 오기도 합니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-cherry-drying.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Coffee_berry_sorting_process%2C_near_Hawassa.jpg/960px-Coffee_berry_sorting_process%2C_near_Hawassa.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Coffee_berry_sorting_process,_near_Hawassa.jpg",
+"c": {
+"ko": "햇볕에 말리는 커피 체리",
+"en": "Coffee cherries drying in the sun",
+"ja": "天日で乾かすコーヒーチェリー"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -11924,19 +12888,19 @@
 "story": "샤키소는 구지 존의 작은 행정구역으로, 구지 커피를 세계에 알린 랏이 이곳에서 나왔습니다. 해발 1,900~2,200m 고지의 원생림 사이 밭에서 재래종을 기르고, 체리를 모아 내추럴로 말리며 최근에는 무산소 랏도 나옵니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-the-start-of-your-morning-coffee-5984450578.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/The_start_of_your_morning_coffee_%285984450578%29.jpg/960px-The_start_of_your_morning_coffee_%285984450578%29.jpg",
-"c": {
-"ko": "에티오피아 커피 수확 (국가 대표 사진)",
-"en": "Ethiopia coffee harvest (country representative photo)",
-"ja": "エチオピアのコーヒー収穫（代表写真）"
-},
+"f": "photos/et-warehouse-bags.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Thousands_of_bean_bags.jpg/960px-Thousands_of_bean_bags.jpg",
 "a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
+"p": "https://commons.wikimedia.org/wiki/File:Thousands_of_bean_bags.jpg",
+"c": {
+"ko": "창고에 쌓인 커피 자루",
+"en": "Coffee bags stacked in a warehouse",
+"ja": "倉庫に積まれたコーヒー袋"
+},
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:The_start_of_your_morning_coffee_(5984450578).jpg"
+"l": "CC BY 2.0",
+"lu": "https://creativecommons.org/licenses/by/2.0"
 }
 },
 {
@@ -11960,19 +12924,19 @@
 "story": "오로미아 남부 고지의 해발 1,800~2,100m에서 재래종을 기르고, 소농이 마을 단위로 체리를 모아 워시드·내추럴로 가공합니다. 지역 이름을 건 랏이 조금씩 스페셜티로 유통됩니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-the-start-of-your-morning-coffee-5984450578.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/The_start_of_your_morning_coffee_%285984450578%29.jpg/960px-The_start_of_your_morning_coffee_%285984450578%29.jpg",
+"f": "photos/et-cherry-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Ethiopia-47.jpg/960px-Ethiopia-47.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Ethiopia-47.jpg",
 "c": {
-"ko": "에티오피아 커피 수확 (국가 대표 사진)",
-"en": "Ethiopia coffee harvest (country representative photo)",
-"ja": "エチオピアのコーヒー収穫（代表写真）"
+"ko": "건조대 위에서 커피 체리를 고르는 모습",
+"en": "Sorting coffee cherries on raised beds",
+"ja": "乾燥棚でコーヒーチェリーを選別する様子"
 },
-"a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:The_start_of_your_morning_coffee_(5984450578).jpg"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -11996,19 +12960,19 @@
 "story": "구지 존의 작은 행정구역으로, 해발 1,800~2,100m 고지에서 자란 재래종 체리를 소농들이 모아 가공합니다. 랏이 작아 해마다 컵이 조금씩 달라집니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-coffee-beans-ethiopia.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Coffee_Beans_%28Ethiopia%29.JPG/960px-Coffee_Beans_%28Ethiopia%29.JPG",
+"f": "photos/et-hand-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Girls_cleaning_coffee.JPG/960px-Girls_cleaning_coffee.JPG",
+"a": "Natnael Tadele",
+"p": "https://commons.wikimedia.org/wiki/File:Girls_cleaning_coffee.JPG",
 "c": {
-"ko": "에티오피아 커피 원두 (국가 대표 사진)",
-"en": "Ethiopia coffee beans (country representative photo)",
-"ja": "エチオピアのコーヒー豆（代表写真）"
+"ko": "손으로 생두를 고르는 모습",
+"en": "Hand sorting green coffee",
+"ja": "手作業で生豆を選別する様子"
 },
-"a": "Maurice Chédel",
-"l": "CC BY-SA 3.0",
-"lu": "https://creativecommons.org/licenses/by-sa/3.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Coffee_Beans_(Ethiopia).JPG"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -12032,19 +12996,19 @@
 "story": "우리는 게데오 존 게뎁의 워크아-사카로 일대에 있는 워싱스테이션 이름입니다. '높은 곳'이라는 뜻처럼 2,000m 안팎 고지의 체리를 모아 워시드로 가공하고, 워싱스테이션 이름을 그대로 랏 이름으로 씁니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-coffee-beans-ethiopia.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Coffee_Beans_%28Ethiopia%29.JPG/960px-Coffee_Beans_%28Ethiopia%29.JPG",
+"f": "photos/et-hand-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Girls_cleaning_coffee.JPG/960px-Girls_cleaning_coffee.JPG",
+"a": "Natnael Tadele",
+"p": "https://commons.wikimedia.org/wiki/File:Girls_cleaning_coffee.JPG",
 "c": {
-"ko": "에티오피아 커피 원두 (국가 대표 사진)",
-"en": "Ethiopia coffee beans (country representative photo)",
-"ja": "エチオピアのコーヒー豆（代表写真）"
+"ko": "손으로 생두를 고르는 모습",
+"en": "Hand sorting green coffee",
+"ja": "手作業で生豆を選別する様子"
 },
-"a": "Maurice Chédel",
-"l": "CC BY-SA 3.0",
-"lu": "https://creativecommons.org/licenses/by-sa/3.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Coffee_Beans_(Ethiopia).JPG"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -12068,19 +13032,19 @@
 "story": "게데오 게뎁 고지의 원생림 아래 해발 1,900~2,200m에서 재래종을 기르고, 마을 워싱스테이션에서 내추럴로 가공합니다. 진한 과즙과 베리 향이 게뎁 이름의 인상입니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-the-start-of-your-morning-coffee-5984450578.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/The_start_of_your_morning_coffee_%285984450578%29.jpg/960px-The_start_of_your_morning_coffee_%285984450578%29.jpg",
+"f": "photos/et-green-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Women_checking_coffee.jpg/960px-Women_checking_coffee.jpg",
+"a": "Nhb201",
+"p": "https://commons.wikimedia.org/wiki/File:Women_checking_coffee.jpg",
 "c": {
-"ko": "에티오피아 커피 수확 (국가 대표 사진)",
-"en": "Ethiopia coffee harvest (country representative photo)",
-"ja": "エチオピアのコーヒー収穫（代表写真）"
+"ko": "생두 선별 라인",
+"en": "A green bean sorting line",
+"ja": "生豆の選別ライン"
 },
-"a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:The_start_of_your_morning_coffee_(5984450578).jpg"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -12104,19 +13068,19 @@
 "story": "구지 존의 작은 행정구역으로, 해발 1,800~2,100m 소농 밭의 체리를 모아 마을에서 가공합니다. 짙은 베리 향이 구지 랏의 인상입니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-coffee-beans-ethiopia.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Coffee_Beans_%28Ethiopia%29.JPG/960px-Coffee_Beans_%28Ethiopia%29.JPG",
+"f": "photos/et-green-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Women_checking_coffee.jpg/960px-Women_checking_coffee.jpg",
+"a": "Nhb201",
+"p": "https://commons.wikimedia.org/wiki/File:Women_checking_coffee.jpg",
 "c": {
-"ko": "에티오피아 커피 원두 (국가 대표 사진)",
-"en": "Ethiopia coffee beans (country representative photo)",
-"ja": "エチオピアのコーヒー豆（代表写真）"
+"ko": "생두 선별 라인",
+"en": "A green bean sorting line",
+"ja": "生豆の選別ライン"
 },
-"a": "Maurice Chédel",
-"l": "CC BY-SA 3.0",
-"lu": "https://creativecommons.org/licenses/by-sa/3.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Coffee_Beans_(Ethiopia).JPG"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -12140,19 +13104,19 @@
 "story": "셰카 존의 원생림 지대, 해발 1,200~1,800m의 비 많은 숲에서 재래종을 기르고 워시드·내추럴로 가공합니다. 과일과 초콜릿 같은 둥근 향이 나옵니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-the-start-of-your-morning-coffee-5984450578.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/The_start_of_your_morning_coffee_%285984450578%29.jpg/960px-The_start_of_your_morning_coffee_%285984450578%29.jpg",
+"f": "photos/et-cherry-drying.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Coffee_berry_sorting_process%2C_near_Hawassa.jpg/960px-Coffee_berry_sorting_process%2C_near_Hawassa.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Coffee_berry_sorting_process,_near_Hawassa.jpg",
 "c": {
-"ko": "에티오피아 커피 수확 (국가 대표 사진)",
-"en": "Ethiopia coffee harvest (country representative photo)",
-"ja": "エチオピアのコーヒー収穫（代表写真）"
+"ko": "햇볕에 말리는 커피 체리",
+"en": "Coffee cherries drying in the sun",
+"ja": "天日で乾かすコーヒーチェリー"
 },
-"a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:The_start_of_your_morning_coffee_(5984450578).jpg"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -12176,20 +13140,19 @@
 "story": "짐마 고지의 원생림 아래 해발 1,600~1,900m에서 소농이 재래종을 기르고 마을에서 가공합니다. 소규모 랏이 꾸준히 유통됩니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-sifting-good-beans-from-bad.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Sifting_good_beans_from_bad.jpg/960px-Sifting_good_beans_from_bad.jpg",
+"f": "photos/et-hand-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Girls_cleaning_coffee.JPG/960px-Girls_cleaning_coffee.JPG",
+"a": "Natnael Tadele",
+"p": "https://commons.wikimedia.org/wiki/File:Girls_cleaning_coffee.JPG",
 "c": {
-"ko": "에티오피아 커피 선별 (국가 대표 사진)",
-"en": "Ethiopia coffee sorting (country representative photo)",
-"ja": "エチオピアのコーヒー選別（代表写真）"
+"ko": "손으로 생두를 고르는 모습",
+"en": "Hand sorting green coffee",
+"ja": "手作業で生豆を選別する様子"
 },
-"a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Sifting_good_beans_from_bad.jpg",
-"o": "50% 62%"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -12213,55 +13176,19 @@
 "story": "구지 고지의 원생림 아래 해발 1,800~2,200m에서 소농이 재래종을 기르고, 체리를 모아 가공합니다. 랏 규모는 작지만 구지의 진한 과즙이 살아 있습니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-coffee-beans-ethiopia.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Coffee_Beans_%28Ethiopia%29.JPG/960px-Coffee_Beans_%28Ethiopia%29.JPG",
+"f": "photos/et-depulper.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Men_by_coffee_peeling_machine%2C_near_awassa.jpg/960px-Men_by_coffee_peeling_machine%2C_near_awassa.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Men_by_coffee_peeling_machine,_near_awassa.jpg",
 "c": {
-"ko": "에티오피아 커피 원두 (국가 대표 사진)",
-"en": "Ethiopia coffee beans (country representative photo)",
-"ja": "エチオピアのコーヒー豆（代表写真）"
+"ko": "펄퍼로 체리의 과육을 벗기는 모습",
+"en": "Running cherry through a pulper",
+"ja": "パルパーでチェリーの果肉を除く様子"
 },
-"a": "Maurice Chédel",
-"l": "CC BY-SA 3.0",
-"lu": "https://creativecommons.org/licenses/by-sa/3.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Coffee_Beans_(Ethiopia).JPG"
-}
-},
-{
-"kind": "region",
-"country": "에티오피아",
-"name": "할로",
-"nameEn": "Halo",
-"lat": 5.9154,
-"lon": 38.3,
-"precision": "region",
-"evidence": "산지 중심(관리자 보정)",
-"id": "R|에티오피아|할로",
-"beanCount": 2,
-"elevation": "1,950~2,200m",
-"harvest": "11월~1월 (주 수확기)",
-"terroir": "게데오 고지 · 원생림 그늘",
-"varieties": "에티오피아 재래종(Heirloom)",
-"processes": "워시드 · 내추럴",
-"flavorProfile": "자스민 · 시트러스 · 깨끗한 단맛",
-"trend": "게데오의 작은 행정구역별 랏이 마이크로랏으로 나옵니다.",
-"story": "게데오 고지의 원생림 그늘에서 해발 1,950~2,200m 재래종을 기르고, 마을 워싱스테이션에서 선별해 가공합니다. 예가체프와 같은 고지대라 꽃향이 맑습니다.",
-"profileLevel": "place",
-"photo": {
-"m": "country_fallback",
-"f": "photos/up-the-start-of-your-morning-coffee-5984450578.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/The_start_of_your_morning_coffee_%285984450578%29.jpg/960px-The_start_of_your_morning_coffee_%285984450578%29.jpg",
-"c": {
-"ko": "에티오피아 커피 수확 (국가 대표 사진)",
-"en": "Ethiopia coffee harvest (country representative photo)",
-"ja": "エチオピアのコーヒー収穫（代表写真）"
-},
-"a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
-"s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:The_start_of_your_morning_coffee_(5984450578).jpg"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -12285,19 +13212,73 @@
 "story": "오로미아 남부 고지의 해발 1,700~2,000m에서 재래종을 기르고, 소농이 마을 단위로 체리를 모아 워시드·내추럴로 가공합니다. 지역 이름을 건 소규모 랏이 조금씩 유통됩니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-coffee-beans-ethiopia.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Coffee_Beans_%28Ethiopia%29.JPG/960px-Coffee_Beans_%28Ethiopia%29.JPG",
+"f": "photos/et-green-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Women_checking_coffee.jpg/960px-Women_checking_coffee.jpg",
+"a": "Nhb201",
+"p": "https://commons.wikimedia.org/wiki/File:Women_checking_coffee.jpg",
 "c": {
-"ko": "에티오피아 커피 원두 (국가 대표 사진)",
-"en": "Ethiopia coffee beans (country representative photo)",
-"ja": "エチオピアのコーヒー豆（代表写真）"
+"ko": "생두 선별 라인",
+"en": "A green bean sorting line",
+"ja": "生豆の選別ライン"
 },
-"a": "Maurice Chédel",
-"l": "CC BY-SA 3.0",
-"lu": "https://creativecommons.org/licenses/by-sa/3.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Coffee_Beans_(Ethiopia).JPG"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
+}
+},
+{
+"id": "F|에티오피아|훈쿠테",
+"kind": "farm",
+"country": "에티오피아",
+"name": "훈쿠테",
+"nameEn": "Hunkute Washing Stations",
+"nameJa": "フンクテ精製所",
+"lat": 6.74864,
+"lon": 38.39365,
+"precision": "region",
+"evidence": "시다마 달레 지역 훈쿠테 · 좌표는 달레 중심(OSM Dale)",
+"source": "https://www.dropcoffee.com/pages/hunkute",
+"alias": [
+"hunkute",
+"フンクテ"
+],
+"producer": "훈쿠테 협동조합 (시다마 커피 농민 협동조합 연합 소속)",
+"founded": "1호 사이트 2007년 무렵 · 2호 사이트 2012년 무렵",
+"refs": [
+{
+"t": "협동조합·사이트 소개",
+"u": "https://www.dropcoffee.com/pages/hunkute"
+},
+{
+"t": "사이트·회원 수",
+"u": "https://www.dropcoffee.com/blogs/news/visit-from-hunkute-sidama-union"
+}
+],
+"beanCount": 2,
+"elevation": "1,850~2,150m (2호 사이트 2,150m)",
+"harvest": "11월~1월",
+"terroir": "달레 고지 · 0.5~5헥타르 소농 · 헥타르당 1,500그루 안팎",
+"varieties": "재래종 · 74110 · 74112",
+"processes": "워시드 · 내추럴",
+"flavorProfile": "시트러스 · 홍차 · 자두",
+"trend": "협동조합 체제를 유지하면서 로스터와 15년 넘게 거래하는 스테이션입니다.",
+"story": "시다마 달레 지역에 있는 훈쿠테 협동조합의 스테이션 두 곳입니다. 2007년 무렵 문을 연 1호 사이트는 1,850m, 2012년 무렵의 2호 사이트는 2,150m에 있고, 회원은 900명에서 2,100여 명까지 늘었습니다. 회원 농가는 0.5~5헥타르의 밭에서 커피를 기르고, 체리는 당일 펄핑해 24~36시간 물속에서 발효한 뒤 수로에서 두 등급으로 나누고 12~24시간 맑은 물에 담갔다가 말립니다. 시다마 연합이 건조·선별을 맡습니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-hand-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Girls_cleaning_coffee.JPG/960px-Girls_cleaning_coffee.JPG",
+"a": "Natnael Tadele",
+"p": "https://commons.wikimedia.org/wiki/File:Girls_cleaning_coffee.JPG",
+"c": {
+"ko": "손으로 생두를 고르는 모습",
+"en": "Hand sorting green coffee",
+"ja": "手作業で生豆を選別する様子"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -14751,20 +15732,19 @@
 "story": "게라는 짐마 존의 원생림 산지로, 해발 1,700~2,000m의 화산성 토양에서 재래종을 기릅니다. 숲 그늘에서 자란 커피를 소농이 모아 가공하며, 나노 찰라 협동조합도 이 일대에 있어 숲 보전과 커피를 잇는 프로젝트가 이어집니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-sifting-good-beans-from-bad.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Sifting_good_beans_from_bad.jpg/960px-Sifting_good_beans_from_bad.jpg",
+"f": "photos/et-depulper.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Men_by_coffee_peeling_machine%2C_near_awassa.jpg/960px-Men_by_coffee_peeling_machine%2C_near_awassa.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Men_by_coffee_peeling_machine,_near_awassa.jpg",
 "c": {
-"ko": "에티오피아 커피 선별 (국가 대표 사진)",
-"en": "Ethiopia coffee sorting (country representative photo)",
-"ja": "エチオピアのコーヒー選別（代表写真）"
+"ko": "펄퍼로 체리의 과육을 벗기는 모습",
+"en": "Running cherry through a pulper",
+"ja": "パルパーでチェリーの果肉を除く様子"
 },
-"a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Sifting_good_beans_from_bad.jpg",
-"o": "50% 62%"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -14788,20 +15768,19 @@
 "story": "구지 존의 작은 행정구역으로, 해발 1,800~2,100m 고지의 원생림 아래 소농 밭에서 재래종을 기릅니다. 체리를 모아 마을에서 워시드·내추럴로 가공하며, 구지다운 베리와 핵과일 향이 살아 있습니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-sifting-good-beans-from-bad.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Sifting_good_beans_from_bad.jpg/960px-Sifting_good_beans_from_bad.jpg",
+"f": "photos/et-green-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Women_checking_coffee.jpg/960px-Women_checking_coffee.jpg",
+"a": "Nhb201",
+"p": "https://commons.wikimedia.org/wiki/File:Women_checking_coffee.jpg",
 "c": {
-"ko": "에티오피아 커피 선별 (국가 대표 사진)",
-"en": "Ethiopia coffee sorting (country representative photo)",
-"ja": "エチオピアのコーヒー選別（代表写真）"
+"ko": "생두 선별 라인",
+"en": "A green bean sorting line",
+"ja": "生豆の選別ライン"
 },
-"a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Sifting_good_beans_from_bad.jpg",
-"o": "50% 62%"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -14825,55 +15804,75 @@
 "story": "오로미아 남부 고지의 해발 1,800~2,100m에서 재래종을 기르고, 소농이 마을 단위로 체리를 모아 가공합니다. 지역 이름을 건 소규모 랏이 유통됩니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-coffee-beans-ethiopia.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Coffee_Beans_%28Ethiopia%29.JPG/960px-Coffee_Beans_%28Ethiopia%29.JPG",
+"f": "photos/et-cherry-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Ethiopia-47.jpg/960px-Ethiopia-47.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Ethiopia-47.jpg",
 "c": {
-"ko": "에티오피아 커피 원두 (국가 대표 사진)",
-"en": "Ethiopia coffee beans (country representative photo)",
-"ja": "エチオピアのコーヒー豆（代表写真）"
+"ko": "건조대 위에서 커피 체리를 고르는 모습",
+"en": "Sorting coffee cherries on raised beds",
+"ja": "乾燥棚でコーヒーチェリーを選別する様子"
 },
-"a": "Maurice Chédel",
-"l": "CC BY-SA 3.0",
-"lu": "https://creativecommons.org/licenses/by-sa/3.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Coffee_Beans_(Ethiopia).JPG"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
-"kind": "region",
+"id": "F|에티오피아|부쿠 아벨",
+"kind": "farm",
 "country": "에티오피아",
-"name": "부쿠",
-"nameEn": "Buku",
-"lat": 5.83,
-"lon": 38.62,
+"name": "부쿠 아벨",
+"nameEn": "Buku Abel Washing Station",
+"nameJa": "ブク・アベル精製所",
+"lat": 5.9234,
+"lon": 38.49318,
 "precision": "region",
-"evidence": "산지 중심(관리자 보정)",
-"id": "R|에티오피아|부쿠",
+"evidence": "구지 함벨라 와메나 지역 부쿠 마을 · 좌표는 함벨라 와메나 중심(OSM Hambela Wamena)",
+"source": "https://clivecoffee.com/products/buku-abel-natural-ethiopia",
+"alias": [
+"부쿠아벨",
+"buku abel",
+"bukuabel",
+"ブク・アベル"
+],
+"producer": "에사야스 베리소·메스케렘 토마스 부부(농장) · 원다프라시 에데마(스테이션)",
+"founded": "농장 2009년 전업 · 스테이션 2019년",
+"refs": [
+{
+"t": "농장·스테이션 소개",
+"u": "https://clivecoffee.com/products/buku-abel-natural-ethiopia"
+},
+{
+"t": "생산자·가공",
+"u": "https://percup.uk/products/ethiopia-buku-abel"
+}
+],
 "beanCount": 1,
-"elevation": "약 1,800~2,100m",
-"harvest": "11월~1월 (주 수확기)",
-"terroir": "구지 고지 · 원생림",
-"varieties": "에티오피아 재래종(Heirloom)",
-"processes": "내추럴 · 워시드",
-"flavorProfile": "베리 · 꽃향 · 깨끗한 단맛",
-"trend": "구지의 작은 행정구역별 랏이 자주 보입니다.",
-"story": "구지 존의 작은 행정구역으로, 해발 1,800~2,100m 고지의 원생림 아래에서 재래종을 기릅니다. 해발이 높은 밭에서 체리를 모아 마을 단위로 가공해 베리와 꽃향이 차분하게 올라옵니다.",
+"elevation": "2,000~2,350m",
+"harvest": "11월~1월",
+"terroir": "구지 서쪽 고지 · 31헥타르 농장과 이웃 밭 · 낮 동안 강한 햇볕",
+"varieties": "74110 · 74112 · 74158 · 74165 · 재래종",
+"processes": "내추럴 · 무산소 내추럴",
+"flavorProfile": "딸기 잼 · 장미 · 복숭아 · 블루베리",
+"trend": "수출업자가 생산자가 될 수 있게 된 2019년 이후 세워진 스테이션의 대표 사례입니다.",
+"story": "구지 함벨라 와메나의 부쿠 마을에 있습니다. 농장은 에사야스 베리소와 메스케렘 토마스 부부가 2009년부터 31헥타르에서 운영하고, 마을 체리를 모으는 워싱스테이션은 수출업자였던 원다프라시 에데마가 2019년 세웠습니다. 같은 이름으로 농장과 스테이션이 함께 불립니다. 2,000~2,350m에서 내추럴로 가공하며, 햇볕이 강해 낮 11시 30분부터 3시까지는 건조대를 덮어 천천히 말립니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-coffee-beans-ethiopia.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Coffee_Beans_%28Ethiopia%29.JPG/960px-Coffee_Beans_%28Ethiopia%29.JPG",
+"f": "photos/et-cherry-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Ethiopia-47.jpg/960px-Ethiopia-47.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Ethiopia-47.jpg",
 "c": {
-"ko": "에티오피아 커피 원두 (국가 대표 사진)",
-"en": "Ethiopia coffee beans (country representative photo)",
-"ja": "エチオピアのコーヒー豆（代表写真）"
+"ko": "건조대 위에서 커피 체리를 고르는 모습",
+"en": "Sorting coffee cherries on raised beds",
+"ja": "乾燥棚でコーヒーチェリーを選別する様子"
 },
-"a": "Maurice Chédel",
-"l": "CC BY-SA 3.0",
-"lu": "https://creativecommons.org/licenses/by-sa/3.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Coffee_Beans_(Ethiopia).JPG"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -14897,55 +15896,75 @@
 "story": "빌로야는 게데오 존 코케 인근의 마을 이름입니다. 해발 1,900~2,100m 고지의 체리를 모아 워시드로 가공해, 맑은 시트러스 향이 또렷한 랏을 냅니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-coffee-beans-ethiopia.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Coffee_Beans_%28Ethiopia%29.JPG/960px-Coffee_Beans_%28Ethiopia%29.JPG",
+"f": "photos/et-green-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Women_checking_coffee.jpg/960px-Women_checking_coffee.jpg",
+"a": "Nhb201",
+"p": "https://commons.wikimedia.org/wiki/File:Women_checking_coffee.jpg",
 "c": {
-"ko": "에티오피아 커피 원두 (국가 대표 사진)",
-"en": "Ethiopia coffee beans (country representative photo)",
-"ja": "エチオピアのコーヒー豆（代表写真）"
+"ko": "생두 선별 라인",
+"en": "A green bean sorting line",
+"ja": "生豆の選別ライン"
 },
-"a": "Maurice Chédel",
-"l": "CC BY-SA 3.0",
-"lu": "https://creativecommons.org/licenses/by-sa/3.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Coffee_Beans_(Ethiopia).JPG"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
-"kind": "region",
+"id": "F|에티오피아|수케 쿠토",
+"kind": "farm",
 "country": "에티오피아",
-"name": "샨타",
-"nameEn": "Shanta",
-"lat": 5.9,
-"lon": 38.4,
+"name": "수케 쿠토",
+"nameEn": "Suke Quto Farm",
+"nameJa": "スケ・クトゥ農園",
+"lat": 5.77468,
+"lon": 38.90285,
 "precision": "region",
-"evidence": "산지 중심(관리자 보정)",
-"id": "R|에티오피아|샨타",
+"evidence": "구지 오도 샤키소 지역 · 좌표는 샤키소 마을 중심(OSM Shakiso)",
+"source": "https://www.trabocca.com/our-coffees/ethiopia/guji/suke-quto-farm/",
+"alias": [
+"수케쿠토",
+"suke quto",
+"sukequto",
+"スケ・クトゥ"
+],
+"producer": "테스파예 베켈레",
+"founded": "2000년 무렵 산불 피해지 재조림에서 시작",
+"refs": [
+{
+"t": "농장·연혁",
+"u": "https://www.trabocca.com/our-coffees/ethiopia/guji/suke-quto-farm/"
+},
+{
+"t": "규모·가공",
+"u": "https://www.partnerscoffee.com/blogs/education/ethiopia-suke-quto-2026"
+}
+],
 "beanCount": 1,
-"elevation": "약 1,800~2,100m",
-"harvest": "11월~1월 (주 수확기)",
-"terroir": "남부 고지 · 화산성 토양",
-"varieties": "에티오피아 재래종(Heirloom)",
-"processes": "워시드 · 내추럴",
-"flavorProfile": "과일 · 꽃향 · 부드러운 단맛",
-"trend": "소규모 랏이 마이크로랏으로 나옵니다.",
-"story": "샨타는 에티오피아 남부 고지의 커피 산지입니다. 화산성 토양의 1,800~2,100m 밭에서 재래종을 기르고, 소농이 마을 단위로 체리를 모아 워시드·내추럴로 가공합니다.",
+"elevation": "1,800~2,200m",
+"harvest": "12월~1월",
+"terroir": "오도 샤키소의 화산성 토양 · 원생림 그대로의 그늘 · 낙엽 퇴비",
+"varieties": "쿠루메 · 월리쇼",
+"processes": "워시드 · 내추럴 · 펄프드 내추럴",
+"flavorProfile": "클레멘타인 · 사탕수수 · 레몬버베나",
+"trend": "구지 커피의 출발점으로 꼽히며 지금은 아디스아바바 드라이밀까지 갖췄습니다.",
+"story": "구지 오도 샤키소의 산자락에 펼쳐진 농장입니다. 1997~1999년 구지를 덮친 산불로 숲 5,000에이커가 타자 당시 공무원이던 테스파예 베켈레가 주민에게 커피 묘목을 나눠 주며 재조림을 시작했고, 결국 스스로 농장주가 됐습니다. 지금은 221~742헥타르의 숲과 커피밭에서 171~300 아웃그로워의 체리를 함께 가공하며, 유기농·레인포레스트 얼라이언스 인증을 받았습니다. 워시드는 35~72시간 물속 발효 후 13일 안쪽으로 말립니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-the-start-of-your-morning-coffee-5984450578.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/The_start_of_your_morning_coffee_%285984450578%29.jpg/960px-The_start_of_your_morning_coffee_%285984450578%29.jpg",
+"f": "photos/et-depulper.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Men_by_coffee_peeling_machine%2C_near_awassa.jpg/960px-Men_by_coffee_peeling_machine%2C_near_awassa.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Men_by_coffee_peeling_machine,_near_awassa.jpg",
 "c": {
-"ko": "에티오피아 커피 수확 (국가 대표 사진)",
-"en": "Ethiopia coffee harvest (country representative photo)",
-"ja": "エチオピアのコーヒー収穫（代表写真）"
+"ko": "펄퍼로 체리의 과육을 벗기는 모습",
+"en": "Running cherry through a pulper",
+"ja": "パルパーでチェリーの果肉を除く様子"
 },
-"a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:The_start_of_your_morning_coffee_(5984450578).jpg"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -14969,19 +15988,76 @@
 "story": "구지 존의 작은 행정구역으로, 해발 1,800~2,100m의 원생림과 밭이 섞인 고지에서 소농이 재래종을 기릅니다. 체리를 모아 마을에서 가공해 구지 특유의 베리 향이 살아 있습니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-the-start-of-your-morning-coffee-5984450578.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/The_start_of_your_morning_coffee_%285984450578%29.jpg/960px-The_start_of_your_morning_coffee_%285984450578%29.jpg",
+"f": "photos/et-cherry-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Ethiopia-47.jpg/960px-Ethiopia-47.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Ethiopia-47.jpg",
 "c": {
-"ko": "에티오피아 커피 수확 (국가 대표 사진)",
-"en": "Ethiopia coffee harvest (country representative photo)",
-"ja": "エチオピアのコーヒー収穫（代表写真）"
+"ko": "건조대 위에서 커피 체리를 고르는 모습",
+"en": "Sorting coffee cherries on raised beds",
+"ja": "乾燥棚でコーヒーチェリーを選別する様子"
 },
-"a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:The_start_of_your_morning_coffee_(5984450578).jpg"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
+}
+},
+{
+"id": "F|에티오피아|에바 고티티",
+"kind": "farm",
+"country": "에티오피아",
+"name": "에바 고티티",
+"nameEn": "Eva Gotiti Washing Station",
+"nameJa": "エバ・ゴティティ精製所",
+"lat": 5.91667,
+"lon": 38.25,
+"precision": "region",
+"evidence": "게데오 존 게뎁 지역 고티티 마을 · 좌표는 게뎁 마을 중심(OSM Gedeb)",
+"source": "https://www.falcon-micro.com/products/gotiti-washing-station-gedeo-zone-ethiopia-washed-fsc-8741",
+"alias": [
+"에바고티티",
+"게뎁고티티",
+"eva gotiti",
+"evagotiti",
+"ゴティティ"
+],
+"producer": "에바 고티티 웻 프로세싱 스테이션 (자블론)",
+"founded": "2022년 개설 · 2헥타르 부지",
+"refs": [
+{
+"t": "스테이션 소개·규모",
+"u": "https://www.falcon-micro.com/products/gotiti-washing-station-gedeo-zone-ethiopia-washed-fsc-8741"
+},
+{
+"t": "품종·가공",
+"u": "https://kaffeelix.at/en/products/ethiopia-gotiti-washed-organic"
+}
+],
+"beanCount": 1,
+"elevation": "2,000~2,100m",
+"harvest": "11월~1월",
+"terroir": "게뎁 동쪽 능선 · 원생림 그늘 · 붉은 광물질 토양",
+"varieties": "74110 · 74112 · 7454 · 7440",
+"processes": "워시드 중심",
+"flavorProfile": "토피 · 오렌지 블로섬 · 살구 · 밀크초콜릿",
+"trend": "물 사용을 줄이고 랏별 기록을 남기는 추적 관리로 새 스테이션 중 평가가 좋습니다.",
+"story": "게뎁 동쪽 능선의 고티티 마을에 있습니다. 2022년 2헥타르 땅에 문을 연 새 스테이션으로, 868가구가 1헥타르 안팎의 밭에서 낸 체리를 한 해 500~600톤 받습니다. 펄퍼와 발효조를 거쳐 10~14일 건조대에서 말리며, 물을 아끼고 과육과 폐수를 나누는 방식으로 관리합니다. 상주 직원은 여섯 명이지만 수확철에는 250명 넘게 일합니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-green-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Women_checking_coffee.jpg/960px-Women_checking_coffee.jpg",
+"a": "Nhb201",
+"p": "https://commons.wikimedia.org/wiki/File:Women_checking_coffee.jpg",
+"c": {
+"ko": "생두 선별 라인",
+"en": "A green bean sorting line",
+"ja": "生豆の選別ライン"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -15005,19 +16081,164 @@
 "story": "구지 존의 작은 행정구역으로, 해발 1,800~2,100m 고지 밭에서 재래종 체리를 모아 가공합니다. 소량이지만 랏 단위로 나와 구지의 과즙을 그대로 담습니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-the-start-of-your-morning-coffee-5984450578.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/The_start_of_your_morning_coffee_%285984450578%29.jpg/960px-The_start_of_your_morning_coffee_%285984450578%29.jpg",
+"f": "photos/et-cherry-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Ethiopia-47.jpg/960px-Ethiopia-47.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Ethiopia-47.jpg",
 "c": {
-"ko": "에티오피아 커피 수확 (국가 대표 사진)",
-"en": "Ethiopia coffee harvest (country representative photo)",
-"ja": "エチオピアのコーヒー収穫（代表写真）"
+"ko": "건조대 위에서 커피 체리를 고르는 모습",
+"en": "Sorting coffee cherries on raised beds",
+"ja": "乾燥棚でコーヒーチェリーを選別する様子"
 },
-"a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:The_start_of_your_morning_coffee_(5984450578).jpg"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
+}
+},
+{
+"id": "F|에티오피아|첼바",
+"kind": "farm",
+"country": "에티오피아",
+"name": "첼바",
+"nameEn": "Chelba Washing Station",
+"nameJa": "チェルバ精製所",
+"lat": 6.15586,
+"lon": 38.20285,
+"precision": "region",
+"evidence": "게데오 존 예가체프 지역 첼바 마을(예가체프 마을에서 12km) · 좌표는 예가체프 마을 중심(OSM Yirga Chefe)",
+"source": "https://royalcoffee.com/product/3427097000010941009/",
+"alias": [
+"chelba",
+"チェルバ"
+],
+"producer": "트라콘 커피 (게데오 6개 스테이션 운영)",
+"refs": [
+{
+"t": "스테이션·가공 기록",
+"u": "https://royalcoffee.com/product/3427097000010941009/"
+},
+{
+"t": "마을·농가 소개",
+"u": "https://roadmapcoffeeworks.com/products/ethiopia-chelba"
+}
+],
+"beanCount": 1,
+"elevation": "1,800~1,920m",
+"harvest": "10월~1월",
+"terroir": "예가체프 서쪽 낮은 고지 · 엔세트·그늘나무 · 베르티솔 토양",
+"varieties": "재래종 · 지역 헤어룸",
+"processes": "워시드 · 내추럴 · 120시간 진공 발효",
+"flavorProfile": "딸기 · 복숭아 · 수박 · 꿀",
+"trend": "진공 발효 내추럴처럼 실험 랏을 늘리며 예가체프 안에서도 개성을 내는 중입니다.",
+"story": "예가체프 마을에서 12km 떨어진 첼바 마을에 있습니다. 트라콘 커피가 게데오에서 운영하는 여섯 스테이션 가운데 하나로, 460~800 소농이 1.6헥타르 안팎의 밭에서 낸 체리를 받습니다. 대부분 커피와 함께 엔세트를 기릅니다. 워시드는 전통 방식으로 가공하고, 내추럴은 체리를 비닐에 진공 포장해 120시간 두었다가 15~18일 말리는 랏도 냅니다. 고도가 1,900m 안팎이라 예가체프 안에서도 산미가 부드럽고 단맛이 두터운 편입니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-cherry-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Ethiopia-47.jpg/960px-Ethiopia-47.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Ethiopia-47.jpg",
+"c": {
+"ko": "건조대 위에서 커피 체리를 고르는 모습",
+"en": "Sorting coffee cherries on raised beds",
+"ja": "乾燥棚でコーヒーチェリーを選別する様子"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
+}
+},
+{
+"kind": "region",
+"country": "에티오피아",
+"name": "할로",
+"nameEn": "Halo",
+"lat": 5.9154,
+"lon": 38.3,
+"precision": "region",
+"evidence": "산지 중심(관리자 보정)",
+"id": "R|에티오피아|할로",
+"beanCount": 1,
+"elevation": "1,950~2,200m",
+"harvest": "11월~1월 (주 수확기)",
+"terroir": "게데오 고지 · 원생림 그늘",
+"varieties": "에티오피아 재래종(Heirloom)",
+"processes": "워시드 · 내추럴",
+"flavorProfile": "자스민 · 시트러스 · 깨끗한 단맛",
+"trend": "게데오의 작은 행정구역별 랏이 마이크로랏으로 나옵니다.",
+"story": "게데오 고지의 원생림 그늘에서 해발 1,950~2,200m 재래종을 기르고, 마을 워싱스테이션에서 선별해 가공합니다. 예가체프와 같은 고지대라 꽃향이 맑습니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-cherry-drying.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Coffee_berry_sorting_process%2C_near_Hawassa.jpg/960px-Coffee_berry_sorting_process%2C_near_Hawassa.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Coffee_berry_sorting_process,_near_Hawassa.jpg",
+"c": {
+"ko": "햇볕에 말리는 커피 체리",
+"en": "Coffee cherries drying in the sun",
+"ja": "天日で乾かすコーヒーチェリー"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
+}
+},
+{
+"id": "F|에티오피아|할로 하르투메",
+"kind": "farm",
+"country": "에티오피아",
+"name": "할로 하르투메",
+"nameEn": "Halo Hartume Washing Station",
+"nameJa": "ハロ・ハルトゥメ精製所",
+"lat": 5.91667,
+"lon": 38.25,
+"precision": "region",
+"evidence": "게데오 존 게뎁 지역 하르투메 마을 · 좌표는 게뎁 마을 중심(OSM Gedeb)",
+"source": "https://49thcoffee.com/blogs/blog/origin-stories-daniel-mijane-and-the-coffees-of-worka-sakaro-and-halo-hartum",
+"alias": [
+"할로하르투메",
+"halo hartume",
+"halohartume",
+"ハロ・ハルトゥメ"
+],
+"producer": "미자네 가문 — 미자네 워레사, 다니엘 미자네",
+"founded": "2013년(자료에 따라 2015년) 가문의 두 번째 스테이션",
+"refs": [
+{
+"t": "가문·스테이션 소개",
+"u": "https://49thcoffee.com/blogs/blog/origin-stories-daniel-mijane-and-the-coffees-of-worka-sakaro-and-halo-hartum"
+},
+{
+"t": "생산자·가공 소개",
+"u": "https://www.blackwhiteroasters.com/products/r-halo-hartume-washed"
+}
+],
+"beanCount": 1,
+"elevation": "1,900~2,210m",
+"harvest": "11월~1월",
+"terroir": "게뎁 북쪽 고지 · 원생림 그늘 · 붉은 화산성 토양",
+"varieties": "재래종 · JARC 선발종",
+"processes": "워시드 중심 · 내추럴",
+"flavorProfile": "복숭아 · 허니듀 · 타이 바질",
+"trend": "가문이 게뎁의 마을별로 랏을 나눠 내면서 이름이 알려졌습니다.",
+"story": "게뎁 북쪽 하르투메 마을에 있습니다. 워카 사카로를 운영하던 미자네 가문이 2013년 무렵 두 번째로 세운 스테이션으로, 아버지 미자네 워레사와 아들 다니엘이 함께 맡고 있습니다. 400~500 소농이 1,900~2,210m 밭에서 낸 체리를 받아 물에 담가 24~48시간 발효한 뒤 건조대에서 10~14일 말립니다. 가문은 게뎁의 마을마다 커피를 따로 수출해 왔고, 그 덕에 하르투메라는 이름이 로스터들 사이에 알려졌습니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-cherry-drying.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Coffee_berry_sorting_process%2C_near_Hawassa.jpg/960px-Coffee_berry_sorting_process%2C_near_Hawassa.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Coffee_berry_sorting_process,_near_Hawassa.jpg",
+"c": {
+"ko": "햇볕에 말리는 커피 체리",
+"en": "Coffee cherries drying in the sun",
+"ja": "天日で乾かすコーヒーチェリー"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -21880,7 +23101,11 @@
 "evidence": "게라(Gera) 마을 중심, Jimma Zone Gera woreda · OSM Gera",
 "source": "https://www.trabocca.com/our-coffees/ethiopia/limu/nano-challa-cooperative/",
 "id": "F|에티오피아|나노 찰라",
+"nameJa": "ナノ・チャラ精製所",
 "beanCount": 0,
+"producer": "나노 찰라 협동조합 — 카타 무두가 다목적 농협 연합 소속",
+"founded": "2004년 소농 25명으로 창립 · 2010년 첫 워싱스테이션",
+"elevation": "1,850~2,100m (자료에 따라 1,750~2,200m 표기)",
 "story": "오로미아 짐마 존 게라 지역, 아가로 서쪽 겐지 찰라 일대에 있습니다. 2004년 소농 25명이 모여 만든 조합으로, 2010년 지원과 대출로 페나고스 디펄퍼를 갖춘 첫 워싱스테이션을 세워 생두를 개별로 팔던 방식에서 벗어나 워시드 커피를 만들기 시작했습니다. 지금은 회원이 600명을 넘고 두 번째 스테이션까지 세웠으며, 게라 숲의 원생종(74110·74112 등)을 발효조와 아프리칸 베드로 가공합니다.",
 "varieties": "에티오피아 재래종(Heirloom) 74110·74112 등",
 "processes": "워시드 중심",
@@ -21890,19 +23115,19 @@
 "trend": "협동조합이 워싱스테이션을 늘리며 랏 단위 수출을 이어갑니다.",
 "profileLevel": "place",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-coffee-beans-ethiopia.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Coffee_Beans_%28Ethiopia%29.JPG/960px-Coffee_Beans_%28Ethiopia%29.JPG",
+"f": "photos/et-depulper.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Men_by_coffee_peeling_machine%2C_near_awassa.jpg/960px-Men_by_coffee_peeling_machine%2C_near_awassa.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Men_by_coffee_peeling_machine,_near_awassa.jpg",
 "c": {
-"ko": "에티오피아 커피 원두 (국가 대표 사진)",
-"en": "Ethiopia coffee beans (country representative photo)",
-"ja": "エチオピアのコーヒー豆（代表写真）"
+"ko": "펄퍼로 체리의 과육을 벗기는 모습",
+"en": "Running cherry through a pulper",
+"ja": "パルパーでチェリーの果肉を除く様子"
 },
-"a": "Maurice Chédel",
-"l": "CC BY-SA 3.0",
-"lu": "https://creativecommons.org/licenses/by-sa/3.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Coffee_Beans_(Ethiopia).JPG"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -21953,19 +23178,199 @@
 "story": "에티오피아의 남부 에티오피아 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 에티오피아 산지의 공통 특성으로 소개합니다.",
 "profileLevel": "country",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-the-start-of-your-morning-coffee-5984450578.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/The_start_of_your_morning_coffee_%285984450578%29.jpg/960px-The_start_of_your_morning_coffee_%285984450578%29.jpg",
+"f": "photos/et-cherry-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Ethiopia-47.jpg/960px-Ethiopia-47.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Ethiopia-47.jpg",
 "c": {
-"ko": "에티오피아 커피 수확 (국가 대표 사진)",
-"en": "Ethiopia coffee harvest (country representative photo)",
-"ja": "エチオピアのコーヒー収穫（代表写真）"
+"ko": "건조대 위에서 커피 체리를 고르는 모습",
+"en": "Sorting coffee cherries on raised beds",
+"ja": "乾燥棚でコーヒーチェリーを選別する様子"
 },
-"a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:The_start_of_your_morning_coffee_(5984450578).jpg"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
+}
+},
+{
+"kind": "region",
+"country": "에티오피아",
+"name": "방코",
+"nameEn": "Banko",
+"lat": 6.0,
+"lon": 38.25,
+"precision": "region",
+"evidence": "산지 중심(관리자 보정)",
+"id": "R|에티오피아|방코",
+"beanCount": 0,
+"elevation": "약 1,800~2,000m",
+"harvest": "11월~1월 (주 수확기)",
+"terroir": "남부 고지 · 화산성 토양",
+"varieties": "에티오피아 재래종(Heirloom)",
+"processes": "워시드 · 내추럴",
+"flavorProfile": "과일 · 꽃향 · 깨끗한 단맛",
+"trend": "소규모 워싱스테이션 랏이 하나둘 생겼습니다.",
+"story": "남부 고지의 화산성 토양에서 해발 1,800~2,000m 재래종을 기르고, 마을 단위로 체리를 모아 가공합니다. 소농 중심지답게 소규모 랏이 하나둘 늘었습니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-cherry-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Ethiopia-47.jpg/960px-Ethiopia-47.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Ethiopia-47.jpg",
+"c": {
+"ko": "건조대 위에서 커피 체리를 고르는 모습",
+"en": "Sorting coffee cherries on raised beds",
+"ja": "乾燥棚でコーヒーチェリーを選別する様子"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
+}
+},
+{
+"kind": "region",
+"country": "에티오피아",
+"name": "베리티",
+"nameEn": "Beriti",
+"lat": 6.05,
+"lon": 38.18,
+"precision": "region",
+"evidence": "산지 중심(관리자 보정)",
+"id": "R|에티오피아|베리티",
+"beanCount": 0,
+"elevation": "약 1,900~2,100m",
+"harvest": "11월~1월 (주 수확기)",
+"terroir": "게데오 고지 · 원생림 그늘",
+"varieties": "에티오피아 재래종(Heirloom)",
+"processes": "워시드 · 내추럴",
+"flavorProfile": "자스민 · 시트러스 · 깨끗한 단맛",
+"trend": "게데오의 워싱스테이션 랏이 꾸준히 나옵니다.",
+"story": "게데오 고지의 원생림 그늘에서 해발 1,900~2,100m 재래종을 기르고, 워시드·내추럴로 가공합니다. 예가체프와 같은 고지대에 속해 꽃향이 맑은 커피가 납니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-cherry-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Ethiopia-47.jpg/960px-Ethiopia-47.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Ethiopia-47.jpg",
+"c": {
+"ko": "건조대 위에서 커피 체리를 고르는 모습",
+"en": "Sorting coffee cherries on raised beds",
+"ja": "乾燥棚でコーヒーチェリーを選別する様子"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
+}
+},
+{
+"kind": "region",
+"country": "에티오피아",
+"name": "부쿠",
+"nameEn": "Buku",
+"lat": 5.83,
+"lon": 38.62,
+"precision": "region",
+"evidence": "산지 중심(관리자 보정)",
+"id": "R|에티오피아|부쿠",
+"beanCount": 0,
+"elevation": "약 1,800~2,100m",
+"harvest": "11월~1월 (주 수확기)",
+"terroir": "구지 고지 · 원생림",
+"varieties": "에티오피아 재래종(Heirloom)",
+"processes": "내추럴 · 워시드",
+"flavorProfile": "베리 · 꽃향 · 깨끗한 단맛",
+"trend": "구지의 작은 행정구역별 랏이 자주 보입니다.",
+"story": "구지 존의 작은 행정구역으로, 해발 1,800~2,100m 고지의 원생림 아래에서 재래종을 기릅니다. 해발이 높은 밭에서 체리를 모아 마을 단위로 가공해 베리와 꽃향이 차분하게 올라옵니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-depulper.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Men_by_coffee_peeling_machine%2C_near_awassa.jpg/960px-Men_by_coffee_peeling_machine%2C_near_awassa.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Men_by_coffee_peeling_machine,_near_awassa.jpg",
+"c": {
+"ko": "펄퍼로 체리의 과육을 벗기는 모습",
+"en": "Running cherry through a pulper",
+"ja": "パルパーでチェリーの果肉を除く様子"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
+}
+},
+{
+"kind": "region",
+"country": "에티오피아",
+"name": "샨타",
+"nameEn": "Shanta",
+"lat": 5.9,
+"lon": 38.4,
+"precision": "region",
+"evidence": "산지 중심(관리자 보정)",
+"id": "R|에티오피아|샨타",
+"beanCount": 0,
+"elevation": "약 1,800~2,100m",
+"harvest": "11월~1월 (주 수확기)",
+"terroir": "남부 고지 · 화산성 토양",
+"varieties": "에티오피아 재래종(Heirloom)",
+"processes": "워시드 · 내추럴",
+"flavorProfile": "과일 · 꽃향 · 부드러운 단맛",
+"trend": "소규모 랏이 마이크로랏으로 나옵니다.",
+"story": "샨타는 에티오피아 남부 고지의 커피 산지입니다. 화산성 토양의 1,800~2,100m 밭에서 재래종을 기르고, 소농이 마을 단위로 체리를 모아 워시드·내추럴로 가공합니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-cherry-drying.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Coffee_berry_sorting_process%2C_near_Hawassa.jpg/960px-Coffee_berry_sorting_process%2C_near_Hawassa.jpg",
+"a": "Niels Van Iperen",
+"p": "https://commons.wikimedia.org/wiki/File:Coffee_berry_sorting_process,_near_Hawassa.jpg",
+"c": {
+"ko": "햇볕에 말리는 커피 체리",
+"en": "Coffee cherries drying in the sun",
+"ja": "天日で乾かすコーヒーチェリー"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
+}
+},
+{
+"kind": "region",
+"country": "에티오피아",
+"name": "아르시",
+"nameEn": "Arsi",
+"lat": 8.0101011,
+"lon": 39.6716774,
+"precision": "region",
+"evidence": "Arsi, Oromia Region, Ethiopia",
+"id": "R|에티오피아|아르시",
+"beanCount": 0,
+"elevation": "1,700~2,200m",
+"harvest": "10월~1월 (주 수확기)",
+"terroir": "오로미아 중남부 고지 · 화산성 토양 · 큰 일교차",
+"varieties": "에티오피아 재래종(Heirloom)",
+"processes": "워시드 · 내추럴",
+"flavorProfile": "꽃향 · 시트러스 · 깨끗한 단맛",
+"trend": "고지 작은 행정구역별 랏이 스페셜티 시장에 새로 이름을 올렸습니다.",
+"story": "오로미아 중남부 고지의 화산성 토양과 큰 일교차 속, 해발 1,700~2,200m에서 재래종을 기릅니다. 천천히 익은 체리가 향이 맑은 컵을 내고, 최근 스페셜티 시장에 새로 이름을 올렸습니다.",
+"profileLevel": "place",
+"photo": {
+"f": "photos/et-warehouse-bags.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Thousands_of_bean_bags.jpg/960px-Thousands_of_bean_bags.jpg",
+"a": "DFID - UK Department for International Development",
+"p": "https://commons.wikimedia.org/wiki/File:Thousands_of_bean_bags.jpg",
+"c": {
+"ko": "창고에 쌓인 커피 자루",
+"en": "Coffee bags stacked in a warehouse",
+"ja": "倉庫に積まれたコーヒー袋"
+},
+"m": "exact_origin",
+"s": "commons",
+"l": "CC BY 2.0",
+"lu": "https://creativecommons.org/licenses/by/2.0"
 }
 },
 {
@@ -22016,20 +23421,19 @@
 "story": "에티오피아의 오로미야 산지입니다. 이 산지의 개별 연혁·농장 자료는 아직 확인하지 못해, 에티오피아 산지의 공통 특성으로 소개합니다.",
 "profileLevel": "country",
 "photo": {
-"m": "country_fallback",
-"f": "photos/up-sifting-good-beans-from-bad.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Sifting_good_beans_from_bad.jpg/960px-Sifting_good_beans_from_bad.jpg",
+"f": "photos/et-green-sorting.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Women_checking_coffee.jpg/960px-Women_checking_coffee.jpg",
+"a": "Nhb201",
+"p": "https://commons.wikimedia.org/wiki/File:Women_checking_coffee.jpg",
 "c": {
-"ko": "에티오피아 커피 선별 (국가 대표 사진)",
-"en": "Ethiopia coffee sorting (country representative photo)",
-"ja": "エチオピアのコーヒー選別（代表写真）"
+"ko": "생두 선별 라인",
+"en": "A green bean sorting line",
+"ja": "生豆の選別ライン"
 },
-"a": "DFID - UK Department for International Development",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
+"m": "exact_origin",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Sifting_good_beans_from_bad.jpg",
-"o": "50% 62%"
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0"
 }
 },
 {
@@ -29010,7 +30414,7 @@
 "살구",
 "오이"
 ],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|케라모",
 "listingCount": 3,
 "processId": "washed",
 "processGroup": "washed"
@@ -29190,7 +30594,7 @@
 "백합",
 "고구마"
 ],
-"placeId": "R|에티오피아|예가체프",
+"placeId": "F|에티오피아|콩가",
 "listingCount": 3,
 "processId": "washed",
 "processGroup": "washed"
@@ -33822,7 +35226,7 @@
 "파파야",
 "피칸"
 ],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|샨타웨네",
 "listingCount": 2,
 "processId": "natural",
 "processGroup": "natural"
@@ -33918,7 +35322,7 @@
 "로투스비스킷",
 "메이플시럽"
 ],
-"placeId": "R|에티오피아|예가체프",
+"placeId": "F|에티오피아|아메데라로",
 "listingCount": 2,
 "processId": "anaerobic-honey",
 "processGroup": "anaerobic",
@@ -33942,7 +35346,7 @@
 "오크",
 "카카오"
 ],
-"placeId": "R|에티오피아|예가체프",
+"placeId": "F|에티오피아|아메데라로",
 "listingCount": 2,
 "processId": "natural",
 "processGroup": "natural",
@@ -34026,7 +35430,7 @@
 "아몬드크래커",
 "사탕수수"
 ],
-"placeId": "R|에티오피아|예가체프",
+"placeId": "F|에티오피아|콩가",
 "listingCount": 2,
 "processId": "washed",
 "processGroup": "washed"
@@ -34046,7 +35450,7 @@
 "피스타치오",
 "화이트초콜릿"
 ],
-"placeId": "R|에티오피아|예가체프",
+"placeId": "F|에티오피아|할로 베리티",
 "listingCount": 2,
 "processId": "washed",
 "processGroup": "washed"
@@ -34064,7 +35468,7 @@
 "베리",
 "백포도"
 ],
-"placeId": "R|에티오피아|게뎁",
+"placeId": "F|에티오피아|단체",
 "listingCount": 2,
 "processId": "natural",
 "processGroup": "natural"
@@ -34082,7 +35486,7 @@
 "허브",
 "시트러스"
 ],
-"placeId": "R|에티오피아|게뎁",
+"placeId": "F|에티오피아|단체",
 "listingCount": 2,
 "processId": "anaerobic-washed",
 "processGroup": "anaerobic",
@@ -34122,7 +35526,7 @@
 "오렌지블로썸",
 "레몬"
 ],
-"placeId": "R|에티오피아|베리티",
+"placeId": "F|에티오피아|할로 베리티",
 "listingCount": 2,
 "processId": "washed",
 "processGroup": "washed"
@@ -34255,7 +35659,7 @@
 "청사과",
 "밀크초콜릿"
 ],
-"placeId": "R|에티오피아|구지",
+"placeId": "F|에티오피아|아르소살라",
 "listingCount": 2,
 "processId": "washed",
 "processGroup": "washed"
@@ -34375,7 +35779,7 @@
 "사과",
 "호두"
 ],
-"placeId": "R|에티오피아|구지",
+"placeId": "F|에티오피아|아나소라",
 "listingCount": 2,
 "processId": "natural",
 "processGroup": "natural"
@@ -34938,7 +36342,7 @@
 "꿀",
 "스파클링레드와인"
 ],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|샨타웨네",
 "listingCount": 2,
 "processId": "asd",
 "processGroup": "anaerobic",
@@ -35050,7 +36454,7 @@
 "살구",
 "아카시아꿀"
 ],
-"placeId": "R|에티오피아|샨타",
+"placeId": "F|에티오피아|샨타웨네",
 "listingCount": 2,
 "processId": "yellow-honey",
 "processGroup": "honey"
@@ -35126,7 +36530,7 @@
 "라일락",
 "자두"
 ],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|케라모",
 "listingCount": 2,
 "processId": "washed",
 "processGroup": "washed"
@@ -35145,7 +36549,7 @@
 "와이니",
 "브라이트"
 ],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|하마쇼",
 "listingCount": 2,
 "processId": "natural",
 "processGroup": "natural"
@@ -35164,7 +36568,7 @@
 "라임",
 "꿀"
 ],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|하마쇼",
 "listingCount": 2,
 "processId": "washed",
 "processGroup": "washed"
@@ -35221,7 +36625,7 @@
 "참외",
 "파파야"
 ],
-"placeId": "R|에티오피아|아르베고나",
+"placeId": "F|에티오피아|루무다모",
 "listingCount": 2,
 "processId": "natural",
 "processGroup": "natural"
@@ -35239,7 +36643,7 @@
 "플로럴",
 "허브"
 ],
-"placeId": "R|에티오피아|아르베고나",
+"placeId": "F|에티오피아|루무다모",
 "listingCount": 2,
 "processId": "washed",
 "processGroup": "washed"
@@ -35259,7 +36663,7 @@
 "민트",
 "블랙티"
 ],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|훈쿠테",
 "listingCount": 2,
 "processId": "washed",
 "processGroup": "washed"
@@ -35279,7 +36683,7 @@
 "초콜릿",
 "와인"
 ],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|바샤 베켈레",
 "listingCount": 2,
 "processId": "anaerobic-natural",
 "processGroup": "anaerobic",
@@ -35483,7 +36887,7 @@
 "살구",
 "꿀"
 ],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|무라고",
 "listingCount": 2,
 "processId": "natural",
 "processGroup": "natural"
@@ -35835,7 +37239,7 @@
 "다크초콜릿",
 "브라운스파이스"
 ],
-"placeId": "R|에티오피아|예가체프",
+"placeId": "F|에티오피아|콩가",
 "listingCount": 2,
 "processId": "anaerobic",
 "processGroup": "anaerobic"
@@ -35854,7 +37258,7 @@
 "청포도",
 "브라운슈가"
 ],
-"placeId": "R|에티오피아|예가체프",
+"placeId": "F|에티오피아|할로 베리티",
 "listingCount": 2,
 "processId": "washed",
 "processGroup": "washed"
@@ -35930,7 +37334,7 @@
 "자두",
 "라임"
 ],
-"placeId": "R|에티오피아|예가체프",
+"placeId": "F|에티오피아|할로 베리티",
 "listingCount": 2,
 "processId": "washed",
 "processGroup": "washed"
@@ -36109,7 +37513,7 @@
 "청포도",
 "사탕수수"
 ],
-"placeId": "R|에티오피아|예가체프",
+"placeId": "F|에티오피아|이디도",
 "listingCount": 2,
 "processId": "washed",
 "processGroup": "washed"
@@ -36207,7 +37611,7 @@
 "사탕수수",
 "딸기"
 ],
-"placeId": "R|에티오피아|예가체프",
+"placeId": "F|에티오피아|할로 베리티",
 "listingCount": 2,
 "processId": "natural",
 "processGroup": "natural"
@@ -36341,7 +37745,7 @@
 "탠저린",
 "슈가"
 ],
-"placeId": "C|에티오피아",
+"placeId": "F|에티오피아|콩가",
 "listingCount": 2,
 "processId": "natural",
 "processGroup": "natural"
@@ -55337,7 +56741,7 @@
 "variety": null,
 "process": "워시드",
 "cupNotes": [],
-"placeId": "C|에티오피아",
+"placeId": "F|에티오피아|콩가",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -55351,7 +56755,7 @@
 "variety": "Heirloom",
 "process": "워시드",
 "cupNotes": [],
-"placeId": "R|에티오피아|방코",
+"placeId": "F|에티오피아|방코 고티티",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -55379,7 +56783,7 @@
 "variety": "74158",
 "process": "허니",
 "cupNotes": [],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|케라모",
 "listingCount": 1,
 "processId": "honey",
 "processGroup": "honey"
@@ -55593,7 +56997,7 @@
 "variety": "Heirloom varietals",
 "process": "내추럴",
 "cupNotes": [],
-"placeId": "R|에티오피아|예가체프",
+"placeId": "F|에티오피아|첼바",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -55635,7 +57039,7 @@
 "variety": "74158",
 "process": "워시드",
 "cupNotes": [],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|케라모",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -55649,7 +57053,7 @@
 "variety": "74158",
 "process": "워시드",
 "cupNotes": [],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|하마쇼",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -55733,7 +57137,7 @@
 "variety": "Heirloom",
 "process": "워시드",
 "cupNotes": [],
-"placeId": "R|에티오피아|방코",
+"placeId": "F|에티오피아|방코 고티티",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -55831,7 +57235,7 @@
 "variety": null,
 "process": "워시드",
 "cupNotes": [],
-"placeId": "R|에티오피아|부쿠",
+"placeId": "F|에티오피아|부쿠 아벨",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -55879,7 +57283,7 @@
 "variety": null,
 "process": "워시드",
 "cupNotes": [],
-"placeId": "C|에티오피아",
+"placeId": "F|에티오피아|물루게타 문타샤",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -55893,7 +57297,7 @@
 "variety": null,
 "process": "워시드",
 "cupNotes": [],
-"placeId": "C|에티오피아",
+"placeId": "F|에티오피아|물루게타 문타샤",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -55935,7 +57339,7 @@
 "variety": null,
 "process": "내추럴",
 "cupNotes": [],
-"placeId": "C|에티오피아",
+"placeId": "F|에티오피아|넨세보 리리파",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -55949,7 +57353,7 @@
 "variety": null,
 "process": "내추럴",
 "cupNotes": [],
-"placeId": "R|에티오피아|구지",
+"placeId": "F|에티오피아|물루게타 문타샤",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -55991,7 +57395,7 @@
 "variety": null,
 "process": "허니",
 "cupNotes": [],
-"placeId": "C|에티오피아",
+"placeId": "F|에티오피아|무라고",
 "listingCount": 1,
 "processId": "honey",
 "processGroup": "honey"
@@ -56067,7 +57471,7 @@
 "백도",
 "유자마말레이드"
 ],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|바샤 베켈레",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -56153,7 +57557,7 @@
 "variety": null,
 "process": "Washed",
 "cupNotes": [],
-"placeId": "R|에티오피아|구지",
+"placeId": "F|에티오피아|아르소살라",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -56172,7 +57576,7 @@
 "피칸파이",
 "브라운슈가"
 ],
-"placeId": "R|에티오피아|구지",
+"placeId": "F|에티오피아|아르소살라",
 "listingCount": 1,
 "processId": "honey",
 "processGroup": "honey"
@@ -56241,7 +57645,7 @@
 "호두파이",
 "사탕수수"
 ],
-"placeId": "R|에티오피아|예가체프",
+"placeId": "F|에티오피아|아메데라로",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -56308,7 +57712,7 @@
 "variety": null,
 "process": "Natural",
 "cupNotes": [],
-"placeId": "R|에티오피아|예가체프",
+"placeId": "F|에티오피아|콩가",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -56322,7 +57726,7 @@
 "variety": null,
 "process": "Natural",
 "cupNotes": [],
-"placeId": "R|에티오피아|아르시",
+"placeId": "F|에티오피아|넨세보 리리파",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -56341,7 +57745,7 @@
 "다크초콜릿",
 "밤"
 ],
-"placeId": "R|에티오피아|아르시",
+"placeId": "F|에티오피아|넨세보 리리파",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -56561,7 +57965,7 @@
 "버터",
 "캐슈"
 ],
-"placeId": "R|에티오피아|게뎁",
+"placeId": "F|에티오피아|에바 고티티",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -56598,7 +58002,7 @@
 "레몬",
 "허브"
 ],
-"placeId": "R|에티오피아|게뎁",
+"placeId": "F|에티오피아|단체",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -56616,7 +58020,7 @@
 "오렌지",
 "참외"
 ],
-"placeId": "R|에티오피아|게뎁",
+"placeId": "F|에티오피아|라레사",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -56652,7 +58056,7 @@
 "variety": null,
 "process": "내추럴",
 "cupNotes": [],
-"placeId": "R|에티오피아|게뎁",
+"placeId": "F|에티오피아|첼베사",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -56680,7 +58084,7 @@
 "variety": null,
 "process": "내추럴",
 "cupNotes": [],
-"placeId": "R|에티오피아|베리티",
+"placeId": "F|에티오피아|할로 베리티",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -56943,7 +58347,7 @@
 "variety": null,
 "process": "워시드",
 "cupNotes": [],
-"placeId": "R|에티오피아|구지",
+"placeId": "F|에티오피아|수케 쿠토",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -57006,7 +58410,7 @@
 "variety": null,
 "process": "내추럴",
 "cupNotes": [],
-"placeId": "R|에티오피아|구지",
+"placeId": "F|에티오피아|벤티 넨카",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -57026,7 +58430,7 @@
 "레몬",
 "시럽"
 ],
-"placeId": "R|에티오피아|구지",
+"placeId": "F|에티오피아|벤티 넨카",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -57097,7 +58501,7 @@
 "variety": null,
 "process": "내추럴",
 "cupNotes": [],
-"placeId": "R|에티오피아|구지",
+"placeId": "F|에티오피아|아나소라",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -57111,7 +58515,7 @@
 "variety": "74158",
 "process": "내추럴",
 "cupNotes": [],
-"placeId": "R|에티오피아|구지",
+"placeId": "F|에티오피아|아나소라",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -57130,7 +58534,7 @@
 "복숭아",
 "망고"
 ],
-"placeId": "R|에티오피아|구지",
+"placeId": "F|에티오피아|아나소라",
 "listingCount": 1,
 "processId": "honey",
 "processGroup": "honey"
@@ -57447,7 +58851,7 @@
 "오렌지",
 "베르가못"
 ],
-"placeId": "C|에티오피아",
+"placeId": "F|에티오피아|넨세보 리리파",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -57468,7 +58872,7 @@
 "사과",
 "사탕수수"
 ],
-"placeId": "C|에티오피아",
+"placeId": "F|에티오피아|넨세보 리리파",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -57504,7 +58908,7 @@
 "백도",
 "오렌지"
 ],
-"placeId": "R|에티오피아|예가체프",
+"placeId": "F|에티오피아|첼베사",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -57698,7 +59102,7 @@
 "머멀레이드",
 "밀크초콜릿"
 ],
-"placeId": "C|에티오피아",
+"placeId": "F|에티오피아|무라고",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -57804,7 +59208,7 @@
 "variety": null,
 "process": "워시드",
 "cupNotes": [],
-"placeId": "C|에티오피아",
+"placeId": "F|에티오피아|단체",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -57818,7 +59222,7 @@
 "variety": null,
 "process": "허니",
 "cupNotes": [],
-"placeId": "C|에티오피아",
+"placeId": "F|에티오피아|단체",
 "listingCount": 1,
 "processId": "honey",
 "processGroup": "honey"
@@ -57905,7 +59309,7 @@
 "variety": null,
 "process": "내추럴",
 "cupNotes": [],
-"placeId": "C|에티오피아",
+"placeId": "F|에티오피아|라레사",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -58161,7 +59565,7 @@
 "variety": null,
 "process": "내추럴",
 "cupNotes": [],
-"placeId": "C|에티오피아",
+"placeId": "F|에티오피아|무라고",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -58178,7 +59582,7 @@
 "체리",
 "커런트"
 ],
-"placeId": "R|에티오피아|구지",
+"placeId": "F|에티오피아|물루게타 문타샤",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -58196,7 +59600,7 @@
 "탠저린",
 "만다린"
 ],
-"placeId": "C|에티오피아",
+"placeId": "F|에티오피아|물루게타 문타샤",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -58214,7 +59618,7 @@
 "복숭아",
 "사탕수수"
 ],
-"placeId": "C|에티오피아",
+"placeId": "F|에티오피아|물루게타 문타샤",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -58233,7 +59637,7 @@
 "블러드오렌지",
 "캔디"
 ],
-"placeId": "C|에티오피아",
+"placeId": "F|에티오피아|물루게타 문타샤",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -58293,7 +59697,7 @@
 "시트릭",
 "카카오"
 ],
-"placeId": "C|에티오피아",
+"placeId": "F|에티오피아|무라고",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -58311,7 +59715,7 @@
 "오렌지필",
 "살구"
 ],
-"placeId": "C|에티오피아",
+"placeId": "F|에티오피아|무라고",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -58331,7 +59735,7 @@
 "와이니",
 "다크초콜릿"
 ],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|바샤 베켈레",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -58345,7 +59749,7 @@
 "variety": null,
 "process": "워시드",
 "cupNotes": [],
-"placeId": "C|에티오피아",
+"placeId": "F|에티오피아|바샤 베켈레",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -58359,7 +59763,7 @@
 "variety": null,
 "process": "허니",
 "cupNotes": [],
-"placeId": "C|에티오피아",
+"placeId": "F|에티오피아|바샤 베켈레",
 "listingCount": 1,
 "processId": "honey",
 "processGroup": "honey"
@@ -58373,7 +59777,7 @@
 "variety": null,
 "process": "내추럴",
 "cupNotes": [],
-"placeId": "C|에티오피아",
+"placeId": "F|에티오피아|바샤 베켈레",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -58387,7 +59791,7 @@
 "variety": null,
 "process": "무산소 허니",
 "cupNotes": [],
-"placeId": "C|에티오피아",
+"placeId": "F|에티오피아|바샤 베켈레",
 "listingCount": 1,
 "processId": "anaerobic-honey",
 "processGroup": "anaerobic",
@@ -58404,7 +59808,7 @@
 "variety": null,
 "process": "내추럴",
 "cupNotes": [],
-"placeId": "C|에티오피아",
+"placeId": "F|에티오피아|바샤 베켈레",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -58710,7 +60114,7 @@
 "variety": null,
 "process": "무산소 내추럴",
 "cupNotes": [],
-"placeId": "C|에티오피아",
+"placeId": "F|에티오피아|물루게타 문타샤",
 "listingCount": 1,
 "processId": "anaerobic-natural",
 "processGroup": "anaerobic",
@@ -58731,7 +60135,7 @@
 "라즈베리",
 "로즈힙"
 ],
-"placeId": "C|에티오피아",
+"placeId": "F|에티오피아|물루게타 문타샤",
 "listingCount": 1,
 "processId": "anaerobic-natural",
 "processGroup": "anaerobic",
@@ -58894,7 +60298,7 @@
 "variety": null,
 "process": "내추럴",
 "cupNotes": [],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|무라고",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -59029,7 +60433,7 @@
 "얼그레이",
 "꿀"
 ],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|하마쇼",
 "listingCount": 1,
 "processId": "honey",
 "processGroup": "honey"
@@ -59043,7 +60447,7 @@
 "variety": null,
 "process": "워시드",
 "cupNotes": [],
-"placeId": "R|에티오피아|아르베고나",
+"placeId": "F|에티오피아|루무다모",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -59146,7 +60550,7 @@
 "와이니",
 "꿀"
 ],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|하마쇼",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -59168,7 +60572,7 @@
 "꿀",
 "블랙티"
 ],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|하마쇼",
 "listingCount": 1,
 "processId": "black-honey",
 "processGroup": "honey"
@@ -59234,7 +60638,7 @@
 "variety": "HEIRLOOM",
 "process": "내추럴",
 "cupNotes": [],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|샨타웨네",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -59399,7 +60803,7 @@
 "variety": "74158, 74112, 74110",
 "process": "내추럴 Natural",
 "cupNotes": [],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|바샤 베켈레",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -59494,7 +60898,7 @@
 "베르가못",
 "재스민"
 ],
-"placeId": "R|에티오피아|아르베고나",
+"placeId": "F|에티오피아|루무다모",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -59741,7 +61145,7 @@
 "샤인머스캣",
 "블루베리"
 ],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|무라고",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -59778,7 +61182,7 @@
 "리치",
 "라즈베리"
 ],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|하마쇼",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -60107,7 +61511,7 @@
 "바닐라",
 "아몬드"
 ],
-"placeId": "R|에티오피아|예가체프",
+"placeId": "F|에티오피아|콩가",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -60197,7 +61601,7 @@
 "초콜릿",
 "고구마"
 ],
-"placeId": "R|에티오피아|예가체프",
+"placeId": "F|에티오피아|이디도",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -60518,7 +61922,7 @@
 "variety": null,
 "process": "내추럴",
 "cupNotes": [],
-"placeId": "R|에티오피아|예가체프",
+"placeId": "F|에티오피아|라레사",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -60742,7 +62146,7 @@
 "variety": null,
 "process": "워시드",
 "cupNotes": [],
-"placeId": "R|에티오피아|예가체프",
+"placeId": "F|에티오피아|첼베사",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -60953,7 +62357,7 @@
 "블루베리",
 "플로럴"
 ],
-"placeId": "R|에티오피아|예가체프",
+"placeId": "F|에티오피아|콩가",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -61005,7 +62409,7 @@
 "포도",
 "핵과류"
 ],
-"placeId": "R|에티오피아|아르시",
+"placeId": "F|에티오피아|넨세보 리리파",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -61024,7 +62428,7 @@
 "블랙티",
 "쥬시"
 ],
-"placeId": "R|에티오피아|아르시",
+"placeId": "F|에티오피아|넨세보 리리파",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -61217,7 +62621,7 @@
 "복숭아",
 "허브"
 ],
-"placeId": "C|에티오피아",
+"placeId": "F|에티오피아|첼베사",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -61315,7 +62719,7 @@
 "블루베리",
 "청포도"
 ],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|케라모",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -61335,7 +62739,7 @@
 "화이트와인",
 "목련"
 ],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|케라모",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -61354,7 +62758,7 @@
 "블루베리",
 "파인애플"
 ],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|케라모",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -61373,7 +62777,7 @@
 "샤인머스캣",
 "베르가못"
 ],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|케라모",
 "listingCount": 1,
 "processId": "dark-room",
 "processGroup": "anaerobic",
@@ -61395,7 +62799,7 @@
 "샤인머스캣",
 "칸달로프"
 ],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|케라모",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -61414,7 +62818,7 @@
 "황도",
 "복숭아"
 ],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|케라모",
 "listingCount": 1,
 "processId": "experimental-other",
 "processGroup": "other"
@@ -61433,7 +62837,7 @@
 "허니듀",
 "핑크구아바"
 ],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|케라모",
 "listingCount": 1,
 "processId": "dark-room",
 "processGroup": "anaerobic",
@@ -61455,7 +62859,7 @@
 "망고",
 "블루베리"
 ],
-"placeId": "R|에티오피아|시다모",
+"placeId": "F|에티오피아|케라모",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -62088,7 +63492,7 @@
 "variety": null,
 "process": "워시드",
 "cupNotes": [],
-"placeId": "R|에티오피아|할로",
+"placeId": "F|에티오피아|할로 하르투메",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -62102,7 +63506,7 @@
 "variety": null,
 "process": "허니",
 "cupNotes": [],
-"placeId": "R|에티오피아|예가체프",
+"placeId": "F|에티오피아|이디도",
 "listingCount": 1,
 "processId": "honey",
 "processGroup": "honey"
@@ -62172,7 +63576,7 @@
 "variety": null,
 "process": "워시드",
 "cupNotes": [],
-"placeId": "C|에티오피아",
+"placeId": "F|에티오피아|훈쿠테",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
