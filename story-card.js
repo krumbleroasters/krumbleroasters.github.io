@@ -886,9 +886,21 @@
     if (note) note.hidden = n > 0;
   }
 
+  /* GA4 커스텀 이벤트 — gtag가 없거나(광고 차단기 등) 실패해도 화면 동작에 영향이 없어야 합니다. */
+  function track(name, params) {
+    try {
+      if (typeof window.gtag === "function") window.gtag("event", name, params || {});
+    } catch (e) {}
+  }
+
   function init() {
     var btn = document.getElementById("btnStory");
-    if (btn) btn.addEventListener("click", function (e) { e.preventDefault(); openPreview(); });
+    if (btn) btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      var wasClosed = !back;
+      openPreview();
+      if (wasClosed && back) track("story_card_save", { card: "story_9x16", method: "button" });
+    });
     sync();
     document.addEventListener("ci:lang", function () {
       sync();

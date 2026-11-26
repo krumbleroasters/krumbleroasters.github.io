@@ -284,6 +284,11 @@
       return;
     }
 
+    /* GA4 커스텀 이벤트 — QR이 실제로 만들어졌을 때만 보냅니다. gtag가 없어도 오류가 나지 않게 가드를 둡니다. */
+    try {
+      if (typeof window.gtag === "function") window.gtag("event", "qr_generate", { qr_page: "bean_card" });
+    } catch (e) {}
+
     close();
 
     var card = { qr: qr, title: title, sub: sub, hint: hint, name: name, cafe: readCafe() };

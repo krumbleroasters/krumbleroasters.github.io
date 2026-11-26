@@ -74,6 +74,11 @@
 - 51,260곳 데이터는 버리지 않고 작업 폴더에 보존했습니다: `work/cafe-map/archive-20261127-local-cafes/`(README·SHA256SUMS 포함). 생성 스크립트 `work/cafe-map/`·원본 CSV `work/cafe-map/raw/rest_cafes.csv`도 그대로 있습니다.
 - 매일 21시 자동 빌드(`build_final.py`, `build_farms.py`)는 이 메뉴·페이지를 만들지 않으므로 되살아나지 않습니다.
 
+같은 날 GA4 커스텀 이벤트 두 개를 추가했습니다. 둘 다 `typeof window.gtag === "function"` 가드를 두어 광고 차단기 등으로 `gtag`가 없거나 실패해도 화면 동작과 오류에 영향이 없습니다.
+
+- `story_card_save` — `log.html`의 9:16 스토리 카드 `스토리 이미지 저장` 버튼(`#btnStory`)을 눌러 미리보기가 열릴 때 (`card: story_9x16`)
+- `qr_generate` — 원두 카드의 `QR` 버튼으로 QR이 실제로 만들어질 때 (`qr-tools.js`, `qr_page: bean_card`)
+
 ## 2026-11-26: 로컬 카페 지도 (`cafes.html`) — 2026-11-27 내림
 
 프랜차이즈를 뺀 **전국 개인 카페 지도**를 붙였습니다. 상단 메뉴의 `로컬 카페`로 들어갑니다.
