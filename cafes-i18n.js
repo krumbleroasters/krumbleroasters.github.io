@@ -34,6 +34,7 @@
     "이 구역에는 등록된 카페가 없습니다.": "No cafes are registered in this area.||この区域に登録されたカフェはありません。",
     "카페 {}곳": "{} cafes||カフェ{}軒",
     "카페 {}곳 표시 중": "{} cafes shown||カフェ{}軒を表示中",
+    "카페 {}곳 불러옴": "{} cafes loaded||カフェ{}軒を読み込み済み",
     "검색 결과": "Results||検索結果",
     "결과가 없습니다. 동네 이름을 넣거나 지도를 그 동네로 옮겨 보세요.":
       "No match. Try a neighbourhood name, or move the map there.||該当なし。街の名前を入れるか、地図をその街へ移動してください。",

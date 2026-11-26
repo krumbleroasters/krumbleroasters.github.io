@@ -608,7 +608,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
       hit = true;
       n += state.cache[r.code].length;
     });
-    setHint(hit ? t("카페 {}곳 표시 중").replace("{}", fmt(n)) : t("이 구역에는 등록된 카페가 없습니다."));
+    setHint(hit ? t("카페 {}곳 불러옴").replace("{}", fmt(n)) : t("이 구역에는 등록된 카페가 없습니다."));
   }
 
   /* ── 지역 선택 ─────────────────────────────────────────── */
