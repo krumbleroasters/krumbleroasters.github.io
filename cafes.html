@@ -92,12 +92,17 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   .hdrnav a.nav-log:hover,.hdrnav a.nav-log:focus-visible{background:#254B3B;border-color:#254B3B;color:#FFFDF8}
   .hdrnav a.nav-comp,.hdrnav a.nav-comp:visited{background:var(--navcomp);border-color:var(--navcomp);color:#FFFFFF}
   .hdrnav a.nav-comp:hover,.hdrnav a.nav-comp:focus-visible{background:var(--navcomp-deep);border-color:var(--navcomp-deep);color:#FFFFFF}
+  @media(max-width:899px){
+    .hdrrow{flex-wrap:wrap;row-gap:6px}
+    .hdrnav{margin-left:0;width:100%;flex:1 1 100%;justify-content:flex-start;flex-wrap:wrap;gap:6px}
+    .hdrtools{justify-content:flex-start;margin:5px 0 0}
+  }
   @media(max-width:767px){
     .hdrrow{flex-wrap:wrap;row-gap:5px}
     .hdr{padding:9px 12px 8px}
-    .hdrnav{margin-left:0;width:100%;flex:1 1 100%;justify-content:flex-start;flex-wrap:wrap;overflow:visible;row-gap:5px;gap:5px}
+    .hdrnav{row-gap:5px;gap:5px}
     .hdrnav a{font-size:10.5px;padding:5px 9px}
-    .hdrtools{justify-content:flex-start;margin:4px 0 0}
+    .hdrtools{margin:4px 0 0}
     main{padding:6px 10px 80px}
     main h1{font-size:19px}
     main .kicker{display:none}
