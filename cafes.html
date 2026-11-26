@@ -739,6 +739,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
       attribution: '지도 © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>'
     }).addTo(state.map);
 
+    window.__cf = state;   // 확인용 (지도·자료 상태)
     fetch(DATA + "index.json", { cache: "force-cache" })
       .then(function (res) {
         if (!res.ok) throw new Error("HTTP " + res.status);
