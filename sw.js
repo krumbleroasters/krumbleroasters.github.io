@@ -2,7 +2,7 @@
  * 홈 화면 추가(설치) 조건을 채우고, 오프라인에서도 마지막으로 본 화면을 열 수 있게 합니다.
  * 네트워크를 먼저 보고, 실패할 때만 캐시를 씁니다. (beans.json은 항상 최신을 우선)
  */
-const CACHE = "oncoffeelog-v91";
+const CACHE = "oncoffeelog-v92";
 const SHELL = ["/", "/index.html", "/farms.html", "/competitions.html", "/process-data.js?v=20261129a", "/site.css?v=20261128a", "/site-tools.css?v=20261127a", "/site-tools.js?v=20261127a", "/site-notice.js?v=20261130a", "/site-config.json", "/i18n-data.js?v=20261128a", "/i18n-pages.js?v=20261129a", "/i18n-places.js?v=20261128d", "/i18n-competitions.js?v=20261128a", "/i18n.js?v=20261127a", "/photos.js?v=20261127a", "/qrcode.min.js?v=20261122e", "/qr-tools.js?v=20261125b", "/story-map-land.js?v=20261126a", "/story-card.js?v=20261126a", "/cafes.html", "/cafes-i18n.js?v=20261126a", "/data/cafes/index.json", "/icon-192.png"];
 
 self.addEventListener("install", (event) => {
