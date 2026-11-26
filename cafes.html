@@ -579,6 +579,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     fillRegSelect(r.provCode);
     regSel.value = code;
     loadRegion(code).then(function (rows) {
+      state.map.stop();
       state.map.fitBounds([[r.sw[0], r.sw[1]], [r.ne[0], r.ne[1]]], { maxZoom: 15, padding: [12, 12] });
       if (rows && rows.length && fly === "one" && rows.length === 1) {
         state.map.setView([rows[0][2], rows[0][3]], 16);
@@ -742,17 +743,19 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
         buildCafeLayer();
         state.map.addLayer(state.badgeLayer);
         state.map.on("zoomend moveend", syncView);
-        // 전국 뷰: 자료가 있는 지역이 한 화면에 들어오도록 (제주·울릉 포함)
-        var sw = [90, 190], ne = [-90, -190];
-        state.regions.forEach(function (r) {
-          sw[0] = Math.min(sw[0], r.sw[0]); sw[1] = Math.min(sw[1], r.sw[1]);
-          ne[0] = Math.max(ne[0], r.ne[0]); ne[1] = Math.max(ne[1], r.ne[1]);
-        });
-        state.map.fitBounds([sw, ne], { padding: [10, 10] });
-        syncView();
-        // ?r=구역코드 로 바로 열기
+        // ?r=구역코드 로 바로 열기 (있으면 그 구역으로, 없으면 전국 뷰)
         var m = /[?&]r=([a-z0-9\-]+)/i.exec(location.search);
-        if (m && state.byCode[m[1]]) selectRegion(m[1], true);
+        if (m && state.byCode[m[1]]) {
+          selectRegion(m[1], true);
+        } else {
+          var sw = [90, 190], ne = [-90, -190];
+          state.regions.forEach(function (r) {
+            sw[0] = Math.min(sw[0], r.sw[0]); sw[1] = Math.min(sw[1], r.sw[1]);
+            ne[0] = Math.max(ne[0], r.ne[0]); ne[1] = Math.max(ne[1], r.ne[1]);
+          });
+          state.map.fitBounds([sw, ne], { padding: [10, 10] });
+        }
+        syncView();
       })
       .catch(function (err) {
         window.__ciErrors.push("index: " + err);
