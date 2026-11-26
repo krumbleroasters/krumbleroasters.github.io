@@ -8,8 +8,7 @@
   var add = {
     /* ── 제목·소개 ── */
     "로컬 카페": "Local cafes||ローカルカフェ",
-    "전국의 ": "Every ",
-    "를 한 장의 지도에": " local cafe on one map",
+
     "프랜차이즈를 뺀 개인 카페를 시·군·구 단위로 나눠 올렸습니다. 지도를 확대하면 그 동네 카페만 불러옵니다.":
       "Independent cafes, franchise chains left out, split by city and district. Zoom in and only that neighbourhood loads.||フランチャイズを除いた個人カフェを市・郡・区単位で載せました。地図を拡大すると、その街のカフェだけを読み込みます。",
     "개인 카페": "Local cafes||個人カフェ",
@@ -57,6 +56,12 @@
       "Origin map for customers · run by KRUMBLE ROASTERS · no prices or purchase details||お客様向け産地マップ · 運営 KRUMBLE ROASTERS · 価格や仕入れ情報は掲載しません"
   };
   Object.keys(add).forEach(function (k) { if (!T[k]) T[k] = add[k]; });
+
+  /* <em>이 섞인 제목은 태그째 바꿉니다 (열쇠 = 태그를 뺀 글자) */
+  var H = window.CI_I18N.html || (window.CI_I18N.html = {});
+  if (!H["전국의 로컬 카페를 한 장의 지도에"]) {
+    H["전국의 로컬 카페를 한 장의 지도에"] = "Every <em>local cafe</em> in Korea on one map||韓国の<em>ローカルカフェ</em>を一枚の地図に";
+  }
 
   var A = window.CI_I18N.attr || (window.CI_I18N.attr = {});
   var attr = {
