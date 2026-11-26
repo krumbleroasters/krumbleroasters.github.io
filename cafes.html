@@ -461,7 +461,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     });
   }
 
-  var PIN = L.divIcon({ className: "", html: '<span class="pin"></span>', iconSize: [14, 14], iconAnchor: [7, 7] });
+  var PIN = null;   // Leaflet이 준비된 뒤 boot()에서 만듭니다
 
   function popupHtml(c) {
     var name = c[0], addr = c[1], lat = c[2], lng = c[3];
@@ -692,6 +692,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 
   /* ── 시작 ─────────────────────────────────────────────── */
   function boot() {
+    PIN = L.divIcon({ className: "", html: '<span class="pin"></span>', iconSize: [14, 14], iconAnchor: [7, 7] });
     state.map = L.map("cfmap", {
       center: [36.4, 127.7],
       zoom: 7,
