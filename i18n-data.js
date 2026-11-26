@@ -8,6 +8,10 @@
  */
 window.CI_I18N = (function () {
   var T = {
+    "스토리 카드": "Story card||ストーリーカード",
+    "내 기록을 9:16 이미지로 저장해 인스타그램 스토리에 올려 보세요.": "Save your log as a 9:16 image for your Instagram story.||記録を9:16の画像で保存してインスタのストーリーにどうぞ。",
+    "스토리 이미지 저장": "Save story card||ストーリー画像保存",
+    "기록을 1개 이상 추가하면 스토리 카드를 만들 수 있어요": "Add at least one cup to make a story card.||記録を1件以上追加するとストーリーカードを作れます。",
     "농장이 있는 마을 중심 좌표입니다.": "This is the centre of the village the farm sits in.||農園がある村の中心座標です。",
     "일본 내 유통": "Japan market||日本国内流通",
     "일본에서 유통되는 생두 가운데 국내 목록에 없던 품목입니다. 어느 수입사·판매처에서 왔는지는 표시하지 않습니다.": "Green coffee sold in Japan that was not already in the Korean catalogue. The importer or shop it came from is not shown.||韓国側のリストになかった、日本で流通する生豆です。輸入元や販売店は表示しません。",

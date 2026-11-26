@@ -264,6 +264,35 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   .nickrow input{flex:1;min-width:0;min-height:38px;border:1px solid var(--line);border-radius:10px;background:#fff;padding:7px 10px;font-size:13px}
   .nicknote{margin:5px 0 0;font-size:10px;line-height:1.6;color:var(--muted)}
 
+  /* ---------- 스토리 카드 ---------- */
+  .storycard{margin:12px 0 2px;padding:14px 15px 15px;border-radius:16px;background:linear-gradient(180deg,#FFFDF8,#F6EFE2);border:1px solid var(--line);box-shadow:var(--shadow);position:relative;overflow:hidden}
+  .storycard:before{content:"";position:absolute;top:0;bottom:0;left:0;width:4px;background:var(--terra)}
+  .storycard .sctxt b{display:block;font-size:13.5px;font-weight:800;letter-spacing:-.01em}
+  .storycard .sctxt span{display:block;margin-top:3px;font-size:11.5px;line-height:1.55;color:#7A6A57}
+  .storycard .btn{margin-top:11px;width:100%;min-height:46px;font-size:13.5px}
+  .storycard .scnote{margin:9px 0 0;font-size:11px;line-height:1.55;color:var(--muted)}
+  .storycard[data-empty="1"]{background:var(--cream-2);box-shadow:none}
+  .storycard[data-empty="1"] .btn{background:#CFC6B7;color:#FFF8EF}
+
+  /* ---------- 스토리 미리보기 ---------- */
+  .stback{position:fixed;inset:0;z-index:1200;background:rgba(28,24,20,.52);display:flex;align-items:center;justify-content:center;padding:16px}
+  .stmodal{width:100%;max-width:430px;max-height:calc(100vh - 32px);display:flex;flex-direction:column;background:var(--cream);border-radius:20px;box-shadow:0 24px 60px -20px rgba(0,0,0,.5);overflow:hidden}
+  .sthead{display:flex;align-items:flex-start;gap:10px;padding:15px 16px 11px;border-bottom:1px solid var(--line)}
+  .sthead h2{margin:0;font-size:15px;font-weight:800;letter-spacing:-.01em}
+  .sthead p{margin:3px 0 0;font-size:11px;line-height:1.5;color:#7A6A57}
+  .stx{margin-left:auto;flex:none;width:30px;height:30px;border:0;border-radius:50%;background:var(--cream-2);color:var(--ink-soft);font-size:14px;line-height:1}
+  .stbody{padding:13px 16px 16px;overflow:auto}
+  .stprev{display:flex;justify-content:center;padding:2px 0 0}
+  .stprev img{display:block;border-radius:12px;box-shadow:0 12px 30px -16px rgba(34,30,26,.6);background:#fff}
+  .stlong,.sthint{margin:9px 0 0;text-align:center;line-height:1.55}
+  .stlong{font-size:10.5px;color:var(--muted)}
+  .sthint{font-size:10px;color:#A79B89}
+  .stbtns{display:flex;gap:8px;margin-top:11px}
+  .stbtns .btn{flex:1;min-height:46px}
+  .stbtns .btn.done{background:var(--green)}
+  .stbtns .btn[hidden]{display:none}
+  html.st-lock,html.st-lock body{overflow:hidden}
+
   /* ---------- data actions ---------- */
   .datacard{margin:22px 0 6px;padding:13px 14px;background:var(--cream-2);border-radius:14px}
   .datacard p{margin:0 0 10px;font-size:11px;line-height:1.65;color:#7A6A57}
@@ -556,6 +585,15 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 
       <div class="sec-title"><h3>최근 기록</h3><span id="recentCount">0</span></div>
       <div class="recent" id="recentList"></div>
+
+      <section class="storycard" id="storyCard" data-empty="1" aria-label="스토리 카드">
+        <div class="sctxt">
+          <b>스토리 카드</b>
+          <span>내 기록을 9:16 이미지로 저장해 인스타그램 스토리에 올려 보세요.</span>
+        </div>
+        <button class="btn terra" id="btnStory" type="button" disabled aria-disabled="true">스토리 이미지 저장</button>
+        <p class="scnote" id="storyNote" hidden>기록을 1개 이상 추가하면 스토리 카드를 만들 수 있어요</p>
+      </section>
 
       <div class="sec-title"><h3>커피 탐험가 순위</h3><span id="rankPeriodLabel">오늘</span></div>
       <section class="rankbox" id="rankBox" aria-label="커피 탐험가 순위판">
@@ -1816,6 +1854,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     $("#stCountries").innerHTML = countries.size + "<small>개국</small>";
     $("#stLast").textContent = records.length ? fmtShort(records[0].date) : "—";
     $("#recentCount").textContent = records.length;
+    if (window.CIStory) { try { CIStory.sync(); } catch (e) {} }
   }
 
   function renderRecent() {
@@ -2478,6 +2517,27 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     });
   }
 
+  /* ================= 스토리 카드(9:16) 연결 =================
+     story-card.js 는 이 페이지의 기록·사진·산지 좌표만 읽어 캔버스로 카드를 그립니다. */
+  window.CIStoryBridge = {
+    records: function () { return records; },
+    place: function (id) { return id ? (PLACE_BY_ID.get(id) || null) : null; },
+    photo: function (id) { return PhotoDB.get(id); },
+    countryPoint: function (name) {
+      if (!name) return null;
+      for (var i = 0; i < PLACES.length; i++) {
+        var p = PLACES[i];
+        if (p.kind === "country" && p.name === name && typeof p.lat === "number") return { lat: p.lat, lon: p.lon };
+      }
+      for (var j = 0; j < PLACES.length; j++) {
+        var q = PLACES[j];
+        if (q.country === name && typeof q.lat === "number") return { lat: q.lat, lon: q.lon };
+      }
+      return null;
+    },
+    toast: toast
+  };
+
   /* ================= boot ================= */
   function boot() {
     loadRecords();
@@ -2506,5 +2566,8 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   });
 })();
 </script>
+<script src="qrcode.min.js?v=20261122e"></script>
+<script src="story-map-land.js?v=20261126a"></script>
+<script src="story-card.js?v=20261126a"></script>
 </body>
 </html>
