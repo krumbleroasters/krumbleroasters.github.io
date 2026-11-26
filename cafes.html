@@ -814,7 +814,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
           selectRegion(m[1], true);
         } else {
           // 전국 뷰 — 지도 높이에 맞춰 배율 선택 (타일 배율이 1이라 이음매가 없습니다)
-          state.map.setView([35.9, 127.7], window.innerWidth >= 700 ? 7 : 6);
+          state.map.setView([36.05, 127.7], window.innerWidth >= 700 ? 7 : 6);
         }
         syncView();
       })
