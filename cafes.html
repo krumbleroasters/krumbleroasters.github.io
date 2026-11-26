@@ -158,7 +158,8 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     position:relative;z-index:0;isolation:isolate;border:1px solid var(--line);border-radius:var(--r);
     overflow:hidden;box-shadow:var(--shadow);background:#EFE7DA;
   }
-  #cfmap{height:clamp(380px,62vh,700px);width:100%;touch-action:pan-x pan-y}
+  #cfmap{height:clamp(360px,calc(100vh - 395px),720px);width:100%;touch-action:pan-x pan-y}
+  @media(max-width:767px){#cfmap{height:clamp(340px,calc(100vh - 330px),620px)}}
   .leaflet-container{font-family:inherit;background:#EFE7DA}
   .leaflet-tile-pane{filter:sepia(.1) saturate(.92) brightness(1.02)}
   .leaflet-control-attribution{font-size:8.5px!important;background:rgba(251,247,240,.86)!important;color:#6B6259!important;padding:1px 5px!important}
@@ -238,7 +239,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   @media(min-width:768px){
     .cfbar{grid-template-columns:220px 220px 1fr;align-items:end}
     .cfsearch{grid-column:auto}
-    #cfmap{height:clamp(470px,68vh,780px)}
+    #cfmap{height:clamp(440px,calc(100vh - 375px),780px)}
     main h1{font-size:23px}
   }
   @media(min-width:1200px){
