@@ -18946,7 +18946,7 @@
 "u": "https://catastro.coffee/en/cup-of-excellence/colombia-2023/"
 }
 ],
-"beanCount": 1,
+"beanCount": 0,
 "auctions": [
 {
 "id": "coe-colombia-2023-el-refugio-26",
@@ -44931,7 +44931,7 @@
 "u": "https://www.sioptec.co/products/david-ruben-gomez-gomez-colombia-200g"
 }
 ],
-"beanCount": 0,
+"beanCount": 1,
 "terroir": "우일라 라 플라타 라 플로리다 · 가파른 안데스 경사 · 서늘한 미기후",
 "trend": "라 플라타의 마르티르 그룹에 속한 농가로, 게이샤를 정교하게 가공합니다.",
 "profileLevel": "place",
@@ -97285,7 +97285,7 @@
 "variety": null,
 "process": "워시드",
 "cupNotes": [],
-"placeId": "F|콜롬비아|엘 레푸히오",
+"placeId": "F|콜롬비아|엘 레푸히오 (라 플라타)",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
