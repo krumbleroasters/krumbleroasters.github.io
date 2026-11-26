@@ -97,8 +97,8 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     .hdrnav{margin-left:0;width:100%;justify-content:flex-start}
   }
   .hdrtools{display:flex;justify-content:flex-end;margin:6px 0 0}
-  .hdr h1{margin:9px 0 0;font-size:20px;line-height:1.32;letter-spacing:-.025em;font-weight:800}
-  .hdr h1 em{font-style:normal;color:var(--olive)}
+  main h1{margin:2px 0 0;font-size:20px;line-height:1.32;letter-spacing:-.025em;font-weight:800}
+  main h1 em{font-style:normal;color:var(--olive)}
   .stats{display:flex;gap:7px;margin:9px 0 0}
   .stat{flex:1;min-width:0;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:6px 9px 7px}
   .stat b{display:block;font-size:19px;line-height:1.15;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
@@ -111,9 +111,9 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   }
 
   /* ---------- layout ---------- */
-  main{padding:10px 12px 90px;max-width:1240px;margin:0 auto}
+  main{padding:8px 12px 90px;max-width:1240px;margin:0 auto}
   .kicker{margin:0;font-size:9.5px;font-weight:800;letter-spacing:.22em;color:var(--olive);text-transform:uppercase}
-  .lede{margin:7px 0 0;font-size:12.5px;line-height:1.7;color:var(--ink-soft)}
+  .lede{margin:6px 0 0;font-size:12.5px;line-height:1.7;color:var(--ink-soft)}
 
   /* ---------- controls ---------- */
   .cfbar{
@@ -239,11 +239,11 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     .cfbar{grid-template-columns:220px 220px 1fr;align-items:end}
     .cfsearch{grid-column:auto}
     #cfmap{height:clamp(470px,68vh,780px)}
-    .hdr h1{font-size:23px}
+    main h1{font-size:23px}
   }
   @media(min-width:1200px){
     .cfbar{grid-template-columns:240px 240px 1fr}
-    .hdr h1{font-size:25px}
+    main h1{font-size:25px}
   }
 </style>
 </head>
@@ -274,6 +274,9 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
       <button type="button" class="tbtn ghost" data-install>홈 화면 추가</button>
     </div>
   </div>
+</header>
+
+<main>
   <h1>전국의 <em>로컬 카페</em>를 한 장의 지도에</h1>
   <div class="stats" id="cfStats">
     <div class="stat"><b id="stCafes">—</b><span>개인 카페</span></div>
@@ -281,9 +284,6 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     <div class="stat"><b id="stChains">—</b><span>프랜차이즈 제외</span></div>
     <div class="stat"><b id="stDate" class="date">—</b><span>자료 기준일</span></div>
   </div>
-</header>
-
-<main>
   <p class="kicker">Local cafe map</p>
   <p class="lede">프랜차이즈를 뺀 개인 카페를 시·군·구 단위로 나눠 올렸습니다. 지도를 확대하면 그 동네 카페만 불러옵니다.</p>
 
