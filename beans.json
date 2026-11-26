@@ -7,29 +7,29 @@
 "beans": 3121,
 "listings": 4207,
 "countries": 39,
-"places": 728,
+"places": 729,
 "regions": 226,
-"farms": 468,
+"farms": 469,
 "jpBeans": 292,
 "auctions": 728,
 "auctionPlaces": 384
 },
 "precision": {
-"farm": 86,
-"region": 982,
-"village": 492,
-"country": 1561
+"farm": 87,
+"region": 984,
+"village": 502,
+"country": 1548
 },
 "coordSource": "Photon/OpenStreetMap (ODbL), 일부 주요 산지는 관리 중심지 좌표로 보정",
 "profileFill": {
-"elevation": 412,
-"harvest": 393,
-"terroir": 395,
-"varieties": 709,
-"processes": 708,
-"flavorProfile": 392,
-"trend": 386,
-"story": 667
+"elevation": 428,
+"harvest": 410,
+"terroir": 412,
+"varieties": 725,
+"processes": 724,
+"flavorProfile": 409,
+"trend": 403,
+"story": 682
 },
 "profileFallback": 58,
 "process": {
@@ -96,7 +96,7 @@
 "precision": "country",
 "evidence": "Guatemala, Guatemala",
 "id": "C|과테말라",
-"beanCount": 149,
+"beanCount": 146,
 "auctions": [
 {
 "id": "coe-guatemala-2024-los-andes-nw",
@@ -158,7 +158,7 @@
 "precision": "country",
 "evidence": "Brazil, Brazil",
 "id": "C|브라질",
-"beanCount": 146,
+"beanCount": 145,
 "auctions": [
 {
 "id": "coe-brazil-2024-sitio-pedro-varinha-3",
@@ -1920,6 +1920,10 @@
 "u": "https://scap-panama.com/haciendaesmeralda/"
 }
 ],
+"varieties": "게이샤 · 카투아이 · 카투라",
+"processes": "워시드 · 내추럴",
+"flavorProfile": "자스민 · 베르가못 · 열대과일",
+"harvest": "12월~3월 (주 수확기)",
 "auctions": [
 {
 "id": "bop-2024-gw-08",
@@ -1969,11 +1973,7 @@
 }
 ],
 "auctionCount": 2,
-"harvest": "12월~3월 (주 수확기)",
 "terroir": "보케테 팔미라·카냐스 베르데스 + 바루 화산 자락 자라미요",
-"varieties": "게이샤 · 카투아이 · 카투라",
-"processes": "워시드 · 내추럴",
-"flavorProfile": "자스민 · 베르가못 · 열대과일",
 "trend": "게이샤를 세계에 알린 농장으로, 구획별 미세 랏을 계속 냅니다.",
 "profileLevel": "place",
 "photo": {
@@ -3050,11 +3050,11 @@
 "u": "https://bibliotecadigital.univalle.edu.co/server/api/core/bitstreams/36a3d066-e462-478e-adb2-9726d8aa62ba/content"
 }
 ],
-"harvest": "3월~6월 · 10~12월",
-"terroir": "카우카 피엔다모 협곡 · 화산성 토양 · 잦은 안개",
 "varieties": "카스티요 · 버번 · 게이샤",
 "processes": "더블 무산소 · 열충격(thermal shock)",
 "flavorProfile": "장미 · 리치 · 열대과일 · 진한 단맛",
+"harvest": "3월~6월 · 10~12월",
+"terroir": "카우카 피엔다모 협곡 · 화산성 토양 · 잦은 안개",
 "trend": "정밀 발효 연구회사를 세워 가공법 자체를 상품으로 만든 농장입니다.",
 "profileLevel": "place",
 "photo": {
@@ -3071,42 +3071,6 @@
 "lu": "",
 "s": "commons",
 "p": "https://commons.wikimedia.org/wiki/File:Coffee_farm_in_Colombia_(4604545436).jpg"
-}
-},
-{
-"kind": "region",
-"country": "탄자니아",
-"name": "킬리만자로",
-"nameEn": "Kilimanjaro",
-"lat": -3.3,
-"lon": 37.35,
-"precision": "region",
-"evidence": "산지 중심(관리자 보정)",
-"id": "R|탄자니아|킬리만자로",
-"beanCount": 16,
-"elevation": "1,400~1,900m",
-"harvest": "7월~12월 (주 수확기)",
-"terroir": "킬리만자로 화산 자락 · 화산성 토양 · 서늘한 고지",
-"varieties": "버번 · 켄트",
-"processes": "워시드 중심",
-"flavorProfile": "베리 · 시트러스 · 홍차",
-"trend": "소농 협동조합 랏이 꾸준히 나오며, 마테레니 같은 마을 랏이 알려져 있습니다.",
-"story": "킬리만자로는 아프리카 최고봉 자락의 커피 산지입니다. 화산 경사의 비옥한 토양과 서늘한 기후, 1,400~1,900m 고도에서 버번·켄트를 기르고, 소농이 협동조합에서 워시드로 가공합니다. 마테레니 같은 마을 랏이 이름을 얻었습니다.",
-"profileLevel": "place",
-"photo": {
-"m": "country_fallback",
-"f": "photos/up-coffee-farm-near-karatu-06.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Coffee_Farm_near_Karatu_%2806%29.jpg/960px-Coffee_Farm_near_Karatu_%2806%29.jpg",
-"c": {
-"ko": "탄자니아 커피 건조 (국가 대표 사진)",
-"en": "Tanzania coffee drying (country representative photo)",
-"ja": "タンザニアのコーヒー乾燥（代表写真）"
-},
-"a": "Zenith4237",
-"l": "CC BY-SA 4.0",
-"lu": "https://creativecommons.org/licenses/by-sa/4.0",
-"s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Coffee_Farm_near_Karatu_(06).jpg"
 }
 },
 {
@@ -3264,6 +3228,42 @@
 "lu": "https://creativecommons.org/licenses/by-sa/4.0/",
 "s": "commons",
 "p": "https://commons.wikimedia.org/wiki/File:Coffee_farmers_at_work.jpg"
+}
+},
+{
+"kind": "region",
+"country": "탄자니아",
+"name": "킬리만자로",
+"nameEn": "Kilimanjaro",
+"lat": -3.3,
+"lon": 37.35,
+"precision": "region",
+"evidence": "산지 중심(관리자 보정)",
+"id": "R|탄자니아|킬리만자로",
+"beanCount": 14,
+"elevation": "1,400~1,900m",
+"harvest": "7월~12월 (주 수확기)",
+"terroir": "킬리만자로 화산 자락 · 화산성 토양 · 서늘한 고지",
+"varieties": "버번 · 켄트",
+"processes": "워시드 중심",
+"flavorProfile": "베리 · 시트러스 · 홍차",
+"trend": "소농 협동조합 랏이 꾸준히 나오며, 마테레니 같은 마을 랏이 알려져 있습니다.",
+"story": "킬리만자로는 아프리카 최고봉 자락의 커피 산지입니다. 화산 경사의 비옥한 토양과 서늘한 기후, 1,400~1,900m 고도에서 버번·켄트를 기르고, 소농이 협동조합에서 워시드로 가공합니다. 마테레니 같은 마을 랏이 이름을 얻었습니다.",
+"profileLevel": "place",
+"photo": {
+"m": "country_fallback",
+"f": "photos/up-coffee-farm-near-karatu-06.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Coffee_Farm_near_Karatu_%2806%29.jpg/960px-Coffee_Farm_near_Karatu_%2806%29.jpg",
+"c": {
+"ko": "탄자니아 커피 건조 (국가 대표 사진)",
+"en": "Tanzania coffee drying (country representative photo)",
+"ja": "タンザニアのコーヒー乾燥（代表写真）"
+},
+"a": "Zenith4237",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0",
+"s": "commons",
+"p": "https://commons.wikimedia.org/wiki/File:Coffee_Farm_near_Karatu_(06).jpg"
 }
 },
 {
@@ -3503,15 +3503,15 @@
 "u": "https://ceremonycoffee.com/products/ethiopia-keramo-1"
 }
 ],
-"beanCount": 12,
 "elevation": "1,800~2,360m (스테이션 주변 2,260~2,360m)",
-"harvest": "12월~2월",
-"terroir": "봄베 산맥 고지 · 큰 일교차로 늦게 익는 체리 · 붉은 화산성 토양",
+"story": "시다마 벤사, 봄베 산맥 자락의 케라모 마을에 있습니다. 데일 벤사가 마을 안에 스테이션을 두어 농가가 멀리 체리를 옮기지 않아도 되게 했고, 381~1,500 소농이 2,260~2,360m 밭에서 낸 체리를 받습니다. 고도가 높아 체리가 늦게 익고 씨앗이 작고 단단해집니다. 데일 벤사는 이 스테이션 커피로 2020년 에티오피아 CoE에서 상을 받았습니다.",
 "varieties": "74158 · 74112 중심",
 "processes": "워시드 · 내추럴",
 "flavorProfile": "레몬그라스 · 홍차 · 흑설탕 · 백복숭아 · 구아바",
+"harvest": "12월~2월",
+"beanCount": 12,
+"terroir": "봄베 산맥 고지 · 큰 일교차로 늦게 익는 체리 · 붉은 화산성 토양",
 "trend": "에티오피아에서 가장 높은 곳의 스테이션 중 하나로 고밀도 소립 랏이 특징입니다.",
-"story": "시다마 벤사, 봄베 산맥 자락의 케라모 마을에 있습니다. 데일 벤사가 마을 안에 스테이션을 두어 농가가 멀리 체리를 옮기지 않아도 되게 했고, 381~1,500 소농이 2,260~2,360m 밭에서 낸 체리를 받습니다. 고도가 높아 체리가 늦게 익고 씨앗이 작고 단단해집니다. 데일 벤사는 이 스테이션 커피로 2020년 에티오피아 CoE에서 상을 받았습니다.",
 "profileLevel": "place",
 "photo": {
 "f": "photos/et-cherry-sorting.jpg",
@@ -3631,6 +3631,10 @@
 "u": "https://hotelfincalerida.com/finca-lerida-coffee-history/"
 }
 ],
+"varieties": "카투아이 · 카투라 · 게이샤",
+"processes": "워시드 · 허니·내추럴",
+"flavorProfile": "꿀 · 시트러스 · 부드러운 바디",
+"harvest": "12월~3월 (주 수확기)",
 "auctions": [
 {
 "id": "bop-2026-gn-01",
@@ -3660,11 +3664,7 @@
 }
 ],
 "auctionCount": 1,
-"harvest": "12월~3월 (주 수확기)",
 "terroir": "보케테 · 바루 화산 자락",
-"varieties": "카투아이 · 카투라 · 게이샤",
-"processes": "워시드 · 허니·내추럴",
-"flavorProfile": "꿀 · 시트러스 · 부드러운 바디",
 "trend": "오래된 농장이 호텔·관광과 결합해 랏 단위 커피를 꾸준히 냅니다.",
 "profileLevel": "place",
 "photo": {
@@ -4172,11 +4172,11 @@
 "u": "https://www.cafedonmayocr.com/nosotros.php"
 }
 ],
-"harvest": "11월~3월 (주 수확기)",
-"terroir": "타라수 산 마르코스 · 화산성 토양 · 고지",
 "varieties": "카투아이 · 카투라 · 게이샤",
 "processes": "허니 · 내추럴 · 워시드",
 "flavorProfile": "꿀 · 시트러스 · 붉은 과일",
+"harvest": "11월~3월 (주 수확기)",
+"terroir": "타라수 산 마르코스 · 화산성 토양 · 고지",
 "trend": "마이크로밀 초기 주자로, 랏마다 이름을 붙여 파는 방식을 이어갑니다.",
 "profileLevel": "place",
 "photo": {
@@ -4224,11 +4224,11 @@
 "u": "https://roasttocup.coffee/dictionary/el-diviso-nestor-lasso-estate-profile/"
 }
 ],
-"harvest": "10월~1월 · 5~7월",
-"terroir": "우일라 피탈리토 브루셀라스 · 노르만디아 마을",
 "varieties": "시드라 · 옴블리곤 · 핑크 버번 · 게이샤",
 "processes": "긴 무산소 발효 · 워시드·내추럴",
 "flavorProfile": "열대과일 · 장미 · 시럽 같은 바디",
+"harvest": "10월~1월 · 5~7월",
+"terroir": "우일라 피탈리토 브루셀라스 · 노르만디아 마을",
 "trend": "세계 바리스타 대회 우승 커피를 잇따라 배출하며 긴 발효 랏으로 알려졌습니다.",
 "profileLevel": "place",
 "photo": {
@@ -4268,6 +4268,10 @@
 "u": "https://www.cafenogales.co.kr/product/ETR1954"
 }
 ],
+"varieties": "수단 루메 · 오렌지 버번",
+"processes": "모스토(체리 주스) 발효 · 워시드",
+"flavorProfile": "열대과일 · 오렌지 · 긴 단맛",
+"harvest": "10월~1월 · 5~7월",
 "auctions": [
 {
 "id": "coe-colombia-2023-el-triunfo-6",
@@ -4294,11 +4298,7 @@
 }
 ],
 "auctionCount": 1,
-"harvest": "10월~1월 · 5~7월",
 "terroir": "우일라 피탈리토 · 브루셀라스 계곡",
-"varieties": "수단 루메 · 오렌지 버번",
-"processes": "모스토(체리 주스) 발효 · 워시드",
-"flavorProfile": "열대과일 · 오렌지 · 긴 단맛",
 "trend": "가족 농장이 체리 주스를 발효에 쓰는 방식으로 계속 실험합니다.",
 "profileLevel": "place",
 "photo": {
@@ -4347,11 +4347,11 @@
 "u": "https://archerscoffee.com/products/panama-kotowa-coffee-las-brujas-lot-6934"
 }
 ],
-"harvest": "12월~3월 (주 수확기)",
-"terroir": "보케테 엘 살토 구름숲 · 코토와 농장 구획",
 "varieties": "게이샤 · 카투아이 · 카투라",
 "processes": "워시드 · 내추럴",
 "flavorProfile": "자스민 · 시트러스 · 진한 단맛",
+"harvest": "12월~3월 (주 수확기)",
+"terroir": "보케테 엘 살토 구름숲 · 코토와 농장 구획",
 "trend": "코토와 농장의 고지 구획으로, 게이샤 랏이 대회에 꾸준히 오릅니다.",
 "profileLevel": "place",
 "photo": {
@@ -4442,12 +4442,12 @@
 "u": "https://blackboardcoffee.com.au/blogs/the-coffee-board/gesha-village-release"
 }
 ],
-"beanCount": 10,
-"harvest": "11월~1월 (주 수확기)",
-"terroir": "원생림 그늘 · 적갈색 양토 · 벤치 마지 고지",
 "varieties": "게샤 1931 · 고리 게샤 · 일루바보르 포리스트",
 "processes": "내추럴 중심 · 워시드 · 무산소·허니 랏",
 "flavorProfile": "자스민 · 오렌지 블로섬 · 베르가못 · 살구",
+"harvest": "11월~1월 (주 수확기)",
+"beanCount": 10,
+"terroir": "원생림 그늘 · 적갈색 양토 · 벤치 마지 고지",
 "trend": "블록(나르샤·수르마·오마·가일리 등) 단위로 나눠 내는 랏과 무산소·허니 실험 랏이 늘었습니다.",
 "profileLevel": "place",
 "photo": {
@@ -4491,11 +4491,11 @@
 "u": "https://www.inmaculadacoffeefarms.com/about-us"
 }
 ],
-"harvest": "10월~1월 · 5~7월",
-"terroir": "칼리 피친데 · 파라요네스 데 칼리 국립공원 기슭 · 구름숲",
 "varieties": "게이샤 · 수단 루메 · 라우리나 · 에우헤니오이데스",
 "processes": "워시드 · 허니 · 내추럴",
 "flavorProfile": "자스민 · 베르가못 · 열대과일",
+"harvest": "10월~1월 · 5~7월",
+"terroir": "칼리 피친데 · 파라요네스 데 칼리 국립공원 기슭 · 구름숲",
 "trend": "희귀 품종을 구획별로 나눠 재배하며 랏 단위로 내놓습니다.",
 "profileLevel": "place",
 "photo": {
@@ -4587,6 +4587,12 @@
 "u": "https://bursaspecialitycoffee.com/"
 }
 ],
+"elevation": "2,185~2,400m",
+"story": "시다마 아르베고나의 부르사 마을에 있습니다. 물루게타 문타샤는 트럭 운전사로 커피를 실어 나르며 일을 배운 뒤 2021년 고향으로 돌아와 다웬초라는 건조장을 세웠습니다. 10년 넘게 커피에 몸담아 온 그는 부르사와 이웃 마을 300~600 소농의 74158 체리를 받아 가공합니다. 2022년 CoE에서 다웬초 농가 그룹 커피가 2위, 본인 커피가 6위에 올랐고 상위 10개 중 네 랏이 그의 스테이션에서 나왔습니다. 일부 유통 라벨에는 이 랏을 구지로 적어 내기도 합니다. 냉방과 환기를 갖춘 암실에서 60일 동안 말리는 다크룸 드라잉 내추럴과, 이웃 후레 마을 밭의 블랙허니 랏도 이 건조장에서 나옵니다.",
+"varieties": "74158 중심",
+"processes": "워시드 · 내추럴 · 다크룸 드라잉 내추럴 · 블랙허니",
+"flavorProfile": "백작약 · 레몬 · 살구 · 야생화 꿀",
+"harvest": "12월~2월",
 "beanCount": 9,
 "auctions": [
 {
@@ -4637,14 +4643,8 @@
 }
 ],
 "auctionCount": 2,
-"elevation": "2,185~2,400m",
-"harvest": "12월~2월",
 "terroir": "아르베고나 고지 · 큰 일교차 · 유기질 많은 토양",
-"varieties": "74158 중심",
-"processes": "워시드 · 내추럴 · 다크룸 드라잉 내추럴 · 블랙허니",
-"flavorProfile": "백작약 · 레몬 · 살구 · 야생화 꿀",
 "trend": "부르사 마을이 새 커피 산지로 떠오르면서 대회 상위권에 이름을 올렸습니다.",
-"story": "시다마 아르베고나의 부르사 마을에 있습니다. 물루게타 문타샤는 트럭 운전사로 커피를 실어 나르며 일을 배운 뒤 2021년 고향으로 돌아와 다웬초라는 건조장을 세웠습니다. 10년 넘게 커피에 몸담아 온 그는 부르사와 이웃 마을 300~600 소농의 74158 체리를 받아 가공합니다. 2022년 CoE에서 다웬초 농가 그룹 커피가 2위, 본인 커피가 6위에 올랐고 상위 10개 중 네 랏이 그의 스테이션에서 나왔습니다. 일부 유통 라벨에는 이 랏을 구지로 적어 내기도 합니다. 냉방과 환기를 갖춘 암실에서 60일 동안 말리는 다크룸 드라잉 내추럴과, 이웃 후레 마을 밭의 블랙허니 랏도 이 건조장에서 나옵니다.",
 "profileLevel": "place",
 "photo": {
 "f": "photos/et-cherry-drying.jpg",
@@ -4695,6 +4695,12 @@
 "u": "https://www.coffeesketcher.com/people/basha-bekele"
 }
 ],
+"elevation": "2,350~2,580m (밭마다 다름)",
+"story": "시다마 동부 벤사에서 네 곳의 밭을 가진 소농이자 밀 운영자입니다. 아버지에게 배운 대로 커피를 기르다가 소농도 수출할 수 있게 된 뒤 자기 이름으로 랏을 내기 시작했습니다. 2024년 에티오피아 CoE에서 내추럴 74158로 90.50점을 받아 두 랏(1A·1B)이 공동 1위에 올랐고, 경매에서도 가장 높은 평가를 받았습니다. 이웃 100여 농가의 체리를 함께 받아 그늘에서 천천히 말리는 방식으로 알려져 있습니다. 밭은 벤사 무라고 안쪽 바다갈로와 차리초, 곤조베로 나뉘고 가장 높은 곤조베 밭은 2,580m에 이릅니다. 체리는 봄베의 자기 드라이밀에서 마무리합니다.",
+"varieties": "74158 중심 · 74112 · 74165",
+"processes": "내추럴 · 레드 허니 · 무산소 허니 · 워시드",
+"flavorProfile": "망고 · 베르가못 · 파인애플 · 레몬그라스",
+"harvest": "12월~2월",
 "beanCount": 9,
 "auctions": [
 {
@@ -4796,14 +4802,8 @@
 }
 ],
 "auctionCount": 5,
-"elevation": "2,350~2,580m (밭마다 다름)",
-"harvest": "12월~2월",
 "terroir": "벤사 동쪽 고지 · 그늘 건조 · 반원생림",
-"varieties": "74158 중심 · 74112 · 74165",
-"processes": "내추럴 · 레드 허니 · 무산소 허니 · 워시드",
-"flavorProfile": "망고 · 베르가못 · 파인애플 · 레몬그라스",
 "trend": "소농이 직접 수출하며 자기 이름으로 랏을 내는 새 세대의 대표 사례입니다.",
-"story": "시다마 동부 벤사에서 네 곳의 밭을 가진 소농이자 밀 운영자입니다. 아버지에게 배운 대로 커피를 기르다가 소농도 수출할 수 있게 된 뒤 자기 이름으로 랏을 내기 시작했습니다. 2024년 에티오피아 CoE에서 내추럴 74158로 90.50점을 받아 두 랏(1A·1B)이 공동 1위에 올랐고, 경매에서도 가장 높은 평가를 받았습니다. 이웃 100여 농가의 체리를 함께 받아 그늘에서 천천히 말리는 방식으로 알려져 있습니다. 밭은 벤사 무라고 안쪽 바다갈로와 차리초, 곤조베로 나뉘고 가장 높은 곤조베 밭은 2,580m에 이릅니다. 체리는 봄베의 자기 드라이밀에서 마무리합니다.",
 "profileLevel": "place",
 "photo": {
 "f": "photos/et-cherry-sorting.jpg",
@@ -4883,11 +4883,11 @@
 "u": "https://www.covoyacoffee.com/p609650-1-elsalvador-finca-montevideo.html"
 }
 ],
-"harvest": "11월~3월 (주 수확기)",
-"terroir": "산살바도르 화산 자락 · 화산재 토양",
 "varieties": "버번 · 파카스 · 파카마라",
 "processes": "워시드 중심 · 허니·내추럴",
 "flavorProfile": "카라멜 · 붉은 사과 · 둥근 단맛",
+"harvest": "11월~3월 (주 수확기)",
+"terroir": "산살바도르 화산 자락 · 화산재 토양",
 "trend": "가문이 오래 운영해 온 농장으로, 랏 단위 선별과 가공 실험을 이어갑니다.",
 "profileLevel": "place",
 "photo": {
@@ -4932,11 +4932,11 @@
 "u": "https://www.sustainableharvest.com/las-lajas"
 }
 ],
-"harvest": "11월~3월 (주 수확기)",
-"terroir": "포아스 화산 기슭 사바니야 데 알라후엘라",
 "varieties": "카투라 · 카투아이",
 "processes": "허니 · 내추럴 중심",
 "flavorProfile": "꿀 · 열대과일 · 진한 단맛",
+"harvest": "11월~3월 (주 수확기)",
+"terroir": "포아스 화산 기슭 사바니야 데 알라후엘라",
 "trend": "허니 가공을 일찍부터 밀어붙여 '블랙 다이아몬드' 같은 랏으로 이름을 알렸습니다.",
 "profileLevel": "place",
 "photo": {
@@ -5395,6 +5395,10 @@
 "u": "https://scap-panama.com/lamastus-coffees/"
 }
 ],
+"varieties": "게이샤 · 카투아이 · 카투라",
+"processes": "워시드 · 내추럴",
+"flavorProfile": "자스민 · 열대과일 · 긴 여운",
+"harvest": "12월~3월 (주 수확기)",
 "auctions": [
 {
 "id": "bop-2024-gn-01",
@@ -5444,11 +5448,7 @@
 }
 ],
 "auctionCount": 2,
-"harvest": "12월~3월 (주 수확기)",
 "terroir": "보케테 알토 키엘 · 바루 화산 국립공원 인접",
-"varieties": "게이샤 · 카투아이 · 카투라",
-"processes": "워시드 · 내추럴",
-"flavorProfile": "자스민 · 열대과일 · 긴 여운",
 "trend": "파나마에서 가장 높은 곳에 커피를 심는 농장으로, 경매 기록을 이어갑니다.",
 "profileLevel": "place",
 "photo": {
@@ -5496,13 +5496,79 @@
 "u": "https://www.groundsforempowerment.com/karen-bonilla"
 }
 ],
-"harvest": "11월~3월 (주 수확기)",
-"terroir": "산타 로사 데 리마 엘 카리살 · 안아카페 지역",
 "varieties": "게이샤 · 옐로 버번 · 파카마라",
 "processes": "무산소 · 카보닉 매서레이션 · 워시드",
 "flavorProfile": "열대과일 · 꽃향 · 진한 단맛",
+"harvest": "11월~3월 (주 수확기)",
+"terroir": "산타 로사 데 리마 엘 카리살 · 안아카페 지역",
 "trend": "무산소·카보닉 매서레이션 실험으로 지역 대회 상위에 꾸준히 오릅니다.",
 "profileLevel": "place",
+"photo": {
+"m": "country_fallback",
+"f": "photos/up-guatemala-2011-228-san-mart-n-jilotepeque-coffee-harvest.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Guatemala_2011_228_-_San_Mart%C3%ADn_Jilotepeque_Coffee_Harvest.jpg/960px-Guatemala_2011_228_-_San_Mart%C3%ADn_Jilotepeque_Coffee_Harvest.jpg",
+"c": {
+"ko": "과테말라 커피 건조 (국가 대표 사진)",
+"en": "Guatemala coffee drying (country representative photo)",
+"ja": "グアテマラのコーヒー乾燥（代表写真）"
+},
+"a": "Caffe Vita",
+"l": "CC BY 2.0",
+"lu": "https://creativecommons.org/licenses/by/2.0",
+"s": "commons",
+"p": "https://commons.wikimedia.org/wiki/File:Guatemala_2011_228_-_San_Mart%C3%ADn_Jilotepeque_Coffee_Harvest.jpg"
+}
+},
+{
+"id": "F|과테말라|로스마",
+"kind": "farm",
+"country": "과테말라",
+"name": "로스마",
+"nameEn": "Finca Rosma",
+"nameJa": "ロスマ農園",
+"lat": 15.552,
+"lon": -91.766,
+"precision": "village",
+"evidence": "우에우에테낭고 산 페드로 넥타 · OSM/Photon",
+"source": "https://www.openstreetmap.org/?mlat=15.552&mlon=-91.766#map=12/15.552/-91.766",
+"alias": [],
+"elevation": "1,700~2,000m",
+"harvest": "12월~4월",
+"terroir": "쿠추마탄스 산맥 사면 · 서늘한 밤과 배수가 잘 되는 화산성 토양",
+"varieties": "게이샤 · 파카마라 · 버번 · 카투라",
+"processes": "워시드 · 내추럴 · 허니",
+"flavorProfile": "붉은 베리 · 시트러스 · 꽃향, 깨끗한 단맛",
+"trend": "프레디 모랄레스가 이웃 농가의 체리까지 모아 가공하며 산 페드로 넥타 일대의 품질을 끌어올리고 있습니다.",
+"story": "로스마는 1963년 알레한드로 모랄레스가 산 밭을 사면서 시작됐고, 1980년 아들 프레디가 아내 로즈 메리의 이름을 붙여 지금의 이름이 됐습니다. 우에우에테낭고 산 페드로 넥타의 높은 사면에 있고, 가문이 직접 가공과 수출까지 맡습니다.",
+"producer": "프레디 모랄레스 (모랄레스 가문)",
+"founded": "1963년",
+"lang": {
+"en": {
+"elevation": "1,700–2,000 m",
+"harvest": "December–April",
+"terroir": "Slopes of the Cuchumatanes · cool nights and free-draining volcanic soil",
+"varieties": "Geisha · Pacamara · Bourbon · Caturra",
+"processes": "Washed · natural · honey",
+"flavorProfile": "Red berries · citrus · florals, clean sweetness",
+"trend": "Fredy Morales now gathers cherry from neighbouring farms as well, lifting quality across San Pedro Necta.",
+"story": "Rosma began in 1963 when Alejandro Morales bought a hillside plot, and took its name in 1980 when his son Fredy named it after his wife, Rose Mary. It sits on the high slopes of San Pedro Necta in Huehuetenango, with the family handling processing and export themselves.",
+"producer": "Fredy Morales (Morales family)",
+"founded": "1963"
+},
+"ja": {
+"elevation": "1,700〜2,000m",
+"harvest": "12月〜4月",
+"terroir": "クチュマタネス山脈の斜面・冷涼な夜と水はけのよい火山性土壌",
+"varieties": "ゲイシャ・パカマラ・ブルボン・カトゥーラ",
+"processes": "ウォッシュド・ナチュラル・ハニー",
+"flavorProfile": "赤いベリー・シトラス・花の香り、きれいな甘さ",
+"trend": "フレディ・モラレスが近隣農家のチェリーも集めて加工し、サン・ペドロ・ネクタ一帯の品質を引き上げています。",
+"story": "ロスマは1963年にアレハンドロ・モラレスが山の土地を買ったことから始まり、1980年に息子フレディが妻ローズ・メアリーの名を付けて今の名前になりました。ウエウエテナンゴのサン・ペドロ・ネクタの高い斜面にあり、家族が加工と輸出まで担っています。",
+"producer": "フレディ・モラレス（モラレス家）",
+"founded": "1963年"
+}
+},
+"beanCount": 7,
 "photo": {
 "m": "country_fallback",
 "f": "photos/up-guatemala-2011-228-san-mart-n-jilotepeque-coffee-harvest.jpg",
@@ -5793,15 +5859,15 @@
 "u": "https://fuglencoffee.jp/en/blogs/coffee-beans/riripa-organic"
 }
 ],
-"beanCount": 7,
 "elevation": "1,900~2,100m",
-"harvest": "11월~1월",
-"terroir": "웨스트 아르시 고지 · 수확기 이슬비 · 유기농 재배",
+"story": "오로미아 웨스트 아르시, 넨세보의 리리파 마을에 있습니다. 2019년 문을 연 SNAP의 스테이션으로 742~822 소농이 1,900~2,100m 밭에서 낸 체리를 받습니다. 품종은 월리쇼와 쿠루메가 중심이고, 유기농 인증을 받은 랏도 있습니다. 같은 넨세보 안의 하지 베트로와 시설을 함께 쓰던 시절이 있었고, 지금은 워시드와 내추럴을 모두 냅니다. 웨스트 아르시는 예가체프보다 과일향이 앞서고 홍차 같은 질감이 뒤따르는 것으로 알려졌습니다. 같은 넨세보 지역의 메와·타데세 데기페 같은 농가 랏도 이 카드에 함께 모였습니다.",
 "varieties": "월리쇼 · 쿠루메",
 "processes": "워시드 · 내추럴",
 "flavorProfile": "파파야 · 오렌지 · 복숭아 · 홍차",
+"harvest": "11월~1월",
+"beanCount": 7,
+"terroir": "웨스트 아르시 고지 · 수확기 이슬비 · 유기농 재배",
 "trend": "웨스트 아르시가 새 산지로 뜨는 과정에서 실험실 같은 역할을 한 스테이션입니다.",
-"story": "오로미아 웨스트 아르시, 넨세보의 리리파 마을에 있습니다. 2019년 문을 연 SNAP의 스테이션으로 742~822 소농이 1,900~2,100m 밭에서 낸 체리를 받습니다. 품종은 월리쇼와 쿠루메가 중심이고, 유기농 인증을 받은 랏도 있습니다. 같은 넨세보 안의 하지 베트로와 시설을 함께 쓰던 시절이 있었고, 지금은 워시드와 내추럴을 모두 냅니다. 웨스트 아르시는 예가체프보다 과일향이 앞서고 홍차 같은 질감이 뒤따르는 것으로 알려졌습니다. 같은 넨세보 지역의 메와·타데세 데기페 같은 농가 랏도 이 카드에 함께 모였습니다.",
 "profileLevel": "place",
 "photo": {
 "f": "photos/et-warehouse-bags.jpg",
@@ -5847,15 +5913,15 @@
 "u": "https://wideawake.coffee/blogs/producer-story/bekele-kachara"
 }
 ],
-"beanCount": 7,
 "elevation": "2,100~2,350m (자료에 따라 2,625m까지 표기)",
-"harvest": "12월~2월",
-"terroir": "봄베 산맥 남쪽 고지 · 화산회 토양 · 반원생림",
+"story": "시다마 벤사, 봄베 산맥 남쪽의 무라고 마을에 있습니다. 최근 몇 해 사이 이 마을에 스테이션이 잇달아 들어섰습니다. 데일 벤사의 코르마 콘토마는 2,100~2,300m에서 74158 중심의 내추럴·워시드를 내고, 무라고 커피는 68헥타르 농장과 3,000여 소농을 묶어 2,100~2,625m 커피를 내보냅니다. 베켈레 카차라 가문은 2,350m 위성 사이트에서 아들 벨라이가 가공을 맡아 무산소·워시드 실험을 이어 갑니다.",
 "varieties": "74158 중심 · 재래종",
 "processes": "내추럴 · 워시드 · 허니 · 무산소",
 "flavorProfile": "라즈베리 · 자스민 · 살구",
+"harvest": "12월~2월",
+"beanCount": 7,
+"terroir": "봄베 산맥 남쪽 고지 · 화산회 토양 · 반원생림",
 "trend": "한 마을에 스테이션이 몰리면서 새로 부상한 벤사 고지로 꼽힙니다.",
-"story": "시다마 벤사, 봄베 산맥 남쪽의 무라고 마을에 있습니다. 최근 몇 해 사이 이 마을에 스테이션이 잇달아 들어섰습니다. 데일 벤사의 코르마 콘토마는 2,100~2,300m에서 74158 중심의 내추럴·워시드를 내고, 무라고 커피는 68헥타르 농장과 3,000여 소농을 묶어 2,100~2,625m 커피를 내보냅니다. 베켈레 카차라 가문은 2,350m 위성 사이트에서 아들 벨라이가 가공을 맡아 무산소·워시드 실험을 이어 갑니다.",
 "profileLevel": "place",
 "photo": {
 "f": "photos/et-green-sorting.jpg",
@@ -6270,6 +6336,10 @@
 "u": "https://fincaelinjerto.com/awards/"
 }
 ],
+"varieties": "버번 · 카투아이 · 카투라 · 게이샤 · 파카마라",
+"processes": "워시드 중심 · 허니·내추럴",
+"flavorProfile": "붉은 과일 · 초콜릿 · 긴 단맛",
+"harvest": "12월~3월 (주 수확기)",
 "auctions": [
 {
 "id": "coe-guatemala-2025-el-injerto-i-5",
@@ -6296,11 +6366,7 @@
 }
 ],
 "auctionCount": 1,
-"harvest": "12월~3월 (주 수확기)",
 "terroir": "우에우에테낭고 라 리베르타드 · 석회질 토양 · 그늘 재배",
-"varieties": "버번 · 카투아이 · 카투라 · 게이샤 · 파카마라",
-"processes": "워시드 중심 · 허니·내추럴",
-"flavorProfile": "붉은 과일 · 초콜릿 · 긴 단맛",
 "trend": "품종별 구획 재배와 자체 가공으로 대회 기록을 이어갑니다.",
 "profileLevel": "place",
 "photo": {
@@ -6483,15 +6549,15 @@
 "u": "https://hydrangea.coffee/products/landrace-natural-hamasho"
 }
 ],
-"beanCount": 6,
 "elevation": "2,300~2,400m",
-"harvest": "12월~2월",
-"terroir": "봄베 칠라카·케라모 사이 고지 · 낮은 습도 · 큰 일교차",
+"story": "시다마 벤사에서 오로미아 경계에 가까운 하마쇼 보레나 마을에 있습니다. 마을 이름은 이 지역을 처음 연 하마쇼라는 사람에게서 왔습니다. 2,300~2,400m로 에티오피아에서 가장 높은 스테이션에 속하고, 161 공급자(자료에 따라 600가구 이상)가 주로 74158을 기릅니다. 건조대 130개와 발효조 14기를 갖추고 내추럴은 16~20일, 워시드는 72시간 발효 뒤 10~13일 말립니다.",
 "varieties": "74158 중심",
 "processes": "내추럴 · 워시드 · 무산소(내추럴·워시드)",
 "flavorProfile": "멜론 · 패션프루트 · 블루베리",
+"harvest": "12월~2월",
+"beanCount": 6,
+"terroir": "봄베 칠라카·케라모 사이 고지 · 낮은 습도 · 큰 일교차",
 "trend": "74158 단일 품종 랏과 무산소 계열로 벤사 고지의 기준을 보여 주는 스테이션입니다.",
-"story": "시다마 벤사에서 오로미아 경계에 가까운 하마쇼 보레나 마을에 있습니다. 마을 이름은 이 지역을 처음 연 하마쇼라는 사람에게서 왔습니다. 2,300~2,400m로 에티오피아에서 가장 높은 스테이션에 속하고, 161 공급자(자료에 따라 600가구 이상)가 주로 74158을 기릅니다. 건조대 130개와 발효조 14기를 갖추고 내추럴은 16~20일, 워시드는 72시간 발효 뒤 10~13일 말립니다.",
 "profileLevel": "place",
 "photo": {
 "f": "photos/et-cherry-drying.jpg",
@@ -6653,11 +6719,11 @@
 "u": "https://sca.coffee/sca-news/community/instagram-live-crg-virtual-origin-trip-to-guatemala-fm355"
 }
 ],
-"harvest": "12월~2월 (주 수확기)",
-"terroir": "치말테낭고 아카테낭고 고지 · 화산성 토양",
 "varieties": "30가지가 넘는 품종을 구획별 재배 (레드 파카마라·게이샤 등)",
 "processes": "워시드 · 허니 · 내추럴 등 나노 랏 단위 가공",
 "flavorProfile": "꽃향 · 시트러스 · 진한 단맛",
+"harvest": "12월~2월 (주 수확기)",
+"terroir": "치말테낭고 아카테낭고 고지 · 화산성 토양",
 "trend": "'나노 랏' 단위로 품종·가공을 나눠 내놓는 방식으로 알려졌습니다.",
 "profileLevel": "place",
 "photo": {
@@ -6769,6 +6835,10 @@
 "u": "https://dlccoffee.com/historia/"
 }
 ],
+"varieties": "12가지가 넘는 품종 (파카마라·게이샤·버번 등)",
+"processes": "워시드 중심 · 허니·내추럴",
+"flavorProfile": "카라멜 · 시트러스 · 긴 단맛",
+"harvest": "12월~3월 (주 수확기)",
 "auctions": [
 {
 "id": "coe-guatemala-2026-el-socorro-3",
@@ -6841,11 +6911,7 @@
 }
 ],
 "auctionCount": 3,
-"harvest": "12월~3월 (주 수확기)",
 "terroir": "팔렌시아 산지 · 사유 산림 보호구역 · 화산성 토양",
-"varieties": "12가지가 넘는 품종 (파카마라·게이샤·버번 등)",
-"processes": "워시드 중심 · 허니·내추럴",
-"flavorProfile": "카라멜 · 시트러스 · 긴 단맛",
 "trend": "산림 보호구역을 둔 농장으로, 품종 다양화와 가공 실험을 계속합니다.",
 "profileLevel": "place",
 "photo": {
@@ -6892,6 +6958,40 @@
 "ウン・レガロ",
 "エル・ディオス"
 ],
+"producer": "루이스 알베르토 바야다레스 몬카다 (Luis Alberto Balladarez Moncada) · 아들 루이스 가디엘과 함께",
+"founded": "가문 4대째 · 2010년 인수 (2004년 라스 세고비아스 가공장 설립)",
+"elevation": "1,350~1,800m",
+"story": "누에바 세고비아 모손테의 키술리 아리바, 온두라스 국경의 디필토-할라파 산맥 자락에 있습니다. 오코탈에서 32km 들어간 183헥타르 농장 가운데 62헥타르에 커피를 심었고, 1,350~1,800m의 구아바·소나무 그늘에서 파카마라와 마라카투라, 카투아이를 기릅니다. 농장주 루이스 알베르토 바야다레스 몬카다는 4대째 커피를 재배하는 농학자로, 가문은 온두라스에서 디필토로 옮겨와 커피를 시작했습니다. 내전 때 온두라스로 피했다가 1990년대 돌아와 오코탈에서 커피 수출을 시작했고, 2004년 라스 세고비아스 가공장을 세운 뒤 2010년 이 농장을 샀습니다. 농장 안 웻밀에서 발효·세척한 뒤 가공장의 파티오와 건조대에서 20~35일 천천히 말리고, 이웃 농가 체리까지 함께 선별합니다.",
+"varieties": "파카마라 · 마라카투라 · 카투아이(레드·옐로) · 버번 · 자바 · 마르셀레사 · 카티모르",
+"processes": "워시드 36시간 발효 · 허니 · 내추럴 · 파티오·건조대에서 20~35일",
+"flavorProfile": "붉은 과일 · 체리 · 자두 · 시나몬 · 부드러운 산미",
+"harvest": "12월~3월 (주 수확기)",
+"awards": [
+"Cup of Excellence 니카라과 2026 8위(88.00 · 마라카투라 내추럴)",
+"CoE 니카라과 2025 8위(88.14 · 마라카투라 내추럴)",
+"CoE 니카라과 2022 3위(89.53 · 마라카투라 내추럴)",
+"CoE 니카라과 2021 6위(89.79)",
+"CoE 니카라과 2018 5a·5b위(90.22 · 레드 파카마라 허니)",
+"CoE 니카라과 2017 13위(87.91)"
+],
+"refs": [
+{
+"t": "농장 소개",
+"u": "https://www.roastmasters.com/nicaragua-regalo.html"
+},
+{
+"t": "재배·가공 조사",
+"u": "https://cenida.una.edu.ni/Pasantia/panf01b188.pdf"
+},
+{
+"t": "CoE 수상 기록",
+"u": "https://catastro.coffee/en/finca/un-regalo-de-dios/"
+},
+{
+"t": "생산자 소개",
+"u": "https://carrborocoffee.com/luis_alberto_balladarez/"
+}
+],
 "beanCount": 5,
 "auctions": [
 {
@@ -6919,42 +7019,8 @@
 }
 ],
 "auctionCount": 1,
-"elevation": "1,350~1,800m",
-"harvest": "12월~3월 (주 수확기)",
 "terroir": "디필토-할라파 산맥 · 모손테 키술리 아리바 · 구아바·소나무 그늘",
-"varieties": "파카마라 · 마라카투라 · 카투아이(레드·옐로) · 버번 · 자바 · 마르셀레사 · 카티모르",
-"processes": "워시드 36시간 발효 · 허니 · 내추럴 · 파티오·건조대에서 20~35일",
-"flavorProfile": "붉은 과일 · 체리 · 자두 · 시나몬 · 부드러운 산미",
 "trend": "같은 농장 라벨로 대회 상위 랏을 꾸준히 내며, 최근에는 마라카투라 내추럴로 상위에 올랐습니다.",
-"story": "누에바 세고비아 모손테의 키술리 아리바, 온두라스 국경의 디필토-할라파 산맥 자락에 있습니다. 오코탈에서 32km 들어간 183헥타르 농장 가운데 62헥타르에 커피를 심었고, 1,350~1,800m의 구아바·소나무 그늘에서 파카마라와 마라카투라, 카투아이를 기릅니다. 농장주 루이스 알베르토 바야다레스 몬카다는 4대째 커피를 재배하는 농학자로, 가문은 온두라스에서 디필토로 옮겨와 커피를 시작했습니다. 내전 때 온두라스로 피했다가 1990년대 돌아와 오코탈에서 커피 수출을 시작했고, 2004년 라스 세고비아스 가공장을 세운 뒤 2010년 이 농장을 샀습니다. 농장 안 웻밀에서 발효·세척한 뒤 가공장의 파티오와 건조대에서 20~35일 천천히 말리고, 이웃 농가 체리까지 함께 선별합니다.",
-"producer": "루이스 알베르토 바야다레스 몬카다 (Luis Alberto Balladarez Moncada) · 아들 루이스 가디엘과 함께",
-"founded": "가문 4대째 · 2010년 인수 (2004년 라스 세고비아스 가공장 설립)",
-"refs": [
-{
-"t": "농장 소개",
-"u": "https://www.roastmasters.com/nicaragua-regalo.html"
-},
-{
-"t": "재배·가공 조사",
-"u": "https://cenida.una.edu.ni/Pasantia/panf01b188.pdf"
-},
-{
-"t": "CoE 수상 기록",
-"u": "https://catastro.coffee/en/finca/un-regalo-de-dios/"
-},
-{
-"t": "생산자 소개",
-"u": "https://carrborocoffee.com/luis_alberto_balladarez/"
-}
-],
-"awards": [
-"Cup of Excellence 니카라과 2026 8위(88.00 · 마라카투라 내추럴)",
-"CoE 니카라과 2025 8위(88.14 · 마라카투라 내추럴)",
-"CoE 니카라과 2022 3위(89.53 · 마라카투라 내추럴)",
-"CoE 니카라과 2021 6위(89.79)",
-"CoE 니카라과 2018 5a·5b위(90.22 · 레드 파카마라 허니)",
-"CoE 니카라과 2017 13위(87.91)"
-],
 "profileLevel": "place",
 "photo": {
 "m": "country_fallback",
@@ -7052,15 +7118,15 @@
 "u": "https://www.greatcirclecoffee.com/products/danche-washed"
 }
 ],
-"beanCount": 5,
 "elevation": "2,000~2,300m",
-"harvest": "11월~1월",
-"terroir": "첼베사 안쪽 골짜기 · 반원생림 · 붉고 부식질 많은 토양",
+"story": "첼베사 안쪽, 단체라 불리는 작은 마을에 있습니다. 첼베사 스테이션이 감당하기 어려워지자 SNAP이 2019년 문을 연 두 번째 사이트로, 400~800 소농이 체리를 냅니다. 세라믹 발효조에서 36~96시간 발효하고 12~14일 건조하며, 워시드로 시작해 내추럴·허니·무산소 랏까지 넓혔습니다. 2024년 에티오피아 CoE에서 상위권에 오른 랏의 상당수가 게뎁 이웃 마을에서 나왔을 만큼 요즘 주목받는 골짜기입니다.",
 "varieties": "쿠루메 · 월리쇼 중심",
 "processes": "워시드 · 내추럴 · 허니 · 무산소 워시드",
 "flavorProfile": "자두 · 홍차 · 흑설탕",
+"harvest": "11월~1월",
+"beanCount": 5,
+"terroir": "첼베사 안쪽 골짜기 · 반원생림 · 붉고 부식질 많은 토양",
 "trend": "첼베사와 함께 게뎁을 독립된 마이크로 리전으로 알린 스테이션입니다.",
-"story": "첼베사 안쪽, 단체라 불리는 작은 마을에 있습니다. 첼베사 스테이션이 감당하기 어려워지자 SNAP이 2019년 문을 연 두 번째 사이트로, 400~800 소농이 체리를 냅니다. 세라믹 발효조에서 36~96시간 발효하고 12~14일 건조하며, 워시드로 시작해 내추럴·허니·무산소 랏까지 넓혔습니다. 2024년 에티오피아 CoE에서 상위권에 오른 랏의 상당수가 게뎁 이웃 마을에서 나왔을 만큼 요즘 주목받는 골짜기입니다.",
 "profileLevel": "place",
 "photo": {
 "f": "photos/et-cherry-drying.jpg",
@@ -7109,15 +7175,15 @@
 "u": "https://www.allycoffee.com/coffees/yirgacheffe-chelbesa-washed/"
 }
 ],
-"beanCount": 5,
 "elevation": "1,900~2,220m",
-"harvest": "11월~1월",
-"terroir": "반(半)원생림의 엔세트·그늘나무 아래 · 게데오 문화경관",
+"story": "게뎁 마을 바로 동쪽, 워카 첼베사 마을에 있습니다. 네구세 데벨라가 2017년 이곳에서 시작한 SNAP 스페셜티 커피의 첫 사이트로, 지금은 680~760 소농이 1,900~2,220m 밭에서 낸 체리를 받습니다. 세라믹 발효조에서 48~72시간 발효하고 수로에서 밀도로 나눈 뒤 10~14일 말리는데, 발효조가 빨리 데워져 잡맛이 덜 생긴다고 합니다. 워시드와 함께 내추럴·허니·실험 랏도 냅니다.",
 "varieties": "월리쇼 · 데가 · 쿠루메 (74110·74112)",
 "processes": "워시드 중심 · 내추럴 · 실험 랏",
 "flavorProfile": "캐러멜 · 귤 · 아몬드 · 라임 · 오렌지 블로섬",
+"harvest": "11월~1월",
+"beanCount": 5,
+"terroir": "반(半)원생림의 엔세트·그늘나무 아래 · 게데오 문화경관",
 "trend": "세라믹 발효조와 마을별 분리 랏으로 게뎁 마이크로 로트의 기준을 세웠다는 평가를 받습니다.",
-"story": "게뎁 마을 바로 동쪽, 워카 첼베사 마을에 있습니다. 네구세 데벨라가 2017년 이곳에서 시작한 SNAP 스페셜티 커피의 첫 사이트로, 지금은 680~760 소농이 1,900~2,220m 밭에서 낸 체리를 받습니다. 세라믹 발효조에서 48~72시간 발효하고 수로에서 밀도로 나눈 뒤 10~14일 말리는데, 발효조가 빨리 데워져 잡맛이 덜 생긴다고 합니다. 워시드와 함께 내추럴·허니·실험 랏도 냅니다.",
 "profileLevel": "place",
 "photo": {
 "f": "photos/et-depulper.jpg",
@@ -7205,15 +7271,15 @@
 "u": "https://haceacoffee.com/products/ethiopia-yirgacheffe-halo-beriti-grade-1-washed"
 }
 ],
-"beanCount": 5,
 "elevation": "1,900~2,300m",
-"harvest": "11월~1월 (에티오피아에서 가장 늦은 수확)",
-"terroir": "원생림 그늘(비르비라·아카시아) · 강가의 붉은 점토 · 큰 일교차",
+"story": "게데오 존 게뎁의 베리티 마을에 있습니다. 강가에 선 스테이션 둘레로 원생림이 이어지고, 비르비라와 아카시아 그늘 아래 1,000여 소농이 2헥타르 안팎의 밭에서 커피를 기릅니다. 2012년 문을 연 스테이션을 2017년 아베요트 아게제와 메브라투 아이나렘이 세운 볼레두 커피가 맡으면서, 체리를 낸 농가에 품질에 따라 값을 더 얹고 랏을 따로 나눠 가공하는 방식이 자리 잡았습니다. 고도가 높아 에티오피아에서 수확이 가장 늦은 편이고, 워시드는 48~72시간 발효 뒤 10~12일, 내추럴은 14~21일을 건조대에서 말립니다.",
 "varieties": "월리쇼 · 데가 (JARC 74110·74112)",
 "processes": "워시드 · 내추럴 · 허니 · 무산소 발효",
 "flavorProfile": "자스민 · 복숭아 · 라임",
+"harvest": "11월~1월 (에티오피아에서 가장 늦은 수확)",
+"beanCount": 5,
+"terroir": "원생림 그늘(비르비라·아카시아) · 강가의 붉은 점토 · 큰 일교차",
 "trend": "스테이션 단위로 랏을 나누고 허니·무산소 실험 랏을 늘리는 중입니다.",
-"story": "게데오 존 게뎁의 베리티 마을에 있습니다. 강가에 선 스테이션 둘레로 원생림이 이어지고, 비르비라와 아카시아 그늘 아래 1,000여 소농이 2헥타르 안팎의 밭에서 커피를 기릅니다. 2012년 문을 연 스테이션을 2017년 아베요트 아게제와 메브라투 아이나렘이 세운 볼레두 커피가 맡으면서, 체리를 낸 농가에 품질에 따라 값을 더 얹고 랏을 따로 나눠 가공하는 방식이 자리 잡았습니다. 고도가 높아 에티오피아에서 수확이 가장 늦은 편이고, 워시드는 48~72시간 발효 뒤 10~12일, 내추럴은 14~21일을 건조대에서 말립니다.",
 "profileLevel": "place",
 "photo": {
 "f": "photos/et-cherry-sorting.jpg",
@@ -7861,72 +7927,6 @@
 "trend": "온두라스 국경의 소농 산지로, 협동조합 랏이 자주 나옵니다.",
 "story": "누에보 오리엔테는 과테말라 동부, 온두라스 국경에 가까운 화산 산지입니다. 1,200~1,700m에서 건조한 바람이 불어 곰팡이 위험이 적고, 소농 중심으로 버번·카투아이·카투라를 기릅니다. 카라멜과 초콜릿, 부드러운 단맛이 나오고 규모는 크지 않지만 꾸준히 커피가 나옵니다.",
 "profileLevel": "place",
-"photo": {
-"m": "country_fallback",
-"f": "photos/up-guatemala-2011-228-san-mart-n-jilotepeque-coffee-harvest.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Guatemala_2011_228_-_San_Mart%C3%ADn_Jilotepeque_Coffee_Harvest.jpg/960px-Guatemala_2011_228_-_San_Mart%C3%ADn_Jilotepeque_Coffee_Harvest.jpg",
-"c": {
-"ko": "과테말라 커피 건조 (국가 대표 사진)",
-"en": "Guatemala coffee drying (country representative photo)",
-"ja": "グアテマラのコーヒー乾燥（代表写真）"
-},
-"a": "Caffe Vita",
-"l": "CC BY 2.0",
-"lu": "https://creativecommons.org/licenses/by/2.0",
-"s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Guatemala_2011_228_-_San_Mart%C3%ADn_Jilotepeque_Coffee_Harvest.jpg"
-}
-},
-{
-"id": "F|과테말라|로스마",
-"kind": "farm",
-"country": "과테말라",
-"name": "로스마",
-"nameEn": "Finca Rosma",
-"nameJa": "ロスマ農園",
-"lat": 15.552,
-"lon": -91.766,
-"precision": "village",
-"evidence": "우에우에테낭고 산 페드로 넥타 · OSM/Photon",
-"source": "https://www.openstreetmap.org/?mlat=15.552&mlon=-91.766#map=12/15.552/-91.766",
-"elevation": "1,700~2,000m",
-"harvest": "12월~4월",
-"terroir": "쿠추마탄스 산맥 사면 · 서늘한 밤과 배수가 잘 되는 화산성 토양",
-"varieties": "게이샤 · 파카마라 · 버번 · 카투라",
-"processes": "워시드 · 내추럴 · 허니",
-"flavorProfile": "붉은 베리 · 시트러스 · 꽃향, 깨끗한 단맛",
-"trend": "프레디 모랄레스가 이웃 농가의 체리까지 모아 가공하며 산 페드로 넥타 일대의 품질을 끌어올리고 있습니다.",
-"story": "로스마는 1963년 알레한드로 모랄레스가 산 밭을 사면서 시작됐고, 1980년 아들 프레디가 아내 로즈 메리의 이름을 붙여 지금의 이름이 됐습니다. 우에우에테낭고 산 페드로 넥타의 높은 사면에 있고, 가문이 직접 가공과 수출까지 맡습니다.",
-"producer": "프레디 모랄레스 (모랄레스 가문)",
-"founded": "1963년",
-"lang": {
-"en": {
-"elevation": "1,700–2,000 m",
-"harvest": "December–April",
-"terroir": "Slopes of the Cuchumatanes · cool nights and free-draining volcanic soil",
-"varieties": "Geisha · Pacamara · Bourbon · Caturra",
-"processes": "Washed · natural · honey",
-"flavorProfile": "Red berries · citrus · florals, clean sweetness",
-"trend": "Fredy Morales now gathers cherry from neighbouring farms as well, lifting quality across San Pedro Necta.",
-"story": "Rosma began in 1963 when Alejandro Morales bought a hillside plot, and took its name in 1980 when his son Fredy named it after his wife, Rose Mary. It sits on the high slopes of San Pedro Necta in Huehuetenango, with the family handling processing and export themselves.",
-"producer": "Fredy Morales (Morales family)",
-"founded": "1963"
-},
-"ja": {
-"elevation": "1,700〜2,000m",
-"harvest": "12月〜4月",
-"terroir": "クチュマタネス山脈の斜面・冷涼な夜と水はけのよい火山性土壌",
-"varieties": "ゲイシャ・パカマラ・ブルボン・カトゥーラ",
-"processes": "ウォッシュド・ナチュラル・ハニー",
-"flavorProfile": "赤いベリー・シトラス・花の香り、きれいな甘さ",
-"trend": "フレディ・モラレスが近隣農家のチェリーも集めて加工し、サン・ペドロ・ネクタ一帯の品質を引き上げています。",
-"story": "ロスマは1963年にアレハンドロ・モラレスが山の土地を買ったことから始まり、1980年に息子フレディが妻ローズ・メアリーの名を付けて今の名前になりました。ウエウエテナンゴのサン・ペドロ・ネクタの高い斜面にあり、家族が加工と輸出まで担っています。",
-"producer": "フレディ・モラレス（モラレス家）",
-"founded": "1963年"
-}
-},
-"market": "jp",
-"beanCount": 4,
 "photo": {
 "m": "country_fallback",
 "f": "photos/up-guatemala-2011-228-san-mart-n-jilotepeque-coffee-harvest.jpg",
@@ -8675,6 +8675,10 @@
 "u": "https://www.coffeesketcher.com/origins/finca-el-cambalache"
 }
 ],
+"varieties": "마라카투라 · 게이샤 · 시드라",
+"processes": "긴 무산소 발효 · 아프리칸 베드 건조",
+"flavorProfile": "열대과일 · 꽃향 · 진한 단맛",
+"harvest": "11월~3월 (주 수확기)",
 "auctions": [
 {
 "id": "coe-nicaragua-2026-el-cambalache-1a",
@@ -8701,11 +8705,7 @@
 }
 ],
 "auctionCount": 1,
-"harvest": "11월~3월 (주 수확기)",
 "terroir": "누에바 세고비아 디필토 · 소농 밭",
-"varieties": "마라카투라 · 게이샤 · 시드라",
-"processes": "긴 무산소 발효 · 아프리칸 베드 건조",
-"flavorProfile": "열대과일 · 꽃향 · 진한 단맛",
 "trend": "작은 농장에서 긴 발효와 정밀 건조로 대회 기록을 이어갑니다.",
 "profileLevel": "place",
 "photo": {
@@ -8754,11 +8754,11 @@
 "u": "https://allianceforcoffeeexcellence.org/nicaragua-2026/"
 }
 ],
-"harvest": "11월~3월 (주 수확기)",
-"terroir": "누에바 세고비아 모손테 엘 피나베테 · 로스 아라도스",
 "varieties": "게이샤 · SL28 · SL34 · 핑크 버번",
 "processes": "워시드 · 허니 · 내추럴",
 "flavorProfile": "꽃향 · 붉은 과일 · 긴 단맛",
+"harvest": "11월~3월 (주 수확기)",
+"terroir": "누에바 세고비아 모손테 엘 피나베테 · 로스 아라도스",
 "trend": "구획별로 품종을 나눠 재배하며 대회 상위 랏을 냅니다.",
 "profileLevel": "place",
 "photo": {
@@ -9024,15 +9024,15 @@
 "u": "https://hatchcrafted.com/shop/rumudamo-washed"
 }
 ],
-"beanCount": 4,
 "elevation": "2,100~2,400m",
-"harvest": "12월~2월",
-"terroir": "아르베고나 고지 · '비옥한 땅, 뿌리 많은 땅'이라는 이름값의 숲",
+"story": "시다마 아르베고나의 루무다모 마을에 있습니다. 마을 이름은 '비옥한 땅' 또는 '뿌리가 많은 땅'이라는 뜻으로, 숲이 빽빽한 이 고지의 성격을 그대로 담고 있습니다. 데일 벤사가 운영하며 600여 소농이 2헥타르 안팎의 밭에서 낸 체리를 받습니다. 2,100~2,400m에서 74112를 중심으로 기르고, 워시드는 48~72시간 발효 뒤 8~12일, 내추럴은 20일 안팎 건조합니다. 2020년 에티오피아 CoE에서 이 스테이션 커피가 2위와 3위를 차지했습니다.",
 "varieties": "74112 중심 · 74110 · 74158",
 "processes": "워시드 · 내추럴 · 무산소 워시드",
 "flavorProfile": "베리 잼 · 자스민 · 흑포도",
+"harvest": "12월~2월",
+"beanCount": 4,
+"terroir": "아르베고나 고지 · '비옥한 땅, 뿌리 많은 땅'이라는 이름값의 숲",
 "trend": "아르베고나를 대표하는 스테이션이며 2020년 CoE 2·3위를 냈습니다.",
-"story": "시다마 아르베고나의 루무다모 마을에 있습니다. 마을 이름은 '비옥한 땅' 또는 '뿌리가 많은 땅'이라는 뜻으로, 숲이 빽빽한 이 고지의 성격을 그대로 담고 있습니다. 데일 벤사가 운영하며 600여 소농이 2헥타르 안팎의 밭에서 낸 체리를 받습니다. 2,100~2,400m에서 74112를 중심으로 기르고, 워시드는 48~72시간 발효 뒤 8~12일, 내추럴은 20일 안팎 건조합니다. 2020년 에티오피아 CoE에서 이 스테이션 커피가 2위와 3위를 차지했습니다.",
 "profileLevel": "place",
 "photo": {
 "f": "photos/et-depulper.jpg",
@@ -9083,15 +9083,15 @@
 "u": "https://www.coffeemaxgreen.com/ethiopia-shantewene/"
 }
 ],
-"beanCount": 4,
 "elevation": "2,100~2,300m",
-"harvest": "12월~2월",
-"terroir": "봄베 마을과 봄베 산 사이 · 원생림 그늘 · 엔세트",
+"story": "시다마 벤사, 봄베 마을과 봄베 산 사이의 샨타웨네 마을에 있습니다. 데일 벤사가 2007년 콘카나에 이어 두 번째로 세운 스테이션입니다. 이름은 마을을 연 원로 샨타와 그의 아버지 웨네의 이름을 붙인 것입니다. 2,100~2,300m에서 1,100~1,500 아웃그로워가 낸 체리를 받아 건조대 205개, 발효조 18기로 가공합니다. 2020년 CoE 7위 랏도 이 스테이션에서 가공됐고, 근처 가타 농장 체리가 쓰였습니다.",
 "varieties": "74112 · 74158 · 재래종",
 "processes": "내추럴 · 워시드 · 냉장 발효 등 실험 랏",
 "flavorProfile": "베리 · 스톤프루트 · 흑설탕",
+"harvest": "12월~2월",
+"beanCount": 4,
+"terroir": "봄베 마을과 봄베 산 사이 · 원생림 그늘 · 엔세트",
 "trend": "가타 농장 체리로 낸 랏이 대회 상위에 오르며 이름을 굳혔습니다.",
-"story": "시다마 벤사, 봄베 마을과 봄베 산 사이의 샨타웨네 마을에 있습니다. 데일 벤사가 2007년 콘카나에 이어 두 번째로 세운 스테이션입니다. 이름은 마을을 연 원로 샨타와 그의 아버지 웨네의 이름을 붙인 것입니다. 2,100~2,300m에서 1,100~1,500 아웃그로워가 낸 체리를 받아 건조대 205개, 발효조 18기로 가공합니다. 2020년 CoE 7위 랏도 이 스테이션에서 가공됐고, 근처 가타 농장 체리가 쓰였습니다.",
 "profileLevel": "place",
 "photo": {
 "f": "photos/et-depulper.jpg",
@@ -9138,15 +9138,15 @@
 "u": "https://boxxcoffee.la/products/ethiopia-anasora-site"
 }
 ],
-"beanCount": 4,
 "elevation": "1,900~2,350m",
-"harvest": "10월~1월",
-"terroir": "구지 고지 · 투로 강가 · 원생 그늘 · 반원생림",
+"story": "구지 아돌라의 고지에 있습니다. 2013년 세운 아나소라 농장과 2018년 완공한 워싱스테이션이 함께 있는 곳으로, 케르찬셰 트레이딩의 이스라엘 데그파가 이끕니다. 350 소농이 2,200~2,300m 밭에서 낸 체리를 받아 건조대 200개로 가공합니다. 1,900~2,350m의 높은 고도와 투로 강가의 원생림 그늘이 늦게 익는 단단한 씨앗을 만듭니다. 노르딕 어프로치와 트로픽이 이곳에서 나추럴 실험을 진행해 온 것으로도 알려져 있습니다.",
 "varieties": "재래종 · 쿠루메 중심",
 "processes": "워시드 · 내추럴",
 "flavorProfile": "블루베리 · 오렌지 · 크림 · 정향",
+"harvest": "10월~1월",
+"beanCount": 4,
+"terroir": "구지 고지 · 투로 강가 · 원생 그늘 · 반원생림",
 "trend": "노르딕 어프로치·트로픽이 이곳에서 실험 가공을 진행해 온 것으로 알려졌습니다.",
-"story": "구지 아돌라의 고지에 있습니다. 2013년 세운 아나소라 농장과 2018년 완공한 워싱스테이션이 함께 있는 곳으로, 케르찬셰 트레이딩의 이스라엘 데그파가 이끕니다. 350 소농이 2,200~2,300m 밭에서 낸 체리를 받아 건조대 200개로 가공합니다. 1,900~2,350m의 높은 고도와 투로 강가의 원생림 그늘이 늦게 익는 단단한 씨앗을 만듭니다. 노르딕 어프로치와 트로픽이 이곳에서 나추럴 실험을 진행해 온 것으로도 알려져 있습니다.",
 "profileLevel": "place",
 "photo": {
 "f": "photos/et-cherry-drying.jpg",
@@ -9334,11 +9334,11 @@
 "u": "https://www.cafeimports.com/europe/blog/2019/08/28/cafe-imports-europe-and-don-sabino-micromill-collaborate-on-exclusive-traceable-and-transparent-berlin-batch-for-berlin-coffee-festival/"
 }
 ],
-"harvest": "11월~3월 (주 수확기)",
-"terroir": "알라후엘라 카리살 · 포아스·바르바 화산 기슭",
 "varieties": "카투라 · 카투아이",
 "processes": "내추럴 · 무산소 · 워시드",
 "flavorProfile": "붉은 과일 · 카라멜 · 시트러스",
+"harvest": "11월~3월 (주 수확기)",
+"terroir": "알라후엘라 카리살 · 포아스·바르바 화산 기슭",
 "trend": "2010년부터 직접 가공하는 마이크로밀로 바꾸며 내추럴·무산소 랏을 늘렸습니다.",
 "profileLevel": "place",
 "photo": {
@@ -10288,15 +10288,15 @@
 "u": "https://anamorphiccoffee.com/products/ocholo-bedecho"
 }
 ],
-"beanCount": 3,
 "elevation": "1,800~2,300m",
-"harvest": "11월~1월",
-"terroir": "우라가의 숲과 구릉 · 붉은 고지 토양",
+"story": "구지 우라가의 하로 와추 마을에 있습니다. 2015년 문을 연 이래 1,200 소농과 일하며, 농가들은 화학 비료나 농약 없이 작은 밭에서 커피를 기릅니다. 체리는 당일 펄핑해 하룻밤 발효하고 수로에서 씻은 뒤 건조대에서 8~15일, 흐린 날엔 20일까지 말립니다. 하로 와추에서 12km 떨어진 8헥타르 농장의 오촐로 베데초처럼, 이 지역에서는 큰 규모의 농가도 스테이션에 체리를 냅니다.",
 "varieties": "재래종",
 "processes": "워시드 중심",
 "flavorProfile": "사과꽃 · 자스민 · 마른 배 · 베르가못",
+"harvest": "11월~1월",
+"beanCount": 3,
+"terroir": "우라가의 숲과 구릉 · 붉은 고지 토양",
 "trend": "구지 안에서도 우라가 특유의 부드러운 산미를 보여 주는 스테이션입니다.",
-"story": "구지 우라가의 하로 와추 마을에 있습니다. 2015년 문을 연 이래 1,200 소농과 일하며, 농가들은 화학 비료나 농약 없이 작은 밭에서 커피를 기릅니다. 체리는 당일 펄핑해 하룻밤 발효하고 수로에서 씻은 뒤 건조대에서 8~15일, 흐린 날엔 20일까지 말립니다. 하로 와추에서 12km 떨어진 8헥타르 농장의 오촐로 베데초처럼, 이 지역에서는 큰 규모의 농가도 스테이션에 체리를 냅니다.",
 "profileLevel": "place",
 "photo": {
 "f": "photos/et-green-sorting.jpg",
@@ -10346,15 +10346,15 @@
 "u": "https://passportcoffee.com.au/blogs/roastery-ramblings/ethiopia-amederaro-natural"
 }
 ],
-"beanCount": 3,
 "elevation": "1,999~2,099m",
-"harvest": "11월~1월",
-"terroir": "토라초 강가 · 그늘 건조대 190개 · 실험 발효조 10기",
+"story": "예가체프 마을에서 6km 떨어진 콩가 웨테 마을, 토라초 강가에 있습니다. 2018년 2.5헥타르에 문을 연 프림로즈 커피의 두 번째 스테이션으로, 1,890가구가 집 뒤뜰에서 기른 커피를 받습니다. 그늘 건조대 190개와 발효조 10기를 갖춰 워시드·내추럴·실험 랏을 함께 냅니다. 이름은 현지 말로 '꽃이 피어나라'는 뜻이고, 2018·2019년 아프리카 파인 커피 협회의 테이스트 오브 하베스트에서 상을 받았으며 에티오피아 첫 CoE에서 7위에 올랐습니다.",
 "varieties": "74110 · 74112 · 74165 · 74166",
 "processes": "워시드 · 내추럴 · 무스티카 발효 등 실험 랏",
 "flavorProfile": "자스민 · 캐러멜 · 레몬티 · 블랙베리",
+"harvest": "11월~1월",
+"beanCount": 3,
+"terroir": "토라초 강가 · 그늘 건조대 190개 · 실험 발효조 10기",
 "trend": "대회 수상 랏을 꾸준히 내며 예가체프 실험 가공의 중심 중 하나가 됐습니다.",
-"story": "예가체프 마을에서 6km 떨어진 콩가 웨테 마을, 토라초 강가에 있습니다. 2018년 2.5헥타르에 문을 연 프림로즈 커피의 두 번째 스테이션으로, 1,890가구가 집 뒤뜰에서 기른 커피를 받습니다. 그늘 건조대 190개와 발효조 10기를 갖춰 워시드·내추럴·실험 랏을 함께 냅니다. 이름은 현지 말로 '꽃이 피어나라'는 뜻이고, 2018·2019년 아프리카 파인 커피 협회의 테이스트 오브 하베스트에서 상을 받았으며 에티오피아 첫 CoE에서 7위에 올랐습니다.",
 "profileLevel": "place",
 "photo": {
 "f": "photos/et-green-sorting.jpg",
@@ -10436,15 +10436,15 @@
 "u": "https://www.genuineorigin.com/site/images/factsheets/factsheet-GEN23ETL.pdf"
 }
 ],
-"beanCount": 3,
 "elevation": "1,900~2,100m",
-"harvest": "10월~1월",
-"terroir": "예가체프 마을 북쪽 고지 · 원생림 그늘 · 큰 일교차",
+"story": "예가체프 마을 북쪽 이디도 마을에 있습니다. 1998년 문을 연 사설 스테이션이며, 2017년부터 레인저 인더스트리 앤 트레이딩이 운영합니다. 800가구가 넘는 소농이 4에이커 안팎의 밭에서 낸 체리를 받아 워시드와 내추럴로 모두 가공합니다. 2000년대 초 이디도와 이웃 아리차에서 내추럴 가공 실험이 시작되면서 예가체프 특유의 과일향 나추럴이 퍼졌다고 전해집니다. 같은 마을 이름을 쓰는 협동조합도 따로 있어, 라벨의 운영 주체를 확인할 필요가 있습니다.",
 "varieties": "재래종 · 쿠루메 · 월리쇼 · 데가 · JARC 선발종",
 "processes": "워시드 · 내추럴",
 "flavorProfile": "레몬 · 베르가못 · 자스민 · 백차",
+"harvest": "10월~1월",
+"beanCount": 3,
+"terroir": "예가체프 마을 북쪽 고지 · 원생림 그늘 · 큰 일교차",
 "trend": "예가체프 내추럴의 원형을 만든 곳 중 하나로, 지금도 실험 랏이 꾸준합니다.",
-"story": "예가체프 마을 북쪽 이디도 마을에 있습니다. 1998년 문을 연 사설 스테이션이며, 2017년부터 레인저 인더스트리 앤 트레이딩이 운영합니다. 800가구가 넘는 소농이 4에이커 안팎의 밭에서 낸 체리를 받아 워시드와 내추럴로 모두 가공합니다. 2000년대 초 이디도와 이웃 아리차에서 내추럴 가공 실험이 시작되면서 예가체프 특유의 과일향 나추럴이 퍼졌다고 전해집니다. 같은 마을 이름을 쓰는 협동조합도 따로 있어, 라벨의 운영 주체를 확인할 필요가 있습니다.",
 "profileLevel": "place",
 "photo": {
 "f": "photos/et-hand-sorting.jpg",
@@ -11042,11 +11042,11 @@
 "u": "https://coffeeboard.gov.in/Exporter/DataBaseBook2023Final.pdf"
 }
 ],
-"harvest": "12월~3월 (주 수확기)",
-"terroir": "카르나타카 쿠르그 남부 폴리베타 · 그늘 재배",
 "varieties": "로부스타 (주로)",
 "processes": "내추럴 · 워시드",
 "flavorProfile": "다크초콜릿 · 견과 · 두터운 바디",
+"harvest": "12월~3월 (주 수확기)",
+"terroir": "카르나타카 쿠르그 남부 폴리베타 · 그늘 재배",
 "trend": "관개·영양·체리 선별을 세밀하게 관리해 랏 품질을 일정하게 유지합니다.",
 "profileLevel": "place",
 "photo": {
@@ -11645,11 +11645,11 @@
 }
 ],
 "elevation": "1,500~2,000m (카우카 피엔다모 일대)",
-"harvest": "3월~6월 · 10~12월",
-"terroir": "카우카 피엔다모 · 로스 아라도스 마을",
 "varieties": "카스티요 · 게이샤 (랏별 상이)",
 "processes": "열충격·무산소 등 실험적 가공",
 "flavorProfile": "장미 · 열대과일 · 강한 단맛",
+"harvest": "3월~6월 · 10~12월",
+"terroir": "카우카 피엔다모 · 로스 아라도스 마을",
 "trend": "이름이 비슷한 엘 파라이소와 다른 농장으로, 랏마다 가공 실험을 이어갑니다.",
 "profileLevel": "place",
 "photo": {
@@ -11715,6 +11715,72 @@
 "lu": "https://creativecommons.org/licenses/by-sa/2.0",
 "s": "commons",
 "p": "https://commons.wikimedia.org/wiki/File:NP_2DU_colombia_16_lo_(5244849876).jpg"
+}
+},
+{
+"id": "F|탄자니아|콩고니",
+"kind": "farm",
+"country": "탄자니아",
+"name": "콩고니",
+"nameEn": "Kongoni Estate",
+"nameJa": "コンゴニ農園",
+"lat": -3.35,
+"lon": 35.7,
+"precision": "village",
+"evidence": "카라투 올데아니, 응고롱고로 분화구 북쪽 사면 · OSM/Photon",
+"source": "https://www.openstreetmap.org/?mlat=-3.35&mlon=35.7#map=12/-3.35/35.7",
+"alias": [],
+"elevation": "1,650~1,850m",
+"harvest": "7월~11월",
+"terroir": "응고롱고로 분화구 북쪽 사면 · 화산성 토양과 짙은 그늘",
+"varieties": "버번 · 켄트 · SL39 (묘목장에 게이샤·파카마라·SL28)",
+"processes": "풀리 워시드 · 72시간 발효",
+"flavorProfile": "다크초콜릿 · 캐러멜 · 건포도, 묵직한 단맛",
+"trend": "아가르왈 가문이 1970년대에 인수한 뒤 생산 관리를 손봐 지금은 탄자니아 북부의 대표 농장으로 자리 잡았습니다.",
+"story": "콩고니는 1920년대에 세워진 오래된 농장으로, 응고롱고로 분화구 북쪽 카라투에 있습니다. 전체 1,500헥타르 가운데 220헥타르 남짓만 커피밭이고 나머지는 야생동물 보호구역입니다. 커피밭 대부분이 그늘 아래 있어 체리가 천천히 익고, 수확기에는 이웃 마을 사람들이 함께 손으로 땁니다.",
+"producer": "아가르왈 가문",
+"founded": "1920년대 (1970년대 아가르왈 가문 인수)",
+"lang": {
+"en": {
+"elevation": "1,650–1,850 m",
+"harvest": "July–November",
+"terroir": "North slopes of the Ngorongoro Crater · volcanic soils under heavy shade",
+"varieties": "Bourbon · Kent · SL39 (Geisha, Pacamara and SL28 in the nursery)",
+"processes": "Fully washed · 72-hour fermentation",
+"flavorProfile": "Dark chocolate · caramel · raisin, deep sweetness",
+"trend": "Taken over by the Aggarwal family in the 1970s and since re-managed, it is now one of northern Tanzania's flagship farms.",
+"story": "Kongoni is an old estate from the 1920s in Karatu, on the northern slopes of the Ngorongoro Crater. Only about 220 of its 1,500 hectares are coffee; the rest is a wildlife reserve. Most of the coffee grows under heavy shade, and neighbouring villagers hand-pick the crop each season.",
+"producer": "Aggarwal family",
+"founded": "1920s (Aggarwal family from the 1970s)"
+},
+"ja": {
+"elevation": "1,650〜1,850m",
+"harvest": "7月〜11月",
+"terroir": "ンゴロンゴロ・クレーター北斜面・火山性土壌と深い日陰",
+"varieties": "ブルボン・ケント・SL39（苗木園にゲイシャ・パカマラ・SL28）",
+"processes": "フルウォッシュド・72時間発酵",
+"flavorProfile": "ダークチョコレート・キャラメル・レーズン、重厚な甘さ",
+"trend": "1970年代にアガルワル家が取得して管理を見直し、今はタンザニア北部を代表する農園になりました。",
+"story": "コンゴニは1920年代に開かれた古い農園で、ンゴロンゴロ・クレーター北側のカラトゥにあります。1,500ヘクタールのうちコーヒー畑は220ヘクタールほどで、残りは野生動物の保護区です。畑の大半が深い日陰の下にありチェリーがゆっくり熟し、収穫期には近隣の村人が手摘みを手伝います。",
+"producer": "アガルワル家",
+"founded": "1920年代（1970年代にアガルワル家が取得）"
+}
+},
+"beanCount": 3,
+"photo": {
+"m": "country_fallback",
+"f": "photos/up-coffee-farm-near-karatu-06.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Coffee_Farm_near_Karatu_%2806%29.jpg/960px-Coffee_Farm_near_Karatu_%2806%29.jpg",
+"c": {
+"ko": "탄자니아 커피 건조 (국가 대표 사진)",
+"en": "Tanzania coffee drying (country representative photo)",
+"ja": "タンザニアのコーヒー乾燥（代表写真）"
+},
+"a": "Zenith4237",
+"l": "CC BY-SA 4.0",
+"lu": "https://creativecommons.org/licenses/by-sa/4.0",
+"s": "commons",
+"p": "https://commons.wikimedia.org/wiki/File:Coffee_Farm_near_Karatu_(06).jpg"
 }
 },
 {
@@ -12021,11 +12087,11 @@
 "u": "https://cupofexcellence.org/guatemala-2009/"
 }
 ],
-"harvest": "11월~3월 (주 수확기)",
-"terroir": "솔롤라 아티틀란 호수 화산 자락 · 유기농",
 "varieties": "버번 · 카투아이",
 "processes": "워시드 · 유기농",
 "flavorProfile": "꿀 · 시트러스 · 부드러운 바디",
+"harvest": "11월~3월 (주 수확기)",
+"terroir": "솔롤라 아티틀란 호수 화산 자락 · 유기농",
 "trend": "호수를 지키는 유기농 재배를 조합의 목표로 내세웁니다.",
 "profileLevel": "place",
 "photo": {
@@ -13048,15 +13114,15 @@
 "u": "https://suessmund-kaffee.com/en/products/athiopien-lalesa-filterkaffee"
 }
 ],
-"beanCount": 2,
 "elevation": "2,150~2,200m",
-"harvest": "12월~1월",
-"terroir": "엔세트 그늘 · 게뎁 최대 규모의 건조장(3.5헥타르)",
+"story": "게뎁의 라레사 마을에 있습니다. 우비트 베켈레가 이끄는 엡타 스페셜티 커피가 2023년 땅을 사서 세운 스테이션으로, 3.5헥타르에 건조대 350~400개를 둔 게뎁에서 가장 큰 건조장입니다. 2,150~2,200m의 엔세트 그늘에서 자란 체리를 밀폐 통에 넣어 5~9일 무산소 발효한 뒤 13~18일 천천히 말립니다. 마을 아이들을 위한 보육 시설을 열고 여성 농가 교육을 함께 하는 것으로도 알려져 있습니다.",
 "varieties": "74110 · 74112 · 재래종",
 "processes": "무산소 내추럴 중심 · 워시드",
 "flavorProfile": "파파야 · 럼 · 카카오 · 자몽 · 시나몬",
+"harvest": "12월~1월",
+"beanCount": 2,
+"terroir": "엔세트 그늘 · 게뎁 최대 규모의 건조장(3.5헥타르)",
 "trend": "여성 생산자를 앞세운 수매·교육 프로그램으로 게뎁에서 빠르게 알려졌습니다.",
-"story": "게뎁의 라레사 마을에 있습니다. 우비트 베켈레가 이끄는 엡타 스페셜티 커피가 2023년 땅을 사서 세운 스테이션으로, 3.5헥타르에 건조대 350~400개를 둔 게뎁에서 가장 큰 건조장입니다. 2,150~2,200m의 엔세트 그늘에서 자란 체리를 밀폐 통에 넣어 5~9일 무산소 발효한 뒤 13~18일 천천히 말립니다. 마을 아이들을 위한 보육 시설을 열고 여성 농가 교육을 함께 하는 것으로도 알려져 있습니다.",
 "profileLevel": "place",
 "photo": {
 "f": "photos/et-cherry-drying.jpg",
@@ -13104,15 +13170,15 @@
 "u": "https://eu.covoyacoffee.com/ethiopia-banko-gotiti-washed-2026-eu.html"
 }
 ],
-"beanCount": 2,
 "elevation": "1,950~2,150m",
-"harvest": "11월~1월",
-"terroir": "게뎁 동쪽 능선 · 엔세트·원생 그늘 · 1~2헥타르 커피밭",
+"story": "게뎁 마을 동쪽 능선, 방코 고티티 마을에 있습니다. 2009년 문을 연 스테이션으로 650~1,300 소농이 체리를 냅니다. 농가 대부분이 1~2헥타르의 커피밭을 엔세트와 원생 그늘 아래 두고 화학 비료 없이 가꿉니다. 체리는 당일 펄핑해 발효조에서 36~48시간 두었다가 수로에서 밀도로 나누고, 건조대에서 10~15일 말립니다. 같은 마을 이름을 쓰는 스테이션이 몇 곳 있어 라벨의 스테이션 이름까지 봐야 같은 커피인지 알 수 있습니다.",
 "varieties": "게데오 재래종",
 "processes": "워시드 중심 · 내추럴",
 "flavorProfile": "레몬 제스트 · 라즈베리 · 흰 꽃 · 자몽",
+"harvest": "11월~1월",
+"beanCount": 2,
+"terroir": "게뎁 동쪽 능선 · 엔세트·원생 그늘 · 1~2헥타르 커피밭",
 "trend": "이 kebele 이름을 단 스테이션이 여럿 있어, 로스터들은 랏의 스테이션 이름을 함께 확인합니다.",
-"story": "게뎁 마을 동쪽 능선, 방코 고티티 마을에 있습니다. 2009년 문을 연 스테이션으로 650~1,300 소농이 체리를 냅니다. 농가 대부분이 1~2헥타르의 커피밭을 엔세트와 원생 그늘 아래 두고 화학 비료 없이 가꿉니다. 체리는 당일 펄핑해 발효조에서 36~48시간 두었다가 수로에서 밀도로 나누고, 건조대에서 10~15일 말립니다. 같은 마을 이름을 쓰는 스테이션이 몇 곳 있어 라벨의 스테이션 이름까지 봐야 같은 커피인지 알 수 있습니다.",
 "profileLevel": "place",
 "photo": {
 "f": "photos/et-cherry-sorting.jpg",
@@ -13197,15 +13263,15 @@
 "u": "https://www.nemesis.coffee/blogs/coffee-journal/ethiopia-benti-nenka"
 }
 ],
-"beanCount": 2,
 "elevation": "1,850~2,200m",
-"harvest": "11월~1월",
-"terroir": "함벨라 와메나의 원생림 · 붉은 갈색 토양 · 구지에서 비교적 따뜻한 편",
+"story": "구지 함벨라 와메나의 벤티 네카 마을에 있습니다. 2017년 문을 연 스테이션으로 500~700 소농이 1.5~2헥타르 밭에서 낸 체리를 받습니다. 1,850~2,200m로 예가체프보다 낮고 조금 따뜻해 체리가 빨리 익지만, 대나무를 쪼개 평평하게 만든 건조대 181개에서 천천히 말려 잡맛을 줄입니다. 내추럴 중심이었으나 최근에는 워시드와 무산소 랏도 냅니다. 체리는 말을 타고 스테이션까지 옮겨 오기도 합니다.",
 "varieties": "74100 · 74112 · 재래종",
 "processes": "내추럴 중심 · 워시드 · 무산소",
 "flavorProfile": "딸기 · 오렌지 · 망고",
+"harvest": "11월~1월",
+"beanCount": 2,
+"terroir": "함벨라 와메나의 원생림 · 붉은 갈색 토양 · 구지에서 비교적 따뜻한 편",
 "trend": "대나무 건조대를 직접 쪼개 flat하게 만드는 등 관리로 구지 내추럴의 기준을 세웠습니다.",
-"story": "구지 함벨라 와메나의 벤티 네카 마을에 있습니다. 2017년 문을 연 스테이션으로 500~700 소농이 1.5~2헥타르 밭에서 낸 체리를 받습니다. 1,850~2,200m로 예가체프보다 낮고 조금 따뜻해 체리가 빨리 익지만, 대나무를 쪼개 평평하게 만든 건조대 181개에서 천천히 말려 잡맛을 줄입니다. 내추럴 중심이었으나 최근에는 워시드와 무산소 랏도 냅니다. 체리는 말을 타고 스테이션까지 옮겨 오기도 합니다.",
 "profileLevel": "place",
 "photo": {
 "f": "photos/et-cherry-drying.jpg",
@@ -13676,15 +13742,15 @@
 "u": "https://www.dropcoffee.com/blogs/news/visit-from-hunkute-sidama-union"
 }
 ],
-"beanCount": 2,
 "elevation": "1,850~2,150m (2호 사이트 2,150m)",
-"harvest": "11월~1월",
-"terroir": "달레 고지 · 0.5~5헥타르 소농 · 헥타르당 1,500그루 안팎",
+"story": "시다마 달레 지역에 있는 훈쿠테 협동조합의 스테이션 두 곳입니다. 2007년 무렵 문을 연 1호 사이트는 1,850m, 2012년 무렵의 2호 사이트는 2,150m에 있고, 회원은 900명에서 2,100여 명까지 늘었습니다. 회원 농가는 0.5~5헥타르의 밭에서 커피를 기르고, 체리는 당일 펄핑해 24~36시간 물속에서 발효한 뒤 수로에서 두 등급으로 나누고 12~24시간 맑은 물에 담갔다가 말립니다. 시다마 연합이 건조·선별을 맡습니다.",
 "varieties": "재래종 · 74110 · 74112",
 "processes": "워시드 · 내추럴",
 "flavorProfile": "시트러스 · 홍차 · 자두",
+"harvest": "11월~1월",
+"beanCount": 2,
+"terroir": "달레 고지 · 0.5~5헥타르 소농 · 헥타르당 1,500그루 안팎",
 "trend": "협동조합 체제를 유지하면서 로스터와 15년 넘게 거래하는 스테이션입니다.",
-"story": "시다마 달레 지역에 있는 훈쿠테 협동조합의 스테이션 두 곳입니다. 2007년 무렵 문을 연 1호 사이트는 1,850m, 2012년 무렵의 2호 사이트는 2,150m에 있고, 회원은 900명에서 2,100여 명까지 늘었습니다. 회원 농가는 0.5~5헥타르의 밭에서 커피를 기르고, 체리는 당일 펄핑해 24~36시간 물속에서 발효한 뒤 수로에서 두 등급으로 나누고 12~24시간 맑은 물에 담갔다가 말립니다. 시다마 연합이 건조·선별을 맡습니다.",
 "profileLevel": "place",
 "photo": {
 "f": "photos/et-hand-sorting.jpg",
@@ -13714,6 +13780,7 @@
 "precision": "village",
 "evidence": "산살바도르 화산 엘 보케론 분화구 · OSM/Photon",
 "source": "https://www.openstreetmap.org/?mlat=13.7333&mlon=-89.2833#map=12/13.7333/-89.2833",
+"alias": [],
 "elevation": "1,200~1,750m",
 "harvest": "12월~4월",
 "terroir": "산살바도르 화산 분화구 사면 · 그늘 수관과 화산성 양토",
@@ -13750,7 +13817,6 @@
 "founded": "1990年代後半"
 }
 },
-"market": "jp",
 "beanCount": 2,
 "photo": {
 "m": "country_fallback",
@@ -13875,6 +13941,10 @@
 "producer": "마리사벨 카바예로 · 모이세스 에레라 (Marysabel Caballero & Moises Herrera)",
 "elevation": "1,500~1,780m (구획마다 다름)",
 "story": "온두라스 라파스 친아클라의 엘 푸엔테는 마리사벨 카바예로와 모이세스 에레라 부부의 농장입니다. 마리사벨의 아버지 파비오 카바예로가 중미 스페셜티 커피 1세대로 불리는 생산자로, 가족이 함께 쓰던 큰 웻밀을 물려받아 지금은 드라이밀까지 갖추고 나무에서 수출용 생두까지 품질을 직접 관리합니다. 300헥타르가 넘는 땅을 여러 농장으로 나눠 쓰며, 엘 푸엔테 안에서도 레가디요·라 라구나·산 이시드로 같은 구획마다 품종과 가공을 달리합니다. 레가디요에는 에티오피아에서 들여온 20여 품종을 심었고, 라 라구나는 웻밀 옆 작은 호수를 둘러싼 숲에 바티안을 심어 유기 퇴비만 씁니다.",
+"varieties": "카투아이 중심 · 게이샤 · 자바 · 파카마라 · SL28 · 바티안 · 에티오피아 계열",
+"processes": "워시드 중심 · 내추럴",
+"flavorProfile": "자두 · 흑설탕 · 제비꽃 · 열대과일",
+"harvest": "12월~3월",
 "refs": [
 {
 "t": "농장 소개",
@@ -13886,6 +13956,8 @@
 }
 ],
 "beanCount": 2,
+"terroir": "라파스 친아클라 · 마르칼라 외곽 산지 · 숲 사이 구획 · 큰 일교차",
+"trend": "게이샤·자바·에티오피아 계열 같은 희귀 품종을 구획별로 나눠 내는 중미 대표 농장입니다.",
 "profileLevel": "place",
 "photo": {
 "m": "country_fallback",
@@ -13901,13 +13973,7 @@
 "lu": "https://creativecommons.org/licenses/by/2.0/",
 "s": "openverse",
 "p": "https://www.flickr.com/photos/8278288@N02/6219595785"
-},
-"varieties": "카투아이 중심 · 게이샤 · 자바 · 파카마라 · SL28 · 바티안 · 에티오피아 계열",
-"processes": "워시드 중심 · 내추럴",
-"flavorProfile": "자두 · 흑설탕 · 제비꽃 · 열대과일",
-"harvest": "12월~3월",
-"terroir": "라파스 친아클라 · 마르칼라 외곽 산지 · 숲 사이 구획 · 큰 일교차",
-"trend": "게이샤·자바·에티오피아 계열 같은 희귀 품종을 구획별로 나눠 내는 중미 대표 농장입니다."
+}
 },
 {
 "kind": "region",
@@ -14224,13 +14290,13 @@
 "id": "F|콜롬비아|라 로카",
 "beanCount": 2,
 "elevation": "1,500~2,100m (카우카 남부 산지)",
-"harvest": "10월~12월 (주 수확기) · 3~6월",
-"terroir": "카우카 아르헬리아 산지",
+"story": "카우카 아르헬리아 산지의 농장으로, OpenStreetMap에 농장 이름으로 위치가 등록되어 있습니다. 카우카 남부 산지의 1,500~2,100m 고도에서 카투라·카스티요를 기르고, 카라멜과 시트러스가 부드럽게 잡힙니다. 생산자·연혁 자료는 아직 확인하지 못해 위치와 기본 정보만 싣습니다.",
 "varieties": "카투라 · 카스티요 (라벨 표기 기준)",
 "processes": "워시드 중심",
 "flavorProfile": "카라멜 · 시트러스 · 부드러운 단맛",
+"harvest": "10월~12월 (주 수확기) · 3~6월",
+"terroir": "카우카 아르헬리아 산지",
 "trend": "카우카 남부 소농 농장으로, 요즘은 랏 단위로 팔립니다.",
-"story": "카우카 아르헬리아 산지의 농장으로, OpenStreetMap에 농장 이름으로 위치가 등록되어 있습니다. 카우카 남부 산지의 1,500~2,100m 고도에서 카투라·카스티요를 기르고, 카라멜과 시트러스가 부드럽게 잡힙니다. 생산자·연혁 자료는 아직 확인하지 못해 위치와 기본 정보만 싣습니다.",
 "profileLevel": "place",
 "photo": {
 "m": "country_fallback",
@@ -14750,13 +14816,13 @@
 "id": "F|태국|도이 인타논",
 "beanCount": 2,
 "elevation": "1,000~1,400m (치앙마이 고지)",
-"harvest": "11월~2월 (주 수확기)",
-"terroir": "치앙마이 도이 인타논 산자락 · 고지 · 서늘한 기후",
+"story": "도이 인타논은 치앙마이의 산 이름이자 그 자락의 커피 재배지 이름입니다. 1,000~1,400m 고지의 서늘한 기후에서 카티모르·카투라를 기르고, 산 주변 마을들이 커피로 소득을 냅니다. 워시드·허니로 가공해 초콜릿과 견과 중심의 단정한 컵을 냅니다.",
 "varieties": "카티모르 · 카투라 (라벨 표기 기준)",
 "processes": "워시드 · 허니",
 "flavorProfile": "견과 · 카라멜 · 부드러운 단맛",
+"harvest": "11월~2월 (주 수확기)",
+"terroir": "치앙마이 도이 인타논 산자락 · 고지 · 서늘한 기후",
 "trend": "북부 고지의 소농 랏이 스페셜티 시장에 들어갑니다.",
-"story": "도이 인타논은 치앙마이의 산 이름이자 그 자락의 커피 재배지 이름입니다. 1,000~1,400m 고지의 서늘한 기후에서 카티모르·카투라를 기르고, 산 주변 마을들이 커피로 소득을 냅니다. 워시드·허니로 가공해 초콜릿과 견과 중심의 단정한 컵을 냅니다.",
 "profileLevel": "place",
 "photo": {
 "m": "country_fallback",
@@ -14935,11 +15001,11 @@
 "u": "https://www.standoutcoffee.com/pages/finca-hartmann"
 }
 ],
-"harvest": "12월~3월 (주 수확기)",
-"terroir": "산타 클라라 · 라 아미스타드 국제공원 인접 원시림 그늘",
 "varieties": "게이샤 · 마라고지페 · 카투아이",
 "processes": "워시드 · 내추럴",
 "flavorProfile": "부드러운 꽃향 · 시트러스 · 긴 단맛",
+"harvest": "12월~3월 (주 수확기)",
+"terroir": "산타 클라라 · 라 아미스타드 국제공원 인접 원시림 그늘",
 "trend": "원시림 그늘 재배와 새 서식지 보전을 함께 하는 농장으로 알려졌습니다.",
 "profileLevel": "place",
 "photo": {
@@ -15042,6 +15108,7 @@
 "precision": "farm",
 "evidence": "우에우에테낭고 산 페드로 넥타 아구아 둘세 · 농장 공개 좌표",
 "source": "https://www.openstreetmap.org/?mlat=15.5497&mlon=-91.7707#map=12/15.5497/-91.7707",
+"alias": [],
 "elevation": "1,800~2,000m",
 "harvest": "11월~4월 (농장 표기 1~4월)",
 "terroir": "쿠추마탄스 산맥의 높은 사면 · 낮은 기온과 풍부한 비",
@@ -15075,7 +15142,6 @@
 "producer": "フレディ・モラレス（モラレス家）"
 }
 },
-"market": "jp",
 "beanCount": 1,
 "photo": {
 "m": "country_fallback",
@@ -15874,6 +15940,7 @@
 "precision": "region",
 "evidence": "미나스제라이스 카르무 지 미나스 · OSM/Photon",
 "source": "https://www.openstreetmap.org/?mlat=-22.1167&mlon=-45.1333#map=12/-22.1167/-45.1333",
+"alias": [],
 "elevation": "900~1,300m",
 "harvest": "5월~10월",
 "terroir": "만티케이라 산맥 남쪽 · 완만한 기복과 뚜렷한 건기",
@@ -15910,7 +15977,6 @@
 "founded": "1937年"
 }
 },
-"market": "jp",
 "beanCount": 1,
 "photo": {
 "m": "country_fallback",
@@ -15941,13 +16007,13 @@
 "id": "F|브라질|파젠다 로메로",
 "beanCount": 1,
 "elevation": "700~1,300m (바이아 고원)",
-"harvest": "5월~9월 (주 수확기)",
-"terroir": "바이아 고원",
+"story": "브라질 바이아 고원의 파젠다 로메로로, OpenStreetMap에 농장 이름으로 위치가 등록되어 있습니다. 700~1,300m 고원에서 카투아이·카투라를 기르고 랏 단위로 선별해 내며, 견과·초콜릿의 둥근 단맛이 납니다. 생산자·연혁 자료는 확인하지 못해 위치와 기본 정보만 싣습니다.",
 "varieties": "카투아이 · 카투라 (라벨 표기 기준)",
 "processes": "내추럴 · 펄프드 내추럴",
 "flavorProfile": "견과 · 초콜릿 · 둥근 단맛",
+"harvest": "5월~9월 (주 수확기)",
+"terroir": "바이아 고원",
 "trend": "바이아의 대농장으로, 랏 단위 선별 유통이 늘었습니다.",
-"story": "브라질 바이아 고원의 파젠다 로메로로, OpenStreetMap에 농장 이름으로 위치가 등록되어 있습니다. 700~1,300m 고원에서 카투아이·카투라를 기르고 랏 단위로 선별해 내며, 견과·초콜릿의 둥근 단맛이 납니다. 생산자·연혁 자료는 확인하지 못해 위치와 기본 정보만 싣습니다.",
 "profileLevel": "place",
 "photo": {
 "m": "country_fallback",
@@ -16015,6 +16081,102 @@
 }
 },
 {
+"id": "F|브라질|파젠다 세르탕",
+"kind": "farm",
+"country": "브라질",
+"name": "파젠다 세르탕",
+"nameEn": "Fazenda Sertão",
+"nameJa": "ファゼンダ・セルタン",
+"lat": -22.0999977,
+"lon": -45.189369,
+"precision": "farm",
+"evidence": "OSM 'Fazenda do Sertão' 농장 지점, 카르무 지 미나스",
+"source": "https://www.cafefamiliasertao.com.br/nossa-historia.html",
+"alias": [
+"파젠다세르탕",
+"세르탕",
+"fazenda sertao",
+"fazenda sertão",
+"sertao",
+"ファゼンダ・セルタン"
+],
+"producer": "프란시스쿠 이지드루 지아스 페레이라 (Francisco Isidro Dias Pereira, '시쿠') — 페레이라 가문 4대",
+"founded": "1908~1910년 증조부 부부가 첫 커피를 심음 · 1949년 조부모가 농장을 이어받음",
+"elevation": "1,100~1,450m",
+"story": "미나스 제라이스 카르무 지 미나스의 농장입니다. 1908~1910년 증조부 이지드루 안토니우 페레이라와 에메렌시아나 안드라지 페레이라가 심은 커피나무에서 시작해, 1949년 조제 이지드루 페레이라가 나제레 지아스 페레이라와 함께 농장을 이어받았습니다. 850헥타르 가운데 350헥타르가 커피밭이고, 나머지는 바나나·옥수수·콩과 젖소 사육에 씁니다. 같은 가문의 파젠다 산타 이네스 랏이 2005년 컵 오브 엑셀런스에서 95.85점을 받아 대회 최고 기록을 세웠고, 그해 가문이 1~3위를 모두 가져갔습니다. 지금은 4대째 프란시스쿠(시쿠) 이지드루 지아스 페레이라가 이끌며, 2025년 대회에서는 토파지우 내추럴 랏으로 5위(89.32)에 올랐습니다.",
+"varieties": "옐로 버번 · 레드 버번 · 카투아이 · 아라라 · 토파지우",
+"processes": "내추럴 중심 · 펄프드 내추럴",
+"flavorProfile": "코코아 · 무화과 · 헤이즐넛 · 꿀, 둥근 바디",
+"harvest": "5월~9월 (주 수확기)",
+"awards": [
+"Cup of Excellence Brasil 2025 5위 — 89.32점, 토파지우 내추럴",
+"같은 가문의 파젠다 산타 이네스 — Cup of Excellence Brasil 2005 1위, 95.85점(대회 최고 기록)"
+],
+"refs": [
+{
+"t": "농장·가문 공식",
+"u": "https://www.cafefamiliasertao.com.br/nossa-historia.html"
+},
+{
+"t": "가문 기록·수상",
+"u": "https://cafefamiliasertao.com.br/recordes-premiacoes.html"
+},
+{
+"t": "농장 소개(면적·고도)",
+"u": "https://www.partnerscoffee.com/products/brazil-sertao"
+},
+{
+"t": "Cup of Excellence Brasil 2025 결과",
+"u": "https://allianceforcoffeeexcellence.org/brazil-2025/"
+}
+],
+"beanCount": 1,
+"auctions": [
+{
+"id": "coe-brazil-2025-fazenda-serta-o-5",
+"competition": "CoE Brazil 2025 · Natural",
+"year": 2025,
+"rank": "5",
+"score": 89.32,
+"farm": "Fazenda Sertão",
+"variety": "Topázio",
+"process": "Natural",
+"buyers": [
+"칼디커피팜"
+],
+"buyersEn": [
+"KALDI COFFEE FARM"
+],
+"buyersJa": [
+"カルディコーヒーファーム"
+],
+"joint": true,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/brazil-2025/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2025/"
+}
+],
+"auctionCount": 1,
+"terroir": "카르무 지 미나스 · 만티케이라 지맥의 고도 높은 구릉 · 만티케이라 지 미나스 원산지 명칭(D.O.) 안",
+"trend": "4대째 가족 농장으로, 랏마다 수확과 건조를 나눠 대회 출품과 직거래를 이어갑니다.",
+"profileLevel": "place",
+"photo": {
+"m": "exact_origin",
+"f": "photos/br-fazenda-sertao-carmo-de-minas-cafezal.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Carmo_de_Minas_MG_Brasil_-_Cafezal_-_panoramio.jpg/960px-Carmo_de_Minas_MG_Brasil_-_Cafezal_-_panoramio.jpg",
+"c": {
+"ko": "카르무 지 미나스의 커피밭",
+"en": "Coffee fields in Carmo de Minas",
+"ja": "カルモ・デ・ミナスのコーヒー畑"
+},
+"a": "Josue Marinho",
+"l": "CC BY 3.0",
+"lu": "https://creativecommons.org/licenses/by/3.0",
+"s": "commons",
+"p": "https://commons.wikimedia.org/wiki/File:Carmo_de_Minas_MG_Brasil_-_Cafezal_-_panoramio.jpg"
+}
+},
+{
 "kind": "farm",
 "country": "브라질",
 "name": "파젠다 카르모",
@@ -16040,11 +16202,11 @@
 }
 ],
 "elevation": "950~1,200m (만티케이라 지맥)",
-"harvest": "6월~8월 (주 수확기)",
-"terroir": "미나스 제라이스 남부 헬리오도라 · 만티케이라 지맥의 구릉",
 "varieties": "버번 아마렐로 · 문도 노보 · 카투아이 · 카투라",
 "processes": "펄프드 내추럴 · 내추럴 · 그늘 무산소 발효",
 "flavorProfile": "카라멜 · 견과 · 부드러운 산미",
+"harvest": "6월~8월 (주 수확기)",
+"terroir": "미나스 제라이스 남부 헬리오도라 · 만티케이라 지맥의 구릉",
 "trend": "만티케이라 지맥의 농장으로, 그늘 무산소 발효와 저온 건조 마이크로 랏을 이어갑니다.",
 "profileLevel": "place",
 "photo": {
@@ -16612,15 +16774,15 @@
 "u": "https://percup.uk/products/ethiopia-buku-abel"
 }
 ],
-"beanCount": 1,
 "elevation": "2,000~2,350m",
-"harvest": "11월~1월",
-"terroir": "구지 서쪽 고지 · 31헥타르 농장과 이웃 밭 · 낮 동안 강한 햇볕",
+"story": "구지 함벨라 와메나의 부쿠 마을에 있습니다. 농장은 에사야스 베리소와 메스케렘 토마스 부부가 2009년부터 31헥타르에서 운영하고, 마을 체리를 모으는 워싱스테이션은 수출업자였던 원다프라시 에데마가 2019년 세웠습니다. 같은 이름으로 농장과 스테이션이 함께 불립니다. 2,000~2,350m에서 내추럴로 가공하며, 햇볕이 강해 낮 11시 30분부터 3시까지는 건조대를 덮어 천천히 말립니다.",
 "varieties": "74110 · 74112 · 74158 · 74165 · 재래종",
 "processes": "내추럴 · 무산소 내추럴",
 "flavorProfile": "딸기 잼 · 장미 · 복숭아 · 블루베리",
+"harvest": "11월~1월",
+"beanCount": 1,
+"terroir": "구지 서쪽 고지 · 31헥타르 농장과 이웃 밭 · 낮 동안 강한 햇볕",
 "trend": "수출업자가 생산자가 될 수 있게 된 2019년 이후 세워진 스테이션의 대표 사례입니다.",
-"story": "구지 함벨라 와메나의 부쿠 마을에 있습니다. 농장은 에사야스 베리소와 메스케렘 토마스 부부가 2009년부터 31헥타르에서 운영하고, 마을 체리를 모으는 워싱스테이션은 수출업자였던 원다프라시 에데마가 2019년 세웠습니다. 같은 이름으로 농장과 스테이션이 함께 불립니다. 2,000~2,350m에서 내추럴로 가공하며, 햇볕이 강해 낮 11시 30분부터 3시까지는 건조대를 덮어 천천히 말립니다.",
 "profileLevel": "place",
 "photo": {
 "f": "photos/et-cherry-sorting.jpg",
@@ -16778,15 +16940,15 @@
 "u": "https://www.partnerscoffee.com/blogs/education/ethiopia-suke-quto-2026"
 }
 ],
-"beanCount": 1,
 "elevation": "1,800~2,200m",
-"harvest": "12월~1월",
-"terroir": "오도 샤키소의 화산성 토양 · 원생림 그대로의 그늘 · 낙엽 퇴비",
+"story": "구지 오도 샤키소의 산자락에 펼쳐진 농장입니다. 1997~1999년 구지를 덮친 산불로 숲 5,000에이커가 타자 당시 공무원이던 테스파예 베켈레가 주민에게 커피 묘목을 나눠 주며 재조림을 시작했고, 결국 스스로 농장주가 됐습니다. 지금은 221~742헥타르의 숲과 커피밭에서 171~300 아웃그로워의 체리를 함께 가공하며, 유기농·레인포레스트 얼라이언스 인증을 받았습니다. 워시드는 35~72시간 물속 발효 후 13일 안쪽으로 말립니다.",
 "varieties": "쿠루메 · 월리쇼",
 "processes": "워시드 · 내추럴 · 펄프드 내추럴",
 "flavorProfile": "클레멘타인 · 사탕수수 · 레몬버베나",
+"harvest": "12월~1월",
+"beanCount": 1,
+"terroir": "오도 샤키소의 화산성 토양 · 원생림 그대로의 그늘 · 낙엽 퇴비",
 "trend": "구지 커피의 출발점으로 꼽히며 지금은 아디스아바바 드라이밀까지 갖췄습니다.",
-"story": "구지 오도 샤키소의 산자락에 펼쳐진 농장입니다. 1997~1999년 구지를 덮친 산불로 숲 5,000에이커가 타자 당시 공무원이던 테스파예 베켈레가 주민에게 커피 묘목을 나눠 주며 재조림을 시작했고, 결국 스스로 농장주가 됐습니다. 지금은 221~742헥타르의 숲과 커피밭에서 171~300 아웃그로워의 체리를 함께 가공하며, 유기농·레인포레스트 얼라이언스 인증을 받았습니다. 워시드는 35~72시간 물속 발효 후 13일 안쪽으로 말립니다.",
 "profileLevel": "place",
 "photo": {
 "f": "photos/et-depulper.jpg",
@@ -16945,15 +17107,15 @@
 "u": "https://kaffeelix.at/en/products/ethiopia-gotiti-washed-organic"
 }
 ],
-"beanCount": 1,
 "elevation": "2,000~2,100m",
-"harvest": "11월~1월",
-"terroir": "게뎁 동쪽 능선 · 원생림 그늘 · 붉은 광물질 토양",
+"story": "게뎁 동쪽 능선의 고티티 마을에 있습니다. 2022년 2헥타르 땅에 문을 연 새 스테이션으로, 868가구가 1헥타르 안팎의 밭에서 낸 체리를 한 해 500~600톤 받습니다. 펄퍼와 발효조를 거쳐 10~14일 건조대에서 말리며, 물을 아끼고 과육과 폐수를 나누는 방식으로 관리합니다. 상주 직원은 여섯 명이지만 수확철에는 250명 넘게 일합니다.",
 "varieties": "74110 · 74112 · 7454 · 7440",
 "processes": "워시드 중심",
 "flavorProfile": "토피 · 오렌지 블로섬 · 살구 · 밀크초콜릿",
+"harvest": "11월~1월",
+"beanCount": 1,
+"terroir": "게뎁 동쪽 능선 · 원생림 그늘 · 붉은 광물질 토양",
 "trend": "물 사용을 줄이고 랏별 기록을 남기는 추적 관리로 새 스테이션 중 평가가 좋습니다.",
-"story": "게뎁 동쪽 능선의 고티티 마을에 있습니다. 2022년 2헥타르 땅에 문을 연 새 스테이션으로, 868가구가 1헥타르 안팎의 밭에서 낸 체리를 한 해 500~600톤 받습니다. 펄퍼와 발효조를 거쳐 10~14일 건조대에서 말리며, 물을 아끼고 과육과 폐수를 나누는 방식으로 관리합니다. 상주 직원은 여섯 명이지만 수확철에는 250명 넘게 일합니다.",
 "profileLevel": "place",
 "photo": {
 "f": "photos/et-green-sorting.jpg",
@@ -17034,15 +17196,15 @@
 "u": "https://roadmapcoffeeworks.com/products/ethiopia-chelba"
 }
 ],
-"beanCount": 1,
 "elevation": "1,800~1,920m",
-"harvest": "10월~1월",
-"terroir": "예가체프 서쪽 낮은 고지 · 엔세트·그늘나무 · 베르티솔 토양",
+"story": "예가체프 마을에서 12km 떨어진 첼바 마을에 있습니다. 트라콘 커피가 게데오에서 운영하는 여섯 스테이션 가운데 하나로, 460~800 소농이 1.6헥타르 안팎의 밭에서 낸 체리를 받습니다. 대부분 커피와 함께 엔세트를 기릅니다. 워시드는 전통 방식으로 가공하고, 내추럴은 체리를 비닐에 진공 포장해 120시간 두었다가 15~18일 말리는 랏도 냅니다. 고도가 1,900m 안팎이라 예가체프 안에서도 산미가 부드럽고 단맛이 두터운 편입니다.",
 "varieties": "재래종 · 지역 헤어룸",
 "processes": "워시드 · 내추럴 · 120시간 진공 발효",
 "flavorProfile": "딸기 · 복숭아 · 수박 · 꿀",
+"harvest": "10월~1월",
+"beanCount": 1,
+"terroir": "예가체프 서쪽 낮은 고지 · 엔세트·그늘나무 · 베르티솔 토양",
 "trend": "진공 발효 내추럴처럼 실험 랏을 늘리며 예가체프 안에서도 개성을 내는 중입니다.",
-"story": "예가체프 마을에서 12km 떨어진 첼바 마을에 있습니다. 트라콘 커피가 게데오에서 운영하는 여섯 스테이션 가운데 하나로, 460~800 소농이 1.6헥타르 안팎의 밭에서 낸 체리를 받습니다. 대부분 커피와 함께 엔세트를 기릅니다. 워시드는 전통 방식으로 가공하고, 내추럴은 체리를 비닐에 진공 포장해 120시간 두었다가 15~18일 말리는 랏도 냅니다. 고도가 1,900m 안팎이라 예가체프 안에서도 산미가 부드럽고 단맛이 두터운 편입니다.",
 "profileLevel": "place",
 "photo": {
 "f": "photos/et-cherry-sorting.jpg",
@@ -17253,15 +17415,15 @@
 "u": "https://www.blackwhiteroasters.com/products/r-halo-hartume-washed"
 }
 ],
-"beanCount": 1,
 "elevation": "1,900~2,210m",
-"harvest": "11월~1월",
-"terroir": "게뎁 북쪽 고지 · 원생림 그늘 · 붉은 화산성 토양",
+"story": "게뎁 북쪽 하르투메 마을에 있습니다. 워카 사카로를 운영하던 미자네 가문이 2013년 무렵 두 번째로 세운 스테이션으로, 아버지 미자네 워레사와 아들 다니엘이 함께 맡고 있습니다. 400~500 소농이 1,900~2,210m 밭에서 낸 체리를 받아 물에 담가 24~48시간 발효한 뒤 건조대에서 10~14일 말립니다. 가문은 게뎁의 마을마다 커피를 따로 수출해 왔고, 그 덕에 하르투메라는 이름이 로스터들 사이에 알려졌습니다.",
 "varieties": "재래종 · JARC 선발종",
 "processes": "워시드 중심 · 내추럴",
 "flavorProfile": "복숭아 · 허니듀 · 타이 바질",
+"harvest": "11월~1월",
+"beanCount": 1,
+"terroir": "게뎁 북쪽 고지 · 원생림 그늘 · 붉은 화산성 토양",
 "trend": "가문이 게뎁의 마을별로 랏을 나눠 내면서 이름이 알려졌습니다.",
-"story": "게뎁 북쪽 하르투메 마을에 있습니다. 워카 사카로를 운영하던 미자네 가문이 2013년 무렵 두 번째로 세운 스테이션으로, 아버지 미자네 워레사와 아들 다니엘이 함께 맡고 있습니다. 400~500 소농이 1,900~2,210m 밭에서 낸 체리를 받아 물에 담가 24~48시간 발효한 뒤 건조대에서 10~14일 말립니다. 가문은 게뎁의 마을마다 커피를 따로 수출해 왔고, 그 덕에 하르투메라는 이름이 로스터들 사이에 알려졌습니다.",
 "profileLevel": "place",
 "photo": {
 "f": "photos/et-cherry-drying.jpg",
@@ -18263,11 +18425,11 @@
 "u": "https://coffeelibre.kr/product/new-crop-%EC%83%9D%EB%91%90-%EC%BD%94%EC%8A%A4%ED%83%80%EB%A6%AC%EC%B9%B4-%EC%82%B0%ED%83%80-%EB%A1%9C%EC%82%AC-1900-%ED%95%80%EC%B9%B4-%EB%A7%88%EC%B4%88-2026/7881/"
 }
 ],
-"harvest": "11월~3월 (주 수확기)",
-"terroir": "타라수 산타 로사 데 레온 코르테스 · 고지",
 "varieties": "카투아이 · 카투라",
 "processes": "워시드 · 허니",
 "flavorProfile": "시트러스 · 꿀 · 깨끗한 단맛",
+"harvest": "11월~3월 (주 수확기)",
+"terroir": "타라수 산타 로사 데 레온 코르테스 · 고지",
 "trend": "가족 마이크로밀 '산타 로사 1900'에서 랏 단위로 가공합니다.",
 "profileLevel": "place",
 "photo": {
@@ -18895,6 +19057,10 @@
 {
 "t": "지역 자료",
 "u": "https://fundacionmarsellajuegayeduca.blogspot.com/2025/02/vii-premio-cafeteritos-cafe-excelso.html"
+},
+{
+"t": "농장·가공",
+"u": "https://www.cafeconnombrepropio.com/caficultores/carlos-pajitas"
 }
 ],
 "beanCount": 1,
@@ -18918,61 +19084,42 @@
 }
 },
 {
-"id": "F|콜롬비아|엘 레푸히오",
+"id": "F|콜롬비아|엘 레푸히오 (라 플라타)",
 "kind": "farm",
 "country": "콜롬비아",
-"name": "엘 레푸히오",
-"nameEn": "El Refugio",
-"nameJa": null,
-"lat": 2.4738993,
-"lon": -75.5900113,
+"name": "엘 레푸히오 (라 플라타)",
+"nameEn": "El Refugio (La Plata)",
+"nameJa": "エル・レフヒオ（ラ・プラタ）",
+"lat": 2.38942,
+"lon": -75.89262,
 "precision": "region",
-"evidence": "우일라 주(州) 중심",
-"source": "https://allianceforcoffeeexcellence.org/colombia-2023/",
+"evidence": "우일라 라 플라타 라 플로리다 베레다 · 좌표는 라 플라타 중심(OSM La Plata)",
+"source": "https://flowerchildcoffee.com/products/david-ruben-gomez",
 "alias": [
-"El Refugio"
+"엘 레푸히오",
+"el refugio"
 ],
-"producer": "Carmen Alica Ruiz",
-"story": "우일라에 있는 커피 농장입니다. CoE Colombia 2023에서 26위(87.22)에 올랐습니다. 출품 랏의 품종은 버번, 가공은 워시드입니다.",
-"varieties": "버번",
+"producer": "다비드 루벤 고메스 (David Rubén Gómez)",
+"founded": "20년 넘게 커피를 만들어 온 가족 농장",
+"elevation": "1,920~1,960m",
+"story": "우일라 라 플라타의 라 플로리다 베레다에 있는 농장입니다. 커피 농가 집안에서 자란 다비드 루벤 고메스가 20년 넘게 커피를 만들어 왔고, 지금은 4헥타르에 게이샤와 카투라, 콜롬비아를 심고 있습니다. 체리를 24시간 쉬게 한 뒤 펄핑해 36시간 발효하고, 세척한 파치먼트를 22일 동안 천천히 말립니다. 라 플라타의 알토 카냐다와 카우카 이타이베 사이에서 활동하는 마르티르 그룹 소속 농가이기도 합니다.",
+"varieties": "게이샤 · 카투라 · 콜롬비아",
 "processes": "워시드",
+"flavorProfile": "골든베리 · 꿀 · 오렌지 꽃",
+"harvest": "10월~12월",
 "refs": [
 {
-"t": "대회 결과",
-"u": "https://allianceforcoffeeexcellence.org/colombia-2023/"
+"t": "농장 정보",
+"u": "https://flowerchildcoffee.com/products/david-ruben-gomez"
 },
 {
-"t": "교차 확인",
-"u": "https://catastro.coffee/en/cup-of-excellence/colombia-2023/"
+"t": "농장·가공",
+"u": "https://www.sioptec.co/products/david-ruben-gomez-gomez-colombia-200g"
 }
 ],
-"beanCount": 0,
-"auctions": [
-{
-"id": "coe-colombia-2023-el-refugio-26",
-"competition": "CoE Colombia 2023",
-"year": 2023,
-"rank": "26",
-"score": 87.22,
-"farm": "El Refugio",
-"variety": "Bourbon",
-"process": "Washed",
-"buyers": [
-"BPC for Coffee Fiel (South Korea)"
-],
-"buyersEn": [
-"BPC for Coffee Fiel (South Korea)"
-],
-"buyersJa": [
-"BPC for Coffee Fiel (South Korea)"
-],
-"joint": false,
-"level": "farm",
-"src": "https://allianceforcoffeeexcellence.org/colombia-2023/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/colombia-2023/"
-}
-],
-"auctionCount": 1,
+"beanCount": 1,
+"terroir": "우일라 라 플라타 라 플로리다 · 가파른 안데스 경사 · 서늘한 미기후",
+"trend": "라 플라타의 마르티르 그룹에 속한 농가로, 게이샤를 정교하게 가공합니다.",
 "profileLevel": "place",
 "photo": {
 "m": "country_fallback",
@@ -19340,72 +19487,6 @@
 "trend": "남부 산지의 소농 랏이 스페셜티 시장에 들어왔습니다.",
 "story": "루부마는 탄자니아 남부의 커피 산지입니다. 니아사 호수 인근 1,200~1,800m 고지의 화산성 토양에서 버번·켄트를 기르고, 소농이 워시드 중심으로 가공해 스페셜티 시장에 들어왔습니다.",
 "profileLevel": "place",
-"photo": {
-"m": "country_fallback",
-"f": "photos/up-coffee-farm-near-karatu-06.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Coffee_Farm_near_Karatu_%2806%29.jpg/960px-Coffee_Farm_near_Karatu_%2806%29.jpg",
-"c": {
-"ko": "탄자니아 커피 건조 (국가 대표 사진)",
-"en": "Tanzania coffee drying (country representative photo)",
-"ja": "タンザニアのコーヒー乾燥（代表写真）"
-},
-"a": "Zenith4237",
-"l": "CC BY-SA 4.0",
-"lu": "https://creativecommons.org/licenses/by-sa/4.0",
-"s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Coffee_Farm_near_Karatu_(06).jpg"
-}
-},
-{
-"id": "F|탄자니아|콩고니",
-"kind": "farm",
-"country": "탄자니아",
-"name": "콩고니",
-"nameEn": "Kongoni Estate",
-"nameJa": "コンゴニ農園",
-"lat": -3.35,
-"lon": 35.7,
-"precision": "village",
-"evidence": "카라투 올데아니, 응고롱고로 분화구 북쪽 사면 · OSM/Photon",
-"source": "https://www.openstreetmap.org/?mlat=-3.35&mlon=35.7#map=12/-3.35/35.7",
-"elevation": "1,650~1,850m",
-"harvest": "7월~11월",
-"terroir": "응고롱고로 분화구 북쪽 사면 · 화산성 토양과 짙은 그늘",
-"varieties": "버번 · 켄트 · SL39 (묘목장에 게이샤·파카마라·SL28)",
-"processes": "풀리 워시드 · 72시간 발효",
-"flavorProfile": "다크초콜릿 · 캐러멜 · 건포도, 묵직한 단맛",
-"trend": "아가르왈 가문이 1970년대에 인수한 뒤 생산 관리를 손봐 지금은 탄자니아 북부의 대표 농장으로 자리 잡았습니다.",
-"story": "콩고니는 1920년대에 세워진 오래된 농장으로, 응고롱고로 분화구 북쪽 카라투에 있습니다. 전체 1,500헥타르 가운데 220헥타르 남짓만 커피밭이고 나머지는 야생동물 보호구역입니다. 커피밭 대부분이 그늘 아래 있어 체리가 천천히 익고, 수확기에는 이웃 마을 사람들이 함께 손으로 땁니다.",
-"producer": "아가르왈 가문",
-"founded": "1920년대 (1970년대 아가르왈 가문 인수)",
-"lang": {
-"en": {
-"elevation": "1,650–1,850 m",
-"harvest": "July–November",
-"terroir": "North slopes of the Ngorongoro Crater · volcanic soils under heavy shade",
-"varieties": "Bourbon · Kent · SL39 (Geisha, Pacamara and SL28 in the nursery)",
-"processes": "Fully washed · 72-hour fermentation",
-"flavorProfile": "Dark chocolate · caramel · raisin, deep sweetness",
-"trend": "Taken over by the Aggarwal family in the 1970s and since re-managed, it is now one of northern Tanzania's flagship farms.",
-"story": "Kongoni is an old estate from the 1920s in Karatu, on the northern slopes of the Ngorongoro Crater. Only about 220 of its 1,500 hectares are coffee; the rest is a wildlife reserve. Most of the coffee grows under heavy shade, and neighbouring villagers hand-pick the crop each season.",
-"producer": "Aggarwal family",
-"founded": "1920s (Aggarwal family from the 1970s)"
-},
-"ja": {
-"elevation": "1,650〜1,850m",
-"harvest": "7月〜11月",
-"terroir": "ンゴロンゴロ・クレーター北斜面・火山性土壌と深い日陰",
-"varieties": "ブルボン・ケント・SL39（苗木園にゲイシャ・パカマラ・SL28）",
-"processes": "フルウォッシュド・72時間発酵",
-"flavorProfile": "ダークチョコレート・キャラメル・レーズン、重厚な甘さ",
-"trend": "1970年代にアガルワル家が取得して管理を見直し、今はタンザニア北部を代表する農園になりました。",
-"story": "コンゴニは1920年代に開かれた古い農園で、ンゴロンゴロ・クレーター北側のカラトゥにあります。1,500ヘクタールのうちコーヒー畑は220ヘクタールほどで、残りは野生動物の保護区です。畑の大半が深い日陰の下にありチェリーがゆっくり熟し、収穫期には近隣の村人が手摘みを手伝います。",
-"producer": "アガルワル家",
-"founded": "1920年代（1970年代にアガルワル家が取得）"
-}
-},
-"market": "jp",
-"beanCount": 1,
 "photo": {
 "m": "country_fallback",
 "f": "photos/up-coffee-farm-near-karatu-06.jpg",
@@ -19793,11 +19874,11 @@
 "u": "https://sacred-grounds.coffee/blogs/all-about-the-coffee/peru"
 }
 ],
-"harvest": "4월~8월 (주 수확기)",
-"terroir": "카하마르카 산이그나시오 · 안데스 고지",
 "varieties": "티피카 · 카투라 (라벨 표기 기준)",
 "processes": "워시드 중심",
 "flavorProfile": "카라멜 · 시트러스 · 부드러운 단맛",
+"harvest": "4월~8월 (주 수확기)",
+"terroir": "카하마르카 산이그나시오 · 안데스 고지",
 "trend": "페루 북부 소농 농장으로, 랏 단위로 팔립니다.",
 "profileLevel": "place",
 "photo": {
@@ -19955,6 +20036,7 @@
 "precision": "village",
 "evidence": "하와이섬 코나 케알라케쿠아 위쪽 카이날리우 · OSM/Photon",
 "source": "https://www.openstreetmap.org/?mlat=19.5267&mlon=-155.9267#map=12/19.5267/-155.9267",
+"alias": [],
 "elevation": "600~670m (2,000~2,100ft)",
 "harvest": "8월~1월",
 "terroir": "훌랄라이 화산 서쪽 사면 · 화산 토양과 바닷바람",
@@ -19988,7 +20070,6 @@
 "producer": "カイナリウ農園（アロハヒルズ）"
 }
 },
-"market": "jp",
 "beanCount": 1,
 "photo": {
 "m": "country_fallback",
@@ -24449,99 +24530,80 @@
 }
 },
 {
-"id": "F|브라질|파젠다 세르탕",
+"id": "F|브라질|파젠다 로도무뇨",
 "kind": "farm",
 "country": "브라질",
-"name": "파젠다 세르탕",
-"nameEn": "Fazenda Sertão",
-"nameJa": "ファゼンダ・セルタン",
-"lat": -22.0999977,
-"lon": -45.189369,
-"precision": "farm",
-"evidence": "OSM 'Fazenda do Sertão' 농장 지점, 카르무 지 미나스",
-"source": "https://www.cafefamiliasertao.com.br/nossa-historia.html",
+"name": "파젠다 로도무뇨",
+"nameEn": "Fazenda Rodomunho",
+"nameJa": "ファゼンダ・ロドムーニョ",
+"lat": -19.1965275,
+"lon": -46.2411395,
+"precision": "village",
+"evidence": "히우 파라나이바 시 중심(OSM town Rio Paranaíba) · 농장 공식 사이트는 시 단위 소재만 밝히고 농장 자체 좌표는 공개하지 않음",
+"source": "https://fazendarodomunho.com/",
 "alias": [
-"파젠다세르탕",
-"세르탕",
-"fazenda sertao",
-"fazenda sertão",
-"sertao",
-"ファゼンダ・セルタン"
+"파젠다로도무뇨",
+"로도무뇨",
+"로도 무뇨",
+"파젠다 로도문호",
+"fazenda rodomunho",
+"fazenda rodo munho",
+"rodomunho",
+"rodo munho",
+"ファゼンダ・ロドムーニョ",
+"ロドムーニョ"
 ],
-"producer": "프란시스쿠 이지드루 지아스 페레이라 (Francisco Isidro Dias Pereira, '시쿠') — 페레이라 가문 4대",
-"founded": "1908~1910년 증조부 부부가 첫 커피를 심음 · 1949년 조부모가 농장을 이어받음",
-"elevation": "1,100~1,450m",
-"story": "미나스 제라이스 카르무 지 미나스의 농장입니다. 1908~1910년 증조부 이지드루 안토니우 페레이라와 에메렌시아나 안드라지 페레이라가 심은 커피나무에서 시작해, 1949년 조제 이지드루 페레이라가 나제레 지아스 페레이라와 함께 농장을 이어받았습니다. 850헥타르 가운데 350헥타르가 커피밭이고, 나머지는 바나나·옥수수·콩과 젖소 사육에 씁니다. 같은 가문의 파젠다 산타 이네스 랏이 2005년 컵 오브 엑셀런스에서 95.85점을 받아 대회 최고 기록을 세웠고, 그해 가문이 1~3위를 모두 가져갔습니다. 지금은 4대째 프란시스쿠(시쿠) 이지드루 지아스 페레이라가 이끌며, 2025년 대회에서는 토파지우 내추럴 랏으로 5위(89.32)에 올랐습니다.",
-"varieties": "옐로 버번 · 레드 버번 · 카투아이 · 아라라 · 토파지우",
-"processes": "내추럴 중심 · 펄프드 내추럴",
-"flavorProfile": "코코아 · 무화과 · 헤이즐넛 · 꿀, 둥근 바디",
+"producer": "치아구 코르시 다 시우바 (Thiago Corsi da Silva) — 코르시 다 시우바 가문 4대",
+"founded": "파라나에서 서리를 겪은 뒤 1985년 세하두 미네이루로 옮겨 정착 · 2019년 치아구가 스페셜티·재생농업으로 전환",
+"elevation": "1,100~1,350m (농장 표기) · 랏 표기는 1,100~1,150m",
+"story": "미나스 제라이스 히우 파라나이바, 세하두 미네이루의 평평한 고원에 있는 농장입니다. 코르시 다 시우바 가문이 4대째 커피를 재배했고, 부친이 파라나에서 서리를 크게 겪은 뒤 1985년 이 지역으로 옮겨 왔습니다. 2019년 치아구 코르시 다 시우바가 농장을 맡으면서 스페셜티와 재생농업으로 방향을 잡았고, 커피밭 90~96헥타르와 자연보호구역 350헥타르를 함께 관리합니다. 체리를 18°C 이하로 유지한 어두운 방에서 120~140시간 발효한 뒤 천일 건조하는 '다크룸' 가공으로 파파야와 열대과일 향이 진한 게이샤·시드라 랏을 냅니다.",
+"varieties": "게이샤(레드 게이샤) · 시드라 · 카투아이 62 · 토파지우",
+"processes": "다크룸 내추럴 — 18°C 이하 어두운 방에서 120~140시간 발효 후 내추럴 건조(아프리카 베드·콘크리트 파티오)",
+"flavorProfile": "파파야 · 열대과일 · 붉은 과일 · 흑설탕 · 꽃향",
 "harvest": "5월~9월 (주 수확기)",
 "awards": [
-"Cup of Excellence Brasil 2025 5위 — 89.32점, 토파지우 내추럴",
-"같은 가문의 파젠다 산타 이네스 — Cup of Excellence Brasil 2005 1위, 95.85점(대회 최고 기록)"
+"Cup of Excellence Brasil 2025 내추럴(비아 세카) 부문 12위 — 87.18점, 카투아이 내추럴"
 ],
 "refs": [
 {
-"t": "농장·가문 공식",
-"u": "https://www.cafefamiliasertao.com.br/nossa-historia.html"
+"t": "농장 공식",
+"u": "https://fazendarodomunho.com/"
 },
 {
-"t": "가문 기록·수상",
-"u": "https://cafefamiliasertao.com.br/recordes-premiacoes.html"
+"t": "농장 연혁",
+"u": "https://fazendarodomunho.com/nossa-historia/"
 },
 {
-"t": "농장 소개(면적·고도)",
-"u": "https://www.partnerscoffee.com/products/brazil-sertao"
+"t": "생두 소개·고도",
+"u": "https://fazendarodomunho.com/cafe-verde-para-torrefacoes/"
+},
+{
+"t": "농장 소개(면적·가공)",
+"u": "https://tuka-beans.com/fazenda-rodomunho/"
 },
 {
 "t": "Cup of Excellence Brasil 2025 결과",
-"u": "https://allianceforcoffeeexcellence.org/brazil-2025/"
+"u": "https://www.bsca.com.br/resultado_cup_of_excellence_brasil_2025/"
 }
 ],
 "beanCount": 0,
-"auctions": [
-{
-"id": "coe-brazil-2025-fazenda-serta-o-5",
-"competition": "CoE Brazil 2025 · Natural",
-"year": 2025,
-"rank": "5",
-"score": 89.32,
-"farm": "Fazenda Sertão",
-"variety": "Topázio",
-"process": "Natural",
-"buyers": [
-"칼디커피팜"
-],
-"buyersEn": [
-"KALDI COFFEE FARM"
-],
-"buyersJa": [
-"カルディコーヒーファーム"
-],
-"joint": true,
-"level": "farm",
-"src": "https://allianceforcoffeeexcellence.org/brazil-2025/",
-"src2": "https://catastro.coffee/en/cup-of-excellence/brasil-2025/"
-}
-],
-"auctionCount": 1,
-"terroir": "카르무 지 미나스 · 만티케이라 지맥의 고도 높은 구릉 · 만티케이라 지 미나스 원산지 명칭(D.O.) 안",
-"trend": "4대째 가족 농장으로, 랏마다 수확과 건조를 나눠 대회 출품과 직거래를 이어갑니다.",
+"terroir": "히우 파라나이바 · 세하두 미네이루의 평평한 고지대 · 계곡의 샘과 강이 만드는 미기후 · 바람을 막아 주는 지형",
+"trend": "다크룸 발효 랏으로 브라질 내추럴의 표현 폭을 넓히고 있고, 재생농업으로 서리와 가뭄에 견디는 농장을 만들어 가고 있습니다.",
 "profileLevel": "place",
 "photo": {
 "m": "exact_origin",
-"f": "photos/br-fazenda-sertao-carmo-de-minas-cafezal.jpg",
-"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Carmo_de_Minas_MG_Brasil_-_Cafezal_-_panoramio.jpg/960px-Carmo_de_Minas_MG_Brasil_-_Cafezal_-_panoramio.jpg",
+"f": "photos/br-bioma-cafe-cerrado-cafezal.jpg",
+"g": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Cafezal_ao_lado_de_mata_nativa_do_cerrado_de_cerrad%C3%A3o%2C_na_regi%C3%A3o_do_alto_parana%C3%ADba_no_munic%C3%ADpio_de_Arapu%C3%A1_MG_-_panoramio.jpg/960px-Cafezal_ao_lado_de_mata_nativa_do_cerrado_de_cerrad%C3%A3o%2C_na_regi%C3%A3o_do_alto_parana%C3%ADba_no_munic%C3%ADpio_de_Arapu%C3%A1_MG_-_panoramio.jpg",
 "c": {
-"ko": "카르무 지 미나스의 커피밭",
-"en": "Coffee fields in Carmo de Minas",
-"ja": "カルモ・デ・ミナスのコーヒー畑"
+"ko": "알투 파라나이바의 세하두 커피밭(지역 참고 사진, 이 농장 사진 아님)",
+"en": "Cerrado coffee field in the Alto Paranaíba (regional reference, not this farm)",
+"ja": "アルト・パラナイーバのセラードのコーヒー畑（地域参考写真、この農園の写真ではありません）"
 },
-"a": "Josue Marinho",
+"a": "Tiago Firmino Boaventura",
 "l": "CC BY 3.0",
 "lu": "https://creativecommons.org/licenses/by/3.0",
 "s": "commons",
-"p": "https://commons.wikimedia.org/wiki/File:Carmo_de_Minas_MG_Brasil_-_Cafezal_-_panoramio.jpg"
+"p": "https://commons.wikimedia.org/wiki/File:Cafezal_ao_lado_de_mata_nativa_do_cerrado_de_cerrad%C3%A3o,_na_regi%C3%A3o_do_alto_parana%C3%ADba_no_munic%C3%ADpio_de_Arapu%C3%A1_MG_-_panoramio.jpg"
 }
 },
 {
@@ -28951,9 +29013,16 @@
 "Bukato"
 ],
 "producer": "부카토 두게 발레 (Bukato Duge Bale / Bukto Dure Bore)",
+"elevation": "2,350~2,360m",
 "story": "시다마 아르베고나 부르사 kebele의 1.64헥타르 농가입니다. 부카토 두게 발레가 74158을 기르며 체리를 직접 내추럴로 말리고, 2022년 에티오피아 CoE에서 90.17점으로 4위에 올랐습니다. 2024년 대회에서도 89.70점으로 3위에 오르며 부르사 마을이 알려지는 데 앞장섰습니다.",
 "varieties": "74158",
 "processes": "내추럴",
+"flavorProfile": "롱안 · 흑설탕 · 시나몬",
+"harvest": "12월~2월",
+"awards": [
+"CoE Ethiopia 2022 4위 — 90.17",
+"CoE Ethiopia 2024 3위 — 89.70"
+],
 "refs": [
 {
 "t": "대회 결과",
@@ -28995,6 +29064,8 @@
 }
 ],
 "auctionCount": 1,
+"terroir": "시다마 아르베고나 부르사 kebele · 반원생림 · 큰 일교차",
+"trend": "부르사 마을이 새 커피 산지로 떠오르기 전부터 대회 상위권에 오른 농가입니다.",
 "profileLevel": "place",
 "photo": {
 "m": "country_fallback",
@@ -29011,16 +29082,7 @@
 "s": "commons",
 "p": "https://commons.wikimedia.org/wiki/File:Sifting_good_beans_from_bad.jpg",
 "o": "50% 62%"
-},
-"elevation": "2,350~2,360m",
-"flavorProfile": "롱안 · 흑설탕 · 시나몬",
-"harvest": "12월~2월",
-"awards": [
-"CoE Ethiopia 2022 4위 — 90.17",
-"CoE Ethiopia 2024 3위 — 89.70"
-],
-"terroir": "시다마 아르베고나 부르사 kebele · 반원생림 · 큰 일교차",
-"trend": "부르사 마을이 새 커피 산지로 떠오르기 전부터 대회 상위권에 오른 농가입니다."
+}
 },
 {
 "kind": "region",
@@ -44898,42 +44960,61 @@
 }
 },
 {
-"id": "F|콜롬비아|엘 레푸히오 (라 플라타)",
+"id": "F|콜롬비아|엘 레푸히오",
 "kind": "farm",
 "country": "콜롬비아",
-"name": "엘 레푸히오 (라 플라타)",
-"nameEn": "El Refugio (La Plata)",
-"nameJa": "エル・レフヒオ（ラ・プラタ）",
-"lat": 2.38942,
-"lon": -75.89262,
+"name": "엘 레푸히오",
+"nameEn": "El Refugio",
+"nameJa": null,
+"lat": 2.4738993,
+"lon": -75.5900113,
 "precision": "region",
-"evidence": "우일라 라 플라타 라 플로리다 베레다 · 좌표는 라 플라타 중심(OSM La Plata)",
-"source": "https://flowerchildcoffee.com/products/david-ruben-gomez",
+"evidence": "우일라 주(州) 중심",
+"source": "https://allianceforcoffeeexcellence.org/colombia-2023/",
 "alias": [
-"엘 레푸히오",
-"el refugio"
+"El Refugio"
 ],
-"producer": "다비드 루벤 고메스 (David Rubén Gómez)",
-"founded": "20년 넘게 커피를 만들어 온 가족 농장",
-"elevation": "1,920~1,960m",
-"story": "우일라 라 플라타의 라 플로리다 베레다에 있는 농장입니다. 커피 농가 집안에서 자란 다비드 루벤 고메스가 20년 넘게 커피를 만들어 왔고, 지금은 4헥타르에 게이샤와 카투라, 콜롬비아를 심고 있습니다. 체리를 24시간 쉬게 한 뒤 펄핑해 36시간 발효하고, 세척한 파치먼트를 22일 동안 천천히 말립니다. 라 플라타의 알토 카냐다와 카우카 이타이베 사이에서 활동하는 마르티르 그룹 소속 농가이기도 합니다.",
-"varieties": "게이샤 · 카투라 · 콜롬비아",
+"producer": "Carmen Alica Ruiz",
+"story": "우일라에 있는 커피 농장입니다. CoE Colombia 2023에서 26위(87.22)에 올랐습니다. 출품 랏의 품종은 버번, 가공은 워시드입니다.",
+"varieties": "버번",
 "processes": "워시드",
-"flavorProfile": "골든베리 · 꿀 · 오렌지 꽃",
-"harvest": "10월~12월",
 "refs": [
 {
-"t": "농장 정보",
-"u": "https://flowerchildcoffee.com/products/david-ruben-gomez"
+"t": "대회 결과",
+"u": "https://allianceforcoffeeexcellence.org/colombia-2023/"
 },
 {
-"t": "농장·가공",
-"u": "https://www.sioptec.co/products/david-ruben-gomez-gomez-colombia-200g"
+"t": "교차 확인",
+"u": "https://catastro.coffee/en/cup-of-excellence/colombia-2023/"
 }
 ],
-"beanCount": 1,
-"terroir": "우일라 라 플라타 라 플로리다 · 가파른 안데스 경사 · 서늘한 미기후",
-"trend": "라 플라타의 마르티르 그룹에 속한 농가로, 게이샤를 정교하게 가공합니다.",
+"beanCount": 0,
+"auctions": [
+{
+"id": "coe-colombia-2023-el-refugio-26",
+"competition": "CoE Colombia 2023",
+"year": 2023,
+"rank": "26",
+"score": 87.22,
+"farm": "El Refugio",
+"variety": "Bourbon",
+"process": "Washed",
+"buyers": [
+"BPC for Coffee Fiel (South Korea)"
+],
+"buyersEn": [
+"BPC for Coffee Fiel (South Korea)"
+],
+"buyersJa": [
+"BPC for Coffee Fiel (South Korea)"
+],
+"joint": false,
+"level": "farm",
+"src": "https://allianceforcoffeeexcellence.org/colombia-2023/",
+"src2": "https://catastro.coffee/en/cup-of-excellence/colombia-2023/"
+}
+],
+"auctionCount": 1,
 "profileLevel": "place",
 "photo": {
 "m": "country_fallback",
@@ -71856,7 +71937,7 @@
 "variety": null,
 "process": "내추럴",
 "cupNotes": [],
-"placeId": "C|과테말라",
+"placeId": "F|과테말라|로스마",
 "listingCount": 1,
 "processId": "natural",
 "processGroup": "natural"
@@ -71870,7 +71951,7 @@
 "variety": null,
 "process": "워시드",
 "cupNotes": [],
-"placeId": "C|과테말라",
+"placeId": "F|과테말라|로스마",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -71889,7 +71970,7 @@
 "캐모마일",
 "빨간과일"
 ],
-"placeId": "C|과테말라",
+"placeId": "F|과테말라|로스마",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -78218,7 +78299,7 @@
 "밀크캐러멜",
 "단맛"
 ],
-"placeId": "C|브라질",
+"placeId": "F|브라질|파젠다 세르탕",
 "listingCount": 1,
 "processId": "pulped-natural",
 "processGroup": "honey",
@@ -99847,7 +99928,7 @@
 "variety": null,
 "process": "워시드",
 "cupNotes": [],
-"placeId": "R|탄자니아|킬리만자로",
+"placeId": "F|탄자니아|콩고니",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
@@ -99867,7 +99948,7 @@
 "견과류",
 "초콜릿"
 ],
-"placeId": "R|탄자니아|킬리만자로",
+"placeId": "F|탄자니아|콩고니",
 "listingCount": 1,
 "processId": "washed",
 "processGroup": "washed"
