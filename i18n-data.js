@@ -26,6 +26,7 @@ window.CI_I18N = (function () {
     "가이드": "Guide||ガイド",
     "커피대회": "Competitions||大会",
     "농장 아카이브": "Farms||農園アーカイブ",
+    "로컬 카페": "Local cafes||ローカルカフェ",
     "내 커피 기록": "My Coffee Log||コーヒー記録",
     "소개": "About||このサイト",
     "개인정보처리방침": "Privacy||プライバシー",
