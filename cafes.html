@@ -765,8 +765,8 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     PIN = L.divIcon({ className: "", html: '<span class="pin"></span>', iconSize: [14, 14], iconAnchor: [7, 7] });
     state.map = L.map("cfmap", {
       center: [36.4, 127.7],
-      zoom: 6.5,
-      zoomSnap: 0.5,
+      zoom: 7,
+      zoomSnap: 1,
       minZoom: 6,
       maxZoom: 18,
       zoomControl: true,
@@ -813,9 +813,9 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
         if (m && state.byCode[m[1]]) {
           selectRegion(m[1], true);
         } else {
-          // 전국 뷰 — 한반도(제주·울릉 포함)가 한 화면에 들어오는 배율
+          // 전국 뷰 — 좁은 화면은 6, 넓은 화면은 7 (타일 확대 배율이 1이라 이음매가 없습니다)
           var narrow = window.innerWidth < 760;
-          state.map.setView([35.9, 127.7], narrow ? 6 : 6.5);
+          state.map.setView(narrow ? [36.0, 127.7] : [35.7, 127.7], narrow ? 6 : 7);
         }
         syncView();
       })
