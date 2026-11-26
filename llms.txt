@@ -1,0 +1,29 @@
+# ONCOFFEELOG · 온커피로그
+
+> 스페셜티 커피 산지·농장 지도와 커피 기록 서비스. 운영 크럼블로스터스(KRUMBLE ROASTERS). 한국어가 기본 언어이며 영어·일본어 화면을 함께 제공한다.
+
+온커피로그는 손님이 마신 원두의 산지와 농장을 지도에서 확인하고 자기 기록을 남기는 사이트다. 공개 페이지에는 수입사명, 생두 매입가, 낙찰가, 수집 출처를 싣지 않는다.
+
+## 주요 페이지
+- [지도](https://oncoffeelog.com/): 산지·농장 지도. 생두 3,000여 종, 농장 700여 곳.
+- [산지·품종·가공 가이드](https://oncoffeelog.com/guide.html): 산지, 품종, 가공방식 설명.
+- [농장 아카이브](https://oncoffeelog.com/farms.html): 농장별 연혁·수상·좌표 근거.
+- [커피대회 일정](https://oncoffeelog.com/competitions.html): 국내 커피대회 일정과 접수 기간.
+- [커피 학술자료](https://oncoffeelog.com/research.html): 논문 163편 정리. 로스팅 4단계 분류, 한국어 요약.
+- [내 커피 기록](https://oncoffeelog.com/log.html): 개인 커피 기록.
+
+## 커피 학술자료 (research.html)
+논문 163편. 분야: 로스팅 127편, 산지·유전 12편, 가공·발효 12편, 추출·관능 12편.
+로스팅 논문의 단계 분류: 1단계 건조·황변 16편 / 2단계 마이야르·캐러멜화 20편 / 3단계 1차 크랙 19편 / 4단계 디벨롭먼트·배출 후 47편 / 전 구간 공통 25편.
+각 논문은 제목·저자·저널·연도·DOI·인용수·한국어 요약(수치 포함)을 싣는다. 무료 원문 79편, 원문 PDF로 수치를 확인한 논문 11편.
+유료·CC BY-ND 논문은 원문을 복제하지 않고 서지정보와 공개 초록에서 확인한 내용만 요약했다.
+
+### CC BY 4.0 한국어 전문 번역
+- [로스트 디벨롭먼트 타임 변동이 커피 브루의 관능 프로파일과 화학 조성에 미치는 영향 — NMR 및 DHS-GC–MS 측정](https://oncoffeelog.com/research/alstrup-2020.html) — The Effect of Roast Development Time Modulations on the Sensory Profile and Chemical Composition of the Coffee Brew as Measured by NMR and DHS-GC–MS, Beverages (MDPI), 2020, 6(4), 70, CC BY 4.0
+- [로스팅 조건과 커피 향미: 다중 연구 실증 분석](https://oncoffeelog.com/research/munchow-2020.html) — Roasting Conditions and Coffee Flavor: A Multi-Study Empirical Investigation, Beverages (MDPI), 2020, 6(2), 29, CC BY 4.0
+- [로부스타 생두 로스팅에서 유동층 로스터와 드럼 로스터의 성능 평가](https://oncoffeelog.com/research/rahayuningtyas-2023.html) — Evaluation of Fluidized-Bed and Drum Roaster Performance in Roasting of Robusta Green Bean, BIO Web of Conferences 69, 03006 (2023) — 2nd ICAFE 2023, CC BY 4.0
+- [휘발성 화합물 프로파일로 커피 원두의 로스팅 결함 식별하기](https://oncoffeelog.com/research/rusinek-2022.html) — How to Identify Roast Defects in Coffee Beans Based on the Volatile Compound Profile, Molecules (MDPI), 2022, 27(23), 8530, CC BY 4.0
+- [아라비카 커피 원두의 화학적·관능적 품질에 대한 열·물질전달 동역학 — 로스터 2종과 4가지 로스팅 프로파일 비교](https://oncoffeelog.com/research/debona-2022.html) — Heat and Mass Transfer Kinetics on the Chemical and Sensory Quality of Arabica Coffee Beans, Agronomy (MDPI), 2022, 12(11), 2880, CC BY 4.0
+
+## 인용·이용
+요약과 분류는 온커피로그가 작성했으며 원문과 다를 수 있다. 논문 내용을 인용할 때는 각 논문의 DOI 원문을 인용하고, 번역문을 인용할 때는 원저자와 CC BY 4.0 라이선스를 함께 밝혀야 한다.

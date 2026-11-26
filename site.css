@@ -22,6 +22,8 @@
   --navfarm-deep:#57361A;
   --navcafe:#5F6B3A;         /* 로컬 카페 버튼 — 올리브 그린 */
   --navcafe-deep:#4A5430;
+  --navres:#3F4A5C;          /* 학술자료 버튼 — 논문·활자 느낌의 슬레이트 네이비 */
+  --navres-deep:#2E3646;
   --shadow:0 10px 30px -18px rgba(34,30,26,.45);
   --r:18px;
 }
@@ -126,6 +128,30 @@ button{font-family:inherit}
 .nav a.nav-cafe[aria-current="page"]{
   background:var(--navcafe-deep);color:#FFFDF6;
   box-shadow:inset 0 0 0 1px rgba(255,253,246,.45),0 8px 18px -10px rgba(74,84,48,.95);
+}
+
+/* 학술자료 — 슬레이트 네이비 알약 버튼 (농장·기록·대회 버튼과 구분) */
+.nav a.nav-res,.nav a.nav-res:visited{
+  background:var(--navres);color:#F7F4EE;font-weight:800;letter-spacing:-.015em;
+  font-size:14.5px;line-height:1.3;padding:8px 16px;margin:0 8px;border-radius:999px;
+  box-shadow:0 8px 18px -10px rgba(46,54,70,.85);
+}
+.nav a.nav-res:hover,.nav a.nav-res:focus-visible{
+  background:var(--navres-deep);color:#F7F4EE;
+  box-shadow:0 9px 20px -10px rgba(46,54,70,.95);
+}
+.nav a.nav-res:focus-visible{outline:2px solid var(--navres);outline-offset:2px}
+.nav a.nav-res[aria-current="page"]{
+  background:var(--navres-deep);color:#F7F4EE;
+  box-shadow:inset 0 0 0 1px rgba(247,244,238,.45),0 8px 18px -10px rgba(46,54,70,.95);
+}
+
+/* 메뉴가 여섯 개가 된 뒤: 폴드·태블릿 폭(761~1150px)에서는 알약 버튼을 조금 줄여 한 줄에 담습니다 */
+@media (min-width:761px) and (max-width:1150px){
+  .topbar{padding:10px 16px;gap:12px}
+  .nav a.nav-log,.nav a.nav-comp,.nav a.nav-farm,.nav a.nav-res{
+    font-size:13.5px;padding:7px 12px;margin:0 4px;letter-spacing:-.02em;
+  }
 }
 
 /* ---------- layout ---------- */
