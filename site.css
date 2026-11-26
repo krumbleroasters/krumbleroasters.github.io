@@ -20,6 +20,8 @@
   --navcomp-deep:#7C480E;
   --navfarm:#6B4423;         /* 농장 아카이브 버튼 — 로스트·에스프레소 브라운 */
   --navfarm-deep:#57361A;
+  --navcafe:#5F6B3A;         /* 로컬 카페 버튼 — 올리브 그린 */
+  --navcafe-deep:#4A5430;
   --shadow:0 10px 30px -18px rgba(34,30,26,.45);
   --r:18px;
 }
@@ -108,6 +110,22 @@ button{font-family:inherit}
 .nav a.nav-farm[aria-current="page"]{
   background:var(--navfarm-deep);color:#FFFFFF;
   box-shadow:inset 0 0 0 1px rgba(255,246,232,.45),0 8px 18px -10px rgba(87,54,26,.95);
+}
+
+/* 로컬 카페 — 올리브 그린 알약 버튼 (농장 아카이브·대회·기록 버튼과 구분) */
+.nav a.nav-cafe,.nav a.nav-cafe:visited{
+  background:var(--navcafe);color:#FFFDF6;font-weight:800;letter-spacing:-.015em;
+  font-size:14.5px;line-height:1.3;padding:8px 16px;margin:0 8px;border-radius:999px;
+  box-shadow:0 8px 18px -10px rgba(74,84,48,.85);
+}
+.nav a.nav-cafe:hover,.nav a.nav-cafe:focus-visible{
+  background:var(--navcafe-deep);color:#FFFDF6;
+  box-shadow:0 9px 20px -10px rgba(74,84,48,.95);
+}
+.nav a.nav-cafe:focus-visible{outline:2px solid var(--navcafe);outline-offset:2px}
+.nav a.nav-cafe[aria-current="page"]{
+  background:var(--navcafe-deep);color:#FFFDF6;
+  box-shadow:inset 0 0 0 1px rgba(255,253,246,.45),0 8px 18px -10px rgba(74,84,48,.95);
 }
 
 /* ---------- layout ---------- */

@@ -85,6 +85,12 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   .hdrnav a:hover,.hdrnav a:focus-visible{color:var(--terra);border-color:var(--terra-soft)}
   .hdrnav a.map{background:var(--ink);border-color:var(--ink);color:#FFF8EF}
   .hdrnav a.map:hover,.hdrnav a.map:focus-visible{background:var(--green);border-color:var(--green);color:#FFF8EF}
+  .hdrnav a.nav-cafe,.hdrnav a.nav-cafe:visited{
+    background:#5F6B3A;border-color:#5F6B3A;color:#FFFDF6;font-weight:800;
+  }
+  .hdrnav a.nav-cafe:hover,.hdrnav a.nav-cafe:focus-visible{
+    background:#4A5430;border-color:#4A5430;color:#FFFDF6;
+  }
   .hdrnav a.nav-comp,.hdrnav a.nav-comp:visited{
     background:var(--navcomp);border-color:var(--navcomp);color:#FFFFFF;font-weight:800;
   }
@@ -548,6 +554,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     <nav class="hdrnav" aria-label="주요 메뉴">
       <a class="map" href="./">산지 지도</a>
       <a href="guide.html">가이드</a>
+      <a href="cafes.html" class="nav-cafe">로컬 카페</a>
       <a href="competitions.html" class="nav-comp">커피대회</a>
     </nav>
   </div>
@@ -816,6 +823,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     <a href="./">지도</a>
     <a href="guide.html">가이드</a>
     <a href="farms.html">농장 아카이브</a>
+    <a href="cafes.html">로컬 카페</a>
     <a href="competitions.html">커피대회</a>
     <a href="about.html">소개</a>
     <a href="privacy.html">개인정보처리방침</a>
