@@ -772,7 +772,9 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
         if (m && state.byCode[m[1]]) {
           selectRegion(m[1], true);
         } else {
-          state.map.setView([36.15, 127.8], 7);   // 전국 뷰 — 한반도가 한눈에
+          // 전국 뷰 — 넓은 화면은 줌7(제주까지), 좁은 화면은 줌6
+          var narrow = window.innerWidth < 760;
+          state.map.setView(narrow ? [36.0, 127.7] : [35.7, 127.7], narrow ? 6 : 7);
         }
         syncView();
       })
