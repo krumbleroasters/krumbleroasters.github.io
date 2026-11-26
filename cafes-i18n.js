@@ -41,6 +41,7 @@
     "네이버 지도": "Naver Map||ネイバーマップ",
     "카카오맵": "KakaoMap||カカオマップ",
     "카페 수": "Cafes||カフェ数",
+    "원 안 숫자는 시·군·구 카페 수": "The number in each circle is the cafe count for that district||円の中の数字は市・郡・区のカフェ数",
 
     /* ── 출처 ── */
     "출처와 한계": "Source and limits||出典と限界",
