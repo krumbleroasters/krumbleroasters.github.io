@@ -365,6 +365,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     cache: {},                  // code → [[name, addr, lat, lng], ...]
     pending: {},                 // code → true (요청 중)
     failed: {},
+    added: {},
     selected: null,
     busy: 0,
     lastKey: ""
@@ -481,6 +482,15 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
       "</div></div>";
   }
 
+  /* 한 번 붙인 구역은 다시 붙이지 않습니다 (확대/축소를 오가도 마커가 유지되도록) */
+  function ensureMarkers(r) {
+    if (!r || state.added[r.code]) return;
+    var rows = state.cache[r.code];
+    if (!rows) return;
+    state.added[r.code] = true;
+    addRegionMarkers(r, rows);
+  }
+
   function addRegionMarkers(r, rows) {
     if (!rows || !rows.length) return;
     var layers = rows.map(function (c) {
@@ -512,8 +522,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     var p = fetchRegion(code)
       .then(function (rows) {
         state.cache[code] = rows;
-        var r = state.byCode[code];
-        if (r && state.map.getZoom() >= ZOOM_LOAD) addRegionMarkers(r, rows);
+        ensureMarkers(state.byCode[code]);
         return rows;
       })
       .catch(function () {
@@ -561,6 +570,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
       if (state.map.hasLayer(state.badgeLayer)) state.map.removeLayer(state.badgeLayer);
       if (!state.map.hasLayer(state.cafeLayer)) state.map.addLayer(state.cafeLayer);
       var list = regionsInView();
+      list.forEach(ensureMarkers);
       var key = list.map(function (r) { return r.code; }).join(",");
       if (key !== state.lastKey) {
         state.lastKey = key;
@@ -586,12 +596,19 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   function setHint(text) { $("cfHint").textContent = text; }
   function updateHint() {
     if (busyCount() > 0) { setHint(t("불러오는 중…")); return; }
-    var n = 0;
-    var b = state.map.getBounds();
+    if (state.map.getZoom() < ZOOM_LOAD) {
+      setHint(t("지도를 확대하거나 위에서 지역을 고르면 카페가 표시됩니다."));
+      return;
+    }
+    var n = 0, hit = false;
+    var b = state.map.getBounds().pad(0.02);
     state.regions.forEach(function (r) {
-      if (state.cache[r.code] && b.contains([r.lat, r.lng])) n += state.cache[r.code].length;
+      if (!state.cache[r.code]) return;
+      if (r.ne[0] < b.getSouth() || r.sw[0] > b.getNorth() || r.ne[1] < b.getWest() || r.sw[1] > b.getEast()) return;
+      hit = true;
+      n += state.cache[r.code].length;
     });
-    setHint(n ? t("카페 {}곳 표시 중").replace("{}", fmt(n)) : t("지도를 확대하거나 위에서 지역을 고르면 카페가 표시됩니다."));
+    setHint(hit ? t("카페 {}곳 표시 중").replace("{}", fmt(n)) : t("이 구역에는 등록된 카페가 없습니다."));
   }
 
   /* ── 지역 선택 ─────────────────────────────────────────── */
