@@ -238,7 +238,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   @media(min-width:768px){
     .cfbar{grid-template-columns:220px 220px 1fr;align-items:end}
     .cfsearch{grid-column:auto}
-    #cfmap{height:clamp(460px,66vh,760px)}
+    #cfmap{height:clamp(470px,68vh,780px)}
     .hdr h1{font-size:23px}
   }
   @media(min-width:1200px){
@@ -731,8 +731,8 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
       zoomControl: true,
       attributionControl: true,
       worldCopyJump: false,
-      maxBounds: [[31.5, 121.0], [41.0, 134.5]],
-      maxBoundsViscosity: 0.6
+      maxBounds: [[32.0, 123.0], [40.0, 133.0]],
+      maxBoundsViscosity: 0.8
     });
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 19,
@@ -772,12 +772,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
         if (m && state.byCode[m[1]]) {
           selectRegion(m[1], true);
         } else {
-          var sw = [90, 190], ne = [-90, -190];
-          state.regions.forEach(function (r) {
-            sw[0] = Math.min(sw[0], r.sw[0]); sw[1] = Math.min(sw[1], r.sw[1]);
-            ne[0] = Math.max(ne[0], r.ne[0]); ne[1] = Math.max(ne[1], r.ne[1]);
-          });
-          state.map.fitBounds([sw, ne], { padding: [10, 10] });
+          state.map.setView([36.15, 127.8], 7);   // 전국 뷰 — 한반도가 한눈에
         }
         syncView();
       })
