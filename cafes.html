@@ -70,7 +70,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   .brand .bean{width:19px;height:19px;flex:none}
   .brand b{font-size:10px;letter-spacing:.16em;font-weight:800;white-space:nowrap}
   .brand b i{font-style:normal;color:var(--terra)}
-  .hdrnav{margin-left:auto;display:flex;align-items:center;gap:6px;flex:none;overflow-x:auto;scrollbar-width:none}
+  .hdrnav{margin-left:auto;display:flex;align-items:center;gap:6px;flex:1 1 auto;min-width:0;justify-content:flex-end;overflow-x:auto;scrollbar-width:none}
   .hdrnav::-webkit-scrollbar{display:none}
   .hdrnav a{
     text-decoration:none;font-size:11px;font-weight:800;letter-spacing:-.01em;white-space:nowrap;
@@ -95,7 +95,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   @media(max-width:767px){
     .hdrrow{flex-wrap:wrap;row-gap:5px}
     .hdr{padding:9px 12px 8px}
-    .hdrnav{margin-left:0;width:100%;justify-content:flex-start;flex-wrap:wrap;overflow:visible;row-gap:5px;gap:5px}
+    .hdrnav{margin-left:0;width:100%;flex:1 1 100%;justify-content:flex-start;flex-wrap:wrap;overflow:visible;row-gap:5px;gap:5px}
     .hdrnav a{font-size:10.5px;padding:5px 9px}
     .hdrtools{justify-content:flex-start;margin:4px 0 0}
     main{padding:6px 10px 80px}
