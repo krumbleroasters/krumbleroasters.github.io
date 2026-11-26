@@ -567,7 +567,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     state.regions.forEach(function (r) {
       if (state.cache[r.code] && b.contains([r.lat, r.lng])) n += state.cache[r.code].length;
     });
-    setHint(n ? t("카페 {}곳").replace("{}", fmt(n)) + " · " + t("지도를 확대하면 그 구역의 카페가 표시됩니다.") : t("지도를 확대하거나 위에서 지역을 고르면 카페가 표시됩니다."));
+    setHint(n ? t("카페 {}곳 표시 중").replace("{}", fmt(n)) : t("지도를 확대하거나 위에서 지역을 고르면 카페가 표시됩니다."));
   }
 
   /* ── 지역 선택 ─────────────────────────────────────────── */
