@@ -290,11 +290,11 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   <div class="cfbar">
     <div class="cffield">
       <label for="cfProv">시·도</label>
-      <select id="cfProv" aria-label="시·도 선택"><option value="">전체</option></select>
+      <select id="cfProv" aria-label="시·도 선택"><option value="">전체 지역</option></select>
     </div>
     <div class="cffield">
       <label for="cfReg">시·군·구</label>
-      <select id="cfReg" aria-label="시·군·구 선택"><option value="">전체</option></select>
+      <select id="cfReg" aria-label="시·군·구 선택"><option value="">전체 지역</option></select>
     </div>
     <form class="cfsearch" id="cfForm" role="search" autocomplete="off">
       <div class="box">
@@ -390,7 +390,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 
   function fillProvSelect() {
     var keep = provSel.value;
-    provSel.innerHTML = '<option value="">' + esc(t("전체")) + "</option>";
+    provSel.innerHTML = '<option value="">' + esc(t("전체 지역")) + "</option>";
     state.index.provinces.forEach(function (p) {
       var o = document.createElement("option");
       o.value = p.code; o.textContent = p.name + " · " + fmt(p.count);
@@ -401,7 +401,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 
   function fillRegSelect(provCode) {
     var keep = regSel.value;
-    regSel.innerHTML = '<option value="">' + esc(t("전체")) + "</option>";
+    regSel.innerHTML = '<option value="">' + esc(t("전체 지역")) + "</option>";
     var list = provCode ? state.byProv[provCode].regions : state.regions;
     list.forEach(function (r) {
       var o = document.createElement("option");
@@ -777,8 +777,8 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     syncView();
   });
 
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot, { once: true });
-  else boot();
+  if (document.readyState === "complete") boot();
+  else window.addEventListener("load", function () { boot(); }, { once: true });
 })();
 </script>
 </body>

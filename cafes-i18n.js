@@ -21,8 +21,11 @@
     "지역으로 찾기": "Find by area||地域で探す",
     "시·도": "Province||道・広域市",
     "시·군·구": "District||市・郡・区",
-    "전체": "All||すべて",
+    "전체 지역": "All areas||すべての地域",
     "카페명 · 동네 이름 검색": "Cafe name or neighbourhood||カフェ名・街の名前で検索",
+    "카페명 또는 동네 이름 검색": "Search by cafe name or neighbourhood||カフェ名・街の名前で検索",
+    "시·도 선택": "Choose a province||道・広域市を選ぶ",
+    "시·군·구 선택": "Choose a district||市・郡・区を選ぶ",
     "검색": "Search||検索",
     "지도를 확대하면 그 구역의 카페가 표시됩니다.": "Zoom in to see the cafes in that area.||地図を拡大すると、その区域のカフェが表示されます。",
     "지도를 확대하거나 위에서 지역을 고르면 카페가 표시됩니다.":
@@ -52,4 +55,15 @@
       "Origin map for customers · run by KRUMBLE ROASTERS · no prices or purchase details||お客様向け産地マップ · 運営 KRUMBLE ROASTERS · 価格や仕入れ情報は掲載しません"
   };
   Object.keys(add).forEach(function (k) { if (!T[k]) T[k] = add[k]; });
+
+  var A = window.CI_I18N.attr || (window.CI_I18N.attr = {});
+  var attr = {
+    "카페명 · 동네 이름 검색": "Cafe name or neighbourhood||カフェ名・街の名前で検索",
+    "카페명 또는 동네 이름 검색": "Cafe name or neighbourhood||カフェ名・街の名前で検索",
+    "시·도 선택": "Choose a province||道・広域市を選ぶ",
+    "시·군·구 선택": "Choose a district||市・郡・区を選ぶ",
+    "전국 로컬 카페 지도": "Local cafe map of Korea||全国ローカルカフェ地図",
+    "산지 지도로 돌아가기": "Back to the origin map||産地マップに戻る"
+  };
+  Object.keys(attr).forEach(function (k) { if (!A[k]) A[k] = attr[k]; });
 })();
