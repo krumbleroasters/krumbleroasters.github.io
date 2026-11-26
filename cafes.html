@@ -369,7 +369,13 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     lastKey: ""
   };
 
-  function t(s) { return (window.CI && window.CI.t) ? window.CI.t(s) : s; }
+  /* 화면 문장 번역 — 한국어일 때는 원문 그대로 (CI.t는 ko에서도 영어 쌍을 돌려줍니다) */
+  function t(s) {
+    if (!window.CI || !window.CI.i18n) return s;
+    if (window.CI.i18n.lang === "ko") return s;
+    var v = window.CI.i18n.translate ? window.CI.i18n.translate(s) : null;
+    return v == null ? s : v;
+  }
   /* markercluster를 못 불러온 환경(CDN 차단 등)에서는 일반 레이어로 대신합니다 */
   function clusterGroup(opts) {
     if (typeof L.markerClusterGroup === "function") return L.markerClusterGroup(opts);
@@ -773,6 +779,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     if (!e.target.closest(".cfsearch")) hideSugg();
   });
   document.addEventListener("ci:lang", function () {
+    if (!state.index) return;          // 목록을 받기 전에 언어가 바뀌는 경우
     fillProvSelect();
     fillRegSelect(provSel.value);
     syncView();
