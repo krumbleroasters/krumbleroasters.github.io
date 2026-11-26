@@ -76,6 +76,11 @@
   이제 상단 메뉴와 `sitemap.xml`에 들어간 정식 페이지입니다(`index`, canonical `https://oncoffeelog.com/log.html`).
   기록·사진은 방문자 브라우저(localStorage · IndexedDB)에만 저장되고, '내 기록 코드'를 쓸 때만
   사진을 뺀 글자 기록이 구글 시트로 동기화됩니다(개인정보처리방침 4항).
+- `story-card.js` · `story-map-land.js` — 내 커피 기록의 **9:16 스토리 카드**(1080×1920 PNG).
+  캔버스로 헤더·요약 배지·미니 세계지도·최근 기록(4~5건)·주소·QR을 그려 저장(`oncoffeelog-story-YYYYMMDD.png`)하고,
+  모바일에서는 `navigator.share`로 공유합니다. 지도는 `story-map-land.js`의 육지 윤곽 좌표만 써서 그리고
+  (`work/krumble-build/make_story_land.py`로 Natural Earth 1:50m에서 생성) 사진은 IndexedDB의 data URL만 읽으므로
+  캔버스가 CORS로 오염되지 않습니다. 기록이 적으면 그 산지로 지도가 확대되고, 기록이 0건이면 버튼이 비활성입니다.
 - `site.css` — 위 읽기 페이지 공용 스타일 (지도 화면과 같은 색·서체)
 - `site-tools.css` · `site-tools.js` — 홈 화면 추가·농장 추가 요청 버튼(모든 화면 공용)
 - `manifest.webmanifest` · `sw.js` — `oncoffeelog.com` 홈 화면 추가(설치)용 매니페스트와 최소 서비스 워커
