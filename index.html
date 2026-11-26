@@ -49,8 +49,6 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     --navcomp-deep:#7C480E;
     --navfarm:#6B4423;     /* 농장 아카이브 버튼 — 로스트·에스프레소 브라운 */
     --navfarm-deep:#57361A;
-    --navcafe:#5F6B3A;     /* 로컬 카페 버튼 — 올리브 그린 */
-    --navcafe-deep:#4A5430;
     --shadow:0 10px 30px -18px rgba(34,30,26,.45);
     --r:18px;
   }
@@ -661,21 +659,6 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     background:var(--navfarm-deep);color:#FFFFFF;
     box-shadow:inset 0 0 0 1px rgba(255,246,232,.45),0 8px 18px -10px rgba(87,54,26,.9);
   }
-  /* 로컬 카페 — 올리브 그린 알약 버튼 */
-  .sitelinks a.nav-cafe,.sitelinks a.nav-cafe:visited{
-    background:var(--navcafe);color:#FFFDF6;font-weight:800;
-    font-size:13.5px;line-height:1.35;letter-spacing:-.02em;
-    padding:6px 14px;margin:3px 5px;border-radius:999px;
-    box-shadow:0 8px 18px -10px rgba(74,84,48,.85);
-  }
-  .sitelinks a.nav-cafe:hover,.sitelinks a.nav-cafe:focus-visible{
-    background:var(--navcafe-deep);color:#FFFDF6;
-  }
-  .sitelinks a.nav-cafe:focus-visible{outline:2px solid var(--navcafe);outline-offset:2px}
-  .sitelinks a.nav-cafe[aria-current="page"]{
-    background:var(--navcafe-deep);color:#FFFDF6;
-    box-shadow:inset 0 0 0 1px rgba(255,253,246,.45),0 8px 18px -10px rgba(74,84,48,.9);
-  }
   /* 모바일: 구분점 없이 넉넉한 간격으로 — 좁은 화면에서 줄바꿈될 때 점이 줄 끝에 남지 않게 */
   @media(max-width:899px){
     .sitelinks{gap:7px 9px}
@@ -695,7 +678,6 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     .sitelinks a.nav-log{font-size:12.5px;padding:5px 12px;margin:2px 4px}
     .sitelinks a.nav-comp{font-size:12.5px;padding:5px 12px;margin:2px 4px}
     .sitelinks a.nav-farm{font-size:12.5px;padding:5px 12px;margin:2px 4px}
-    .sitelinks a.nav-cafe{font-size:12.5px;padding:5px 12px;margin:2px 4px}
     .lede{margin:7px 0 0;font-size:20px}
     .lede small{margin-top:4px;font-size:12px}
     .search{margin:10px 0 0}
@@ -847,7 +829,6 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     <nav class="sitelinks" aria-label="사이트 안내">
       <a href="guide.html">가이드</a><span class="sep" aria-hidden="true">·</span>
       <a href="farms.html" class="nav-farm">농장 아카이브</a><span class="sep" aria-hidden="true">·</span>
-      <a href="cafes.html" class="nav-cafe">로컬 카페</a><span class="sep" aria-hidden="true">·</span>
       <a href="log.html" class="nav-log">내 커피 기록</a><span class="sep" aria-hidden="true">·</span>
       <a href="competitions.html" class="nav-comp">커피대회</a>
     </nav>
@@ -882,7 +863,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   </div>
 
   <p class="foot pagefoot"><b>ONCOFFEELOG</b> · 온커피로그 · 손님용 산지 지도 · KRUMBLE ROASTERS<br>
-    <a href="guide.html">산지 가이드</a> · <a href="farms.html">농장 아카이브</a> · <a href="cafes.html">로컬 카페</a> · <a href="log.html">내 커피 기록</a> · <a href="competitions.html">커피대회</a> · <a href="about.html">소개</a> · <a href="privacy.html">개인정보처리방침</a>
+    <a href="guide.html">산지 가이드</a> · <a href="farms.html">농장 아카이브</a> · <a href="log.html">내 커피 기록</a> · <a href="competitions.html">커피대회</a> · <a href="about.html">소개</a> · <a href="privacy.html">개인정보처리방침</a>
   </p>
 
   <main class="sheet" id="sheet"></main>
