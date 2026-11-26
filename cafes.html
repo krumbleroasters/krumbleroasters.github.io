@@ -145,7 +145,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     -webkit-appearance:none;appearance:none;font-size:14px;font-weight:700;text-overflow:ellipsis;
   }
   .cffield select:focus-visible{outline:2px solid var(--olive);outline-offset:1px}
-  .cfsearch{grid-column:1/-1;position:relative}
+  .cfsearch{grid-column:1/-1;position:relative;min-width:0}
   .cfsearch .box{display:flex;align-items:center;gap:6px;height:var(--tap);border:1px solid var(--line);border-radius:11px;background:#FFFDF8;padding:0 6px 0 12px}
   .cfsearch svg{flex:none;color:var(--muted)}
   .cfsearch input{
@@ -254,13 +254,13 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 
   /* ---------- responsive ---------- */
   @media(min-width:768px){
-    .cfbar{grid-template-columns:220px 220px 1fr;align-items:end}
+    .cfbar{grid-template-columns:200px 200px minmax(0,1fr);align-items:end}
     .cfsearch{grid-column:auto}
     #cfmap{height:clamp(440px,calc(100vh - 375px),780px)}
     main h1{font-size:23px}
   }
   @media(min-width:1200px){
-    .cfbar{grid-template-columns:240px 240px 1fr}
+    .cfbar{grid-template-columns:240px 240px minmax(0,1fr)}
     main h1{font-size:25px}
   }
 </style>
