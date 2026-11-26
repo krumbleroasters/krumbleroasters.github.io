@@ -93,8 +93,25 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   .hdrnav a.nav-comp,.hdrnav a.nav-comp:visited{background:var(--navcomp);border-color:var(--navcomp);color:#FFFFFF}
   .hdrnav a.nav-comp:hover,.hdrnav a.nav-comp:focus-visible{background:var(--navcomp-deep);border-color:var(--navcomp-deep);color:#FFFFFF}
   @media(max-width:767px){
-    .hdrrow{flex-wrap:wrap;row-gap:6px}
-    .hdrnav{margin-left:0;width:100%;justify-content:flex-start}
+    .hdrrow{flex-wrap:wrap;row-gap:5px}
+    .hdr{padding:9px 12px 8px}
+    .hdrnav{margin-left:0;width:100%;justify-content:flex-start;flex-wrap:wrap;overflow:visible;row-gap:5px;gap:5px}
+    .hdrnav a{font-size:10.5px;padding:5px 9px}
+    .hdrtools{justify-content:flex-start;margin:4px 0 0}
+    main{padding:6px 10px 80px}
+    main h1{font-size:19px}
+    main .kicker{display:none}
+    .lede{font-size:11.5px;line-height:1.62;margin-top:4px}
+    .stats{gap:5px;margin-top:7px}
+    .stat{padding:5px 7px 6px;border-radius:10px}
+    .stat b{font-size:16px}
+    .stat b.date{font-size:11px}
+    .stat span{font-size:9.5px}
+    .cfbar{padding:8px;gap:6px;margin:10px 0 7px}
+    .cffield select{height:40px;font-size:13px}
+    .cfsearch .box{height:40px}
+    .cfsearch .go{height:30px;padding:0 12px;font-size:12px}
+    .cfhint{font-size:11px;margin:0 2px 7px}
   }
   .hdrtools{display:flex;justify-content:flex-end;margin:6px 0 0}
   main h1{margin:2px 0 0;font-size:20px;line-height:1.32;letter-spacing:-.025em;font-weight:800}
@@ -104,7 +121,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   .stat b{display:block;font-size:19px;line-height:1.15;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
   .stat b small{font-size:11px;font-weight:700;color:var(--muted);margin-left:1px}
   .stat span{display:block;font-size:10px;font-weight:700;color:var(--muted);letter-spacing:.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .stat b.date{font-size:13px;line-height:1.6;letter-spacing:0}
+  .stat b.date{font-size:13px;line-height:1.6;letter-spacing:0;white-space:nowrap}
   @media(max-width:400px){
     .stat b{font-size:16px}
     .stat b.date{font-size:11.5px}
