@@ -491,23 +491,32 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   }
 
   /* ── 구역 파일 비동기 로드 ─────────────────────────────── */
+  function fetchOnce(code) {
+    return fetch(DATA + code + ".json", { cache: "force-cache" }).then(function (res) {
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      return res.json();
+    });
+  }
+
+  /* 한 번 실패하면 0.6초 뒤 한 번 더 시도합니다 (GitHub Pages가 동시 요청에 503을 주는 경우가 있음) */
+  function fetchRegion(code) {
+    return fetchOnce(code).catch(function () {
+      return new Promise(function (ok) { setTimeout(ok, 600); }).then(function () { return fetchOnce(code); });
+    });
+  }
+
   function loadRegion(code) {
     if (state.cache[code]) return Promise.resolve(state.cache[code]);
     if (state.pending[code]) return state.pending[code];
-    var p = fetch(DATA + code + ".json", { cache: "force-cache" })
-      .then(function (res) {
-        if (!res.ok) throw new Error("HTTP " + res.status);
-        return res.json();
-      })
+    var p = fetchRegion(code)
       .then(function (rows) {
         state.cache[code] = rows;
         var r = state.byCode[code];
         if (r && state.map.getZoom() >= ZOOM_LOAD) addRegionMarkers(r, rows);
         return rows;
       })
-      .catch(function (err) {
-        state.failed[code] = true;
-        if (window.__ciErrors && String(err).indexOf("HTTP 404") < 0) window.__ciErrors.push("load " + code + ": " + err);
+      .catch(function () {
+        state.failed[code] = true;   // 다음에 지도를 움직이면 다시 시도합니다
         return [];
       })
       .then(function (rows) {
@@ -517,6 +526,25 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     state.pending[code] = p;
     return p;
   }
+
+  /* 구역 파일은 한 번에 4개까지만 받습니다 */
+  var Q = [], ACTIVE = 0, MAX_PARALLEL = 4;
+  function queueRegion(code) {
+    if (Q.indexOf(code) < 0) Q.push(code);
+    pump();
+  }
+  function pump() {
+    while (ACTIVE < MAX_PARALLEL && Q.length) {
+      var code = Q.shift();
+      ACTIVE++;
+      loadRegion(code).then(function () {
+        ACTIVE--;
+        updateHint();
+        pump();
+      });
+    }
+  }
+  function busyCount() { return Q.length + ACTIVE; }
 
   function regionsInView() {
     var b = state.map.getBounds().pad(0.15);
@@ -537,14 +565,8 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
         state.lastKey = key;
         var todo = list.filter(function (r) { return !state.cache[r.code] && !state.pending[r.code] && !state.failed[r.code]; });
         if (todo.length) {
-          state.busy += todo.length;
+          todo.forEach(function (r) { queueRegion(r.code); });
           updateHint();
-          todo.forEach(function (r) {
-            loadRegion(r.code).then(function () {
-              state.busy = Math.max(0, state.busy - 1);
-              updateHint();
-            });
-          });
         }
       }
       if (!list.length) {
@@ -555,13 +577,14 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     } else {
       if (state.map.hasLayer(state.cafeLayer)) state.map.removeLayer(state.cafeLayer);
       if (!state.map.hasLayer(state.badgeLayer)) state.map.addLayer(state.badgeLayer);
+      state.failed = {};
       setHint(t("지도를 확대하거나 위에서 지역을 고르면 카페가 표시됩니다."));
     }
   }
 
   function setHint(text) { $("cfHint").textContent = text; }
   function updateHint() {
-    if (state.busy > 0) { setHint(t("불러오는 중…")); return; }
+    if (busyCount() > 0) { setHint(t("불러오는 중…")); return; }
     var n = 0;
     var b = state.map.getBounds();
     state.regions.forEach(function (r) {
