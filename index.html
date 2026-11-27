@@ -49,6 +49,8 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     --navcomp-deep:#7C480E;
     --navfarm:#6B4423;     /* 농장 아카이브 버튼 — 로스트·에스프레소 브라운 */
     --navfarm-deep:#57361A;
+    --navres:#3F4A5C;      /* 학술자료 버튼 — 논문·활자 느낌의 슬레이트 네이비 */
+    --navres-deep:#2E3646;
     --shadow:0 10px 30px -18px rgba(34,30,26,.45);
     --r:18px;
   }
@@ -659,6 +661,17 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     background:var(--navfarm-deep);color:#FFFFFF;
     box-shadow:inset 0 0 0 1px rgba(255,246,232,.45),0 8px 18px -10px rgba(87,54,26,.9);
   }
+  /* 학술자료 — 슬레이트 네이비 알약 버튼 (농장·기록·대회 버튼과 같은 크기) */
+  .sitelinks a.nav-res,.sitelinks a.nav-res:visited{
+    background:var(--navres);color:#F7F4EE;font-weight:800;
+    font-size:13.5px;line-height:1.35;letter-spacing:-.02em;
+    padding:6px 14px;margin:3px 5px;border-radius:999px;
+    box-shadow:0 8px 18px -10px rgba(46,54,70,.85);
+  }
+  .sitelinks a.nav-res:hover,.sitelinks a.nav-res:focus-visible{
+    background:var(--navres-deep);color:#F7F4EE;
+  }
+  .sitelinks a.nav-res:focus-visible{outline:2px solid var(--navres);outline-offset:2px}
   /* 모바일: 구분점 없이 넉넉한 간격으로 — 좁은 화면에서 줄바꿈될 때 점이 줄 끝에 남지 않게 */
   @media(max-width:899px){
     .sitelinks{gap:7px 9px}
@@ -678,6 +691,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     .sitelinks a.nav-log{font-size:12.5px;padding:5px 12px;margin:2px 4px}
     .sitelinks a.nav-comp{font-size:12.5px;padding:5px 12px;margin:2px 4px}
     .sitelinks a.nav-farm{font-size:12.5px;padding:5px 12px;margin:2px 4px}
+    .sitelinks a.nav-res{font-size:12.5px;padding:5px 12px;margin:2px 4px}
     .lede{margin:7px 0 0;font-size:20px}
     .lede small{margin-top:4px;font-size:12px}
     .search{margin:10px 0 0}
@@ -831,7 +845,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
       <a href="farms.html" class="nav-farm">농장 아카이브</a><span class="sep" aria-hidden="true">·</span>
       <a href="log.html" class="nav-log">내 커피 기록</a><span class="sep" aria-hidden="true">·</span>
       <a href="competitions.html" class="nav-comp">커피대회</a><span class="sep" aria-hidden="true">·</span>
-      <a href="research.html">학술자료</a>
+      <a href="research.html" class="nav-res">학술자료</a>
     </nav>
     <p class="lede">한 잔이 시작된 곳<em>.</em>
       <small id="ledeSub">마시거나 사 간 원두의 산지·농장을 지도에서 만나보세요.</small>

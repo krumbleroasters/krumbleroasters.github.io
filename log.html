@@ -45,6 +45,8 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     --terra-soft:#E8B9A6;
     --navcomp:#9A5B13;      /* 커피대회 버튼 — 트로피·로스팅 느낌의 앰버·브론즈 */
     --navcomp-deep:#7C480E;
+    --navres:#3F4A5C;       /* 학술자료 버튼 — 논문·활자 느낌의 슬레이트 네이비 */
+    --navres-deep:#2E3646;
     --green:#2F4636;
     --muted:#8A8074;
     --shadow:0 10px 30px -18px rgba(34,30,26,.45);
@@ -92,6 +94,14 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     background:var(--navcomp-deep);border-color:var(--navcomp-deep);color:#FFFFFF;
   }
   .hdrnav a.nav-comp:focus-visible{outline:2px solid var(--navcomp);outline-offset:2px}
+  /* 학술자료 — 다른 페이지와 같은 슬레이트 네이비 (나머지 메뉴와 같은 알약 크기) */
+  .hdrnav a.nav-res,.hdrnav a.nav-res:visited{
+    background:var(--navres);border-color:var(--navres);color:#F7F4EE;font-weight:800;
+  }
+  .hdrnav a.nav-res:hover,.hdrnav a.nav-res:focus-visible{
+    background:var(--navres-deep);border-color:var(--navres-deep);color:#F7F4EE;
+  }
+  .hdrnav a.nav-res:focus-visible{outline:2px solid var(--navres);outline-offset:2px}
   /* 좁은 폰(≤419px)에서는 브랜드 + 메뉴 3개가 한 줄에 다 들어가지 않아
      커피대회 버튼 오른쪽이 잘리므로, 메뉴를 아래 줄로 내려 온전히 보이게 합니다. */
   @media(max-width:419px){
@@ -548,8 +558,8 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     <nav class="hdrnav" aria-label="주요 메뉴">
       <a class="map" href="./">산지 지도</a>
       <a href="guide.html">가이드</a>
-      <a href="competitions.html" class="nav-comp">커피대회</a><span class="sep" aria-hidden="true">·</span>
-      <a href="research.html">학술자료</a>
+      <a href="competitions.html" class="nav-comp">커피대회</a>
+      <a href="research.html" class="nav-res">학술자료</a>
     </nav>
   </div>
   <div class="hdrtools">

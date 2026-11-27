@@ -334,6 +334,7 @@ td a{color:var(--terra);font-weight:700;text-decoration:none}
   .nav a.nav-log{padding:8px 13px;margin:0 5px;font-size:13.5px}
   .nav a.nav-comp{padding:8px 13px;margin:0 5px;font-size:13.5px}
   .nav a.nav-farm{padding:8px 13px;margin:0 5px;font-size:13.5px}
+  .nav a.nav-res{padding:8px 13px;margin:0 5px;font-size:13.5px}
   section{margin-top:38px}
   .origin{padding:16px 16px 14px}
   .farm{padding:16px}
