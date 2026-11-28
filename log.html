@@ -1171,6 +1171,9 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 
   var MERGE_KEYS = ["date", "name", "country", "region", "farm", "placeId", "beanId",
     "lat", "lon", "precision", "rating", "cafe", "note"];
+  /* 이 기기에서 고친 기록이 시트에 반영되기 전(최대 5분)에 화면을 새로 열면
+     아직 옛 값인 시트가 방금 고친 내용을 덮어쓸 수 있다. 그 사이는 시트 값을 따르지 않는다. */
+  var DIRTY_MS = 30 * 60 * 1000;
 
   function rowChanged(cur, rec) {
     var i, k, a, b;
@@ -1193,7 +1196,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     var have = new Map(records.map(function (r) { return [r.id, r]; }));
     var gone = new Set(readDeleted());
     var waiting = new Set(readQueue().map(function (x) { return x && x.rec && x.rec.id; }).filter(Boolean));
-    var added = 0, updated = 0;
+    var added = 0, updated = 0, touched = 0;
     rows.forEach(function (r) {
       if (r.code !== code || r.action === "삭제" || !r.rid) return;
       if (gone.has(r.rid)) return;
@@ -1201,9 +1204,15 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
       if (!rec.name) return;
       var cur = have.get(r.rid);
       if (cur) {
-        if (waiting.has(r.rid) || !rowChanged(cur, rec)) return;
+        if (waiting.has(r.rid)) return;
+        if (!rowChanged(cur, rec)) {
+          if (cur.dirty) { delete cur.dirty; touched++; }   // 내 수정이 시트에 반영됐다
+          return;
+        }
+        if (cur.dirty && Date.now() - Number(cur.dirty) < DIRTY_MS) return;
         MERGE_KEYS.forEach(function (k) { cur[k] = rec[k]; });
         cur.tags = rec.tags;
+        delete cur.dirty;
         updated++;
         return;
       }
@@ -1211,7 +1220,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
       have.set(rec.id, rec);
       added++;
     });
-    if (added || updated) { sortRecords(); persist(); renderAll(); }
+    if (added || updated || touched) { sortRecords(); persist(); renderAll(); }
     return { added: added, updated: updated };
   }
 
@@ -2414,6 +2423,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     rec.note = ($("#fNote").value || "").trim();
     rec.cafe = ($("#fCafe").value || "").trim();
     rec.photoId = state.photo ? state.photo.id : ((base && base.photoId) || "");
+    if (editing) rec.dirty = Date.now();   // 시트가 따라올 때까지 시트 값으로 덮어쓰지 않는다
     var oldPhoto = base && base.photoId && base.photoId !== rec.photoId ? base.photoId : "";
     $("#btnSave").disabled = true;
     var job = state.photo
