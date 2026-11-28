@@ -2389,8 +2389,29 @@ function psSetStatus(mode, label, pct, note) {
   if (noteEl) { noteEl.hidden = !PV.note; noteEl.textContent = PV.note; }
 }
 
-/* ---------- 이미지 전처리 (log.html 검증본 + 대비 보정) ---------- */
-function psResize(img, maxSide, quality, enhance) {
+/* ---------- 이미지 전처리 (해상도 상향 + 그레이스케일 + 대비 + 언샤프 마스크) ---------- */
+const PS_MAX_SIDE = 1600;   /* 봉지·메뉴판의 작은 글씨를 살리려고 리사이즈 상한을 올렸습니다 */
+
+/* 3x3 평균 블러 — 언샤프 마스크의 흐린 판을 만듭니다 */
+function psBoxBlur3(src, w, h) {
+  const out = new Uint8ClampedArray(src.length);
+  for (let y = 0; y < h; y++) {
+    const y0 = y > 0 ? y - 1 : 0, y1 = y < h - 1 ? y + 1 : h - 1;
+    for (let x = 0; x < w; x++) {
+      const x0 = x > 0 ? x - 1 : 0, x1 = x < w - 1 ? x + 1 : w - 1;
+      let sum = 0, n = 0;
+      for (let yy = y0; yy <= y1; yy++) {
+        const row = yy * w;
+        for (let xx = x0; xx <= x1; xx++) { sum += src[row + xx]; n++; }
+      }
+      out[y * w + x] = (sum / n) | 0;
+    }
+  }
+  return out;
+}
+
+/* mode: "soft"(기본) | "strong"(다시 읽기 — 대비·선명화를 더 세게) */
+function psResize(img, maxSide, quality, enhance, mode) {
   const w0 = img.naturalWidth || img.width, h0 = img.naturalHeight || img.height;
   const scale = Math.min(1, maxSide / Math.max(w0, h0));
   const cw = Math.max(1, Math.round(w0 * scale)), ch = Math.max(1, Math.round(h0 * scale));
@@ -2401,21 +2422,35 @@ function psResize(img, maxSide, quality, enhance) {
   ctx.drawImage(img, 0, 0, cw, ch);
   if (enhance) {
     const d = ctx.getImageData(0, 0, cw, ch), a = d.data, total = cw * ch;
+    const strong = mode === "strong";
+    /* 1) 그레이스케일 */
     const hist = new Uint32Array(256);
-    for (let i = 0; i < a.length; i += 4) hist[(a[i] * 0.299 + a[i + 1] * 0.587 + a[i + 2] * 0.114) | 0]++;
+    const gray = new Uint8ClampedArray(total);
+    for (let i = 0, p = 0; i < a.length; i += 4, p++) {
+      const g = (a[i] * 0.299 + a[i + 1] * 0.587 + a[i + 2] * 0.114) | 0;
+      gray[p] = g; hist[g]++;
+    }
+    /* 2) 3~97% 구간을 0~255로 늘려 대비를 올립니다 (크라프트지·어두운 봉지 보정) */
     let lo = 0, hi = 255, acc = 0;
-    for (let v = 0; v < 256; v++) { acc += hist[v]; if (acc >= total * 0.04) { lo = v; break; } }
+    const cut = total * (strong ? 0.02 : 0.03);
+    for (let v = 0; v < 256; v++) { acc += hist[v]; if (acc >= cut) { lo = v; break; } }
     acc = 0;
-    for (let v = 255; v >= 0; v--) { acc += hist[v]; if (acc >= total * 0.04) { hi = v; break; } }
+    for (let v = 255; v >= 0; v--) { acc += hist[v]; if (acc >= cut) { hi = v; break; } }
     const span = Math.max(1, hi - lo);
     const lut = new Uint8Array(256);
     for (let v = 0; v < 256; v++) {
       let n = (v - lo) / span;
       n = n < 0 ? 0 : n > 1 ? 1 : n;
-      lut[v] = Math.round(Math.pow(n, 0.92) * 255);
+      lut[v] = Math.round(Math.pow(n, strong ? 0.78 : 0.9) * 255);
     }
-    for (let i = 0; i < a.length; i += 4) {
-      const o = lut[(a[i] * 0.299 + a[i + 1] * 0.587 + a[i + 2] * 0.114) | 0];
+    for (let p = 0; p < total; p++) gray[p] = lut[gray[p]];
+    /* 3) 언샤프 마스크 — 글자 가장자리를 세워 작은 라벨 글씨를 또렷하게 */
+    const blur = psBoxBlur3(gray, cw, ch);
+    const amount = strong ? 1.5 : 1.0, thr = strong ? 4 : 8;
+    for (let i = 0, p = 0; i < a.length; i += 4, p++) {
+      const diff = gray[p] - blur[p];
+      let o = gray[p] + (Math.abs(diff) > thr ? amount * diff : 0);
+      o = o < 0 ? 0 : o > 255 ? 255 : o;
       a[i] = o; a[i + 1] = o; a[i + 2] = o;
     }
     ctx.putImageData(d, 0, 0);
@@ -2473,19 +2508,30 @@ function psEnsureWorker(job) {
     .then((w) => { PV.worker = w; return w; });
 }
 
-async function psRecognize(dataUrl, job) {
+/* psm: Tesseract 페이지 분할 모드 — 라벨처럼 글자가 흩어진 사진은 "11"(sparse)이 더 잘 읽습니다 */
+async function psRecognize(dataUrl, job, psm) {
   const w = await psEnsureWorker(job);
   if (job !== PV.job || !PV.active) return "";
-  const res = await w.recognize(dataUrl);
+  if (psm) {
+    try { await w.setParameters({ tessedit_pageseg_mode: String(psm) }); }
+    catch (e) { console.warn("ocr psm", e); }
+  }
+  let text = "";
+  try {
+    const res = await w.recognize(dataUrl);
+    text = res && res.data && res.data.text ? res.data.text : "";
+  } finally {
+    if (psm) { try { await w.setParameters({ tessedit_pageseg_mode: "3" }); } catch (e) {} }
+  }
   if (job !== PV.job || !PV.active) return "";
-  return psClean(res && res.data && res.data.text ? res.data.text : "");
+  return psClean(text);
 }
 
 function psClean(text) {
   return String(text || "").replace(/[ \t]+/g, " ").replace(/\n{3,}/g, "\n\n").trim();
 }
 
-/* ---------- 카탈로그 매칭 (log.html 로직 그대로) ---------- */
+/* ---------- 카탈로그 매칭 (log.html 로직 + 영문↔한글 사전·오독 보정) ---------- */
 let PSIDX = null;
 function psNormKo(s) { return String(s == null ? "" : s).toLowerCase().replace(/[^0-9a-z\uac00-\ud7a3]/g, ""); }
 function psNormEn(s) { return String(s == null ? "" : s).toLowerCase().replace(/[^0-9a-z]/g, ""); }
@@ -2496,6 +2542,162 @@ function psCover(grams, set) {
   let hit = 0;
   for (const g of grams) if (set.has(g)) hit++;
   return hit / grams.length;
+}
+
+/* 두 글자까지의 오독은 같은 말로 봅니다 (예: 예가제프→예가체프, Eth1opia→Ethiopia). max를 넘으면 max+1을 돌려줍니다 */
+function psEdit(a, b, max) {
+  if (a === b) return 0;
+  const la = a.length, lb = b.length;
+  if (Math.abs(la - lb) > max) return max + 1;
+  let prev = new Array(lb + 1), cur = new Array(lb + 1);
+  for (let j = 0; j <= lb; j++) prev[j] = j;
+  for (let i = 1; i <= la; i++) {
+    cur[0] = i;
+    let best = i;
+    const ca = a.charCodeAt(i - 1);
+    for (let j = 1; j <= lb; j++) {
+      const v0 = prev[j - 1] + (ca === b.charCodeAt(j - 1) ? 0 : 1);
+      const v1 = prev[j] + 1;
+      const v2 = cur[j - 1] + 1;
+      const v = v0 < v1 ? (v0 < v2 ? v0 : v2) : (v1 < v2 ? v1 : v2);
+      cur[j] = v;
+      if (v < best) best = v;
+    }
+    if (best > max) return max + 1;
+    const tmp = prev; prev = cur; cur = tmp;
+  }
+  return prev[lb];
+}
+function psMaxEdits(len) { return len >= 9 ? 2 : len >= 6 ? 1 : 0; }
+
+/* 이름에서 매칭에 쓰는 낱말만 골라냅니다 — 숫자·등급·흔한 수식어는 빼고, 한글은 2자부터 */
+const PS_STOP = ["생두", "커피", "블렌드", "blend", "coffee", "green", "g1", "shb", "ep", "aa", "ab", "lot", "batch", "마이크로랏"];
+function psNameWords(s) {
+  return String(s || "").split(/[^0-9A-Za-z\uac00-\ud7a3]+/)
+    .map((w) => psNormKo(w))
+    .filter((w) => w && !/^[0-9]+$/.test(w))
+    .filter((w) => (w.length >= 2 && /[\uac00-\ud7a3]/.test(w)) || w.length >= 3)
+    .filter((w) => PS_STOP.indexOf(w) === -1);
+}
+/* 사진 글자 안에서 한글 낱말을 찾습니다 — 띄어 읽힌 토막도 이어 붙인 글자(koFlat)에서 걸립니다 */
+function psWordHitKo(w, t) {
+  if (t.tokSet.has(w) || t.koExtra.has(w)) return 1;
+  if (w.length >= 3 && t.koFlat.indexOf(w) !== -1) return 1;
+  return 0;
+}
+/* 영문 낱말은 낱말 단위로 보고, 긴 낱말은 한 글자 오독까지 허용합니다 */
+function psWordHitEn(w, t) {
+  if (t.enSet.has(w)) return 1;
+  if (w.length < 6) return 0;
+  for (const e of t.enSet) {
+    if (Math.abs(e.length - w.length) > 1) continue;
+    if (psEdit(w, e, 1) <= 1) return 0.8;
+  }
+  return 0;
+}
+
+/* 영문 ↔ 한글 커피 용어 사전 — 봉지·메뉴판의 영문 표기를 카탈로그의 한글 표기와 잇습니다.
+   한쪽에 |로 여러 표기를 넣습니다. 라벨에 흔한 국가·산지·품종·가공만 담고 매입처·수입사 같은 수집 정보는 넣지 않습니다. */
+const PS_ALIAS = [
+  /* 국가 */
+  ["peru", "페루"], ["ethiopia", "에티오피아"], ["colombia", "콜롬비아"], ["kenya", "케냐"], ["brazil", "브라질"],
+  ["guatemala", "과테말라"], ["costa rica", "코스타리카"], ["panama", "파나마"], ["honduras", "온두라스"],
+  ["el salvador", "엘살바도르"], ["nicaragua", "니카라과"], ["mexico", "멕시코"], ["ecuador", "에콰도르"],
+  ["bolivia", "볼리비아"], ["india", "인도"], ["thailand", "태국"], ["yemen", "예멘"], ["australia", "호주"],
+  ["rwanda", "르완다"], ["burundi", "부룬디"], ["tanzania", "탄자니아"], ["uganda", "우간다"],
+  ["indonesia", "인도네시아"], ["vietnam", "베트남"], ["china", "중국"], ["yunnan", "운남"], ["taiwan", "대만"],
+  ["malawi", "말라위"], ["zambia", "잠비아"], ["papua new guinea", "파푸아뉴기니"], ["jamaica", "자메이카"], ["hawaii", "하와이"],
+  /* 에티오피아·케냐 */
+  ["yirgacheffe|yirgachef|yirgacheff", "예가체프"], ["guji", "구지"], ["sidamo|sidama", "시다모"],
+  ["gedeb", "게데브"], ["gedeo", "게데오"], ["wollega|wellega", "월레가"], ["limu", "리무"], ["jimma|jima", "짐마"],
+  ["harrar|harar", "하라"], ["gimbi", "김비"], ["guji shakiso", "구지 샤키소"],
+  ["kirinyaga", "키리냐가"], ["nyeri", "니에리"], ["kiambu", "키암부"], ["embu", "엠부"], ["meru", "메루"],
+  ["thika", "티카"], ["nakuru", "나쿠루"], ["ruiru", "루이루"], ["murang'a|muranga", "무랑가"],
+  /* 콜롬비아·에콰도르·페루·볼리비아 */
+  ["nariño|narino", "나리뇨"], ["cauca", "카우카"], ["huila", "우일라"], ["antioquia", "안티오키아"],
+  ["tolima", "톨리마"], ["santander", "산탄데르"], ["sierra nevada", "시에라네바다"], ["quindio", "킨디오"],
+  ["cajamarca", "카하마르카"], ["san ignacio", "산이그나시오"], ["amazonas", "아마조나스"], ["cusco", "쿠스코"],
+  ["puno", "푸노"], ["piura", "피우라"], ["pasco", "파스코"], ["chirinos", "치리노스"], ["jaen", "하엔"],
+  ["loja", "로하"], ["zamora", "사모라"], ["caranqui", "카랑키"], ["yungas", "융가스"],
+  /* 중미·카리브 */
+  ["antigua", "안티구아"], ["huehuetenango", "우에우에테낭고"], ["atitlan", "아티틀란"], ["coban", "코반"],
+  ["acatenango", "아카테낭고"], ["fraijanes", "프라아하네스"], ["tarrazu|tarrazú", "타라수"], ["boquete", "보케테"],
+  ["volcan|volcán", "볼칸"], ["chiriqui|chiriquí", "치리키"], ["naranjo", "나란호"], ["poas|poás", "포아스"],
+  ["brunca", "브룬카"], ["nueva segovia", "누에바세고비아"], ["jinotega", "히노테가"], ["matagalpa", "마타갈파"],
+  ["marcala", "마르칼라"], ["comayagua", "코마야과"], ["copan", "코판"],
+  /* 브라질 */
+  ["cerrado", "세하도"], ["sul de minas", "술지미나스"], ["mogiana", "모지아나"], ["espirito santo", "이스피리투산투"],
+  ["bahia", "바히아"], ["parana", "파라나"], ["minas gerais", "미나스제라이스"],
+  /* 품종 */
+  ["geisha|gesha", "게이샤"], ["pink bourbon", "핑크 버번"], ["bourbon", "버번"], ["caturra", "카투라"],
+  ["typica", "티피카"], ["catuai|catuai", "카투아이"], ["sl28", "SL28"], ["sl34", "SL34"],
+  ["pacamara", "파카마라"], ["pacas", "파카스"], ["villa sarchi", "빌라사르치"], ["maragogype|maragogipe", "마라고지페"],
+  ["mundo novo", "문도노보"], ["sidra", "시드라"], ["wush wush", "우시우시"], ["heirloom|landrace", "토착종"],
+  ["catimor", "카티모르"], ["sarchimor", "사르키모르"], ["icc 90", "icc90"], ["74158", "74158"],
+  ["74110", "74110"], ["74112", "74112"], ["java", "자바"], ["pache", "파체"], ["obata", "오바타"],
+  ["laurina", "라우리나"], ["parainema", "파라이네마"], ["ruiru 11", "루이루11"], ["yellow bourbon", "옐로우 버번"],
+  /* 가공 */
+  ["washed", "워시드"], ["natural", "내추럴"], ["honey", "허니"], ["anaerobic", "무산소"],
+  ["anaerobic natural", "무산소 내추럴"], ["anaerobic washed", "무산소 워시드"], ["thermal shock", "써멀쇽"],
+  ["decaf|decaffeinated", "디카페인"], ["swiss water", "스위스워터"], ["mountain water", "마운틴워터"],
+  ["ethyl acetate", "에틸아세테이트"], ["carbonic maceration", "카보닉"], ["wet hulled|giling basah", "웻헐드"],
+  ["pulped natural", "펄프드 내추럴"], ["semi washed", "세미워시드"], ["full wash", "풀리 워시드"],
+  /* 라벨에 흔한 표기 */
+  ["single origin", "싱글오리진"], ["micro lot|microlot", "마이크로랏"], ["peaberry", "피버리"],
+  ["crop year", "수확연도"], ["altitude", "고도"], ["variety|varietal", "품종"]
+];
+let PS_ALIAS_MAP = null, PS_ALIAS_LIST = null;
+function psAliasMap() {
+  if (PS_ALIAS_MAP) return PS_ALIAS_MAP;
+  const map = new Map();
+  PS_ALIAS.forEach(([en, ko]) => {
+    const nk = psNormKo(ko);
+    if (!nk) return;
+    String(en).split("|").forEach((one) => {
+      const ne = psNormEn(one);
+      if (ne.length >= 3 && !map.has(ne)) map.set(ne, nk);
+    });
+  });
+  PS_ALIAS_MAP = map;
+  return map;
+}
+function psAliasList() {
+  if (PS_ALIAS_LIST) return PS_ALIAS_LIST;
+  const list = [];
+  psAliasMap().forEach((nk, ne) => list.push({ ne, nk }));
+  list.sort((a, b) => b.ne.length - a.ne.length);
+  PS_ALIAS_LIST = list;
+  return list;
+}
+/* 오독이 섞인 영문 낱말을 사전 표기와 견줘 가장 가까운 것을 돌려줍니다 */
+function psFuzzyAlias(word) {
+  const max = psMaxEdits(word.length);
+  if (!max) return "";
+  let best = "", bestD = max + 1;
+  for (const a of psAliasList()) {
+    if (Math.abs(a.ne.length - word.length) > max) continue;
+    if (a.ne.charAt(0) !== word.charAt(0) && max < 2) continue;
+    const d = psEdit(word, a.ne, max);
+    if (d <= max && d < bestD) { best = a.nk; bestD = d; if (d === 1) break; }
+  }
+  return best;
+}
+/* 사진 글자에서 사전에 있는 영문 표기를 찾아 한글 표기로 늘려 붙입니다 (Washed→워시드, Geisha→게이샤 …) */
+function psExpandAliases(tokens) {
+  const map = psAliasMap(), out = [];
+  const push = (nk) => { if (nk && out.indexOf(nk) === -1) out.push(nk); };
+  for (let i = 0; i < tokens.length; i++) {
+    const one = tokens[i].ne;
+    if (one) {
+      if (map.has(one)) push(map.get(one));
+      else if (one.length >= 4) push(psFuzzyAlias(one));
+    }
+    if (i + 1 < tokens.length && one && tokens[i + 1].ne) {
+      const two = one + tokens[i + 1].ne;
+      if (map.has(two)) push(map.get(two));
+    }
+  }
+  return out;
 }
 function psBuildIndex() {
   if (PSIDX) return PSIDX;
@@ -2509,19 +2711,110 @@ function psBuildIndex() {
     const o = Object.assign({}, b);
     o._n = psNormKo(b.name); o._nRegion = psNormKo(b.region); o._nEn = psNormEn(b.name);
     o._g = psDedupe(psBigrams(o._n)); o._gEn = psDedupe(psBigrams(o._nEn));
+    o._w = psNameWords(b.name); o._wEn = psNameWords(b.nameEn);
     return o;
   });
-  PSIDX = { places, beans, placeMap: new Map(places.map((p) => [p.id, p])), beanMap: new Map(beans.map((b) => [b.id, b])) };
+  /* 낱말이 카탈로그에서 얼마나 드문지(IDF) — 농장 이름처럼 드문 낱말이 걸리면 더 높게 봅니다 */
+  const df = new Map(), N = Math.max(1, beans.length);
+  beans.forEach((b) => {
+    psDedupe(b._w.concat(b._wEn)).forEach((w) => df.set(w, (df.get(w) || 0) + 1));
+  });
+  const sw = (w) => {
+    const d = df.get(w) || 0;
+    if (!d) return 2.5;
+    return Math.min(6, Math.max(0.4, Math.log(N / d)));
+  };
+  /* 카탈로그가 아는 낱말 — 사진 글자에서 이 말들만 라벨의 핵심 낱말로 셉니다 */
+  const wordSet = new Set();
+  beans.forEach((b) => (b._w || []).concat(b._wEn || []).forEach((w) => wordSet.add(w)));
+  /* 오독 보정용 낱말 사전 — 산지·농장 이름의 낱말을 길이별로 묶어 둡니다 */
+  const terms = new Map();
+  const addTerm = (t, id, w) => {
+    const s = psNormKo(t);
+    if (!s || s.length < 3) return;
+    const L = s.length;
+    if (!terms.has(L)) terms.set(L, []);
+    terms.get(L).push({ t: s, id, w });
+  };
+  const words = (s) => String(s || "").split(/[^0-9A-Za-z\uac00-\ud7a3]+/).filter((w) => w.length >= 3);
+  places.forEach((p) => {
+    addTerm(p.name, p.id, p.kind === "farm" ? 13 : 11);
+    words(p.name).forEach((w) => addTerm(w, p.id, 6));
+    if (p.nameEn) {
+      addTerm(p.nameEn, p.id, p.kind === "farm" ? 12 : 10);
+      words(p.nameEn).forEach((w) => addTerm(w, p.id, 5));
+    }
+  });
+  PSIDX = { places, beans, terms, sw, wordSet, byPlace: new Map(places.map((p) => [p.id, []])), placeMap: new Map(places.map((p) => [p.id, p])), beanMap: new Map(beans.map((b) => [b.id, b])) };
+  beans.forEach((b) => { if (!PSIDX.byPlace.has(b.placeId)) PSIDX.byPlace.set(b.placeId, []); PSIDX.byPlace.get(b.placeId).push(b); });
   return PSIDX;
 }
+/* 한두 글자 잘못 읽은 산지·농장 이름을 편집 거리로 건져 올립니다 */
+function psFuzzyPlaces(t, IDX) {
+  const out = new Map();
+  const seen = new Set();
+  const add = (id, sc) => { if (sc > 0 && (out.get(id) || 0) < sc) out.set(id, sc); };
+  for (const tok of t.tokens) {
+    const key = tok.nk.length >= 2 && /[\uac00-\ud7a3]/.test(tok.nk) && tok.ne.length < 3 ? tok.nk : tok.ne;
+    if (!key || key.length < 4 || seen.has(key)) continue;
+    seen.add(key);
+    /* 오독 보정 — 영문은 여섯 자, 한글은 네 자부터 한 글자 오독까지 같은 이름으로 봅니다 */
+    let max = psMaxEdits(key.length);
+    if (!max && key.length >= 4 && /[\uac00-\ud7a3]/.test(key)) max = 1;
+    if (!max) continue;
+    for (let L = key.length - max; L <= key.length + max; L++) {
+      const arr = IDX.terms.get(L);
+      if (!arr) continue;
+      for (const term of arr) {
+        if (term.t.charAt(0) !== key.charAt(0) && max < 2) continue;
+        const d = psEdit(key, term.t, max);
+        /* d=0은 이미 정확 일치로 점수가 들어 있으니, 오독으로 걸린 건만 더합니다 */
+        if (d >= 1 && d <= max) add(term.id, term.w - 3 * d);
+      }
+    }
+  }
+  return out;
+}
+/* 이름에 붙은 영문 농장·산지 이름을 한글 이름으로 이어 줍니다 (El Diamante → 엘 디아만테) */
+function psExpandPlaceNames(tokens) {
+  const seq = tokens.map((t) => t.ne).filter(Boolean);
+  const out = [];
+  if (!seq.length) return out;
+  (CAT.places || []).forEach((p) => {
+    const ws = psNameWords(p.nameEn);
+    if (!ws.length || ws.length > 3) return;
+    for (let i = 0; i + ws.length <= seq.length; i++) {
+      let ok = true;
+      for (let j = 0; j < ws.length; j++) { if (seq[i + j] !== ws[j]) { ok = false; break; } }
+      if (ok) { const nk = psNormKo(p.name); if (nk && out.indexOf(nk) === -1) out.push(nk); return; }
+    }
+  });
+  return out;
+}
 function psMakeText(raw) {
-  const nk = psNormKo(raw), ne = psNormEn(raw);
-  const tokens = String(raw || "").split(/[\s\n\r,.;:·|/()\[\]"'“”‘’!?\-—]+/).filter((t) => t.length >= 2);
+  const src = String(raw || "");
+  const tokens = src.split(/[\s\n\r,.;:·|/()\[\]"'“”‘’!?\-—]+/).filter((t) => t.length >= 2)
+    .map((t) => ({ raw: t, nk: psNormKo(t), ne: psNormEn(t) }))
+    .filter((t) => t.nk);
+  const aliasKo = psExpandAliases(tokens);
+  psExpandPlaceNames(tokens).forEach((nk) => { if (aliasKo.indexOf(nk) === -1) aliasKo.push(nk); });
+  const nkPlain = psNormKo(src);
+  /* 사전으로 늘린 한글 표기도 "읽은 글자"에 더해 정확 일치 판정에 씁니다 */
+  const nk = nkPlain + (aliasKo.length ? "\u0000" + aliasKo.join("\u0000") : "");
+  const ne = psNormEn(src);
+  /* 낱말 경계를 넘어 우연히 생기는 두 글자 조합을 막으려고 낱말마다 끊어 둡니다 */
+  const gramsKo = new Set(psBigrams(tokens.map((t) => t.nk).join("\u0000")));
+  const gramsEn = new Set(psBigrams(tokens.map((t) => t.ne).join("\u0000")));
+  aliasKo.forEach((a) => psBigrams(a).forEach((g) => gramsKo.add(g)));
+  /* Tesseract가 한글을 한 글자씩 띄어 읽는 일이 많아(예: 디 아 만 테), 한글 음절을 이어 붙인 글자도 함께 봅니다 */
+  const koRuns = (src.match(/[\uac00-\ud7a3]+/g) || []).join("");
+  const koFlat = koRuns + aliasKo.filter((a) => /[\uac00-\ud7a3]/.test(a)).join("");
+  psBigrams(koRuns).forEach((g) => gramsKo.add(g));
   return {
-    raw, nk, ne,
-    gramsKo: new Set(psBigrams(nk)),
-    gramsEn: new Set(psBigrams(ne)),
-    tokens: tokens.map((t) => ({ raw: t, nk: psNormKo(t), ne: psNormEn(t) }))
+    raw: src, nk, ne, gramsKo, gramsEn, tokens, aliasKo, koFlat,
+    tokSet: new Set(tokens.map((t) => t.nk)),
+    koExtra: new Set(aliasKo),
+    enSet: new Set(tokens.map((t) => t.ne).filter((w) => w.length >= 2))
   };
 }
 function psScorePlace(p, t) {
@@ -2535,32 +2828,47 @@ function psScorePlace(p, t) {
   }
   if (p._nEn && p._nEn.length >= 4) {
     if (t.ne.indexOf(p._nEn) !== -1) { s += 13 + Math.min(10, (p._nEn.length - 4) * 0.7); why.push(p.nameEn); }
-    else if (p._nEn.length >= 6) {
-      const ce = psCover(p._gEn, t.gramsEn);
-      if (ce >= 0.72) { s += 11 * ce; why.push(p.nameEn); }
+    else {
+      /* 영문은 두 글자 조각보다 낱말 단위로 봐야 엉뚱한 농장이 걸리지 않습니다 */
+      const ws = psNameWords(p.nameEn);
+      let hit = 0;
+      ws.forEach((w) => { if (psWordHitEn(w, t)) hit++; });
+      if (hit && ws.length) { s += hit === ws.length ? 9 : 5 * (hit / ws.length); why.push(p.nameEn); }
     }
   }
-  if (p.kind !== "country" && p._nCountry && t.nk.indexOf(p._nCountry) !== -1) s += 2.5;
+  /* 같은 나라 이름이 사진에 보이면 그 나라 산지·농장을 앞세웁니다 */
+  if (p.kind !== "country" && p._nCountry && t.nk.indexOf(p._nCountry) !== -1) s += 6;
+  /* 농장 이름이 걸렸다면 산지보다 한 걸음 앞세웁니다 (봉지 한 장이 농장 하나를 가리키므로) */
+  if (p.kind === "farm" && s > 0.5) s += 4;
+  /* 오독 보정으로 걸린 산지·농장은 조금 약하게 더합니다 (정확 일치가 있으면 중복 가점을 줍지 않습니다) */
+  const fz = t.fz ? t.fz.get(p.id) || 0 : 0;
+  if (fz) { s += s > 0.5 ? fz * 0.9 : fz; if (!why.length) why.push(p.name); }
   if (p.kind === "farm") s *= 1.12;
   else if (p.kind === "country") s *= 0.8;
   p._why = why;
   return s;
 }
 function psScoreBean(b, t, placeScore) {
-  let s = placeScore * 0.55;
-  if (b._n && t.nk.indexOf(b._n) !== -1) s += 24;
-  else {
-    const c = psCover(b._g, t.gramsKo);
-    if (c > 0.2) s += c * 46;
+  let s = placeScore * 0.5;
+  /* 이름 낱말이 사진 글자에서 얼마나 걸렸는지 — 드문 낱말(농장·마을 이름)이 걸리면 더 높게 봅니다 */
+  let hitW = 0, totW = 0;
+  const cnt = (hit, w) => { if (w > 0) { totW += w; hitW += w * hit; } };
+  (b._w || []).forEach((w) => {
+    let h = psWordHitKo(w, t);
+    /* 오독으로 건지 산지·농장 이름은 그 낱말을 가진 생두에도 걸린 것으로 봅니다 */
+    if (!h && t.fzWords && t.fzWords.has(w)) h = 0.8;
+    cnt(h, t.sw(w));
+  });
+  /* 한글 이름이 있으면 영문 이름은 같은 말을 두 번 세지 않도록 보지 않습니다 */
+  if (!(b._w && b._w.length)) (b._wEn || []).forEach((w) => cnt(psWordHitEn(w, t), t.sw(w) * 0.9));
+  if (totW > 0) {
+    const cov = hitW / totW;
+    /* 낱말이 적은 짧은 이름이 두 낱말만 걸려도 만점이 되지 않도록 이름 길이도 봅니다 */
+    s += 34 * Math.pow(cov, 1.5) * Math.min(1, totW / 12);
   }
-  if (b._nEn && b._nEn.length >= 8) {
-    if (t.ne.indexOf(b._nEn) !== -1) s += 18;
-    else {
-      const ce = psCover(b._gEn, t.gramsEn);
-      if (ce > 0.22) s += ce * 34;
-    }
-  }
-  if (b._nRegion && t.nk.indexOf(b._nRegion) !== -1) s += 4;
+  if (b._n && b._n.length >= 2 && t.nk.indexOf(b._n) !== -1) s += 22;
+  if (b._nRegion && t.nk.indexOf(b._nRegion) !== -1) s += 3;
+  if (t.beanExtra) s += t.beanExtra.get(b.id) || 0;
   return s;
 }
 function psChips(name, place, t) {
@@ -2582,9 +2890,37 @@ function psFindMatches(raw, limit) {
   const t = psMakeText(raw);
   if (!t.nk && !t.ne) return [];
   const placeScores = new Map();
+  t.fz = psFuzzyPlaces(t, IDX);
+  t.sw = IDX.sw;
+  /* 오독으로 걸린 산지·농장 이름 — 생두 낱말을 볼 때도 걸린 것으로 인정합니다 */
+  t.fzWords = new Set();
+  t.fz.forEach((sc, id) => {
+    const p = IDX.placeMap.get(id);
+    if (p && sc >= 6) { const n = psNormKo(p.name); if (n) t.fzWords.add(n); }
+  });
   IDX.places.forEach((p) => {
     const sc = psScorePlace(p, t);
-    if (sc > 5) placeScores.set(p.id, sc);
+    if (sc > 8) placeScores.set(p.id, sc);
+  });
+  /* 사진에 한 나라 이름만 보이면, 다른 나라 농장은 농장 이름이 같아도 뒤로 물립니다 */
+  const ctxCountry = [];
+  placeScores.forEach((sc, id) => {
+    const p = IDX.placeMap.get(id);
+    if (p && p.kind === "country" && sc >= 9 && ctxCountry.indexOf(p.name) === -1) ctxCountry.push(p.name);
+  });
+  if (ctxCountry.length === 1) {
+    placeScores.forEach((sc, id) => {
+      const p = IDX.placeMap.get(id);
+      if (p && p.kind !== "country" && p.country && p.country !== ctxCountry[0]) placeScores.set(id, sc * 0.5);
+    });
+  }
+  /* 농장 이름이 사진에서 확인되면 그 농장의 생두를 앞세웁니다 */
+  t.beanExtra = new Map();
+  placeScores.forEach((sc, id) => {
+    const p = IDX.placeMap.get(id);
+    if (!p || p.kind !== "farm" || sc < 12) return;
+    const extra = Math.min(20, 6 + sc * 0.3);
+    (IDX.byPlace.get(id) || []).forEach((b) => { if (!(t.beanExtra.get(b.id) >= extra)) t.beanExtra.set(b.id, extra); });
   });
   const beanHits = [];
   for (const b of IDX.beans) {
@@ -2609,8 +2945,20 @@ function psFindMatches(raw, limit) {
       chips: psChips(p.name, p, t)
     }));
   const merged = [];
-  const beanQuota = Math.max(2, limit - 2);
+  const beanQuota = Math.max(2, limit - 3);
   beanItems.slice(0, beanQuota).forEach((x) => merged.push(x));
+  /* 농장 이름이 사진에서 확인됐는데 생두 목록에 밀렸다면 농장은 하나 보여 줍니다 */
+  if (!placeItems.some((x) => x.place.kind === "farm")) {
+    const fp = [...placeScores.entries()]
+      .filter(([id, sc]) => { const p = IDX.placeMap.get(id); return p && p.kind === "farm" && sc >= 15; })
+      .sort((a, b) => b[1] - a[1])[0];
+    if (fp) {
+      const p = IDX.placeMap.get(fp[0]);
+      placeItems.pop();
+      placeItems.unshift({ kind: "place", place: p, score: fp[1], name: p.name,
+        sub: [p.country, "농장"].join(" · "), chips: psChips(p.name, p, t) });
+    }
+  }
   placeItems.forEach((x) => {
     if (merged.length >= limit) return;
     if (merged.some((m) => psNormKo(m.name) === psNormKo(x.name))) return;
@@ -2739,6 +3087,17 @@ function psChoose(i) {
 }
 
 /* ---------- 사진을 골랐을 때 ---------- */
+/* 두 번 읽은 글자를 중복 없이 합칩니다 (사진 검색은 이름이 한 번이라도 보이면 걸립니다) */
+function psMergeText(a, b) {
+  const seen = new Set(), out = [];
+  (String(a || "") + "\n" + String(b || "")).split("\n").forEach((line) => {
+    const k = line.replace(/[^0-9A-Za-z\uac00-\ud7a3]/g, "").toLowerCase();
+    if (!k || seen.has(k)) return;
+    seen.add(k); out.push(line.trim());
+  });
+  return out.join("\n");
+}
+
 async function psHandleFile(file) {
   if (!file) return;
   PS_ON = true;
@@ -2760,16 +3119,21 @@ async function psHandleFile(file) {
     PV.recBase = 0.42; PV.recSpan = 0.5;
     psSetStatus("run", "인식 엔진을 준비하는 중", 0.06, PS_DATA_NOTE);
     psRender();
-    let text = await psRecognize(psResize(img, 1000, 0.76, false), job);
+    const t1 = await psRecognize(psResize(img, PS_MAX_SIDE, 0.92, true, "soft"), job, "3");
     if (job !== PV.job) return;
+    let text = t1;
     let items = text ? psFindMatches(text, 6) : [];
     if (!items.length) {
-      PV.recBase = 0.72; PV.recSpan = 0.26;
-      psSetStatus("run", text ? "글자를 더 또렷하게 해 다시 읽는 중" : "글자를 한 번 더 읽는 중", 0.7, "");
-      const t2 = await psRecognize(psResize(img, 1100, 0.8, true), job);
+      PV.recBase = 0.7; PV.recSpan = 0.28;
+      psSetStatus("run", text ? "글자를 더 또렷하게 해 다시 읽는 중" : "글자를 한 번 더 읽는 중", 0.68, "");
+      const t2 = await psRecognize(psResize(img, PS_MAX_SIDE, 0.92, true, "strong"), job, "11");
       if (job !== PV.job) return;
-      if (t2 && t2.length > (text || "").length) text = t2;
-      items = text ? psFindMatches(text, 6) : [];
+      if (t2) {
+        /* 두 번 읽은 글자를 합쳐 찾으면 한 번에 놓친 이름을 다른 쪽에서 건질 수 있습니다 */
+        const m2 = psFindMatches(psMergeText(t1, t2), 6);
+        if (m2.length) { items = m2; text = t2.length > t1.length ? t2 : t1; }
+        else if (t2.length > t1.length) text = t2;
+      }
     }
     PV.text = text || "";
     PV.cands = items;
