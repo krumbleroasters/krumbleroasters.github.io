@@ -3098,6 +3098,27 @@ function psMergeText(a, b) {
   return out.join("\n");
 }
 
+/* 읽은 글자 중 카탈로그가 아는 낱말이 있는 줄을 앞으로 — 사진 가장자리의 지저분한 줄에 라벨 글자가 밀리지 않게 */
+function psOrderText(raw) {
+  const lines = String(raw || "").split("\n");
+  if (!PSIDX) return String(raw || "");
+  const known = (line) => {
+    const toks = String(line).split(/[^0-9A-Za-z\uac00-\ud7a3]+/).filter((w) => w.length >= 2);
+    let hit = 0;
+    toks.forEach((w) => {
+      const nk = psNormKo(w);
+      if (PSIDX.wordSet.has(nk) || psAliasMap().has(psNormEn(w))) hit++;
+    });
+    return hit;
+  };
+  const head = [], tail = [];
+  lines.forEach((line) => {
+    if (!line.trim()) return;
+    (known(line) > 0 ? head : tail).push(line);
+  });
+  return head.concat(tail).join("\n");
+}
+
 async function psHandleFile(file) {
   if (!file) return;
   PS_ON = true;
@@ -3135,7 +3156,7 @@ async function psHandleFile(file) {
         else if (t2.length > t1.length) text = t2;
       }
     }
-    PV.text = text || "";
+    PV.text = text ? psOrderText(text) : "";
     PV.cands = items;
     if (items.length) {
       PV.candNote = "";
