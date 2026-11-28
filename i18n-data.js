@@ -1180,6 +1180,17 @@ window.CI_I18N = (function () {
       "사진 없음": "No photo||写真なし",
       "산지 정보 보기 →": "See the origin →||産地情報を見る →",
       "삭제": "Delete||削除",
+      "수정": "Edit||編集",
+      "수정 저장": "Save changes||変更を保存",
+      "수정 취소": "Cancel edit||編集をやめる",
+      "기록을 수정하고 있어요 · 사진과 기록 ID는 그대로 남습니다":
+        "Editing this entry · the photo and record ID stay as they are||記録を編集中です · 写真と記録IDはそのまま残ります",
+      "기록을 불러왔어요 · 고칠 곳만 바꿔 주세요":
+        "Entry loaded · change only what you need||記録を読み込みました · 直すところだけ変えてください",
+      "수정한 기록": "Updated entry||修正した記録",
+      "기록을 수정했어요": "Entry updated||記録を修正しました",
+      "수정을 취소했어요": "Editing cancelled||編集をやめました",
+      "기록을 찾지 못했어요": "The entry wasn't found||記録が見つかりませんでした",
       "한 번 더 누르면 삭제": "Tap again to delete||もう一度押すと削除",
       "이미지 파일만 올릴 수 있어요": "Only image files can be uploaded||画像ファイルのみアップロードできます",
       "사진에서 이름을 찾는 중…": "Finding the name in the photo…||写真から名前を探しています…",
@@ -1234,6 +1245,9 @@ window.CI_I18N = (function () {
       "내가 마신 커피를 지도에": "The coffee I've drunk, <em>on a map</em>||飲んだコーヒーを<em>地図に</em>",
       "내가 마신 커피 지도": "My <em>coffee map</em>||私が飲んだ<em>コーヒーマップ</em>",
       "한 잔을 남겨요": "Log <em>a cup</em>||一杯を<em>残す</em>",
+      "한 잔을 고쳐요": "Edit <em>a cup</em>||一杯を<em>直す</em>",
+      "사진과 기록 ID는 그대로 두고, 고칠 곳만 바꿔 주세요.":
+        "The photo and record ID stay as they are — change only what you need.||写真と記録IDはそのままにして、直すところだけ変えてください。",
       "아직 핀을 꽂은 커피가 없어요.사진 한 장이면 이름과 산지를 찾아 지도에 남길 수 있어요.":
         "<b>No coffees pinned yet.</b><br />One photo is enough to find the name and origin and pin it to your map.||<b>まだピンを立てたコーヒーはありません。</b><br />写真が一枚あれば、名前と産地を見つけて地図に残せます。",
       "마신 커피의 사진을 찍거나앨범에서 골라 주세요":
@@ -1272,6 +1286,8 @@ window.CI_I18N = (function () {
       "{} 기록이 아직 없어요||No {} entries yet||{}の記録はまだありません",
       "{#}명 참여 · 시트 반영은 최대 5분(방금 남긴 내 기록은 바로 반영)||{} people · the sheet updates within 5 minutes (cups you just logged count right away)||{}人が参加 · シートへの反映は最大5分（たった今の記録はすぐ反映）",
       "{#}잔을 시트에서 불러왔어요 · 코드 기록 {#}잔||{} cups loaded from the sheet · {} under this code||シートから{}杯を読み込みました · コードの記録{}杯",
+      "{#}잔의 수정 내용을 반영했어요 · 코드 기록 {#}잔||{} cups updated from the sheet · {} under this code||シートから{}杯の修正を反映しました · コードの記録{}杯",
+      "{#}잔을 시트에서 불러왔어요 · {#}잔의 수정 내용을 반영했어요 · 코드 기록 {#}잔||{} cups loaded and {} updated from the sheet · {} under this code||シートから{}杯を読み込み、{}杯の修正を反映しました · コードの記録{}杯",
       "시트와 같아요 · 코드 기록 {#}잔||Same as the sheet · {} under this code||シートと同じです · コードの記録{}杯",
       "코드 기록 {#}잔 · 시트와 맞춰 두었어요||{} cups under this code · matched with the sheet||コードの記録{}杯 · シートと合わせました",
       "이 코드로 {#}잔을 찾았어요||Found {} cups under this code||このコードで{}杯が見つかりました",

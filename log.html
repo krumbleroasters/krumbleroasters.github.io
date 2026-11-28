@@ -507,8 +507,13 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   .reccard .tagline span{font-size:10px;font-weight:800;color:#7A6A57;background:var(--cream-2);border-radius:999px;padding:3px 8px}
   .reccard .acts{display:flex;align-items:center;gap:12px;margin-top:11px;padding-top:9px;border-top:1px dashed var(--line)}
   .reccard .acts a{font-size:11px;font-weight:800;color:var(--terra);text-decoration:none}
-  .reccard .acts .del{margin-left:auto;border:0;background:none;font-size:11px;font-weight:700;color:#A79C8C;padding:4px}
+  .reccard .acts .edit{margin-left:auto;border:1px solid var(--line);background:#fff;border-radius:8px;font-size:11px;font-weight:800;color:var(--ink-soft);padding:4px 9px}
+  .reccard .acts .del{margin-left:0;border:0;background:none;font-size:11px;font-weight:700;color:#A79C8C;padding:4px}
   .reccard .acts .del.armed{color:#B4452C;font-weight:800}
+
+  /* 수정 중 표시 */
+  .editbar{display:flex;align-items:center;gap:10px;background:#FDF7EC;border:1px solid #EBD8BE;border-radius:13px;padding:9px 11px;margin:0 0 13px;font-size:11.5px;font-weight:700;line-height:1.55;color:#7A6A57}
+  .editbar .btn{margin-left:auto;flex:none}
 
   /* toast */
   .toastwrap{position:fixed;left:0;right:0;bottom:calc(78px + env(safe-area-inset-bottom));z-index:950;display:flex;justify-content:center;pointer-events:none;padding:0 14px}
@@ -671,10 +676,14 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 
     <!-- ============ 기록하기 ============ -->
     <section class="panel" id="panelAdd" aria-label="커피 기록하기">
+      <div class="editbar" id="editBar" hidden>
+        <span>기록을 수정하고 있어요 · 사진과 기록 ID는 그대로 남습니다</span>
+        <button class="btn ghost sm" id="btnEditCancel" type="button">수정 취소</button>
+      </div>
       <div class="phead">
-        <p class="kicker">New cup</p>
-        <h2>한 잔을 <em>남겨요</em></h2>
-        <p>사진을 올리면 라벨·메뉴판의 글자를 읽어 커피 이름 후보를 찾아 드려요.</p>
+        <p class="kicker" id="addKicker">New cup</p>
+        <h2 id="addTitle">한 잔을 <em>남겨요</em></h2>
+        <p id="addDesc">사진을 올리면 라벨·메뉴판의 글자를 읽어 커피 이름 후보를 찾아 드려요.</p>
       </div>
 
       <!-- 1. photo -->
@@ -838,7 +847,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 <noscript><p style="padding:20px;font-size:14px">이 페이지는 사진 기록을 위해 자바스크립트를 사용합니다.</p></noscript>
 
 <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" defer></script>
-<script src="i18n-data.js?v=20261128a"></script>
+<script src="i18n-data.js?v=20261128b"></script>
 <script src="i18n-pages.js?v=20261204b"></script>
 <script src="i18n-places.js?v=20261201a"></script>
 <script src="i18n-research-nav.js?v=20261127r"></script>
@@ -1077,6 +1086,11 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     list.push({ action: action, rec: rec, at: Date.now() });
     writeQueue(list);
   }
+  /* 같은 기록ID의 밀린 전송을 버린다(수정·삭제 뒤 예전 내용이 덮어쓰지 않도록) */
+  function clearPending(id) {
+    if (!id) return;
+    writeQueue(readQueue().filter(function (x) { return !(x && x.rec && x.rec.id === id); }));
+  }
 
   var logCache = { rows: null, at: 0, pending: null, failed: false };
   function rowTime(s) {
@@ -1155,21 +1169,50 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     };
   }
 
+  var MERGE_KEYS = ["date", "name", "country", "region", "farm", "placeId", "beanId",
+    "lat", "lon", "precision", "rating", "cafe", "note"];
+
+  function rowChanged(cur, rec) {
+    var i, k, a, b;
+    for (i = 0; i < MERGE_KEYS.length; i++) {
+      k = MERGE_KEYS[i];
+      a = cur[k] == null ? "" : cur[k];
+      b = rec[k] == null ? "" : rec[k];
+      if (a !== b) return true;
+    }
+    a = (cur.tags || []).join(",");
+    b = (rec.tags || []).join(",");
+    return a !== b;
+  }
+
+  /* 시트의 내 코드 행을 이 기기 기록과 맞춘다.
+     · 처음 보는 기록ID는 더하고, 이미 있는 기록ID는 시트 값이 다를 때만 고친다(수정 반영)
+     · 사진(photoId·thumb)과 createdAt은 이 기기에 있는 것을 그대로 둔다
+     · 이 기기에서 아직 못 보낸(대기 중인) 수정이 있으면 시트 값으로 덮지 않는다 */
   function mergeRows(code, rows) {
-    var have = new Set(records.map(function (r) { return r.id; }));
+    var have = new Map(records.map(function (r) { return [r.id, r]; }));
     var gone = new Set(readDeleted());
-    var added = 0;
+    var waiting = new Set(readQueue().map(function (x) { return x && x.rec && x.rec.id; }).filter(Boolean));
+    var added = 0, updated = 0;
     rows.forEach(function (r) {
       if (r.code !== code || r.action === "삭제" || !r.rid) return;
-      if (have.has(r.rid) || gone.has(r.rid)) return;
+      if (gone.has(r.rid)) return;
       var rec = recordFromRow(r);
       if (!rec.name) return;
+      var cur = have.get(r.rid);
+      if (cur) {
+        if (waiting.has(r.rid) || !rowChanged(cur, rec)) return;
+        MERGE_KEYS.forEach(function (k) { cur[k] = rec[k]; });
+        cur.tags = rec.tags;
+        updated++;
+        return;
+      }
       records.push(rec);
-      have.add(r.rid);
+      have.set(rec.id, rec);
       added++;
     });
-    if (added) { sortRecords(); persist(); renderAll(); }
-    return added;
+    if (added || updated) { sortRecords(); persist(); renderAll(); }
+    return { added: added, updated: updated };
   }
 
   function setSyncMsg(msg, kind) {
@@ -1252,12 +1295,16 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     if (manual) setSyncMsg("시트에서 내 기록을 확인하는 중…", "");
     return fetchLogRows(!!manual)
       .then(function (rows) {
-        var added = mergeRows(s.code, rows);
+        var res = mergeRows(s.code, rows);
+        var added = res.added, updated = res.updated;
         var mine = rows.filter(function (r) { return r.code === s.code && r.action !== "삭제"; }).length;
-        if (added) setSyncMsg(added + "잔을 시트에서 불러왔어요 · 코드 기록 " + mine + "잔", "ok");
+        var bits = [];
+        if (added) bits.push(added + "잔을 시트에서 불러왔어요");
+        if (updated) bits.push(updated + "잔의 수정 내용을 반영했어요");
+        if (bits.length) setSyncMsg(bits.join(" · ") + " · 코드 기록 " + mine + "잔", "ok");
         else if (manual) setSyncMsg(mine ? "시트와 같아요 · 코드 기록 " + mine + "잔" : "이 코드로 저장된 기록이 시트에 아직 없어요", mine ? "ok" : "");
         else setSyncMsg(mine ? "코드 기록 " + mine + "잔 · 시트와 맞춰 두었어요" : "", mine ? "ok" : "");
-        return added;
+        return added + updated;
       })
       .catch(function () {
         if (manual) setSyncMsg("시트를 지금 불러오지 못했어요. 잠시 뒤 '지금 동기화'를 다시 눌러 주세요.", "warn");
@@ -1276,7 +1323,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     }
     setSyncMsg("이 코드의 기록을 불러오는 중…", "");
     fetchLogRows(true).then(function (rows) {
-      var added = mergeRows(code, rows);
+      var added = mergeRows(code, rows).added;
       var mine = rows.filter(function (r) { return r.code === code && r.action !== "삭제"; }).length;
       if (mine) {
         setSyncMsg("이 코드로 " + mine + "잔을 찾았어요" + (added ? " · 새로 " + added + "잔을 불러왔어요" : "") + (same ? "" : " · 이제 이 코드로 저장됩니다"), "ok");
@@ -1950,6 +1997,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
         tags +
         '<div class="acts">' +
           (link ? '<a href="' + link + '">산지 정보 보기 →</a>' : "") +
+          '<button class="edit" type="button" data-edit="' + esc(r.id) + '">수정</button>' +
           '<button class="del" type="button" data-del="' + esc(r.id) + '">삭제</button>' +
         "</div>" +
       "</div></article>";
@@ -1985,7 +2033,8 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
   /* ================= photo + OCR ================= */
   var state = {
     photo: null, ocrText: "", sel: null, cands: [], results: [],
-    rating: 0, tags: new Set(), ocrJob: 0, ocrWorker: null, ocrTried: false
+    rating: 0, tags: new Set(), ocrJob: 0, ocrWorker: null, ocrTried: false,
+    editId: null, editRec: null
   };
   var TESS = {
     ver: "5.1.1",
@@ -2257,51 +2306,155 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     });
   }
 
+  /* ================= 수정 ================= */
+  /* 카드의 [수정] → 기존 값을 기록 화면에 그대로 불러온다.
+     사진·기록ID·처음 남긴 시각은 유지하고, 고친 내용만 같은 ID로 덮어쓴다. */
+  function startEdit(id) {
+    var rec = null;
+    for (var i = 0; i < records.length; i++) {
+      if (records[i].id === id) { rec = records[i]; break; }
+    }
+    if (!rec) { toast("기록을 찾지 못했어요"); return; }
+    state.editId = rec.id;
+    state.editRec = rec;
+    state.rating = rec.rating || 0;
+    state.tags = new Set(rec.tags || []);
+    state.cands = []; state.results = [];
+    state.ocrText = ""; state.ocrJob++;
+    state.photo = null;
+    state.sel = {
+      type: "record", beanId: rec.beanId || null, name: rec.name,
+      country: rec.country || "", region: rec.region || "", farm: rec.farm || "",
+      placeId: rec.placeId || null,
+      lat: typeof rec.lat === "number" ? rec.lat : null,
+      lon: typeof rec.lon === "number" ? rec.lon : null,
+      precision: rec.precision || ""
+    };
+    $("#fDate").value = rec.date || todayISO();
+    $("#fCafe").value = rec.cafe || "";
+    $("#fNote").value = rec.note || "";
+    $("#noteCount").textContent = $("#fNote").value.length + "/140";
+    $("#cands").innerHTML = "";
+    $("#candNote").hidden = true;
+    $("#candNote").textContent = "";
+    $("#results").hidden = true;
+    $("#results").innerHTML = "";
+    $("#q").value = "";
+    $("#customBox").hidden = true;
+    $("#ocrBar").hidden = true;
+    $("#ocrBar").className = "ocrbar";
+    $("#ocrTextWrap").hidden = true;
+    $("#ocrTextBody").hidden = true;
+    $("#btnToggleOcr").setAttribute("aria-expanded", "false");
+    $("#ocrText").value = "";
+    applySelection(state.sel);
+    if (typeof state.sel.lat === "number" && typeof state.sel.lon === "number") {
+      $("#selMeta").insertAdjacentHTML("beforeend",
+        '<span class="badge">' + state.sel.lat.toFixed(3) + ", " + state.sel.lon.toFixed(3) + "</span>");
+    }
+    $("#shotPrompt").hidden = false;
+    $("#shotPreview").hidden = true;
+    $("#shotImg").removeAttribute("src");
+    if (rec.photoId) {
+      PhotoDB.get(rec.photoId).then(function (ph) {
+        if (state.editId !== rec.id || !ph || !ph.full) return;
+        state.photo = { id: ph.id, full: ph.full, thumb: ph.thumb, createdAt: ph.createdAt };
+        $("#shotPrompt").hidden = true;
+        $("#shotPreview").hidden = false;
+        $("#shotImg").src = ph.full;
+      });
+    }
+    paintStars();
+    Array.prototype.forEach.call($("#tags").children, function (b) {
+      var on = state.tags.has(b.textContent);
+      b.classList.toggle("on", on);
+      b.setAttribute("aria-pressed", String(on));
+    });
+    $("#editBar").hidden = false;
+    $("#addKicker").textContent = "Edit cup";
+    $("#addTitle").innerHTML = "한 잔을 <em>고쳐요</em>";
+    $("#addDesc").textContent = "사진과 기록 ID는 그대로 두고, 고칠 곳만 바꿔 주세요.";
+    $("#btnSave").textContent = "수정 저장";
+    $("#btnSave").disabled = false;
+    closeSheet();
+    setView("add");
+    window.scrollTo({ top: 0, behavior: "auto" });
+    toast("기록을 불러왔어요 · 고칠 곳만 바꿔 주세요");
+  }
+
+  function cancelEdit() {
+    resetForm();
+    setView("map");
+    toast("수정을 취소했어요");
+  }
+
   /* ================= save ================= */
   function saveRecord() {
-    if (!state.photo) { toast("사진을 먼저 올려 주세요"); return; }
+    var editing = !!state.editId;
+    var base = editing ? state.editRec : null;
+    if (!state.photo && !editing) { toast("사진을 먼저 올려 주세요"); return; }
     if (!state.sel) { toast("어떤 커피인지 골라 주세요"); $("#q").focus(); return; }
     var sel = state.sel;
-    var rec = {
-      id: "rec_" + Date.now().toString(36) + Math.random().toString(36).slice(2, 5),
-      createdAt: Date.now(),
-      date: $("#fDate").value || todayISO(),
-      name: sel.name,
-      country: sel.country || "",
-      region: sel.region || "",
-      farm: sel.farm || "",
-      placeId: sel.placeId || null,
-      beanId: sel.beanId || null,
-      lat: typeof sel.lat === "number" ? sel.lat : null,
-      lon: typeof sel.lon === "number" ? sel.lon : null,
-      precision: sel.precision || "",
-      rating: state.rating || 0,
-      tags: Array.from(state.tags),
-      note: ($("#fNote").value || "").trim(),
-      cafe: ($("#fCafe").value || "").trim(),
-      photoId: state.photo.id
-    };
+    var rec = {};
+    if (base) Object.keys(base).forEach(function (k) { rec[k] = base[k]; });   // 모르는 필드도 지킨다
+    rec.id = base ? base.id : "rec_" + Date.now().toString(36) + Math.random().toString(36).slice(2, 5);
+    rec.createdAt = base ? (base.createdAt || Date.now()) : Date.now();
+    rec.date = $("#fDate").value || todayISO();
+    rec.name = sel.name;
+    rec.country = sel.country || "";
+    rec.region = sel.region || "";
+    rec.farm = sel.farm || "";
+    rec.placeId = sel.placeId || null;
+    rec.beanId = sel.beanId || null;
+    rec.lat = typeof sel.lat === "number" ? sel.lat : null;
+    rec.lon = typeof sel.lon === "number" ? sel.lon : null;
+    rec.precision = sel.precision || "";
+    rec.rating = state.rating || 0;
+    rec.tags = Array.from(state.tags);
+    rec.note = ($("#fNote").value || "").trim();
+    rec.cafe = ($("#fCafe").value || "").trim();
+    rec.photoId = state.photo ? state.photo.id : ((base && base.photoId) || "");
+    var oldPhoto = base && base.photoId && base.photoId !== rec.photoId ? base.photoId : "";
     $("#btnSave").disabled = true;
-    PhotoDB.put({ id: state.photo.id, full: state.photo.full, thumb: state.photo.thumb, createdAt: Date.now() })
-      .catch(function () {})
-      .then(function () {
+    var job = state.photo
+      ? PhotoDB.put({ id: state.photo.id, full: state.photo.full, thumb: state.photo.thumb, createdAt: Date.now() }).catch(function () {})
+      : Promise.resolve();
+    job.then(function () {
+      if (editing) {
+        var idx = -1;
+        for (var i = 0; i < records.length; i++) { if (records[i].id === rec.id) { idx = i; break; } }
+        if (idx >= 0) records[idx] = rec; else records.push(rec);
+      } else {
         records.unshift(rec);
-        sortRecords();
-        persist();
-        sendRecord(rec, "저장");   // 글자 기록만 시트로 보낸다(화면에는 이미 보임)
-        resetForm();
-        setView("map");
-        renderAll();
-        if (typeof rec.lat === "number" && map) {
-          map.setView([rec.lat, rec.lon], Math.max(map.getZoom(), 6), { animate: true });
-        }
-        setTimeout(function () { openSheet([rec], rec.country || rec.name, "방금 남긴 기록", rec.placeId); }, 320);
-        toast("기록을 남겼어요 · 지도에 핀을 꽂았습니다");
-        $("#btnSave").disabled = false;
-      });
+      }
+      sortRecords();
+      persist();
+      clearPending(rec.id);   // 예전 내용으로 밀린 전송이 이 수정을 덮지 않도록
+      /* 폼의 '동작'은 저장·삭제 두 갈래라, 수정은 같은 기록ID로 '저장'을 다시 보낸다.
+         시트 동기화(sync.py)가 같은 기록ID면 새 줄을 만들지 않고 그 줄을 고친다. */
+      sendRecord(rec, "저장");
+      resetForm();
+      setView("map");
+      renderAll();
+      if (oldPhoto && !records.some(function (r) { return r.photoId === oldPhoto; })) PhotoDB.del(oldPhoto);
+      if (typeof rec.lat === "number" && map) {
+        map.setView([rec.lat, rec.lon], Math.max(map.getZoom(), 6), { animate: true });
+      }
+      setTimeout(function () {
+        openSheet([rec], rec.country || rec.name, editing ? "수정한 기록" : "방금 남긴 기록", rec.placeId);
+      }, 320);
+      toast(editing ? "기록을 수정했어요" : "기록을 남겼어요 · 지도에 핀을 꽂았습니다");
+      $("#btnSave").disabled = false;
+    });
   }
 
   function resetForm() {
+    state.editId = null; state.editRec = null;
+    var bar = $("#editBar"); if (bar) bar.hidden = true;
+    var bs = $("#btnSave"); if (bs) bs.textContent = "이 커피 기록하기";
+    $("#addKicker").textContent = "New cup";
+    $("#addTitle").innerHTML = "한 잔을 <em>남겨요</em>";
+    $("#addDesc").textContent = "사진을 올리면 라벨·메뉴판의 글자를 읽어 커피 이름 후보를 찾아 드려요.";
     state.photo = null; state.ocrText = ""; state.sel = null; state.cands = []; state.results = [];
     state.rating = 0; state.tags = new Set(); state.ocrJob++;
     $("#shotPrompt").hidden = false;
@@ -2479,8 +2632,12 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
 
     $("#btnSave").addEventListener("click", saveRecord);
     $("#btnStartFromEmpty").addEventListener("click", function () { setView("add"); $("#btnCam").focus(); });
+    $("#btnEditCancel").addEventListener("click", cancelEdit);
 
-    $("#tabMap").addEventListener("click", function () { setView("map"); });
+    $("#tabMap").addEventListener("click", function () {
+      if (state.editId) { resetForm(); toast("수정을 취소했어요"); }   // 수정 중에 지도로 나가면 수정을 그만둔다
+      setView("map");
+    });
     $("#tabAdd").addEventListener("click", function () { setView("add"); });
 
     $("#recentList").addEventListener("click", function (e) {
@@ -2497,6 +2654,8 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !$("#sheetWrap").hidden) closeSheet(); });
 
     $("#sheetBody").addEventListener("click", function (e) {
+      var ed = e.target.closest("[data-edit]");
+      if (ed) { startEdit(ed.getAttribute("data-edit")); return; }
       var del = e.target.closest("[data-del]");
       if (!del) return;
       var id = del.getAttribute("data-del");
@@ -2511,6 +2670,7 @@ addEventListener("unhandledrejection", function (e) { window.__ciErrors.push("re
       var rec = records.find(function (r) { return r.id === id; });
       records = records.filter(function (r) { return r.id !== id; });
       addDeleted(id);
+      clearPending(id);   // 밀린 수정이 지운 기록을 다시 살리지 않도록
       sendRecord({ id: id }, "삭제");   // 시트에서도 지우도록 삭제 표시를 보낸다
       persist();
       if (rec && rec.photoId) PhotoDB.del(rec.photoId);
